@@ -28,8 +28,8 @@ packages:
     path: Packages/CairnUpdateKit
   Emojibase:
     url: https://github.com/matrix-org/emojibase-bindings
-    # Exact, for the same reason MessagingUI below is pinned to a revision: no lockfile
-    # is committed, so a range resolves to whatever is newest on each machine and build.
+    # Exact: no lockfile is committed (Package.resolved is gitignored with the generated
+    # .xcodeproj), so a range resolves to whatever is newest on each machine and build.
     exactVersion: 1.5.0
   MapLibre:
     url: https://github.com/maplibre/maplibre-gl-native-distribution
@@ -38,13 +38,10 @@ packages:
   NordicDFU:
     url: https://github.com/NordicSemiconductor/IOS-DFU-Library
     exactVersion: 4.16.0
+  # The chat list. A patched copy of bwees-forks/swiftui-messaging-ui at 663d6ce (fixes a crash
+  # when a message row that was a placeholder is updated): see Vendor/swiftui-messaging-ui/CAIRN-PATCHES.md.
   MessagingUI:
-    url: https://github.com/bwees-forks/swiftui-messaging-ui
-    # Pinned to an exact revision: Package.resolved is gitignored (the whole
-    # generated .xcodeproj is), so branch tracking resolves to whatever each
-    # machine last fetched and different developers silently build different
-    # library code. Bump this hash deliberately when the fork advances.
-    revision: 663d6ce9ee9ba459ef9fe3a1848a05c4acffaef8
+    path: Vendor/swiftui-messaging-ui
 
 targets:
   Cairn:
