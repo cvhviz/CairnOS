@@ -1,0 +1,2549 @@
+/*
+  Tools.strings
+  Cairn
+
+  Korean (ko) translation of the Tools feature strings.
+  AI-translated - please verify with native speakers.
+*/
+
+// MARK: - Tools View
+
+/* Location: ToolsView.swift - Navigation title */
+"tools.title" = "도구";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.tracePath" = "경로 추적";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.lineOfSight" = "가시선";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.rxLog" = "수신 로그";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.noiseFloor" = "노이즈 플로어";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.nodeDiscovery" = "노드 검색";
+/* Location: ToolsView.swift - Empty state when no tool selected */
+"tools.selectTool" = "도구 선택";
+
+// MARK: - RX Log View
+
+/* Location: RxLogView.swift - Empty state title when listening */
+"tools.rxLog.listening" = "수신 대기 중...";
+
+/* Location: RxLogView.swift - Empty state description */
+"tools.rxLog.listeningDescription" = "RF 패킷이 도착하면 여기에 표시됩니다.";
+
+/* Location: RxLogView.swift - Disconnected state title */
+"tools.rxLog.notConnected" = "연결되지 않음";
+
+/* Location: RxLogView.swift - Disconnected state description */
+"tools.rxLog.notConnectedDescription" = "RF 패킷을 보려면 메시 무선 기기에 연결하십시오.";
+
+/* Location: RxLogView.swift - Live status indicator */
+"tools.rxLog.live" = "실시간";
+
+/* Location: RxLogView.swift - Offline status indicator */
+"tools.rxLog.offline" = "오프라인";
+
+/* Location: RxLogView.swift - Packet count in header, %lld is count */
+"tools.rxLog.packetsCount" = "패킷 %lld개";
+
+/* Location: RxLogView.swift - Filter menu section header */
+"tools.rxLog.routeType" = "경로 유형";
+
+/* Location: RxLogView.swift - Filter menu section header */
+"tools.rxLog.decryptStatus" = "복호화 상태";
+
+/* Location: RxLogView.swift - Filter button label */
+"tools.rxLog.filter" = "필터";
+
+/* Location: RxLogView.swift - Overflow menu button label */
+"tools.rxLog.more" = "더 보기";
+
+/* Location: RxLogView.swift - Group duplicates toggle */
+"tools.rxLog.groupDuplicates" = "중복 항목 묶기";
+
+/* Location: RxLogView.swift - Delete logs button */
+"tools.rxLog.deleteLogs" = "로그 삭제";
+
+/* Location: RxLogView.swift - Delete confirmation dialog title */
+"tools.rxLog.deleteConfirmation" = "모든 로그를 삭제하겠습니까?";
+
+/* Location: RxLogView.swift - Delete confirmation button */
+"tools.rxLog.delete" = "삭제";
+
+/* Location: RxLogView.swift - Direct route label */
+"tools.rxLog.direct" = "다이렉트";
+
+/* Location: RxLogView.swift - Path detail for single hop */
+"tools.rxLog.hopSingular" = "홉";
+
+/* Location: RxLogView.swift - Path detail for multiple hops */
+"tools.rxLog.hopPlural" = "홉";
+
+/* Location: RxLogView.swift - Signal strength accessibility label, %@ is quality */
+"tools.rxLog.signalStrength" = "신호 강도: %@";
+
+/* Location: RxLogView.swift - Duplicate count accessibility label, %lld is count */
+"tools.rxLog.receivedTimes" = "%lld회 수신됨";
+
+/* Location: RxLogView.swift - Raw payload section title */
+"tools.rxLog.rawPayload" = "원시 페이로드";
+
+/* Location: RxLogView.swift - Copy button */
+"tools.rxLog.copy" = "복사";
+
+/* Location: RxLogView.swift - RSSI label */
+"tools.rxLog.rssiLabel" = "RSSI:";
+
+/* Location: RxLogView.swift - SNR label */
+"tools.rxLog.snrLabel" = "SNR:";
+
+/* Location: RxLogView.swift - Type label */
+"tools.rxLog.typeLabel" = "유형:";
+
+/* Location: RxLogView.swift - Size label */
+"tools.rxLog.sizeLabel" = "크기:";
+
+/* Location: RxLogView.swift - Path label */
+"tools.rxLog.pathLabel" = "경로:";
+
+/* Location: RxLogView.swift - Hash label */
+"tools.rxLog.hashLabel" = "해시:";
+
+/* Location: RxLogView.swift - From label */
+"tools.rxLog.fromLabel" = "보낸 사람:";
+
+/* Location: RxLogView.swift - To label */
+"tools.rxLog.toLabel" = "받는 사람:";
+
+/* Location: RxLogView.swift - Channel hash label */
+"tools.rxLog.channelHashLabel" = "채널 해시:";
+
+/* Location: RxLogView.swift - Channel name label */
+"tools.rxLog.channelNameLabel" = "채널 이름:";
+
+/* Location: RxLogView.swift - Region label */
+"tools.rxLog.regionLabel" = "지역:";
+
+/* Location: RxLogView.swift - Unresolved region value */
+"tools.rxLog.regionUnresolved" = "알 수 없음";
+
+/* Location: RxLogView.swift - Text label */
+"tools.rxLog.textLabel" = "텍스트:";
+
+/* Location: RxLogView.swift - Bytes suffix for size display */
+"tools.rxLog.bytes" = "바이트";
+
+// MARK: - RX Log Filters
+
+/* Location: RxLogViewModel.swift - Route filter: all */
+"tools.rxLog.filter.all" = "전체";
+
+/* Location: RxLogViewModel.swift - Route filter: flood only */
+"tools.rxLog.filter.floodOnly" = "플러드만";
+
+/* Location: RxLogViewModel.swift - Route filter: direct only */
+"tools.rxLog.filter.directOnly" = "다이렉트만";
+
+/* Location: RxLogViewModel.swift - Decrypt filter: decrypted */
+"tools.rxLog.filter.decrypted" = "복호화됨";
+
+/* Location: RxLogViewModel.swift - Decrypt filter: failed */
+"tools.rxLog.filter.failed" = "실패";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: not a decryptable packet */
+"tools.rxLog.decryptStatus.notApplicable" = "해당 없음";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: no stored channel key matches */
+"tools.rxLog.decryptStatus.noKey" = "키 없음";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: HMAC validation failed */
+"tools.rxLog.decryptStatus.hmacFailed" = "HMAC 실패";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: AES decryption failed */
+"tools.rxLog.decryptStatus.decryptFailed" = "복호화 실패";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: decrypted successfully */
+"tools.rxLog.decryptStatus.decrypted" = "복호화됨";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: key found, decryption pending */
+"tools.rxLog.decryptStatus.hasKey" = "키 있음";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: missing direct message key */
+"tools.rxLog.decryptStatus.noDmKey" = "DM 키 없음";
+
+/* Location: RxLogRowView - Label for local device in path display */
+"tools.rxLog.pathYou" = "나";
+
+/* Location: RxLogRowView - Route label for TRACE target hashes */
+"tools.rxLog.traceRouteLabel" = "경로:";
+
+/* Location: RxLogView.swift - Purpose: A direct packet's path, which is the route still ahead of it, not hops travelled; %@ is the hops */
+"tools.rxLog.routeAhead" = "남은 경로: %@";
+
+/* RX log row: a packet received while the radio was on another channel, named against what was heard there; %@ is the channel, e.g. "910.525 MHz · SF10" */
+"tools.rxLog.receivedOn" = "%@에서 수신됨";
+
+/* RX log row: a packet whose radio channel the app couldn't confirm (stored before channels were recorded, heard during a retune, or held by the radio before this connection confirmed its channel), so none of its relays can be named */
+"tools.rxLog.channelNotRecorded" = "Cairn이 이 패킷을 수신한 무전기 채널을 확인할 수 없어 릴레이가 해시로 표시됩니다.";
+
+/* RX log header: the app has only lately started hearing nodes on this channel, so many relays still show by hash; %lld is how many nodes it has heard */
+"tools.rxLog.learningChannel" = "이 채널 학습 중: 노드 %lld개 수신됨";
+
+/* Location: RxLogView.swift - Purpose: Label for the SNR each hop of a trace heard it at */
+"tools.rxLog.traceSnrLabel" = "홉별 SNR:";
+
+// MARK: - Noise Floor Signal Quality
+
+/* Location: NoiseFloorViewModel.swift - Error: unable to read stats */
+"tools.noiseFloor.error.unableToRead" = "무선 기기 통계를 읽을 수 없음";
+
+/* Location: SpectrumViewModel.swift - Error: the radio's firmware has no stats command, so noise and airtime readings stop; packets still show */
+"tools.noiseFloor.error.unsupported" = "이 라디오의 펌웨어는 노이즈나 전송 시간을 보고하지 않습니다(1.11 이상 필요)";
+
+// MARK: - Node Discovery View
+
+/* Location: NodeDiscoveryView.swift - Disconnected state description */
+"tools.nodeDiscovery.notConnectedDescription" = "%@을(를) 탐색하려면 메시 무선 기기에 연결하십시오.";
+
+/* Location: NodeDiscoveryView.swift - Initial empty state title */
+"tools.nodeDiscovery.scanPrompt" = "%@ 검색";
+
+/* Location: NodeDiscoveryView.swift - Initial empty state description */
+"tools.nodeDiscovery.scanPromptDescription" = "아래 버튼을 탭하여 주변의 %@을(를) 탐색하십시오.";
+
+/* Location: NodeDiscoveryView.swift - No results empty state title */
+"tools.nodeDiscovery.noResults" = "%@ 없음";
+
+/* Location: NodeDiscoveryView.swift - No results empty state description */
+"tools.nodeDiscovery.noResultsDescription" = "탐색 핑에 응답한 %@이(가) 없습니다. 다시 시도하거나 메시에 더 가까이 이동하십시오.";
+
+/* Location: NodeDiscoveryView.swift - Scan button label (idle) */
+"tools.nodeDiscovery.scanButton" = "%@ 검색";
+
+/* Location: NodeDiscoveryView.swift - Scan button label (scanning) */
+"tools.nodeDiscovery.stopButton" = "검색 중지";
+
+/* Location: NodeDiscoveryView.swift - Segment label */
+"tools.nodeDiscovery.repeaters" = "리피터";
+
+/* Location: NodeDiscoveryView.swift - Segment label */
+"tools.nodeDiscovery.sensors" = "센서";
+
+/* Location: NodeDiscoveryView.swift - Sort option */
+"tools.nodeDiscovery.sortSignal" = "신호 강도";
+
+/* Location: NodeDiscoveryView.swift - Sort option */
+"tools.nodeDiscovery.sortName" = "이름";
+
+/* Location: NodeDiscoveryView.swift - Sort menu accessibility label */
+"tools.nodeDiscovery.sortMenu" = "노드 정렬";
+
+/* Location: NodeDiscoveryView.swift - Sort menu accessibility hint */
+"tools.nodeDiscovery.sortMenuHint" = "발견된 노드의 정렬 순서를 변경합니다";
+
+/* Location: NodeDiscoveryRowView.swift - Unknown node name fallback */
+"tools.nodeDiscovery.unknownNode" = "알 수 없음";
+
+/* Location: NodeDiscoveryRowView.swift - Node type: repeater */
+"tools.nodeDiscovery.typeRepeater" = "리피터";
+
+/* Location: NodeDiscoveryRowView.swift - Node type: sensor */
+"tools.nodeDiscovery.typeSensor" = "센서";
+
+/* Location: NodeDiscoveryRowView.swift - SNR label (local receive) */
+"tools.nodeDiscovery.snrDown" = "↓ %@ dB";
+
+/* Location: NodeDiscoveryRowView.swift - SNR label (remote receive) */
+"tools.nodeDiscovery.snrUp" = "↑ %@ dB";
+
+/* Location: NodeDiscoveryRowView.swift - RSSI label */
+"tools.nodeDiscovery.rssi" = "RSSI %@ dBm";
+
+/* Location: NodeDiscoveryView.swift - Error alert title */
+"tools.nodeDiscovery.errorTitle" = "검색 실패";
+
+// MARK: - Line of Sight View
+
+/* Location: LineOfSightView.swift - Map style: standard */
+/* Location: LineOfSightView.swift - Map style: terrain */
+/* Location: LineOfSightView.swift - Back button label */
+"tools.lineOfSight.back" = "뒤로";
+
+/* Location: LineOfSightView.swift - Point A annotation */
+"tools.lineOfSight.pointA" = "지점 A";
+
+/* Location: LineOfSightView.swift - Point B annotation */
+"tools.lineOfSight.pointB" = "지점 B";
+
+/* Location: LineOfSightView.swift - Repeater annotation */
+"tools.lineOfSight.repeater" = "리피터";
+
+/* Location: LineOfSightView.swift - Points section title */
+"tools.lineOfSight.points" = "지점";
+
+/* Location: LineOfSightView.swift - Cancel button */
+"tools.lineOfSight.cancel" = "취소";
+
+/* Location: LineOfSightView.swift - Relocating message, %@ is point name */
+"tools.lineOfSight.relocating" = "%@ 배치 중…";
+
+/* Location: LineOfSightView.swift - Tap map instruction */
+"tools.lineOfSight.tapMapInstruction" = "지도나 리피터를 탭하여 배치하세요";
+
+/* Location: LineOfSightView.swift - Not selected placeholder */
+"tools.lineOfSight.notSelected" = "선택되지 않음";
+
+/* Line of Sight: under an empty point A or B; tapping the card starts placing it on the map */
+"tools.lineOfSight.chooseOnMapHint" = "탭하여 지도에 배치";
+
+/* Line of Sight: button beside an empty point that sets it to the phone's position */
+"tools.lineOfSight.useMyLocation" = "내 위치 사용";
+
+/* Line of Sight: menu item and editor for how high a point's antenna is above the ground */
+"tools.lineOfSight.antennaHeight" = "안테나 높이";
+
+/* Line of Sight: a point's heights under its name. %1$@ is the ground elevation, %2$@ the antenna height, e.g. 42 m and 7 m */
+"tools.lineOfSight.heightSummary" = "지면 %1$@ · 안테나 %2$@";
+
+/* Location: LineOfSightView.swift - Loading elevation status */
+"tools.lineOfSight.loadingElevation" = "고도 불러오는 중...";
+
+/* Location: LineOfSightView.swift - Long press points hint */
+"tools.lineOfSight.longPressPointsHint" = "지도를 길게 눌러 위치를 추가하십시오";
+
+/* Location: LineOfSightView.swift - Elevation unavailable warning */
+"tools.lineOfSight.elevationUnavailable" = "고도 데이터를 사용할 수 없습니다. 해수면(0m)을 근사값으로 사용합니다.";
+
+/* Location: LineOfSightView.swift - Open in Maps button */
+"tools.lineOfSight.openInMaps" = "지도에서 열기";
+
+/* Location: LineOfSightView.swift - Copy coordinates button */
+"tools.lineOfSight.copyCoordinates" = "좌표 복사";
+
+/* Location: LineOfSightView.swift - Share button */
+"tools.lineOfSight.share" = "공유...";
+
+/* Location: LineOfSightView.swift - Share label */
+"tools.lineOfSight.shareLabel" = "공유";
+
+/* Location: LineOfSightView.swift - Relocate button */
+"tools.lineOfSight.relocate" = "위치 변경";
+
+/* Location: LineOfSightView.swift - Done button */
+"tools.lineOfSight.done" = "완료";
+
+/* Location: LineOfSightView.swift - Edit button */
+"tools.lineOfSight.edit" = "편집";
+
+/* Location: LineOfSightView.swift - Clear button */
+"tools.lineOfSight.clear" = "지우기";
+
+/* Location: LineOfSightView.swift - Ground elevation label */
+"tools.lineOfSight.groundElevation" = "지면 고도";
+
+/* Location: LineOfSightView.swift - Additional height label */
+"tools.lineOfSight.additionalHeight" = "추가 높이";
+
+/* Location: LineOfSightView.swift - Total height label */
+"tools.lineOfSight.totalHeight" = "총 높이";
+
+/* Location: LineOfSightView.swift - Add repeater button */
+"tools.lineOfSight.addRepeater" = "리피터 추가";
+
+/* Location: LineOfSightView.swift - Analyze button */
+"tools.lineOfSight.analyze" = "가시선 분석";
+
+/* Location: LineOfSightView.swift - Terrain profile section */
+"tools.lineOfSight.terrainProfile" = "지형 단면";
+
+/* Location: LineOfSightView.swift - Earth curvature note, %@ is k-factor */
+"tools.lineOfSight.earthCurvature" = "지구 곡률 보정됨(%@)";
+
+/* Location: LineOfSightView.swift - Drag to adjust tooltip */
+"tools.lineOfSight.dragToAdjust" = "드래그하여 조정";
+
+/* Location: LineOfSightView.swift - RF Settings section */
+"tools.lineOfSight.rfSettings" = "RF 설정";
+
+/* Location: LineOfSightView.swift - Frequency label */
+"tools.lineOfSight.frequency" = "주파수";
+
+/* Location: LineOfSightView.swift - MHz unit */
+"tools.lineOfSight.mhz" = "MHz";
+
+/* Location: LineOfSightView.swift - Refraction label */
+"tools.lineOfSight.refraction" = "굴절";
+
+/* Location: LineOfSightView.swift - Refraction: none */
+"tools.lineOfSight.refraction.none" = "없음";
+
+/* Location: LineOfSightView.swift - Refraction: standard */
+"tools.lineOfSight.refraction.standard" = "표준(k=1.33)";
+
+/* Location: LineOfSightView.swift - Refraction: ducting */
+"tools.lineOfSight.refraction.ducting" = "덕팅(k=4)";
+
+/* Location: LineOfSightView.swift - Analyzing progress */
+"tools.lineOfSight.analyzing" = "경로 분석 중...";
+
+/* Location: LineOfSightView.swift - Analysis failed title */
+"tools.lineOfSight.analysisFailed" = "분석 실패";
+
+/* Location: LineOfSightView.swift - Retry button */
+"tools.lineOfSight.retry" = "다시 시도";
+
+/* Location: LineOfSightView.swift - Repeater location map item name */
+"tools.lineOfSight.repeaterLocation" = "리피터 위치";
+
+/* Location: LineOfSightViewModel.swift - Dropped pin display name */
+"tools.lineOfSight.droppedPin" = "놓은 핀";
+
+/* Location: LOSRepeaterPinView.swift - Accessibility hint for repeater pins */
+/* Location: LOSPointPinView.swift - Accessibility hint for point pins */
+/* Location: LOSRepeaterTargetPinView.swift - Accessibility hint for repeater target */
+// MARK: - Terrain Profile Canvas
+
+/* Location: TerrainProfileCanvas.swift - Empty state title */
+"tools.lineOfSight.noData" = "데이터 없음";
+
+/* Location: TerrainProfileCanvas.swift - Empty state description */
+"tools.lineOfSight.selectTwoPoints" = "분석할 두 지점을 선택하십시오";
+
+/* Location: TerrainProfileCanvas.swift - Legend: terrain */
+"tools.lineOfSight.legend.terrain" = "지형";
+
+/* Location: TerrainProfileCanvas.swift - Legend: line of sight */
+"tools.lineOfSight.legend.los" = "가시선";
+
+/* Location: TerrainProfileCanvas.swift - Legend: clear */
+"tools.lineOfSight.legend.clear" = "양호";
+
+/* Location: TerrainProfileCanvas.swift - Legend: obstructed */
+"tools.lineOfSight.legend.obstructed" = "차단됨";
+
+/* Location: TerrainProfileCanvas.swift - Indirect route label */
+"tools.lineOfSight.indirectRoute" = "R을 경유하는 간접 경로 · 조정하려면 지도에서 위치 변경";
+
+/* Location: TerrainProfileCanvas.swift - Elevation data attribution */
+"tools.lineOfSight.elevationAttribution" = "고도 데이터: Copernicus DEM GLO-90(Open-Meteo 제공)";
+
+// MARK: - Results Card View
+
+/* Location: ResultsCardView.swift - Section title */
+"tools.lineOfSight.results" = "결과";
+
+/* Location: ResultsCardView.swift - Loss suffix */
+"tools.lineOfSight.loss" = "손실";
+
+/* Location: ResultsCardView.swift - Path loss breakdown section */
+"tools.lineOfSight.pathLossBreakdown" = "경로 손실 세부 내역";
+
+/* Location: ResultsCardView.swift - Free space loss label */
+"tools.lineOfSight.freeSpaceLoss" = "자유 공간 손실";
+
+/* Location: ResultsCardView.swift - Diffraction loss label */
+"tools.lineOfSight.diffractionLoss" = "회절 손실";
+
+/* Location: ResultsCardView.swift - Total label */
+"tools.lineOfSight.total" = "합계";
+
+/* Location: ResultsCardView.swift - Clearance section title */
+"tools.lineOfSight.clearance" = "여유 공간";
+
+/* Location: ResultsCardView.swift - Obstructions found label */
+"tools.lineOfSight.obstructionsFound" = "장애물 발견";
+
+/* Location: ResultsCardView.swift - Status label */
+"tools.lineOfSight.status" = "상태";
+
+/* Location: ResultsCardView.swift - Distance label */
+"tools.lineOfSight.distance" = "거리";
+
+/* Location: ResultsCardView.swift - Worst clearance short label */
+"tools.lineOfSight.worstClearanceShort" = "최소 여유 공간";
+
+/* Location: ResultsCardView.swift - Assumptions footnote; %1$@ is frequency, %2$@ is k-factor */
+"tools.lineOfSight.assumptions" = "%1$@, %2$@, 제1 프레넬 영역 60%% 기준";
+
+/* Location: ClearanceStatusView.swift - Clearance percentage, %lld is percent */
+"tools.lineOfSight.clearancePercent" = "여유 공간 %lld%%";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: clear */
+"tools.lineOfSight.status.clear" = "양호";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: marginal */
+"tools.lineOfSight.status.marginal" = "경계";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: partial obstruction */
+"tools.lineOfSight.status.partialObstruction" = "부분 차단";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: blocked */
+"tools.lineOfSight.status.blocked" = "차단됨";
+
+/* Location: ResultsCardView.swift - Subtitle shown when path is blocked */
+"tools.lineOfSight.status.blockedSubtitle" = "직접 경로가 지형과 교차합니다";
+
+// MARK: - CLI Tool View
+
+/* Location: CLIToolView.swift - Tool selection label */
+"tools.cli" = "CLI";
+
+/* Location: CLIToolView.swift - Disconnected state title */
+"tools.cli.notConnected" = "연결되지 않음";
+
+/* Location: CLIToolView.swift - Disconnected state description */
+"tools.cli.notConnectedDescription" = "CLI를 사용하려면 메시 무선 기기에 연결하십시오.";
+
+/* Location: CLIToolView.swift - Prompt suffix */
+"tools.cli.promptSuffix" = ">";
+
+/* Location: CLIToolView.swift - Waiting indicator */
+/* Location: CLIToolView.swift - Disconnected prompt */
+"tools.cli.disconnected" = "연결 끊김";
+
+/* Location: CLIToolView.swift - Help command output header */
+"tools.cli.helpHeader" = "사용 가능한 명령:";
+
+/* Location: CLIToolView.swift - Session list header */
+"tools.cli.sessionListHeader" = "활성 세션:";
+
+/* Location: CLIToolView.swift - Local session label */
+"tools.cli.sessionLocal" = "로컬";
+
+/* Location: CLIToolView.swift - No sessions message */
+/* Location: CLIToolView.swift - History empty message */
+/* Location: CLIToolView.swift - Unknown command error */
+"tools.cli.unknownCommand" = "알 수 없는 명령:";
+
+/* Location: CLIToolView.swift - Login success */
+"tools.cli.loginSuccess" = "로그인됨:";
+
+/* Location: CLIToolView.swift - Login failed */
+"tools.cli.loginFailed" = "로그인 실패:";
+
+/* Location: CLIToolView.swift - Login failed reason */
+"tools.cli.loginFailedAuth" = "인증 실패";
+
+/* Location: CLIToolView.swift - Node not found error */
+"tools.cli.nodeNotFound" = "노드를 찾을 수 없음:";
+
+/* Location: CLIToolView.swift - Password required error */
+"tools.cli.passwordRequired" = "암호 필요";
+
+/* Location: CLIToolViewModel.swift - Password prompt */
+"tools.cli.passwordPrompt" = "암호:";
+
+/* Location: CLIToolViewModel.swift - Login countdown */
+"tools.cli.loggingIn" = "로그인 중... (%d초)";
+
+/* Location: CLIToolView.swift - Logout success */
+"tools.cli.logoutSuccess" = "로그아웃됨";
+
+/* Location: CLIToolView.swift - Not logged in error */
+"tools.cli.notLoggedIn" = "로그인한 리피터가 없음";
+
+/* Location: CLIToolView.swift - Session switched */
+"tools.cli.sessionSwitched" = "전환됨:";
+
+/* Location: CLIToolView.swift - Session not found */
+"tools.cli.sessionNotFound" = "세션을 찾을 수 없음:";
+
+/* Location: CLIToolView.swift - Command timeout */
+"tools.cli.timeout" = "응답 대기 시간 초과";
+
+/* Location: CLIToolView.swift - Command cancelled */
+"tools.cli.cancelled" = "명령 취소됨";
+
+/* Location: CLIToolView.swift - Login from local only */
+"tools.cli.loginFromLocalOnly" = "로그인은 로컬 세션에서만 가능";
+
+/* Location: CLIToolView.swift - Login usage */
+"tools.cli.loginUsage" = "사용법: login [-f] <node>";
+
+/* Location: CLIToolView.swift - Accessory button: history up */
+"tools.cli.historyUp" = "이전 명령";
+
+/* Location: CLIToolView.swift - Accessory button: history down */
+"tools.cli.historyDown" = "다음 명령";
+
+/* Location: CLIToolView.swift - Accessory button: tab complete */
+"tools.cli.tabComplete" = "탭 자동 완성";
+
+/* Location: CLIInputAccessoryView.swift - Cursor left button */
+"tools.cli.cursorLeft" = "커서를 왼쪽으로 이동";
+
+/* Location: CLIInputAccessoryView.swift - Cursor right button */
+"tools.cli.cursorRight" = "커서를 오른쪽으로 이동";
+
+/* Location: CLIInputAccessoryView.swift - Paste button */
+"tools.cli.paste" = "붙여넣기";
+
+/* Location: CLIToolView.swift - Accessory button: clear */
+/* Location: CLIToolView.swift - Accessory button: sessions */
+"tools.cli.sessions" = "세션";
+
+/* Location: CLIToolView.swift - Accessory button: dismiss */
+"tools.cli.dismiss" = "키보드 닫기";
+
+/* Location: CLIToolView.swift - Default device name */
+"tools.cli.defaultDevice" = "기기";
+
+/* Location: CLIToolViewModel.swift - Help: login command */
+"tools.cli.helpLogin" = "  login [-f] <node>\n    리피터에 로그인(-f: 저장된 암호 삭제)";
+
+/* Location: CLIToolViewModel.swift - Help: logout command */
+"tools.cli.helpLogout" = "  logout\n    원격 세션 종료";
+
+/* Location: CLIToolViewModel.swift - Help: session list command */
+"tools.cli.helpSessionList" = "  session list\n    활성 세션 표시";
+
+/* Location: CLIToolViewModel.swift - Help: session local command */
+"tools.cli.helpSessionLocal" = "  session local\n    로컬로 전환";
+
+/* Location: CLIToolViewModel.swift - Help: session name command */
+"tools.cli.helpSessionName" = "  session <name>\n    세션으로 전환";
+
+/* Location: CLIToolViewModel.swift - Help: session shortcut */
+"tools.cli.helpSessionShortcut" = "  s<n>\n    세션 n으로 전환(예: s1, s2)";
+
+/* Location: CLIToolViewModel.swift - Help: clear command */
+"tools.cli.helpClear" = "  clear\n    터미널 지우기";
+
+/* Location: CLIToolViewModel.swift - Help: help command */
+"tools.cli.helpHelp" = "  help\n    이 도움말 표시";
+
+/* Location: CLIToolViewModel.swift - Help: nodes command */
+"tools.cli.helpNodes" = "  nodes\n    리피터 및 룸 목록 표시";
+
+/* Location: CLIToolViewModel.swift - Help: channels command */
+"tools.cli.helpChannels" = "  channels\n    기기 슬롯 번호와 함께 채널 목록 표시";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands header */
+"tools.cli.helpRepeaterHeader" = "리피터 명령(패스스루):";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 1 */
+"tools.cli.helpRepeaterList1" = "  ver, clock, reboot, advert, neighbors";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 2 */
+"tools.cli.helpRepeaterList2" = "  get/set <param>, password <new>";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 3 */
+"tools.cli.helpRepeaterList3" = "  log start/stop/erase";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 4 */
+"tools.cli.helpRepeaterList4" = "  setperm, tempradio, neighbor.remove";
+
+/* Location: CLIToolViewModel+Sessions.swift - Nodes header with count */
+"tools.cli.nodesHeader" = "노드(%lld):";
+
+/* Location: CLIToolViewModel+Sessions.swift - Channels header with count */
+"tools.cli.channelsHeader" = "채널(%lld):";
+
+/* Location: CLIToolViewModel+Sessions.swift - No nodes found */
+"tools.cli.noNodes" = "노드 없음";
+
+/* Location: CLIToolViewModel+Sessions.swift - No channels found */
+"tools.cli.noChannels" = "채널 없음";
+
+/* Location: CLIToolViewModel+Sessions.swift - Channel empty name placeholder */
+"tools.cli.channelEmpty" = "비어 있음";
+
+/* Location: CLIToolViewModel.swift - Welcome banner line 1 */
+"tools.cli.welcomeLine1" = "Cairn CLI";
+/* Location: CLIToolViewModel.swift - Welcome banner line 2 */
+"tools.cli.welcomeConnected" = "%@에 연결됨";
+
+/* Location: CLIToolViewModel.swift - Welcome banner line 3 */
+"tools.cli.welcomeHint" = "사용 가능한 명령을 보려면 'help'를 입력하십시오.";
+
+/* Location: CLIToolView.swift - Jump to bottom button */
+"tools.cli.jumpToBottom" = "맨 아래로 이동";
+
+/* Location: CLIToolView.swift - Accessibility label for command input */
+"tools.cli.commandInput" = "명령 입력";
+
+/* Location: CLIToolView.swift - Accessibility label for command prompt */
+"tools.cli.commandPrompt" = "명령 프롬프트";
+
+/* Location: CLIInputAccessoryView.swift - Cancel operation button label */
+"tools.cli.cancelOperation" = "작업 취소";
+
+/* Location: CLIToolViewModel.swift - Command timeout (post-login) */
+"tools.cli.commandTimeout" = "요청 시간 초과";
+
+/* Location: CLIToolViewModel.swift - Reboot command confirmation */
+"tools.cli.rebootSent" = "재시동 명령을 보냄";
+
+/* Accessibility label for completion suggestions container */
+/* Accessibility value for completion suggestions - %lld is count, %@ is selected */
+/* Location: CLIToolViewModel.swift - Confirmation prompt for a dangerous local command; %@ is the command name */
+"tools.cli.confirmPrompt" = "%@ 실행을 확인하겠습니까? (yes/no):";
+
+/* Location: CLIToolViewModel+LocalCommands.swift - Usage for the get command */
+"tools.cli.usageGet" = "사용법: get <key>";
+
+/* Location: CLIToolViewModel+LocalCommands.swift - Usage for the set command */
+"tools.cli.usageSet" = "사용법: set <key> <value>";
+
+/* Location: CLIToolViewModel+LocalCommands.swift - Usage for set radio */
+"tools.cli.usageSetRadio" = "사용법: set radio <freq>,<bw>,<sf>,<cr>";
+
+/* Location: CLIToolViewModel+LocalCommands.swift - Invalid value error */
+"tools.cli.invalidValue" = "잘못된 값";
+
+/* Location: CLIToolViewModel+LocalCommands.swift - Custom var key/value contains a reserved character */
+"tools.cli.invalidCustomVarToken" = "키에는 ':' 또는 ','를, 값에는 ','를 사용할 수 없습니다";
+
+/* Location: CLIToolViewModel.swift - Local radio commands help header */
+"tools.cli.helpLocalHeader" = "로컬 무선 기기 명령:";
+
+/* Location: CLIToolViewModel.swift - Local radio commands help line 1 */
+"tools.cli.helpLocalList1" = "  clock [sync], ver, board";
+
+/* Location: CLIToolViewModel.swift - Local radio commands help line 2 */
+"tools.cli.helpLocalList2" = "  advert (제로 홉), floodadv (플러드), reboot";
+
+/* Location: CLIToolViewModel.swift - Local radio commands help line 3 */
+"tools.cli.helpLocalList3" = "  get <key>, set <key> <value>";
+
+/* Location: CLIToolViewModel.swift - Local radio commands help line 4 */
+"tools.cli.helpLocalList4" = "    키: name, lat, lon, tx, radio, freq, multi.acks, path.hash.mode, public.key, bat";
+
+/* Location: CLIToolViewModel.swift - Local radio commands help line 5 */
+"tools.cli.helpLocalList5" = "  get custom  (모든 사용자 정의 펌웨어 변수); 알 수 없는 get/set 키는 사용자 정의 변수로 전달됨";
+
+// MARK: - Companion Command Line
+
+/* Location: CLIToolViewModel.swift - help line for opening a companion's command line (MeshCore 1.18) */
+"tools.cli.helpLoginCompanion" = "  login <companion>\n    컴패니언에 명령 보내기(비밀번호 없음, MeshCore 1.18)";
+
+/* Location: CLIToolViewModel.swift - help line for the companions command */
+"tools.cli.helpCompanions" = "  companions\n    컴패니언 목록 표시";
+
+/* Location: CLIToolViewModel+Sessions.swift - header of the companions list; %lld is the count */
+"tools.cli.companionsHeader" = "컴패니언(%lld):";
+
+/* Location: CLIToolViewModel+Sessions.swift - the companions command found none */
+"tools.cli.noCompanions" = "컴패니언 없음";
+
+/* Location: CompanionCLIExchange.swift - help header for a companion's commands */
+"tools.cli.helpCompanionHeader" = "컴패니언 명령(상대에게 전송):";
+
+/* Location: CompanionCLIExchange.swift - help line: companion read commands */
+"tools.cli.helpCompanionList1" = "  ver, board, get name, get tz.offset";
+
+/* Location: CompanionCLIExchange.swift - help line: companion Wi-Fi reads */
+"tools.cli.helpCompanionList2" = "  get wifi.status, wifi.enabled, wifi.ssid, wifi.ip";
+
+/* Location: CompanionCLIExchange.swift - help line: companion settings */
+"tools.cli.helpCompanionList3" = "  set name, tz.offset, wifi.enabled 0|1, wifi.ssid, wifi.pwd, pin";
+
+/* Location: CompanionCLIExchange.swift - help line: companion power */
+"tools.cli.helpCompanionList4" = "  reboot, poweroff";
+
+/* Location: CompanionCLIExchange.swift - first line of a companion's command line; %@ is its name */
+"tools.cli.companion.opened" = "이제 명령이 %@(으)로 전송됩니다";
+
+/* Location: CompanionCLIExchange.swift - when another companion answers commands (the firmware page's note) */
+"tools.cli.companion.note" = "상대 기기의 이 라디오 연락처에서 명령 전송을 허용한 경우에만 응답합니다(원격 명령 스위치).";
+
+/* Location: CompanionCLIExchange.swift - how to send a command in a companion's command line */
+"tools.cli.companion.hint" = "명령을 입력하거나 명령을 열어 목록을 보세요.";
+
+/* Location: CLIToolViewModel+Sessions.swift - this radio's firmware is older than MeshCore 1.18 */
+"tools.cli.companion.needsFirmware" = "다른 컴패니언에 명령을 보내려면 이 라디오에 MeshCore 1.18 펌웨어가 필요합니다";
+
+/* Location: CompanionCLIExchange.swift - no reply came in time; a late reply still shows under it */
+"tools.cli.companion.noReply" = "아직 응답 없음 · 나중에 올 수 있습니다 (상대가 허용하지 않았거나 범위 밖)";
+
+/* Location: CompanionCLIExchange.swift - a restart or power-off went out */
+"tools.cli.companion.restartSent" = "전송됨 · 다시 시작됩니다";
+
+/* Location: CompanionCLIExchange.swift - a restart or power-off went out and the device answered; %@ is its answer */
+"tools.cli.companion.restartSentReply" = "전송됨 · 다시 시작됩니다 (%@)";
+
+/* Location: CompanionCLIExchange.swift - a reply that came after its command timed out, shown under it; %@ is the reply */
+"tools.cli.companion.lateReply" = "늦은 응답 · %@";
+
+/* Location: CompanionCLIExchange.swift - a late reply whose command is no longer on screen; %1$@ is the node, %2$@ the command, %3$@ the reply */
+"tools.cli.companion.lateReplyFrom" = "%1$@의 “%2$@”에 대한 늦은 응답 · %3$@";
+
+/* Location: CompanionCLIExchange.swift - the reply had no text */
+"tools.cli.companion.emptyReply" = "(빈 응답)";
+
+/* Location: CompanionCLIExchange.swift - the typed text can't be sent as a command (the limit is in UTF-8 bytes) */
+"tools.cli.companion.notACommand" = "명령이 아닙니다: 2~63바이트(한글·악센트 문자·이모지는 여러 바이트), 제어 문자 없음, 앞에 xx| 태그 없음";
+
+/* Location: CLIToolViewModel+Sessions.swift - logout from a companion session; %@ is its name */
+"tools.cli.companion.closed" = "%@의 명령줄을 닫았습니다";
+
+/* Location: CompanionCommandPicker.swift - the command list's title, its toolbar button and key */
+"tools.cli.companion.commands" = "명령";
+
+/* Location: CompanionCommandPicker.swift - asked before Restart or Power off; %1$@ is the command's title, %2$@ the command */
+"tools.cli.companion.confirmMessage" = "%1$@ 명령은 “%2$@”을(를) 보냅니다. 상대 기기가 허용하면 다시 시작하거나 꺼집니다.";
+
+/* Location: CompanionCommandPicker.swift - section of the four quick commands */
+"tools.cli.companion.group.quick" = "빠른 명령";
+
+/* Location: CompanionCommandPicker.swift - section of commands that only read */
+"tools.cli.companion.group.read" = "읽기";
+
+/* Location: CompanionCommandPicker.swift - section of commands that change a setting */
+"tools.cli.companion.group.change" = "변경";
+
+/* Location: CompanionCommandPicker.swift - section of Restart and Power off */
+"tools.cli.companion.group.power" = "전원";
+
+/* Location: CompanionCommandPicker.swift - quick command: its Wi-Fi state */
+"tools.cli.companion.quick.wifi" = "Wi-Fi";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "ver" (the firmware's label) */
+"tools.cli.companion.command.version" = "버전";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "board" (the firmware's label) */
+"tools.cli.companion.command.board" = "보드";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get name" (the firmware's label) */
+"tools.cli.companion.command.name" = "이름";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get tz.offset" (the firmware's label) */
+"tools.cli.companion.command.timeZone" = "시간대";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.status" (the firmware's label) */
+"tools.cli.companion.command.wifiState" = "Wi-Fi 상태";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.enabled" (the firmware's label) */
+"tools.cli.companion.command.wifiEnabled" = "Wi-Fi 켜짐?";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.ssid" (the firmware's label) */
+"tools.cli.companion.command.wifiNetwork" = "Wi-Fi 네트워크";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.ip" (the firmware's label) */
+"tools.cli.companion.command.ipAddress" = "IP 주소";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set name" (the firmware's label) */
+"tools.cli.companion.command.rename" = "이름 변경";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set tz.offset" (the firmware's label) */
+"tools.cli.companion.command.setTimeZone" = "시간대";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.enabled 1" (the firmware's label) */
+"tools.cli.companion.command.wifiOn" = "Wi-Fi 켜기";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.enabled 0" (the firmware's label) */
+"tools.cli.companion.command.wifiOff" = "Wi-Fi 끄기";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.ssid" (the firmware's label) */
+"tools.cli.companion.command.setWifiNetwork" = "Wi-Fi 네트워크";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.pwd" (the firmware's label) */
+"tools.cli.companion.command.wifiKey" = "Wi-Fi 키";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set pin" (the firmware's label) */
+"tools.cli.companion.command.bluetoothPIN" = "블루투스 PIN";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "reboot" (the firmware's label) */
+"tools.cli.companion.command.restart" = "다시 시작";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "poweroff" (the firmware's label) */
+"tools.cli.companion.command.powerOff" = "전원 끄기";
+"tools.cli.companion.command.wifiClear" = "Wi-Fi 잊기";
+"tools.cli.companion.command.memory" = "여유 메모리";
+"tools.cli.companion.command.radio" = "라디오 설정";
+"tools.cli.companion.command.txPower" = "송신 출력";
+"tools.cli.companion.command.setRadio" = "라디오 설정 변경";
+"tools.cli.companion.command.setTxPower" = "송신 출력 설정";
+"tools.cli.companion.command.shutdown" = "종료";
+
+// MARK: - Saved Paths
+
+/* Location: SavedPathsViewModel.swift - Error loading saved paths */
+"tools.savedPaths.loadFailed" = "저장된 경로를 불러오지 못했습니다.";
+
+/* Location: SavedPathsViewModel.swift - Error renaming a saved path */
+"tools.savedPaths.renameFailed" = "경로 이름을 변경하지 못했습니다.";
+
+/* Location: SavedPathsViewModel.swift - Error deleting a saved path */
+"tools.savedPaths.deleteFailed" = "경로를 삭제하지 못했습니다.";
+
+// MARK: - App Intents
+
+/* Location: MessageTargetEntity.swift - App Intents entity type name for a send target (a contact DM or a channel broadcast) */
+"intent.entity.target" = "수신자";
+
+/* Location: MessageTargetEntity.swift - App Intents recipient-picker subtitle marking a channel (broadcast) target */
+"intent.entity.channel" = "채널";
+
+/* Location: StatusQueryIntent.swift - App Intents: title of the radio status query intent */
+"intent.status.title" = "무선 기기 상태 확인";
+
+/* Location: CairnAppShortcutsProvider.swift - App Shortcuts: short title for the radio status shortcut */
+"intent.status.shortTitle" = "무선 기기 상태";
+
+/* Location: StatusQueryIntent.swift - App Intents: description of the radio status query intent */
+"intent.status.description" = "연결된 무선 기기의 이름, 연결 상태 및 마지막으로 확인된 배터리 잔량을 알려 줍니다.";
+
+/* Location: StatusQueryIntent.swift - Spoken when the app is still launching and has no state to read yet */
+"intent.status.dialog.notReady" = "Cairn이 아직 시작 중입니다. 잠시 후 다시 시도하십시오.";
+/* Location: StatusQueryIntent.swift - Spoken when connected; %1$@ is the radio name, %2$lld is the cached battery percent */
+"intent.status.dialog.connectedWithBattery" = "%1$@이(가) 연결되어 있습니다. 마지막 측정 기준 배터리는 약 %2$lld%%입니다.";
+
+/* Location: StatusQueryIntent.swift - Spoken when connected but no battery reading is available; %@ is the radio name */
+"intent.status.dialog.connectedNoBattery" = "%@이(가) 연결되어 있습니다. 배터리 측정값이 없습니다.";
+
+/* Location: StatusQueryIntent.swift - Spoken while the radio is connecting; %@ is the radio name */
+"intent.status.dialog.connecting" = "%@에 연결하는 중입니다.";
+
+/* Location: StatusQueryIntent.swift - Spoken when not connected and a last radio name is known; %@ is the radio name */
+"intent.status.dialog.disconnectedNamed" = "%@이(가) 연결되어 있지 않습니다.";
+
+/* Location: StatusQueryIntent.swift - Spoken when not connected and no radio has been connected before */
+"intent.status.dialog.disconnectedUnknown" = "연결된 무선 기기가 없습니다.";
+
+/* Location: StatusQueryIntent.swift - Generic radio name used when no device name is known */
+"intent.status.radioFallbackName" = "내 무선 기기";
+
+/* Location: SendMessageIntent.swift - App Intents: title of the send message intent */
+"intent.send.title" = "메시지 보내기";
+
+/* Location: CairnAppShortcutsProvider.swift - App Shortcuts: short title for the send message shortcut */
+"intent.send.shortTitle" = "메시지 보내기";
+
+/* Location: SendMessageIntent.swift - App Intents: description of the send message intent */
+"intent.send.description" = "무선 기기를 통해 연락처나 채널로 텍스트를 보냅니다.";
+
+/* Location: SendMessageIntent.swift - App Intents: title of the recipient parameter (a contact or a channel) */
+"intent.send.param.target" = "수신자";
+
+/* Location: SendMessageIntent.swift - App Intents: title of the message text parameter */
+"intent.send.param.message" = "메시지";
+
+/* Location: SendMessageIntent.swift - Confirmation prompt shown before sending; %@ is the recipient name */
+"intent.send.confirm" = "이 메시지를 %@에게 보내겠습니까?";
+
+/* Location: SendMessageIntent.swift - Spoken when the app must come to the foreground to send (still connecting or reconnecting) */
+"intent.send.foreground" = "이 메시지 전송을 완료하려면 Cairn을 여십시오.";
+/* Location: SendMessageIntent.swift - App Intents parameter summary shown in the shortcut editor; ${message} and ${target} are framework parameter tokens */
+"Send ${message} to ${target}" = "${target}에게 ${message} 보내기";
+
+// MARK: - Send Advert Intent
+
+/* Location: SendAdvertIntent.swift - App Intents: title of the send advert intent */
+"intent.advert.title" = "애드버트 보내기";
+
+/* Location: CairnAppShortcutsProvider.swift - App Shortcuts: short title for the send advert shortcut */
+"intent.advert.shortTitle" = "애드버트 보내기";
+
+/* Location: SendAdvertIntent.swift - App Intents: description of the send advert intent */
+"intent.advert.description" = "주변 메시 노드가 내 무선 기기를 발견할 수 있도록 자체 애드버트를 브로드캐스트합니다.";
+
+/* Location: SendAdvertIntent.swift - App Intents: title of the advert reach parameter (zero-hop or flood) */
+"intent.advert.param.reach" = "도달 범위";
+
+/* Location: AdvertReach.swift - App Intents: type name for the advert reach enum */
+"intent.advert.reach.type" = "애드버트 도달 범위";
+
+/* Location: AdvertReach.swift - App Intents: zero-hop reach case (direct neighbors only) */
+"intent.advert.reach.zeroHop" = "제로 홉";
+
+/* Location: AdvertReach.swift - App Intents: flood reach case (entire mesh) */
+"intent.advert.reach.flood" = "플러드";
+
+/* Location: SendAdvertIntent.swift - Spoken after a zero-hop advert is sent */
+"intent.advert.dialog.sentZeroHop" = "주변 노드에 애드버트를 보냈습니다.";
+
+/* Location: SendAdvertIntent.swift - Spoken after a flood advert is sent */
+"intent.advert.dialog.sentFlood" = "메시 전체에 애드버트를 보냈습니다.";
+
+/* Location: SendAdvertIntent.swift - App Intents parameter summary shown in the shortcut editor; ${reach} is the framework parameter token */
+"Send a ${reach} advert" = "${reach} 애드버트 보내기";
+
+
+/* Location: NodeDiscoveryView.swift - Purpose: Tab title for the discovered node list */
+"tools.nodeDiscovery.displayMode.list" = "목록";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Tab title for the discovered node map */
+"tools.nodeDiscovery.displayMode.map" = "지도";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Accessibility label for the List/Map picker */
+"tools.nodeDiscovery.displayMode.label" = "보기";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Pill over the map counting discovered nodes without a known location - %d is the count */
+"tools.nodeDiscovery.map.notShown" = "지도에 표시되지 않은 노드 %d개";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Accessibility hint for the not-shown pill */
+"tools.nodeDiscovery.map.notShownHint" = "발견된 모든 노드 목록을 표시합니다";
+
+
+/* Location: MapDiscoveryOverlay.swift - Purpose: Menu item and button that removes discovery results from the map */
+"tools.nodeDiscovery.clearResults" = "결과 지우기";
+
+/* Location: MapDiscoveryOverlay.swift - Purpose: Map pill while a scan runs - %@ is Repeaters or Sensors */
+"tools.nodeDiscovery.map.scanning" = "%@ 검색 중…";
+
+/* Location: MapDiscoveryOverlay.swift - Purpose: Map pill after a scan - %d is how many nodes replied */
+"tools.nodeDiscovery.map.heard" = "%d개 수신됨";
+
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth" = "네트워크 상태";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.summary.repeaters" = "리피터";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.summary.attention" = "확인 필요";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.summary.checkedToday" = "오늘 확인됨";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.section.attention" = "확인 필요";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.section.healthy" = "정상";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.section.noStatus" = "상태 없음";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.noStatusFooter" = "리피터의 텔레메트리 탭을 열어 배터리, 노이즈 플로어, 가동 시간을 기록하십시오. 확인할 때마다 이 대시보드에 추가됩니다.";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.footer" = "상태는 각 리피터에서 실행한 상태 확인과 이 전화가 수신한 광고를 기반으로 합니다. 리피터를 탭하면 전체 기록을 볼 수 있습니다.";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.lowBattery" = "배터리 부족";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.notHeard" = "2일 이상 수신 없음";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.batteryFalling" = "배터리 감소 중";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.highNoise" = "노이즈 높음";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.restarted" = "재시작됨";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.heard" = "수신 %@";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.checked" = "확인 %@";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.noise" = "노이즈 %d dBm";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.noData" = "아직 데이터 없음";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.batteryPercent" = "%d%%";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.empty.title" = "리피터 없음";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.empty.description" = "노드 목록의 리피터가 배터리, 노이즈 플로어, 마지막 수신 시간과 함께 여기에 표시됩니다.";
+
+
+/* Location: ToolsView.swift - Section header in the Tools list */
+"tools.category.network" = "네트워크";
+
+/* Location: ToolsView.swift - Section header in the Tools list */
+"tools.category.routing" = "라우팅";
+
+/* Location: ToolsView.swift - Section header in the Tools list */
+"tools.category.advanced" = "고급";
+
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum" = "스펙트럼";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.notConnected" = "라디오를 연결하면 채널 스펙트럼을 볼 수 있습니다.";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.section.spectrum" = "채널 스펙트럼";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.section.activity" = "최근 5분 활동";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.section.figures" = "채널 수치";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.spectrumFooter" = "MeshCore 라디오는 튜닝된 채널만 측정하므로 음영 처리된 양쪽은 측정되지 않습니다. 노이즈 플로어와 패킷은 측정값이며, 감도와 열잡음은 라디오 설정으로 계산한 값입니다.";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.notMeasured" = "측정 안 됨";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.calibrating" = "라디오가 노이즈 플로어를 보정하는 중…";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.waiting" = "측정값 기다리는 중…";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.waitingForPacket" = "패킷 기다리는 중";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.measuring" = "측정 중…";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.warning" = "경고";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.axis.mhz" = "MHz";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.axis.dbm" = "dBm";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.packet" = "마지막 패킷";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.noise" = "노이즈 플로어";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.sensitivity" = "감도";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.thermal" = "열잡음";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.maxHold" = "최대값 유지";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.channel" = "채널";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.channelCaption" = "%@ kHz · SF%d · CR 4/%d";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.noiseFloor" = "노이즈 플로어";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.noiseValue" = "노이즈 플로어 %d dBm";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.minAvgMax" = "최소 %d · 평균 %d · 최대 %d";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.interference" = "간섭";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.interferenceCaption" = "열잡음 대비 감도 손실 (%@)";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.sensitivity" = "감도";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.effectiveSensitivity" = "현재 노이즈 기준 %@";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.snrLimit" = "SNR %@ 이상 필요";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.lastPacket" = "마지막 패킷";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.lastPacketValue" = "마지막 패킷 %d dBm";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.snrMargin" = "SNR %@ · 한계보다 %@ 높음";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.linkBudget" = "링크 버짓";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.linkBudgetCaption" = "송신 출력 %d dBm 기준";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.channelBusy" = "채널 사용률";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.busyCaption" = "수신 %@ · 송신 %@";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.packets" = "수신 패킷";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.perMinute" = "%@/분";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.crcErrors" = "CRC 오류 %@";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.airtime" = "전송 시간";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.airtimeCaption" = "64바이트 패킷 · %d bps";
+
+/* Location: RxLogView.swift - Overflow menu action exporting the RX log as CSV */
+"tools.rxLog.exportCSV" = "CSV 내보내기";
+
+/* Location: RxLogView.swift - Detail label for the sender's timestamp in a decrypted packet */
+"tools.rxLog.senderTimeLabel" = "보낸 시각:";
+
+/* Location: RxLogView.swift - Detail label for the packet's decryption status */
+"tools.rxLog.decryptionLabel" = "복호화:";
+
+/* Location: ToolSelection.swift - Tool name for signing and verifying messages */
+"tools.signVerify" = "서명 및 검증";
+
+/* Location: SignVerifyView.swift - Segmented control option for signing */
+"tools.signVerify.mode.sign" = "서명";
+
+/* Location: SignVerifyView.swift - Segmented control option for verifying */
+"tools.signVerify.mode.verify" = "검증";
+
+/* Location: SignVerifyView.swift - Section header for the message text */
+"tools.signVerify.message" = "메시지";
+
+/* Location: SignVerifyView.swift - Placeholder for the message text field */
+"tools.signVerify.messagePlaceholder" = "서명하거나 검증할 텍스트";
+
+/* Location: SignVerifyView.swift - Button asking the radio to sign the message */
+"tools.signVerify.signButton" = "라디오로 서명";
+
+/* Location: SignVerifyView.swift - Progress text while the radio signs */
+"tools.signVerify.signing" = "서명 중…";
+
+/* Location: SignVerifyView.swift - Section header for the signature */
+"tools.signVerify.signature" = "서명";
+
+/* Location: SignVerifyView.swift - Section header for this radio's public key */
+"tools.signVerify.publicKey" = "공개 키";
+
+/* Location: SignVerifyView.swift - Button copying a value as hex */
+"tools.signVerify.copyHex" = "Hex 복사";
+
+/* Location: SignVerifyView.swift - Button copying a value as Base64 */
+"tools.signVerify.copyBase64" = "Base64 복사";
+
+/* Location: SignVerifyView.swift - Share the signed message, signature and key */
+"tools.signVerify.share" = "공유";
+
+/* Location: SignVerifyView.swift - Shared text; 1 = message, 2 = signature hex, 3 = public key hex */
+"tools.signVerify.shareText" = "메시지: %1$@\n서명 (Ed25519): %2$@\n공개 키: %3$@";
+
+/* Location: SignVerifyView.swift - Footer explaining how signing works */
+"tools.signVerify.signFooter" = "라디오가 개인 키(Ed25519)로 메시지의 UTF-8 바이트에 서명합니다. 개인 키는 라디오 밖으로 나가지 않습니다.";
+
+/* Location: SignVerifyView.swift - Shown when no radio is connected in Sign mode */
+"tools.signVerify.requiresRadio" = "메시지에 서명하려면 라디오를 연결하세요. 검증은 오프라인에서도 작동합니다.";
+
+/* Location: SignVerifyView.swift - Placeholder for the signature field */
+"tools.signVerify.signaturePlaceholder" = "서명 (hex 또는 Base64)";
+
+/* Location: SignVerifyView.swift - Picker for who signed the message */
+"tools.signVerify.signer" = "서명자";
+
+/* Location: SignVerifyView.swift - Signer picker option to paste a public key */
+"tools.signVerify.manualKey" = "공개 키 입력";
+
+/* Location: SignVerifyView.swift - Signer picker option for the connected radio */
+"tools.signVerify.thisRadio" = "이 라디오";
+
+/* Location: SignVerifyView.swift - Placeholder for a pasted public key */
+"tools.signVerify.keyPlaceholder" = "공개 키 (16진수 64자)";
+
+/* Location: SignVerifyView.swift - Button to verify the signature */
+"tools.signVerify.verifyButton" = "서명 검증";
+
+/* Location: SignVerifyView.swift - Result when the signature verifies */
+"tools.signVerify.valid" = "서명이 유효합니다";
+
+/* Location: SignVerifyView.swift - Result when the signature does not verify */
+"tools.signVerify.invalid" = "서명이 유효하지 않습니다";
+
+/* Location: SignVerifyView.swift - Shown when the signature or key cannot be parsed */
+"tools.signVerify.invalidInput" = "64바이트 서명과 32바이트 공개 키를 입력하세요 (hex 또는 Base64).";
+
+/* Location: SignVerifyView.swift - Footer explaining verification */
+"tools.signVerify.verifyFooter" = "검증은 이 기기에서 Ed25519로 수행되며 라디오 없이도 작동합니다.";
+
+/* Location: SignVerifyView.swift - Error when the message exceeds the radio's limit; %d = max bytes */
+"tools.signVerify.error.tooLarge" = "메시지가 너무 길어 서명할 수 없습니다 (최대 %d바이트).";
+
+/* Location: SignVerifyView.swift - Error when signing fails; %@ = reason */
+"tools.signVerify.error.failed" = "서명 실패: %@";
+
+/* Location: NodeDiscoveryRowView.swift - Button that asks an unnamed node for its name over the radio */
+"tools.nodeDiscovery.requestName" = "이름 요청";
+
+/* Location: NodeDiscoveryRowView.swift - Shown while a node is being asked for its name */
+"tools.nodeDiscovery.requestingName" = "이름 요청 중…";
+
+/* Location: NodeDiscoveryRowView.swift - VoiceOver hint for the Request Name button */
+"tools.nodeDiscovery.requestNameHint" = "무선으로 이 노드에 이름을 요청합니다";
+
+/* Location: NodeDiscoveryView.swift - Footer under scan results explaining where names come from, when the radio can ask nodes for their name */
+"tools.nodeDiscovery.namesFooter" = "스캔 응답에는 노드의 이름이 아니라 키가 담겨 있습니다. 이름은 무전기가 수신한 광고에서 가져오며, 아직 알 수 없는 노드에는 이름을 직접 요청합니다.";
+
+/* Location: NodeDiscoveryScanControl.swift - Info text explaining where names come from, when the radio's firmware is too old to ask nodes for their name */
+"tools.nodeDiscovery.namesFooterNeedsFirmware" = "스캔 응답에는 노드의 이름이 아니라 키가 담겨 있습니다. 이름은 무전기가 수신한 광고에서 가져옵니다. 노드에 이름을 요청하려면 무전기 펌웨어 1.12 이상이 필요합니다.";
+
+/* Location: NodeDiscoveryScanControl.swift - Info text explaining where names come from, while no radio is connected */
+"tools.nodeDiscovery.namesFooterDisconnected" = "스캔 응답에는 노드의 이름이 아니라 키가 담겨 있습니다. 이름은 무전기가 수신한 광고에서 가져옵니다. 알 수 없는 노드에 이름을 요청하려면 무전기를 연결하십시오.";
+
+/* Location: MapDiscoveryOverlay.swift - Title of the sheet listing every node that answered the scan run from the Map tab */
+"tools.nodeDiscovery.map.heardTitle" = "검색 결과";
+/* Location: MapDiscoveryOverlay.swift - Label on a heard node whose position is not known, so it cannot be drawn on the map */
+"tools.nodeDiscovery.map.noLocation" = "알려진 위치 없음";
+
+/* Location: MapDiscoveryOverlay.swift - VoiceOver hint for the scan summary pill on the Map tab */
+"tools.nodeDiscovery.map.listHint" = "응답한 모든 노드를 표시합니다";
+
+/* Location: MapDiscoveryOverlay.swift - Footer in the heard nodes sheet explaining why some nodes are not on the map */
+"tools.nodeDiscovery.map.noLocationFooter" = "무전기가 위치가 포함된 광고를 수신하면 노드가 지도에 표시됩니다.";
+
+/* Location: MapDiscoveryOverlay.swift - Scan summary pill while a scan runs; first placeholder is the node kind (Repeaters), second is how many have answered so far */
+"tools.nodeDiscovery.map.scanningHeard" = "%1$@ 검색 중… %2$d개 수신";
+
+/* Location: SpectrumView.swift - Channel condition when the measured noise floor is close to thermal noise */
+"tools.spectrum.condition.quiet" = "조용한 채널";
+
+/* Location: SpectrumView.swift - Channel condition when noise is moderately above thermal noise */
+"tools.spectrum.condition.some" = "약간의 간섭";
+
+/* Location: SpectrumView.swift - Channel condition when noise is far above thermal noise */
+"tools.spectrum.condition.heavy" = "심한 간섭";
+
+/* Location: SpectrumChannelChart.swift - Signal zone: 10 dB or more above the decode limit */
+"tools.spectrum.zone.strong" = "강함";
+
+/* Location: SpectrumChannelChart.swift - Signal zone: decodable but less than 10 dB above the decode limit */
+"tools.spectrum.zone.weak" = "약함";
+
+/* Location: SpectrumChannelChart.swift - Signal zone: too weak for the radio to decode */
+"tools.spectrum.zone.noDecode" = "디코딩 한계 미만";
+
+/* Location: SpectrumChannelChart.swift - Legend entry for the weakest signal the radio can decode with the current noise */
+"tools.spectrum.legend.decodeLimit" = "디코딩 한계";
+
+/* Location: SpectrumActivityChart.swift - Legend entry for received packets plotted over time */
+"tools.spectrum.legend.packets" = "패킷";
+
+/* Location: SpectrumView.swift - Footer under the channel spectrum explaining the colored zones and what is measured */
+"tools.spectrum.zonesFooter" = "색상은 현재 잡음에서 무전기가 디코딩할 수 있는 가장 약한 신호보다 얼마나 높은지를 나타냅니다. 강함은 그 한계보다 10 dB 이상 높은 경우입니다. MeshCore 무전기는 설정된 채널만 측정하므로 음영 처리된 양쪽은 스캔되지 않습니다.";
+
+/* Location: SpectrumFormat.swift - A power level with its unit; placeholder is the number */
+"tools.spectrum.value.dbm" = "%@ dBm";
+
+/* Location: SpectrumFormat.swift - A ratio in decibels with its unit; placeholder is the number */
+"tools.spectrum.value.db" = "%@ dB";
+
+/* Location: SpectrumFormat.swift - A frequency in megahertz with its unit; placeholder is the number */
+"tools.spectrum.value.mhz" = "%@ MHz";
+
+/* Location: SpectrumFormat.swift - A bandwidth in kilohertz with its unit; placeholder is the number */
+"tools.spectrum.value.khz" = "%@ kHz";
+
+/* Location: SpectrumFormat.swift - A duration in milliseconds with its unit; placeholder is the number */
+"tools.spectrum.value.ms" = "%@ ms";
+
+/* Location: SpectrumView.swift - LoRa spreading factor chip, e.g. SF7 */
+"tools.spectrum.header.spreadingFactor" = "SF%d";
+
+/* Location: SpectrumView.swift - LoRa coding rate chip, e.g. CR 4/5 */
+"tools.spectrum.header.codingRate" = "CR 4/%d";
+
+/* Location: SpectrumActivityChart.swift - VoiceOver summary of the activity chart; first number is noise readings, second is packets */
+"tools.spectrum.activity.accessibility" = "최근 5분 동안 잡음 측정 %1$d회, 패킷 %2$d개";
+
+/* Location: MapDiscoveryOverlay.swift - Label on a heard node that the user has hidden from the Map tab, so the scan does not draw it */
+"tools.nodeDiscovery.map.hidden" = "지도에서 숨김";
+
+/* Location: SpectrumFigures.swift - Interference tile caption when interference is high enough to warn; placeholder is the thermal noise level, e.g. -120 dBm */
+"tools.spectrum.figure.interferenceWarningCaption" = "도달 거리 감소 · 열잡음 %@";
+
+/* Location: SpectrumFigures.swift - Last packet tile caption when the packet was barely decodable; first placeholder is SNR, second is how far above the decode limit, both in dB */
+"tools.spectrum.figure.lowMarginCaption" = "SNR %@ · 한계보다 %@만 높음, 손실 직전";
+
+/* Location: ResultsCardView.swift - Title of the tile showing the total path loss in dB */
+"tools.lineOfSight.totalPathLoss" = "총 경로 손실";
+
+/* Tools hub - short line under the Network Health tool card */
+"tools.subtitle.networkHealth" = "리피터 상태";
+
+/* Tools hub - short line under the Discover Nodes tool card */
+"tools.subtitle.nodeDiscovery" = "주변 노드에 응답 요청";
+/* Tools hub - short line under the Spectrum tool card */
+"tools.subtitle.spectrum" = "채널 활동";
+
+/* Tools hub - short line under the Noise Floor tool card */
+"tools.subtitle.noiseFloor" = "배경 잡음";
+
+/* Tools hub - short line under the Trace Path tool card */
+"tools.subtitle.tracePath" = "경로 테스트";
+
+/* Tools hub - short line under the Line of Sight tool card */
+"tools.subtitle.lineOfSight" = "지형 간격";
+
+/* Tools hub - short line under the RX Log tool card */
+"tools.subtitle.rxLog" = "수신된 패킷";
+
+/* Tools hub - short line under the CLI (command line) tool card */
+"tools.subtitle.cli" = "무선 명령";
+
+/* Tools hub - short line under the Sign & Verify tool card */
+"tools.subtitle.signVerify" = "서명된 메시지";
+
+/* Location: NodeDiscoveryView.swift - Detail line on the card linking to the Nodes tab's Heard Nodes page (nodes heard passively from adverts) */
+"tools.nodeDiscovery.heardNodesDetail" = "애드버트로 수신된 노드";
+
+/* Location: SpectrumFigures.swift - Noise floor trend over the session: getting louder */
+"tools.spectrum.trend.rising" = "상승";
+
+/* Location: SpectrumFigures.swift - Noise floor trend over the session: getting quieter */
+"tools.spectrum.trend.falling" = "하강";
+
+/* Location: SpectrumFigures.swift - Noise floor trend over the session: unchanged */
+"tools.spectrum.trend.steady" = "안정";
+
+/* Location: SpectrumFigures.swift - Noise floor tile caption: %1$@ trend word, %2$@ min/avg/max line */
+"tools.spectrum.figure.noiseCaption" = "%1$@ · %2$@";
+
+/* Spectrum tab: Chart time axis label for the present moment */
+"tools.spectrum.axis.now" = "지금";
+
+/* Spectrum tab: Audio graph axis title: how long ago a reading was taken */
+"tools.spectrum.axis.secondsAgo" = "경과 시간";
+
+/* Spectrum tab: Accessibility label of the Spectrum channel chart */
+"tools.spectrum.chart.label" = "채널 활동";
+
+/* Spectrum tab: Accessibility value of the Spectrum channel chart. 1: noise readings, 2: packets, 3: window such as '1 minute' */
+"tools.spectrum.chart.summary" = "최근 %3$@ 동안 노이즈 측정 %1$lld개, 패킷 %2$lld개";
+
+/* Spectrum tab: Packet size in bytes, short. Example: 38 B */
+"tools.spectrum.detail.bytes" = "%lld B";
+
+/* Spectrum tab: Button that opens the full RX log detail for the selected packet */
+"tools.spectrum.detail.open" = "패킷 세부 정보";
+
+/* Spectrum tab: Signal-to-noise ratio with value. Example: SNR 6.25 */
+"tools.spectrum.detail.snr" = "SNR %@";
+
+/* Spectrum tab: Title of the packet detail sheet opened from Spectrum */
+"tools.spectrum.detail.title" = "패킷";
+
+/* Spectrum tab: Spectrum header: estimated time on air for one packet. 1: milliseconds, 2: payload bytes */
+"tools.spectrum.header.airtime" = "%2$lld바이트 패킷당 ~%1$@ms";
+
+/* Spectrum tab: Footnote under the noise floor history: readings come from this session. Argument is a clock time */
+"tools.spectrum.history.caption" = "이번 세션, %@부터";
+
+/* Spectrum tab: Range of the noise floor history. Example: -113…-108 dBm */
+"tools.spectrum.history.range" = "%1$@…%2$@ dBm";
+
+/* Spectrum tab: Title of the noise floor history card */
+"tools.spectrum.history.title" = "노이즈 플로어 기록";
+
+/* Spectrum tab: Packet type: acknowledgement */
+"tools.spectrum.kind.ack" = "확인 응답";
+
+/* Spectrum tab: Packet type: node advert */
+"tools.spectrum.kind.advert" = "광고";
+
+/* Spectrum tab: Packet type: anonymous request */
+"tools.spectrum.kind.anonRequest" = "익명 요청";
+
+/* Spectrum tab: Packet type: control */
+"tools.spectrum.kind.control" = "제어";
+
+/* Spectrum tab: Packet type: channel data */
+"tools.spectrum.kind.groupData" = "채널 데이터";
+
+/* Spectrum tab: Packet type: channel message */
+"tools.spectrum.kind.groupText" = "채널 메시지";
+
+/* Spectrum tab: Packet type: direct message */
+"tools.spectrum.kind.message" = "개인 메시지";
+
+/* Spectrum tab: Packet type: multipart */
+"tools.spectrum.kind.multipart" = "다중 파트";
+
+/* Spectrum tab: Packet type: path return */
+"tools.spectrum.kind.path" = "경로";
+
+/* Spectrum tab: Packet type: raw custom data */
+"tools.spectrum.kind.raw" = "원시";
+
+/* Spectrum tab: Packet type: request */
+"tools.spectrum.kind.request" = "요청";
+
+/* Spectrum tab: Packet type: response */
+"tools.spectrum.kind.response" = "응답";
+
+/* Spectrum tab: Packet type: trace */
+"tools.spectrum.kind.trace" = "추적";
+
+/* Spectrum tab: Packet type: unknown */
+"tools.spectrum.kind.unknown" = "알 수 없음";
+
+/* Spectrum tab: Chart legend: the noise floor's lowest to highest reading per column */
+"tools.spectrum.legend.floorRange" = "노이즈 범위";
+
+/* Spectrum tab: Chart legend: the dotted line at the strongest packet in the window */
+"tools.spectrum.legend.peakPacket" = "최대 패킷";
+
+/* Spectrum tab: Chart legend after the colored "+6 +20 +35": how far a packet stood above the noise floor */
+"tools.spectrum.legend.levels" = "노이즈 대비 dB";
+
+/* Spectrum tab: Airtime tile caption: share receiving and transmitting */
+"tools.spectrum.meter.airCaption" = "수신 %1$@ · 송신 %2$@";
+
+/* Spectrum tab: Airtime tile status past 30 % airtime (not "busy": that word is the radio's time-above-floor reading) */
+"tools.spectrum.meter.heavyUse" = "사용 많음";
+
+/* Spectrum tab: Floor tile caption while the radio calibrates its noise floor */
+"tools.spectrum.meter.calibrating" = "보정 중";
+
+/* Spectrum tab: Airtime tile status past 60 % airtime */
+"tools.spectrum.meter.veryHeavyUse" = "사용 매우 많음";
+
+/* Spectrum tab: Meter tile title: noise floor */
+"tools.spectrum.meter.floor" = "노이즈";
+
+/* Spectrum tab: Title of the tile with the last packet's strength and margin over the floor (uppercase, a quarter of a phone-width card) */
+"tools.spectrum.meter.lastPacket" = "마지막 패킷";
+
+/* Spectrum tab: Meter tile title: how far the last packet is above the noise floor */
+"tools.spectrum.meter.margin" = "여유";
+
+/* Spectrum tab: Margin tile caption: the packet stands well above the floor */
+"tools.spectrum.meter.marginClear" = "노이즈보다 충분히 높음";
+
+/* Spectrum tab: Margin tile caption: the packet is close to the floor */
+"tools.spectrum.meter.marginLow" = "노이즈에 가까움";
+
+/* Spectrum tab: Meter tile title: the latest signal strength */
+"tools.spectrum.meter.now" = "현재";
+
+/* Spectrum tab: Now tile caption. Argument is a short age like 12s */
+"tools.spectrum.meter.nowCaption" = "%@ 전 수신";
+
+/* Spectrum tab: Meter tile title: packets heard per minute */
+"tools.spectrum.meter.packets" = "패킷";
+
+/* Spectrum tab: Meter tile title: strongest packet */
+"tools.spectrum.meter.peak" = "최대";
+
+/* Spectrum tab: Peak tile caption. Argument is a window like '1 minute' */
+"tools.spectrum.meter.peakCaption" = "최근 %@ 중 가장 강함";
+
+/* Spectrum tab: Packets tile line: the strongest packet heard in the window. %@ is a level like -87 dBm */
+"tools.spectrum.meter.peakPacket" = "최대 패킷 %@";
+
+/* Spectrum tab: Last packet tile caption: the reading is the radio's own last-packet RSSI, not one from the RX log */
+"tools.spectrum.meter.fromRadio" = "라디오 측정값";
+
+/* Spectrum tab: Packet sender line: a channel known only by its hash */
+"tools.spectrum.party.channel" = "채널 %@";
+
+/* Spectrum tab: Packet sender line. Argument is a name or key */
+"tools.spectrum.party.from" = "보낸 사람 %@";
+
+/* Spectrum tab: Packet sender and recipient line */
+"tools.spectrum.party.fromTo" = "%1$@ → %2$@";
+
+/* Spectrum tab: Packet sender line when the packet type carries no addresses */
+"tools.spectrum.party.none" = "이 패킷 유형에는 주소가 없습니다";
+
+/* Spectrum tab: The last relay a flood packet came through */
+"tools.spectrum.party.via" = "%@ 경유";
+
+/* Spectrum tab: Packet route: direct with a route of N hops ahead */
+"tools.spectrum.route.directHops" = "직접 %lld";
+
+/* Spectrum tab: Packet route: flooded, N hops so far */
+"tools.spectrum.route.flood" = "플러드 %lld";
+
+/* Spectrum tab: Traffic table column: how long ago */
+"tools.spectrum.traffic.age" = "경과";
+
+/* Spectrum tab: Traffic list when no packet has been heard */
+"tools.spectrum.traffic.empty" = "아직 트래픽 없음";
+
+/* Spectrum tab: Traffic table column: route */
+"tools.spectrum.traffic.route" = "경로";
+
+/* Spectrum tab: Traffic table column: received signal strength */
+"tools.spectrum.traffic.rssi" = "RSSI";
+
+/* Spectrum tab: Link from the traffic list to the RX Log tool */
+"tools.spectrum.traffic.seeAll" = "모두 보기";
+
+/* Spectrum tab: Accessibility hint of the See All link */
+"tools.spectrum.traffic.seeAllHint" = "RX 로그를 엽니다";
+
+/* Spectrum tab: Traffic table column: signal-to-noise ratio */
+"tools.spectrum.traffic.snr" = "SNR";
+
+/* Spectrum tab: Title of the traffic list on the Spectrum tab */
+"tools.spectrum.traffic.title" = "트래픽";
+
+/* Spectrum tab: Traffic table column: packet type */
+"tools.spectrum.traffic.type" = "유형";
+
+/* Spectrum tab: Spectrum header button that sends an advert (opens zero-hop / flood choice) */
+"tools.spectrum.advert" = "광고";
+
+/* Spectrum tab: Footnote under the Spectrum channel chart */
+"tools.spectrum.chartFooter" = "노이즈 플로어는 라디오 자체 평균값으로 5초마다 읽습니다. 각 패킷은 도착한 신호 세기로 표시됩니다. 패킷을 탭하면 세부 정보를 볼 수 있습니다.";
+/* Spectrum tab: Footnote when noise readings don't cover the whole window. 1: covered span, 2: window */
+"tools.spectrum.coverage" = "노이즈 측정은 최근 %2$@ 중 %1$@만 포함합니다. 스펙트럼이 열려 있을 때만 측정합니다. 패킷은 RX 로그에서 가져옵니다.";
+
+/* Spectrum tab: Accessibility label of the Spectrum chart's time window picker */
+"tools.spectrum.window" = "시간 범위";
+
+/* Location: NodeDiscoveryPanel.swift - Sort option: nearest nodes first */
+"tools.nodeDiscovery.sortDistance" = "거리";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge on a scan result that is not a contact yet; also the New filter chip */
+"tools.nodeDiscovery.badge.new" = "새 노드";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge on a scan result that is already a contact */
+"tools.nodeDiscovery.badge.contact" = "연락처";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line before any scan */
+"tools.nodeDiscovery.status.idle" = "직접 범위 안의 노드에 응답을 요청합니다";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while listening; %d is how many nodes have replied so far */
+"tools.nodeDiscovery.status.listening" = "수신 중… %d개 응답";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line after a scan; %d is how many nodes replied */
+"tools.nodeDiscovery.status.replied" = "%d개 응답";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line when a scan got no answer */
+"tools.nodeDiscovery.status.noReplies" = "응답 없음";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button after a scan has run */
+"tools.nodeDiscovery.scanAgain" = "다시 스캔";
+
+/* Location: NodeDiscoveryScanControl.swift - Button beside the scan button that scans again and again (whenever the shared scan budget allows, also after the screen is left) until stopped; "Wardrive" is the feature's name */
+"tools.nodeDiscovery.wardriveButton" = "Wardrive";
+
+/* Location: NodeDiscoveryScanControl.swift - Button that stops Wardrive, the repeated scans */
+"tools.nodeDiscovery.wardriveStop" = "Wardrive 중지";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the Wardrive button */
+"tools.nodeDiscovery.wardriveHint" = "주변 리피터가 허용하는 만큼 자주 다시 스캔하고 들린 노드를 모두 유지합니다";
+
+/* Location: NodeDiscoveryScanControl.swift - Paragraph in the scan card's info popover explaining Wardrive, its pace and that it keeps running after the screen is left */
+"tools.nodeDiscovery.wardriveInfo" = "Wardrive는 공유 스캔 한도가 허용할 때마다, 2분마다 최대 두 번 다시 스캔하고, 들린 노드를 최신 신호와 함께 모두 유지합니다. 리피터는 주변의 모든 사용자를 합쳐 2분마다 최대 4번의 스캔에만 응답하므로 다른 사용자가 스캔하는 동안 Wardrive는 더 오래 기다립니다. 이 화면을 벗어나도 중지하거나 라디오 연결이 끊길 때까지 계속 실행되며, 이 페이지가 열려 있는 동안 화면이 켜진 상태로 유지됩니다.";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while Wardrive runs; %d is how many nodes it has heard in all */
+"tools.nodeDiscovery.status.wardrive" = "Wardrive · %d개 들림";
+
+/* Location: NodeDiscoveryScanControl.swift - Second scan card line while a Wardrive scan listens; %d is which scan this is (1, 2, 3...) */
+"tools.nodeDiscovery.status.wardriveListening" = "스캔 %d · 수신 중…";
+
+/* Location: NodeDiscoveryScanControl.swift - Second scan card line between Wardrive scans; %d is the scan that just finished */
+"tools.nodeDiscovery.status.wardriveWaiting" = "스캔 %d 완료";
+
+/* Location: NodeDiscoveryScanControl.swift - Title of the menu choosing which kind of node the scan asks (Repeaters or Sensors) */
+"tools.nodeDiscovery.askFor" = "찾을 대상";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the scan kind menu */
+"tools.nodeDiscovery.askForHint" = "스캔이 응답을 요청할 노드 종류를 선택합니다";
+
+/* Location: NodeDiscoveryScanControl.swift - Info popover explaining the scan */
+"tools.nodeDiscovery.scanInfo" = "스캔은 내 라디오를 직접 듣는 노드에 응답을 요청합니다. 응답은 중계되지 않으므로 이웃 노드만 표시됩니다. ↓는 내가 노드를 듣는 품질, ↑는 노드가 나를 듣는 품질입니다.";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile title: how many nodes replied */
+"tools.nodeDiscovery.summary.replied" = "응답";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile caption; %d is how many repliers are not contacts yet */
+"tools.nodeDiscovery.summary.newCaption" = "새 노드 %d개";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile title: the reply heard with the highest SNR */
+"tools.nodeDiscovery.summary.bestSignal" = "최고 신호";
+
+/* Location: NodeDiscoveryActivity.swift - Purpose: What the live strip on Scan for Nodes counts from */
+"tools.nodeDiscovery.activity.sinceScan" = "이번 스캔 이후";
+"tools.nodeDiscovery.activity.recent" = "최근 10분";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile title: the farthest replier with a known position */
+"tools.nodeDiscovery.summary.farthest" = "가장 먼 노드";
+
+/* Location: NodeDiscoveryResultCard.swift - Signal row label: how well this radio hears the node (↓) */
+"tools.nodeDiscovery.youHearThem" = "내가 듣는 신호";
+
+/* Location: NodeDiscoveryResultCard.swift - Signal row label: how well the node hears this radio (↑) */
+"tools.nodeDiscovery.theyHearYou" = "노드가 듣는 신호";
+
+/* Location: NodeDiscoveryResultCard.swift - VoiceOver hint of a scan result card */
+"tools.nodeDiscovery.cardHint" = "지도에 표시하고 작업을 보여 줍니다";
+
+/* Location: NodeDiscoveryMapView.swift - Button that expands the scan map to the whole screen */
+"tools.nodeDiscovery.map.fullScreen" = "지도 전체 화면";
+
+/* Location: NodeDiscoveryMapView.swift - Button that shrinks the full-screen scan map back beside the results */
+"tools.nodeDiscovery.map.exitFullScreen" = "전체 화면 종료";
+
+/* Location: NodeDiscoveryCompactBar.swift - Button in the full-screen map's bottom bar that brings the results list back */
+"tools.nodeDiscovery.map.showResults" = "결과 보기";
+
+/* Location: NodeDiscoveryCompactBar.swift - Button beside the node picked on the full-screen map; returns to the list with its card open */
+"tools.nodeDiscovery.map.openResult" = "열기";
+
+/* Location: NodeDiscoveryCompactBar.swift - VoiceOver hint of the Open button */
+"tools.nodeDiscovery.map.openResultHint" = "이 노드의 카드를 연 상태로 결과를 표시합니다";
+
+/* Location: SpectrumTabSettingsSheet.swift - Info popover for the Channel section of the Spectrum tab's settings sheet, above the link to the radio settings */
+"tools.spectrum.settings.channelInfo" = "스펙트럼은 라디오가 튜닝된 채널만 읽습니다. 주파수, 대역폭 또는 확산 계수는 무선에서 변경하세요. 차트의 감도와 열잡음은 이 설정으로 계산됩니다.";
+
+/* Location: HomeView.swift - Home Tools: title of the full-width card that sends this radio's advert */
+"tools.advert" = "광고 보내기";
+
+/* Location: HomeView.swift - Home Tools: line under Send Advert saying what it does */
+"tools.subtitle.advert" = "다른 노드가 나를 찾도록";
+
+/* Location: NodeDiscoveryView.swift - VoiceOver label of the grabber that resizes the map against the scan results */
+"tools.nodeDiscovery.map.resize" = "지도 크기";
+
+/* Location: HomeView.swift - Title of the confirmation before sending a flood advert */
+"tools.advert.floodConfirm.title" = "광고를 전체 전파할까요?";
+
+/* Location: HomeView.swift - Explanation in the confirmation before sending a flood advert */
+"tools.advert.floodConfirm.message" = "모든 리피터가 전체 전파 광고를 메시 전체로 전달하며 모두의 송신 시간을 사용합니다. 이름이나 위치가 바뀌었을 때 보내세요. 제로홉 광고는 주변 노드에 도달합니다.";
+
+/* Location: HomeView.swift - Confirm button that sends the flood advert */
+"tools.advert.floodConfirm.send" = "전체 전파";
+
+/* Location: SpectrumView.swift - VoiceOver hint on the Spectrum header card, which opens Radio settings */
+"tools.spectrum.hint.radio" = "라디오 설정을 엽니다";
+
+/* Location: SpectrumView.swift - VoiceOver hint on the Now card, which opens the latest packet */
+"tools.spectrum.hint.latestPacket" = "가장 최근 패킷의 세부 정보를 표시합니다";
+
+/* Location: SpectrumTabSettingsSheet.swift - Picker card title: the chart's time window Spectrum shows by default */
+"tools.spectrum.settings.defaultWindow" = "기본 시간 범위";
+
+/* Location: SpectrumTabSettingsSheet.swift - Purpose: How the Spectrum tab draws its channel: the modern large spectrum, or as the radio's own screen does */
+"tools.spectrum.settings.chartStyle" = "차트 스타일";
+"tools.spectrum.settings.styleModern" = "모던";
+"tools.spectrum.settings.styleRadioScreen" = "라디오 화면";
+"tools.spectrum.settings.styleAnalyzer" = "분석기";
+"tools.spectrum.settings.styleWaterfall" = "워터폴";
+"tools.spectrum.settings.styleLineChart" = "선 그래프";
+
+/* Location: SpectrumTabSettingsSheet.swift - Picker card title: how often the radio's noise floor and airtime are read */
+"tools.spectrum.settings.updateRate" = "업데이트 빈도";
+
+/* Location: SpectrumModel.swift - Update rate option: readings every 5 seconds */
+"tools.spectrum.settings.rate.normal" = "보통";
+
+/* Location: SpectrumModel.swift - Update rate option: readings every 2 seconds */
+"tools.spectrum.settings.rate.live" = "실시간";
+
+/* Location: SpectrumTabSettingsSheet.swift - Picker card title: how many packets the traffic table lists */
+"tools.spectrum.settings.trafficRows" = "트래픽 행 수";
+
+/* Location: SpectrumTabSettingsSheet.swift - Info popover for the Channel section: default window and update rate, with the battery cost */
+"tools.spectrum.settings.channelOptionsInfo" = "기본 시간 범위는 차트가 처음 보여 주는 시간 범위입니다. 페이지에서 언제든 바꿀 수 있습니다. 업데이트 빈도는 라디오의 노이즈 플로어와 전송 시간을 읽는 간격입니다. 실시간은 2초마다 읽어 라디오와 블루투스 연결을 보통보다 2.5배 자주 깨우므로 양쪽 모두 배터리를 더 사용합니다. 측정은 스펙트럼이 화면에 있고 앱이 활성 상태일 때만 이루어집니다. 패킷은 어느 빈도에서든 수신되는 즉시 표시됩니다.";
+
+/* Location: SpectrumView.swift - Channel chart info popover; %@ is the reading interval, e.g. '5 seconds' */
+"tools.spectrum.chartFooterRate" = "노이즈 플로어는 라디오 자체의 평균값으로 %@마다 읽습니다. 각 패킷은 수신된 세기로 그려집니다. 패킷을 탭하면 세부 정보가 표시됩니다.";
+
+/* Location: SpectrumView.swift - VoiceOver hint on the Floor reading, which opens the noise floor history */
+"tools.spectrum.hint.floorHistory" = "노이즈 플로어 기록을 표시합니다";
+
+/* Location: SpectrumView.swift - Short uppercase caption of the airtime column in the Spectrum metric strip; must fit a quarter of a phone-width card */
+"tools.spectrum.meter.air" = "전송";
+
+/* Location: SpectrumView.swift - Compact airtime of one 40-byte packet in the Spectrum header strip; %@ is milliseconds. The full sentence is read to VoiceOver */
+"tools.spectrum.header.airtimeShort" = "패킷당 ~%@ms";
+
+// MARK: - Traffic
+
+/* Home and Traffic page: Title of the Traffic page (the packets this radio hears) and its Home card */
+"tools.traffic.title" = "트래픽";
+
+/* Home: Detail line under the Traffic card */
+"tools.traffic.subtitle" = "목록 및 실시간 지도";
+
+/* Traffic map: Shown in the ticker before any packet has been drawn */
+"tools.traffic.map.listening" = "패킷 수신 대기 중";
+
+/* Traffic map: Status chip count of packets placed on the map; %lld is the count */
+"tools.traffic.map.placed" = "%lld개 표시됨";
+
+/* Traffic map: Button that replays the latest packets' routes */
+"tools.traffic.map.replay" = "트래픽 다시 보기";
+
+/* Traffic map: Chip over the map while a replay retraces the latest packets' routes */
+"tools.traffic.map.replaying" = "재생 중";
+
+/* Traffic map: Button that frames all traffic on the map */
+"tools.traffic.map.fit" = "지역 보기";
+
+/* Traffic map: Title when no node can be placed */
+"tools.traffic.map.empty.title" = "아직 표시할 항목 없음";
+
+/* Traffic map: Ticker note for hops the packet passed through that have no location to draw, and the status chip's count of nodes heard lately that the map can't place (a tap lists them); %lld is the count */
+"tools.traffic.map.unplaced" = "%lld개 지도에 없음";
+
+/* Traffic map: Title of the list of nodes packets named that the map can't place (no position shared, or known only by name) */
+"tools.traffic.map.offMap.title" = "지도에 없음";
+
+/* Traffic map: Ticker line naming the nodes the current packet names that the map can't place; %@ is a list of node names, e.g. "Claremont, Alex" */
+"tools.traffic.map.offMap.flight" = "지도에 없음: %@";
+
+/* Traffic map: Not on Map list, why a node isn't drawn: a channel message's sender, known only by the name it typed */
+"tools.traffic.map.offMap.reason.nameOnly" = "채널 메시지에서 이름만 확인됨, 키 알 수 없음";
+
+/* Traffic map: Not on Map list, why a node isn't drawn: it has a position, but the route of the packet that named it couldn't be drawn (this radio has no position, or the route went another way) */
+"tools.traffic.map.offMap.reason.notDrawn" = "위치는 있으나 패킷 경로를 그릴 수 없음";
+
+/* Traffic map: Accessibility hint for the status chip's not-on-map count, which opens the Not on Map list */
+"tools.traffic.map.offMap.hint" = "지도에 표시할 수 없는 수신 노드 목록을 표시합니다";
+
+/* Traffic map: a node's callout and the Not on Map list, for a node guessed from a short hash other nodes share; %lld is how many known nodes share it */
+"tools.traffic.map.possibleMatch" = "일치 가능성 있음: 노드 %lld개가 이 해시를 사용합니다";
+
+/* Traffic map: Accessibility label of the status chip's mark shown while the route filter leaves packets off the map */
+"tools.traffic.map.filtered" = "경로 필터 켜짐";
+
+/* Traffic map: control that also pins the nodes this radio heard on its channel that are quiet now (faded) */
+"tools.traffic.map.showQuietNodes" = "비활성 노드 보기";
+
+/* Traffic map: the same control while the quiet nodes are shown; back to the relays heard lately */
+"tools.traffic.map.hideQuietNodes" = "비활성 노드 숨기기";
+
+/* Traffic map: ⋯ menu picker title: which nodes the map pins besides the routes' */
+"tools.traffic.map.nodesOnMap" = "지도에 표시할 노드";
+
+/* Traffic map: Nodes on Map choice: only the scan's own neighbours and the routes' nodes */
+"tools.traffic.map.nodes.scan" = "스캔";
+
+/* Traffic map: Nodes on Map choice: every heard node with a position */
+"tools.traffic.map.nodes.heard" = "수신됨";
+
+/* Traffic map: Nodes on Map choice: every saved contact with a position */
+"tools.traffic.map.nodes.contacts" = "연락처";
+
+/* Traffic map: Nodes on Map choice: everything, the channel's quiet nodes included */
+"tools.traffic.map.nodes.all" = "전체";
+
+/* Traffic map: Description when no node can be placed: only nodes this radio heard itself are drawn */
+"tools.traffic.map.empty.observedDescription" = "이 무전기가 현재 채널에서 수신한 노드는 애드버트가 도착하면 여기에 표시됩니다. 각 패킷의 경로는 도착할 때 홉별로 그려집니다.";
+
+// MARK: - Traffic Node Callout
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.packets" = "30분간 패킷 %lld개";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.last" = "마지막 %@";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.links" = "가장 많이 쓰인 링크";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.quiet" = "최근 30분간 트래픽 없음";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.thisRadio" = "이 무전기";
+
+/* Traffic map: a tapped link's callout; %@ is the distance between its two ends, e.g. "4.2 km" */
+"tools.traffic.link.distance" = "%@ 떨어짐";
+
+/* Traffic map: a tapped link's callout, for the leg into this radio; %@ is the signal, e.g. "7.5 dB" */
+"tools.traffic.link.heard" = "여기서 SNR %@로 수신";
+
+/* Traffic map: a tapped link's callout, the SNR the last trace across it measured at a repeater's end; %@ is the signal, e.g. "7.5 dB" */
+"tools.traffic.link.traced" = "마지막 트레이스: SNR %@";
+
+/* Traffic map and RX log: a relay in a packet's path that no node heard on this channel has; %@ is its hash, e.g. "7F" */
+"tools.traffic.hop.unknown" = "알 수 없는 릴레이 %@";
+
+/* Traffic map and RX log detail: under an unknown relay, a saved or discovered node whose key starts with the same hash but that this radio never heard on its channel, so it isn't taken for it; %@ is that node's name */
+"tools.traffic.hop.notHeardHint" = "이 채널에서 수신되지 않음: %@와(과) 접두사가 같음";
+
+/* Traffic map and RX log detail: under an unknown relay, a node with the same hash that this radio heard on its channel, but too long ago to count; %1$@ is how long ago, e.g. "12d", %2$@ is its name */
+"tools.traffic.hop.staleHint" = "이 채널에서 %1$@ 전에 마지막으로 수신됨: %2$@";
+
+/* RX log detail: the key an anonymous request (a login) carries, of a node this radio never heard on its channel; %@ is the name a saved node with that key has */
+"tools.traffic.hop.claimsToBe" = "%@(이)라고 주장함(이 채널에서 수신되지 않음)";
+
+/* Traffic map and RX log detail: why a node is named: this radio last received a packet straight from it; %@ is how long ago, e.g. "3 min. ago" */
+"tools.traffic.node.heardDirectly" = "직접 수신 %@";
+
+/* Traffic map and RX log detail: why a node is named: its packets reached this radio through other relays; %1$lld is the fewest relays, %2$@ is how long ago, e.g. "2 days ago" */
+"tools.traffic.node.heardRelayed" = "%1$lld홉을 거쳐 수신 %2$@";
+
+/* Traffic map: Not on Map list, why a node isn't drawn: this radio never received a position from the node itself */
+"tools.traffic.node.positionNotHeard" = "위치 수신 안 됨";
+
+/* RX log and Traffic map: an advert whose signature doesn't hold, so the key it carries is only a claim */
+"tools.traffic.node.unverifiedAdvert" = "확인되지 않은 애드버트";
+
+/* RX log detail and Traffic map ticker: the node that transmitted the frame this radio received; %@ is its name or hash */
+"tools.traffic.link.heardFrom" = "%@에서 수신";
+
+/* Traffic map ticker and RX log detail: the node that transmitted the frame and the signal it was received at; %1$@ is its name or hash, %2$@ the signal, e.g. "6.5 dB" */
+"tools.traffic.link.heardFromSignal" = "%1$@에서 수신 · %2$@";
+
+/* RX log detail: the relays the packet's path names, oldest first: what the packet claims, not what this radio heard */
+"tools.traffic.link.claimed" = "패킷이 주장하는 경로";
+
+/* RX log detail and Traffic map: a repeater passed on a packet this radio sent, so it heard this radio */
+"tools.traffic.link.heardYou" = "내 패킷을 중계함";
+
+/* RX log detail and Traffic map: a link between two placed nodes far longer than LoRa usually reaches; nothing is renamed because of it */
+"tools.traffic.link.suspicious" = "비정상적으로 긴 링크";
+
+/* RX log detail and Traffic map ticker: a packet this radio was asked to transmit */
+"tools.traffic.sent.byRadio" = "이 무전기에서 전송함";
+
+/* RX log detail and Traffic map ticker: the radio's answer to a send; %@ is how it went out, "flood" or "direct" */
+"tools.traffic.sent.accepted" = "무전기가 수락함 · %@";
+
+/* Traffic map and RX log: a send that went out as a flood, inside "Radio accepted · %@" */
+"tools.traffic.sent.routeFlood" = "플러드";
+
+/* Traffic map and RX log: a send that went out direct, inside "Radio accepted · %@" */
+"tools.traffic.sent.routeDirect" = "직접";
+
+/* Traffic map ticker and RX log detail: the radio refused the command, so nothing went out */
+"tools.traffic.sent.rejected" = "무전기가 이 패킷을 전송하지 않음";
+
+/* Traffic map ticker and RX log detail: the radio never answered the command */
+"tools.traffic.sent.unconfirmed" = "무전기가 확인하지 않음";
+
+/* RX log detail and Traffic map: a packet matched to one this radio sent only by its source and destination bytes and timing */
+"tools.traffic.echo.probable" = "내 패킷일 가능성 있음";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): BUSY cell caption, shown uppercase: the share of time the channel read above the floor */
+"tools.spectrum.device.cell.busy" = "사용 중";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): PKT/MIN cell caption, shown uppercase; keep it short */
+"tools.spectrum.device.cell.packetsPerMinute" = "패킷/분";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the PKT/MIN cell */
+"tools.spectrum.device.spoken.packetsPerMinute" = "분당 패킷";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the BUSY cell */
+"tools.spectrum.device.spoken.busy" = "사용 중";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: in the noise */
+"tools.spectrum.device.level.noise" = "잡음";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: 6 dB or more over the floor */
+"tools.spectrum.device.level.signal" = "신호";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: 20 dB or more over the floor */
+"tools.spectrum.device.level.strong" = "강한 신호";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: 35 dB or more over the floor */
+"tools.spectrum.device.level.veryStrong" = "매우 강한 신호";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): BUSY cell verdict past 30 % */
+"tools.spectrum.device.busy.warning" = "혼잡한 채널";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): BUSY cell verdict past 60 % */
+"tools.spectrum.device.busy.critical" = "매우 혼잡한 채널";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver: NOW is stale while the radio's Band sweep runs */
+"tools.spectrum.device.paused" = "일시 정지";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Info popover beside the Channel pill */
+"tools.spectrum.device.bandInfo" = "무전기의 대역 보기는 대역 전체를 스캔합니다. 무전기에서만 실행되며, 스캔하는 동안 메시가 일시 정지됩니다.";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Label of the 24-hour noise floor line; NF = noise floor, keep it short */
+"tools.spectrum.device.nf24h" = "NF 24h";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the 24-hour noise floor line */
+"tools.spectrum.device.nf24hSpoken" = "잡음 바닥, 최근 24시간";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Heat map key, low end */
+"tools.spectrum.device.key.rare" = "드묾";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Heat map key, high end */
+"tools.spectrum.device.key.often" = "잦음";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Trace key: the average dots */
+"tools.spectrum.device.key.avg" = "평균";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Trace key: the peak rule */
+"tools.spectrum.device.key.peak" = "최고";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Trace placeholder before the radio has readings */
+"tools.spectrum.device.sampling" = "측정 중…";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): 24-hour line placeholder before the radio has a point */
+"tools.spectrum.device.collecting" = "수집 중…";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Banner over the trace while the radio sweeps the band */
+"tools.spectrum.device.sweepBanner" = "무전기에서 대역 스캔 중: 측정 일시 정지";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Packet card: the app has no RX log entry for this packet */
+"tools.spectrum.device.heardAway" = "앱이 꺼져 있는 동안 수신됨";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout, lower case like the radio's; the values are dBm numbers */
+"tools.spectrum.device.readout.minAvgMax" = "최소 %1$@ 평균 %2$@ 최대 %3$@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout, shorter form */
+"tools.spectrum.device.readout.avgMax" = "평균 %1$@ 최대 %2$@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the column's noise floor */
+"tools.spectrum.device.readout.nf" = "NF %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: a packet's SNR */
+"tools.spectrum.device.readout.snr" = "SNR %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the column's busy share, e.g. "busy 8%" */
+"tools.spectrum.device.readout.busy" = "사용 %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the radio was transmitting */
+"tools.spectrum.device.readout.transmitting" = "송신 중";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: no readings in the column */
+"tools.spectrum.device.readout.noData" = "데이터 없음";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the newest column's age */
+"tools.spectrum.device.readout.now" = "지금";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: a column's age in seconds, e.g. "-42 s" */
+"tools.spectrum.device.age.seconds" = "-%@초";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: a column's age in minutes, e.g. "-2.5 m" */
+"tools.spectrum.device.age.minutes" = "-%@분";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the Channel plot; %@ is the window, e.g. "1 minute" */
+"tools.spectrum.device.chart.label" = "채널 활동, 최근 %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot; %@ is a level, e.g. "-112 dBm" */
+"tools.spectrum.device.chart.floor" = "잡음 바닥 %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot; a level, then how long ago, e.g. "32 seconds" */
+"tools.spectrum.device.chart.peak" = "최고 %1$@, %2$@ 전";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot; %@ is a percentage */
+"tools.spectrum.device.chart.busy" = "사용 %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot before any readings */
+"tools.spectrum.device.chart.noData" = "아직 측정값 없음";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Audio graph series */
+"tools.spectrum.device.series.min" = "최소";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Audio graph series */
+"tools.spectrum.device.series.avg" = "평균";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Audio graph series */
+"tools.spectrum.device.series.max" = "최대";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Spectrum Settings, in place of Update Rate with a Cairn radio */
+"tools.spectrum.device.settingsFootnote" = "Cairn 무전기는 자체 측정값을 보냅니다";
+"tools.nodeDiscovery.map.noFixWhenHeard" = "수신 시 GPS 위치 없음";
+"tools.nodeDiscovery.distanceWhenHeard" = "가장 잘 수신된 곳까지의 거리";
+
+// MARK: - Scan for Nodes: Heard Neighbors and Scans
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while the radio listens for nearby nodes; first placeholder is how many are nearby now, second is when the list last changed as a relative time, e.g. "2 min ago" */
+"tools.nodeDiscovery.status.listeningNearby" = "수신 중 · 주변 %1$d개 · %2$@ 업데이트";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button: asks the nodes in direct range to answer once */
+"tools.nodeDiscovery.scanNow" = "지금 스캔";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button while the next scan has to wait; %@ is the time left, e.g. "0:32" */
+"tools.nodeDiscovery.cooldown.scanAgainIn" = "%@ 후 다시 스캔";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button while waiting because another radio nearby just sent a scan */
+"tools.nodeDiscovery.cooldown.othersScanning" = "대기 중 — 주변의 누군가가 방금 스캔했습니다";
+
+/* Location: NodeDiscoveryScanControl.swift - Explanation shown with the scan countdown: why scans are spaced out */
+"tools.nodeDiscovery.cooldown.explainer" = "리피터는 주변의 모든 사용자를 합쳐 2분마다 최대 4번의 스캔 요청에만 응답합니다.";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the scan countdown, which explains the wait when tapped */
+"tools.nodeDiscovery.cooldown.hint" = "다음 스캔을 기다려야 하는 이유를 설명합니다";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while a scan waits for answers */
+"tools.nodeDiscovery.status.probing" = "주변 노드에 묻는 중… 혼잡한 메시에서는 응답이 충돌할 수 있습니다";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line after a scan; first placeholder is how many listed nodes answered this scan, second is how many other listed nodes were heard since it started */
+"tools.nodeDiscovery.status.probeSummary" = "%1$d개가 스캔에 응답 · 시작 후 %2$d개 추가 수신";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while the radio is disconnected; %@ is when the list was last updated, e.g. "10:42" */
+"tools.nodeDiscovery.status.disconnected" = "라디오 연결 끊김 — %@까지 수신된 내용을 표시합니다";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line when the connection to the radio was rebuilt during a scan; the scan keeps listening */
+"tools.nodeDiscovery.status.interrupted" = "연결을 다시 설정했습니다 — 계속 수신 중";
+
+/* Location: NodeDiscoveryScanControl.swift - Paragraph in the scan card's info popover explaining that each scan starts a new list */
+"tools.nodeDiscovery.listenInfo" = "스캔할 때마다 새 목록이 시작됩니다. Cairn은 스캔이 시작된 순간부터 다음 스캔까지 직접 수신한 노드(스캔 응답, 트래픽을 중계하는 리피터, 애드버트, 다른 사람의 스캔에 대한 응답)를 표시합니다. 이전 항목 보기를 켜면 그 전에 수신된 노드를 최대 24시간 전까지 추가로 표시합니다.";
+
+/* Location: NodeDiscoveryView.swift - Empty state title before any node has been heard */
+"tools.nodeDiscovery.nothingHeard.title" = "아직 수신된 것 없음";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state description for Repeaters when nothing has been heard since the current scan started */
+"tools.nodeDiscovery.nothingHeard.description" = "이 스캔이 시작된 후 수신된 것이 없습니다. 리피터는 응답하거나 트래픽을 중계하면 표시됩니다.";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state description for Sensors when nothing has been heard since the current scan started */
+"tools.nodeDiscovery.nothingHeard.sensorsDescription" = "이 스캔이 시작된 후 수신된 것이 없습니다. 센서는 응답하거나 애드버트를 보내면 표시됩니다.";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card headline before the first scan of this session */
+"tools.nodeDiscovery.status.readyToScan" = "스캔 준비됨";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card headline during a scan on a radio whose firmware can't send one, so the scan only listens */
+"tools.nodeDiscovery.status.listeningOnly" = "수신 중… 이 라디오의 펌웨어는 스캔을 보낼 수 없습니다";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line after a scan that only listened (or asked for the other kind of node); %d is how many listed nodes were heard since it started */
+"tools.nodeDiscovery.status.listenSummary" = "이 스캔 시작 후 %d개 수신";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state title before the first scan */
+"tools.nodeDiscovery.notScanned.title" = "아직 스캔하지 않음";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state description before the first scan: each scan starts a new list */
+"tools.nodeDiscovery.notScanned.description" = "지금 스캔을 탭하여 목록을 시작하세요. 그 순간부터 수신되는 노드로 채워지며, 다음 스캔은 새 목록을 시작합니다.";
+
+/* Location: NodeDiscoveryPanel.swift - Heading over the nodes Show Older adds: heard before the current scan started */
+"tools.nodeDiscovery.earlierSection" = "이 스캔 전에 수신됨";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the scan button when the radio's firmware can't send a scan */
+"tools.nodeDiscovery.scanListensOnlyHint" = "이 라디오의 펌웨어는 스캔을 보낼 수 없습니다. 스캔하면 새 목록을 시작하고 수신만 합니다";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node was heard relaying other traffic */
+"tools.nodeDiscovery.badge.relaying" = "중계 중";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node's own advert was heard directly */
+"tools.nodeDiscovery.badge.advert" = "애드버트";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node answered a scan sent from this radio */
+"tools.nodeDiscovery.badge.answeredYourScan" = "내 스캔에 응답함";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: under "Heard before this scan", this node answered a scan sent from this radio before the current one */
+"tools.nodeDiscovery.badge.answeredEarlierScan" = "이전 스캔에 응답함";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node answered a scan sent by another radio nearby */
+"tools.nodeDiscovery.badge.answeredAnotherScan" = "다른 스캔에 응답함";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node is known to hear this radio */
+"tools.nodeDiscovery.badge.hearsYou" = "나를 들음";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node was heard only once, so it may be out of reliable range */
+"tools.nodeDiscovery.badge.heardOnce" = "한 번 수신됨";
+
+/* Location: NodeDiscoveryResultCard.swift - Card title for a relay known only by the start of its key; %@ is that key prefix in hex, e.g. "3A7F21" */
+"tools.nodeDiscovery.unidentifiedRelay" = "식별되지 않은 중계 %@";
+
+/* Location: NodeDiscoveryResultCard.swift - Card title for a relay whose key prefix matches several known nodes; first placeholder is the prefix in hex, second is how many nodes match */
+"tools.nodeDiscovery.ambiguous" = "%1$@ · 노드 %2$d개 중 하나일 수 있음";
+
+/* Location: NodeDiscoveryResultCard.swift - Title of the list of nodes an ambiguous relay could be */
+"tools.nodeDiscovery.ambiguous.candidatesTitle" = "가능한 노드";
+
+/* Location: NodeDiscoveryResultCard.swift - VoiceOver hint of an ambiguous relay's title, which lists the nodes it could be */
+"tools.nodeDiscovery.ambiguous.hint" = "이 중계가 될 수 있는 노드를 표시합니다";
+
+/* Location: NodeDiscoveryResultCard.swift - How long ago a node was last heard; %@ is a short duration, e.g. "2 m" */
+"tools.nodeDiscovery.freshness" = "%@ 전";
+
+/* Location: NodeDiscoveryResultCard.swift - Button that sends one trace to a repeater to measure the link both ways */
+"tools.nodeDiscovery.checkLink" = "링크 확인";
+
+/* Location: NodeDiscoveryResultCard.swift - VoiceOver hint of the Check Link button */
+"tools.nodeDiscovery.checkLink.hint" = "이 리피터에 추적을 한 번 보내 서로 얼마나 잘 들리는지 측정합니다";
+
+/* Location: NodeDiscoveryResultCard.swift - Shown while the link check waits for its answer */
+"tools.nodeDiscovery.checkLink.checking" = "링크 확인 중…";
+
+/* Location: NodeDiscoveryResultCard.swift - Result when the repeater answered the link check; its signal both ways is shown beside it */
+"tools.nodeDiscovery.checkLink.answered" = "확인에 응답함";
+
+/* Location: NodeDiscoveryResultCard.swift - Result when the repeater did not answer the link check; it may still be there, as some repeaters don't answer traces */
+"tools.nodeDiscovery.checkLink.noAnswer" = "확인에 응답하지 않음";
+
+/* Location: NodeDiscoveryResultCard.swift - Result when the link check could not be sent */
+"tools.nodeDiscovery.checkLink.failed" = "확인을 보낼 수 없음";
+
+/* Location: NodeDiscoveryResultCard.swift - Button on an unidentified relay that opens the Traffic map, where its traffic is drawn */
+"tools.nodeDiscovery.showOnTrafficMap" = "트래픽 지도에서 보기";
+
+/* Location: NodeDiscoveryPanel.swift - Toggle that also lists the nodes heard before the current scan, up to 24 hours ago */
+"tools.nodeDiscovery.showOlder" = "이전 항목 보기";
+
+/* Location: NodeDiscoveryPanel.swift - VoiceOver hint of the Show Older toggle */
+"tools.nodeDiscovery.showOlderHint" = "이 스캔 전에 수신된 노드도 최대 24시간 전까지 표시합니다";
+
+/* Location: NodeDiscoveryMapView.swift - Pill over the map counting results the map's filter hides, with an action showing them; %d is the count */
+"tools.nodeDiscovery.map.hiddenByFilter" = "지도 필터로 %d개 숨김 · 모두 보기";
+
+/* Location: NodeDiscoveryMapView.swift - VoiceOver hint of the hidden-by-filter pill */
+"tools.nodeDiscovery.map.hiddenByFilterHint" = "이 지도에 모든 결과를 표시합니다";
+
+/* Location: NodeDiscoveryMapView.swift - Pill over the map counting results with no position to draw; %d is the count */
+"tools.nodeDiscovery.map.withoutLocation" = "위치 없음 %d개";
+
+/* Location: NodeDiscoveryScanControl.swift - Indicator that Wardrive keeps scanning while you use other screens */
+"tools.nodeDiscovery.wardriveRunning" = "Wardrive 실행 중";
+
+/* Location: NodeDiscoveryScanControl.swift - Line under the scan headline when the radio's firmware can't send a scan; a scan then only listens */
+"tools.nodeDiscovery.scanUnsupported" = "이 라디오의 펌웨어는 스캔을 보낼 수 없습니다(1.10 이상 필요). 따라서 여기서의 스캔은 수신만 하며, 그때부터 수신되는 노드로 새 목록을 시작합니다.";
+
+/* Location: NodeDiscoveryCompactBar.swift - Short caption and VoiceOver hint on the map's scan bar when the radio's firmware can't send a scan */
+"tools.nodeDiscovery.scanUnsupportedShort" = "펌웨어 1.10 이상 필요";
+
+/* Location: NodeDiscoveryScanControl.swift - Added after a scan's summary when the radio heard packets during the scan that never reached the app; %d is how many */
+"tools.nodeDiscovery.summary.radioMissed" = "이 스캔 중 라디오가 수신한 패킷 %d개가 앱에 도달하지 않았습니다. 일부 응답이 누락되었을 수 있습니다";
+
+// MARK: - Region Discovery
+
+/* Location: RegionDiscoveryRunner.swift - Shown when a scan was sent too recently, so regions are looked up from repeaters already heard instead */
+"tools.regionDiscovery.cooldown" = "최근에 스캔을 사용했습니다 — 이미 수신된 주변 리피터를 사용합니다";
+
+/* Location: RegionDiscoveryRunner.swift - Shown when the radio's firmware is too old to ask repeaters for their regions, so nothing was sent */
+"tools.regionDiscovery.needsFirmware" = "리피터에 지역을 요청하려면 라디오 펌웨어 1.12 이상이 필요합니다";
+
+/* Location: RegionDiscoveryRunner.swift - Shown when the radio's firmware can't send a scan, so regions are looked up from repeaters already heard instead */
+"tools.regionDiscovery.scanUnsupported" = "이 라디오의 펌웨어는 스캔 요청을 보낼 수 없습니다 — 이미 수신된 주변 리피터를 사용합니다";
+
+// MARK: - RX Log Delivery
+
+/* Location: RxLogView.swift - Delivery line in the header with Cairn radio firmware: nothing was lost between the radio and the app */
+"tools.rxLog.delivery.allReceived" = "모든 트래픽 수신됨";
+
+/* Location: RxLogView.swift - Delivery line in the header with Cairn radio firmware; first placeholder is how many packets were fetched again from the radio, second is how many the radio lost before the app got them */
+"tools.rxLog.delivery.recoveredLost" = "%1$d개 복구 · 라디오에서 %2$d개 손실";
+
+/* Location: RxLogView.swift - Start of the delivery line for a Cairn radio whose firmware build has no packet recovery, so packets arrive as on other firmware */
+"tools.rxLog.delivery.recoveryUnsupported" = "이 Cairn 빌드에는 패킷 복구 기능이 없습니다";
+
+/* Location: RxLogView.swift - Start of the delivery line for a Cairn radio whose packet recovery did not start on this connection (no answer or refused), so packets arrive as on other firmware */
+"tools.rxLog.delivery.recoveryFailed" = "이 연결에서 패킷 복구를 시작할 수 없습니다";
+
+/* Location: RxLogView.swift - Delivery line in the header with radio firmware without packet recovery, measured with the radio's own packet counters; first placeholder is how many packets never reached the app, second is how many the radio heard in all */
+"tools.rxLog.delivery.radioMissed" = "라디오가 수신한 패킷 %2$d개 중 %1$d개가 앱에 도달하지 않았습니다";
+
+/* Location: RxLogView.swift - Delivery line in the header with radio firmware that has no packet recovery and no packet counters (or before they were read), so packets the radio skips can't be counted */
+"tools.rxLog.delivery.stockUnmeasured" = "이 라디오의 펌웨어는 링크가 바쁠 때 패킷을 건너뛸 수 있습니다";
+
+/* Location: RxLogView.swift and the Traffic map - Second line under the delivery line with radio firmware without packet recovery: the firmware never passes longer received packets to the app; %d is the longest length in bytes */
+"tools.rxLog.delivery.longPackets" = "%d바이트보다 긴 패킷은 이 라디오의 펌웨어에서 앱으로 전달되지 않습니다";
+
+/* Location: RxLogView.swift - Added to the delivery line with Cairn radio firmware when the app itself dropped packets it received; %d is how many */
+"tools.rxLog.delivery.appDropped" = "앱에서 %d개 누락";
+
+/* Location: RxLogView.swift - VoiceOver label of the mark on a packet fetched again from the radio after it was missed */
+"tools.rxLog.recovered" = "복구됨";
+
+/* Location: ToolSelection.swift - Name of the Scan & Traffic tool (Scan for Nodes and the Traffic map on one page): Tools list, its page title and links to it */
+/* AI-translated - please verify with native speakers. */
+"tools.scanTraffic" = "스캔 및 트래픽";
+
+/* Tools list - short line under the Scan & Traffic tool */
+/* AI-translated - please verify with native speakers. */
+"tools.subtitle.scanTraffic" = "주변 노드와 실시간 패킷";
+
+/* Location: NodeDiscoveryPanel.swift - Scan & Traffic: segment beside Nodes that lists every packet the radio hears, followed by how many */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.section.packets" = "패킷";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan & Traffic: the one scan button in the sheet's header */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.scan" = "스캔";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan & Traffic header: how many of the kind listed the current scan has heard; %d is the count */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.status.nearby" = "수신 중 · 주변 %d개";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan & Traffic header: how many packets a minute the radio hears; %@ is the number */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.status.packetsPerMinute" = "분당 패킷 %@개";
+
+/* Location: NodeDiscoveryResultCard.swift - Tag on a compact node card: the node answered the current scan */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.badge.answered" = "응답함";
+
+/* Location: NodeDiscoveryPanel.swift - Row at the end of the nodes that adds the ones heard before this scan, up to 24 hours ago; %d is how many */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.showOlderCount" = "이전 노드 보기 (%d)";
+
+/* Location: NodeDiscoveryPanel.swift - The same row once the older nodes show: takes them away again */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.hideOlder" = "이전 노드 숨기기";
+
+/* Location: NodeDiscoveryPanel.swift - Scan & Traffic before the first scan, with nothing heard yet */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.firstUse.title" = "스캔을 눌러 주변 노드를 찾으세요";
+
+/* Location: NodeDiscoveryPanel.swift - The line under it: what a scan does */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.firstUse.description" = "스캔은 내 무전기를 직접 듣는 노드에 응답을 요청합니다.";
+
+/* Location: NodeDiscoveryActivity.swift - VoiceOver hint of the Scan & Traffic header line */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.header.expandHint" = "최고 신호와 가장 먼 노드를 보이거나 숨깁니다";
+
+/* Location: NodeDiscoveryPanel.swift - VoiceOver value of a section's Filter button: how many filters are on; %d is the count */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.filter.active" = "%d개 사용 중";
+
+// MARK: - Map workstream additions
+
+/* Location: SendLocationIntent.swift - Purpose: Title of the Send My Location shortcut */
+"intent.location.title" = "내 위치 보내기";
+
+/* Location: CairnAppShortcutsProvider.swift - Purpose: Short title of the Send My Location shortcut */
+"intent.location.shortTitle" = "위치 보내기";
+
+/* Location: SendLocationIntent.swift - Purpose: Description of the Send My Location shortcut */
+"intent.location.description" = "현재 위치를 연락처나 채널에 메시지로 보냅니다.";
+
+/* Location: SendLocationIntent.swift - Purpose: Spoken confirmation once the location message is queued; the argument is the recipient */
+"intent.location.sent" = "내 위치를 %@에게 보내는 중입니다.";
+
+/* SendLocationIntent.swift - Purpose: Shortcuts parameter summary of the Send My Location intent; keep ${target} as is */
+"Send my location to ${target}" = "${target}에게 내 위치 보내기";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Title of the drive summary card once Wardrive has stopped */
+"tools.nodeDiscovery.wardrive.summary.finished" = "워드라이브 종료";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Takes the finished drive's summary card off the screen */
+"tools.nodeDiscovery.wardrive.summary.dismiss" = "닫기";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: nodes heard during the drive */
+"tools.nodeDiscovery.wardrive.summary.nodes" = "발견한 노드";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: scans sent during the drive */
+"tools.nodeDiscovery.wardrive.summary.probes" = "스캔";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: how long the drive has run */
+"tools.nodeDiscovery.wardrive.summary.elapsed" = "경과";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: distance covered, from the phone's fixes */
+"tools.nodeDiscovery.wardrive.summary.distance" = "거리";
+
+/* Location: NodeDiscoveryView.swift - Alert button before Wardrive starts with location refused: opens the system Settings */
+"tools.nodeDiscovery.wardrive.preflight.openSettings" = "설정 열기";
+
+/* Location: NodeDiscoveryView.swift - Alert button: start Wardrive despite the warning */
+"tools.nodeDiscovery.wardrive.preflight.startAnyway" = "그래도 시작";
+
+/* Location: NodeDiscoveryView.swift - Alert button on the first-run note: starts Wardrive */
+"tools.nodeDiscovery.wardrive.preflight.start" = "워드라이브 시작";
+
+/* Location: NodeDiscoveryView.swift - Alert title before Wardrive starts while location is refused for the app */
+"tools.nodeDiscovery.wardrive.preflight.locationDenied.title" = "Cairn 위치 접근이 꺼져 있음";
+
+/* Location: NodeDiscoveryView.swift - Alert message: without location, Wardrive can't place nodes on the map */
+"tools.nodeDiscovery.wardrive.preflight.locationDenied.message" = "위치 정보가 없으면 워드라이브가 수신한 노드를 지도에 표시할 수 없습니다. 설정에서 위치를 허용하거나, 그래도 시작하여 목록만 확인하세요.";
+
+/* Location: NodeDiscoveryView.swift - Alert title of the note shown before the first Wardrive */
+"tools.nodeDiscovery.wardrive.preflight.firstRun.title" = "첫 워드라이브 전에";
+
+/* Location: NodeDiscoveryView.swift - Alert message: what Wardrive does to the screen and GPS */
+"tools.nodeDiscovery.wardrive.preflight.firstRun.message" = "워드라이브가 실행되는 동안 이 페이지가 열린 상태로 화면이 켜져 있고, 각 노드를 수신한 위치에 표시하기 위해 GPS가 백그라운드에서 계속 실행됩니다. 중지를 누르거나 라디오 연결이 끊기면 멈춥니다.";
+
+/* Location: NodeDiscoveryView.swift - Alert title before Wardrive starts on a low battery; %d is the percentage */
+"tools.nodeDiscovery.wardrive.preflight.lowBattery.title" = "배터리 %d%%";
+
+/* Location: NodeDiscoveryView.swift - Alert message: Wardrive drains the battery */
+"tools.nodeDiscovery.wardrive.preflight.lowBattery.message" = "워드라이브는 화면과 GPS를 계속 켜 두므로 배터리가 빨리 소모됩니다. 가능하면 충전기를 연결하세요.";
+
+/* Location: NodeDiscoveryView.swift - Alert title before Wardrive starts in Low Power Mode */
+"tools.nodeDiscovery.wardrive.preflight.lowPower.title" = "저전력 모드가 켜져 있음";
+
+/* Location: NodeDiscoveryView.swift - Alert message: GPS is less precise in Low Power Mode */
+"tools.nodeDiscovery.wardrive.preflight.lowPower.message" = "저전력 모드에서는 GPS 업데이트가 드물어 노드 위치가 덜 정확할 수 있습니다.";
+
+/* Location: NodeDiscoveryPanel.swift - Heading of the sort picker in the nodes' Filter menu */
+"tools.nodeDiscovery.sortBy" = "정렬 기준";
+
+/* Location: NodeDiscoveryPanel.swift - Menu item that adds every node not yet a contact; %d is how many */
+"tools.nodeDiscovery.addAllNew" = "새 노드 모두 추가 (%d)";
+
+/* Location: NodeDiscoveryPanel.swift - Confirmation button of Add All New; %d is how many nodes */
+"tools.nodeDiscovery.addAllNew.confirm" = "노드 %d개 추가";
+
+/* Location: NodeDiscoveryPanel.swift - Confirmation message of Add All New: %1$d nodes to add, the radio holds up to %2$d contacts, %3$d in use */
+"tools.nodeDiscovery.addAllNew.message" = "라디오 연락처에 노드 %1$d개를 추가합니다. 라디오는 최대 %2$d개의 연락처를 저장하며, %3$d개가 사용 중입니다.";
+
+/* Location: NodeDiscoveryPanel.swift - Confirmation message of Add All New when the radio's contact limit is unknown; %d is how many nodes */
+"tools.nodeDiscovery.addAllNew.messageNoLimit" = "라디오 연락처에 노드 %d개를 추가합니다.";
+
+/* Location: NodeDiscoveryPanel.swift - Menu item that exports the listed nodes as a CSV file */
+"tools.nodeDiscovery.exportNodes" = "노드 내보내기 (CSV)";
+
+/* Location: RxLogView.swift - VoiceOver label of the packet detail sheet's actions menu */
+"tools.rxLog.actions" = "패킷 작업";
+
+/* Location: RxPacketActions.swift - Menu item that opens the page of the node that sent the packet */
+"tools.rxLog.action.openSender" = "발신자 열기";
+
+/* Location: RxPacketActions.swift - Menu item that opens the page of a node the packet passed through; %@ is its name */
+"tools.rxLog.action.openNode" = "%@ 열기";
+
+/* Location: RxPacketActions.swift - Menu item that centres the map on the packet's sender */
+"tools.rxLog.action.showOnMap" = "지도에서 보기";
+
+/* Location: RxPacketActions.swift - Menu item that builds Trace Path on the packet's route */
+"tools.rxLog.action.traceRoute" = "이 경로 추적";
+
+/* Location: RxPacketActions.swift - Menu item that shares the packet as a few lines of text */
+"tools.rxLog.action.shareText" = "텍스트로 공유";
+
+/* Location: RxPacketActions.swift - Menu item that shares the packet as JSON */
+"tools.rxLog.action.shareJSON" = "JSON으로 공유";
+
+/* Location: RxPacketActions.swift - Menu item that copies the packet's hash */
+"tools.rxLog.action.copyHash" = "해시 복사";
+
+/* Location: RxLogView.swift - Placeholder of the packet list's search field */
+"tools.rxLog.search" = "패킷 검색";
+
+/* Location: RxLogView.swift - Heading of the packet type section in the filter menu */
+"tools.rxLog.filter.type" = "유형";
+
+/* Location: RxLogView.swift - Submenu in the filter menu listing the nodes packets came from */
+"tools.rxLog.filter.fromNode" = "발신 노드";
+
+/* Location: RxLogView.swift - First item of the From Node submenu: every sender */
+"tools.rxLog.filter.anyNode" = "모두";
+
+/* Location: RxLogViewModel.swift - Packet type filter: adverts */
+"tools.rxLog.packetType.adverts" = "광고";
+
+/* Location: RxLogViewModel.swift - Packet type filter: direct, channel and data messages */
+"tools.rxLog.packetType.messages" = "메시지";
+
+/* Location: RxLogViewModel.swift - Packet type filter: traces */
+"tools.rxLog.packetType.traces" = "추적";
+
+/* Location: RxLogViewModel.swift - Packet type filter: acknowledgements */
+"tools.rxLog.packetType.acks" = "확인 응답";
+
+/* Location: RxLogViewModel.swift - Packet type filter: path packets */
+"tools.rxLog.packetType.paths" = "경로";
+
+/* Location: RxLogViewModel.swift - Packet type filter: requests and their replies */
+"tools.rxLog.packetType.requests" = "요청 및 응답";
+
+/* Location: RxLogViewModel.swift - Packet type filter: everything else */
+"tools.rxLog.packetType.other" = "기타";
+
+/* Location: RxLogView.swift - Pill over a held packet list: how many packets landed since; %d is the count */
+"tools.rxLog.newPackets" = "새 패킷 %d개";
+
+/* Location: RunTraceSectionView.swift - Button that stops the trace in flight */
+"tools.tracePath.cancel" = "취소";
+
+/* Location: SavedPathDetailView.swift - Toolbar share of a saved path's runs as a CSV file */
+"tools.tracePath.share.runs" = "실행 기록 공유 (CSV)";
+
+/* Location: TraceResultsSheet.swift - Toolbar share of a trace's result as text */
+"tools.tracePath.share.summary" = "요약 공유";
+
+/* Location: TraceExport.swift - Line of the shared trace summary; %@ is the path's hops in hex */
+"tools.tracePath.summary.path" = "경로: %@";
+
+/* Location: TraceExport.swift - Line of the shared trace summary; %@ is the milliseconds */
+"tools.tracePath.summary.roundTrip" = "왕복: %@ ms";
+
+/* Location: TraceExport.swift - Line of the shared trace summary; %d is how many hops */
+"tools.tracePath.summary.hops" = "홉: %d";
+
+/* Location: CLIToolViewModel.swift - Line in the terminal transcript where the radio disconnected */
+"tools.cli.transcript.disconnected" = "— 연결 끊김 —";
+
+/* Location: CLIToolViewModel.swift - Line in the terminal transcript where the radio reconnected */
+"tools.cli.transcript.reconnected" = "— 다시 연결됨 —";
+
+/* Location: CLIToolView.swift - Item of the terminal's more menu that opens the sessions list */
+"tools.cli.menu.sessions" = "세션";
+
+/* Location: CLIToolView.swift - Item of the terminal's more menu that shares the transcript as text */
+"tools.cli.menu.shareTranscript" = "기록 공유";
+
+/* Location: CLIToolView.swift - Item of the terminal's more menu that empties the transcript */
+"tools.cli.menu.clear" = "지우기";
+
+/* Location: CLISessionsSheet.swift - Title of the sessions sheet */
+"tools.cli.sessions.title" = "세션";
+
+/* Location: CLISessionsSheet.swift - Section of the sessions open now */
+"tools.cli.sessions.open" = "열린 세션";
+
+/* Location: CLISessionsSheet.swift - Section of saved repeaters and rooms to log in to */
+"tools.cli.sessions.repeaters" = "리피터 및 룸";
+
+/* Location: CLISessionsSheet.swift - Section of saved companions whose command line can be opened */
+"tools.cli.sessions.companions" = "컴패니언";
+
+/* Location: CLISessionsSheet.swift - Mark on the session commands go to now */
+"tools.cli.sessions.active" = "활성";
+
+/* Location: CLISessionsSheet.swift - Line under a node not logged in to yet */
+"tools.cli.sessions.loginHint" = "탭하여 로그인";
+
+/* Location: CompanionCommandPicker.swift - Section of the commands pinned at the top of the picker */
+"tools.cli.companion.pinned" = "고정됨";
+
+/* Location: CompanionCommandPicker.swift - Long-press action that pins a command at the top */
+"tools.cli.companion.pin" = "고정";
+
+/* Location: CompanionCommandPicker.swift - Long-press action that takes a pinned command down */
+"tools.cli.companion.unpin" = "고정 해제";
+
+/* Location: NetworkHealthView.swift - Menu item that asks every repeater needing attention for its status, one after another */
+"tools.networkHealth.checkAll" = "모두 확인";
+
+/* Location: NetworkHealthView.swift - Progress bar title while Check All runs; %1$d is the repeater being checked, %2$d how many */
+"tools.networkHealth.checkAll.progress" = "%2$d개 중 %1$d개 확인 중";
+
+/* Location: NetworkHealthView.swift - Menu item that stops Check All */
+"tools.networkHealth.checkAll.cancel" = "모두 확인 취소";
+
+/* Location: NetworkHealthView.swift - Heading of the sort picker in the page's menu */
+"tools.networkHealth.sort" = "정렬";
+
+/* Location: NetworkHealthReport.swift - Sort order: by what is wrong, worst first */
+"tools.networkHealth.sort.issues" = "문제";
+
+/* Location: NetworkHealthReport.swift - Sort order: by battery, lowest first */
+"tools.networkHealth.sort.battery" = "배터리";
+
+/* Location: NetworkHealthReport.swift - Sort order: by when each repeater was last heard, longest silent first */
+"tools.networkHealth.sort.lastHeard" = "마지막 수신";
+
+/* Location: NetworkHealthView.swift - Section of the page's menu with the report's share options */
+"tools.networkHealth.share" = "보고서 공유";
+
+/* Location: NetworkHealthView.swift - Shares the report as text */
+"tools.networkHealth.share.text" = "텍스트로";
+
+/* Location: NetworkHealthView.swift - Shares the report as a CSV file */
+"tools.networkHealth.share.csv" = "CSV로";
+
+/* Location: NetworkHealthReport.swift - First line of the shared text report */
+"tools.networkHealth.report.title" = "네트워크 상태 보고서";
+
+/* Location: SpectrumView.swift - Toolbar button and settings toggle that holds the chart's window where it is */
+"tools.spectrum.pause" = "일시 정지";
+"tools.spectrum.fullscreen" = "전체 화면";
+
+/* Location: SpectrumView.swift - Toolbar button that lets the paused chart go on */
+"tools.spectrum.resume" = "재개";
+
+/* Location: SpectrumTabSettingsSheet.swift - Section with the pause toggle and the readings export */
+"tools.spectrum.settings.readingsHeader" = "측정값";
+
+/* Location: SpectrumTabSettingsSheet.swift - Footer: what the readings export holds */
+"tools.spectrum.settings.readingsFooter" = "노이즈 플로어 측정값은 스펙트럼 탭이나 홈이 열려 있는 동안 라디오별로 1분 단위로 일주일간 보관됩니다. 일시 정지는 차트 창을 멈추며, 측정값은 계속 기록됩니다.";
+
+/* Location: SpectrumTabSettingsSheet.swift - Button that exports the kept noise-floor readings as a CSV file */
+"tools.spectrum.settings.exportReadings" = "측정값 내보내기 (CSV)";

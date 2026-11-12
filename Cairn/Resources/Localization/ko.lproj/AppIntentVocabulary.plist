@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IntentPhrases</key>
+	<array>
+		<dict>
+			<key>IntentExamples</key>
+			<array>
+				<string>Cairn으로 Alex에게 메시지 보내줘</string>
+			</array>
+			<key>IntentName</key>
+			<string>INSendMessageIntent</string>
+		</dict>
+		<dict>
+			<key>IntentExamples</key>
+			<array>
+				<string>Cairn 메시지 읽어줘</string>
+			</array>
+			<key>IntentName</key>
+			<string>INSearchForMessagesIntent</string>
+		</dict>
+		<dict>
+			<key>IntentExamples</key>
+			<array>
+				<string>Cairn 메시지를 읽음으로 표시해줘</string>
+			</array>
+			<key>IntentName</key>
+			<string>INSetMessageAttributeIntent</string>
+		</dict>
+	</array>
+</dict>
+</plist>

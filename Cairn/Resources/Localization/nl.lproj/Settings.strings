@@ -1,0 +1,3331 @@
+/*
+  Settings.strings
+  Cairn
+
+  Dutch translation of strings for the Settings feature.
+  AI-translated - please verify with native speakers.
+*/
+
+// MARK: - Main Settings View
+
+/* Navigation title for the main settings screen */
+"title" = "Instellingen";
+
+// MARK: - Settings Hub (SettingsHubView)
+
+/* RadioSettingsView.swift - Section header over the radio's receive-gain switches */
+"radio.receive.header" = "Ontvangst";
+
+/* RadioSettingsView.swift - Info behind the Receive header */
+"radio.receive.info" = "Front-end-LNA versterkt zwakke signalen voordat de radio ze hoort; zet hem uit vlak bij een sterke zender, waar hij overstuurd kan raken. Verhoogde RX-versterking is de eigen gevoeligere modus van de radiochip, tegen iets meer stroomverbruik. Beide worden direct toegepast en op de radio opgeslagen.";
+
+/* RadioSettingsView.swift - Switch for the external front end's low-noise amplifier */
+"radio.receive.lna" = "Front-end-LNA";
+
+/* RadioSettingsView.swift - Line under the LNA switch */
+"radio.receive.lnaHint" = "Uit vlak bij een sterke zender";
+
+/* RadioSettingsView.swift - Switch for the SX126x boosted receive gain */
+"radio.receive.boost" = "Verhoogde RX-versterking";
+
+/* RadioSettingsView.swift - Line under the boosted gain switch */
+"radio.receive.boostHint" = "Hogere gevoeligheid, iets meer stroom";
+
+/* SettingsHubView.swift - Section header over the connected radio's own settings pages */
+"hub.thisRadio" = "Deze radio";
+
+/* SettingsHubView.swift - Section header over the app's own preferences */
+"hub.appSection" = "App";
+
+/* SettingsHubView.swift - Section header over About and Advanced */
+"hub.aboutSection" = "Info";
+
+/* SettingsHubView.swift - Footer under This Radio while no radio is connected */
+"hub.noRadioFooter" = "Verbind een radio om de instellingen ervan te wijzigen.";
+
+/* SettingsHubView.swift - Search field placeholder at the top of Settings */
+"hub.searchPrompt" = "Zoek instellingen";
+
+/* SettingsHubView.swift - First row of Settings when no radio is connected */
+"hub.noRadio" = "Geen radio verbonden";
+
+/* SettingsDetail.swift - Settings row and page title: node list, auto-add and cleanup */
+"hub.nodes" = "Knooppunten en auto-toevoegen";
+
+/* SettingsDetail.swift - Settings row and page title: the radio's connection, Bluetooth PIN, reboot and reset */
+"hub.connection" = "Verbinding en beveiliging";
+
+/* SettingsDetail.swift - Settings row and page title: the radio's identity, key, storage and firmware */
+"hub.deviceInfo" = "Apparaatinfo en firmware";
+
+/* SettingsDetail.swift - Settings row and page title: position source, maps and offline maps */
+"hub.mapsGps" = "Kaarten en GPS";
+
+/* SettingsDetail.swift - Settings row and page title: the Spectrum tab's settings */
+"hub.spectrum" = "Spectrum";
+
+/* SettingsDetail.swift - Settings row and page title: blocked contacts, senders, keywords, and Sign & Verify */
+"hub.privacy" = "Privacy en blokkeren";
+
+/* SettingsDetail.swift - Settings row and page title: the app, support and credits */
+"hub.about" = "Over CAIRN";
+
+/* SettingsDetail.swift - Settings row and page title: debug logs and demo mode */
+"hub.advanced" = "Geavanceerd";
+
+/* Placeholder shown in split view detail when no setting is selected */
+"selectSetting" = "Selecteer een instelling";
+
+/* Section header for device-specific settings */
+"myDevice.header" = "Mijn apparaat";
+
+/* Section header for app-level settings */
+"appSettings.header" = "App-instellingen";
+
+/* Footer text for the advanced settings row */
+/* Label for the advanced settings navigation row */
+"advancedSettings.title" = "Geavanceerde instellingen";
+
+/* Version display prefix with version number */
+"version" = "v%@";
+
+/* Build number display with build number */
+"build" = "Build %@";
+
+// MARK: - Demo Mode Section
+
+/* Section header for demo mode */
+"demoMode.header" = "Demomodus";
+
+/* Toggle label to enable demo mode */
+"demoMode.enabled" = "Ingeschakeld";
+
+/* Footer explaining what demo mode does */
+"demoMode.footer" = "Demomodus maakt testen mogelijk zonder hardware met behulp van testgegevens.";
+
+// MARK: - Device Section
+
+/* Section header for device information */
+"device.header" = "Apparaat";
+
+/* Status shown when device is connected */
+"device.connected" = "Verbonden";
+
+/* Footer shown when no device is connected */
+"device.noDeviceConnected" = "Geen MeshCore-apparaat verbonden";
+
+/* Button to connect a device */
+"device.connect" = "Apparaat verbinden";
+
+// MARK: - Device Info View
+
+/* Navigation title for device info screen */
+"deviceInfo.title" = "Apparaatinfo";
+
+/* Section header for connection status */
+"deviceInfo.connection.header" = "Verbinding";
+
+/* Label for connection status */
+"deviceInfo.connection.status" = "Status";
+
+/* Section header for power and storage */
+"deviceInfo.powerStorage.header" = "Voeding en opslag";
+
+/* Label for battery level */
+"deviceInfo.battery" = "Batterij";
+
+/* Label for storage used */
+"deviceInfo.storageUsed" = "Opslag gebruikt";
+
+/* Combined label for battery and storage when loading */
+"deviceInfo.batteryAndStorage" = "Batterij en opslag";
+
+/* Section header for firmware information */
+"deviceInfo.firmware.header" = "Firmware";
+
+/* Label for firmware version */
+"deviceInfo.firmwareVersion" = "Firmwareversie";
+
+/* Label for build date */
+"deviceInfo.buildDate" = "Builddatum";
+
+/* Label for manufacturer */
+"deviceInfo.manufacturer" = "Fabrikant";
+
+/* Placeholder when a value is unknown */
+"deviceInfo.unknown" = "Onbekend";
+
+/* Section header for device capabilities */
+"deviceInfo.capabilities.header" = "Mogelijkheden";
+
+/* Label for max nodes capability */
+"deviceInfo.maxNodes" = "Max. knooppunten";
+
+/* Label for max channels capability */
+"deviceInfo.maxChannels" = "Max. kanalen";
+
+/* Label for max TX power capability */
+"deviceInfo.maxTxPower" = "Max. TX-vermogen";
+
+/* TX power display format with dBm unit */
+"deviceInfo.txPowerFormat" = "%@ dBm";
+
+/* Firmware version fallback format when no version string is reported - %@ is the numeric version code */
+"deviceInfo.firmwareVersionFormat" = "v%@";
+
+/* Section header for identity information */
+/* Label for public key */
+"deviceInfo.publicKey" = "Publieke sleutel";
+
+/* Button to share contact information */
+"deviceInfo.shareContact" = "Mijn contact delen";
+
+/* Title for ContentUnavailableView when no device is connected */
+"deviceInfo.noDevice.title" = "Geen apparaat verbonden";
+
+/* Description for ContentUnavailableView when no device is connected */
+"deviceInfo.noDevice.description" = "Verbind met een MeshCore-apparaat om de informatie te bekijken";
+
+/* Fallback manufacturer name */
+"deviceInfo.defaultManufacturer" = "MeshCore-apparaat";
+
+// MARK: - Public Key View
+
+/* Navigation title for public key screen */
+"publicKey.title" = "Publieke sleutel";
+
+/* Section header describing the key type */
+"publicKey.header" = "32-byte Ed25519 publieke sleutel";
+
+/* Footer explaining the public key's purpose */
+"publicKey.footer" = "Deze sleutel identificeert je apparaat uniek op het mesh-netwerk";
+
+/* Section header for base64 representation */
+"publicKey.base64.header" = "Base64";
+
+/* Button to copy key to clipboard */
+"publicKey.copy" = "Kopieer naar klembord";
+
+// MARK: - Private Key View
+
+/* Section header describing the key type */
+"privateKey.header" = "64-byte Ed25519 privésleutel";
+
+// MARK: - Device Selection Sheet
+
+/* Navigation title for device selection */
+"deviceSelection.title" = "Apparaat verbinden";
+
+/* Button to connect to selected device */
+/* Section header for previously paired devices */
+"deviceSelection.previouslyPaired" = "Eerder gekoppeld";
+
+/* Footer text prompting user to select a device */
+/* Button to connect via WiFi */
+"deviceSelection.connectViaWifi" = "Verbinden via wifi";
+
+/* Button to scan for Bluetooth devices */
+"deviceSelection.scanBluetooth" = "Scannen naar Bluetooth-apparaat";
+
+/* Trailing control on a previously paired row that still needs iPhone setup */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setup" = "Instellen";
+
+/* Sheet title when one device needs setup. %@ is the accessory name */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setupTitle" = "%@ instellen";
+
+/* Sheet title when several devices need setup */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setupTitleGeneric" = "Instellen";
+
+/* Sheet body when one device is paired with iPhone */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setupMessage" = "Dit apparaat is gekoppeld met iPhone. Je moet het vergeten voordat je het aan Cairn toevoegt.";
+/* Sheet body when several devices are paired with iPhone */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setupMessagePlural" = "Deze apparaten zijn gekoppeld met iPhone. Je moet ze vergeten voordat je een radio aan Cairn toevoegt.";
+/* Reassurance that forgetting the iPhone pairing does not delete conversations */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setupConversations" = "Dit verwijdert je gesprekken niet.";
+
+/* Destructive confirmation for one device */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.forgetThisDevice" = "Dit apparaat vergeten";
+
+/* Destructive confirmation for several devices */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.forgetTheseDevices" = "Deze apparaten vergeten";
+
+/* Footer under Previously Paired when one needs-setup row is present */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setupFooter" = "Vergeet dit apparaat om het aan Cairn toe te voegen.";
+/* Footer under Previously Paired when several needs-setup rows are present */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setupFooterPlural" = "Vergeet deze apparaten om ze aan Cairn toe te voegen.";
+/* VoiceOver label for a needs-setup row. %@ is the accessory name */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.accessibility.setupLabel" = "%@, gekoppeld met iPhone";
+
+/* VoiceOver hint for a needs-setup row */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.accessibility.setupHint" = "Dubbeltik om in te stellen";
+
+/* Title for empty state when no devices are paired */
+"deviceSelection.noPairedDevices" = "Geen gekoppelde apparaten";
+
+/* Description for empty state */
+"deviceSelection.noPairedDescription" = "Je hebt nog geen apparaten gekoppeld.";
+
+/* Button to scan for new devices */
+"deviceSelection.scanForDevices" = "Scannen naar apparaten";
+
+/* Accessibility label for device connected elsewhere - %1$@ is device name */
+"deviceSelection.accessibility.connectedElsewhereLabel" = "%1$@, verbonden met een andere app";
+
+/* Accessibility label for available device - %1$@ is device name, %2$@ is connection type */
+"deviceSelection.accessibility.deviceLabel" = "%1$@, %2$@";
+
+/* Accessibility hint for device connected elsewhere */
+"deviceSelection.accessibility.connectedElsewhereHint" = "Dit apparaat wordt gebruikt door een andere app. Verbinden kan communicatieproblemen veroorzaken.";
+
+/* Accessibility hint for selectable device */
+"deviceSelection.accessibility.selectHint" = "Dubbeltik om te verbinden";
+
+/* Accessibility hint for a device that is out of Bluetooth range */
+"deviceSelection.accessibility.outOfRangeHint" = "Apparaat is buiten Bluetooth-bereik";
+
+/* Label shown when device is connected to another app */
+"deviceSelection.connectedElsewhere" = "Elders verbonden";
+
+/* Fallback connection type description */
+"deviceSelection.bluetooth" = "Bluetooth";
+
+// MARK: - Location Picker View
+
+/* Navigation title for location picker */
+"locationPicker.title" = "Locatie instellen";
+
+/* Marker title for node location on map */
+/* Button to clear the selected location */
+"locationPicker.clearLocation" = "Locatie wissen";
+
+/* Button to drop a pin at the map center */
+"locationPicker.dropPin" = "Speld plaatsen in midden";
+
+/* Label for latitude display */
+"locationPicker.latitude" = "Breedtegraad:";
+
+/* Label for longitude display */
+"locationPicker.longitude" = "Lengtegraad:";
+
+// MARK: - Trusted Contacts Picker
+
+/* Navigation title for trusted contacts picker */
+"trustedContacts.title" = "Vertrouwde contacten";
+
+/* Title for empty state when no contacts exist */
+"trustedContacts.noContacts" = "Geen contacten";
+
+/* Description for empty state */
+"trustedContacts.noContactsDescription" = "Voeg contacten toe om vertrouwde te selecteren";
+
+/* Title for empty state when search returns no results */
+"trustedContacts.noResults" = "Geen resultaten";
+
+/* Description for empty state when search returns no results */
+"trustedContacts.noResultsDescription" = "Geen contacten komen overeen met \"%@\"";
+
+/* Search prompt for trusted contacts list */
+"trustedContacts.searchPrompt" = "Zoek contacten";
+
+/* Toggle label for showing only favorite contacts */
+"trustedContacts.favoritesOnly" = "Alleen favorieten";
+
+/* Apply button label */
+"trustedContacts.apply" = "Toepassen";
+
+// MARK: - About Section
+
+/* Section header for about links */
+"about.header" = "Over";
+
+/* Link to MeshCore website */
+"about.website" = "MeshCore-website";
+
+/* Link to MeshCore online map */
+"about.onlineMap" = "MeshCore online kaart";
+
+/* Link to GitHub repository */
+"about.github" = "GitHub";
+
+/* Link to the privacy policy */
+/* AI-translated - please verify with native speakers. */
+"about.privacyPolicy" = "Privacybeleid";
+
+// MARK: - Advanced Radio Section
+
+/* Section header for manual radio parameters on Settings → Radio. */
+"advancedRadio.header" = "Geavanceerd";
+
+/* Label for frequency input */
+"advancedRadio.frequency" = "Frequentie (MHz)";
+
+/* Placeholder for frequency text field */
+"advancedRadio.frequencyPlaceholder" = "MHz";
+
+/* Label for bandwidth picker */
+"advancedRadio.bandwidth" = "Bandbreedte (kHz)";
+
+/* Label for spreading factor picker */
+"advancedRadio.spreadingFactor" = "Spreidingsfactor";
+
+/* Label for coding rate picker */
+"advancedRadio.codingRate" = "Coderingssnelheid";
+
+/* Label for TX power input */
+"advancedRadio.txPower" = "TX-vermogen (dBm)";
+
+/* Placeholder for TX power text field */
+"advancedRadio.txPowerPlaceholder" = "dBm";
+
+/* Accessibility label for bandwidth picker - %@ is bandwidth value */
+"advancedRadio.accessibility.bandwidthLabel" = "%@ kilohertz";
+
+/* Accessibility label for spreading factor picker - %d is SF value */
+"advancedRadio.accessibility.spreadingFactorLabel" = "Spreidingsfactor %d";
+
+/* Accessibility label for coding rate picker - %d is CR value */
+"advancedRadio.accessibility.codingRateLabel" = "Coderingssnelheid %d";
+
+/* Accessibility hint for bandwidth picker */
+"advancedRadio.accessibility.bandwidthHint" = "Lagere waarden vergroten het bereik maar verlagen de snelheid";
+
+/* Accessibility hint for spreading factor picker */
+"advancedRadio.accessibility.spreadingFactorHint" = "Hogere waarden vergroten het bereik maar verlagen de snelheid";
+
+/* Accessibility hint for coding rate picker */
+"advancedRadio.accessibility.codingRateHint" = "Hogere waarden verbeteren foutcorrectie maar verlagen de snelheid";
+
+/* Button to apply radio settings */
+"advancedRadio.apply" = "Radio-instellingen toepassen";
+
+/* Footer warning about incorrect radio settings */
+"advancedRadio.footer" = "Waarschuwing: Onjuiste instellingen kunnen communicatie met andere mesh-apparaten verhinderen.";
+
+/* Footer when Repeat Mode is on: frequency is owned by Repeat Mode. */
+"advancedRadio.frequencyRepeatModeFooter" = "De frequentie wordt ingesteld door Repeatermodus.";
+
+/* Error message for invalid input */
+"advancedRadio.invalidInput" = "Ongeldige invoerwaarden of apparaat niet verbonden";
+
+/* Accessibility label for voltage text field at specific battery percent - %d is percent */
+"batteryCurve.accessibility.voltageLabel" = "Spanning bij %d procent";
+
+/* Accessibility value for voltage in millivolts - %d is millivolts */
+"batteryCurve.accessibility.voltageValue" = "%d millivolt";
+
+/* Accessibility hint for voltage text field */
+"batteryCurve.accessibility.voltageHint" = "Voer de verwachte spanning in bij dit laadniveau";
+
+// MARK: - Path Hash Mode Section
+
+/* Section header for path hash mode */
+"pathHashMode.header" = "Pad-hashgrootte";
+
+/* Label for path hash mode picker */
+"pathHashMode.label" = "Hashgrootte";
+
+/* Path hash mode option: 1 byte */
+"pathHashMode.oneByte" = "1 byte";
+
+/* Path hash mode option: 2 bytes */
+"pathHashMode.twoBytes" = "2 bytes";
+
+/* Path hash mode option: 3 bytes */
+"pathHashMode.threeBytes" = "3 bytes";
+
+/* Footer explaining path hash mode tradeoff */
+"pathHashMode.footer" = "Grotere hashes verminderen routeringscollisies, maar beperken het maximale aantal hops per pad. Repeaters met firmware ouder dan 1.14.0 herhalen geen berichten met een hashgrootte groter dan 1 byte.";
+
+// MARK: - Default Flood Scope Section
+
+/* Section header for default flood scope picker */
+"defaultFloodScope.header" = "Standaard flood-bereik";
+
+/* Footer explaining default flood scope */
+"defaultFloodScope.footer" = "Wanneer ingesteld past het apparaat dit bereik toe op flood-verzendingen tenzij een kanaalspecifiek bereik dit overschrijft. Het bereik wordt op het apparaat opgeslagen en blijft behouden na herstart.";
+
+/* Option to clear the persisted default flood scope */
+"defaultFloodScope.disabled" = "Geen";
+
+// MARK: - Battery Curve Section
+
+/* Section header for battery curve */
+"batteryCurve.header" = "Batterijcurve";
+
+/* Footer explaining battery curve configuration */
+"batteryCurve.footer" = "Configureer de spanning-naar-percentage-curve voor de batterij van je apparaat.";
+
+/* Label for preset picker */
+"batteryCurve.preset" = "Voorinstelling";
+
+/* Option for custom battery curve */
+"batteryCurve.custom" = "Aangepast";
+
+/* Disclosure group label for editing values */
+"batteryCurve.editValues" = "Waarden bewerken";
+
+/* Validation error for value out of range - %d is the percentage level */
+"batteryCurve.validation.outOfRange" = "Waarde bij %d%% moet 1000-99999 mV zijn";
+
+/* Validation error for non-descending values */
+"batteryCurve.validation.notDescending" = "Waarden moeten in aflopende volgorde staan";
+
+/* Unit label for millivolts */
+"batteryCurve.mV" = "mV";
+
+// MARK: - Bluetooth Section
+
+/* Section header for Bluetooth settings */
+"bluetooth.header" = "Bluetooth";
+
+/* Label for PIN type picker */
+"bluetooth.pinType" = "PIN-type";
+
+/* PIN type option for default PIN */
+"bluetooth.pinType.default" = "Standaard";
+
+/* PIN type option for custom PIN */
+"bluetooth.pinType.custom" = "Aangepaste PIN";
+
+/* Label showing current PIN */
+"bluetooth.currentPin" = "Huidige PIN";
+
+/* Button to change the PIN */
+"bluetooth.changePin" = "PIN wijzigen";
+
+/* Button to change the device display name */
+"bluetooth.changeDisplayName" = "Weergavenaam wijzigen";
+
+/* Footer explaining default PIN */
+"bluetooth.defaultPinFooter" = "Standaard PIN is 123456. Apparaten met schermen tonen hun eigen PIN.";
+
+/* Alert title for setting custom PIN */
+"bluetooth.alert.setPin.title" = "Aangepaste PIN instellen";
+
+/* Alert title for changing custom PIN */
+"bluetooth.alert.changePin.title" = "Aangepaste PIN wijzigen";
+
+/* Placeholder for PIN text field */
+"bluetooth.pinPlaceholder" = "6-cijferige PIN";
+
+/* Button to set the PIN */
+"bluetooth.setPin" = "PIN instellen";
+
+/* Alert message for setting PIN */
+"bluetooth.alert.setPin.message" = "Voer een 6-cijferige PIN in. Het apparaat wordt opnieuw opgestart om de wijziging toe te passen.";
+
+/* Alert message for changing PIN */
+"bluetooth.alert.changePin.message" = "Voer een nieuwe 6-cijferige PIN in. Het apparaat wordt opnieuw opgestart om de wijziging toe te passen.";
+
+/* Alert title for confirming PIN type change */
+"bluetooth.alert.changePinType.title" = "PIN-type wijzigen?";
+
+/* Button to confirm change */
+"bluetooth.alert.change" = "Wijzigen";
+
+/* Alert message for PIN type change */
+"bluetooth.alert.changePinType.message" = "Het apparaat wordt opnieuw opgestart om de wijziging toe te passen.";
+
+/* Error for invalid PIN format */
+"bluetooth.error.invalidPin" = "PIN moet een 6-cijferig getal zijn tussen 100000 en 999999";
+
+// MARK: - Contacts Settings Section
+
+/* Section header for nodes/contacts settings */
+/* Toggle label for auto-add nodes */
+/* Description for auto-add nodes toggle */
+// MARK: - Nodes Settings Section
+
+/* Section header for nodes settings */
+"nodes.header" = "Knooppunten";
+
+/* Label for auto-add mode picker */
+"nodes.autoAddMode" = "Automatisch toevoegen";
+
+/* Auto-add mode: manual */
+"nodes.autoAddMode.manual" = "Handmatig";
+
+/* Auto-add mode: manual description */
+"nodes.autoAddMode.manualDescription" = "Alle knooppunten in Ontdekken bekijken voordat ze worden toegevoegd";
+
+/* Auto-add mode: selected types */
+"nodes.autoAddMode.selectedTypes" = "Geselecteerde typen";
+
+/* Auto-add mode: selected types description */
+"nodes.autoAddMode.selectedTypesDescription" = "Alleen de hieronder ingeschakelde typen automatisch toevoegen";
+
+/* Auto-add mode: all */
+"nodes.autoAddMode.all" = "Alle";
+
+/* Auto-add mode: all description */
+"nodes.autoAddMode.allDescription" = "Elk ontdekt knooppunt automatisch toevoegen";
+
+/* Section header for auto-add types */
+/* Toggle label for auto-add contacts */
+"nodes.autoAddContacts" = "Contacten";
+
+/* Toggle label for auto-add repeaters */
+"nodes.autoAddRepeaters" = "Repeaters";
+
+/* Toggle label for auto-add room servers */
+"nodes.autoAddRoomServers" = "Ruimteservers";
+
+/* Section header for storage settings */
+/* Toggle label for overwrite oldest */
+"nodes.overwriteOldest" = "Oudste overschrijven";
+
+/* Description for overwrite oldest toggle */
+"nodes.overwriteOldestDescription" = "Wanneer de opslag vol is, het oudste niet-favoriete knooppunt vervangen";
+
+/* Picker label for max hop distance */
+"nodes.maxHops" = "Max. hoplimiet (auto-toevoegen)";
+
+/* No limit option */
+"nodes.maxHops.noLimit" = "Geen limiet";
+
+/* Direct only option (0 hops) */
+"nodes.maxHops.directOnly" = "Alleen direct";
+
+/* Singular 1 hop option */
+"nodes.maxHops.oneHop" = "1 hop";
+
+/* Plural hops format string */
+"nodes.maxHops.hops" = "%d hops";
+
+/* Footer text when hop limit is active */
+"nodes.maxHops.footerActive" = "Knooppunten voorbij de geselecteerde hopafstand worden niet automatisch toegevoegd.";
+
+// MARK: - Auto-Remove Old Nodes Section
+
+/* Toggle label / section header for stale node cleanup */
+"nodes.staleCleanup.header" = "Oude knooppunten automatisch verwijderen";
+
+/* Label for threshold picker */
+"nodes.staleCleanup.threshold" = "Knooppunten ouder dan verwijderen";
+
+/* Picker placeholder when no threshold is selected */
+"nodes.staleCleanup.select" = "Selecteer";
+
+/* Threshold option: number of days (%d = day count) */
+"nodes.staleCleanup.days" = "%d dagen";
+
+/* Footer when auto-remove is enabled (%d = day count) */
+"nodes.staleCleanup.footerEnabled" = "Niet-favoriete knooppunten die %d dagen niet zijn bijgewerkt, worden automatisch verwijderd bij verbinding.";
+
+/* Footer describing the auto-remove feature (shown when toggle is off) */
+"nodes.staleCleanup.footerDisabled" = "Verwijdert automatisch niet-favoriete knooppunten die binnen een ingestelde periode niet zijn bijgewerkt. Favorieten worden nooit verwijderd.";
+
+/* Footer when toggle is on but no threshold selected yet */
+"nodes.staleCleanup.footerSelect" = "Kies hoe lang knooppunten bewaard worden. Favorieten worden nooit verwijderd.";
+
+/* Footer when enabled but device is disconnected */
+"nodes.staleCleanup.footerDisconnected" = "Controleert op oude knooppunten bij de volgende verbinding. Favorieten worden nooit verwijderd.";
+
+/* Last cleanup date row (%@ = relative date) */
+"nodes.staleCleanup.lastRun" = "Laatst gecontroleerd %@";
+
+// MARK: - Device Actions Section
+
+/* Section header for device actions */
+"deviceActions.header" = "Apparaat";
+
+/* Button to reboot the device */
+"deviceActions.rebootDevice" = "Apparaat herstarten";
+
+/* Text shown while rebooting */
+"deviceActions.rebooting" = "Herstarten…";
+
+/* Alert title for reboot confirmation */
+"deviceActions.alert.reboot.title" = "Apparaat herstarten?";
+
+/* Button to confirm reboot */
+"deviceActions.alert.reboot.confirm" = "Herstarten";
+
+/* Alert message for reboot confirmation */
+"deviceActions.alert.reboot.message" = "Het apparaat wordt herstart en tijdelijk losgekoppeld.";
+
+// MARK: - Danger Zone Section
+
+/* Section header for danger zone */
+"dangerZone.header" = "Gevarenzone";
+
+/* Button to forget/unpair the device */
+"dangerZone.forgetDevice" = "Apparaat vergeten";
+
+/* Button to factory reset the device */
+"dangerZone.factoryReset" = "Fabrieksinstellingen herstellen";
+
+/* Text shown while resetting */
+"dangerZone.resetting" = "Herstellen...";
+
+/* Footer explaining factory reset */
+"dangerZone.footer" = "Fabrieksinstellingen herstellen wist alle contacten, berichten en instellingen op het apparaat.";
+
+/* Confirmation dialog title for forget device */
+"dangerZone.dialog.forget.title" = "Apparaat vergeten";
+
+/* Confirmation dialog message for forget device */
+"dangerZone.dialog.forget.message" = "Je apparaat wordt ontkoppeld. Je kunt ervoor kiezen om je berichten, contacten en kanalen te behouden of te verwijderen.";
+
+/* Button to forget device but keep data */
+"dangerZone.dialog.forget.keepData" = "Apparaat vergeten";
+
+/* Button to forget device and delete all associated data */
+"dangerZone.dialog.forget.deleteAll" = "Apparaat vergeten en gegevens verwijderen";
+
+/* Alert title for factory reset confirmation */
+"dangerZone.alert.reset.title" = "Fabrieksinstellingen herstellen";
+
+/* Button to confirm reset */
+"dangerZone.alert.reset.confirm" = "Herstellen";
+
+/* Alert message for factory reset */
+"dangerZone.alert.reset.message" = "Dit wist alle gegevens op het apparaat inclusief contacten, berichten en instellingen. Tik op Verwijder wanneer daarom wordt gevraagd om het apparaat te ontkoppelen.";
+
+/* Error when services are not available */
+"dangerZone.error.servicesUnavailable" = "Services niet beschikbaar";
+
+/* Button to remove non-favorite nodes */
+"dangerZone.removeUnfavorited" = "Niet-favoriete knooppunten verwijderen";
+
+/* Text shown while removing unfavorited nodes */
+"dangerZone.removing" = "Verwijderen…";
+
+/* Label shown after successful removal */
+"dangerZone.removed" = "Knooppunten verwijderd";
+
+/* Alert title for remove non-favorite confirmation */
+"dangerZone.alert.removeUnfavorited.title" = "Niet-favoriete knooppunten verwijderen";
+
+/* Button to confirm removal */
+"dangerZone.alert.removeUnfavorited.confirm" = "Knooppunten verwijderen";
+
+/* Alert title for removal result */
+"dangerZone.alert.removeUnfavorited.resultTitle" = "Verwijderresultaat";
+
+/* Alert message for remove unfavorited (%d = count) */
+"dangerZone.alert.removeUnfavorited.message" = "Dit verwijdert permanent %d knooppunten die niet als favoriet zijn gemarkeerd van het apparaat en de app, inclusief hun berichten.";
+
+/* Partial success message (%d = removed, %d = total) */
+"dangerZone.alert.removeUnfavorited.partial" = "%d van %d knooppunten verwijderd. De verbinding werd onderbroken — tik opnieuw op de knop om de overige knooppunten te verwijderen.";
+
+/* Message when no non-favorite nodes to remove */
+"dangerZone.alert.removeUnfavorited.noneFound" = "Geen niet-favoriete knooppunten om te verwijderen.";
+
+// MARK: - Diagnostics Section
+
+/* Section header for diagnostics */
+"diagnostics.header" = "Diagnostiek";
+
+/* Button to export debug logs */
+"diagnostics.exportLogs" = "Debuglogboeken exporteren";
+
+/* Button to clear debug logs */
+"diagnostics.clearLogs" = "Debuglogboeken wissen";
+
+/* Footer explaining log export */
+"diagnostics.footer" = "Export bevat debuglogboeken van alle app-sessies. Logboeken worden lokaal opgeslagen en na 7 dagen automatisch verwijderd.";
+
+/* Alert title for clear logs confirmation */
+"diagnostics.alert.clear.title" = "Debuglogboeken wissen";
+
+/* Button to confirm clear */
+"diagnostics.alert.clear.confirm" = "Wissen";
+
+/* Alert message for clear logs */
+"diagnostics.alert.clear.message" = "Dit verwijdert alle opgeslagen debuglogboeken. Geëxporteerde logbestanden worden niet beïnvloed.";
+
+/* Error when export fails */
+"diagnostics.error.exportFailed" = "Kan exportbestand niet maken";
+
+// MARK: - Chat Settings
+
+/* Navigation title for chat settings page */
+"chatSettings.title" = "Chats";
+
+// MARK: - Link Preview Settings Section
+
+/* Section header for link content settings */
+"linkPreviews.header" = "Linkinhoud";
+
+/* Toggle label for the link content master switch */
+"linkPreviews.toggle" = "Linkinhoud tonen";
+
+/* Toggle label for showing previews in DMs */
+"linkPreviews.showInDMs" = "Tonen in directe berichten";
+
+/* Toggle label for showing previews in channels */
+"linkPreviews.showInChannels" = "Tonen in kanalen";
+
+/* Footer explaining link content privacy implications */
+"linkPreviews.footer" = "Linkvoorbeelden en afbeeldingen worden opgehaald via de internetverbinding van je telefoon, niet via het mesh. Dit kan je IP-adres onthullen aan de server die de inhoud host en kan mobiele data gebruiken.";
+
+/* Footer note shown when Reduce Motion is enabled */
+"linkPreviews.reduceMotionNote" = "Verminder beweging staat aan, dus GIF's worden niet automatisch afgespeeld.";
+
+// MARK: - Node Settings Section
+
+/* Section header for node settings */
+"node.header" = "Knooppunt";
+
+/* Label for node name */
+"node.name" = "Knooppuntnaam";
+
+/* Default node name when unknown */
+/* Button text to copy */
+/* Label for set location button */
+"node.setLocation" = "Locatie instellen";
+
+/* Text shown when location is set */
+"node.locationSet" = "Ingesteld";
+
+/* Text shown when location is not set */
+"node.locationNotSet" = "Niet ingesteld";
+
+/* Toggle label for share location publicly */
+"node.shareLocationPublicly" = "Locatie openbaar delen";
+
+/* Footer explaining node visibility */
+"node.footer" = "Je knooppuntnaam en locatie zijn zichtbaar voor andere mesh-gebruikers wanneer gedeeld.";
+
+/* Alert title for editing node name */
+"node.alert.editName.title" = "Knooppuntnaam bewerken";
+
+// MARK: - Notification Settings Section
+
+/* Section header for notifications */
+"notifications.header" = "Meldingen";
+
+/* Toggle label for contact messages notifications */
+"notifications.contactMessages" = "Contactberichten";
+
+/* Toggle label for channel messages notifications */
+"notifications.channelMessages" = "Kanaalberichten";
+
+/* Toggle label for room messages notifications */
+"notifications.roomMessages" = "Kamerberichten";
+
+/* Toggle label for new contact discovered notifications */
+"notifications.newContactDiscovered" = "Nieuw contact ontdekt";
+
+/* Toggle label for companion discovery notifications */
+"notifications.discoveryContact" = "Companion";
+
+/* Toggle label for repeater discovery notifications */
+"notifications.discoveryRepeater" = "Repeater";
+
+/* Toggle label for room discovery notifications */
+"notifications.discoveryRoom" = "Kamer";
+
+/* Toggle label for low battery warnings */
+"notifications.lowBattery" = "Waarschuwingen lage batterij";
+
+/* Location: ChannelNotificationDefaultsSection.swift - Section header */
+"notifications.channelDefault.header" = "Kanaalmeldingen";
+
+/* Location: ChannelNotificationDefaultsSection.swift - Picker label for the notification level new channels start with */
+"notifications.channelDefault.newChannels" = "Nieuwe kanalen";
+
+/* Location: ChannelNotificationDefaultsSection.swift - Button that sets every existing channel to the chosen level */
+"notifications.channelDefault.applyToAll" = "Toepassen op alle kanalen";
+
+/* Location: ChannelNotificationDefaultsSection.swift - Footer explaining the default channel notification level */
+"notifications.channelDefault.footer" = "Kanalen die je vanaf nu toevoegt, beginnen op dit niveau. Je kunt elk kanaal nog steeds wijzigen via het infoscherm.";
+
+/* Location: ChannelNotificationDefaultsSection.swift - Confirmation title before changing every channel - %@ is the notification level name */
+"notifications.channelDefault.applyConfirmTitle" = "Alle kanalen instellen op ‘%@’?";
+
+/* Toggle label for reaction notifications */
+"notifications.reactions" = "Reacties";
+
+/* Location: NotificationSettingsSection.swift - Toggle for the reminder shown when the app has heard nothing from its radio for a while, or Bluetooth is off */
+"notifications.notReceiving" = "Herinnering bij geen ontvangst";
+
+/* Location: NotificationSettingsSection.swift - Card shown when a Cairn radio reported messages lost from its queue and no notification could say so; %d = number of lost messages */
+"notifications.radioQueueLoss.title" = "Berichten verloren op de radio: %d";
+
+/* Location: NotificationSettingsSection.swift - Subtitle of the lost-messages card; %@ = radio name. Tapping the card dismisses it */
+"notifications.radioQueueLoss.subtitle" = "%@ had geen ruimte meer voor berichten terwijl Cairn weg was, en geen melding kon je waarschuwen. Tik om te sluiten.";
+
+/* Button to enable notifications */
+"notifications.enable" = "Meldingen inschakelen";
+
+/* Label shown when notifications are disabled */
+"notifications.disabled" = "Meldingen uitgeschakeld";
+
+/* Button to open system settings */
+"notifications.openSettings" = "Open Instellingen";
+
+/* Message shown when device not connected */
+/* Footer for notifications navigation row */
+// MARK: - Radio Preset Section
+
+/* Section header for radio settings */
+"radio.header" = "Radio";
+
+/* Label for radio preset picker */
+"radio.preset" = "Radiovoorinstelling";
+
+/* Footer explaining radio presets. Location is geographic filter, not mesh Region. */
+"radio.footer" = "Kies een voorinstelling die overeenkomt met radio's in de buurt. MeshCore-apparaten moeten dezelfde radio-instellingen gebruiken om te kunnen communiceren.";
+
+/* Radio row and PresetLocationView navigation title. Not Settings → Location (GPS pin). */
+"radio.presetLocation" = "Locatie";
+
+/* Trailing value when the place is unset: Location row, and empty Country / State rows in RegionPickerRows (Radio and onboarding). */
+"radio.presetLocation.notSet" = "Niet ingesteld";
+
+/* Footer on the Radio location section and the Location subpage. */
+"radio.presetLocation.footer" = "Filtert de lijst met voorinstellingen. Wijzigt de radio niet.";
+
+/* errorAlert when Use my location is authorized but resolve() returns nil. */
+"radio.presetLocation.useMyLocation.failure" = "Kon geen plaats bepalen op basis van je locatie. Kies land en provincie.";
+
+/* Visible label + VoiceOver value on Use my location while GPS / geocode is in flight. Not onboarding region.resolving. */
+"radio.presetLocation.useMyLocation.locating" = "Locatie zoeken…";
+
+/* Open Settings alert message when Use my location is denied or restricted. */
+"radio.presetLocation.denied" = "Locatiemachtiging is eerder geweigerd. Schakel deze in via Instellingen om land en provincie in te vullen.";
+
+/* Toggle label for repeat mode */
+"radio.repeatMode" = "Repeatermodus";
+
+/* Footer explaining repeat mode */
+"radio.repeatMode.footer" = "Creëert een lokale repeater op een eigen frequentie. Handig voor wandelen en afgelegen gebieden.";
+
+/* Accessibility hint for repeat mode toggle */
+"radio.repeatMode.accessibilityHint" = "Inschakelen verbreekt de verbinding met het hoofdnetwerk";
+
+/* Confirmation dialog title for enabling repeat mode */
+"radio.repeatMode.confirm.title" = "Repeatermodus inschakelen?";
+
+/* Confirmation dialog message for enabling repeat mode */
+"radio.repeatMode.confirm.message" = "Je wordt losgekoppeld van het hoofdnetwerk. Alleen apparaten op dezelfde Repeatermodus-frequentie zijn bereikbaar.";
+
+/* Confirmation dialog enable button */
+"radio.repeatMode.confirm.enable" = "Inschakelen";
+
+/* Location: RadioPresetSection.swift - Footer line listing the user's region */
+"radio.regionFooter" = "Voorinstellingen voor %@ worden getoond.";
+
+/* Location: RadioPresetSection.swift - Footer reminding the operator to comply with local radio laws */
+"radio.regulationsFooter" = "Je bent verantwoordelijk voor het naleven van de lokale radiowetgeving.";
+
+// MARK: - Telemetry Settings Section
+
+/* Section header for telemetry settings */
+"telemetry.header" = "Telemetrie";
+
+/* Toggle label for allowing telemetry requests */
+"telemetry.allowRequests" = "Telemetrieverzoeken toestaan";
+
+/* Description for telemetry requests toggle */
+"telemetry.allowRequestsDescription" = "Vereist voor andere gebruikers om handmatig een pad naar jou te traceren. Deelt batterijniveau.";
+
+/* Toggle label for including location in telemetry */
+"telemetry.includeLocation" = "Locatie opnemen";
+
+/* Description for include location toggle */
+"telemetry.includeLocationDescription" = "GPS-coördinaten delen in telemetrie";
+
+/* Toggle label for including environment sensors */
+"telemetry.includeEnvironment" = "Omgevingssensoren opnemen";
+
+/* Description for include environment toggle */
+"telemetry.includeEnvironmentDescription" = "Temperatuur, luchtvochtigheid, enz. delen";
+
+/* Toggle label for trusted contacts only */
+"telemetry.trustedOnly" = "Alleen delen met vertrouwde contacten";
+
+/* Description for trusted contacts toggle */
+"telemetry.trustedOnlyDescription" = "Beperk telemetrie tot geselecteerde contacten";
+
+/* Link to manage trusted contacts */
+"telemetry.manageTrusted" = "Vertrouwde contacten beheren";
+
+/* Footer explaining telemetry */
+"telemetry.footer" = "Wanneer ingeschakeld kunnen andere knooppunten de telemetriegegevens van je apparaat opvragen.";
+
+// MARK: - WiFi Section
+
+/* Section header for WiFi settings */
+"wifi.header" = "Wifi";
+
+/* Label for IP address */
+"wifi.address" = "Adres";
+
+/* Label for port number */
+"wifi.port" = "Poort";
+
+/* Button to edit WiFi connection */
+"wifi.editConnection" = "Verbinding bewerken";
+
+/* Footer explaining WiFi address */
+"wifi.footer" = "Het lokale netwerkadres van je apparaat";
+
+// MARK: - WiFi Edit Sheet
+
+/* Navigation title for WiFi edit sheet */
+"wifiEdit.title" = "Wifi-verbinding bewerken";
+
+/* Section header for connection details */
+"wifiEdit.connectionDetails" = "Verbindingsgegevens";
+
+/* Placeholder for IP address field */
+/* Placeholder for port field */
+/* Accessibility label for clear IP button */
+/* Accessibility label for clear port button */
+/* Footer explaining reconnection */
+"wifiEdit.footer" = "Het wijzigen van deze waarden verbreekt de verbinding en maakt opnieuw verbinding met het nieuwe adres.";
+
+/* Text shown while reconnecting */
+"wifiEdit.reconnecting" = "Opnieuw verbinden...";
+
+/* Button to save changes */
+"wifiEdit.saveChanges" = "Wijzigingen opslaan";
+
+/* Error for invalid port */
+"wifiEdit.error.invalidPort" = "Ongeldig poortnummer";
+
+// MARK: - Error Alert
+
+/* Alert title for generic errors */
+"alert.error.title" = "Fout";
+
+// MARK: - Retry Alert
+
+/* Alert title when max retries exceeded */
+"alert.retry.unableToSave" = "Kan instelling niet opslaan";
+
+/* Alert title for connection errors */
+"alert.retry.connectionError" = "Verbindingsfout";
+
+/* Button to retry the operation */
+"alert.retry.retry" = "Opnieuw proberen";
+
+/* Alert message when max retries exceeded */
+"alert.retry.ensureConnected" = "Zorg ervoor dat je apparaat is verbonden.";
+
+/* Fallback message for retry alerts when error description is unavailable */
+"alert.retry.fallbackMessage" = "Zorg ervoor dat het apparaat is verbonden en probeer het opnieuw.";
+
+// MARK: - Battery Curve Chart
+
+/* Chart X axis label */
+"chart.percent" = "Percentage";
+
+/* Chart Y axis label */
+"chart.voltage" = "Spanning (V)";
+
+/* Accessibility label for battery curve chart */
+"chart.accessibility" = "Batterijontlaadcurve met spanning bij elk percentageniveau";
+
+// MARK: - Messages Settings Section
+
+/* Section header for message info settings in chats */
+"messages.header" = "Berichtinfo";
+
+/* Toggle label for showing the raw uncorrected wire send time on incoming messages */
+/* Toggle label for showing routing path on incoming messages */
+"messages.showIncomingPath" = "Inkomend pad";
+
+/* Toggle label for showing hop count on incoming messages */
+"messages.showIncomingHopCount" = "Inkomend aantal hops";
+
+/* Toggle label for showing the radio region an incoming message was flooded under */
+"messages.showIncomingRegion" = "Inkomende regio";
+
+/* Toggle label for showing the extra-arrival ear chip on incoming message bubbles */
+"messages.showIncomingHeardCount" = "Inkomend aantal gehoord";
+
+/* Footer explaining what the message display options show */
+"messages.footer" = "Routerings- en tijdsinformatie weergeven in inkomende berichtballonnen.";
+
+// MARK: - Direct Messages Settings Section
+
+/* Section header for direct message settings */
+"directMessages.header" = "Directe berichten";
+
+/* Picker label for number of acknowledgments */
+"directMessages.acknowledgments" = "Bevestigingen";
+
+/* Footer explaining the acknowledgments setting */
+"directMessages.footer" = "Aantal bevestigingen dat per direct bericht wordt verstuurd. Gebruik 2 voor betere afleverbevestiging via onbetrouwbare verbindingen.";
+
+// MARK: - BLE Status Indicator
+
+/* Menu item to send a zero-hop advertisement */
+"bleStatus.sendZeroHopAdvert" = "Zero-Hop advertentie verzenden";
+
+/* Menu item to send a flood advertisement */
+"bleStatus.sendFloodAdvert" = "Flood advertentie verzenden";
+
+/* Menu item to disconnect from the current device */
+"bleStatus.disconnect" = "Verbinding verbreken";
+
+/* Status shown when device is disconnected */
+"bleStatus.status.disconnected" = "Niet verbonden";
+
+/* Status shown when device is connecting */
+"bleStatus.status.connecting" = "Verbinden...";
+
+/* Status shown when device is connected but not ready */
+"bleStatus.status.connected" = "Verbonden";
+
+/* Status shown when device is syncing data */
+"bleStatus.status.syncing" = "Synchroniseren";
+
+/* Status shown when device is ready */
+"bleStatus.status.ready" = "Gereed";
+
+/* Accessibility hint for zero-hop advert button */
+"bleStatus.sendZeroHopAdvert.hint" = "Zendt alleen uit naar directe buren";
+
+/* Accessibility hint for flood advert button */
+"bleStatus.sendFloodAdvert.hint" = "Verspreidt advertentie over het hele mesh-netwerk";
+
+// MARK: - Location Settings Section
+
+/* Section header for location settings */
+"location.header" = "Locatie";
+
+/* Footer for location settings section */
+"location.footer" = "Wanneer Locatie openbaar delen is ingeschakeld, wordt uw locatie via het mesh-netwerk uitgezonden bij het verzenden van adverts. Door Locatie automatisch bijwerken in te schakelen wordt de locatie van uw apparaat automatisch bijgewerkt voordat adverts worden verzonden.";
+
+/* Toggle label for auto-update location */
+"location.autoUpdate" = "Locatie automatisch bijwerken";
+
+/* Label for GPS source picker */
+"location.gpsSource" = "GPS-bron";
+
+/* GPS source option: phone GPS */
+"location.gpsSource.phone" = "Telefoon GPS";
+
+/* GPS source option: device GPS */
+"location.gpsSource.device" = "Apparaat GPS";
+
+/* Section header for device GPS controls */
+"location.deviceGps.header" = "Apparaat GPS";
+
+/* Toggle label for device GPS power */
+"location.deviceGps.toggle" = "Apparaat GPS inschakelen";
+
+/* Footer for device GPS controls */
+"location.deviceGps.footer" = "Schakelt de ingebouwde GPS van de radio in of uit. Het opslaan van een handmatige kaartlocatie schakelt de apparaat GPS uit.";
+
+/* Toggle for the radio GPS's Eco (duty-cycled) mode; shown only when the firmware supports it */
+"location.deviceGps.eco" = "Eco-modus";
+
+/* Subtitle for the device GPS Eco toggle */
+"location.deviceGps.ecoFooter" = "Wekt de GPS om de paar minuten voor een fix en schakelt hem daarna uit om de batterij te sparen.";
+
+/* Detail text when location is being shared publicly */
+"location.sharingPublicly" = "Openbaar delen";
+
+/* Detail text when location is not being shared */
+"location.notSharing" = "Niet delen";
+
+// MARK: - Config Export/Import
+
+/* Section title for config export/import */
+"configExport.sectionTitle" = "Apparaatconfiguratie";
+
+/* Section footer explaining config export/import */
+"configExport.sectionFooter" = "Exporteer of importeer apparaatinstellingen, kanalen en contacten als JSON-bestand.";
+
+/* Export navigation row label */
+"configExport.export" = "Configuratie exporteren";
+
+/* Export screen navigation title */
+"configExport.title" = "Configuratie exporteren";
+
+/* Export full config button */
+"configExport.exportFull" = "Volledige configuratie exporteren";
+
+/* Export selected sections button */
+"configExport.exportSelected" = "Geselecteerde secties exporteren";
+
+/* Customize export disclosure label */
+/* Select all toggle label */
+"configExport.selectAll" = "Alles selecteren";
+
+/* Toggle labels for export sections */
+"configExport.nodeIdentity" = "Knoopidentiteit (Naam & sleutels)";
+"configExport.nodeIdentity.description" = "Apparaatnaam, publieke sleutel en privésleutel";
+"configExport.radioSettings" = "Radio-instellingen";
+"configExport.radioSettings.description" = "Frequentie, bandbreedte, spreidingsfactor, coderingssnelheid, TX-vermogen";
+"configExport.positionSettings" = "Positie";
+"configExport.positionSettings.description" = "Breedtegraad en lengtegraad";
+"configExport.otherSettings" = "Overige instellingen";
+"configExport.otherSettings.description" = "Contactpermissies, locatie delen";
+"configExport.channels" = "Kanalen";
+"configExport.channels.description" = "Alle kanalen en hun versleutelingssleutels";
+"configExport.contacts" = "Contacten";
+"configExport.contacts.description" = "Namen, sleutels en laatst bekende posities";
+
+// MARK: - Config Import
+
+/* Import screen navigation title */
+"configImport.title" = "Configuratie importeren";
+
+/* Select file button */
+"configImport.selectFile" = "JSON-bestand selecteren";
+
+/* Confirmation alert title */
+"configImport.confirmTitle" = "Configuratie toepassen?";
+
+/* Confirmation alert message (param: device name) */
+"configImport.confirmMessage" = "De geselecteerde instellingen worden samengevoegd in %@. Bestaande kanalen en contacten worden bijgewerkt of toegevoegd.";
+
+/* Apply button label */
+"configImport.applyButton" = "Toepassen op apparaat";
+
+/* Apply button label (additive only — channels/contacts) */
+"configImport.applyButtonAdd" = "Toevoegen aan apparaat";
+
+/* Apply button label (overwrite settings) */
+"configImport.applyButtonOverwrite" = "Instellingen overschrijven";
+
+/* Confirmation alert title (additive only) */
+"configImport.confirmTitleAdd" = "Toevoegen aan apparaat?";
+
+/* Confirmation alert title (overwrite settings) */
+"configImport.confirmTitleOverwrite" = "Instellingen overschrijven?";
+
+/* Confirmation alert message (additive only, param: device name) */
+"configImport.confirmMessageAdd" = "Kanalen en contacten worden toegevoegd aan %@. Bestaande gegevens worden niet verwijderd.";
+
+/* Confirmation alert message (overwrite only, param: device name) */
+"configImport.confirmMessageOverwrite" = "De geselecteerde instellingen op %@ worden overschreven. Huidige waarden worden vervangen.";
+
+/* Confirmation alert message (mixed, param: device name) */
+"configImport.confirmMessageMixed" = "Instellingen worden overschreven en kanalen/contacten worden toegevoegd op %@.";
+
+/* Proximity warning */
+"configImport.proximityWarning" = "Houd apparaten dicht bij elkaar tijdens het importeren";
+
+/* Import cancelled */
+"configImport.cancelled" = "Import is geannuleerd.";
+
+/* Import cancelled after one or more settings were already written to the device */
+"configImport.cancelledPartial" = "Import is geannuleerd, maar sommige instellingen waren al naar het apparaat geschreven. Controleer de configuratie van het apparaat.";
+
+/* Import failed after one or more settings were already written; %@ is the underlying error message */
+"configImport.failedPartial" = "%@ Sommige instellingen zijn mogelijk al naar het apparaat geschreven. Controleer de configuratie van het apparaat.";
+
+/* Import success */
+"configImport.importSuccess" = "Configuratie succesvol geïmporteerd";
+
+/* Private key warning */
+"configImport.privateKeyWarning" = "De cryptografische identiteit van de knoop wordt vervangen";
+
+"configImport.current" = "Huidig: %@";
+"configImport.new" = "Nieuw: %@";
+
+/* Channel count (param: integer) */
+"configImport.channelCount" = "%d kanalen worden toegevoegd/bijgewerkt op het apparaat";
+
+/* Import navigation row label */
+"configImport.importConfig" = "Configuratie importeren";
+
+/* Radio settings change warning */
+"configImport.radioWarning" = "Wijziging van radio-instellingen verbreekt de verbinding met het huidige mesh-netwerk";
+
+/* Contact count (param: integer) */
+"configImport.contactCount" = "%d contacten worden toegevoegd/bijgewerkt op het apparaat";
+
+/* Generic device-name fallback used in confirmation messages when the node has no name */
+"configImport.thisDevice" = "dit apparaat";
+
+/* Import progress: applying position */
+"configImport.stepPosition" = "Positie instellen";
+
+/* Import progress: applying other parameters */
+"configImport.stepOtherParameters" = "Overige parameters instellen";
+
+/* Import progress: importing the private key */
+"configImport.stepPrivateKey" = "Privésleutel importeren";
+
+/* Import progress: setting the node name */
+"configImport.stepNodeName" = "Knooppuntnaam instellen";
+
+/* Import progress: applying radio parameters */
+"configImport.stepRadioParameters" = "Radioparameters instellen";
+
+/* Import progress: setting TX power */
+"configImport.stepTxPower" = "TX-vermogen instellen";
+
+/* Import progress: importing a channel (param: channel name) */
+"configImport.stepChannel" = "Kanaal importeren: %@";
+
+/* Import progress: importing a contact (param: contact name) */
+"configImport.stepContact" = "Contact importeren: %@";
+
+/* Validation field label: radio frequency */
+"configImport.field.frequency" = "Frequentie";
+
+/* Validation field label: radio bandwidth */
+"configImport.field.bandwidth" = "Bandbreedte";
+
+/* Validation field label: spreading factor */
+"configImport.field.spreadingFactor" = "Spreidingsfactor";
+
+/* Validation field label: coding rate */
+"configImport.field.codingRate" = "Coderingssnelheid";
+
+/* Validation field label: TX power */
+"configImport.field.txPower" = "TX-vermogen";
+
+/* Validation field label: latitude */
+"configImport.field.latitude" = "Breedtegraad";
+
+/* Validation field label: longitude */
+"configImport.field.longitude" = "Lengtegraad";
+
+/* Validation error: value outside radio's supported range (param: field label) */
+"configImport.error.radioOutOfRange" = "%@ valt buiten het ondersteunde bereik van de radio";
+
+/* Validation error: invalid coordinate (param: field label) */
+"configImport.error.positionInvalid" = "%@ heeft een ongeldige coördinaat of een coördinaat buiten bereik";
+
+/* Validation error: contact coordinate invalid (params: contact name, field label) */
+"configImport.error.contactCoordinateInvalid" = "Contact \"%@\" %@ heeft een ongeldige coördinaat of een coördinaat buiten bereik";
+
+/* Validation error: contact has an invalid routing path (param: contact name) */
+"configImport.error.invalidOutPath" = "Contact \"%@\" heeft een ongeldig routeringspad";
+
+/* Validation error: not enough free contact slots (params: needed count, available count) */
+"configImport.error.contactCapacityExceeded" = "Voor de import zijn %d vrije contactplekken nodig, maar er zijn er nog maar %d beschikbaar op het apparaat";
+
+/* Validation error: channel secret wrong length (params: channel index, hex char count) */
+"configImport.error.invalidChannelSecret" = "Kanaal %1$lld heeft een ongeldige geheime sleutel (%2$lld hex-tekens, 32 verwacht)";
+
+/* Validation error: contact public key malformed (param: contact name) */
+"configImport.error.invalidContactPublicKey" = "Contact \"%@\" heeft een ongeldige openbare sleutel";
+
+/* Validation error: unsupported path hash mode (params: contact name, mode value) */
+"configImport.error.invalidPathHashMode" = "Contact \"%1$@\" heeft een niet-ondersteunde pad-hashmodus %2$lld (0, 1 of 2 verwacht)";
+
+/* Validation error: private key wrong length (params: hex char count, expected hex char count) */
+"configImport.error.invalidPrivateKey" = "Ongeldige privésleutel (%1$lld hex-tekens, %2$lld verwacht)";
+
+/* Validation error: no empty channel slot left (param: channel name) */
+"configImport.error.noAvailableChannelSlot" = "Geen lege kanaalplek beschikbaar voor \"%@\"";
+
+/* Toggle label for auto-play GIFs */
+"inlineImages.autoPlayGifs" = "GIF's automatisch afspelen";
+
+// MARK: - Map Preview Settings Section
+
+/* Section header for chat map preview settings */
+/* AI-translated - please verify with native speakers. */
+"mapPreviews.header" = "Kaartvoorbeelden";
+
+/* Toggle label for chat map thumbnails */
+/* AI-translated - please verify with native speakers. */
+"mapPreviews.toggle" = "Kaartminiaturen tonen";
+
+/* Footer explaining map preview privacy implications */
+/* AI-translated - please verify with native speakers. */
+"mapPreviews.footer" = "Het tonen van kaartminiaturen haalt kaarttegels voor de coördinaat op bij een externe server, waardoor uw IP-adres kan worden onthuld.";
+
+// MARK: - Blocking Section
+
+/* Location: BlockingSection.swift - Purpose: Section header */
+"blocking.header" = "Blokkering";
+
+/* Location: BlockingSection.swift - Purpose: Channel senders row */
+"blocking.channelSenders" = "Kanaalafzenders";
+
+/* Location: BlockingSection.swift - Purpose: Contacts row */
+"blocking.contacts" = "Contacten";
+
+/* Location: BlockingSection.swift - Row that opens the blocked keywords list */
+"blocking.keywords" = "Trefwoorden";
+
+/* Location: BlockedKeywordsView.swift - Navigation title */
+"blocking.keywords.title" = "Geblokkeerde trefwoorden";
+
+/* Location: BlockedKeywordsView.swift - Placeholder of the field for a new blocked keyword */
+"blocking.keywords.placeholder" = "Woord of zinsdeel";
+
+/* Location: BlockedKeywordsView.swift - Button that adds the typed keyword to the list */
+"blocking.keywords.add" = "Voeg toe";
+
+/* Location: BlockedKeywordsView.swift - Footer explaining what blocked keywords do */
+"blocking.keywords.footer" = "Inkomende kanaalberichten die een van deze woorden of zinsdelen bevatten, worden verborgen. Hoofdletters worden genegeerd en een trefwoord komt ook overeen binnen langere woorden. Directe berichten worden niet gefilterd.";
+
+/* Location: BlockedChannelSendersView.swift - Purpose: Navigation title */
+"blocking.channelSenders.title" = "Geblokkeerde kanaalafzenders";
+
+/* Location: BlockedChannelSendersView.swift - Purpose: Empty state title */
+"blocking.channelSenders.empty.title" = "Geen geblokkeerde gebruikers";
+
+/* Location: BlockedChannelSendersView.swift - Purpose: Empty state description */
+"blocking.channelSenders.empty.description" = "Kanaalafzendernamen die je blokkeert verschijnen hier.";
+
+/* Location: BlockedChannelSendersView.swift - Purpose: Swipe action to unblock */
+// MARK: - Language
+
+/* Location: SettingsView.swift - Purpose: Language row title */
+"language.title" = "Taal";
+
+"language.appLanguage.title" = "App-taal";
+
+/* Location: MeasurementUnitsSection.swift - Picker label for measurement units */
+"units.title" = "Eenheden";
+
+/* Location: MeasurementUnitsSection.swift - Units option: follow the device region setting */
+"units.system" = "Systeem";
+
+/* Location: MeasurementUnitsSection.swift - Units option: kilometers, meters, Celsius */
+"units.metric" = "Metrisch";
+
+/* Location: MeasurementUnitsSection.swift - Units option: miles, feet, Fahrenheit */
+"units.imperial" = "Imperiaal";
+
+/* Location: MeasurementUnitsSection.swift - Footer explaining the units override */
+"units.footer" = "Gebruikt voor afstanden, hoogtes en telemetrie. ‘Systeem’ volgt de regio-instelling van je apparaat.";
+
+"language.appLanguage.footer" = "Knoppen, menu's en andere tekst.";
+
+"language.appLanguage.accessibilityHint" = "Opent Instellingen";
+
+"language.translateInto.header" = "Vertalen naar";
+
+"language.translateInto.footer" = "Inkomende berichten worden naar deze taal vertaald wanneer je op Vertalen tikt.";
+
+"language.translateInto.listFooter" = "Talen die dit apparaat in de app kan vertalen. Andere talen gebruiken je standaardvertaalapp.";
+
+"language.matchAppLanguage" = "App-taal gebruiken";
+
+"language.suggested.header" = "Voorgesteld";
+
+"language.all.header" = "Talen";
+
+"language.defaultTranslationApp.title" = "Standaardvertaalapp gebruiken";
+
+"language.defaultTranslationApp.footer" = "Gebruikt Vertalen of een andere app die je in Instellingen hebt gekozen.";
+
+"language.translationOffers.title" = "Vertalingen aanbieden";
+
+"language.translationOffers.offFooter" = "Inkomende berichten in andere talen tonen geen Vertaal-knop.";
+
+"language.search.prompt" = "Zoek talen";
+
+"language.search.noResults" = "Geen resultaten";
+
+"language.search.noResultsDescription" = "Geen talen komen overeen met \"%@\"";
+
+"language.search.unavailable" = "%@ is niet beschikbaar in de app. Vertaal met je standaardvertaalapp.";
+
+// MARK: - Region
+
+/* Location: RegionalAreas.subdivisionDisplayName - California (US-CA) state name */
+"region.subdivision.US-CA" = "Californië";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Delaware (US-DE) state name */
+"region.subdivision.US-DE" = "Delaware";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Maryland (US-MD) state name */
+"region.subdivision.US-MD" = "Maryland";
+
+/* Location: RegionalAreas.subdivisionDisplayName - New Jersey (US-NJ) state name */
+"region.subdivision.US-NJ" = "New Jersey";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Pennsylvania (US-PA) state name */
+"region.subdivision.US-PA" = "Pennsylvania";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Queensland (AU-QLD) state name */
+"region.subdivision.AU-QLD" = "Queensland";
+
+/* Location: RegionalAreas.subdivisionDisplayName - South Australia (AU-SA) state name */
+"region.subdivision.AU-SA" = "Zuid-Australië";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Western Australia (AU-WA) state name */
+"region.subdivision.AU-WA" = "West-Australië";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Alabama (US-AL) state name */
+"region.subdivision.US-AL" = "Alabama";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Alaska (US-AK) state name */
+"region.subdivision.US-AK" = "Alaska";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Arizona (US-AZ) state name */
+"region.subdivision.US-AZ" = "Arizona";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Arkansas (US-AR) state name */
+"region.subdivision.US-AR" = "Arkansas";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Colorado (US-CO) state name */
+"region.subdivision.US-CO" = "Colorado";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Connecticut (US-CT) state name */
+"region.subdivision.US-CT" = "Connecticut";
+
+/* Location: RegionalAreas.subdivisionDisplayName - District of Columbia (US-DC) state name */
+"region.subdivision.US-DC" = "District of Columbia";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Florida (US-FL) state name */
+"region.subdivision.US-FL" = "Florida";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Georgia (US-GA) state name */
+"region.subdivision.US-GA" = "Georgia";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Hawaii (US-HI) state name */
+"region.subdivision.US-HI" = "Hawaii";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Idaho (US-ID) state name */
+"region.subdivision.US-ID" = "Idaho";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Illinois (US-IL) state name */
+"region.subdivision.US-IL" = "Illinois";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Indiana (US-IN) state name */
+"region.subdivision.US-IN" = "Indiana";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Iowa (US-IA) state name */
+"region.subdivision.US-IA" = "Iowa";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Kansas (US-KS) state name */
+"region.subdivision.US-KS" = "Kansas";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Kentucky (US-KY) state name */
+"region.subdivision.US-KY" = "Kentucky";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Louisiana (US-LA) state name */
+"region.subdivision.US-LA" = "Louisiana";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Maine (US-ME) state name */
+"region.subdivision.US-ME" = "Maine";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Massachusetts (US-MA) state name */
+"region.subdivision.US-MA" = "Massachusetts";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Michigan (US-MI) state name */
+"region.subdivision.US-MI" = "Michigan";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Minnesota (US-MN) state name */
+"region.subdivision.US-MN" = "Minnesota";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Mississippi (US-MS) state name */
+"region.subdivision.US-MS" = "Mississippi";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Missouri (US-MO) state name */
+"region.subdivision.US-MO" = "Missouri";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Montana (US-MT) state name */
+"region.subdivision.US-MT" = "Montana";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Nebraska (US-NE) state name */
+"region.subdivision.US-NE" = "Nebraska";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Nevada (US-NV) state name */
+"region.subdivision.US-NV" = "Nevada";
+
+/* Location: RegionalAreas.subdivisionDisplayName - New Hampshire (US-NH) state name */
+"region.subdivision.US-NH" = "New Hampshire";
+
+/* Location: RegionalAreas.subdivisionDisplayName - New Mexico (US-NM) state name */
+"region.subdivision.US-NM" = "New Mexico";
+
+/* Location: RegionalAreas.subdivisionDisplayName - New York (US-NY) state name */
+"region.subdivision.US-NY" = "New York";
+
+/* Location: RegionalAreas.subdivisionDisplayName - North Carolina (US-NC) state name */
+"region.subdivision.US-NC" = "North Carolina";
+
+/* Location: RegionalAreas.subdivisionDisplayName - North Dakota (US-ND) state name */
+"region.subdivision.US-ND" = "North Dakota";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Ohio (US-OH) state name */
+"region.subdivision.US-OH" = "Ohio";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Oklahoma (US-OK) state name */
+"region.subdivision.US-OK" = "Oklahoma";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Oregon (US-OR) state name */
+"region.subdivision.US-OR" = "Oregon";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Rhode Island (US-RI) state name */
+"region.subdivision.US-RI" = "Rhode Island";
+
+/* Location: RegionalAreas.subdivisionDisplayName - South Carolina (US-SC) state name */
+"region.subdivision.US-SC" = "South Carolina";
+
+/* Location: RegionalAreas.subdivisionDisplayName - South Dakota (US-SD) state name */
+"region.subdivision.US-SD" = "South Dakota";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Tennessee (US-TN) state name */
+"region.subdivision.US-TN" = "Tennessee";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Texas (US-TX) state name */
+"region.subdivision.US-TX" = "Texas";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Utah (US-UT) state name */
+"region.subdivision.US-UT" = "Utah";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Vermont (US-VT) state name */
+"region.subdivision.US-VT" = "Vermont";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Virginia (US-VA) state name */
+"region.subdivision.US-VA" = "Virginia";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Washington (US-WA) state name */
+"region.subdivision.US-WA" = "Washington";
+
+/* Location: RegionalAreas.subdivisionDisplayName - West Virginia (US-WV) state name */
+"region.subdivision.US-WV" = "West Virginia";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Wisconsin (US-WI) state name */
+"region.subdivision.US-WI" = "Wisconsin";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Wyoming (US-WY) state name */
+"region.subdivision.US-WY" = "Wyoming";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Australian Capital Territory (AU-ACT) state name */
+"region.subdivision.AU-ACT" = "Australisch Hoofdstedelijk Territorium";
+
+/* Location: RegionalAreas.subdivisionDisplayName - New South Wales (AU-NSW) state name */
+"region.subdivision.AU-NSW" = "Nieuw-Zuid-Wales";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Northern Territory (AU-NT) state name */
+"region.subdivision.AU-NT" = "Noordelijk Territorium";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Tasmania (AU-TAS) state name */
+"region.subdivision.AU-TAS" = "Tasmanië";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Victoria (AU-VIC) state name */
+"region.subdivision.AU-VIC" = "Victoria";
+
+
+// MARK: - Live Activity
+
+/* Label for the Live Status toggle in App Settings */
+"liveActivity.title" = "Live Activity";
+
+/* Title for the Live Activity tip shown after first connection */
+"liveActivity.tip.title" = "Radiostatus in één oogopslag";
+
+/* Message for the Live Activity tip */
+"liveActivity.tip.message" = "Je verbinding, batterij en berichten blijven zichtbaar — ook zonder de app te openen.";
+
+// MARK: - Regenerate Identity
+
+/* Section header for regenerate identity */
+"regenerateIdentity.header" = "Identiteit";
+
+/* Button label to open regenerate identity sheet */
+"regenerateIdentity.title" = "Sleutel opnieuw genereren";
+
+/* Navigation title for the regenerate identity sheet */
+"regenerateIdentity.sheet.title" = "Sleutel opnieuw genereren";
+
+/* Explanation of what regenerating identity does */
+"regenerateIdentity.sheet.explanation" = "Genereer een nieuw Ed25519-sleutelpaar om de huidige identiteit van je apparaat te vervangen. Alle contacten moeten je apparaat opnieuw ontdekken.";
+
+/* Button to generate a new key */
+"regenerateIdentity.generate" = "Sleutel genereren";
+
+/* Button to generate another key after the first */
+/* Progress label while generating */
+"regenerateIdentity.generating" = "Genereren…";
+
+/* Button to apply the generated key to the device */
+"regenerateIdentity.replace" = "Deze sleutel gebruiken";
+
+/* Progress label while importing key to device */
+"regenerateIdentity.importing" = "Importeren…";
+
+/* Disclosure group label for vanity prefix */
+"regenerateIdentity.prefix.label" = "Aangepast voorvoegsel";
+
+/* Placeholder for prefix text field */
+"regenerateIdentity.prefix.placeholder" = "bijv. 2BA1";
+
+/* Footer explaining vanity prefix */
+"regenerateIdentity.prefix.footer" = "Geef optioneel maximaal 4 hexadecimale tekens op waarmee je publieke sleutel moet beginnen. Langere voorvoegsels duren langer.";
+
+/* Error when prefix is not 1–4 hex characters */
+/* Error when prefix is 00 or FF */
+"regenerateIdentity.prefix.error.reserved" = "00 en FF zijn gereserveerd en kunnen niet worden gebruikt";
+
+/* Alert title for replace identity confirmation */
+"regenerateIdentity.alert.replace.title" = "Identiteit vervangen?";
+
+/* Alert confirm button for replace identity */
+"regenerateIdentity.alert.replace.confirm" = "Vervangen";
+
+/* Alert message for replace identity */
+"regenerateIdentity.alert.replace.message" = "De identiteit van je apparaat wordt permanent vervangen. Andere apparaten zien je als een nieuw contact.";
+
+/* Error when firmware does not support key import */
+"regenerateIdentity.error.featureDisabled" = "Sleutelimport wordt niet ondersteund door deze firmwareversie";
+
+/* Error when device rejects the key */
+"regenerateIdentity.error.deviceRejected" = "Het apparaat heeft de sleutel geweigerd. Probeer het opnieuw.";
+
+// MARK: - Import Key
+
+/* Button label to open import key sheet */
+"importKey.title" = "Sleutel importeren";
+
+/* Navigation title for the import key sheet */
+"importKey.sheet.title" = "Sleutel importeren";
+
+/* Explanation of what importing a key does */
+"importKey.sheet.explanation" = "Plak een bestaande Ed25519-privésleutel (128 hexadecimale tekens) om de huidige identiteit van je apparaat te vervangen.";
+
+/* Label for the private key input field */
+"importKey.keyInput.label" = "Privésleutel";
+
+/* Placeholder for the key input field */
+"importKey.keyInput.placeholder" = "Plak 128-tekens hexadecimale sleutel";
+
+/* Button to import the key */
+"importKey.import" = "Sleutel importeren";
+
+/* Progress label while importing */
+"importKey.importing" = "Importeren…";
+
+/* Error when hex input is wrong length or invalid */
+"importKey.error.invalidHex" = "Sleutel moet precies 128 hexadecimale tekens zijn";
+
+/* Error when key fails Ed25519 validation */
+"importKey.error.invalidKey" = "Geen geldige Ed25519-privésleutel";
+
+// Reply with Quote
+"replyWithQuote.toggle" = "Antwoorden met citaat";
+"replyWithQuote.footer" = "Bij een antwoord wordt een voorbeeld van het oorspronkelijke bericht toegevoegd.";
+
+/* Location: ChatSettingsView.swift - Toggle that keeps favorite chats pinned above the others */
+"pinFavoriteChats.toggle" = "Favorieten bovenaan";
+
+/* Location: ChatSettingsView.swift - Footer under the Favorites on Top toggle */
+"pinFavoriteChats.footer" = "Favoriete chats blijven boven de rest van de lijst staan. Indien uitgeschakeld worden alle chats gesorteerd op meest recente bericht.";
+
+// MARK: - Maps
+
+/* Navigation title for Settings → Maps hub */
+"maps.title" = "Kaarten";
+
+/* Section header for display preferences on Maps settings */
+"maps.displayHeader" = "Weergave";
+
+/* Picker label for map basemap appearance */
+"maps.appearance" = "Kaartweergave";
+
+/* Footer explaining map appearance is basemap-only */
+"maps.appearanceFooter" = "Bepaalt alleen de basiskaart. App-kleuren volgen nog steeds Weergave.";
+
+/* Section header for the traffic maps' link lines and rings on Maps settings */
+"maps.trafficHeader" = "Verkeer";
+
+/* Picker label: how long traffic link lines and green rings stay after their last packet */
+"maps.trafficFade" = "Vervaagtijd";
+
+/* Footer explaining the traffic fade time */
+"maps.trafficFadeFooter" = "Hoe lang de lijn van een verbinding en de groene ring van een repeater na hun laatste pakket op de verkeerskaarten blijven.";
+
+/* Section header for Offline Maps entry under Maps settings */
+"maps.offlineHeader" = "Offline kaarten";
+
+// MARK: - Offline Maps
+
+/* Navigation title for offline maps settings */
+"offlineMaps.title" = "Offline kaarten";
+
+/* Title for empty state when no offline packs exist */
+"offlineMaps.emptyTitle" = "Geen offline kaarten";
+
+/* Description for empty state */
+"offlineMaps.emptyDescription" = "Download kaartregio's voor gebruik zonder internet.";
+
+/* Button to download a new offline region */
+"offlineMaps.downloadRegion" = "Regio downloaden";
+
+/* Section header for storage info */
+"offlineMaps.storage" = "Opslag";
+
+/* Label for total storage used */
+"offlineMaps.storageUsed" = "Opslag gebruikt";
+
+/* Fallback name for unknown region */
+"offlineMaps.unknownRegion" = "Onbekende regio";
+
+/* Status when pack download is complete */
+"offlineMaps.complete" = "Gedownload";
+
+/* Status when pack is downloading */
+"offlineMaps.downloading" = "Downloaden…";
+
+/* Navigation title for region picker sheet */
+"offlineMaps.pickRegion" = "Selecteer regio";
+
+/* Placeholder for region name text field */
+"offlineMaps.regionName" = "Regionaam";
+
+/* Button to start download */
+"offlineMaps.download" = "Downloaden";
+
+/* Cancel button */
+"offlineMaps.cancel" = "Annuleren";
+
+/* Delete confirmation title */
+/* Delete confirmation message */
+/* Delete button */
+/* Error: insufficient disk space */
+"offlineMaps.error.insufficientDiskSpace" = "Niet genoeg opslagruimte. Er is minimaal 100 MB vereist.";
+
+/* Error: tile limit reached */
+"offlineMaps.error.tileLimitReached" = "De tegellimiet voor deze download is bereikt.";
+
+/* Pause download button */
+"offlineMaps.pause" = "Pauzeren";
+
+/* Resume download button */
+"offlineMaps.resume" = "Hervatten";
+
+/* Paused status label */
+"offlineMaps.paused" = "Gepauzeerd";
+
+/* Estimated download size */
+"offlineMaps.estimatedSize" = "Geschatte grootte: ~%@";
+
+/* Large tile download warning */
+"offlineMaps.largeTileWarning" = "Groot downloadgebied. Dit kan even duren en aanzienlijke opslagruimte gebruiken.";
+
+/* Hint shown before estimate is available */
+"offlineMaps.downloadHint" = "Voer een naam in en selecteer een gebied om te downloaden.";
+
+/* Download exceeds available storage */
+"offlineMaps.exceedsStorage" = "Niet genoeg opslagruimte op dit apparaat. Zoom in om een kleiner gebied te selecteren.";
+
+/* Layer type labels */
+"offlineMaps.layer.base" = "Basiskaart";
+"offlineMaps.layer.topo" = "Topografie";
+
+/* Layers section header */
+"offlineMaps.layers" = "Kaartlagen";
+
+/* Include layers prompt */
+/* No network available */
+"offlineMaps.noNetwork" = "Een internetverbinding is vereist om kaarten te downloaden.";
+
+/* Storage section footer */
+"offlineMaps.storageFooter" = "Omvat kaartgegevens en interne indexen. Het totaal kan groter zijn dan de som van de afzonderlijke downloads.";
+
+// MARK: - Backup & Restore
+
+/* Navigation title for backup & restore screen */
+"settings.backup.title" = "Back-up en herstel";
+
+/* Section header for file backup */
+"settings.backup.file_backup.header" = "Bestandsback-up";
+
+/* Section footer for file backup */
+"settings.backup.file_backup.footer" = "Exporteer of herstel berichten, contacten, kanalen, opgeslagen paden en instellingen.";
+
+/* Footer note that radio configuration is not included in the app-data backup */
+"settings.backup.file_backup.radio_config" = "De eigen instellingen, kanalen en contacten van de radio zitten niet in dit bestand. Maak er een back-up van met Apparaatconfiguratie hieronder.";
+/* Export row title */
+"settings.backup.export.title" = "App-gegevens exporteren";
+
+/* Export row subtitle */
+"settings.backup.export.subtitle" = "Opslaan als .cairnbackup-bestand";
+
+/* Import row title */
+"settings.backup.import.title" = "App-gegevens importeren";
+
+/* Import row subtitle */
+"settings.backup.import.subtitle" = "Herstellen vanuit een .cairnbackup-bestand";
+
+/* Footer shown above the backup section when a radio is connected, explaining why import is disabled */
+"settings.backup.import.disabled_when_connected" = "Verbreek de verbinding met je radio voordat je een back-up importeert.";
+
+/* Export confirmation alert title */
+"settings.backup.export.alert.title" = "Beveiligingsmelding";
+
+/* Export confirmation alert message */
+"settings.backup.export.alert.message" = "Deze back-up bevat kanaalversleutelingssleutels, de berichtgeschiedenis, je contactenlijst en het lokale netwerkadres en de poort van de WiFi-node. Bewaar het geëxporteerde bestand veilig.";
+
+/* Export confirmation alert export button */
+"settings.backup.export.alert.export" = "Exporteren";
+
+/* Export confirmation alert cancel button */
+"settings.backup.export.alert.cancel" = "Annuleren";
+
+/* Export progress label */
+"settings.backup.export.progress" = "Back-up wordt voorbereid…";
+
+/* Import preview navigation title */
+"settings.backup.import.preview.title" = "Importvoorbeeld";
+
+/* Import preview section header: backup details */
+"settings.backup.import.preview.details" = "Back-upgegevens";
+
+/* Import preview label: export date */
+"settings.backup.import.preview.exported" = "Exportdatum";
+
+/* Import preview label: app version */
+"settings.backup.import.preview.app_version" = "App-versie";
+
+/* Import preview section header: contents */
+"settings.backup.import.preview.contents" = "Inhoud";
+
+/* Import preview manifest label: messages */
+"settings.backup.import.preview.messages" = "Berichten";
+
+/* Import preview manifest label: contacts */
+"settings.backup.import.preview.contacts" = "Contacten";
+
+/* Import preview manifest label: channels */
+"settings.backup.import.preview.channels" = "Kanalen";
+
+/* Import preview manifest label: devices */
+"settings.backup.import.preview.devices" = "Apparaten";
+
+/* Import preview manifest label: room messages */
+"settings.backup.import.preview.room_messages" = "Kamerberichten";
+
+/* Import preview manifest label: reactions */
+"settings.backup.import.preview.reactions" = "Reacties";
+
+/* Import preview manifest label: saved paths */
+"settings.backup.import.preview.saved_paths" = "Opgeslagen paden";
+
+/* Import preview manifest label: remote node sessions */
+"settings.backup.import.preview.remote_node_sessions" = "Externe knoopsessies";
+
+/* Import preview info text */
+"settings.backup.import.preview.info" = "Alleen nieuwe gegevens worden toegevoegd; bestaande records worden niet overschreven. Contacten die je na het maken van deze back-up hebt verwijderd, verschijnen opnieuw, en blokkeer-, demp- of favorietmarkeringen uit de back-up worden opnieuw toegepast.";
+
+/* Import preview import button */
+"settings.backup.import.preview.button" = "Gegevens importeren";
+
+/* Import progress label */
+"settings.backup.import.progress" = "Gegevens worden geïmporteerd…";
+/* Import parsing label */
+"settings.backup.import.parsing" = "Back-up wordt gelezen…";
+/* Import cancelling label shown after the user taps Cancel during an active import */
+"settings.backup.import.cancelling" = "Annuleren…";
+/* Import preview cancel / dismiss toolbar button */
+"settings.backup.import.preview.cancel" = "Annuleren";
+
+/* Import success title */
+"settings.backup.import.success.title" = "Import voltooid";
+
+/* Import success section header: items that were newly added to this device */
+"settings.backup.import.success.added_section" = "Toegevoegd aan dit apparaat";
+
+/* Import success section header: items in the backup that were already on this device */
+"settings.backup.import.success.already_here_section" = "Al op dit apparaat";
+
+/* Import success section footer: always visible under the "Already on this iPhone" section */
+"settings.backup.import.success.already_here_footer" = "De bestaande gegevens op dit apparaat zijn ongewijzigd gebleven; er is niets overschreven.";
+
+/* Import success hero subtitle when new items were added (pluralized in .stringsdict) */
+"settings.backup.import.success.subtitle_added" = "%d items toegevoegd.";
+
+/* Import success hero subtitle when only existing items were refreshed (pluralized in .stringsdict) */
+"settings.backup.import.success.subtitle_refreshed" = "%d bestaande items bijgewerkt.";
+
+/* Import success disclosure row summary for the "Already on this iPhone" section (pluralized in .stringsdict) */
+"settings.backup.import.success.already_here_summary" = "%d items al aanwezig";
+
+/* Import success footer line appended when some of the already-here items had metadata refreshed (pluralized in .stringsdict) */
+"settings.backup.import.success.already_here_refreshed" = "%d hiervan zijn bijgewerkt met nieuwere informatie uit de back-up.";
+
+/* Import success section header: channels that had no free local slot and couldn't be restored */
+"settings.backup.import.success.dropped_section" = "Kon niet worden hersteld";
+
+/* Import success disclosure row summary for the "Couldn't be restored" section */
+"settings.backup.import.success.dropped_summary" = "%d items konden niet worden hersteld";
+
+/* Import success footer explaining why some channels couldn't be restored and how to recover them */
+"settings.backup.import.success.dropped_footer" = "Deze kanalen hadden geen vrije sleuf op deze radio, dus zij en hun berichten zijn niet geïmporteerd. Maak een kanaalsleuf vrij en importeer opnieuw om ze te herstellen.";
+
+/* Import success footer when only discovered nodes exceeded the per-radio discover-list cap */
+"settings.backup.import.success.dropped_footer_discovered_nodes" = "Deze ontdekte nodes konden niet worden hersteld omdat de ontdeklijst van deze radio vol is (%d nodes). Bestaande lokale nodes zijn behouden; het mesh-netwerk zal ontbrekende opnieuw aankondigen.";
+
+/* Import success footer when both channel slots and the discover-list cap caused drops */
+"settings.backup.import.success.dropped_footer_mixed" = "Sommige items konden niet worden hersteld: kanalen zonder vrije radiosleuf en ontdekte nodes die de capaciteit van de ontdeklijst overschreden (%d nodes). Maak een kanaalsleuf vrij en importeer kanalen opnieuw; het mesh-netwerk zal ontbrekende ontdekte nodes opnieuw aankondigen.";
+
+/* Import success done button */
+"settings.backup.import.success.done" = "Gereed";
+
+/* Import failure title */
+"settings.backup.import.error.title" = "Import mislukt";
+
+/* Import error dismiss button */
+"settings.backup.import.error.dismiss" = "Sluiten";
+
+/* Import cancelled title shown after user cancels an import before it commits */
+"settings.backup.import.cancelled.title" = "Import geannuleerd";
+
+/* Import cancelled message — rollback ran and nothing on device was changed */
+"settings.backup.import.cancelled.message" = "Er zijn geen gegevens gewijzigd.";
+
+/* File access error */
+/* Import preview manifest label: blocked senders */
+"settings.backup.import.preview.blocked_senders" = "Geblokkeerde afzenders";
+
+/* Import preview manifest label: node status snapshots */
+"settings.backup.import.preview.node_status_snapshots" = "Knooppunt-momentopnamen";
+
+/* Import preview manifest label: discovered nodes */
+"settings.backup.import.preview.discovered_nodes" = "Ontdekte nodes";
+
+/* Import preview manifest label: message repeats */
+"settings.backup.import.preview.message_repeats" = "Berichtherhalingen";
+
+/* Import header title when the backup had nothing new to add (every record was skipped) */
+"settings.backup.import.nothing_to_import.title" = "Alles is er al";
+
+/* Import subtitle when the backup had nothing new to add */
+"settings.backup.import.nothing_to_import.subtitle" = "De inhoud van deze back-up staat al op dit apparaat.";
+
+/* Default filename for an exported backup; %@ is an ISO-style timestamp */
+"settings.backup.export.default_filename" = "Cairn Back-up %@.cairnbackup";
+/* Backup error: file is corrupt or unreadable */
+"settings.backup.error.invalid_file" = "Het back-upbestand is ongeldig of kan niet worden gelezen.";
+
+/* Backup error: file exceeds parser size cap; %1$d actual MB, %2$d max MB */
+"settings.backup.error.file_too_large" = "Het back-upbestand is te groot om te importeren (%1$d MB; limiet is %2$d MB).";
+
+/* Backup error: decompressed size exceeds safety cap; %d is max MB uncompressed */
+"settings.backup.error.decompressed_too_large" = "Na uitpakken overschrijdt het back-upbestand de veilige groottelimiet (%d MB ongecomprimeerd).";
+
+/* Backup error: file version too new; %1$d found, %2$d max supported */
+"settings.backup.error.unsupported_version" = "Deze back-up is gemaakt met een nieuwere indeling (versie %1$d). Deze app ondersteunt tot versie %2$d. Werk de app bij en probeer het opnieuw.";
+
+/* Backup error: manifest counts do not match arrays */
+"settings.backup.error.corrupted_manifest" = "Het back-upbestand lijkt beschadigd. De opgegeven aantallen komen niet overeen met de werkelijke gegevens.";
+
+/* Backup error: export failed; %@ is underlying error */
+"settings.backup.error.export_failed" = "Back-up maken mislukt: %@";
+
+/* Backup error: import failed; %@ is underlying error */
+"settings.backup.error.import_failed" = "Back-up importeren mislukt: %@";
+
+// MARK: - Export success
+
+/* Hero title on the backup export success sheet */
+"settings.backup.export.success.title" = "Back-up opgeslagen";
+
+/* Section header listing record counts included in the export */
+"settings.backup.export.success.included_section" = "Opgenomen in back-up";
+
+/* Primary button on the export success sheet */
+"settings.backup.export.success.done" = "Gereed";
+
+/* VoiceOver announcement when the export success sheet appears; %@ is the filename */
+"settings.backup.export.success.announcement" = "Back-up opgeslagen als %@";
+
+/* VoiceOver announcement when a refund reverts the active theme to the default */
+"Appearance.Accessibility.ThemeReverted" = "Thema teruggezet naar het standaardthema.";
+
+/* MARK: Feedback screen */
+/* AI-translated - please verify with native speakers. */
+"Feedback.Title" = "Feedback";
+"Feedback.Header.Body" = "GitHub Issues heeft de voorkeur, maar e-mail werkt ook.";
+"Feedback.GitHub.Link" = "Open een GitHub Issue";
+"Feedback.Email.Link" = "Stuur de ontwikkelaar een e-mail";
+
+/* MARK: Appearance (selection) screen */
+"Appearance.Title" = "Weergave";
+"Appearance.Scheme.Header" = "Lichte/donkere modus";
+"Appearance.Scheme.System" = "Systeem";
+"Appearance.Scheme.Light" = "Licht";
+"Appearance.Scheme.Dark" = "Donker";
+"Appearance.Themes.Header" = "Kies een thema";
+"Appearance.Themes.Selected" = "Geselecteerd";
+"Appearance.MoreThemes.Link" = "Meer thema's kopen";
+
+/* MARK: Appearance accessibility */
+"Appearance.Accessibility.ThemeCard.OwnedLabel" = "Thema %@, in bezit";
+"Appearance.Accessibility.ThemeCard.OwnedHint" = "Past dit thema toe";
+"Appearance.Accessibility.ThemeCard.SelectedLabel" = "Thema %@, momenteel geselecteerd";
+"Appearance.Accessibility.Swatch.DualMode" = "%@, licht- en donkervarianten";
+"Appearance.Accessibility.Swatch.DarkOnly" = "%@, alleen donker";
+
+/* Location: DeviceInfoView.swift - Section header for sensors and stats links */
+"deviceInfo.liveData.header" = "Live gegevens";
+
+/* Location: DeviceSensorsView.swift - Screen title and link */
+"deviceSensors.title" = "Apparaatsensoren";
+
+/* Location: DeviceSensorsView.swift - Refresh button */
+"deviceSensors.refresh" = "Vernieuwen";
+
+/* Location: DeviceSensorsView.swift - Disconnected description */
+"deviceSensors.disconnected" = "Maak verbinding met je radio om de sensoren uit te lezen.";
+
+/* Location: DeviceSensorsView.swift - Load failure title */
+"deviceSensors.loadFailed" = "Kan sensoren niet uitlezen";
+
+/* Location: DeviceSensorsView.swift - Empty state title */
+"deviceSensors.empty.title" = "Geen sensorgegevens";
+
+/* Location: DeviceSensorsView.swift - Empty state description */
+"deviceSensors.empty.description" = "De radio gaf geen sensorwaarden terug.";
+
+/* Location: DeviceSensorsView.swift - Footer */
+"deviceSensors.footer" = "Waarden van je verbonden radio, zoals batterijspanning, temperatuur, aangesloten sensoren en GPS.";
+
+/* Location: DeviceSensorsView.swift - Last updated time; %@ is a time */
+"deviceSensors.updated" = "Bijgewerkt: %@";
+
+/* Location: DeviceSensorsView.swift - Timeout message */
+"deviceSensors.timedOut" = "De radio reageerde niet. Probeer het opnieuw.";
+
+/* Location: RadioStatsView.swift - Disconnected description */
+"radioStats.disconnected" = "Maak verbinding met je radio om de statistieken uit te lezen.";
+
+/* Location: RadioStatsView.swift - Row */
+"radioStats.errors" = "Fouten";
+
+/* Location: BluetoothSection.swift - Footer shown for a custom PIN */
+"bluetooth.customPinFooter" = "Het wijzigen van de pincode herstart de radio. Als je apparaat de oude koppeling nog kent, vergeet de radio dan in de Bluetooth-instellingen en koppel opnieuw met de nieuwe pincode.";
+
+/* Location: BluetoothSection.swift - Confirm PIN change title */
+"bluetooth.alert.confirmPin.title" = "Koppelingspincode wijzigen?";
+
+/* Location: BluetoothSection.swift - Confirm PIN change message; %@ is the new PIN */
+"bluetooth.alert.confirmPin.message" = "De radio herstart en vraagt daarna pincode %@. Mogelijk moet je de radio vergeten in de Bluetooth-instellingen en opnieuw koppelen met de nieuwe pincode.";
+
+/* Location: BluetoothSection.swift - Confirm PIN change button */
+"bluetooth.alert.confirmPin.confirm" = "Wijzigen en herstarten";
+
+/* Location: BackupRestoreView.swift - Section header for data export */
+"settings.backup.dataExport.header" = "Gegevensexport";
+
+/* Location: BackupRestoreView.swift - Footer for the data export section */
+"settings.backup.dataExport.footer" = "Exporteer berichten, contacten, knooppuntgeschiedenis en pakketlogs als CSV, of knooppuntlocaties als GPX, voor spreadsheets en kaartapps.";
+
+/* Location: DataExportView.swift - Screen title and entry row */
+"settings.dataExport.title" = "Gegevens exporteren";
+
+/* Location: DataExportView.swift - Messages export section header / row */
+"settings.dataExport.messages" = "Berichten";
+
+/* Location: DataExportView.swift - Picker selecting which conversation to export */
+"settings.dataExport.conversation" = "Gesprek";
+
+/* Location: DataExportView.swift - Picker option exporting every conversation */
+"settings.dataExport.allConversations" = "Alle gesprekken";
+
+/* Location: DataExportView.swift - Button exporting messages as CSV */
+"settings.dataExport.exportMessages" = "Berichten exporteren";
+
+/* Location: DataExportView.swift - Section header for contacts, node history, RX log and GPX exports */
+"settings.dataExport.network" = "Netwerkgegevens";
+
+/* Location: DataExportView.swift - Row exporting contacts as CSV */
+"settings.dataExport.contacts" = "Contacten";
+
+/* Location: DataExportView.swift - Row exporting stored node status and telemetry history as CSV */
+"settings.dataExport.nodeStatus" = "Knooppuntstatus & telemetrie";
+
+/* Location: DataExportView.swift - Row exporting the RX packet log as CSV */
+"settings.dataExport.rxLog" = "RX-log";
+
+/* Location: DataExportView.swift - Row exporting node locations as GPX waypoints */
+"settings.dataExport.waypoints" = "Knooppuntlocaties";
+
+/* Location: DataExportView.swift - Footer explaining export contents */
+"settings.dataExport.footer" = "Exports bevatten alleen gegevens die op dit apparaat zijn opgeslagen voor de huidige radio. Tijdstempels zijn in UTC (ISO 8601).";
+
+/* Location: DataExportView.swift - Empty state title when no radio has ever connected */
+"settings.dataExport.noRadio.title" = "Geen radiogegevens";
+
+/* Location: DataExportView.swift - Empty state description */
+"settings.dataExport.noRadio.description" = "Verbind minstens één keer een radio om de gegevens te exporteren.";
+
+/* Location: DataExportView.swift - Section header for a generated export file */
+"settings.dataExport.ready" = "Klaar om te delen";
+
+/* Location: DataExportView.swift - Button saving the export with the file exporter */
+"settings.dataExport.saveToFiles" = "Bewaar in Bestanden…";
+
+/* Location: DataExportView.swift - ShareLink for the generated export */
+"settings.dataExport.share" = "Delen…";
+
+/* Location: DataExportView.swift - Number of rows/waypoints in the generated export; %d = count */
+"settings.dataExport.rowCount" = "%d records";
+
+/* Location: DataExportView.swift - Shown when the selected export has no data */
+"settings.dataExport.empty" = "Er is niets te exporteren voor deze selectie.";
+
+/* Location: DataExportView.swift - Error when an export fails; %@ = reason */
+"settings.dataExport.error" = "Exporteren mislukt: %@";
+
+/* Location: DataExportView.swift - Progress text while building an export */
+"settings.dataExport.exporting" = "Exporteren…";
+
+/* Location: OfflineMapSettingsView.swift - Confirmation title before deleting a downloaded map */
+"offlineMaps.deleteConfirm.title" = "Offline kaart verwijderen?";
+
+/* Location: OfflineMapSettingsView.swift - Confirmation message before deleting a downloaded map; %@ is the map name and layer */
+"offlineMaps.deleteConfirm.message" = "%@ wordt van dit apparaat verwijderd. Voor opnieuw downloaden is een internetverbinding vereist.";
+
+/* Location: RadioDashboardCard.swift - Title of the transmit power tile */
+"dashboard.txPower" = "Zendvermogen";
+
+/* Location: RadioDashboardCard.swift - Caption under the transmit power; placeholder is the maximum with unit, e.g. 22 dBm */
+"dashboard.maxTxPower" = "Max. %@";
+
+/* Location: RadioDashboardCard.swift - Title of the radio channel tile (frequency and preset) */
+"dashboard.channel" = "Kanaal";
+
+/* Location: RadioDashboardCard.swift - Radio frequency with unit; placeholder is the number */
+"dashboard.frequency" = "%@ MHz";
+
+/* Location: RadioDashboardCard.swift - LoRa settings when no named preset matches; first placeholder is the spreading factor number, second is the bandwidth in kHz */
+"dashboard.modulation" = "SF%1$d · %2$@ kHz";
+
+/* Location: RadioDashboardCard.swift - Title of the tile showing the connection state between phone and radio */
+"dashboard.link" = "Verbinding";
+
+/* Location: RadioDashboardCard.swift - Caption when the radio has not reported a battery reading yet */
+"dashboard.noReading" = "Nog geen meting";
+
+/* Location: RadioDashboardCard.swift - Caption on the link tile when the radio is in client repeat mode */
+"dashboard.repeatMode" = "Repeatermodus";
+
+/* Location: RadioDashboardCard.swift - Radio model and firmware on one line; first placeholder is the model, second the firmware version */
+"dashboard.firmware" = "%1$@ · %2$@";
+
+/* Location: RadioDashboardCard.swift - VoiceOver label for the radio summary card at the top of Settings */
+"dashboard.accessibilityLabel" = "Radio-overzicht";
+
+/* Location: LocationPickerView.swift - Navigation title when picking a location to share in a chat */
+"locationPicker.chooseTitle" = "Locatie kiezen";
+
+/* Location: LocationPickerView.swift - Confirm button when picking a location to share in a chat */
+"locationPicker.share" = "Delen";
+
+/* Location: LocationPickerView.swift - Hint shown while no pin is on the map and the confirm button is disabled */
+"locationPicker.noPinHint" = "Tik op de kaart of plaats een speld om een locatie te kiezen.";
+
+/* Location: LocationPickerView.swift - Shown in place of the coordinates after the stored location was cleared, so saving removes the location */
+"locationPicker.noLocation" = "Geen locatie";
+
+/* Location: DangerZoneSection.swift - Purpose: Button that removes every node from the device and the app */
+"dangerZone.removeAll" = "Alle knooppunten verwijderen";
+
+/* Location: DangerZoneSection.swift - Purpose: Button label while nodes are being removed; first number is how many are done, second is the total */
+"dangerZone.removingProgress" = "%d van %d verwijderen…";
+
+/* Location: DangerZoneSection.swift - Purpose: Title of the confirmation before removing every node */
+"dangerZone.alert.removeAll.title" = "Alle knooppunten verwijderen";
+
+/* Location: DangerZoneSection.swift - Purpose: Destructive button that confirms removing every node */
+"dangerZone.alert.removeAll.confirm" = "Alles verwijderen";
+
+/* Location: DangerZoneSection.swift - Purpose: Confirmation message before removing every node; the number is how many nodes will be removed */
+"dangerZone.alert.removeAll.message" = "Dit verwijdert permanent alle knooppunten (%d), inclusief favorieten, van het apparaat en uit de app, inclusief hun berichten. Kanalen en ontdekte knooppunten blijven behouden. Dit kan niet ongedaan worden gemaakt.";
+
+/* Location: DangerZoneSection.swift - Purpose: Result when only some nodes were removed; first number is how many were removed, second is how many were not */
+"dangerZone.alert.removeAll.partial" = "Verwijderd: %d. Niet verwijderd: %d. De verbinding werd onderbroken — tik opnieuw op de knop om de overige knooppunten te verwijderen.";
+
+/* Location: NodeRemovalModel.swift - Purpose: Result when a node removal stopped part way; first number is how many were removed, second how many were not, then the reason it stopped (an error message) */
+"dangerZone.alert.removal.stopped" = "Verwijderd: %d. Niet verwijderd: %d.\n\n%@\n\nTik opnieuw op de knop om de overige knooppunten te verwijderen.";
+
+/* Location: DangerZoneSection.swift - Purpose: Result when the device has no nodes to remove */
+"dangerZone.alert.removeAll.noneFound" = "Geen knooppunten om te verwijderen.";
+
+/* Location: ChatSettingsView.swift / BlockedItemsView.swift - Row and navigation title for the page listing blocked contacts, channel senders and keywords */
+"blocking.title" = "Geblokkeerd";
+
+/* Location: BlockedItemsView.swift - Shown in the keywords section when no keywords are blocked */
+"blocking.keywords.empty" = "Geen geblokkeerde trefwoorden";
+
+/* Location: MessagesSettingsSection.swift - Toggle that shows the sender's send time inside incoming message bubbles */
+"messages.showIncomingSendTime" = "Inkomende verzendtijd";
+
+/* Location: NotificationSettingsSection.swift - Footer pointing to per-conversation notification levels */
+"notifications.footer" = "Open het infoscherm van een gesprek om de meldingen voor alleen dat gesprek te wijzigen.";
+/* Location: ChatSettingsView.swift - Header of the section with general chat toggles */
+"chatSettings.generalHeader" = "Algemeen";
+
+/* DeviceInfoView - Button that shares the device public key as text */
+"publicKey.share" = "Sleutel delen";
+
+/* ConnectionSettingsView - Tile title for how the app reaches the radio (Bluetooth or WiFi) */
+"connection.transport" = "Verbindingstype";
+
+/* Location: OfflineMapsSections.swift - Tile value: completed offline map packs out of all packs, e.g. 2 of 3 */
+"offlineMaps.downloadedCount" = "%1$d van %2$d";
+
+/* Location: BatteryView.swift - Battery status word beside the charge when above the low threshold */
+"battery.level.good" = "Goed";
+
+/* Location: BatteryView.swift - Battery status word when the charge is low */
+"battery.level.low" = "Laag";
+
+/* Location: BatteryView.swift - Battery status word when the charge is critically low */
+"battery.level.critical" = "Kritiek";
+
+/* Location: BatteryView.swift - Tile title for the battery voltage */
+"battery.voltage" = "Spanning";
+
+/* Location: BatteryView.swift - Tile title for the voltage span of the battery curve (empty to full) */
+"battery.curveRange" = "Curvebereik";
+
+/* Location: BatteryView.swift - Caption under the curve range tile explaining the two voltages */
+"battery.curveRangeCaption" = "Leeg tot vol";
+
+/* Location: BatteryView.swift - Tile title for when the battery was last read */
+"battery.lastReading" = "Laatste meting";
+
+/* Location: BatteryView.swift / RadioDashboardCard.swift - Shown when the radio reports no battery (mains powered) */
+"battery.notPresent" = "Geen batterij gedetecteerd";
+
+/* Location: BatteryView.swift - Footer under the battery readings */
+"battery.footer" = "De lading wordt geschat op basis van de batterijspanning en de batterijcurve. De radio wordt elke twee minuten uitgelezen zolang hij verbonden is.";
+
+/* Location: BatteryView.swift - Section header for the low-battery notification switch */
+"battery.alerts.header" = "Meldingen";
+
+/* Location: BatteryView.swift - Footer explaining when low-battery notifications fire */
+"battery.alerts.footer" = "Waarschuwt je wanneer de batterij van de radio daalt tot 20%%, 10%% en 5%%.";
+
+/* Location: RadioDashboardCard.swift - LoRa settings line; %1$d spreading factor, %2$@ bandwidth in kHz, %3$d coding rate denominator */
+"dashboard.radioParams" = "SF%1$d · %2$@ kHz · CR 4/%3$d";
+
+/* Location: RadioParameterTiles.swift - Tile title for the radio frequency */
+"radio.tile.frequency" = "Frequentie";
+
+/* Location: RadioParameterTiles.swift - Tile title for the radio bandwidth */
+"radio.tile.bandwidth" = "Bandbreedte";
+
+/* Location: RadioParameterTiles.swift - Bandwidth value; %@ is kilohertz */
+"radio.tile.bandwidthValue" = "%@ kHz";
+
+/* Location: RadioParameterTiles.swift - Caption on a radio setting tile edited but not yet sent to the radio */
+"radio.tile.pending" = "Niet toegepast";
+
+/* Location: RadioParameterTiles.swift - Caption on the frequency tile while Repeat Mode controls it */
+"radio.tile.setByRepeatMode" = "Ingesteld door herhaalmodus";
+
+/* Location: AdvancedRadioSection.swift, RadioValueEditors.swift - TX power tile caption on a board with an amplifier; %@ is the radio chip setting like '9 dBm' (the headline is the power at the antenna) */
+"radio.txPower.antennaCaption" = "Bij de antenne · radio-instelling %@";
+
+/* Location: RadioValueEditors.swift - TX power editor footer on a board with an amplifier; %1$@ the most it radiates at the antenna like '28 dBm', %2$@ the highest radio chip setting like '16 dBm' */
+"radio.txPower.maxAtAntenna" = "Max. %1$@ bij de antenne (instelling %2$@)";
+
+/* Location: RadioReadings.swift (TxPowerText) - TX power on a board with an amplifier; %1$@ the power at the antenna like '23 dBm', %2$@ the radio chip setting like '9 dBm' */
+"radio.txPower.atAntennaWithSetting" = "%1$@ bij de antenne (instelling %2$@)";
+
+/* Location: RadioValueEditors.swift - TX power stepper label on a board with an amplifier: the value it changes is the radio chip setting */
+"radio.txPower.radioSettingLabel" = "Radio-instelling (dBm)";
+
+/* Location: RadioProfileSummary.swift - A saved profile's TX power: the radio chip setting, not the power at the antenna; %@ is like '22 dBm' */
+"radio.txPower.radioSetting" = "Radio-instelling %@";
+
+/* Location: RadioReadings.swift (TxPowerText), RadioProfileDetailView.swift - Card line for a TX power known only as the radio chip setting (a board with an amplifier radiates more); %@ is like '22 dBm' */
+"radio.txPower.detailSetting" = "Instelling TX-vermogen %@";
+
+/* Location: NodeConfigImportViewModel.swift - Added to the import confirmation when the file's TX power is outside what the radio takes; %@ is the setting that will be applied, like '16 dBm' */
+"configImport.txPowerAdjusted" = "Het TX-vermogen in het bestand valt buiten wat deze radio aanneemt, dus het wordt ingesteld op %@. Dezelfde radio-instelling geeft op borden met een versterker meer vermogen bij de antenne.";
+
+/* Location: RadioParameterTiles.swift - Accessibility hint on radio setting tiles whose edits wait for Apply */
+"radio.tile.stagedHint" = "Wijzigingen worden naar de radio gestuurd wanneer je op Radio-instellingen toepassen tikt.";
+/* Location: RadioPresetSection.swift - Accessibility hint on the preset card; choosing a preset applies it immediately */
+"radio.preset.hint" = "Stuurt de gekozen voorinstelling meteen naar de radio.";
+
+/* Location: RadioPresetSection.swift and PresetStepView.swift - Heading over the presets made for places other than the user's Location, kept apart from the local ones */
+"radio.preset.otherRegions" = "Andere regio's";
+
+/* Location: RadioPresetSection.swift - Caption on the dimmed preset card while no radio is connected */
+"radio.preset.unavailable.disconnected" = "Verbind een radio om de voorinstelling te wijzigen.";
+
+/* Location: RadioPresetSection.swift - Caption on the dimmed preset card while the radio is still connecting */
+"radio.preset.unavailable.connecting" = "Beschikbaar zodra de radio verbonden is.";
+
+/* Location: RadioPresetSection.swift - Caption on the dimmed preset card while the radio is still syncing */
+"radio.preset.unavailable.syncing" = "Beschikbaar zodra de radio gesynchroniseerd is.";
+
+/* Location: AdvancedRadioSection.swift - Section header above the frequency, bandwidth, SF, CR and TX power tiles */
+"radio.parameters.header" = "Radioparameters";
+
+/* Section header for the page background settings */
+"Appearance.Background.Header" = "Achtergrond";
+
+/* Background kind: a single solid color */
+"Appearance.Background.Kind.Color" = "Kleur";
+
+/* Background kind: a color gradient */
+"Appearance.Background.Kind.Gradient" = "Verloop";
+
+/* Background kind: a photo from the library */
+"Appearance.Background.Kind.Photo" = "Foto";
+
+/* Title of the sample card in the background preview */
+"Appearance.Background.Preview.Title" = "Voorbeeld";
+
+/* Body text of the sample card in the background preview */
+"Appearance.Background.Preview.Body" = "Kaarten en lijsten worden glas boven je achtergrond.";
+
+/* Label for the row of preset colors or gradients */
+"Appearance.Background.Presets" = "Voorinstellingen";
+
+/* Color picker label for a custom background color */
+"Appearance.Background.CustomColor" = "Aangepaste kleur";
+
+/* Color picker label for one color of a gradient; %d is its position (1, 2 or 3) */
+"Appearance.Background.GradientColor" = "Kleur %d";
+
+/* Toggle that adds a third color to the gradient */
+"Appearance.Background.ThirdColor" = "Derde kleur";
+
+/* Picker label for the gradient style (linear or mesh) */
+"Appearance.Background.Style.Title" = "Stijl";
+
+/* Gradient style: a straight linear gradient */
+"Appearance.Background.Style.Linear" = "Lineair";
+
+/* Gradient style: a soft mesh gradient */
+"Appearance.Background.Style.Mesh" = "Mesh";
+
+/* Picker label for the direction of a linear gradient */
+"Appearance.Background.Direction.Title" = "Richting";
+
+/* Gradient direction: from top to bottom */
+"Appearance.Background.Direction.TopToBottom" = "Van boven naar onder";
+
+/* Gradient direction: from top-leading corner to bottom-trailing corner */
+"Appearance.Background.Direction.Diagonal" = "Diagonaal";
+
+/* Gradient direction: from one side to the other */
+"Appearance.Background.Direction.SideToSide" = "Van links naar rechts";
+
+/* Gradient direction: from bottom-leading corner up to top-trailing corner */
+"Appearance.Background.Direction.Rising" = "Stijgende diagonaal";
+
+/* Button that opens the photo picker to choose a background photo */
+"Appearance.Background.Photo.Choose" = "Kies foto…";
+
+/* Button that opens the photo picker to replace the background photo */
+"Appearance.Background.Photo.Change" = "Wijzig foto…";
+
+/* Button that deletes the background photo and returns to the system background */
+"Appearance.Background.Photo.Remove" = "Verwijder foto";
+
+/* Error shown when the picked photo cannot be read */
+"Appearance.Background.Photo.LoadFailed" = "De foto kan niet worden geladen. Probeer een andere.";
+
+/* Slider label: how much the background is faded */
+"Appearance.Background.Dim" = "Dimmen";
+
+/* Slider label: how much the background photo is blurred */
+"Appearance.Background.Blur" = "Vervaging";
+
+/* Blur amount shown beside the slider; %d is the radius in points */
+"Appearance.Background.BlurValue" = "%d pt";
+
+/* Footer explaining the dim slider and the glass look */
+"Appearance.Background.Footer" = "Dimmen laat de achtergrond in de lichte modus vervagen naar wit en in de donkere modus naar zwart, zodat tekst goed leesbaar blijft.";
+
+/* Name of a dark navy background preset */
+"Appearance.Background.Preset.Midnight" = "Middernacht";
+
+/* Name of a blue background preset */
+"Appearance.Background.Preset.Ocean" = "Oceaan";
+
+/* Name of a green background preset */
+"Appearance.Background.Preset.Forest" = "Bos";
+
+/* Name of a purple background preset */
+"Appearance.Background.Preset.Plum" = "Pruim";
+
+/* Name of a dark gray background preset */
+"Appearance.Background.Preset.Graphite" = "Grafiet";
+
+/* Name of a light beige background preset */
+"Appearance.Background.Preset.Sand" = "Zand";
+
+/* Name of a pale green background preset */
+"Appearance.Background.Preset.Sage" = "Salie";
+
+/* Name of a pale pink background preset */
+"Appearance.Background.Preset.Blush" = "Blos";
+
+/* Name of a purple-to-orange gradient preset */
+"Appearance.Background.Preset.Dusk" = "Schemering";
+
+/* Name of a dark-to-green gradient preset */
+"Appearance.Background.Preset.Aurora" = "Poollicht";
+
+/* Name of a yellow-to-peach gradient preset */
+"Appearance.Background.Preset.Sunset" = "Zonsondergang";
+
+/* Title of the Location & Sharing settings page and its tile on the Settings screen */
+"locationSharing.title" = "Locatie en delen";
+
+/* Section header on Location & Sharing for setting where the radio is */
+"location.position.header" = "Positie";
+
+/* Footer under the Position section on Location & Sharing */
+"location.position.footer" = "Locatie automatisch bijwerken werkt de locatie van je apparaat vóór elke advertentie bij via gps.";
+
+/* Section header on Location & Sharing for whether adverts carry the location */
+"location.advert.header" = "Advertentie";
+
+/* Footer under the Advert section on Location & Sharing */
+"location.advert.footer" = "Indien aan, wordt je locatie met elke advertentie over de mesh uitgezonden.";
+
+/* Detail on the Location & Sharing tile: location is not in adverts but is included in telemetry replies */
+"location.sharedOnRequest" = "Gedeeld op verzoek";
+
+/* Section header on Settings → Nodes for the auto-add rules */
+"nodes.autoAdd.header" = "Automatisch toevoegen";
+
+/* Footer under the new-node notification toggles on Settings → Nodes */
+"nodes.alerts.footer" = "Waarschuwt je wanneer je radio een node hoort van een type dat hier aan staat.";
+
+/* Section header on Settings → Nodes for the bulk node removal buttons */
+"nodes.remove.header" = "Nodes verwijderen";
+
+/* Footer under the bulk node removal buttons on Settings → Nodes */
+"nodes.remove.footer" = "Verwijdert nodes van het apparaat en uit de app, samen met hun berichten.";
+
+/* Button on Settings → Nodes → Remove Nodes that clears the Heard list (app only, saved nodes kept) */
+"nodes.remove.heard" = "Gehoorde nodes verwijderen";
+
+/* Confirmation title for Remove Heard Nodes on Settings → Nodes */
+"nodes.remove.heard.title" = "Gehoorde nodes verwijderen";
+
+/* Confirmation message for Remove Heard Nodes on Settings → Nodes; %d is how many heard nodes */
+"nodes.remove.heard.message" = "%d gehoorde nodes uit de app verwijderen? Opgeslagen nodes blijven behouden, en een gehoorde node komt terug zodra hij opnieuw wordt gehoord.";
+
+/* Confirm button of the Remove Heard Nodes confirmation on Settings → Nodes */
+"nodes.remove.heard.confirm" = "Verwijder";
+
+/* Shown on Settings → Nodes when Remove Heard Nodes finds an empty Heard list */
+"nodes.remove.heard.noneFound" = "Er zijn geen gehoorde nodes om te verwijderen.";
+
+/* Menu item on the Nodes tab and Heard Nodes that opens Settings → Nodes */
+"nodes.settingsLink" = "Node-instellingen";
+
+/* Detail on the Nodes tile on the Settings screen; the argument is the auto-add mode (Manual, Selected Types, All) */
+"nodes.tileDetail" = "Auto-toevoegen: %@";
+
+/* Section header on Settings → Chats for the message translation settings */
+"chatSettings.translationHeader" = "Vertaling";
+
+/* Item in the toolbar radio status menu that opens Settings → Connection */
+"bleStatus.connectionSettings" = "Verbindingsinstellingen";
+
+/* Footer note on the Backup page's Device Configuration cards when no radio is ready */
+"configExport.requiresRadio" = "Verbind een radio om de configuratie te exporteren of te importeren.";
+
+/* Card title on Settings > Radio > Regions: the flood scope the radio applies by default */
+"regions.defaultScope" = "Standaardbereik";
+
+/* Card title on Settings > Radio > Regions: the regions the radio knows; opens Manage Regions */
+"regions.known" = "Bekende regio's";
+
+/* Footer under the Regions cards on Settings > Radio when the radio has no default flood scope support */
+"regions.footer" = "Kanalen kunnen hun berichten beperken tot een van deze regio's. Via Regio's beheren vind je ook de regio's van repeaters in de buurt.";
+
+/* Section header on the About page for the app's developer */
+"about.developer.header" = "Ontwikkelaar";
+
+/* Line under the developer's name on the About page */
+"about.developer.role" = "Ontwerp en ontwikkeling";
+
+/* Section header on the About page listing credits */
+"about.credits.header" = "Credits";
+
+/* Credit line: the MeshCore mesh radio protocol and firmware */
+"about.credits.meshcore" = "Draait op MeshCore, het opensource-protocol en de firmware voor mesh-radio.";
+
+/* Credit line: the app's design follows the developer's Cairn firmware interface */
+"about.credits.cairn" = "Ontworpen samen met de Cairn-firmware.";
+
+/* Device Info - Short action card title that shares the radio's own contact (QR code and link) */
+"deviceInfo.action.share" = "Delen";
+
+/* Device Info - Short action card title that copies the radio's public key */
+"deviceInfo.action.copyKey" = "Sleutel kopiëren";
+
+/* Device Info - Copy Key action card title shown briefly after the key was copied */
+"deviceInfo.action.copied" = "Gekopieerd";
+
+/* Device Info - Action card that opens a menu with key import and regeneration */
+"deviceInfo.action.more" = "Meer";
+
+/* Device Info - Header over the firmware, model, storage and capability tiles */
+"deviceInfo.details.header" = "Details";
+
+/* Device Info - Tile title for the radio's hardware model, e.g. Heltec V3 */
+"deviceInfo.model" = "Model";
+
+/* Device Info - Header over the counters the radio keeps since it last started (uptime, packets sent and received) */
+"deviceInfo.sinceBoot.header" = "Sinds opstarten";
+
+/* Device Info - Quiet line when the radio timed out reading its counters or sensors */
+"deviceInfo.noAnswer" = "Radio gaf geen antwoord — trek om te vernieuwen";
+
+/* Device Info - Card that opens the Spectrum tab for live radio readings */
+"deviceInfo.liveReadings.title" = "Live radiometingen";
+
+/* Device Info - Detail line on the card that opens the Spectrum tab */
+"deviceInfo.liveReadings.detail" = "Ruisvloer, signaal en zendtijd in Spectrum";
+
+/* Device Info - Caption under the node name field while editing; %d is how many more bytes the name can hold */
+"deviceInfo.nameBytesLeft" = "Nog %d bytes";
+
+/* Location: NotificationSettingsSection.swift - Section header above the message notification switches */
+"notifications.messagesHeader" = "Berichten";
+
+/* About page and app identity: one-line description of the app under its name */
+"about.tagline" = "De begeleidende app voor MeshCore-meshradio’s.";
+/* About page: app version and build number. %1$@ = version (e.g. 1.0.1), %2$@ = build number */
+"about.versionLine" = "Versie %1$@ (%2$@)";
+
+/* Settings page footer: app name, version and build. %1$@ = app name (Cairn), %2$@ = version, %3$@ = build number */
+"settings.footer.version" = "%1$@ %2$@ (build %3$@)";
+
+/* Settings page footer: who made the app. %1$@ = developer name, %2$@ = studio name (both proper names, not translated) */
+"settings.footer.madeBy" = "door %1$@ · %2$@";
+
+
+/* Button that sends the auto-add settings to the radio */
+"nodes.autoAdd.apply" = "Instellingen automatisch toevoegen toepassen";
+
+/* MessagesSettingsSection.swift - Card that unfolds the five message info switches */
+"messages.options.show" = "Opties tonen";
+
+/* MessagesSettingsSection.swift - Card that folds away the five message info switches */
+"messages.options.hide" = "Opties verbergen";
+
+/* MessagesSettingsSection.swift - How many of the message info switches are on (first: on count, second: total) */
+"messages.options.enabledCount" = "%lld van %lld aan";
+
+/* AboutView.swift - Section header over the MeshCore network's web links (product name, do not translate) */
+"about.meshcore.header" = "MeshCore";
+
+/* AboutView.swift - Short tile title for the MeshCore website, under the MeshCore header */
+"about.link.website" = "Website";
+
+/* AboutView.swift - Short tile title for the MeshCore online map, under the MeshCore header */
+"about.link.onlineMap" = "Online kaart";
+
+/* Section header on Settings > Nodes for notifications about newly heard nodes */
+"nodes.alerts.header" = "Meldingen nieuwe nodes";
+
+/* Master switch title: notify when the radio hears a new node of any enabled type */
+"nodes.alerts.newNodeDiscovered" = "Nieuwe node ontdekt";
+
+/* Short switch title in the Auto-Remove Old Nodes section */
+"nodes.staleCleanup.toggle" = "Automatisch verwijderen";
+
+/* Info popover line: setting name (first %@) followed by its explanation (second %@) */
+"nodes.overwriteOldest.info" = "%1$@: %2$@";
+
+/* Empty state description in Trusted Contacts when Favorites Only is on and there are no favorite contacts */
+"trustedContacts.noFavorites" = "Geen favoriete contacten";
+
+/* Accessibility hint / subtitle on Set Location when Auto-Update Location is on and the card is disabled */
+"location.setLocation.autoUpdateHint" = "Wordt automatisch bijgewerkt zolang Locatie automatisch bijwerken aan staat";
+
+/* Section header in the Regenerate Key sheet for the prefix and Generate controls */
+"regenerateIdentity.newKey.header" = "Nieuwe sleutel";
+
+/* Section header above the Use This Key button in the Regenerate Key sheet */
+"regenerateIdentity.replace.header" = "Identiteit vervangen";
+
+/* Title of the progress card and VoiceOver label of the progress bar while a node configuration is being written to the radio */
+"configImport.applying" = "Configuratie toepassen…";
+
+/* VoiceOver value of the Current PIN card while the PIN is masked */
+"bluetooth.pinHidden" = "Verborgen";
+
+/* VoiceOver hint on the Current PIN card while the PIN is masked */
+"bluetooth.showPinHint" = "Toont de PIN.";
+
+/* VoiceOver hint on the Current PIN card while the PIN is shown */
+"bluetooth.hidePinHint" = "Verbergt de PIN.";
+
+/* Radio preset menu section: presets for North America */
+"radio.region.northAmerica" = "Noord-Amerika";
+
+/* Radio preset menu section: presets for South America */
+"radio.region.southAmerica" = "Zuid-Amerika";
+
+/* Radio preset menu section: presets for Europe */
+"radio.region.europe" = "Europa";
+
+/* Radio preset menu section: presets for Oceania */
+"radio.region.oceania" = "Oceanië";
+
+/* Radio preset menu section: presets for Asia */
+"radio.region.asia" = "Azië";
+
+/* Radio preset info popover: what Repeat Mode does. %@ is the explanation */
+"radio.repeatMode.info" = "Repeatermodus: %@";
+
+/* Radio settings error: %1$@ is the step the radio refused (e.g. TX Power), %2$@ the reason */
+"advancedRadio.stepError" = "%1$@: %2$@";
+
+
+/* Settings page: title of the group with the Live Activity switch and the Siri permission used by CarPlay */
+"carPlaySiri.header" = "CarPlay en Siri";
+
+/* Settings page: explanation behind the i of the CarPlay & Siri group */
+"carPlaySiri.info" = "In de auto leest en verstuurt CarPlay berichten via Siri. Sta Siri hier toe voordat je gaat rijden: de auto kan er niet om vragen. De live activiteit toont de verbinding, batterij en berichten van je radio op het toegangsscherm en in het Dynamic Island.";
+
+/* Settings page: title of the card showing whether Siri is allowed for the app */
+"siri.title" = "Siri";
+
+/* Settings page: button that asks for Siri permission */
+"siri.allow" = "Siri toestaan";
+
+/* Settings page: line under Allow Siri saying what it is for */
+"siri.allowSubtitle" = "Zodat CarPlay berichten kan lezen en versturen";
+
+/* Settings page: value on the Siri card when Siri is allowed */
+"siri.allowed" = "Toegestaan";
+
+/* Settings page: value on the Siri card when Siri is restricted on the device (e.g. Screen Time) */
+"siri.restricted" = "Beperkt";
+
+/* Settings page: line under Open Settings when Siri was turned off for the app */
+"siri.deniedSubtitle" = "Siri staat uit voor Cairn, dus CarPlay kan geen berichten lezen of versturen";
+
+/* Settings page: title of the group with the app backup, the radio configuration file and the data export */
+"backupData.header" = "Back-up en gegevens";
+
+/* Location: AboutSettingsSection.swift - Map credits: renderer and tile/data sources (names are not translated) */
+"about.credits.maps" = "Kaarten met MapLibre. Kaartgegevens © OpenStreetMap-bijdragers via OpenFreeMap; satellietbeelden © Esri; topografische kaart © OpenTopoMap.";
+
+/* Location: DeviceInfoView.swift - Header subtitle naming the connected radio's role, before its model ("Companion · Heltec V3") */
+"deviceInfo.companion" = "Companion";
+
+/* Location: RadioSettingsView.swift - Confirmation title when closing the Radio Parameters sheet with edits not yet applied */
+"radio.parameters.discard.title" = "Niet-toegepaste wijzigingen weggooien?";
+
+/* Location: RadioSettingsView.swift - Message under the discard confirmation for the Radio Parameters sheet */
+"radio.parameters.discard.message" = "Je wijzigingen zijn niet naar de radio verzonden.";
+
+/* Location: RadioSettingsView.swift - Destructive button that closes the Radio Parameters sheet without applying staged edits */
+"radio.parameters.discard.confirm" = "Weggooien";
+
+/* Location: DeviceIdentityCard.swift - RadioIdentityChangeHeader row label for the radio's current public key */
+"identityChange.currentKey" = "Huidige sleutel";
+
+/* Location: RegenerateIdentitySheet.swift - New Key row before a key has been generated */
+"identityChange.newKey.pending" = "Genereer een sleutel om hem hier te zien";
+
+/* Location: ImportKeySheet.swift - New Key row: the new public key comes from the pasted private key, set by the radio */
+"importKey.newKey.note" = "Door de radio afgeleid van de geplakte sleutel";
+
+/* Location: ImportKeySheet.swift - character count under the key field, e.g. 64 of 128 characters */
+"importKey.keyInput.progress" = "%1$d van %2$d tekens";
+
+/* Location: DeviceIdentityCard.swift - VoiceOver label for the identity change header: radio name, current key, new key */
+"identityChange.a11y" = "%1$@, huidige sleutel %2$@, nieuwe sleutel %3$@";
+
+/* Location: DeviceIdentityCard.swift - VoiceOver label of the identity header without a new key: %1$@ is the radio's name and model, %2$@ its shortened current key */
+"identityChange.a11y.current" = "%1$@, huidige sleutel %2$@";
+
+/* Location: DeviceReadingsSections.swift - VoiceOver label of a sensor reading when the radio has several channels: %1$@ is the channel (e.g. 'Channel 2'), %2$@ the reading (e.g. 'Temperature') */
+"deviceSensors.a11y.channelReading" = "%1$@ %2$@";
+
+/* Location: DiagnosticsSection.swift - Status line in the Advanced card: how many debug log entries are stored on this device */
+"diagnostics.entryCount" = "Logregels: %d";
+
+/* Location: DeviceInfoView.swift, HomeStatusLines.swift - Firmware name when the radio runs Cairn firmware; the argument is its build number, or "dev" ("Cairn 107") */
+"deviceInfo.cairnFirmware" = "Cairn %@";
+
+/* Location: DeviceInfoView.swift - Build number shown for a Cairn development build ("Cairn dev") */
+"deviceInfo.cairnDevBuild" = "dev";
+
+/* Location: DeviceInfoView.swift - Firmware card detail: the MeshCore version a Cairn build is based on ("MeshCore v1.17.1") */
+"deviceInfo.meshcoreBase" = "MeshCore %@";
+
+/* Appearance and the Dashboard toolbar: night mode, the whole interface red on black */
+"Appearance.NightMode" = "Nachtmodus";
+
+/* Appearance: what night mode does */
+"Appearance.NightModeSubtitle" = "Rood op zwart, zodat je ogen aan het donker gewend blijven";
+
+/* Location: FirmwareUpdateView.swift - Navigation title of the Firmware Update page */
+"firmwareUpdate.title" = "Firmware-update";
+
+/* Location: FirmwareUpdateView.swift - Tile title: the firmware build on the board now */
+"firmwareUpdate.installed" = "Geïnstalleerd";
+
+/* Location: FirmwareUpdateView.swift - Tile title: the newest published Cairn release */
+"firmwareUpdate.latest" = "Nieuwste release";
+
+/* Location: FirmwareUpdateView.swift - Tile value while the board or the release is being read */
+"firmwareUpdate.checking" = "Controleren…";
+
+/* Location: FirmwareUpdateView.swift - Latest Release tile caption: the board already runs it */
+"firmwareUpdate.upToDate" = "Up-to-date";
+
+/* Location: FirmwareUpdateView.swift - Latest Release tile caption: the release is newer than the board's build */
+"firmwareUpdate.available" = "Update beschikbaar";
+
+/* Location: FirmwareUpdateView.swift - Latest Release tile value when the release couldn't be read */
+"firmwareUpdate.latestUnavailable" = "Kan niet controleren";
+
+/* Location: FirmwareUpdateView.swift - WiFi tile value: the board is on a network */
+"firmwareUpdate.wifiConnected" = "Verbonden";
+
+/* Location: FirmwareUpdateView.swift - WiFi tile value: the board's WiFi is on but not on a network */
+"firmwareUpdate.wifiNotConnected" = "Niet verbonden";
+
+/* Location: FirmwareUpdateView.swift - WiFi tile value: the board's WiFi is off */
+"firmwareUpdate.wifiOff" = "Uit";
+
+/* Location: FirmwareUpdateView.swift - Section title above the ways to install firmware */
+"firmwareUpdate.install.header" = "Installeren";
+
+/* Location: FirmwareUpdateView.swift - Button: install the latest release; the argument is its name ("Cairn 112") */
+"firmwareUpdate.install.latest" = "%@ installeren";
+
+/* Location: FirmwareUpdateView.swift - Under the install-latest button */
+"firmwareUpdate.install.latestSubtitle" = "Gedownload en gecontroleerd voordat het board wordt gevraagd";
+
+/* Location: FirmwareUpdateView.swift - Button: pick a firmware file from Files */
+"firmwareUpdate.install.file" = "Kies een bestand…";
+
+/* Location: FirmwareUpdateView.swift - Under the choose-file button; the argument is the board's model ("ThinkNode M9") */
+"firmwareUpdate.install.fileSubtitle" = "Een -update.bin-bestand voor de %@";
+
+/* Location: FirmwareUpdateView.swift - Footer under the install buttons */
+"firmwareUpdate.install.footer" = "Het board vraagt je de update toe te staan. Bluetooth is uit tot het herstart, daarna maakt Cairn weer verbinding.";
+
+/* Location: FirmwareUpdateView.swift - The board must be on WiFi before it can be updated */
+"firmwareUpdate.needsWifi" = "Verbind het board eerst met wifi, op hetzelfde netwerk als deze telefoon.";
+
+/* Location: FirmwareUpdateView.swift - The board's firmware has no WiFi */
+"firmwareUpdate.noWifi" = "Dit board heeft geen wifi en kan dus niet vanuit de app worden bijgewerkt.";
+
+/* Location: FirmwareUpdateView.swift - Button: read the board's state again */
+"firmwareUpdate.checkAgain" = "Opnieuw controleren";
+
+/* Location: FirmwareUpdateView.swift - Confirmation title; the argument is the firmware's name ("Cairn 112" or a file name) */
+"firmwareUpdate.confirm.title" = "%@ installeren?";
+
+/* Location: FirmwareUpdateView.swift - Confirmation message before asking the board */
+"firmwareUpdate.confirm.message" = "Het board vraagt je het toe te staan. Bluetooth is uit tot het herstart.";
+
+/* Location: FirmwareUpdateView.swift - Confirmation button */
+"firmwareUpdate.confirm.install" = "Installeren";
+
+/* Location: FirmwareUpdateView.swift - Waiting for the person at the board to allow the update */
+"firmwareUpdate.asking.title" = "Tik op Toestaan op het board";
+
+/* Location: FirmwareUpdateView.swift - Under the waiting title: what the board shows */
+"firmwareUpdate.asking.message" = "Het board vraagt ‘Allow app update?’";
+
+/* Location: FirmwareUpdateView.swift - Progress card while connecting to the board over WiFi */
+"firmwareUpdate.connecting" = "Verbinden via wifi…";
+
+/* Location: FirmwareUpdateView.swift - Progress card title while the firmware is sent */
+"firmwareUpdate.sending" = "Firmware versturen";
+
+/* Location: FirmwareUpdateView.swift - Under the progress card */
+"firmwareUpdate.sendingFooter" = "Houd Cairn open tot het klaar is.";
+
+/* Location: FirmwareUpdateView.swift - Card title after the firmware was sent */
+"firmwareUpdate.restarting.title" = "Herstarten";
+
+/* Location: FirmwareUpdateView.swift - Card text after the firmware was sent */
+"firmwareUpdate.restarting.message" = "Het board installeert de update en herstart. Cairn maakt weer verbinding zodra het terug is.";
+
+/* Location: FirmwareUpdateView.swift - Success title; the argument is the new build ("Cairn 112") */
+"firmwareUpdate.done.updated" = "Bijgewerkt naar %@";
+
+/* Location: FirmwareUpdateView.swift - Success title when the build name didn't change (a dev build); the argument is the build */
+"firmwareUpdate.done.installed" = "%@ geïnstalleerd";
+
+/* Location: FirmwareUpdateView.swift - The board came back on its old build after the update; the argument is that build ("Cairn 111") */
+"firmwareUpdate.done.unchanged" = "Nog op %@. Het board heeft zijn oude firmware behouden.";
+
+/* Location: FirmwareUpdateView.swift - The firmware was sent but the board hasn't reconnected yet */
+"firmwareUpdate.done.notBack" = "Verstuurd. Het board is nog niet opnieuw verbonden. Kijk op het scherm.";
+
+/* Location: FirmwareUpdateView.swift - Empty state title: this firmware can't be updated from the app */
+"firmwareUpdate.unsupported.title" = "Niet beschikbaar";
+
+/* Location: FirmwareUpdateView.swift - Empty state text */
+"firmwareUpdate.unsupported.message" = "Deze firmware kan niet vanuit de app worden bijgewerkt.";
+
+/* Location: FirmwareUpdateView.swift - Card title when sending the firmware failed after the board allowed it */
+"firmwareUpdate.interrupted.title" = "Update niet voltooid";
+
+/* Location: FirmwareUpdateView.swift - Card text when sending failed */
+"firmwareUpdate.interrupted.message" = "Het board blijft een tijdje in Updater-modus. Probeer het opnieuw of herstart het board.";
+
+/* Location: FirmwareUpdateView.swift - Error: the board is already updating */
+"firmwareUpdate.reply.busy" = "Het board is al bezig met een update.";
+
+/* Location: FirmwareUpdateView.swift - Error: the board is locked, asleep, or low on memory */
+"firmwareUpdate.reply.notNow" = "Het board kan nu geen update starten. Ontgrendel of wek het en probeer het opnieuw.";
+
+/* Location: FirmwareUpdateView.swift - Error: the person at the board tapped Cancel */
+"firmwareUpdate.result.declined" = "De update is op het board geweigerd.";
+
+/* Location: FirmwareUpdateView.swift - Error: the board couldn't start its updater */
+"firmwareUpdate.result.failed" = "Het board kon de Updater-modus niet starten. Het scherm laat zien waarom.";
+
+/* Location: FirmwareUpdateView.swift - Error: nobody answered the board's prompt */
+"firmwareUpdate.result.noAnswer" = "Niemand tikte op tijd op Toestaan op het board.";
+
+/* Location: FirmwareUpdateView.swift - Error: the phone can't reach the board over WiFi */
+"firmwareUpdate.error.network" = "Het board is niet bereikbaar via wifi. Controleer of deze telefoon op het netwerk van het board zit en of Cairn het lokale netwerk mag gebruiken (Instellingen › Privacy en beveiliging › Lokaal netwerk).";
+
+/* Location: FirmwareUpdateView.swift - Error: the board's updater isn't running */
+"firmwareUpdate.error.notInUpdater" = "Het board staat niet in Updater-modus. Kijk op het scherm.";
+
+/* Location: FirmwareUpdateView.swift - Error: the downloaded firmware failed its checksum */
+"firmwareUpdate.error.checksum" = "De download komt niet overeen met de checksum van de release. Er is niets naar het board gestuurd.";
+
+/* Location: FirmwareUpdateView.swift - Error: the release has no file for this board */
+"firmwareUpdate.error.noImage" = "De nieuwste release heeft geen updatebestand voor dit board.";
+
+/* Location: FirmwareUpdateView.swift - Error: GitHub couldn't be reached */
+"firmwareUpdate.error.release" = "Kan de nieuwste release niet ophalen. Controleer je internetverbinding.";
+
+/* Location: FirmwareUpdateView.swift - Error: the radio didn't answer the status request */
+"firmwareUpdate.error.noAnswer" = "De radio antwoordde niet. Probeer het opnieuw.";
+
+/* Location: FirmwareUpdateView.swift - Error: the chosen file is too small */
+"firmwareUpdate.file.tooSmall" = "Dit bestand is te klein voor firmware.";
+
+/* Location: FirmwareUpdateView.swift - Error: the chosen file isn't firmware */
+"firmwareUpdate.file.notFirmware" = "Dit bestand is geen firmware-image.";
+
+/* Location: FirmwareUpdateView.swift - Error: the chosen file is a full flash image */
+"firmwareUpdate.file.full" = "Dit is een -full.bin. Kies het -update.bin-bestand.";
+
+/* Location: FirmwareUpdateView.swift - Error: the chosen file is named for another board */
+"firmwareUpdate.file.otherBoard" = "Dit bestand is voor een ander board.";
+
+/* Location: FirmwareUpdateView.swift - Error: the chosen file couldn't be read */
+"firmwareUpdate.file.unreadable" = "Kan dit bestand niet lezen.";
+
+/* Section header on About: where to get help with Cairn */
+"about.support.header" = "Ondersteuning";
+
+/* About › Support: link to the Cairn page on cvhvisuals.com */
+"about.support.website" = "Website";
+
+/* About › Support: link to the support contact form */
+"about.support.getSupport" = "Hulp krijgen";
+
+/* About › Support: link to report a bug on GitHub */
+"about.support.reportBug" = "Fout melden";
+
+/* About › Support: link to the Cairn firmware on GitHub */
+"about.support.firmware" = "Firmware";
+
+/* About › Support: link to the privacy policy */
+"about.support.privacy" = "Privacy";
+
+/* About › Support: link to join the TestFlight beta */
+"about.support.beta" = "Doe mee met de bèta";
+
+/* The About sheet's close button */
+"about.support.done" = "Gereed";
+
+/* Section header on About: the tip jar (in-app purchase tips for the developer) */
+"about.tipJar.header" = "Steun de ontwikkeling";
+
+/* About › Support Development (tip jar): line under the tips; a tip must be described as unlocking nothing */
+"about.tipJar.footer" = "Cairn is gratis en de ontwikkeling gaat door dankzij jouw steun. Fooien betalen nieuwe radio's om te testen, nieuwe functies en oplossingen. Ze ontgrendelen niets.";
+
+/* Location: SupportDevelopment.swift - Purpose: Asking for a review or a tip, on Settings › About and in the occasional pop-up */
+"about.review.title" = "Beoordeling schrijven";
+"about.review.detail" = "Helpt anderen Cairn te vinden";
+"about.supportPrompt.title" = "Help Cairn door te gaan";
+"about.supportPrompt.message" = "Een beoordeling helpt anderen Cairn te vinden en een fooi betaalt nieuwe radio's om te testen, nieuwe functies en oplossingen. Beide zijn optioneel en Cairn blijft gratis.";
+
+/* About › Support Development (tip jar): shown once this device has left a tip */
+"about.tipJar.thanks" = "Bedankt! Jouw steun houdt de ontwikkeling van Cairn gaande.";
+
+/* About › Support Development (tip jar): alert title when a tip purchase fails */
+"about.tipJar.failed" = "Fooi niet gelukt";
+
+/* Section header on About: the developer's other apps */
+"about.moreApps.header" = "Meer apps";
+
+/* About › More Apps: badge on an app that is in TestFlight beta */
+"about.moreApps.beta" = "Bèta";
+
+/* About › More Apps: link to the full apps page on cvhvisuals.com */
+"about.moreApps.allApps" = "Alle apps bekijken";
+
+/* About › More Apps: what Switcher Pro is (app name not translated) */
+"about.moreApps.switcherPro" = "Preview- en programmaswitcher voor OBS Studio";
+
+/* About › More Apps: what ResEditor is (app name not translated) */
+"about.moreApps.resEditor" = "Calculator voor videobandbreedte en resolutie";
+
+/* About › More Apps: what GenR8 is (app name not translated) */
+"about.moreApps.genr8" = "Testbeelden, HDR-signalen, AV-sync en tonen";
+
+/* About › More Apps: what MyRate+ is, for crew and freelancers (app name not translated) */
+"about.moreApps.myRate" = "Uren, gage, kilometers en pdf-facturen";
+
+/* About › More Apps: what For Isaiah is, a picture-and-word communication app (app name not translated) */
+"about.moreApps.forIsaiah" = "Gratis app die plaatjes en woorden uitspreekt";
+
+// MARK: - Radio Tuning
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.header" = "Afstemming";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.footer" = "Hoe je radio de floods timet die hij verstuurt en herhaalt. Laat de standaardwaarden (RX-vertraging 0, zendtijdfactor 1) staan tenzij je mesh iets anders nodig heeft.";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.rxDelay" = "RX-vertraging";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.rxDelay.detail" = "Houdt zwakkere floods iets langer vast voor herhaling, zodat sterkere paden winnen. 0 zet het uit.";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.airtimeFactor" = "Zendtijdfactor";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.airtimeFactor.detail" = "Hoe lang de radio stil blijft na het zenden, als veelvoud van zijn zendtijd. Hoger laat meer ruimte voor anderen.";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.apply" = "Afstemming toepassen";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.reset" = "Standaardwaarden herstellen";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.unsupported" = "De firmware van deze radio ondersteunt geen afstemming.";
+
+// MARK: - Connections
+
+/* Connections: page title, Settings tile and the radio button's label */
+"connections.title" = "Mijn radio's";
+
+/* Connection Settings: detail under the Connections link */
+"connections.linkDetail" = "Bewaarde radio's en profielen";
+
+/* Connections: saved radios section footer */
+"connections.savedRadios.footer" = "Tik op een radio om ermee te verbinden of ernaar over te schakelen. De standaardradio, de laatst verbonden, verbindt opnieuw wanneer Cairn opent.";
+
+/* Connections: footer under the radios while Connect on Launch is off */
+"connections.savedRadios.footerManual" = "Tik op een radio om te verbinden of over te schakelen.";
+
+/* Connections: switch for reconnecting to the last radio when the app opens */
+"connections.connectOnLaunch.title" = "Verbinden bij openen";
+
+/* Connections: line under the Connect on Launch switch */
+"connections.connectOnLaunch.detail" = "Opnieuw verbinden met de laatste radio wanneer Cairn opent.";
+
+/* Connections: asks before a tapped radio connects; the radio's name */
+"connections.connectPrompt.title" = "Verbinden met %@?";
+
+/* Connections: under the connect question while another radio is connected; that radio's name */
+"connections.connectPrompt.switchMessage" = "Cairn verbreekt eerst de verbinding met %@.";
+
+/* Connections: shown when no radio is saved yet */
+"connections.savedRadios.empty" = "Radio's die je koppelt of via wifi verbindt, verschijnen hier.";
+
+/* Connections: header over the scan and WiFi actions */
+"connections.add.header" = "Radio toevoegen";
+
+/* Connections: tag on the radio Cairn reconnects to at launch */
+"connections.row.defaultRadio" = "Standaard";
+
+/* Connections: a Bluetooth radio the scan hasn't heard */
+"connections.row.notInRange" = "Buiten bereik";
+
+/* Connections: when a radio was last connected; %@ is a relative date such as 'yesterday' */
+"connections.row.lastConnected" = "Laatst verbonden %@";
+
+/* Connections: menu action connecting a radio */
+"connections.action.connect" = "Verbind";
+
+/* Connections: menu action switching to a radio from the connected one */
+"connections.action.switchTo" = "Schakel over naar deze radio";
+
+/* Connections: menu action giving a radio a name on this phone */
+"connections.action.rename" = "Bijnaam…";
+
+/* Connections: menu action editing a WiFi radio's address */
+"connections.action.editAddress" = "Wijzig adres…";
+
+/* Connections: menu action removing a saved radio */
+"connections.action.forget" = "Vergeet…";
+
+/* Connections: rename alert title */
+"connections.rename.title" = "Bijnaam (alleen op deze telefoon)";
+
+/* Connections: rename alert message */
+"connections.rename.message" = "De naam verschijnt alleen op deze telefoon. Laat leeg om de eigen naam van de radio te gebruiken.";
+
+/* Connections: forget confirmation title; %@ is the radio's name */
+"connections.forget.title" = "%@ vergeten?";
+
+/* Connections: forget confirmation message */
+"connections.forget.message" = "Cairn verwijdert deze radio totdat je hem opnieuw koppelt. Zijn gesprekken en nodes blijven op deze telefoon.";
+
+/* Connections: forget confirmation button */
+"connections.forget.confirm" = "Vergeet radio";
+
+/* Connections: VoiceOver hint on the connected radio's card */
+"connections.accessibility.openDeviceInfoHint" = "Tik dubbel om Apparaatinfo te openen";
+
+/* Connections: radio profiles section header */
+"connections.profiles.header" = "Radioprofielen";
+
+/* Connections: explanation behind the profiles header's info button */
+"connections.profiles.info" = "Een profiel is een benoemde kopie van de instellingen van een radio: voorinstelling, frequentie en zendvermogen, naam, kanalen en overige instellingen. Pas het toe op elke radio om die op dezelfde manier in te stellen. Profielen bevatten nooit de sleutels, contacten of positie van een radio.";
+
+/* Connections: shown when no profile is saved */
+"connections.profiles.emptyTitle" = "Geen profielen";
+
+/* Connections: detail under No Profiles */
+"connections.profiles.empty" = "Bewaar de instellingen van de verbonden radio om ze op elke radio te hergebruiken.";
+
+/* Connections: action saving the connected radio's settings as a profile */
+"connections.profiles.saveCurrent" = "Bewaar huidige radio als profiel";
+
+/* Connections: footer while no radio is ready */
+"connections.profiles.saveDisconnected" = "Verbind een radio om een profiel te bewaren of toe te passen.";
+
+/* Connections: a profile's channel count; %d is the number */
+"connections.profiles.channelCount" = "Kanalen: %d";
+
+/* Connections: alert naming a new profile */
+"connections.profiles.newProfile.title" = "Nieuw profiel";
+
+/* Connections: alert naming a new profile, message */
+"connections.profiles.newProfile.message" = "Geef dit profiel een naam. Het bewaart de voorinstelling, het vermogen, de naam, de kanalen en overige instellingen van de verbonden radio.";
+
+/* Connections: text field placeholder for a profile's name */
+"connections.profiles.newProfile.placeholder" = "Profielnaam";
+
+/* Radio profile page: section header over what the profile holds */
+"connections.profile.contents" = "Inhoud";
+
+/* Radio profile page: action applying the profile; %@ is the connected radio's name */
+"connections.profile.apply" = "Pas toe op %@";
+
+/* Radio profile page: title of the page previewing and applying a profile */
+"connections.profile.applyTitle" = "Pas profiel toe";
+
+/* Radio profile page: footer while no radio is ready */
+"connections.profile.applyDisconnected" = "Verbind een radio om dit profiel toe te passen.";
+
+/* Radio profile page: value on the Other Settings card */
+"connections.profile.included" = "Inbegrepen";
+
+/* Radio profile page: %1$@ is the radio's name, %2$@ the date */
+"connections.profile.savedFrom" = "Bewaard van %1$@ op %2$@";
+
+/* Radio profile page: %@ is the date */
+"connections.profile.savedOn" = "Bewaard op %@";
+
+/* Radio profile page: delete action and confirmation button */
+"connections.profile.delete" = "Verwijder profiel";
+
+/* Radio profile page: delete confirmation title; %@ is the profile's name */
+"connections.profile.delete.title" = "%@ verwijderen?";
+
+/* Radio profile page: delete confirmation message */
+"connections.profile.delete.message" = "Het profiel wordt van deze telefoon verwijderd. Radio's waarop het is toegepast, houden hun instellingen.";
+
+/* Radio profile page: rename alert title */
+"connections.profile.rename.title" = "Wijzig naam van profiel";
+
+/* VoiceOver hint on the radio button in each tab's leading corner, which opens the connected radio's Device Info as a sheet */
+"bleStatus.hint" = "Opent de apparaatinfo van de verbonden radio";
+
+/* Connections: alert when the radio is already connected over the other transport */
+"connections.sameRadio.title" = "Al verbonden";
+
+/* Connections: %1$@ is the radio's name, %2$@ the transport in use, %3$@ the other one */
+"connections.sameRadio.message" = "%1$@ is al verbonden via %2$@. Overschakelen naar %3$@?";
+
+/* Connections: button moving the radio to the other transport; %@ is that transport */
+"connections.sameRadio.switchButton" = "Schakel over naar %@";
+
+/* Alert after connecting to a radio already saved over the other transport */
+"connections.linked.title" = "Dezelfde radio";
+
+/* %1$@ is the radio's name, %2$@ the transports it was saved with, %3$@ the new one */
+"connections.linked.message" = "Dit is %1$@, al bewaard via %2$@. Cairn toont hem één keer, met %3$@ als extra manier om te verbinden.";
+
+/* Connections: segment listing the saved radios */
+"connections.segment.radios" = "Radio's";
+
+/* Connections: segment listing the radio profiles */
+"connections.segment.profiles" = "Profielen";
+
+/* Connections: search prompt for radios */
+"connections.search.radios" = "Naam, bijnaam of sleutel";
+
+/* Connections: search prompt for profiles */
+"connections.search.profiles" = "Profielnaam";
+
+/* Connections: sort by most recently connected */
+"connections.sort.recent" = "Recent";
+
+/* Connections: sort by name */
+"connections.sort.name" = "Naam";
+
+/* Connections: sort by Bluetooth signal */
+"connections.sort.signal" = "Signaal";
+
+/* Connections: filter showing every transport */
+"connections.filter.all" = "Alle";
+
+/* Connections: transport filter picker label */
+"connections.filter.title" = "Verbinding";
+
+/* Connections: toolbar menu with the sort and filter */
+"connections.filter.menu" = "Sorteer en filter";
+
+/* Connections: section with the radio in use */
+"connections.section.connected" = "Verbonden";
+
+/* Connections: section with radios heard over Bluetooth now */
+"connections.section.nearby" = "In de buurt";
+
+/* Connections: section with the other saved radios */
+"connections.section.saved" = "Bewaard";
+
+/* Connections: section with radios iOS is paired with that Cairn has no record of */
+"connections.section.pairedElsewhere" = "Gekoppeld met dit apparaat";
+
+/* Connections: switch the connected radio to its other transport; %@ is the transport */
+"connections.action.switchOver" = "Schakel over naar %@";
+
+/* Connections: connect over one transport; %@ is the transport */
+"connections.action.connectOver" = "Verbind via %@";
+
+/* Connections: short button switching to a radio or transport */
+"connections.action.switchShort" = "Schakel over";
+
+/* Connections: VoiceOver label for the button opening a radio's page; %@ is its name */
+"connections.accessibility.details" = "Details van %@";
+
+/* Connections: VoiceOver value of a folded section */
+"connections.accessibility.collapsed" = "Ingeklapt";
+
+/* Connections: VoiceOver value of an open section */
+"connections.accessibility.expanded" = "Uitgeklapt";
+
+/* Connections: VoiceOver hint on a row beside the detail pane */
+"connections.accessibility.selectHint" = "Tik dubbel om deze radio te tonen";
+
+/* Connections: detail pane with no radio selected */
+"connections.detail.noSelection" = "Kies een radio";
+
+/* Connections: detail pane with no profile selected */
+"connections.detail.noProfile" = "Kies een profiel";
+
+/* Radio page: section with a card per transport */
+"connections.detail.transports" = "Manieren om te verbinden";
+
+/* Radio page: tile with when the radio was last connected */
+"connections.detail.lastConnected" = "Laatst verbonden";
+
+/* Radio page: tile with the start of the radio's public key */
+"connections.detail.key" = "Sleutel";
+
+/* Radio page: tile with the Bluetooth signal */
+"connections.detail.signal" = "Signaal";
+
+/* Radio page: section listing profiles to apply to the connected radio */
+"connections.detail.applyProfile" = "Pas een profiel toe";
+
+// MARK: - Background App Refresh
+
+/* Location: BackgroundRefreshNotice.swift - Title of the card shown in Settings › Notifications and Connections when Background App Refresh is off for Cairn or system-wide; tapping opens Cairn's page in the Settings app */
+/* AI-translated - please verify with native speakers. */
+"notifications.backgroundRefresh.off.title" = "Ververs apps op achtergrond staat uit";
+
+/* Location: BackgroundRefreshNotice.swift - Subtitle of that card when Background App Refresh is off (for Cairn or system-wide) */
+/* AI-translated - please verify with native speakers. */
+"notifications.backgroundRefresh.off.detail" = "Via wifi controleert Cairn de radio op de achtergrond alleen op berichten als Ververs apps op achtergrond aan staat. Bluetooth werkt gewoon door.";
+
+/* Location: BackgroundRefreshNotice.swift - Title of the card when Background App Refresh is restricted (Screen Time or device management); the card is not tappable, since the user cannot change it */
+/* AI-translated - please verify with native speakers. */
+"notifications.backgroundRefresh.restricted.title" = "Ververs apps op achtergrond is beperkt";
+
+/* Location: BackgroundRefreshNotice.swift - Subtitle of that card when Background App Refresh is restricted (Screen Time or device management), so the user cannot turn it on */
+/* AI-translated - please verify with native speakers. */
+"notifications.backgroundRefresh.restricted.detail" = "Ververs apps op achtergrond is beperkt op dit apparaat, dus via wifi controleert Cairn de radio alleen terwijl de app open is. Bluetooth werkt gewoon door.";
+
+/* Location: BackgroundRefreshNotice.swift - Title of the card shown while Low Power Mode is on, which stops Background App Refresh for every app; not tappable. Use Apple's names for Low Power Mode and Background App Refresh */
+/* AI-translated - please verify with native speakers. */
+"notifications.backgroundRefresh.lowPower.title" = "Energiebesparingsmodus pauzeert Ververs apps op achtergrond";
+
+/* Location: BackgroundRefreshNotice.swift - Subtitle of the Low Power Mode card */
+/* AI-translated - please verify with native speakers. */
+"notifications.backgroundRefresh.lowPower.detail" = "Zolang de energiebesparingsmodus aan staat, controleert Cairn de radio via wifi alleen terwijl de app open is. Bluetooth werkt gewoon door.";
+
+/* Location: SavedRadiosList.swift - Footer under the radios while the connected radio is on WiFi: how messages reach the app in the background */
+/* AI-translated - please verify with native speakers. */
+"connections.wifiBackground.footer" = "Via Bluetooth komen berichten ook op de achtergrond binnen. Via wifi controleert Cairn de radio op berichten wanneer iOS dat toestaat (Ververs apps op achtergrond), wat minuten of uren uit elkaar kan liggen.";
+/* Location: NotificationSettingsSection.swift - Switch: notifications play a sound */
+"notifications.sound" = "Geluiden";
+/* Location: NotificationSettingsSection.swift - Switch: the app icon shows the unread count */
+"notifications.badge" = "Badge op app-icoon";
+/* Location: QuietHoursSection.swift - Section header */
+"notifications.quietHours.header" = "Stille uren";
+/* Location: QuietHoursSection.swift - Switch turning quiet hours on */
+"notifications.quietHours.enable" = "Stille uren";
+/* Location: QuietHoursSection.swift - Time picker: when quiet hours begin */
+"notifications.quietHours.start" = "Begin";
+/* Location: QuietHoursSection.swift - Time picker: when quiet hours end */
+"notifications.quietHours.end" = "Einde";
+/* Location: QuietHoursSection.swift - Switch: direct messages still alert during quiet hours */
+"notifications.quietHours.allowDirect" = "Directe berichten toestaan";
+/* Location: QuietHoursSection.swift - What quiet hours do */
+"notifications.quietHours.footer" = "Tijdens stille uren komen meldingen stil aan in Berichtencentrum, zonder geluid of banner. De badge telt ze nog steeds.";
+/* Location: RadioReadFootnote.swift - Footnote when a page's read from the radio failed */
+"radio.readFailed" = "Kon niet van de radio lezen – laatst bekende waarden worden getoond";
+/* Location: FirmwareUpdateView.swift - Link to the release's page on GitHub */
+"firmwareUpdate.releaseNotes" = "Release-opmerkingen";
+/* Location: FirmwareUpdateView.swift - Accessibility label of the release notes link; %@ is the release */
+"firmwareUpdate.releaseNotes.accessibility" = "Release-opmerkingen van %@ in de browser openen";
+/* Location: WiFiEditSheet.swift - Confirmation title; %@ is the new host:port */
+"wifiEdit.confirm.title" = "Opnieuw verbinden met %@?";
+/* Location: WiFiEditSheet.swift - Confirmation message */
+"wifiEdit.confirm.message" = "De huidige verbinding wordt verbroken en de app verbindt met het nieuwe adres.";
+/* Location: WiFiEditSheet.swift - Confirmation button */
+"wifiEdit.confirm.connect" = "Opnieuw verbinden";
+/* Location: WiFiEditSheet.swift - Save button while the reconnect runs */
+"wifiEdit.connecting" = "Verbinden…";
+/* Location: DeviceResetSection.swift - Factory reset confirmation title */
+"dangerZone.dialog.reset.title" = "Fabrieksinstellingen herstellen";
+/* Location: DeviceResetSection.swift - Factory reset confirmation message: what the radio loses, and the choice about the phone's copy */
+"dangerZone.dialog.reset.message" = "De radio wist al zijn contacten, berichten en instellingen en wordt daarna ontkoppeld. Kies of deze telefoon zijn kopie van de berichten, contacten en kanalen van deze radio bewaart.";
+/* Location: DeviceResetSection.swift - Factory reset, keeping the phone's data */
+"dangerZone.dialog.reset.keepData" = "Herstel en bewaar lokale gegevens";
+/* Location: DeviceResetSection.swift - Factory reset, deleting the phone's data too */
+"dangerZone.dialog.reset.deleteAll" = "Herstel en verwijder lokale gegevens";
+/* Location: AppearanceSettingsSection.swift - Switch: the app's haptic feedback */
+"Appearance.Haptics" = "Haptische feedback";
+/* Location: AppearanceSettingsSection.swift - What the haptics switch covers */
+"Appearance.Haptics.Footer" = "De korte tikjes die de app geeft bij succes, fouten en keuzes. Het kompas heeft een eigen instelling.";

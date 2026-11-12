@@ -1,0 +1,1077 @@
+/*
+  Localizable.strings
+  Cairn
+
+  European Portuguese (pt-PT) translation of common and shared strings.
+  AI-translated - please verify with native speakers.
+*/
+
+// MARK: - Generic Buttons
+
+/* Standard confirmation button for dialogs */
+"common.ok" = "OK";
+
+/* Standard cancel button for dialogs and sheets */
+"common.cancel" = "Cancelar";
+
+/* Standard done button for completing an action */
+"common.done" = "Concluído";
+
+/* Location: MacDetailPresentation.swift - Back button on a page pushed inside a node's window or column (Mac) */
+"common.back" = "Voltar";
+
+/* Standard save button for persisting changes */
+"common.save" = "Guardar";
+
+/* Standard delete button for removing items */
+"common.delete" = "Eliminar";
+
+/* Standard edit button for entering edit mode */
+"common.edit" = "Editar";
+
+/* Standard close button for dismissing views */
+/* Button to retry a failed operation */
+"common.tryAgain" = "Tentar novamente";
+
+/* Error label when content fails to load */
+"common.error.failedToLoad" = "Falha ao carregar";
+
+/* Network error with underlying error description - %@ is the error description */
+"common.error.networkError" = "Erro de rede: %@";
+
+/* Invalid response from API */
+"common.error.invalidResponse" = "Resposta inválida da API de altitude";
+
+/* API error with message - %@ is the error message */
+"common.error.apiError" = "Erro de API: %@";
+
+/* No data returned from API */
+"common.error.noElevationData" = "Não foram devolvidos dados de altitude";
+
+/* Rate limited by elevation API */
+"common.error.rateLimited" = "Demasiados pedidos. Tente novamente dentro de instantes.";
+
+/* Standard remove button for removing items from a list or group */
+// MARK: - Connection Status
+
+/* Location: SyncingPillView.swift - Status shown when syncing data */
+"common.status.syncing" = "A sincronizar";
+
+/* Location: SyncingPillView.swift - Status shown when connecting to device */
+"common.status.connecting" = "A ligar";
+
+/* Location: SyncingPillView.swift - Status shown when device is ready */
+"common.status.ready" = "Pronto";
+
+/* Location: SyncingPillView.swift - Status shown when device is disconnected */
+"common.status.disconnected" = "Desligado";
+
+// MARK: - Tab Bar
+
+/* Tab bar title for the messaging/conversations screen */
+"tabs.chats" = "Conversas";
+
+/* VoiceOver value announcing the unread message count on the Chats sidebar icon. %d is the count. */
+"tabs.chatsUnreadAccessibilityValue" = "%d por ler";
+
+/* VoiceOver value announcing the count of newly heard nodes on the Nodes sidebar icon. %d is the count. */
+"tabs.nodesNewAccessibilityValue" = "%d novos";
+
+/* Tab bar title for the nodes/contacts list screen */
+"tabs.nodes" = "Nós";
+
+/* Tab bar title for the map screen showing node locations */
+"tabs.map" = "Mapa";
+
+/* Tab bar title for the tools/utilities screen */
+"tabs.tools" = "Ferramentas";
+
+/* Tab bar title for the app settings screen */
+"tabs.settings" = "Definições";
+
+/* Location: AppCommands.swift - Title of the keyboard-shortcut menu that switches tabs and starts a chat */
+"commands.go" = "Ir";
+/* Location: AppCommands.swift - File menu item that opens another app window (Mac and iPad) */
+"commands.newWindow" = "Nova janela";
+
+// MARK: - Connection Alerts
+
+/* Alert title when device connection fails */
+"alert.connectionFailed.title" = "Falha na ligação";
+
+/* Alert title when connection cannot be established */
+"alert.couldNotConnect.title" = "Não foi possível ligar";
+
+/* Alert title when device pairing fails (e.g., wrong PIN) */
+"alert.pairingFailed.title" = "Não foi possível emparelhar";
+
+/* Default message when device connection fails */
+"alert.connectionFailed.defaultMessage" = "Não foi possível ligar ao dispositivo.";
+
+/* Message suggesting another app may be connected to the device */
+"alert.couldNotConnect.otherAppMessage" = "Certifique-se de que nenhuma app está ligada ao dispositivo e tente novamente.";
+
+/* Button to remove failed pairing and retry connection */
+"alert.connectionFailed.removeAndRetry" = "Remover e tentar novamente";
+
+/* VoiceOver label for the destructive Remove and Try Again button — clarifies that "remove" means removing the device pairing */
+"accessibility.alert.connectionFailed.removeAndRetry" = "Remover o emparelhamento do dispositivo e tentar novamente";
+
+// MARK: - Accessibility
+
+/* Location: SyncingPillView.swift - Accessibility hint for disconnected state */
+"common.accessibility.connectHint" = "Toque duas vezes para ligar o dispositivo";
+
+/* VoiceOver announcement when viewing cached data while disconnected from device */
+/* Location: View+RadioDisabled.swift - VoiceOver hint when a control is disabled because the radio is not connected */
+"accessibility.requiresRadioConnection" = "Requer ligação de rádio";
+
+/* Accessibility value for toggle in On state */
+"accessibility.on" = "Ativado";
+
+/* Accessibility value for toggle in Off state */
+"accessibility.off" = "Desativado";
+
+// MARK: - Node Types
+
+/* Node type for a person or contact */
+/* Node type for a mesh network repeater device */
+/* Node type for a group chat room */
+// MARK: - Permission Levels
+
+/* Permission level with limited access */
+/* Permission level with standard access */
+/* Permission level with full administrative access */
+// MARK: - Reaction Notifications
+
+/* Notification body when someone reacts to your message - %1$@ is the emoji, %2$@ is the message preview */
+"notifications.reaction.body" = "Reagiu %1$@ à sua mensagem: \"%2$@\"";
+
+// MARK: - Discovery Notifications
+
+/* Notification title when a new contact is discovered on the mesh network */
+"notifications.discovery.contact" = "Novo contacto descoberto";
+
+/* Notification title when a new repeater node is discovered on the mesh network */
+"notifications.discovery.repeater" = "Novo repetidor descoberto";
+
+/* Notification title when a new room is discovered on the mesh network */
+"notifications.discovery.room" = "Nova sala descoberta";
+
+// MARK: - Notification Actions
+
+/* Notification action button to reply to a message */
+"notifications.action.reply" = "Responder";
+
+/* Notification action button to send a quick reply */
+"notifications.action.send" = "Enviar";
+
+/* Notification action placeholder for quick reply text input */
+"notifications.action.messagePlaceholder" = "Mensagem...";
+
+/* Notification action button to mark a message as read */
+"notifications.action.markAsRead" = "Marcar como lida";
+
+// MARK: - Low Battery Notifications
+
+/* Notification title for low battery warning */
+"notifications.lowBattery.title" = "Bateria fraca";
+
+/* Notification body for low battery warning - %1$@ is device name, %2$d is battery percentage */
+"notifications.lowBattery.body" = "A bateria de %1$@ está a %2$d%%";
+
+/* Notification title when a quick reply fails to send */
+"notifications.quickReplyFailed.title" = "Mensagem não enviada";
+
+/* Notification body when a quick reply fails - %@ is the contact or channel name */
+"notifications.quickReplyFailed.body" = "Não foi possível enviar a resposta para %@.";
+
+/* Fallback display name for a discovered contact with no advertised name */
+"notifications.discovery.unknownContact" = "Contacto desconhecido";
+
+// MARK: - Connection VoiceOver Announcements
+
+/* VoiceOver announcement when sync fails and device is disconnecting */
+"accessibility.connection.syncFailedDisconnecting" = "Falha na sincronização. A desligar.";
+
+/* VoiceOver announcement when device connection is lost */
+"accessibility.connection.deviceConnectionLost" = "Ligação ao dispositivo perdida";
+
+/* VoiceOver announcement when device reconnects */
+"accessibility.connection.deviceReconnected" = "Ligação restabelecida";
+
+/* VoiceOver signal-strength descriptors for the device picker signal bars */
+"accessibility.signalStrength.weak" = "Sinal fraco";
+"accessibility.signalStrength.medium" = "Sinal médio";
+"accessibility.signalStrength.strong" = "Sinal forte";
+
+// MARK: - Status Pill
+
+/* Status pill message when sync has failed */
+"statusPill.syncFailed" = "Falha na sincronização";
+
+// MARK: - Error Messages
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Session operation timed out */
+"error.meshCore.timeout" = "A operação expirou. Tente novamente.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Device response could not be parsed - %@ is the parse failure detail */
+"error.meshCore.parseError" = "Falha ao analisar a resposta do dispositivo: %@";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - No active connection to the radio */
+"error.meshCore.notConnected" = "Sem ligação ao dispositivo.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - A command failed on the device - %@ is the failure reason */
+"error.meshCore.commandFailed" = "O comando falhou: %@";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Unexpected device response - %1$@ is the expected response, %2$@ is the received response */
+"error.meshCore.invalidResponse" = "Resposta inesperada do dispositivo (esperado %1$@, recebido %2$@).";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Contact missing from the radio */
+"error.meshCore.contactNotFound" = "Contacto não encontrado no dispositivo.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Payload exceeds device limit - %1$lld is the actual size in bytes, %2$lld is the maximum */
+"error.meshCore.dataTooLarge" = "Dados demasiado grandes (%1$lld bytes, o máximo é %2$lld).";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Cryptographic signing failed - %@ is the failure reason */
+"error.meshCore.signingFailed" = "Falha na assinatura: %@";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Invalid input - %@ is the validation detail */
+"error.meshCore.invalidInput" = "Entrada inválida: %@";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Unknown error - %@ is the error detail */
+"error.meshCore.unknown" = "Ocorreu um erro desconhecido: %@";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Bluetooth hardware unavailable */
+"error.meshCore.bluetoothUnavailable" = "O Bluetooth não está disponível neste dispositivo.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Bluetooth permission denied */
+"error.meshCore.bluetoothUnauthorized" = "É necessária permissão de Bluetooth. Ative-a em Definições.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Bluetooth radio is off */
+"error.meshCore.bluetoothPoweredOff" = "O Bluetooth está desligado. Ative o Bluetooth para ligar.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Connection lost with detail - %@ is the underlying error message */
+"error.meshCore.connectionLost" = "A ligação ao dispositivo foi perdida: %@";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Connection lost without further detail */
+"error.meshCore.connectionLostNoDetail" = "A ligação ao dispositivo foi perdida.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Session not started */
+"error.meshCore.sessionNotStarted" = "A sessão não foi iniciada.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Feature disabled in device firmware */
+"error.meshCore.featureDisabled" = "Esta funcionalidade está desativada no dispositivo.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift, ProtocolError+UserFacingMessage.swift - Firmware error code: command unsupported */
+"error.device.unsupportedCommand" = "Comando não suportado pelo firmware do dispositivo.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift, ProtocolError+UserFacingMessage.swift - Firmware error code: item not found */
+"error.device.notFound" = "Item não encontrado no dispositivo.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift, ProtocolError+UserFacingMessage.swift - Firmware error code: storage full */
+"error.device.storageFull" = "O armazenamento do dispositivo está cheio.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift, ProtocolError+UserFacingMessage.swift - Firmware error code: invalid state */
+"error.device.invalidState" = "O dispositivo está num estado inválido para esta operação.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift, ProtocolError+UserFacingMessage.swift - Firmware error code: file system error */
+"error.device.fileSystem" = "Erro no sistema de ficheiros do dispositivo.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift, ProtocolError+UserFacingMessage.swift - Firmware error code: invalid parameter */
+"error.device.invalidParameter" = "Parâmetro inválido enviado ao dispositivo.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Firmware error code outside the known range - %lld is the raw code */
+"error.device.unknown" = "Erro do dispositivo (código %lld).";
+
+/* Location: TimeoutError+UserFacingMessage.swift - Generic timeout for async operations */
+"error.timeout.operationTimedOut" = "A operação expirou. Tente novamente.";
+
+/* Location: BLEError+UserFacingMessage.swift - Bluetooth hardware unavailable */
+"error.ble.bluetoothUnavailable" = "O Bluetooth não está disponível neste dispositivo.";
+
+/* Location: BLEError+UserFacingMessage.swift - Bluetooth permission denied */
+"error.ble.bluetoothUnauthorized" = "É necessária permissão de Bluetooth. Ative-a em Definições.";
+
+/* Location: BLEError+UserFacingMessage.swift - Bluetooth radio is off */
+"error.ble.bluetoothPoweredOff" = "O Bluetooth está desligado. Ative o Bluetooth para ligar.";
+
+/* Location: BLEError+UserFacingMessage.swift - Scanned device could not be found */
+"error.ble.deviceNotFound" = "Dispositivo não encontrado. Certifique-se de que está ligado e por perto.";
+
+/* Location: BLEError+UserFacingMessage.swift - BLE connection failed - %@ is the failure detail */
+"error.ble.connectionFailed" = "Falha na ligação: %@";
+
+/* Location: BLEError+UserFacingMessage.swift - BLE connection attempt timed out */
+"error.ble.connectionTimeout" = "A ligação expirou. Tente novamente.";
+
+/* Location: BLEError+UserFacingMessage.swift - No BLE device connected */
+"error.ble.notConnected" = "Sem ligação ao dispositivo.";
+
+/* Location: BLEError+UserFacingMessage.swift - Required BLE characteristic missing */
+"error.ble.characteristicNotFound" = "Não foi possível comunicar com o dispositivo. Tente restabelecer a ligação.";
+
+/* Location: BLEError+UserFacingMessage.swift - BLE write failed - %@ is the failure detail */
+"error.ble.writeError" = "Falha ao enviar dados: %@";
+
+/* Location: BLEError+UserFacingMessage.swift - Malformed BLE response */
+"error.ble.invalidResponse" = "Resposta inválida do dispositivo. Tente novamente.";
+
+/* Location: BLEError+UserFacingMessage.swift - BLE operation timed out */
+"error.ble.operationTimeout" = "A operação expirou. Tente novamente.";
+
+/* Location: BLEError+UserFacingMessage.swift - BLE PIN authentication failed */
+"error.ble.authenticationFailed" = "Falha na autenticação. Verifique o PIN do dispositivo.";
+
+/* Location: BLEError+UserFacingMessage.swift - Bluetooth pairing failed - %@ is the failure reason */
+"error.ble.pairingFailed" = "Falha no emparelhamento Bluetooth: %@";
+
+/* Location: BLEError+UserFacingMessage.swift - Radio already in use by another app */
+"error.ble.deviceConnectedToOtherApp" = "Este dispositivo está ligado a outra app. Apenas uma app pode usar um rádio mesh de cada vez para evitar problemas de comunicação.";
+
+/* Location: ConnectionError+UserFacingMessage.swift - Connection failed - %@ is the failure reason */
+"error.connection.connectionFailed" = "Falha na ligação: %@";
+
+/* Location: ConnectionError+UserFacingMessage.swift - Device to connect to was not found */
+"error.connection.deviceNotFound" = "Dispositivo não encontrado";
+
+/* Location: ConnectionError+UserFacingMessage.swift - No active device connection */
+"error.connection.notConnected" = "Sem ligação ao dispositivo";
+
+/* Location: ConnectionError+UserFacingMessage.swift - Post-connect device initialization failed - %@ is the failure reason */
+"error.connection.initializationFailed" = "Falha na inicialização do dispositivo: %@";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - WiFi connection failed - %@ is the failure reason */
+"error.wifi.connectionFailed" = "Falha na ligação: %@";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - WiFi connection attempt timed out */
+"error.wifi.connectionTimeout" = "A ligação expirou. Verifique o hostname ou o endereço IP e certifique-se de que o dispositivo está acessível.";
+"error.wifi.localNetworkDenied" = "O Cairn não pode usar a rede local. Permita em Ajustes › Privacidade e Segurança › Rede Local e conecte novamente.";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - No active WiFi connection */
+"error.wifi.notConnected" = "Sem ligação ao dispositivo.";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - WiFi send failed - %@ is the failure reason */
+"error.wifi.sendFailed" = "Falha ao enviar dados: %@";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - WiFi send timed out */
+"error.wifi.sendTimeout" = "A operação de envio expirou.";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - Configured hostname or IP address is invalid */
+"error.wifi.invalidHost" = "Hostname ou endereço IP inválido.";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - Configured port number is invalid */
+"error.wifi.invalidPort" = "Número de porta inválido.";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - WiFi connection info missing */
+"error.wifi.notConfigured" = "Ligação não configurada.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - AccessorySetupKit session not active */
+"error.accessorySetup.sessionNotActive" = "O Bluetooth não está pronto. Certifique-se de que o Bluetooth está ativado e tente novamente.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - AccessorySetupKit session invalidated */
+"error.accessorySetup.sessionInvalidated" = "A sessão Bluetooth terminou inesperadamente. Reinicie a app.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - User dismissed the accessory picker */
+"error.accessorySetup.pickerDismissed" = "A seleção do dispositivo foi cancelada.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - Accessory picker could not be shown */
+"error.accessorySetup.pickerRestricted" = "Não é possível mostrar o seletor de dispositivos. Verifique se o Bluetooth está ativado, aguarde um momento e tente novamente.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - Accessory picker already on screen */
+"error.accessorySetup.pickerAlreadyActive" = "O seletor de dispositivos já está visível.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - Accessory pairing failed - %@ is the failure reason */
+"error.accessorySetup.pairingFailed" = "Falha no emparelhamento: %@";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - Picked accessory lacks a Bluetooth identifier */
+"error.accessorySetup.noBluetoothIdentifier" = "O dispositivo selecionado não suporta ligação Bluetooth.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - Accessory discovery timed out */
+"error.accessorySetup.discoveryTimeout" = "Nenhum dispositivo encontrado. Certifique-se de que o dispositivo está ligado e por perto.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - Connection to picked accessory failed */
+"error.accessorySetup.connectionFailed" = "Não foi possível ligar ao dispositivo. Tente novamente.";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - No active connection to the radio */
+"error.contactService.notConnected" = "Sem ligação ao rádio";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - Contact operation message failed to send */
+"error.contactService.sendFailed" = "Falha ao enviar mensagem";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - Malformed device response during a contact operation */
+"error.contactService.invalidResponse" = "Resposta inválida do dispositivo";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - Contact sync stopped before finishing */
+"error.contactService.syncInterrupted" = "A sincronização foi interrompida";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - Contact missing from the radio */
+"error.contactService.contactNotFound" = "Contacto não encontrado no dispositivo";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - The radio did not answer a contact read (timeout or device error), so a change was not made */
+"error.contactService.radioReadFailed" = "Não foi possível ler este contacto do rádio, por isso nada foi alterado. Verifique a ligação e tente novamente.";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - Radio node list has no free slots */
+"error.contactService.contactTableFull" = "A lista de nós do dispositivo está cheia";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - Node advertisement missing or stale, so the node cannot be shared */
+"error.contactService.shareContactUnavailable" = "Não foi possível partilhar o nó. O Advert do nó pode estar em falta ou desatualizado.";
+
+/* Location: MessageServiceError+UserFacingMessage.swift - No active connection to the radio */
+"error.messageService.notConnected" = "Sem ligação ao dispositivo.";
+
+/* Location: MessageServiceError+UserFacingMessage.swift - Recipient contact missing from the database */
+"error.messageService.contactNotFound" = "Contacto não encontrado.";
+
+/* Location: MessageServiceError+UserFacingMessage.swift - Target channel missing from the database */
+"error.messageService.channelNotFound" = "Canal não encontrado.";
+
+/* Location: MessageServiceError+UserFacingMessage.swift - Message send failed */
+"error.messageService.sendFailed" = "Falha no envio.";
+
+/* Location: MessageServiceError+UserFacingMessage.swift - Recipient cannot receive direct messages */
+"error.messageService.invalidRecipient" = "Não é possível enviar mensagens para este destinatário.";
+
+/* Location: MessageServiceError+UserFacingMessage.swift - Message text exceeds the maximum length */
+"error.messageService.messageTooLong" = "A mensagem excede o comprimento máximo permitido.";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - No active connection to the radio */
+"error.channelService.notConnected" = "Sem ligação ao dispositivo.";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - Channel missing from the database */
+"error.channelService.channelNotFound" = "Canal não encontrado.";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - Channel slot index out of range */
+"error.channelService.invalidChannelIndex" = "Índice de canal inválido.";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - Hashing the channel secret key failed */
+"error.channelService.secretHashingFailed" = "Falha ao gerar o hash da chave secreta do canal.";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - Channel save failed - %@ is the failure reason */
+"error.channelService.saveFailed" = "Falha ao guardar o canal: %@";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - Channel message send failed - %@ is the failure reason */
+"error.channelService.sendFailed" = "Falha no envio: %@";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - Channel sync already running */
+"error.channelService.syncAlreadyInProgress" = "A sincronização de canais já está em curso.";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - Channel sync suspended - %lld is the consecutive failure count */
+"error.channelService.circuitBreakerOpen" = "Sincronização de canais suspensa após %lld falhas consecutivas.";
+
+/* Location: IntentError.swift - No radio is connected, so retrying alone will not help until one is connected */
+"error.intent.notConnected" = "Nenhum rádio está ligado. Ligue o rádio no Cairn e tente novamente.";
+/* Location: IntentError.swift - No single valid recipient was chosen (none, both, or a recipient that cannot receive messages) */
+"error.intent.invalidRecipient" = "Escolha um único destinatário: um contacto ou um canal que possa receber mensagens.";
+
+/* Location: IntentError.swift - The message text exceeds the maximum length the radio can send */
+"error.intent.messageTooLong" = "A mensagem é demasiado longa para enviar.";
+
+/* Location: IntentError.swift - Persisting the message to the send queue failed, so it was never queued */
+"error.intent.sendFailed" = "A mensagem não pôde ser colocada na fila de envio. Tente novamente.";
+
+/* Location: ChatSendQueueServiceError+UserFacingMessage.swift - Queueing a message for send failed - %@ is the underlying error message */
+"error.chatSendQueue.persistFailed" = "Falha ao colocar a mensagem na fila de envio: %@";
+
+/* Location: ChatSendQueueServiceError+UserFacingMessage.swift - No active connection to the radio */
+"error.chatSendQueue.notConnected" = "Sem ligação ao dispositivo.";
+
+/* Location: MessagePollingError+UserFacingMessage.swift - No active connection to the radio */
+"error.messagePolling.notConnected" = "Sem ligação ao dispositivo.";
+
+/* Location: MessagePollingError+UserFacingMessage.swift - Fetching queued messages from the radio failed */
+"error.messagePolling.pollingFailed" = "Falha ao obter as mensagens em espera.";
+
+/* Location: AdvertisementError+UserFacingMessage.swift - No active connection to the radio */
+"error.advertisement.notConnected" = "Sem ligação ao dispositivo.";
+
+/* Location: AdvertisementError+UserFacingMessage.swift - Self-advertisement broadcast failed */
+"error.advertisement.sendFailed" = "Falha ao enviar o Advert.";
+
+/* Location: AdvertisementError+UserFacingMessage.swift - Malformed device response to an advertisement command */
+"error.advertisement.invalidResponse" = "Resposta inválida do dispositivo.";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - No active connection to the mesh radio */
+"error.remoteNode.notConnected" = "Sem ligação ao dispositivo mesh";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Remote node login failed */
+"error.remoteNode.loginFailed" = "Falha ao iniciar sessão.";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Sending to the remote node failed */
+"error.remoteNode.sendFailed" = "Falha no envio.";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Malformed response from the remote node */
+"error.remoteNode.invalidResponse" = "Resposta inválida do nó remoto";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Remote node rejected the operation */
+"error.remoteNode.permissionDenied" = "Permissão recusada";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Remote node request timed out */
+"error.remoteNode.timeout" = "O pedido expirou";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - No stored session for the remote node */
+"error.remoteNode.sessionNotFound" = "Sessão do nó remoto não encontrada";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Saved password missing from the keychain */
+"error.remoteNode.passwordNotFound" = "Palavra-passe não encontrada no Porta-chaves";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Keep-alive needs a direct path but the route is flood-routed */
+"error.remoteNode.floodRouted" = "O keep-alive requer uma rota de encaminhamento direto";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Establishing a direct path to the node failed */
+"error.remoteNode.pathDiscoveryFailed" = "Falha ao estabelecer uma rota direta";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Remote node contact missing from the database */
+"error.remoteNode.contactNotFound" = "Contacto não encontrado na base de dados";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Radio contact table full; cannot auto-add the node during login */
+"error.remoteNode.radioContactsFull" = "O rádio está sem espaços para contactos. Remova um contacto que já não seja necessário e tente iniciar sessão novamente.";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Login attempt cancelled by a duplicate attempt or shutdown */
+"error.remoteNode.cancelled" = "Início de sessão cancelado";
+
+/* Location: RoomServerError+UserFacingMessage.swift - No active connection to the radio */
+"error.roomServer.notConnected" = "Sem ligação ao dispositivo.";
+
+/* Location: RoomServerError+UserFacingMessage.swift - No stored session for the room server */
+"error.roomServer.sessionNotFound" = "Sessão da sala não encontrada.";
+
+/* Location: RoomServerError+UserFacingMessage.swift - Room message send failed */
+"error.roomServer.sendFailed" = "Falha no envio.";
+
+/* Location: RoomServerError+UserFacingMessage.swift - Room server rejected the operation */
+"error.roomServer.permissionDenied" = "Permissão recusada.";
+
+/* Location: RoomServerError+UserFacingMessage.swift - Malformed device response during a room operation */
+"error.roomServer.invalidResponse" = "Resposta inválida do dispositivo.";
+
+/* Location: BinaryProtocolError+UserFacingMessage.swift - No active connection to the radio */
+"error.binaryProtocol.notConnected" = "Sem ligação ao dispositivo.";
+
+/* Location: BinaryProtocolError+UserFacingMessage.swift - Binary request failed to send */
+"error.binaryProtocol.sendFailed" = "Falha ao enviar o pedido.";
+
+/* Location: BinaryProtocolError+UserFacingMessage.swift - Binary request timed out */
+"error.binaryProtocol.timeout" = "O pedido expirou.";
+
+/* Location: BinaryProtocolError+UserFacingMessage.swift - Malformed device response to a binary request */
+"error.binaryProtocol.invalidResponse" = "Resposta inválida do dispositivo.";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Device row missing from the database */
+"error.persistence.deviceNotFound" = "Dispositivo não encontrado.";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Contact row missing from the database */
+"error.persistence.contactNotFound" = "Contacto não encontrado.";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Message row missing from the database */
+"error.persistence.messageNotFound" = "Mensagem não encontrada.";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Channel row missing from the database */
+"error.persistence.channelNotFound" = "Canal não encontrado.";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Remote node session row missing from the database */
+"error.persistence.remoteNodeSessionNotFound" = "Sessão do nó remoto não encontrada.";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Database save failed - %@ is the failure reason */
+"error.persistence.saveFailed" = "Falha ao guardar: %@";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Database fetch failed - %@ is the failure reason */
+"error.persistence.fetchFailed" = "Falha ao obter: %@";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Stored data is malformed */
+"error.persistence.invalidData" = "Dados inválidos.";
+
+/* Location: SyncCoordinatorError+UserFacingMessage.swift - No active connection to the radio */
+"error.syncCoordinator.notConnected" = "Sem ligação ao dispositivo.";
+
+/* Location: SyncCoordinatorError+UserFacingMessage.swift - Full sync failed - %@ is the failure reason */
+"error.syncCoordinator.syncFailed" = "Falha na sincronização: %@";
+
+/* Location: SyncCoordinatorError+UserFacingMessage.swift - A sync is already running */
+"error.syncCoordinator.alreadySyncing" = "Já está a decorrer uma sincronização.";
+
+/* Location: DeviceServiceError+UserFacingMessage.swift - Device row missing from the database */
+"error.deviceService.deviceNotFound" = "Dispositivo não encontrado";
+
+/* Location: DeviceServiceError+UserFacingMessage.swift - Saving device settings failed - %@ is the failure reason */
+"error.deviceService.persistenceFailed" = "Falha ao guardar as definições do dispositivo: %@";
+
+/* Location: SettingsServiceError+UserFacingMessage.swift - No active connection to the radio */
+"error.settings.notConnected" = "Dispositivo não ligado";
+
+/* Location: SettingsServiceError+UserFacingMessage.swift - Sending a settings command failed */
+"error.settings.sendFailed" = "Falha ao enviar o comando";
+
+/* Location: SettingsServiceError+UserFacingMessage.swift - Malformed device response to a settings command */
+"error.settings.invalidResponse" = "Resposta inválida do dispositivo";
+
+/* Location: SettingsServiceError+UserFacingMessage.swift - The radio knows the setting but its hardware can't do it */
+"error.settings.unsupportedSetting" = "O hardware deste rádio não suporta essa definição.";
+
+/* Location: SettingsService+Verified.swift via SettingsServiceError+UserFacingMessage.swift - A preset's frequency settings were applied but its path hash size was not - %@ is the preset name */
+"error.settings.presetPathHashNotApplied" = "O rádio já usa as definições de frequência de %@, mas não foi possível definir o tamanho do hash da rota. Escolha a predefinição de novo para tentar outra vez.";
+
+/* Location: RadioWriteErrorMessage.swift - The radio refused a radio-settings write over Wi-Fi (Cairn firmware takes them over Wi-Fi only from a phone marked "Always allow" on the radio; otherwise over Bluetooth or on the radio). "Always allow" and "App link" are the radio's own English labels (its prompt button and its Wi-Fi setting): keep them in English. Turning App link off and on ends a one-time "Allow once" so the radio asks again. */
+"error.settings.radioSettingsOverWiFi" = "Por Wi-Fi, este rádio só aceita definições de rádio de um telefone marcado como “Always allow” no rádio. Para isso, desative e volte a ativar “App link” nas definições de Wi-Fi do rádio, volte a ligar-se e escolha “Always allow”. Ou ligue-se por Bluetooth ou altere-as no rádio.";
+
+/* Location: SettingsServiceError+UserFacingMessage.swift - Setting write-back mismatch - %1$@ is the expected value, %2$@ is the value the device reports */
+"error.settings.verificationFailed" = "A definição não foi guardada. Esperado '%1$@', mas o dispositivo indica '%2$@'.";
+
+/* Location: SettingsServiceError+UserFacingMessage.swift - GPS write-back mismatch when GPS should be on */
+"error.settings.gpsNotSavedExpectedOn" = "A definição de GPS do dispositivo não foi guardada. Esperado 'Ativado', mas o dispositivo indica 'Desativado'.";
+
+/* Location: SettingsServiceError+UserFacingMessage.swift - GPS write-back mismatch when GPS should be off */
+"error.settings.gpsNotSavedExpectedOff" = "A definição de GPS do dispositivo não foi guardada. Esperado 'Desativado', mas o dispositivo indica 'Ativado'.";
+
+/* Location: KeychainError+UserFacingMessage.swift - Encoding a password for keychain storage failed */
+"error.keychain.encodingFailed" = "Falha ao codificar a palavra-passe";
+
+/* Location: KeychainError+UserFacingMessage.swift - Keychain write failed - %lld is the OSStatus code */
+"error.keychain.storageFailed" = "Falha ao armazenar a palavra-passe (erro %lld)";
+
+/* Location: KeychainError+UserFacingMessage.swift - Keychain read failed - %lld is the OSStatus code */
+"error.keychain.retrievalFailed" = "Falha ao recuperar a palavra-passe (erro %lld)";
+
+/* Location: KeychainError+UserFacingMessage.swift - Keychain delete failed - %lld is the OSStatus code */
+"error.keychain.deletionFailed" = "Falha ao eliminar a palavra-passe (erro %lld)";
+
+/* Location: KeyGenerationError+UserFacingMessage.swift - Vanity prefix search exhausted its attempt budget */
+"error.keyGeneration.maxAttemptsExceeded" = "Não foi possível gerar uma chave com esse prefixo. Tente outro.";
+
+/* Location: KeyGenerationError+UserFacingMessage.swift - Requested prefix byte is reserved by firmware */
+"error.keyGeneration.reservedPrefix" = "Esse prefixo está reservado e não pode ser usado.";
+
+/* Location: KeyGenerationError+UserFacingMessage.swift - System random number generator failed */
+"error.keyGeneration.randomGenerationFailed" = "Falha na geração segura de números aleatórios. Tente novamente.";
+
+/* Location: KeyGenerationError+UserFacingMessage.swift - Key data is not a valid Ed25519 expanded private key */
+"error.keyGeneration.invalidKey" = "A chave não é uma chave privada Ed25519 válida.";
+
+
+/* Location: SyncProgressTracker.swift - Syncing pill progress: contacts received of the total the radio reported */
+"common.status.syncProgress.contacts" = "Contactos %d/%d";
+
+/* Location: SyncProgressTracker.swift - Syncing pill progress: channel slots read of the device total */
+"common.status.syncProgress.channels" = "Canais %d/%d";
+
+/* Location: SyncProgressTracker.swift - Syncing pill progress: channel slots read when the total is unknown */
+"common.status.syncProgress.channelsCount" = "Canais %d";
+
+/* Location: SyncProgressTracker.swift - Syncing pill progress: messages pulled so far */
+"common.status.syncProgress.messages" = "Mensagens %d";
+
+/* Location: SyncProgressTracker.swift - Syncing pill progress: changed contacts received on a quick reconnect */
+"common.status.syncProgress.contactUpdates" = "Contactos atualizados %d";
+
+/* Location: AppCommands.swift - Go menu item that selects the conversation above the current one */
+"commands.previousConversation" = "Conversa anterior";
+
+/* Location: AppCommands.swift - Go menu item that selects the conversation below the current one */
+"commands.nextConversation" = "Próxima conversa";
+
+/* Location: toolbar Refresh buttons (⌘R) on lists that otherwise only support pull to refresh */
+"commands.refresh" = "Atualizar";
+
+/* Location: ContactQRShareSheet.swift, ChannelInfoSheet.swift, CreatePrivateChannelView.swift - VoiceOver label for a QR code image - %@ is the contact or channel name */
+"accessibility.qrCodeFor" = "Código QR de %@";
+
+/* Location: NavigationHeaderModifier.swift - VoiceOver hint for the tappable navigation title that opens the info sheet */
+"accessibility.navigationHeader.showDetailsHint" = "Mostra os detalhes";
+
+/* Location: ExpandableSettingsSection.swift - VoiceOver label for the icon-only reload button - %@ is the section title */
+"common.reloadSection" = "Recarregar %@";
+
+/* Tab bar title for the Home dashboard of status cards */
+"tabs.home" = "Painel";
+/* Tab bar title for the contacts/nodes list screen */
+"tabs.contacts" = "Contactos";
+
+/* Tab bar title for the radio spectrum / noise floor screen */
+"tabs.spectrum" = "Espectro";
+
+/* Tab bar title for the GPS position and map screen */
+"tabs.gps" = "GPS";
+
+/* Home header: how long the radio has been running since its last reboot. %@ is a short duration such as 3h 12m */
+"home.uptime" = "ligado %@";
+
+/* Home cards: placeholder line when no radio is connected */
+"home.noRadio" = "Sem rádio";
+
+/* Home: title of the card shown at the top when no radio is connected */
+"home.connect.title" = "Nenhum rádio conectado";
+
+/* Home: explanation on the connect card shown when no radio is connected */
+"home.connect.message" = "Conecte o seu rádio para ver aqui a bateria, o rádio e a rede.";
+
+/* Home header: the sun does not set today at this position (polar day) */
+"home.sun.polarDay" = "Sol o dia todo";
+
+/* Home header: the sun does not rise today at this position (polar night) */
+"home.sun.polarNight" = "Sem nascer do sol";
+
+
+/* Home: title of the card summarizing the link to the radio (Bluetooth or WiFi) */
+"home.card.network" = "Ligação";
+
+/* Home Contacts card: nodes heard in the last day that are not saved contacts. %d is the count */
+"home.nodes.new" = "+%d novos";
+
+/* VoiceOver: nodes heard in the last day that are not saved contacts. %d is the count */
+"home.nodes.newAccessibility" = "%d novos nós ouvidos no último dia";
+
+/* Home Contacts card: the node whose advert was heard most recently. %@ is its name */
+"home.nodes.last" = "Último: %@";
+
+/* Home Contacts card: no node adverts have been heard yet */
+"home.nodes.noAdverts" = "Nenhum anúncio ouvido ainda";
+
+/* Home Contacts card: nodes heard directly by the radio in the last 10 minutes. %d is the count */
+"home.nodes.nearbyNow" = "Por perto agora: %d";
+
+/* VoiceOver: nodes heard directly by the radio in the last 10 minutes. %d is the count */
+"home.nodes.nearbyNowAccessibility" = "%d nós ouvidos por perto nos últimos 10 minutos";
+
+/* Home GPS card: the phone has a current location fix */
+"home.gps.fix" = "Fixo";
+
+/* Home GPS card: no current location fix */
+"home.gps.noFix" = "Sem fixo";
+
+/* Home GPS card: location access is off or not allowed */
+"home.gps.off" = "Desligado";
+
+/* Home GPS card: when the last location fix was taken. %@ is a short duration such as 3m */
+"home.gps.fixAge" = "Fixo há %@";
+
+/* Home GPS card: neither the radio nor the phone has a position */
+"home.gps.noPosition" = "Sem posição";
+
+/* Home Network card: the radio uses the default Bluetooth pairing PIN */
+"home.network.defaultPin" = "PIN padrão: defina o seu";
+
+/* Home Network card: the radio uses a custom Bluetooth pairing PIN */
+"home.network.customPin" = "PIN personalizado";
+
+/* Home Chats card: a channel message preview with its sender. %1$@ is the sender, %2$@ the message */
+"home.chats.preview" = "%1$@: %2$@";
+
+/* VoiceOver hint: the Home Battery card opens Battery settings */
+"home.hint.battery" = "Abre os ajustes da bateria";
+
+/* VoiceOver hint: the Home Chats card opens the Chats tab */
+"home.hint.chats" = "Abre Conversas";
+
+/* VoiceOver hint: the Home Contacts card opens the Contacts tab */
+"home.hint.nodes" = "Abre Nós";
+
+/* VoiceOver hint: the Home GPS card opens the GPS tab */
+"home.hint.gps" = "Abre Mapa";
+
+/* VoiceOver hint: the Home Radio card opens Radio settings; its actions send an advert */
+"home.hint.radio" = "Abre os ajustes de rádio. As ações enviam um anúncio.";
+
+/* VoiceOver hint: the Home Network card opens Connection settings */
+"home.hint.network" = "Abre os ajustes de conexão";
+
+/* Home Contacts card: abbreviated compass direction (N) from you to the last heard node */
+"home.compass.n" = "N";
+
+/* Home Contacts card: abbreviated compass direction (NE) from you to the last heard node */
+"home.compass.ne" = "NE";
+
+/* Home Contacts card: abbreviated compass direction (E) from you to the last heard node */
+"home.compass.e" = "L";
+
+/* Home Contacts card: abbreviated compass direction (SE) from you to the last heard node */
+"home.compass.se" = "SE";
+
+/* Home Contacts card: abbreviated compass direction (S) from you to the last heard node */
+"home.compass.s" = "S";
+
+/* Home Contacts card: abbreviated compass direction (SW) from you to the last heard node */
+"home.compass.sw" = "SO";
+
+/* Home Contacts card: abbreviated compass direction (W) from you to the last heard node */
+"home.compass.w" = "O";
+
+/* Home Contacts card: abbreviated compass direction (NW) from you to the last heard node */
+"home.compass.nw" = "NO";
+
+/* Home GPS card: the radio's GPS receiver is on */
+"home.gps.on" = "Ligado";
+
+/* Home GPS card: the connected radio has no GPS receiver */
+"home.gps.none" = "Sem GPS";
+
+/* Home GPS card: secondary line with the phone's own fix state. %@ is Fix / No fix / Off */
+"home.gps.phone" = "Telefone: %@";
+
+/* VoiceOver hint: the Home header card opens Device Info */
+"home.hint.deviceInfo" = "Abre as informações do dispositivo";
+
+/* VoiceOver label for the small i button that explains a setting */
+"common.moreInfo" = "Mais informações";
+
+/* VoiceOver label for the i button next to a named setting; %@ is the setting's name */
+"common.moreInfoAbout" = "Mais informações sobre %@";
+
+/* Tab bar title for the messaging tab (conversations, channels, rooms) — short for Communications */
+"tabs.comm" = "Com";
+
+/* Control Center / Action Button control and intent title: opens the app */
+"Open Cairn" = "Abrir Cairn";
+
+/* CarPlay: Scan tab title and the Home screen's Scan button */
+"carPlay.scan.title" = "Procurar";
+
+/* CarPlay Home: shown while the app is still starting up */
+"carPlay.home.starting" = "A iniciar…";
+
+/* CarPlay Home: Radio row when no radio was ever connected */
+"carPlay.home.noRadioPaired" = "Nenhum rádio emparelhado";
+
+/* CarPlay Home: title of the row with spreading factor, bandwidth, TX power and noise floor */
+"carPlay.home.modulation" = "Modulação";
+
+/* CarPlay Home: Chats row when nothing is unread */
+"carPlay.home.chats.none" = "Nada por ler";
+
+/* CarPlay Home: short button that sends a zero-hop advert */
+"carPlay.action.advert" = "Anúncio";
+
+/* CarPlay Home: short button that sends a flood advert after confirmation */
+"carPlay.action.floodAdvert" = "Anúncio flood";
+
+/* CarPlay: confirmation before a flood advert (long variant) */
+"carPlay.advert.floodConfirm.title" = "Enviar um anúncio flood para toda a malha?";
+
+/* CarPlay: confirmation before a flood advert (short variant for small screens) */
+"carPlay.advert.floodConfirm.titleShort" = "Enviar anúncio flood?";
+
+/* CarPlay: button that confirms sending the flood advert */
+"carPlay.advert.send" = "Enviar";
+
+/* CarPlay Home: note on the Radio row after an advert went out */
+"carPlay.advert.sent" = "Anúncio enviado";
+
+/* CarPlay: alert when an advert could not be sent; states the condition only */
+"carPlay.advert.failed" = "Anúncio não enviado";
+
+/* CarPlay Scan tab: row that scans for repeaters */
+"carPlay.scan.repeaters" = "Procurar repetidores";
+
+/* CarPlay Scan tab: row that scans for sensors */
+"carPlay.scan.sensors" = "Procurar sensores";
+
+/* CarPlay Scan tab: progress of a running scan; first is the number of nodes heard, second the seconds left */
+"carPlay.scan.progress" = "A procurar · %1$d ouvidos · %2$d s";
+
+/* CarPlay Scan tab: nobody answered the scan */
+"carPlay.scan.noReplies" = "Sem respostas";
+
+/* CarPlay Scan tab: the scan or add did not complete */
+"carPlay.scan.failed" = "A procura não foi concluída";
+
+/* CarPlay Scan tab: why both scan rows are off and what the list header says, when the radio's firmware can't send a scan request (official MeshCore firmware before 1.10). The list of nodes the radio hears still works. Keep it short */
+"carPlay.scan.unsupported" = "Requer firmware do rádio 1.10+";
+
+/* CarPlay Scan tab: under the headline after a scan during which the radio heard packets that never reached the app, so some replies may not be listed. Keep it short */
+"carPlay.scan.repliesMayBeMissing" = "Podem faltar algumas respostas";
+
+/* CarPlay: shown where an action needs a connected, ready radio */
+"carPlay.scan.notReady" = "Rádio não ligado";
+
+/* CarPlay Scan tab: a scan started elsewhere is still running */
+"carPlay.scan.busy" = "Outra procura em curso";
+
+/* CarPlay Scan tab: the next scan has to wait; %@ is the time left, e.g. 0:32 */
+"carPlay.scan.nextScanIn" = "Próxima procura em %@";
+
+/* CarPlay Scan tab: how many nodes were heard directly in the last few minutes. %d is the count. Keep it short. */
+"carPlay.scan.nearby" = "%d por perto";
+
+/* CarPlay Scan tab: a reply's signal; first is SNR in dB (decimal), second RSSI in dBm */
+"carPlay.scan.signal" = "SNR %@ dB";
+/* CarPlay Scan tab: action sheet button that adds the node to the radio's node list */
+"carPlay.scan.add" = "Adicionar aos nós";
+
+/* CarPlay Nodes tab: section of nodes recently heard */
+"carPlay.nodes.recent" = "Ouvidos recentemente";
+
+/* CarPlay Nodes tab: the row and screen that find a node by the first letter of its name, in letter groups (A–C, D–F…). Keep it short. */
+/* AI-translated - please verify with native speakers. */
+"carPlay.nodes.find" = "Procurar";
+
+/* CarPlay Nodes tab: header of a list cut to what the car shows; first is the nodes shown, second all the nodes in the group */
+/* AI-translated - please verify with native speakers. */
+"carPlay.nodes.showing" = "A mostrar %1$d de %2$d";
+
+/* CarPlay Chats tab: the conversation is a channel */
+"carPlay.chats.kind.channel" = "Canal";
+
+/* CarPlay Chats tab: no conversations yet */
+"carPlay.chats.empty" = "Sem conversas";
+
+/* CarPlay Chats tab: empty-state subtitle saying Siri reads and sends messages */
+"carPlay.chats.siriHint" = "Peça à Siri para ler ou enviar mensagens";
+
+/* CarPlay conversation screen: the sender of the user's own message. Keep it short. */
+"carPlay.chats.you" = "Você";
+
+/* CarPlay conversation screen: row that hands the conversation to Siri to read aloud */
+"carPlay.chats.readWithSiri" = "Ler com a Siri";
+
+/* CarPlay conversation screen: detail of the Read with Siri row when nothing is unread */
+"carPlay.chats.readHint" = "A Siri lê as mensagens mais recentes";
+
+/* CarPlay conversation screen: detail of the row that starts a voice reply with Siri; the row's title is the conversation's name */
+"carPlay.chats.reply" = "Responder com a Siri";
+
+/* CarPlay conversation screen: header over the conversation's newest messages (sender and time only, never text) */
+"carPlay.chats.recent" = "Mensagens recentes";
+
+/* Title of the Home tab's own settings sheet (opened with the sliders button next to the gear): the connected radio's settings */
+"tabSettings.home" = "Definições do dispositivo";
+
+/* Title of the Nodes tab's own settings sheet (opened with the sliders button next to the gear) */
+"tabSettings.nodes" = "Definições de nós";
+
+/* Title of the Comm (messaging) tab's own settings sheet (opened with the sliders button next to the gear): chat and message settings */
+"tabSettings.comm" = "Definições de Com";
+
+/* Title of the Spectrum tab's own settings sheet (opened with the sliders button next to the gear) */
+"tabSettings.spectrum" = "Definições do espectro";
+
+/* CarPlay Home/Scan: why the radio cannot reconnect. Never mention the phone. */
+"carPlay.home.bluetoothOff" = "O Bluetooth está desligado";
+
+/* CarPlay Home/Scan: the app is not allowed to use Bluetooth. Never mention the phone. */
+"carPlay.home.bluetoothNotAllowed" = "O acesso Bluetooth está desligado para o Cairn";
+
+/* CarPlay Chats empty state and Home Chats row: Siri is not allowed for the app, so messages can't be read or sent in the car. Never mention the phone. */
+"carPlay.chats.siriOff" = "As mensagens com a Siri estão desligadas";
+
+/* CarPlay Home Radio row while an advert is being sent. */
+"carPlay.advert.sending" = "A enviar anúncio…";
+
+/* Title of the GPS tab's own settings sheet (opened with the sliders button next to the gear): GPS receiver, phone location, location sharing and maps */
+"tabSettings.gps" = "Definições de GPS";
+
+/* CarPlay Dashboard: message of the Send Advert action sheet, which offers a zero-hop or a flood advert. Never mention the phone. */
+"carPlay.advert.sheet.message" = "Zero-hop alcança os nós à sua volta. Flood atravessa toda a malha.";
+
+/* CarPlay Scan for Nodes: the reply heard best; first is the SNR (e.g. +10.5 dB), second the node's name */
+"carPlay.scan.best" = "Melhor %1$@ %2$@";
+
+/* CarPlay Scan for Nodes: the farthest reply with a known position; first is the distance (e.g. 3.4 km), second the node's name */
+"carPlay.scan.farthest" = "Mais distante %1$@ %2$@";
+
+/* CarPlay Spectrum tab: title of the row saying how much interference the channel has (Quiet channel / Some interference / Heavy interference) */
+"carPlay.spectrum.condition" = "Condição";
+
+/* CarPlay Spectrum tab: shown in place of the noise floor, airtime and condition when the radio's firmware doesn't report them (official MeshCore firmware before 1.11). Keep it short */
+"carPlay.spectrum.unsupported" = "Não indicado pelo firmware deste rádio";
+
+/* CarPlay GPS tab: title of the row saying where the radio's position comes from (live GPS, from phone, saved, not set) */
+"carPlay.gps.source" = "Origem";
+
+/* CarPlay GPS tab: title of the read-only row summarising the radio's location settings (receiver, advert position, phone to radio) */
+"carPlay.gps.sharing" = "Partilha";
+
+/* CarPlay Network card detail screen: title of the row saying whether Bluetooth pairs with the default or a custom PIN */
+"carPlay.network.pin" = "PIN";
+
+/* CarPlay Dashboard cards: title of the row of radio cards (name and link, transport, model, battery) */
+"carPlay.cards.radio" = "Rádio";
+
+/* CarPlay Dashboard cards: title of the row of mesh readings (last packet, noise floor, traffic, nodes heard) */
+"carPlay.cards.mesh" = "Malha";
+
+/* CarPlay Dashboard cards: title of the row of message cards (unread, last message) */
+"carPlay.cards.messages" = "Mensagens";
+
+/* CarPlay Dashboard cards: title of the row of location cards (GPS, position, altitude) */
+"carPlay.cards.location" = "Localização";
+
+/* CarPlay Spectrum cards: title of the row of live channel readings (condition, noise floor, last packet) */
+"carPlay.cards.signal" = "Sinal";
+
+/* CarPlay Dashboard cards: title of the card with the packets heard per minute. Keep it short. */
+"carPlay.cards.traffic" = "Tráfego";
+
+/* CarPlay Dashboard cards: packets heard per minute, e.g. 12/min. Keep it short. */
+"carPlay.cards.perMinute" = "%d/min";
+
+/* CarPlay Dashboard cards: title of the card counting the distinct nodes heard in the last hour. Keep it short. */
+"carPlay.cards.heard" = "Ouvidos 1 h";
+
+/* CarPlay Dashboard cards: title of the last-message card before any message arrived */
+"carPlay.cards.lastMessage" = "Última mensagem";
+
+/* CarPlay Dashboard cards: the last-message card when no message arrived yet. Keep it short. */
+"carPlay.cards.noMessages" = "Nenhuma mensagem";
+
+/* CarPlay Dashboard cards: the last message was a direct message, not on a channel. Keep it short. */
+"carPlay.cards.direct" = "Direta";
+
+/* CarPlay Dashboard cards: the unread card when Siri is not allowed for the app, so messages can't be read or sent in the car. Keep it short. */
+/* AI-translated - please verify with native speakers. */
+"carPlay.cards.siriOff" = "Siri desligada";
+
+/* CarPlay Dashboard cards: the unread card with nothing unread. Keep it short. */
+/* AI-translated - please verify with native speakers. */
+"carPlay.cards.noUnread" = "Nada por ler";
+
+/* CarPlay cards: a signal-to-noise ratio, e.g. 7.5 dB */
+"carPlay.cards.decibels" = "%@ dB";
+
+/* CarPlay Spectrum cards: title of the card with the last packet's signal-to-noise ratio */
+"carPlay.cards.snr" = "SNR";
+
+/* CarPlay GPS cards: title of the row of GPS readings (speed, altitude, satellites…) */
+"carPlay.cards.readings" = "Leituras";
+
+/* CarPlay Dashboard cards: nodes heard in the last hour, after the packets a minute, e.g. 8 heard. Keep it short. */
+"carPlay.cards.heardCount" = "%d ouvidos";
+
+/* CarPlay Dashboard cards: label over where the last message came from when it was a direct message (its value reads Direct). Keep it short. */
+"carPlay.cards.conversation" = "Conversa";
+
+/* Notification body standing for several messages that arrived in one conversation while the app was away - %d is how many (2 or more) */
+"notifications.catchUp.body" = "%d novas mensagens";
+
+/* Notification title when the app has heard nothing from its radio for a while in the background (it may have been closed, or Bluetooth turned off) */
+"notifications.notReceiving.title" = "O Cairn pode não estar a receber";
+
+/* Notification body for that reminder - %@ is the radio's name */
+"notifications.notReceiving.body" = "Não chega nada de %@ há algum tempo. Abra o Cairn para obter as mensagens que esperam no rádio.";
+
+/* Notification title when Bluetooth is turned off while the app wants its radio */
+"notifications.bluetoothOff.title" = "O Bluetooth está desligado";
+
+/* Notification body when Bluetooth is turned off - %@ is the radio's name */
+"notifications.bluetoothOff.body" = "O Cairn não consegue receber mensagens de %@ até o Bluetooth voltar a ser ligado.";
+
+/* Notification title when a Cairn radio's message queue lost messages while the app was away */
+"notifications.radioQueueLoss.title" = "Mensagens perdidas no rádio";
+
+/* Notification body for lost messages - %1$@ is the radio's name, %2$d how many messages were lost */
+"notifications.radioQueueLoss.body" = "%1$@ ficou sem espaço para mensagens enquanto o Cairn esteve ausente. Mensagens perdidas: %2$d.";
+
+
+/* Home header card: how long ago the radio's readings were last read. %@ is an age such as 4m */
+"home.header.updated" = "atualizado há %@";
+/* Location: AppCommands.swift - Menu of radio shortcuts (Connections, Device Info, Send Advert, Disconnect) */
+"commands.radio" = "Rádio";
+
+// MARK: - Map workstream additions
+
+/* Location: CarPlay Nodes tab: group of the nodes with a position, nearest first. Keep it short. */
+"carPlay.nodes.nearby" = "Próximos";
+
+/* Location: CarPlay node screen: button that opens the conversation with this contact */
+"carPlay.nodes.openChat" = "Abrir conversa";
+
+/* Location: App Intents: the Send Location shortcut could not get a position from the phone or the radio */
+"error.intent.noLocation" = "O Cairn não conseguiu obter a sua posição. Permita a localização ao Cairn ou ligue um rádio com sinal GPS.";

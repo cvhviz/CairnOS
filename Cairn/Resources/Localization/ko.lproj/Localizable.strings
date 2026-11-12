@@ -1,0 +1,1077 @@
+/*
+  Localizable.strings
+  Cairn
+
+  Korean (ko) translation of common and shared strings.
+  AI-translated - please verify with native speakers.
+*/
+
+// MARK: - Generic Buttons
+
+/* Standard confirmation button for dialogs */
+"common.ok" = "확인";
+
+/* Standard cancel button for dialogs and sheets */
+"common.cancel" = "취소";
+
+/* Standard done button for completing an action */
+"common.done" = "완료";
+
+/* Location: MacDetailPresentation.swift - Back button on a page pushed inside a node's window or column (Mac) */
+"common.back" = "뒤로";
+
+/* Standard save button for persisting changes */
+"common.save" = "저장";
+
+/* Standard delete button for removing items */
+"common.delete" = "삭제";
+
+/* Standard edit button for entering edit mode */
+"common.edit" = "편집";
+
+/* Standard close button for dismissing views */
+/* Button to retry a failed operation */
+"common.tryAgain" = "다시 시도";
+
+/* Error label when content fails to load */
+"common.error.failedToLoad" = "불러오지 못함";
+
+/* Network error with underlying error description - %@ is the error description */
+"common.error.networkError" = "네트워크 오류: %@";
+
+/* Invalid response from API */
+"common.error.invalidResponse" = "고도 API의 응답이 잘못되었습니다";
+
+/* API error with message - %@ is the error message */
+"common.error.apiError" = "API 오류: %@";
+
+/* No data returned from API */
+"common.error.noElevationData" = "고도 데이터가 반환되지 않았습니다";
+
+/* Rate limited by elevation API */
+"common.error.rateLimited" = "요청이 너무 많습니다. 잠시 후 다시 시도하십시오.";
+
+/* Standard remove button for removing items from a list or group */
+// MARK: - Connection Status
+
+/* Location: SyncingPillView.swift - Status shown when syncing data */
+"common.status.syncing" = "동기화 중";
+
+/* Location: SyncingPillView.swift - Status shown when connecting to device */
+"common.status.connecting" = "연결 중";
+
+/* Location: SyncingPillView.swift - Status shown when device is ready */
+"common.status.ready" = "준비됨";
+
+/* Location: SyncingPillView.swift - Status shown when device is disconnected */
+"common.status.disconnected" = "연결 끊김";
+
+// MARK: - Tab Bar
+
+/* Tab bar title for the messaging/conversations screen */
+"tabs.chats" = "채팅";
+
+/* VoiceOver value announcing the unread message count on the Chats sidebar icon. %d is the count. */
+"tabs.chatsUnreadAccessibilityValue" = "읽지 않음 %d개";
+
+/* VoiceOver value announcing the count of newly heard nodes on the Nodes sidebar icon. %d is the count. */
+"tabs.nodesNewAccessibilityValue" = "새 노드 %d개";
+
+/* Tab bar title for the nodes/contacts list screen */
+"tabs.nodes" = "노드";
+
+/* Tab bar title for the map screen showing node locations */
+"tabs.map" = "지도";
+
+/* Tab bar title for the tools/utilities screen */
+"tabs.tools" = "도구";
+
+/* Tab bar title for the app settings screen */
+"tabs.settings" = "설정";
+
+// MARK: - Connection Alerts
+
+/* Alert title when device connection fails */
+"alert.connectionFailed.title" = "연결 실패";
+
+/* Alert title when connection cannot be established */
+"alert.couldNotConnect.title" = "연결할 수 없음";
+
+/* Alert title when device pairing fails (e.g., wrong PIN) */
+"alert.pairingFailed.title" = "페어링할 수 없음";
+
+/* Default message when device connection fails */
+"alert.connectionFailed.defaultMessage" = "기기에 연결할 수 없습니다.";
+
+/* Message suggesting another app may be connected to the device */
+"alert.couldNotConnect.otherAppMessage" = "다른 앱이 기기에 연결되어 있지 않은지 확인한 후 다시 시도하십시오.";
+
+/* Button to remove failed pairing and retry connection */
+"alert.connectionFailed.removeAndRetry" = "제거 후 다시 시도";
+
+/* VoiceOver label for the destructive Remove and Try Again button — clarifies that "remove" means removing the device pairing */
+"accessibility.alert.connectionFailed.removeAndRetry" = "기기 페어링을 제거하고 다시 시도";
+
+// MARK: - Accessibility
+
+/* Location: SyncingPillView.swift - Accessibility hint for disconnected state */
+"common.accessibility.connectHint" = "기기를 연결하려면 이중 탭하십시오";
+
+/* VoiceOver announcement when viewing cached data while disconnected from device */
+/* Location: View+RadioDisabled.swift - VoiceOver hint when a control is disabled because the radio is not connected */
+"accessibility.requiresRadioConnection" = "무선 기기 연결 필요";
+
+/* Accessibility value for toggle in On state */
+"accessibility.on" = "켬";
+
+/* Accessibility value for toggle in Off state */
+"accessibility.off" = "끔";
+
+// MARK: - Node Types
+
+/* Node type for a person or contact */
+/* Node type for a mesh network repeater device */
+/* Node type for a group chat room */
+// MARK: - Permission Levels
+
+/* Permission level with limited access */
+/* Permission level with standard access */
+/* Permission level with full administrative access */
+// MARK: - Reaction Notifications
+
+/* Notification body when someone reacts to your message - %1$@ is the emoji, %2$@ is the message preview */
+"notifications.reaction.body" = "내 메시지에 %1$@ 반응: \"%2$@\"";
+
+// MARK: - Discovery Notifications
+
+/* Notification title when a new contact is discovered on the mesh network */
+"notifications.discovery.contact" = "새 연락처 발견";
+
+/* Notification title when a new repeater node is discovered on the mesh network */
+"notifications.discovery.repeater" = "새 리피터 발견";
+
+/* Notification title when a new room is discovered on the mesh network */
+"notifications.discovery.room" = "새 룸 발견";
+
+// MARK: - Notification Actions
+
+/* Notification action button to reply to a message */
+"notifications.action.reply" = "답장";
+
+/* Notification action button to send a quick reply */
+"notifications.action.send" = "보내기";
+
+/* Notification action placeholder for quick reply text input */
+"notifications.action.messagePlaceholder" = "메시지...";
+
+/* Notification action button to mark a message as read */
+"notifications.action.markAsRead" = "읽음으로 표시";
+
+// MARK: - Low Battery Notifications
+
+/* Notification title for low battery warning */
+"notifications.lowBattery.title" = "배터리 부족";
+
+/* Notification body for low battery warning - %1$@ is device name, %2$d is battery percentage */
+"notifications.lowBattery.body" = "%1$@ 배터리 잔량 %2$d%%";
+
+/* Notification title when a quick reply fails to send */
+"notifications.quickReplyFailed.title" = "메시지를 보내지 못함";
+
+/* Notification body when a quick reply fails - %@ is the contact or channel name */
+"notifications.quickReplyFailed.body" = "%@에 대한 답장을 보낼 수 없습니다.";
+
+/* Fallback display name for a discovered contact with no advertised name */
+"notifications.discovery.unknownContact" = "알 수 없는 연락처";
+
+// MARK: - Connection VoiceOver Announcements
+
+/* VoiceOver announcement when sync fails and device is disconnecting */
+"accessibility.connection.syncFailedDisconnecting" = "동기화에 실패했습니다. 연결을 끊는 중입니다.";
+
+/* VoiceOver announcement when device connection is lost */
+"accessibility.connection.deviceConnectionLost" = "기기 연결이 끊어졌습니다";
+
+/* VoiceOver announcement when device reconnects */
+"accessibility.connection.deviceReconnected" = "기기가 다시 연결되었습니다";
+
+/* VoiceOver signal-strength descriptors for the device picker signal bars */
+"accessibility.signalStrength.weak" = "약한 신호";
+"accessibility.signalStrength.medium" = "보통 신호";
+"accessibility.signalStrength.strong" = "강한 신호";
+
+// MARK: - Status Pill
+
+/* Status pill message when sync has failed */
+"statusPill.syncFailed" = "동기화 실패";
+
+// MARK: - Error Messages
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Session operation timed out */
+"error.meshCore.timeout" = "작업 시간이 초과되었습니다. 다시 시도하십시오.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Device response could not be parsed - %@ is the parse failure detail */
+"error.meshCore.parseError" = "기기 응답을 해석하지 못했습니다: %@";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - No active connection to the radio */
+"error.meshCore.notConnected" = "기기에 연결되어 있지 않습니다.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - A command failed on the device - %@ is the failure reason */
+"error.meshCore.commandFailed" = "명령 실패: %@";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Unexpected device response - %1$@ is the expected response, %2$@ is the received response */
+"error.meshCore.invalidResponse" = "기기에서 예상치 못한 응답을 받았습니다(예상: %1$@, 수신: %2$@).";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Contact missing from the radio */
+"error.meshCore.contactNotFound" = "기기에서 연락처를 찾을 수 없습니다.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Payload exceeds device limit - %1$lld is the actual size in bytes, %2$lld is the maximum */
+"error.meshCore.dataTooLarge" = "데이터가 너무 큽니다(%1$lld바이트, 최대 %2$lld바이트).";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Cryptographic signing failed - %@ is the failure reason */
+"error.meshCore.signingFailed" = "서명 실패: %@";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Invalid input - %@ is the validation detail */
+"error.meshCore.invalidInput" = "잘못된 입력: %@";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Unknown error - %@ is the error detail */
+"error.meshCore.unknown" = "알 수 없는 오류가 발생했습니다: %@";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Bluetooth hardware unavailable */
+"error.meshCore.bluetoothUnavailable" = "이 기기에서는 Bluetooth를 사용할 수 없습니다.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Bluetooth permission denied */
+"error.meshCore.bluetoothUnauthorized" = "Bluetooth 권한이 필요합니다. 설정에서 허용하십시오.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Bluetooth radio is off */
+"error.meshCore.bluetoothPoweredOff" = "Bluetooth가 꺼져 있습니다. 연결하려면 Bluetooth를 켜십시오.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Connection lost with detail - %@ is the underlying error message */
+"error.meshCore.connectionLost" = "기기와의 연결이 끊어졌습니다: %@";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Connection lost without further detail */
+"error.meshCore.connectionLostNoDetail" = "기기와의 연결이 끊어졌습니다.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Session not started */
+"error.meshCore.sessionNotStarted" = "세션이 시작되지 않았습니다.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Feature disabled in device firmware */
+"error.meshCore.featureDisabled" = "이 기기에서 해당 기능이 비활성화되어 있습니다.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift, ProtocolError+UserFacingMessage.swift - Firmware error code: command unsupported */
+"error.device.unsupportedCommand" = "기기 펌웨어에서 지원하지 않는 명령입니다.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift, ProtocolError+UserFacingMessage.swift - Firmware error code: item not found */
+"error.device.notFound" = "기기에서 항목을 찾을 수 없습니다.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift, ProtocolError+UserFacingMessage.swift - Firmware error code: storage full */
+"error.device.storageFull" = "기기 저장 공간이 가득 찼습니다.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift, ProtocolError+UserFacingMessage.swift - Firmware error code: invalid state */
+"error.device.invalidState" = "기기가 이 작업을 수행할 수 없는 상태입니다.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift, ProtocolError+UserFacingMessage.swift - Firmware error code: file system error */
+"error.device.fileSystem" = "기기 파일 시스템 오류입니다.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift, ProtocolError+UserFacingMessage.swift - Firmware error code: invalid parameter */
+"error.device.invalidParameter" = "기기에 잘못된 매개변수를 보냈습니다.";
+
+/* Location: MeshCoreError+UserFacingMessage.swift - Firmware error code outside the known range - %lld is the raw code */
+"error.device.unknown" = "기기 오류(코드 %lld).";
+
+/* Location: TimeoutError+UserFacingMessage.swift - Generic timeout for async operations */
+"error.timeout.operationTimedOut" = "작업 시간이 초과되었습니다. 다시 시도하십시오.";
+
+/* Location: BLEError+UserFacingMessage.swift - Bluetooth hardware unavailable */
+"error.ble.bluetoothUnavailable" = "이 기기에서는 Bluetooth를 사용할 수 없습니다.";
+
+/* Location: BLEError+UserFacingMessage.swift - Bluetooth permission denied */
+"error.ble.bluetoothUnauthorized" = "Bluetooth 권한이 필요합니다. 설정에서 허용하십시오.";
+
+/* Location: BLEError+UserFacingMessage.swift - Bluetooth radio is off */
+"error.ble.bluetoothPoweredOff" = "Bluetooth가 꺼져 있습니다. 연결하려면 Bluetooth를 켜십시오.";
+
+/* Location: BLEError+UserFacingMessage.swift - Scanned device could not be found */
+"error.ble.deviceNotFound" = "기기를 찾을 수 없습니다. 기기의 전원이 켜져 있고 가까이 있는지 확인하십시오.";
+
+/* Location: BLEError+UserFacingMessage.swift - BLE connection failed - %@ is the failure detail */
+"error.ble.connectionFailed" = "연결 실패: %@";
+
+/* Location: BLEError+UserFacingMessage.swift - BLE connection attempt timed out */
+"error.ble.connectionTimeout" = "연결 시간이 초과되었습니다. 다시 시도하십시오.";
+
+/* Location: BLEError+UserFacingMessage.swift - No BLE device connected */
+"error.ble.notConnected" = "기기에 연결되어 있지 않습니다.";
+
+/* Location: BLEError+UserFacingMessage.swift - Required BLE characteristic missing */
+"error.ble.characteristicNotFound" = "기기와 통신할 수 없습니다. 다시 연결해 보십시오.";
+
+/* Location: BLEError+UserFacingMessage.swift - BLE write failed - %@ is the failure detail */
+"error.ble.writeError" = "데이터를 보내지 못했습니다: %@";
+
+/* Location: BLEError+UserFacingMessage.swift - Malformed BLE response */
+"error.ble.invalidResponse" = "기기의 응답이 잘못되었습니다. 다시 시도하십시오.";
+
+/* Location: BLEError+UserFacingMessage.swift - BLE operation timed out */
+"error.ble.operationTimeout" = "작업 시간이 초과되었습니다. 다시 시도하십시오.";
+
+/* Location: BLEError+UserFacingMessage.swift - BLE PIN authentication failed */
+"error.ble.authenticationFailed" = "인증에 실패했습니다. 기기의 PIN을 확인하십시오.";
+
+/* Location: BLEError+UserFacingMessage.swift - Bluetooth pairing failed - %@ is the failure reason */
+"error.ble.pairingFailed" = "Bluetooth 페어링 실패: %@";
+
+/* Location: BLEError+UserFacingMessage.swift - Radio already in use by another app */
+"error.ble.deviceConnectedToOtherApp" = "이 기기는 다른 앱에 연결되어 있습니다. 통신 문제를 방지하기 위해 메시 무선 기기는 한 번에 하나의 앱에서만 사용할 수 있습니다.";
+
+/* Location: ConnectionError+UserFacingMessage.swift - Connection failed - %@ is the failure reason */
+"error.connection.connectionFailed" = "연결 실패: %@";
+
+/* Location: ConnectionError+UserFacingMessage.swift - Device to connect to was not found */
+"error.connection.deviceNotFound" = "기기를 찾을 수 없음";
+
+/* Location: ConnectionError+UserFacingMessage.swift - No active device connection */
+"error.connection.notConnected" = "기기에 연결되어 있지 않음";
+
+/* Location: ConnectionError+UserFacingMessage.swift - Post-connect device initialization failed - %@ is the failure reason */
+"error.connection.initializationFailed" = "기기 초기화 실패: %@";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - WiFi connection failed - %@ is the failure reason */
+"error.wifi.connectionFailed" = "연결 실패: %@";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - WiFi connection attempt timed out */
+"error.wifi.connectionTimeout" = "연결 시간이 초과되었습니다. 호스트 이름 또는 IP 주소를 확인하고 기기에 접근할 수 있는지 확인하십시오.";
+"error.wifi.localNetworkDenied" = "Cairn이 로컬 네트워크를 사용할 수 없습니다. 설정 › 개인정보 보호 및 보안 › 로컬 네트워크에서 허용한 다음 다시 연결하세요.";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - No active WiFi connection */
+"error.wifi.notConnected" = "기기에 연결되어 있지 않습니다.";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - WiFi send failed - %@ is the failure reason */
+"error.wifi.sendFailed" = "데이터를 보내지 못했습니다: %@";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - WiFi send timed out */
+"error.wifi.sendTimeout" = "전송 시간이 초과되었습니다.";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - Configured hostname or IP address is invalid */
+"error.wifi.invalidHost" = "잘못된 호스트 이름 또는 IP 주소입니다.";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - Configured port number is invalid */
+"error.wifi.invalidPort" = "잘못된 포트 번호입니다.";
+
+/* Location: WiFiTransportError+UserFacingMessage.swift - WiFi connection info missing */
+"error.wifi.notConfigured" = "연결이 구성되지 않았습니다.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - AccessorySetupKit session not active */
+"error.accessorySetup.sessionNotActive" = "Bluetooth가 준비되지 않았습니다. Bluetooth가 켜져 있는지 확인한 후 다시 시도하십시오.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - AccessorySetupKit session invalidated */
+"error.accessorySetup.sessionInvalidated" = "Bluetooth 세션이 예기치 않게 종료되었습니다. 앱을 다시 시작하십시오.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - User dismissed the accessory picker */
+"error.accessorySetup.pickerDismissed" = "기기 선택이 취소되었습니다.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - Accessory picker could not be shown */
+"error.accessorySetup.pickerRestricted" = "기기 선택기를 표시할 수 없습니다. Bluetooth가 켜져 있는지 확인하고 잠시 기다린 후 다시 시도하십시오.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - Accessory picker already on screen */
+"error.accessorySetup.pickerAlreadyActive" = "기기 선택기가 이미 표시되어 있습니다.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - Accessory pairing failed - %@ is the failure reason */
+"error.accessorySetup.pairingFailed" = "페어링 실패: %@";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - Picked accessory lacks a Bluetooth identifier */
+"error.accessorySetup.noBluetoothIdentifier" = "선택한 기기는 Bluetooth 연결을 지원하지 않습니다.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - Accessory discovery timed out */
+"error.accessorySetup.discoveryTimeout" = "기기를 찾을 수 없습니다. 기기의 전원이 켜져 있고 가까이 있는지 확인하십시오.";
+
+/* Location: AccessorySetupKitError+UserFacingMessage.swift - Connection to picked accessory failed */
+"error.accessorySetup.connectionFailed" = "기기에 연결할 수 없습니다. 다시 시도하십시오.";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - No active connection to the radio */
+"error.contactService.notConnected" = "무선 기기에 연결되어 있지 않음";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - Contact operation message failed to send */
+"error.contactService.sendFailed" = "메시지를 보내지 못함";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - Malformed device response during a contact operation */
+"error.contactService.invalidResponse" = "기기의 응답이 잘못됨";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - Contact sync stopped before finishing */
+"error.contactService.syncInterrupted" = "동기화가 중단됨";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - Contact missing from the radio */
+"error.contactService.contactNotFound" = "기기에서 연락처를 찾을 수 없음";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - The radio did not answer a contact read (timeout or device error), so a change was not made */
+"error.contactService.radioReadFailed" = "무선 기기에서 이 연락처를 읽을 수 없어 아무것도 변경하지 않았습니다. 연결을 확인하고 다시 시도하세요.";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - Radio node list has no free slots */
+"error.contactService.contactTableFull" = "기기의 노드 목록이 가득 참";
+
+/* Location: ContactServiceError+UserFacingMessage.swift - Node advertisement missing or stale, so the node cannot be shared */
+"error.contactService.shareContactUnavailable" = "노드를 공유할 수 없습니다. 노드의 애드버트가 없거나 너무 오래되었을 수 있습니다.";
+
+/* Location: MessageServiceError+UserFacingMessage.swift - No active connection to the radio */
+"error.messageService.notConnected" = "기기에 연결되어 있지 않습니다.";
+
+/* Location: MessageServiceError+UserFacingMessage.swift - Recipient contact missing from the database */
+"error.messageService.contactNotFound" = "연락처를 찾을 수 없습니다.";
+
+/* Location: MessageServiceError+UserFacingMessage.swift - Target channel missing from the database */
+"error.messageService.channelNotFound" = "채널을 찾을 수 없습니다.";
+
+/* Location: MessageServiceError+UserFacingMessage.swift - Message send failed */
+"error.messageService.sendFailed" = "전송에 실패했습니다.";
+
+/* Location: MessageServiceError+UserFacingMessage.swift - Recipient cannot receive direct messages */
+"error.messageService.invalidRecipient" = "이 수신자에게는 메시지를 보낼 수 없습니다.";
+
+/* Location: MessageServiceError+UserFacingMessage.swift - Message text exceeds the maximum length */
+"error.messageService.messageTooLong" = "메시지가 허용된 최대 길이를 초과합니다.";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - No active connection to the radio */
+"error.channelService.notConnected" = "기기에 연결되어 있지 않습니다.";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - Channel missing from the database */
+"error.channelService.channelNotFound" = "채널을 찾을 수 없습니다.";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - Channel slot index out of range */
+"error.channelService.invalidChannelIndex" = "잘못된 채널 인덱스입니다.";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - Hashing the channel secret key failed */
+"error.channelService.secretHashingFailed" = "채널 비밀 키를 해시하지 못했습니다.";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - Channel save failed - %@ is the failure reason */
+"error.channelService.saveFailed" = "채널을 저장하지 못했습니다: %@";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - Channel message send failed - %@ is the failure reason */
+"error.channelService.sendFailed" = "전송 실패: %@";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - Channel sync already running */
+"error.channelService.syncAlreadyInProgress" = "채널 동기화가 이미 진행 중입니다.";
+
+/* Location: ChannelServiceError+UserFacingMessage.swift - Channel sync suspended - %lld is the consecutive failure count */
+"error.channelService.circuitBreakerOpen" = "%lld회 연속 실패하여 채널 동기화가 일시 중단되었습니다.";
+
+/* Location: IntentError.swift - No radio is connected, so retrying alone will not help until one is connected */
+"error.intent.notConnected" = "연결된 무선 기기가 없습니다. Cairn에서 무선 기기를 연결한 후 다시 시도하십시오.";
+/* Location: IntentError.swift - No single valid recipient was chosen (none, both, or a recipient that cannot receive messages) */
+"error.intent.invalidRecipient" = "메시지를 받을 수 있는 연락처 또는 채널 중 수신자 하나를 선택하십시오.";
+
+/* Location: IntentError.swift - The message text exceeds the maximum length the radio can send */
+"error.intent.messageTooLong" = "메시지가 너무 길어 보낼 수 없습니다.";
+
+/* Location: IntentError.swift - Persisting the message to the send queue failed, so it was never queued */
+"error.intent.sendFailed" = "메시지를 전송 대기열에 추가할 수 없습니다. 다시 시도하십시오.";
+
+/* Location: ChatSendQueueServiceError+UserFacingMessage.swift - Queueing a message for send failed - %@ is the underlying error message */
+"error.chatSendQueue.persistFailed" = "메시지를 전송 대기열에 추가하지 못했습니다: %@";
+
+/* Location: ChatSendQueueServiceError+UserFacingMessage.swift - No active connection to the radio */
+"error.chatSendQueue.notConnected" = "기기에 연결되어 있지 않습니다.";
+
+/* Location: MessagePollingError+UserFacingMessage.swift - No active connection to the radio */
+"error.messagePolling.notConnected" = "기기에 연결되어 있지 않습니다.";
+
+/* Location: MessagePollingError+UserFacingMessage.swift - Fetching queued messages from the radio failed */
+"error.messagePolling.pollingFailed" = "메시지를 가져오지 못했습니다.";
+
+/* Location: AdvertisementError+UserFacingMessage.swift - No active connection to the radio */
+"error.advertisement.notConnected" = "기기에 연결되어 있지 않습니다.";
+
+/* Location: AdvertisementError+UserFacingMessage.swift - Self-advertisement broadcast failed */
+"error.advertisement.sendFailed" = "애드버트를 보내지 못했습니다.";
+
+/* Location: AdvertisementError+UserFacingMessage.swift - Malformed device response to an advertisement command */
+"error.advertisement.invalidResponse" = "기기의 응답이 잘못되었습니다.";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - No active connection to the mesh radio */
+"error.remoteNode.notConnected" = "메시 기기에 연결되어 있지 않음";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Remote node login failed */
+"error.remoteNode.loginFailed" = "로그인에 실패했습니다.";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Sending to the remote node failed */
+"error.remoteNode.sendFailed" = "보내지 못했습니다.";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Malformed response from the remote node */
+"error.remoteNode.invalidResponse" = "원격 노드의 응답이 잘못됨";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Remote node rejected the operation */
+"error.remoteNode.permissionDenied" = "권한이 거부됨";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Remote node request timed out */
+"error.remoteNode.timeout" = "요청 시간 초과";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - No stored session for the remote node */
+"error.remoteNode.sessionNotFound" = "원격 노드 세션을 찾을 수 없음";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Saved password missing from the keychain */
+"error.remoteNode.passwordNotFound" = "키체인에서 암호를 찾을 수 없음";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Keep-alive needs a direct path but the route is flood-routed */
+"error.remoteNode.floodRouted" = "연결 유지를 위해 직접 라우팅 경로가 필요함";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Establishing a direct path to the node failed */
+"error.remoteNode.pathDiscoveryFailed" = "직접 경로를 설정하지 못함";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Remote node contact missing from the database */
+"error.remoteNode.contactNotFound" = "데이터베이스에서 연락처를 찾을 수 없음";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Radio contact table full; cannot auto-add the node during login */
+"error.remoteNode.radioContactsFull" = "무선 기기의 연락처 슬롯이 부족합니다. 더 이상 필요 없는 연락처를 제거한 후 다시 로그인하십시오.";
+
+/* Location: RemoteNodeError+UserFacingMessage.swift - Login attempt cancelled by a duplicate attempt or shutdown */
+"error.remoteNode.cancelled" = "로그인 취소됨";
+
+/* Location: RoomServerError+UserFacingMessage.swift - No active connection to the radio */
+"error.roomServer.notConnected" = "기기에 연결되어 있지 않습니다.";
+
+/* Location: RoomServerError+UserFacingMessage.swift - No stored session for the room server */
+"error.roomServer.sessionNotFound" = "룸 세션을 찾을 수 없습니다.";
+
+/* Location: RoomServerError+UserFacingMessage.swift - Room message send failed */
+"error.roomServer.sendFailed" = "전송에 실패했습니다.";
+
+/* Location: RoomServerError+UserFacingMessage.swift - Room server rejected the operation */
+"error.roomServer.permissionDenied" = "권한이 거부되었습니다.";
+
+/* Location: RoomServerError+UserFacingMessage.swift - Malformed device response during a room operation */
+"error.roomServer.invalidResponse" = "기기의 응답이 잘못되었습니다.";
+
+/* Location: BinaryProtocolError+UserFacingMessage.swift - No active connection to the radio */
+"error.binaryProtocol.notConnected" = "기기에 연결되어 있지 않습니다.";
+
+/* Location: BinaryProtocolError+UserFacingMessage.swift - Binary request failed to send */
+"error.binaryProtocol.sendFailed" = "요청을 보내지 못했습니다.";
+
+/* Location: BinaryProtocolError+UserFacingMessage.swift - Binary request timed out */
+"error.binaryProtocol.timeout" = "요청 시간이 초과되었습니다.";
+
+/* Location: BinaryProtocolError+UserFacingMessage.swift - Malformed device response to a binary request */
+"error.binaryProtocol.invalidResponse" = "기기의 응답이 잘못되었습니다.";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Device row missing from the database */
+"error.persistence.deviceNotFound" = "기기를 찾을 수 없습니다.";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Contact row missing from the database */
+"error.persistence.contactNotFound" = "연락처를 찾을 수 없습니다.";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Message row missing from the database */
+"error.persistence.messageNotFound" = "메시지를 찾을 수 없습니다.";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Channel row missing from the database */
+"error.persistence.channelNotFound" = "채널을 찾을 수 없습니다.";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Remote node session row missing from the database */
+"error.persistence.remoteNodeSessionNotFound" = "원격 노드 세션을 찾을 수 없습니다.";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Database save failed - %@ is the failure reason */
+"error.persistence.saveFailed" = "저장 실패: %@";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Database fetch failed - %@ is the failure reason */
+"error.persistence.fetchFailed" = "가져오기 실패: %@";
+
+/* Location: PersistenceStoreError+UserFacingMessage.swift - Stored data is malformed */
+"error.persistence.invalidData" = "잘못된 데이터입니다.";
+
+/* Location: SyncCoordinatorError+UserFacingMessage.swift - No active connection to the radio */
+"error.syncCoordinator.notConnected" = "기기에 연결되어 있지 않습니다.";
+
+/* Location: SyncCoordinatorError+UserFacingMessage.swift - Full sync failed - %@ is the failure reason */
+"error.syncCoordinator.syncFailed" = "동기화 실패: %@";
+
+/* Location: SyncCoordinatorError+UserFacingMessage.swift - A sync is already running */
+"error.syncCoordinator.alreadySyncing" = "동기화가 이미 진행 중입니다.";
+
+/* Location: DeviceServiceError+UserFacingMessage.swift - Device row missing from the database */
+"error.deviceService.deviceNotFound" = "기기를 찾을 수 없음";
+
+/* Location: DeviceServiceError+UserFacingMessage.swift - Saving device settings failed - %@ is the failure reason */
+"error.deviceService.persistenceFailed" = "기기 설정을 저장하지 못했습니다: %@";
+
+/* Location: SettingsServiceError+UserFacingMessage.swift - No active connection to the radio */
+"error.settings.notConnected" = "기기가 연결되지 않음";
+
+/* Location: SettingsServiceError+UserFacingMessage.swift - Sending a settings command failed */
+"error.settings.sendFailed" = "명령을 보내지 못함";
+
+/* Location: SettingsServiceError+UserFacingMessage.swift - Malformed device response to a settings command */
+"error.settings.invalidResponse" = "기기의 응답이 잘못됨";
+
+/* Location: SettingsServiceError+UserFacingMessage.swift - The radio knows the setting but its hardware can't do it */
+"error.settings.unsupportedSetting" = "이 라디오의 하드웨어는 해당 설정을 지원하지 않습니다.";
+
+/* Location: SettingsService+Verified.swift via SettingsServiceError+UserFacingMessage.swift - A preset's frequency settings were applied but its path hash size was not - %@ is the preset name */
+"error.settings.presetPathHashNotApplied" = "라디오가 이제 %@의 주파수 설정을 사용하지만 경로 해시 크기를 설정하지 못했습니다. 다시 시도하려면 프리셋을 다시 선택하세요.";
+
+/* Location: RadioWriteErrorMessage.swift - The radio refused a radio-settings write over Wi-Fi (Cairn firmware takes them over Wi-Fi only from a phone marked "Always allow" on the radio; otherwise over Bluetooth or on the radio). "Always allow" and "App link" are the radio's own English labels (its prompt button and its Wi-Fi setting): keep them in English. Turning App link off and on ends a one-time "Allow once" so the radio asks again. */
+"error.settings.radioSettingsOverWiFi" = "이 라디오는 Wi-Fi로는 라디오에서 “Always allow”로 지정한 휴대폰의 라디오 설정만 받습니다. 지정하려면 라디오의 Wi-Fi 설정에서 “App link”를 껐다가 다시 켜고, 다시 연결한 뒤 “Always allow”를 선택하세요. 또는 Bluetooth로 연결하거나 라디오에서 직접 변경하세요.";
+
+/* Location: SettingsServiceError+UserFacingMessage.swift - Setting write-back mismatch - %1$@ is the expected value, %2$@ is the value the device reports */
+"error.settings.verificationFailed" = "설정이 저장되지 않았습니다. 예상 값은 '%1$@'이지만 기기에서 '%2$@'(으)로 보고합니다.";
+
+/* Location: SettingsServiceError+UserFacingMessage.swift - GPS write-back mismatch when GPS should be on */
+"error.settings.gpsNotSavedExpectedOn" = "기기 GPS 설정이 저장되지 않았습니다. '켬'이어야 하지만 기기에서 '끔'으로 보고합니다.";
+
+/* Location: SettingsServiceError+UserFacingMessage.swift - GPS write-back mismatch when GPS should be off */
+"error.settings.gpsNotSavedExpectedOff" = "기기 GPS 설정이 저장되지 않았습니다. '끔'이어야 하지만 기기에서 '켬'으로 보고합니다.";
+
+/* Location: KeychainError+UserFacingMessage.swift - Encoding a password for keychain storage failed */
+"error.keychain.encodingFailed" = "암호를 인코딩하지 못함";
+
+/* Location: KeychainError+UserFacingMessage.swift - Keychain write failed - %lld is the OSStatus code */
+"error.keychain.storageFailed" = "암호를 저장하지 못함(오류 %lld)";
+
+/* Location: KeychainError+UserFacingMessage.swift - Keychain read failed - %lld is the OSStatus code */
+"error.keychain.retrievalFailed" = "암호를 가져오지 못함(오류 %lld)";
+
+/* Location: KeychainError+UserFacingMessage.swift - Keychain delete failed - %lld is the OSStatus code */
+"error.keychain.deletionFailed" = "암호를 삭제하지 못함(오류 %lld)";
+
+/* Location: KeyGenerationError+UserFacingMessage.swift - Vanity prefix search exhausted its attempt budget */
+"error.keyGeneration.maxAttemptsExceeded" = "해당 접두사로 키를 생성할 수 없습니다. 다른 접두사를 사용해 보십시오.";
+
+/* Location: KeyGenerationError+UserFacingMessage.swift - Requested prefix byte is reserved by firmware */
+"error.keyGeneration.reservedPrefix" = "예약된 접두사이므로 사용할 수 없습니다.";
+
+/* Location: KeyGenerationError+UserFacingMessage.swift - System random number generator failed */
+"error.keyGeneration.randomGenerationFailed" = "보안 난수 생성에 실패했습니다. 다시 시도하십시오.";
+
+/* Location: KeyGenerationError+UserFacingMessage.swift - Key data is not a valid Ed25519 expanded private key */
+"error.keyGeneration.invalidKey" = "유효한 Ed25519 개인 키가 아닙니다.";
+
+/* Local addition */
+"commands.go" = "이동";
+/* Location: AppCommands.swift - File menu item that opens another app window (Mac and iPad) */
+"commands.newWindow" = "새로운 윈도우";
+
+
+/* Location: SyncProgressTracker.swift - Syncing pill progress: contacts received of the total the radio reported */
+"common.status.syncProgress.contacts" = "연락처 %d/%d";
+
+/* Location: SyncProgressTracker.swift - Syncing pill progress: channel slots read of the device total */
+"common.status.syncProgress.channels" = "채널 %d/%d";
+
+/* Location: SyncProgressTracker.swift - Syncing pill progress: channel slots read when the total is unknown */
+"common.status.syncProgress.channelsCount" = "채널 %d";
+
+/* Location: SyncProgressTracker.swift - Syncing pill progress: messages pulled so far */
+"common.status.syncProgress.messages" = "메시지 %d";
+
+/* Location: SyncProgressTracker.swift - Syncing pill progress: changed contacts received on a quick reconnect */
+"common.status.syncProgress.contactUpdates" = "연락처 업데이트 %d";
+
+/* Location: AppCommands.swift - Go menu item that selects the conversation above the current one */
+"commands.previousConversation" = "이전 대화";
+
+/* Location: AppCommands.swift - Go menu item that selects the conversation below the current one */
+"commands.nextConversation" = "다음 대화";
+
+/* Location: toolbar Refresh buttons (⌘R) on lists that otherwise only support pull to refresh */
+"commands.refresh" = "새로 고침";
+
+/* Location: ContactQRShareSheet.swift, ChannelInfoSheet.swift, CreatePrivateChannelView.swift - VoiceOver label for a QR code image - %@ is the contact or channel name */
+"accessibility.qrCodeFor" = "%@의 QR 코드";
+
+/* Location: NavigationHeaderModifier.swift - VoiceOver hint for the tappable navigation title that opens the info sheet */
+"accessibility.navigationHeader.showDetailsHint" = "세부 정보를 표시합니다";
+
+/* Location: ExpandableSettingsSection.swift - VoiceOver label for the icon-only reload button - %@ is the section title */
+"common.reloadSection" = "%@ 다시 불러오기";
+
+/* Tab bar title for the Home dashboard of status cards */
+"tabs.home" = "대시보드";
+/* Tab bar title for the contacts/nodes list screen */
+"tabs.contacts" = "연락처";
+
+/* Tab bar title for the radio spectrum / noise floor screen */
+"tabs.spectrum" = "스펙트럼";
+
+/* Tab bar title for the GPS position and map screen */
+"tabs.gps" = "GPS";
+
+/* Home header: how long the radio has been running since its last reboot. %@ is a short duration such as 3h 12m */
+"home.uptime" = "가동 %@";
+
+/* Home cards: placeholder line when no radio is connected */
+"home.noRadio" = "라디오 없음";
+
+/* Home: title of the card shown at the top when no radio is connected */
+"home.connect.title" = "연결된 라디오 없음";
+
+/* Home: explanation on the connect card shown when no radio is connected */
+"home.connect.message" = "라디오를 연결하면 배터리, 무선, 네트워크 상태를 여기에서 볼 수 있습니다.";
+
+/* Home header: the sun does not set today at this position (polar day) */
+"home.sun.polarDay" = "하루 종일 낮";
+
+/* Home header: the sun does not rise today at this position (polar night) */
+"home.sun.polarNight" = "일출 없음";
+
+
+/* Home: title of the card summarizing the link to the radio (Bluetooth or WiFi) */
+"home.card.network" = "연결";
+
+/* Home Contacts card: nodes heard in the last day that are not saved contacts. %d is the count */
+"home.nodes.new" = "+%d 신규";
+
+/* VoiceOver: nodes heard in the last day that are not saved contacts. %d is the count */
+"home.nodes.newAccessibility" = "최근 하루 동안 새 노드 %d개 수신";
+
+/* Home Contacts card: the node whose advert was heard most recently. %@ is its name */
+"home.nodes.last" = "최근: %@";
+
+/* Home Contacts card: no node adverts have been heard yet */
+"home.nodes.noAdverts" = "아직 수신된 광고 없음";
+
+/* Home Contacts card: nodes heard directly by the radio in the last 10 minutes. %d is the count */
+"home.nodes.nearbyNow" = "지금 주변: %d";
+
+/* VoiceOver: nodes heard directly by the radio in the last 10 minutes. %d is the count */
+"home.nodes.nearbyNowAccessibility" = "최근 10분 동안 주변에서 노드 %d개 수신";
+
+/* Home GPS card: the phone has a current location fix */
+"home.gps.fix" = "측위됨";
+
+/* Home GPS card: no current location fix */
+"home.gps.noFix" = "측위 안 됨";
+
+/* Home GPS card: location access is off or not allowed */
+"home.gps.off" = "꺼짐";
+
+/* Home GPS card: when the last location fix was taken. %@ is a short duration such as 3m */
+"home.gps.fixAge" = "%@ 전 측위";
+
+/* Home GPS card: neither the radio nor the phone has a position */
+"home.gps.noPosition" = "위치 없음";
+
+/* Home Network card: the radio uses the default Bluetooth pairing PIN */
+"home.network.defaultPin" = "기본 PIN: 직접 설정하세요";
+
+/* Home Network card: the radio uses a custom Bluetooth pairing PIN */
+"home.network.customPin" = "사용자 지정 PIN";
+
+/* Home Chats card: a channel message preview with its sender. %1$@ is the sender, %2$@ the message */
+"home.chats.preview" = "%1$@: %2$@";
+
+/* VoiceOver hint: the Home Battery card opens Battery settings */
+"home.hint.battery" = "배터리 설정을 엽니다";
+
+/* VoiceOver hint: the Home Chats card opens the Chats tab */
+"home.hint.chats" = "채팅을 엽니다";
+
+/* VoiceOver hint: the Home Contacts card opens the Contacts tab */
+"home.hint.nodes" = "노드를 엽니다";
+
+/* VoiceOver hint: the Home GPS card opens the GPS tab */
+"home.hint.gps" = "지도를 엽니다";
+
+/* VoiceOver hint: the Home Radio card opens Radio settings; its actions send an advert */
+"home.hint.radio" = "무선 설정을 엽니다. 동작으로 광고를 보낼 수 있습니다.";
+
+/* VoiceOver hint: the Home Network card opens Connection settings */
+"home.hint.network" = "연결 설정을 엽니다";
+
+/* Home Contacts card: abbreviated compass direction (N) from you to the last heard node */
+"home.compass.n" = "북";
+
+/* Home Contacts card: abbreviated compass direction (NE) from you to the last heard node */
+"home.compass.ne" = "북동";
+
+/* Home Contacts card: abbreviated compass direction (E) from you to the last heard node */
+"home.compass.e" = "동";
+
+/* Home Contacts card: abbreviated compass direction (SE) from you to the last heard node */
+"home.compass.se" = "남동";
+
+/* Home Contacts card: abbreviated compass direction (S) from you to the last heard node */
+"home.compass.s" = "남";
+
+/* Home Contacts card: abbreviated compass direction (SW) from you to the last heard node */
+"home.compass.sw" = "남서";
+
+/* Home Contacts card: abbreviated compass direction (W) from you to the last heard node */
+"home.compass.w" = "서";
+
+/* Home Contacts card: abbreviated compass direction (NW) from you to the last heard node */
+"home.compass.nw" = "북서";
+
+/* Home GPS card: the radio's GPS receiver is on */
+"home.gps.on" = "켜짐";
+
+/* Home GPS card: the connected radio has no GPS receiver */
+"home.gps.none" = "GPS 없음";
+
+/* Home GPS card: secondary line with the phone's own fix state. %@ is Fix / No fix / Off */
+"home.gps.phone" = "휴대폰: %@";
+
+/* VoiceOver hint: the Home header card opens Device Info */
+"home.hint.deviceInfo" = "기기 정보를 엽니다";
+
+/* VoiceOver label for the small i button that explains a setting */
+"common.moreInfo" = "추가 정보";
+
+/* VoiceOver label for the i button next to a named setting; %@ is the setting's name */
+"common.moreInfoAbout" = "%@ 추가 정보";
+
+/* Tab bar title for the messaging tab (conversations, channels, rooms) — short for Communications */
+"tabs.comm" = "통신";
+
+/* Control Center / Action Button control and intent title: opens the app */
+"Open Cairn" = "Cairn 열기";
+
+/* CarPlay: Scan tab title and the Home screen's Scan button */
+"carPlay.scan.title" = "스캔";
+
+/* CarPlay Home: shown while the app is still starting up */
+"carPlay.home.starting" = "시작 중…";
+
+/* CarPlay Home: Radio row when no radio was ever connected */
+"carPlay.home.noRadioPaired" = "페어링된 라디오 없음";
+
+/* CarPlay Home: title of the row with spreading factor, bandwidth, TX power and noise floor */
+"carPlay.home.modulation" = "변조";
+
+/* CarPlay Home: Chats row when nothing is unread */
+"carPlay.home.chats.none" = "읽지 않은 항목 없음";
+
+/* CarPlay Home: short button that sends a zero-hop advert */
+"carPlay.action.advert" = "광고";
+
+/* CarPlay Home: short button that sends a flood advert after confirmation */
+"carPlay.action.floodAdvert" = "플러드 광고";
+
+/* CarPlay: confirmation before a flood advert (long variant) */
+"carPlay.advert.floodConfirm.title" = "전체 메시에 플러드 광고를 보낼까요?";
+
+/* CarPlay: confirmation before a flood advert (short variant for small screens) */
+"carPlay.advert.floodConfirm.titleShort" = "플러드 광고를 보낼까요?";
+
+/* CarPlay: button that confirms sending the flood advert */
+"carPlay.advert.send" = "보내기";
+
+/* CarPlay Home: note on the Radio row after an advert went out */
+"carPlay.advert.sent" = "광고 전송됨";
+
+/* CarPlay: alert when an advert could not be sent; states the condition only */
+"carPlay.advert.failed" = "광고를 보내지 못함";
+
+/* CarPlay Scan tab: row that scans for repeaters */
+"carPlay.scan.repeaters" = "리피터 스캔";
+
+/* CarPlay Scan tab: row that scans for sensors */
+"carPlay.scan.sensors" = "센서 스캔";
+
+/* CarPlay Scan tab: progress of a running scan; first is the number of nodes heard, second the seconds left */
+"carPlay.scan.progress" = "스캔 중 · %1$d개 수신 · %2$d초";
+
+/* CarPlay Scan tab: nobody answered the scan */
+"carPlay.scan.noReplies" = "응답 없음";
+
+/* CarPlay Scan tab: the scan or add did not complete */
+"carPlay.scan.failed" = "스캔을 완료하지 못함";
+
+/* CarPlay Scan tab: why both scan rows are off and what the list header says, when the radio's firmware can't send a scan request (official MeshCore firmware before 1.10). The list of nodes the radio hears still works. Keep it short */
+"carPlay.scan.unsupported" = "라디오 펌웨어 1.10 이상 필요";
+
+/* CarPlay Scan tab: under the headline after a scan during which the radio heard packets that never reached the app, so some replies may not be listed. Keep it short */
+"carPlay.scan.repliesMayBeMissing" = "일부 응답이 누락되었을 수 있음";
+
+/* CarPlay: shown where an action needs a connected, ready radio */
+"carPlay.scan.notReady" = "라디오 연결 안 됨";
+
+/* CarPlay Scan tab: a scan started elsewhere is still running */
+"carPlay.scan.busy" = "다른 스캔이 진행 중";
+
+/* CarPlay Scan tab: the next scan has to wait; %@ is the time left, e.g. 0:32 */
+"carPlay.scan.nextScanIn" = "%@ 후 다음 스캔";
+
+/* CarPlay Scan tab: how many nodes were heard directly in the last few minutes. %d is the count. Keep it short. */
+"carPlay.scan.nearby" = "주변 %d개";
+
+/* CarPlay Scan tab: a reply's signal; first is SNR in dB (decimal), second RSSI in dBm */
+"carPlay.scan.signal" = "SNR %@ dB";
+/* CarPlay Scan tab: action sheet button that adds the node to the radio's node list */
+"carPlay.scan.add" = "노드에 추가";
+
+/* CarPlay Nodes tab: section of nodes recently heard */
+"carPlay.nodes.recent" = "최근 수신";
+
+/* CarPlay Nodes tab: the row and screen that find a node by the first letter of its name, in letter groups (A–C, D–F…). Keep it short. */
+/* AI-translated - please verify with native speakers. */
+"carPlay.nodes.find" = "찾기";
+
+/* CarPlay Nodes tab: header of a list cut to what the car shows; first is the nodes shown, second all the nodes in the group */
+/* AI-translated - please verify with native speakers. */
+"carPlay.nodes.showing" = "%2$d개 중 %1$d개 표시";
+
+/* CarPlay Chats tab: the conversation is a channel */
+"carPlay.chats.kind.channel" = "채널";
+
+/* CarPlay Chats tab: no conversations yet */
+"carPlay.chats.empty" = "대화 없음";
+
+/* CarPlay Chats tab: empty-state subtitle saying Siri reads and sends messages */
+"carPlay.chats.siriHint" = "Siri에게 메시지를 읽거나 보내 달라고 요청하세요";
+
+/* CarPlay conversation screen: the sender of the user's own message. Keep it short. */
+"carPlay.chats.you" = "나";
+
+/* CarPlay conversation screen: row that hands the conversation to Siri to read aloud */
+"carPlay.chats.readWithSiri" = "Siri로 읽기";
+
+/* CarPlay conversation screen: detail of the Read with Siri row when nothing is unread */
+"carPlay.chats.readHint" = "Siri가 최근 메시지를 읽어 줍니다";
+
+/* CarPlay conversation screen: detail of the row that starts a voice reply with Siri; the row's title is the conversation's name */
+"carPlay.chats.reply" = "Siri로 답장";
+
+/* CarPlay conversation screen: header over the conversation's newest messages (sender and time only, never text) */
+"carPlay.chats.recent" = "최근 메시지";
+
+/* Title of the Home tab's own settings sheet (opened with the sliders button next to the gear): the connected radio's settings */
+"tabSettings.home" = "기기 설정";
+
+/* Title of the Nodes tab's own settings sheet (opened with the sliders button next to the gear) */
+"tabSettings.nodes" = "노드 설정";
+
+/* Title of the Comm (messaging) tab's own settings sheet (opened with the sliders button next to the gear): chat and message settings */
+"tabSettings.comm" = "통신 설정";
+
+/* Title of the Spectrum tab's own settings sheet (opened with the sliders button next to the gear) */
+"tabSettings.spectrum" = "스펙트럼 설정";
+
+/* CarPlay Home/Scan: why the radio cannot reconnect. Never mention the phone. */
+"carPlay.home.bluetoothOff" = "Bluetooth가 꺼져 있음";
+
+/* CarPlay Home/Scan: the app is not allowed to use Bluetooth. Never mention the phone. */
+"carPlay.home.bluetoothNotAllowed" = "Cairn의 Bluetooth 접근이 꺼져 있음";
+
+/* CarPlay Chats empty state and Home Chats row: Siri is not allowed for the app, so messages can't be read or sent in the car. Never mention the phone. */
+"carPlay.chats.siriOff" = "Siri 메시지가 꺼져 있음";
+
+/* CarPlay Home Radio row while an advert is being sent. */
+"carPlay.advert.sending" = "광고 전송 중…";
+
+/* Title of the GPS tab's own settings sheet (opened with the sliders button next to the gear): GPS receiver, phone location, location sharing and maps */
+"tabSettings.gps" = "GPS 설정";
+
+/* CarPlay Dashboard: message of the Send Advert action sheet, which offers a zero-hop or a flood advert. Never mention the phone. */
+"carPlay.advert.sheet.message" = "제로홉은 주변 노드에 도달합니다. 플러드는 메시 전체로 퍼집니다.";
+
+/* CarPlay Scan for Nodes: the reply heard best; first is the SNR (e.g. +10.5 dB), second the node's name */
+"carPlay.scan.best" = "최고 %1$@ %2$@";
+
+/* CarPlay Scan for Nodes: the farthest reply with a known position; first is the distance (e.g. 3.4 km), second the node's name */
+"carPlay.scan.farthest" = "최장 %1$@ %2$@";
+
+/* CarPlay Spectrum tab: title of the row saying how much interference the channel has (Quiet channel / Some interference / Heavy interference) */
+"carPlay.spectrum.condition" = "상태";
+
+/* CarPlay Spectrum tab: shown in place of the noise floor, airtime and condition when the radio's firmware doesn't report them (official MeshCore firmware before 1.11). Keep it short */
+"carPlay.spectrum.unsupported" = "이 라디오의 펌웨어가 보고하지 않음";
+
+/* CarPlay GPS tab: title of the row saying where the radio's position comes from (live GPS, from phone, saved, not set) */
+"carPlay.gps.source" = "출처";
+
+/* CarPlay GPS tab: title of the read-only row summarising the radio's location settings (receiver, advert position, phone to radio) */
+"carPlay.gps.sharing" = "공유";
+
+/* CarPlay Network card detail screen: title of the row saying whether Bluetooth pairs with the default or a custom PIN */
+"carPlay.network.pin" = "PIN";
+
+/* CarPlay Dashboard cards: title of the row of radio cards (name and link, transport, model, battery) */
+"carPlay.cards.radio" = "라디오";
+
+/* CarPlay Dashboard cards: title of the row of mesh readings (last packet, noise floor, traffic, nodes heard) */
+"carPlay.cards.mesh" = "메시";
+
+/* CarPlay Dashboard cards: title of the row of message cards (unread, last message) */
+"carPlay.cards.messages" = "메시지";
+
+/* CarPlay Dashboard cards: title of the row of location cards (GPS, position, altitude) */
+"carPlay.cards.location" = "위치";
+
+/* CarPlay Spectrum cards: title of the row of live channel readings (condition, noise floor, last packet) */
+"carPlay.cards.signal" = "신호";
+
+/* CarPlay Dashboard cards: title of the card with the packets heard per minute. Keep it short. */
+"carPlay.cards.traffic" = "트래픽";
+
+/* CarPlay Dashboard cards: packets heard per minute, e.g. 12/min. Keep it short. */
+"carPlay.cards.perMinute" = "%d/분";
+
+/* CarPlay Dashboard cards: title of the card counting the distinct nodes heard in the last hour. Keep it short. */
+"carPlay.cards.heard" = "1시간 수신";
+
+/* CarPlay Dashboard cards: title of the last-message card before any message arrived */
+"carPlay.cards.lastMessage" = "마지막 메시지";
+
+/* CarPlay Dashboard cards: the last-message card when no message arrived yet. Keep it short. */
+"carPlay.cards.noMessages" = "메시지 없음";
+
+/* CarPlay Dashboard cards: the last message was a direct message, not on a channel. Keep it short. */
+"carPlay.cards.direct" = "다이렉트";
+
+/* CarPlay Dashboard cards: the unread card when Siri is not allowed for the app, so messages can't be read or sent in the car. Keep it short. */
+/* AI-translated - please verify with native speakers. */
+"carPlay.cards.siriOff" = "Siri 꺼짐";
+
+/* CarPlay Dashboard cards: the unread card with nothing unread. Keep it short. */
+/* AI-translated - please verify with native speakers. */
+"carPlay.cards.noUnread" = "읽지 않은 항목 없음";
+
+/* CarPlay cards: a signal-to-noise ratio, e.g. 7.5 dB */
+"carPlay.cards.decibels" = "%@ dB";
+
+/* CarPlay Spectrum cards: title of the card with the last packet's signal-to-noise ratio */
+"carPlay.cards.snr" = "SNR";
+
+/* CarPlay GPS cards: title of the row of GPS readings (speed, altitude, satellites…) */
+"carPlay.cards.readings" = "측정값";
+
+/* CarPlay Dashboard cards: nodes heard in the last hour, after the packets a minute, e.g. 8 heard. Keep it short. */
+"carPlay.cards.heardCount" = "%d개 수신";
+
+/* CarPlay Dashboard cards: label over where the last message came from when it was a direct message (its value reads Direct). Keep it short. */
+"carPlay.cards.conversation" = "대화";
+
+/* Notification body standing for several messages that arrived in one conversation while the app was away - %d is how many (2 or more) */
+"notifications.catchUp.body" = "새 메시지 %d개";
+
+/* Notification title when the app has heard nothing from its radio for a while in the background (it may have been closed, or Bluetooth turned off) */
+"notifications.notReceiving.title" = "Cairn이 수신하지 못하고 있을 수 있음";
+
+/* Notification body for that reminder - %@ is the radio's name */
+"notifications.notReceiving.body" = "한동안 %@에서 아무것도 들어오지 않았습니다. Cairn을 열어 라디오에서 대기 중인 메시지를 받으세요.";
+
+/* Notification title when Bluetooth is turned off while the app wants its radio */
+"notifications.bluetoothOff.title" = "Bluetooth가 꺼져 있음";
+
+/* Notification body when Bluetooth is turned off - %@ is the radio's name */
+"notifications.bluetoothOff.body" = "Bluetooth를 다시 켤 때까지 Cairn은 %@의 메시지를 받을 수 없습니다.";
+
+/* Notification title when a Cairn radio's message queue lost messages while the app was away */
+"notifications.radioQueueLoss.title" = "라디오에서 메시지 손실";
+
+/* Notification body for lost messages - %1$@ is the radio's name, %2$d how many messages were lost */
+"notifications.radioQueueLoss.body" = "Cairn이 연결되지 않은 동안 %1$@의 메시지 저장 공간이 부족했습니다. 손실된 메시지: %2$d개.";
+
+
+/* Home header card: how long ago the radio's readings were last read. %@ is an age such as 4m */
+"home.header.updated" = "%@ 전 업데이트됨";
+/* Location: AppCommands.swift - Menu of radio shortcuts (Connections, Device Info, Send Advert, Disconnect) */
+"commands.radio" = "무선 기기";
+
+// MARK: - Map workstream additions
+
+/* Location: CarPlay Nodes tab: group of the nodes with a position, nearest first. Keep it short. */
+"carPlay.nodes.nearby" = "근처";
+
+/* Location: CarPlay node screen: button that opens the conversation with this contact */
+"carPlay.nodes.openChat" = "채팅 열기";
+
+/* Location: App Intents: the Send Location shortcut could not get a position from the phone or the radio */
+"error.intent.noLocation" = "Cairn이 위치를 가져올 수 없습니다. Cairn에 위치 권한을 허용하거나 GPS 신호가 있는 라디오를 연결하세요.";

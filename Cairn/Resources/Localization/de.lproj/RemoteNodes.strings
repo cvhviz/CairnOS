@@ -1,0 +1,1705 @@
+/*
+  RemoteNodes.strings
+  Cairn
+
+  German translation of strings for the Remote Nodes feature.
+  AI-translated - please verify with native speakers.
+*/
+
+// MARK: - Node Authentication Sheet
+
+/* Location: NodeAuthenticationSheet.swift - Navigation title for room authentication */
+"remoteNodes.auth.joinRoom" = "Raum beitreten";
+
+/* Location: NodeAuthenticationSheet.swift - Navigation title for repeater management */
+"remoteNodes.auth.management" = "Verwaltung";
+
+/* Location: NodeAuthenticationSheet.swift - Cancel button */
+"remoteNodes.auth.cancel" = "Abbrechen";
+
+/* Location: NodeAuthenticationSheet.swift - Node details section header */
+"remoteNodes.auth.nodeDetails" = "Knotendetails";
+
+/* Location: NodeAuthenticationSheet.swift - Name label */
+"remoteNodes.auth.name" = "Name";
+
+/* Location: NodeAuthenticationSheet.swift - Type label */
+"remoteNodes.auth.type" = "Typ";
+
+/* Location: NodeAuthenticationSheet.swift - Room type value */
+"remoteNodes.auth.typeRoom" = "Raum";
+
+/* Location: NodeAuthenticationSheet.swift - Repeater type value */
+"remoteNodes.auth.typeRepeater" = "Repeater";
+
+/* Location: NodeAuthenticationSheet.swift - Authentication section header */
+"remoteNodes.auth.authentication" = "Authentifizierung";
+
+/* Location: NodeAuthenticationSheet.swift - Password field placeholder */
+"remoteNodes.auth.password" = "Passwort";
+
+/* Location: NodeAuthenticationSheet.swift - Remember password toggle */
+"remoteNodes.auth.rememberPassword" = "Passwort merken";
+
+/* Location: NodeAuthenticationSheet.swift - Error accessibility label prefix */
+"remoteNodes.auth.errorPrefix" = "Fehler: %@";
+
+/* Location: NodeAuthenticationSheet.swift - Password too long warning for repeaters */
+"remoteNodes.auth.passwordTooLongRepeaters" = "MeshCore-Repeater akzeptieren nur Passwörter bis zu %d Zeichen. Zusätzliche Zeichen werden ignoriert.";
+
+/* Location: NodeAuthenticationSheet.swift - Password too long warning for rooms */
+"remoteNodes.auth.passwordTooLongRooms" = "MeshCore-Räume akzeptieren nur Passwörter bis zu %d Zeichen. Zusätzliche Zeichen werden ignoriert.";
+
+/* Location: NodeAuthenticationSheet.swift - Countdown text showing seconds remaining */
+"remoteNodes.auth.secondsRemaining" = "Bis zu %d Sekunden verbleibend";
+
+/* Location: NodeAuthenticationSheet.swift - Connect button */
+"remoteNodes.auth.connect" = "Verbinden";
+
+/* Location: NodeAuthenticationSheet.swift - Path section header */
+"remoteNodes.auth.path" = "Pfad";
+
+/* Location: NodeAuthenticationSheet.swift - Flood routing toggle */
+"remoteNodes.auth.floodRouting" = "Flood-Routing";
+"remoteNodes.auth.floodRetryStatus" = "Keine Antwort über die bekannte Route. Neuer Versuch mit Flood-Routing.";
+"remoteNodes.auth.floodFooter" = "Flood-Routing ist langsamer und beansprucht mehr Funkzeit im Netzwerk. Verwende es, wenn die bekannte Route an deinem aktuellen Standort nicht funktioniert. Nach der Anmeldung wird automatisch eine neue Route gelernt.";
+
+/* Location: NodeAuthenticationSheet.swift - Path section footer when stored path exists */
+"remoteNodes.auth.pathFooter" = "Verwende die bekannte Route zu diesem Knoten oder wechsle zu Flood-Routing, damit das Netzwerk einen Pfad findet.";
+
+/* Location: NodeAuthenticationSheet.swift - Path hop whose repeater is not known */
+"remoteNodes.auth.pathHopUnknown" = "<unbekannt>";
+
+/* Location: NodeAuthenticationSheet.swift - Label when no route is set */
+"remoteNodes.auth.noRouteSet" = "Keine Route festgelegt";
+
+/* Location: NodeAuthenticationSheet.swift - Path section footer when no route is set */
+"remoteNodes.auth.noRouteFooter" = "Keine bekannte Route zu diesem Knoten. Das Netzwerk findet automatisch einen Pfad.";
+
+/* Location: NodeAuthenticationSheet.swift - Accessibility announcement for countdown */
+"remoteNodes.auth.secondsRemainingAnnouncement" = "%d Sekunden verbleibend";
+
+// MARK: - Repeater Settings
+
+/* Location: RepeaterSettingsView.swift - Navigation title */
+"remoteNodes.settings.title" = "Repeater-Einstellungen";
+
+/* Location: RepeaterSettingsView.swift - Done button (used in multiple places) */
+"remoteNodes.settings.done" = "Fertig";
+
+/* Location: NodeSettingsView.swift - Settings tab label */
+"remoteNodes.settings.tab.settings" = "Einstellungen";
+
+/* Location: NodeSettingsView.swift - CLI tab label */
+"remoteNodes.settings.tab.cli" = "CLI";
+
+/* Location: NodeSettingsView.swift - Telemetry tab label */
+"remoteNodes.settings.tab.telemetry" = "Telemetrie";
+
+/* Location: NodeSettingsView.swift - View mode picker label */
+"remoteNodes.settings.tab.picker" = "Ansichtsmodus";
+
+/* Location: RepeaterSettingsView.swift - Success alert title */
+"remoteNodes.settings.success" = "Erfolg";
+
+/* Location: RepeaterSettingsView.swift - OK button */
+"remoteNodes.settings.ok" = "OK";
+
+/* Location: RepeaterSettingsView.swift - Default success message */
+"remoteNodes.settings.settingsApplied" = "Einstellungen angewendet";
+
+/* Location: RepeaterSettingsView.swift - Device info section title */
+"remoteNodes.settings.deviceInfo" = "Geräteinformationen";
+
+/* Location: RepeaterSettingsView.swift - Firmware label */
+"remoteNodes.settings.firmware" = "Firmware";
+
+/* Location: RepeaterSettingsView.swift - Device time label */
+"remoteNodes.settings.deviceTime" = "Gerätezeit";
+
+/* Location: RepeaterSettingsView.swift - Radio parameters section title */
+"remoteNodes.settings.radioParameters" = "Funkparameter";
+
+/* Location: RepeaterSettingsView.swift - Radio restart warning */
+"remoteNodes.settings.radioRestartWarning" = "Diese Änderungen werden erst nach einem Neustart des Repeaters wirksam";
+
+/* Location: RepeaterSettingsView.swift - Frequency label */
+"remoteNodes.settings.frequencyMHz" = "Frequenz (MHz)";
+
+/* Location: RepeaterSettingsView.swift - MHz placeholder */
+"remoteNodes.settings.mhz" = "MHz";
+
+/* Location: RepeaterSettingsView.swift - Loading placeholder */
+"remoteNodes.settings.loading" = "Wird geladen...";
+
+/* Location: RepeaterSettingsView.swift - Failed to load placeholder */
+"remoteNodes.settings.failedToLoad" = "Laden fehlgeschlagen";
+
+/* Location: RepeaterSettingsView.swift - Bandwidth label */
+"remoteNodes.settings.bandwidthKHz" = "Bandbreite (kHz)";
+
+/* Location: RepeaterSettingsView.swift - Accessibility label for bandwidth picker options */
+"remoteNodes.settings.accessibility.bandwidthLabel" = "%@ Kilohertz";
+
+/* Location: RepeaterSettingsView.swift - Bandwidth accessibility hint */
+"remoteNodes.settings.bandwidthHint" = "Niedrigere Werte erhöhen die Reichweite, verringern aber die Geschwindigkeit";
+
+/* Location: RepeaterSettingsView.swift - Spreading factor label */
+"remoteNodes.settings.spreadingFactor" = "Spreizfaktor";
+
+/* Location: RepeaterSettingsView.swift - Accessibility label for spreading factor picker options */
+"remoteNodes.settings.accessibility.spreadingFactorLabel" = "Spreizfaktor %d";
+
+/* Location: RepeaterSettingsView.swift - Spreading factor accessibility hint */
+"remoteNodes.settings.spreadingFactorHint" = "Höhere Werte erhöhen die Reichweite, verringern aber die Geschwindigkeit";
+
+/* Location: RepeaterSettingsView.swift - Coding rate label */
+"remoteNodes.settings.codingRate" = "Codierungsrate";
+
+/* Location: RepeaterSettingsView.swift - Accessibility label for coding rate picker options */
+"remoteNodes.settings.accessibility.codingRateLabel" = "Codierungsrate %d";
+
+/* Location: RepeaterSettingsView.swift - Coding rate accessibility hint */
+"remoteNodes.settings.codingRateHint" = "Höhere Werte fügen Fehlerkorrektur hinzu, verringern aber die Geschwindigkeit";
+
+/* Location: RepeaterSettingsView.swift - TX power label */
+"remoteNodes.settings.txPowerDbm" = "Sendeleistung (dBm)";
+
+/* Location: RepeaterSettingsView.swift - dBm placeholder */
+"remoteNodes.settings.dbm" = "dBm";
+
+/* Location: RepeaterSettingsView.swift - Apply radio settings button */
+"remoteNodes.settings.applyRadioSettings" = "Funkeinstellungen anwenden";
+
+/* Location: RepeaterSettingsView.swift - Identity & location section title */
+"remoteNodes.settings.identityLocation" = "Identität & Standort";
+
+/* Location: RepeaterSettingsView.swift - Latitude label */
+"remoteNodes.settings.latitude" = "Breitengrad";
+
+/* Location: RepeaterSettingsView.swift - Lat placeholder */
+/* Location: RepeaterSettingsView.swift - Longitude label */
+"remoteNodes.settings.longitude" = "Längengrad";
+
+/* Location: RepeaterSettingsView.swift - Lon placeholder */
+/* Location: RepeaterSettingsView.swift - Pick on map button */
+"remoteNodes.settings.pickOnMap" = "Auf Karte wählen";
+
+/* Location: RepeaterSettingsView.swift - Apply identity settings button */
+"remoteNodes.settings.applyIdentitySettings" = "Identitätseinstellungen anwenden";
+
+/* Location: RepeaterSettingsView.swift - Contact info section title */
+"remoteNodes.settings.contactInfo" = "Kontaktinfo";
+
+/* Location: RepeaterSettingsView.swift - Contact info placeholder */
+"remoteNodes.settings.contactInfoPlaceholder" = "Frequenz, Betreibername, Website...";
+
+/* Location: RepeaterSettingsView.swift - Contact info footer */
+"remoteNodes.settings.contactInfoFooter" = "Öffentliche Kontaktdaten, die für andere Knoten sichtbar sind. Verwenden Sie Zeilenumbrüche zur Trennung.";
+
+/* Location: RepeaterSettingsView.swift - Apply contact info button */
+"remoteNodes.settings.applyContactInfo" = "Kontaktinfo anwenden";
+
+/* Location: RepeaterSettingsView.swift - Contact info character count format */
+/* Location: RepeaterSettingsView.swift - Behavior section title */
+"remoteNodes.settings.behavior" = "Verhalten";
+
+/* Location: RepeaterSettingsView.swift - Repeater mode toggle */
+"remoteNodes.settings.repeaterMode" = "Repeater-Modus";
+
+/* Location: RepeaterSettingsView.swift - Advert interval (0-hop) label */
+"remoteNodes.settings.advertInterval0Hop" = "Ankündigungsintervall (0-Hop)";
+
+/* Location: RepeaterSettingsView.swift - Minutes unit */
+"remoteNodes.settings.min" = "Min";
+
+/* Location: RepeaterSettingsView.swift - Advert interval (flood) label */
+"remoteNodes.settings.advertIntervalFlood" = "Ankündigungsintervall (Flood)";
+
+/* Location: RepeaterSettingsView.swift - Hours unit */
+"remoteNodes.settings.hrs" = "Std";
+
+/* Location: RepeaterSettingsView.swift - Max flood hops label */
+"remoteNodes.settings.maxFloodHops" = "Max. Flood-Sprünge";
+
+/* Location: RepeaterSettingsView.swift - Hops unit */
+"remoteNodes.settings.hops" = "Sprünge";
+
+/* Location: RepeaterSettingsView.swift - Apply behavior settings button */
+"remoteNodes.settings.applyBehaviorSettings" = "Verhaltenseinstellungen anwenden";
+
+/* Location: RepeaterSettingsView.swift - Security section title */
+"remoteNodes.settings.security" = "Sicherheit";
+
+/* Location: RepeaterSettingsView.swift - New password placeholder */
+"remoteNodes.settings.newPassword" = "Neues Passwort";
+
+/* Location: RepeaterSettingsView.swift - Confirm password placeholder */
+"remoteNodes.settings.confirmPassword" = "Passwort bestätigen";
+
+/* Location: RepeaterSettingsView.swift - Change password button */
+"remoteNodes.settings.changePassword" = "Passwort ändern";
+
+/* Location: RepeaterSettingsView.swift - Security footer text */
+"remoteNodes.settings.securityFooter" = "Ändere das Admin-Authentifizierungspasswort.";
+
+/* Location: RepeaterSettingsView.swift - Device info section footer */
+"remoteNodes.settings.deviceInfoFooter" = "Firmware-Version und Geräteuhr.";
+
+/* Location: RepeaterSettingsView.swift - Radio settings section footer */
+"remoteNodes.settings.radioFooter" = "Frequenz, Bandbreite, Spreizfaktor und Codierungsrate.";
+
+/* Location: RepeaterSettingsView.swift - Identity section footer */
+"remoteNodes.settings.identityFooter" = "Repeatername und GPS-Koordinaten für die Kartenanzeige.";
+
+/* Location: RepeaterSettingsView.swift - Behavior section footer */
+"remoteNodes.settings.behaviorFooter" = "Ankündigungsintervalle, Flood-Sprünge und Repeatermodus.";
+
+/* Location: RepeaterSettingsView.swift - Device actions section header */
+"remoteNodes.settings.deviceActions" = "Geräteaktionen";
+
+/* Location: RepeaterSettingsView.swift - Send advert button */
+"remoteNodes.settings.sendAdvert" = "Ankündigung senden";
+
+/* Location: RepeaterSettingsView.swift - Sync time button */
+"remoteNodes.settings.syncTime" = "Zeit synchronisieren";
+
+/* Location: RepeaterSettingsView.swift - Reboot device button */
+"remoteNodes.settings.rebootDevice" = "Gerät neustarten";
+
+/* Location: RepeaterSettingsView.swift - Reboot confirmation dialog title */
+"remoteNodes.settings.rebootConfirmTitle" = "Repeater neustarten?";
+
+/* Location: RepeaterSettingsView.swift - Reboot confirmation dialog button */
+"remoteNodes.settings.reboot" = "Neustarten";
+
+/* Location: RepeaterSettingsView.swift - Reboot confirmation message */
+"remoteNodes.settings.rebootMessage" = "Der Repeater wird neu gestartet und ist vorübergehend nicht verfügbar.";
+
+// MARK: - Repeater Settings ViewModel Messages
+
+/* Location: RepeaterSettingsViewModel.swift - Radio not loaded error */
+"remoteNodes.settings.radioNotLoaded" = "Funkeinstellungen nicht geladen";
+
+/* Location: RepeaterSettingsViewModel.swift - Radio applied success */
+"remoteNodes.settings.radioAppliedSuccess" = "Funkeinstellungen angewendet. Gerät neustarten, damit sie wirksam werden.";
+
+/* Location: RepeaterSettingsViewModel.swift - Radio apply failure */
+"remoteNodes.settings.radioApplyFailed" = "Funkeinstellungen konnten nicht angewendet werden";
+
+/* Remote node TX power: a setting outside what the node takes (a refused 'set tx', or a stored value older firmware never applied); %1$lld the lowest setting, %2$lld the highest, like -9 and 16 */
+"remoteNodes.settings.txPowerOutOfRange" = "Nicht angewendet: Dieser Knoten akzeptiert Einstellungen von %1$lld bis %2$lld dBm";
+
+/* Remote node Radio Parameters TX picker: the entry for a stored setting outside the node's range, which its radio never applied; %lld the setting, like 30 */
+"remoteNodes.settings.txPowerNotApplied" = "%lld (nicht angewendet)";
+
+/* Location: RepeaterSettingsViewModel.swift - General apply failure */
+"remoteNodes.settings.someSettingsFailedToApply" = "Einige Einstellungen konnten nicht angewendet werden";
+
+/* Location: RepeaterSettingsViewModel.swift - Empty password error */
+"remoteNodes.settings.passwordEmpty" = "Passwort darf nicht leer sein";
+
+/* Location: RepeaterSettingsViewModel.swift - Password mismatch error */
+"remoteNodes.settings.passwordMismatch" = "Passwörter stimmen nicht überein";
+
+/* Location: RepeaterSettingsViewModel.swift - Password changed success */
+/* Location: RepeaterSettingsViewModel.swift - Password change failure */
+"remoteNodes.settings.passwordChangeFailed" = "Passwort konnte nicht geändert werden";
+
+/* Location: RepeaterSettingsViewModel.swift - Reboot sent success */
+"remoteNodes.settings.rebootSent" = "Neustart-Befehl gesendet";
+
+/* Location: RepeaterSettingsViewModel.swift - Advert sent success */
+"remoteNodes.settings.advertSent" = "Ankündigung gesendet";
+
+/* Location: RepeaterSettingsViewModel.swift - Time synced success */
+"remoteNodes.settings.timeSynced" = "Zeit synchronisiert";
+
+/* Location: NodeSettingsViewModel.swift - Sync Time alert: the time set, when the clock's offset before was unknown */
+"remoteNodes.settings.timeSyncedTo" = "Auf %@ von diesem Telefon gestellt.";
+
+/* Location: NodeSettingsViewModel.swift - Sync Time alert: the time set, then the clock's offset before (e.g. "3m behind this phone") */
+"remoteNodes.settings.timeSyncedWas" = "Auf %1$@ von diesem Telefon gestellt. Vorher: %2$@.";
+
+/* Location: NodeSettingsViewModel.swift - Sync Time alert: the time set, when the clock was already right */
+"remoteNodes.settings.timeSyncedAlready" = "Auf %@ von diesem Telefon gestellt. Sie war bereits synchron.";
+
+/* Location: RepeaterSettingsViewModel.swift - Clock ahead error */
+"remoteNodes.settings.clockAheadError" = "Repeater-Uhr ist der Telefonzeit voraus. Wenn sie zu weit vorne ist, starte den Repeater neu und synchronisiere die Zeit erneut.";
+
+/* Location: RepeaterSettingsViewModel.swift - Sync time failure */
+"remoteNodes.settings.syncTimeFailed" = "Zeit konnte nicht synchronisiert werden";
+
+/* Location: RepeaterSettingsViewModel.swift - Unexpected response error */
+"remoteNodes.settings.unexpectedResponse" = "Unerwartete Antwort: %@";
+
+/* Location: RepeaterSettingsViewModel.swift - Not connected error */
+/* Location: RepeaterSettingsViewModel.swift - Timeout error */
+/* Location: NodeSettingsViewModel.swift - No service error */
+"remoteNodes.settings.noService" = "Dienst nicht verfügbar";
+
+/* Location: RepeaterSettingsViewModel.swift - Advert interval validation error */
+"remoteNodes.settings.advertIntervalValidation" = "Akzeptiert 0 (deaktiviert) oder 60-240 Min";
+
+/* Location: RepeaterSettingsViewModel.swift - Flood interval validation error */
+"remoteNodes.settings.floodIntervalValidation" = "Akzeptiert 0 (aus) oder 3–168 Stunden";
+
+/* Location: RepeaterSettingsViewModel.swift - Flood max hops validation error */
+"remoteNodes.settings.floodMaxValidation" = "Akzeptiert 0-64 Sprünge";
+
+/* Location: NodeSettingsViewModel.swift - Node name length validation error */
+"remoteNodes.settings.nameValidation" = "Akzeptiert bis zu %d Bytes";
+
+/* Location: NodeSettingsViewModel.swift - Latitude range validation error */
+"remoteNodes.settings.latitudeValidation" = "Akzeptiert -90 bis 90";
+
+/* Location: NodeSettingsViewModel.swift - Longitude range validation error */
+"remoteNodes.settings.longitudeValidation" = "Akzeptiert -180 bis 180";
+
+// MARK: - Repeater Settings: Regions
+
+/* Location: RepeaterSettingsView.swift - Regions section title */
+"remoteNodes.settings.regions" = "Regionen";
+
+/* Location: RepeaterSettingsView.swift - Regions section footer */
+"remoteNodes.settings.regionsFooter" = "Im Repeater speichern, um Änderungen über Neustarts hinweg zu behalten.";
+
+/* Location: RepeaterSettingsView.swift - Unscoped region display name */
+"remoteNodes.settings.regions.allTraffic" = "Ohne Bereich";
+
+/* Location: RepeaterSettingsView.swift - Unscoped region with asterisk display */
+"remoteNodes.settings.regions.allTrafficWildcard" = "* (Ohne Bereich)";
+
+/* Location: RepeaterSettingsView.swift - Home region picker label */
+"remoteNodes.settings.regions.homeRegion" = "Heimatregion";
+
+/* Location: RepeaterSettingsView.swift - Default scope picker label */
+"remoteNodes.settings.regions.defaultScope" = "Standardbereich";
+
+/* Location: RepeaterSettingsView.swift - Load default scope button */
+"remoteNodes.settings.regions.loadDefaultScope" = "Laden";
+
+/* Location: RepeaterSettingsView.swift - No default scope */
+"remoteNodes.settings.regions.noDefault" = "Keine";
+
+/* Location: RepeaterSettingsView.swift - Caption under default scope picker */
+"remoteNodes.settings.regions.defaultScopeCaption" = "Bestimmt den Bereich für Pakete, die dieser Knoten selbst erzeugt, etwa Ankündigungen. Diese Einstellung wird sofort im Repeater gespeichert.";
+
+/* Location: RepeaterSettingsView.swift - No home region set */
+/* Location: RepeaterSettingsView.swift - Toggle label for flood allow per region */
+/* Location: RepeaterSettingsView.swift - Accessibility hint for flood toggle */
+"remoteNodes.settings.regions.floodToggleHint" = "Wenn deaktiviert, werden Flood-Pakete aus dieser Region verworfen";
+
+/* Location: RepeaterSettingsView.swift - Caption under the region flood list */
+"remoteNodes.settings.regions.floodToggleCaption" = "Flood-Pakete aus jeder deaktivierten Region werden verworfen.";
+
+/* Location: RepeaterSettingsView.swift - Add region button */
+"remoteNodes.settings.regions.addRegion" = "Region hinzufügen";
+
+/* Location: RepeaterSettingsView.swift - Add region alert title */
+"remoteNodes.settings.regions.addRegionTitle" = "Region hinzufügen";
+
+/* Location: RepeaterSettingsView.swift - Region name placeholder */
+"remoteNodes.settings.regions.regionName" = "Regionsname";
+
+/* Location: RepeaterSettingsView.swift - Save regions to device button */
+"remoteNodes.settings.regions.saveToDevice" = "Im Repeater speichern";
+
+/* Location: RepeaterSettingsViewModel.swift - Region save success */
+/* Location: RepeaterSettingsViewModel.swift - Region save failure */
+"remoteNodes.settings.regions.saveFailed" = "Regionen konnten nicht gespeichert werden";
+
+/* Location: RepeaterSettingsViewModel.swift - Region not found error */
+"remoteNodes.settings.regions.unknownRegion" = "Unbekannte Region";
+
+/* Location: RepeaterSettingsViewModel.swift - Region has children error */
+"remoteNodes.settings.regions.notEmpty" = "Entferne zuerst die untergeordneten Regionen";
+
+/* Location: RepeaterSettingsView.swift - Alert title when deleting a parent region */
+"remoteNodes.settings.regions.cannotDelete" = "„%@“ kann nicht gelöscht werden";
+
+/* Location: RepeaterSettingsViewModel.swift - Region add failure */
+"remoteNodes.settings.regions.addFailed" = "Region konnte nicht hinzugefügt werden";
+
+/* Location: RepeaterSettingsView.swift - Region name charset validation */
+"remoteNodes.settings.regions.invalidName" = "Regionsnamen dürfen keine Leerzeichen und die meisten Satzzeichen wie . , ! oder @ enthalten.";
+
+/* Location: RepeaterSettingsView.swift - Region name length validation */
+"remoteNodes.settings.regions.nameTooLong" = "Regionsnamen sind auf %d Bytes begrenzt.";
+
+/* Location: RepeaterSettingsView.swift - Duplicate region name validation */
+"remoteNodes.settings.regions.duplicate" = "Diese Region existiert bereits.";
+
+/* Location: RepeaterAddRegionSheet.swift - Parent picker label */
+"remoteNodes.settings.regions.parent" = "Übergeordnet";
+
+/* Location: RepeaterSettingsView.swift - Add child region context menu item */
+"remoteNodes.settings.regions.addChild" = "Untergeordnete Region hinzufügen";
+/* Location: RegionFloodToggleRow.swift - Full VoiceOver label (name, parent) */
+"remoteNodes.settings.regions.childOf" = "%@, untergeordnet zu %@";
+
+/* Location: RepeaterSettingsViewModel.swift - Region remove failure */
+"remoteNodes.settings.regions.removeFailed" = "Region konnte nicht entfernt werden";
+
+/* Location: RepeaterSettingsViewModel.swift - No regions on device */
+"remoteNodes.settings.regions.empty" = "Keine Regionen konfiguriert";
+
+// MARK: - Repeater Status
+
+/* Location: RepeaterStatusView.swift - Navigation title */
+"remoteNodes.status.title" = "Repeater-Status";
+
+/* Location: RepeaterStatusView.swift - Guest mode badge in header */
+"remoteNodes.status.guestMode" = "Gastmodus";
+"remoteNodes.status.clockAhead" = "Die Uhr dieses Knotens geht %@ vor deinem Funkgerät. Ein Knoten mit ungenauer Uhr ignoriert unter Umständen Befehle oder zeigt falsche Nachrichtenzeiten an.";
+"remoteNodes.status.clockBehind" = "Die Uhr dieses Knotens geht %@ hinter deinem Funkgerät. Ein Knoten mit ungenauer Uhr ignoriert unter Umständen Befehle oder zeigt falsche Nachrichtenzeiten an.";
+
+/* Location: RepeaterStatusView.swift - Owner info section label */
+"remoteNodes.status.ownerInfo" = "Kontaktinfo";
+
+/* Location: RepeaterStatusView.swift - No owner info empty state */
+"remoteNodes.status.noOwnerInfo" = "Keine Kontaktinfo";
+
+/* Location: RepeaterStatusView.swift - Owner info section footer */
+"remoteNodes.status.ownerInfoFooter" = "Kontaktinfo und Firmware-Version.";
+
+/* Location: RepeaterStatusView.swift - Status section header */
+"remoteNodes.status.statusSection" = "Status";
+
+/* Location: RepeaterStatusView.swift - Battery label */
+"remoteNodes.status.battery" = "Akku";
+
+/* Location: RepeaterStatusView.swift - Uptime label */
+"remoteNodes.status.uptime" = "Betriebszeit";
+
+/* Location: SharedNodeViews.swift - Airtime label */
+"remoteNodes.status.airtime" = "Sendezeit";
+
+/* Location: SharedNodeViews.swift - Airtime percent label */
+"remoteNodes.status.airtimePercent" = "Sendezeit %%";
+
+/* Location: RepeaterStatusView.swift - Last RSSI label */
+"remoteNodes.status.lastRssi" = "Letzter RSSI";
+
+/* Location: RepeaterStatusView.swift - Last SNR label */
+"remoteNodes.status.lastSnr" = "Letzter SNR";
+
+/* Location: RepeaterStatusView.swift - Noise floor label */
+"remoteNodes.status.noiseFloor" = "Grundrauschen";
+
+/* Location: SharedNodeStatusViews.swift - Section header grouping the packet-count rows */
+"remoteNodes.status.packets" = "Pakete";
+/* Location: SharedNodeStatusViews.swift - Total sent packets label, under the Packets group header */
+"remoteNodes.status.packetsSent" = "Gesendet";
+
+/* Location: SharedNodeStatusViews.swift - Total received packets label, under the Packets group header */
+"remoteNodes.status.packetsReceived" = "Empfangen";
+
+/* Location: SharedNodeStatusViews.swift - Receive errors label, under the Packets group header */
+"remoteNodes.status.receiveErrors" = "Fehler";
+"remoteNodes.status.sentDirect" = "Gesendet (Direkt)";
+"remoteNodes.status.sentFlood" = "Gesendet (Flood)";
+"remoteNodes.status.receivedDirect" = "Empfangen (Direkt)";
+"remoteNodes.status.receivedFlood" = "Empfangen (Flood)";
+"remoteNodes.status.duplicates" = "Duplikate";
+
+/* Location: RepeaterStatusView.swift - Neighbors section label */
+"remoteNodes.status.neighbors" = "Nachbarn";
+
+/* Location: RepeaterStatusView.swift - No neighbors empty state */
+"remoteNodes.status.noNeighbors" = "Keine Nachbarn entdeckt";
+
+/* Location: RepeaterSectionPages.swift - Neighbours page heading over the neighbours the repeater heard since the latest discovery started */
+"remoteNodes.status.heardThisScan" = "In diesem Scan gehört";
+
+/* Location: RepeaterSectionPages.swift - Neighbours page heading over the (faded) neighbours the repeater heard before the latest discovery */
+"remoteNodes.status.heardBefore" = "Vorher gehört";
+
+/* Location: RepeaterStatusView.swift - Battery curve section label */
+"remoteNodes.status.batteryCurve" = "Akkukurve";
+
+/* Location: RepeaterStatusView.swift - Telemetry section label */
+"remoteNodes.status.telemetry" = "Telemetrie";
+
+/* Location: RepeaterStatusView.swift - No sensor data empty state */
+"remoteNodes.status.noSensorData" = "Keine Sensordaten";
+
+/* Location: RepeaterStatusView.swift - No telemetry data empty state */
+"remoteNodes.status.noTelemetryData" = "Keine Telemetriedaten";
+
+/* Location: RepeaterStatusView.swift - Unknown neighbor name */
+"remoteNodes.status.unknown" = "Unbekannt";
+
+/* Location: RepeaterStatusView.swift - Seconds ago format */
+"remoteNodes.status.secondsAgo" = "vor %ds";
+
+/* Location: RepeaterStatusView.swift - Minutes ago format */
+"remoteNodes.status.minutesAgo" = "vor %dm";
+
+/* Location: RepeaterStatusView.swift - Hours ago format */
+"remoteNodes.status.hoursAgo" = "vor %dh";
+
+/* Location: RepeaterStatusView.swift - SNR display format */
+"remoteNodes.status.snrFormat" = "SNR %@dB";
+
+/* Location: RepeaterStatusView.swift - Accessibility label for possible match indicator */
+"remoteNodes.status.possibleMatch" = "Möglicher Treffer, abgeglichen über kurzes Präfix";
+
+/* Location: RepeaterStatusView.swift - Title for possible match explanation popover */
+"remoteNodes.status.possibleMatchTitle" = "Möglicher Treffer";
+
+/* Location: RepeaterStatusView.swift - Explanation of what a possible match means */
+"remoteNodes.status.possibleMatchExplanation" = "Mehrere Knoten teilen sich dieses Präfix. Der angezeigte Name ist möglicherweise nicht korrekt.";
+
+// MARK: - Repeater Status ViewModel Messages
+
+/* Location: RepeaterStatusViewModel.swift - Request timed out */
+"remoteNodes.status.requestTimedOut" = "Anfrage-Zeitüberschreitung";
+"remoteNodes.status.telemetryTimedOut" = "Zeitüberschreitung oder Kontakt hat Telemetrie deaktiviert";
+
+/* Location: RepeaterStatusViewModel.swift - Uptime 1 day format */
+"remoteNodes.status.uptime1Day" = "1 Tag %dh %dm";
+
+/* Location: RepeaterStatusViewModel.swift - Uptime multiple days format */
+"remoteNodes.status.uptimeDays" = "%d Tage %dh %dm";
+
+/* Location: RepeaterStatusViewModel.swift - Uptime hours format */
+"remoteNodes.status.uptimeHours" = "%dh %dm";
+
+/* Location: RepeaterStatusViewModel.swift - Uptime minutes format */
+"remoteNodes.status.uptimeMinutes" = "%dm";
+
+/* Location: RepeaterStatusViewModel.swift - Failed to load OCV settings */
+"remoteNodes.status.ocvLoadFailed" = "Akkukurven-Einstellungen konnten nicht geladen werden";
+
+/* Location: RepeaterStatusViewModel.swift - Cannot save OCV error */
+"remoteNodes.status.ocvSaveNoContact" = "Speichern nicht möglich: Kontakt nicht gefunden";
+
+/* Location: RepeaterStatusViewModel.swift - OCV save failed */
+"remoteNodes.status.ocvSaveFailed" = "Speichern fehlgeschlagen: %@";
+
+/* Location: RepeaterStatusView.swift - Channel header for grouped telemetry */
+"remoteNodes.status.channel" = "Kanal %d";
+
+/* Location: RepeaterStatusView.swift - Telemetry section footer */
+"remoteNodes.status.telemetryFooter" = "Sensormesswerte wie Temperatur, Luftfeuchtigkeit und Spannung.";
+
+/* Location: RepeaterStatusView.swift - Neighbors section footer */
+"remoteNodes.status.neighborsFooter" = "Andere von diesem Repeater entdeckte Knoten und ihre Signalqualität.";
+
+/* Location: RepeaterStatusView.swift - Discover neighbours button label */
+"remoteNodes.status.discoverNeighbors" = "Nachbarn entdecken";
+/* Location: RepeaterStatusView.swift - Discovery in progress with countdown */
+"remoteNodes.status.discoveringSeconds" = "Suche... %ds";
+
+/* Location: RepeaterStatusView.swift - Battery curve section footer */
+"remoteNodes.status.batteryCurveFooter" = "Spannungs-Prozent-Zuordnung zur Schätzung des Batteriestands.";
+
+/* Location: NodeTelemetryView.swift - Refresh button accessibility label */
+"remoteNodes.status.refresh" = "Aktualisieren";
+
+/* Location: SharedNodeStatusViews.swift - Per-section reload button accessibility label for the status counters */
+"remoteNodes.status.accessibility.reloadStatus" = "Status neu laden";
+
+/* Location: SharedNodeStatusViews.swift - Per-section reload button accessibility label for telemetry */
+"remoteNodes.status.accessibility.reloadTelemetry" = "Telemetrie neu laden";
+
+/* Location: RepeaterStatusContent.swift - Per-section reload button accessibility label for owner info */
+"remoteNodes.status.accessibility.reloadOwnerInfo" = "Kontaktinfo neu laden";
+
+/* Location: RepeaterStatusContent.swift - Per-section reload button accessibility label for neighbors */
+"remoteNodes.status.accessibility.reloadNeighbors" = "Nachbarn neu laden";
+
+// MARK: - Neighbors Map
+
+/* Location: RepeaterStatusContent.swift - View on Map button in the Neighbors section */
+"remoteNodes.status.viewOnMap" = "Auf Karte anzeigen";
+
+/* Location: RepeaterStatusContent.swift - Accessibility label for the View on Map button */
+"remoteNodes.status.accessibility.viewNeighborsOnMap" = "Nachbarn auf Karte anzeigen";
+
+/* Location: NeighborSNRMapView.swift - Navigation title for the neighbors map */
+"remoteNodes.status.neighborsMapTitle" = "Nachbarkarte";
+
+/* Location: NeighborSNRMapView.swift - Map pill and pushed-list title counting neighbors that could not be plotted - %d is the count */
+"remoteNodes.status.neighborsNotShown" = "%d Nachbarn nicht angezeigt";
+
+/* Location: NeighborSNRMapBuilder.swift - Unit suffix for the SNR value in the map midpoint badge, matching the "<distance> · <snr> dB" form */
+"remoteNodes.status.snrBadgeUnit" = "dB";
+
+// MARK: - Location Map
+
+/* Location: SharedNodeStatusViews.swift - Accessibility label for the location "View on Map" affordance */
+"remoteNodes.status.accessibility.viewLocationOnMap" = "Standort auf Karte anzeigen";
+
+/* Location: NodeStatusRoute.swift - Navigation title for the live location map */
+"remoteNodes.status.locationMapTitle" = "Standort";
+
+// MARK: - History
+
+/* Location: RepeaterStatusViewModel.swift - Delta timestamp (minutes ago) */
+"remoteNodes.history.vsMinutesAgo" = "Seit letztem Besuch (vor %d Min.)";
+
+/* Location: RepeaterStatusViewModel.swift - Delta timestamp (hours ago) */
+"remoteNodes.history.vsHoursAgo" = "Seit letztem Besuch (vor %d Std.)";
+
+/* Location: RepeaterStatusViewModel.swift - Delta timestamp (date) */
+"remoteNodes.history.vsDate" = "Seit %@";
+
+/* Location: NodeStatusHistoryView.swift - History navigation title */
+"remoteNodes.history.title" = "Verlauf";
+
+/* Location: NeighborRow - New neighbor badge */
+"remoteNodes.history.new" = "Neu";
+
+/* Location: NeighborRow - Not seen status */
+"remoteNodes.history.notSeen" = "Nicht gesehen";
+
+/* Location: NodeStatusHistoryView.swift - Empty state message */
+"remoteNodes.history.checkBack" = "Ein Snapshot wird höchstens alle 15 Minuten aufgezeichnet. Schau nach deinem nächsten Besuch vorbei, um Trends zu sehen.";
+
+/* Location: NodeStatusHistoryView.swift - Time range picker */
+"remoteNodes.history.week" = "1W";
+
+/* Location: NodeStatusHistoryView.swift - Time range picker */
+"remoteNodes.history.month" = "1M";
+
+/* Location: NodeStatusHistoryView.swift - Time range picker */
+"remoteNodes.history.threeMonths" = "3M";
+
+/* Location: NodeStatusHistoryView.swift - Time range picker */
+"remoteNodes.history.all" = "Alle";
+
+/* Location: NodeStatusHistoryView.swift - Battery chart title */
+"remoteNodes.history.battery" = "Akku";
+
+/* Location: NodeStatusHistoryView.swift - SNR chart title */
+"remoteNodes.history.snr" = "SNR";
+
+/* Location: NodeStatusHistoryView.swift - RSSI chart title */
+"remoteNodes.history.rssi" = "RSSI";
+
+/* Location: NodeStatusHistoryView.swift - Noise floor chart title */
+"remoteNodes.history.noiseFloor" = "Grundrauschen";
+
+/* Location: NodeStatusHistoryView.swift - Neighbor count chart title */
+/* Location: RadioMetricCharts.swift - Sent packets chart title, under the Packets group header */
+"remoteNodes.history.packetsSent" = "Gesendet";
+
+/* Location: RadioMetricCharts.swift - Received packets chart title, under the Packets group header */
+"remoteNodes.history.packetsReceived" = "Empfangen";
+
+/* Location: RadioMetricCharts.swift - Receive errors chart title, under the Packets group header */
+"remoteNodes.history.receiveErrors" = "Fehler";
+"remoteNodes.history.direct" = "Direkt";
+"remoteNodes.history.flood" = "Flood";
+"remoteNodes.history.duplicates" = "Duplikate";
+/* Location: RadioMetricCharts.swift - Section header grouping the packet-count charts */
+"remoteNodes.history.packets" = "Pakete";
+
+/* Location: NeighborHistoryView.swift - Active status */
+/* Location: NeighborHistoryView.swift - Last seen status */
+/* Location: NeighborHistoryView.swift - Neighbors section title */
+/* Location: StatusDeltaView.swift - Accessibility: metric increased */
+"remoteNodes.history.a11y.increased" = "gestiegen";
+
+/* Location: StatusDeltaView.swift - Accessibility: metric decreased */
+"remoteNodes.history.a11y.decreased" = "gesunken";
+
+/* Location: StatusDeltaView.swift - Accessibility: metric improved */
+"remoteNodes.history.a11y.improved" = "verbessert";
+
+/* Location: StatusDeltaView.swift - Accessibility: metric degraded */
+"remoteNodes.history.a11y.degraded" = "verschlechtert";
+
+/* Location: StatusDeltaView.swift - Accessibility: delta description format (quality, direction, value, unit) */
+"remoteNodes.history.a11y.deltaDescription" = "%1$@, %2$@ um %3$@%4$@";
+
+/* Location: HistoryTimeRangePicker.swift - Accessibility label for time range picker */
+"remoteNodes.history.timeRange" = "Zeitraum";
+
+/* Location: NodeStatusHistoryView.swift - Footer about data retention */
+"remoteNodes.history.retentionNotice" = "Verlaufsdaten, die älter als ein Jahr sind, werden automatisch entfernt.";
+
+/* Location: TelemetryHistoryOverviewView.swift - Purpose: Radio section header */
+"remoteNodes.history.radioSection" = "Funk";
+
+/* Location: TelemetryHistoryOverviewView.swift - Purpose: Sensors section header */
+"remoteNodes.history.sensorsSection" = "Sensoren";
+
+/* Location: TelemetryHistoryOverviewView.swift - Purpose: Neighbors section header */
+"remoteNodes.history.neighborsSection" = "Nachbarn";
+
+/* Location: TelemetryHistoryOverviewView.swift - Purpose: Location section header */
+"remoteNodes.history.locationSection" = "Standort";
+
+/* Location: LocationHistorySection.swift - Purpose: Header for the location report list beneath the map preview */
+"remoteNodes.history.locationReportsHeader" = "Standortverlauf";
+
+/* Location: TelemetryHistoryOverviewView.swift - Purpose: Empty state when no snapshots exist */
+"remoteNodes.history.noSnapshotsMessage" = "Verbinde dich mindestens einmal mit diesem Knoten, um den Verlauf zu sehen.";
+
+/* Location: TelemetryHistoryOverviewView.swift - Purpose: Empty state when section data not captured */
+"remoteNodes.history.sectionNotCaptured" = "Diese Daten werden erfasst, wenn du den Bereich %@ während einer Live-Telemetrie-Sitzung ansiehst.";
+
+/* Location: TelemetryHistoryOverviewView.swift - Purpose: Navigation title */
+"remoteNodes.history.overviewTitle" = "Telemetrie-Verlauf";
+
+// MARK: - Room Conversation
+
+/* Location: RoomConversationView.swift - Disconnected status */
+"remoteNodes.room.disconnected" = "Getrennt";
+
+/* Location: RoomConversationView.swift - Empty state title */
+"remoteNodes.room.noMessagesYet" = "Noch keine öffentlichen Nachrichten";
+
+/* Location: RoomConversationView.swift - Empty state hint */
+"remoteNodes.room.beFirstToPost" = "Sei der Erste, der postet";
+
+/* Location: RoomConversationView.swift - Input placeholder */
+"remoteNodes.room.publicMessage" = "Öffentliche Nachricht";
+
+/* Location: RoomConversationView.swift - Read-only banner */
+"remoteNodes.room.viewOnlyBanner" = "Nur Ansicht - als Mitglied beitreten um zu posten";
+
+/* Location: RoomConversationView.swift - Hint text for read-only banner */
+"remoteNodes.room.viewOnlyHint" = "Zum Anmelden tippen";
+
+/* Location: RoomConversationView.swift - Room info sheet title */
+"remoteNodes.room.infoTitle" = "Rauminformationen";
+
+/* Location: RoomConversationView.swift - Details section header */
+"remoteNodes.room.details" = "Details";
+
+/* Location: RoomConversationView.swift - Permission label */
+"remoteNodes.room.permission" = "Berechtigung";
+
+/* Location: RoomInfoSheet.swift, RoomConversationView.swift - Guest permission level */
+"remoteNodes.permission.guest" = "Gast";
+
+/* Location: RoomInfoSheet.swift, RoomConversationView.swift - Member (read-write) permission level */
+"remoteNodes.permission.member" = "Mitglied";
+
+/* Location: RoomInfoSheet.swift, RoomConversationView.swift - Admin permission level */
+"remoteNodes.permission.admin" = "Administrator";
+
+/* Location: RoomConversationView.swift - Status label */
+"remoteNodes.room.status" = "Status";
+
+/* Location: RoomConversationView.swift - Connected status */
+"remoteNodes.room.connected" = "Verbunden";
+
+/* Location: RoomConversationView.swift - Activity section header */
+"remoteNodes.room.activity" = "Aktivität";
+
+/* Location: RoomConversationView.swift - Last connected label */
+"remoteNodes.room.lastConnected" = "Zuletzt verbunden";
+
+/* Location: RoomInfoSheet.swift - Confirmation message before clearing a room's stored messages */
+"remoteNodes.room.clearMessagesConfirmMessage" = "Alle Nachrichten in diesem Raum werden von diesem Gerät gelöscht. Der Raumserver behält seinen eigenen Verlauf.";
+
+/* Location: RoomConversationView.swift - Identification section header */
+"remoteNodes.room.identification" = "Identifikation";
+
+/* Location: RoomConversationView.swift - Public key label */
+"remoteNodes.room.publicKey" = "Öffentlicher Schlüssel";
+
+/* Location: RoomConversationView.swift - Disconnected banner text */
+"remoteNodes.room.disconnectedBanner" = "Getrennt";
+
+/* Location: RoomConversationView.swift - Accessibility hint for disconnected banner */
+"remoteNodes.room.disconnectedHint" = "Zum Verbinden tippen";
+
+/* Location: RoomConversationView.swift - VoiceOver announcement when room reconnects */
+"remoteNodes.room.reconnected" = "Raum wieder verbunden";
+
+// MARK: - Room Message Bubble
+
+/* Location: RoomMessageBubble.swift - Accessibility hint for retry button */
+"remoteNodes.room.message.retryHint" = "Doppeltippen, um diese Nachricht erneut zu senden";
+
+/* Location: RoomMessageBubble.swift - Accessibility label for failed message status */
+"remoteNodes.room.message.status.failedLabel" = "Nachricht konnte nicht gesendet werden. Doppeltippe auf die Wiederholen-Taste, um erneut zu senden.";
+
+/* Location: RoomMessageBubble.swift - Accessibility label for sending message status */
+"remoteNodes.room.message.status.sendingLabel" = "Nachricht wird gesendet";
+
+/* Location: RoomMessageBubble.swift - Accessibility label for delivered message status */
+"remoteNodes.room.message.status.deliveredLabel" = "Nachricht zugestellt";
+
+// MARK: - Room Status
+
+/* Location: RoomStatusView.swift - Navigation title */
+"remoteNodes.roomStatus.title" = "Raumstatus";
+
+/* Location: RoomStatusView.swift - Posts received label */
+"remoteNodes.roomStatus.postsReceived" = "Empfangene Beiträge";
+
+/* Location: RoomStatusView.swift - Posts pushed label */
+"remoteNodes.roomStatus.postsPushed" = "Gesendete Beiträge";
+
+// MARK: - Room Settings
+
+/* Location: RoomSettingsView.swift - Navigation title */
+"remoteNodes.roomSettings.title" = "Raumeinstellungen";
+
+/* Location: RoomSettingsView.swift - Room settings section header */
+"remoteNodes.roomSettings.roomSettingsSection" = "Raumeinstellungen";
+
+/* Location: RoomSettingsView.swift - Room settings section footer */
+"remoteNodes.roomSettings.roomSettingsFooter" = "Gastpasswort und schreibgeschützter Zugriff.";
+
+/* Location: RoomSettingsView.swift - Guest password label */
+"remoteNodes.roomSettings.guestPassword" = "Gastpasswort";
+
+/* Location: RoomSettingsView.swift - Allow read-only toggle label */
+"remoteNodes.roomSettings.allowReadOnly" = "Nur-Lesen zulassen";
+
+/* Location: RoomSettingsView.swift - Allow read-only footer */
+"remoteNodes.roomSettings.allowReadOnlyFooter" = "Benutzern ohne Passwort erlauben, sich im schreibgeschützten Modus zu verbinden.";
+
+/* Location: RoomSettingsView.swift - Apply room settings button */
+"remoteNodes.roomSettings.applyRoomSettings" = "Raumeinstellungen anwenden";
+
+/* Location: RoomSettingsView.swift - Room behavior section footer */
+"remoteNodes.roomSettings.behaviorFooter" = "Ankündigungsintervalle und Flood-Sprünge.";
+
+/* Location: RoomSettingsView.swift - Identity section footer */
+/* Location: RoomSettingsView.swift - Reboot confirmation title */
+"remoteNodes.roomSettings.rebootConfirmTitle" = "Raum neu starten?";
+
+/* Location: RoomSettingsView.swift - Reboot confirmation message */
+"remoteNodes.roomSettings.rebootMessage" = "Der Raum wird neu gestartet und ist vorübergehend nicht verfügbar.";
+
+/* Location: RoomSettingsView.swift - Radio restart warning */
+"remoteNodes.roomSettings.radioRestartWarning" = "Diese Änderungen werden erst nach einem Neustart des Raums wirksam";
+
+/* Location: RoomSettingsView.swift - No service error */
+/* Location: RoomSettingsView.swift - Not connected error */
+/* Location: RoomSettingsView.swift - Clock ahead error */
+// MARK: - Room Info Sheet (additions)
+
+/* Location: RoomInfoSheet.swift - Telemetry button */
+/* Location: RoomInfoSheet.swift - Management button */
+// MARK: - Node CLI
+
+/* Location: NodeCliView.swift - Banner shown when connected to a node - %@ is node name */
+"remoteNodes.nodeCli.bannerConnected" = "Verbunden mit %@";
+
+/* Location: NodeCliView.swift - Hint shown below connected banner */
+"remoteNodes.nodeCli.bannerHint" = "Gib „help“ ein, um verfügbare Befehle anzuzeigen.";
+
+/* Location: NodeCliViewModel.swift - Toast after reboot command succeeds */
+"remoteNodes.nodeCli.rebootSent" = "Neustart-Befehl gesendet";
+
+/* Location: NodeCliViewModel.swift - Toast after command is cancelled */
+"remoteNodes.nodeCli.cancelled" = "Befehl abgebrochen";
+
+/* Location: NodeCliViewModel.swift - Header line in help output */
+"remoteNodes.nodeCli.helpHeader" = "Verfügbare Befehle:";
+
+/* Location: NodeCliViewModel.swift - Help entry for 'help' command */
+"remoteNodes.nodeCli.helpHelp" = "  help\n    Diese Hilfe anzeigen";
+
+/* Location: NodeCliViewModel.swift - Help entry for 'clear' command */
+"remoteNodes.nodeCli.helpClear" = "  clear\n    Das Terminal leeren";
+
+/* Location: NodeCliViewModel.swift - Help entry for 'clear stats' command */
+"remoteNodes.nodeCli.helpClearStats" = "  clear stats\n    Knotenstatistiken zurücksetzen";
+
+/* Location: NodeCliViewModel.swift - Help entry for 'reboot' command */
+"remoteNodes.nodeCli.helpReboot" = "  reboot\n    Diesen Knoten neu starten";
+
+/* Location: NodeCliViewModel.swift - Passthrough note at end of help output */
+"remoteNodes.nodeCli.helpPassthrough" = "Jede andere Eingabe wird an den Knoten gesendet.";
+
+// MARK: - Shared
+
+/* Location: Multiple files - Cancel button */
+"remoteNodes.cancel" = "Abbrechen";
+
+/* Location: Multiple files - Done button */
+"remoteNodes.done" = "Fertig";
+
+/* Location: Multiple files - Name label */
+"remoteNodes.name" = "Name";
+
+/* Telemetry sensor type display labels */
+"remoteNodes.status.sensor.digitalInput" = "Digitaler Eingang";
+"remoteNodes.status.sensor.digitalOutput" = "Digitaler Ausgang";
+"remoteNodes.status.sensor.analogInput" = "Analoger Eingang";
+"remoteNodes.status.sensor.analogOutput" = "Analoger Ausgang";
+"remoteNodes.status.sensor.genericSensor" = "Sensor";
+"remoteNodes.status.sensor.illuminance" = "Beleuchtungsstärke";
+"remoteNodes.status.sensor.presence" = "Präsenz";
+"remoteNodes.status.sensor.temperature" = "Temperatur";
+"remoteNodes.status.sensor.mcuTemperature" = "MCU-Temperatur";
+"remoteNodes.status.sensor.humidity" = "Luftfeuchtigkeit";
+"remoteNodes.status.sensor.accelerometer" = "Beschleunigungssensor";
+"remoteNodes.status.sensor.barometer" = "Druck";
+"remoteNodes.status.sensor.voltage" = "Spannung";
+"remoteNodes.status.sensor.current" = "Strom";
+"remoteNodes.status.sensor.frequency" = "Frequenz";
+"remoteNodes.status.sensor.percentage" = "Prozentsatz";
+"remoteNodes.status.sensor.altitude" = "Höhe";
+"remoteNodes.status.sensor.load" = "Last";
+"remoteNodes.status.sensor.concentration" = "Konzentration";
+"remoteNodes.status.sensor.power" = "Leistung";
+"remoteNodes.status.sensor.distance" = "Distanz";
+"remoteNodes.status.sensor.energy" = "Energie";
+"remoteNodes.status.sensor.direction" = "Richtung";
+"remoteNodes.status.sensor.unixTime" = "Zeit";
+"remoteNodes.status.sensor.gyrometer" = "Gyrometer";
+"remoteNodes.status.sensor.colour" = "Farbe";
+"remoteNodes.status.sensor.gps" = "GPS";
+"remoteNodes.status.sensor.switchValue" = "Schalter";
+
+
+/* Location: NeighborRow.swift - Days ago format */
+"remoteNodes.status.daysAgo" = "vor %d T";
+
+/* Location: NeighborRow.swift - Shown instead of an impossible last-heard age */
+"remoteNodes.status.heardTimeUnknown" = "Zeit unbekannt";
+
+/* Location: NeighborRow.swift - Explains why the last-heard time is unknown */
+"remoteNodes.status.heardTimeUnknownExplanation" = "Der Repeater hat für diesen Nachbarn eine unmögliche Zeit gemeldet, meist weil seine Uhr erst gestellt wurde, nachdem der Nachbar gehört wurde. Synchronisiere die Uhr des Repeaters und suche erneut nach Nachbarn.";
+
+/* Location: SharedNodeSettingsViews.swift - Button that sets the node location to its latest telemetry GPS fix */
+"remoteNodes.settings.useTelemetryLocation" = "Telemetrie-Standort verwenden";
+
+/* Location: SharedNodeStatusViews.swift - Context menu item on a telemetry GPS row */
+"remoteNodes.status.copyCoordinates" = "Koordinaten kopieren";
+
+/* Location: NodeAccessListView.swift - Access list screen title and link */
+"remoteNodes.acl.title" = "Zugriffsliste";
+
+/* Location: NodeAccessListView.swift - Footer under the access list link in node settings */
+"remoteNodes.acl.linkFooter" = "Sieh dir an, welche Schlüssel sich an diesem Knoten anmelden können, und ändere ihre Rollen.";
+
+/* Location: NodeAccessListView.swift - Add entry button and sheet title */
+"remoteNodes.acl.add" = "Eintrag hinzufügen";
+
+/* Location: NodeAccessListView.swift - Footer explaining which contacts can be added */
+"remoteNodes.acl.addFooter" = "Nur gespeicherte Chat-Kontakte können hinzugefügt werden, da der Knoten ihren vollständigen öffentlichen Schlüssel benötigt.";
+
+/* Location: NodeAccessListView.swift - Accessibility hint on the role menu */
+"remoteNodes.acl.changeRoleHint" = "Ändert die Rolle dieses Eintrags";
+
+/* Location: NodeAccessListView.swift - Context menu action to copy the key */
+"remoteNodes.acl.copyKey" = "Schlüssel kopieren";
+
+/* Location: NodeAccessListView.swift - Empty state title when radio is disconnected */
+"remoteNodes.acl.disconnected.title" = "Nicht verbunden";
+
+/* Location: NodeAccessListView.swift - Empty state description when radio is disconnected */
+"remoteNodes.acl.disconnected.description" = "Verbinde dich mit deinem Funkgerät, um die Zugriffsliste dieses Knotens zu laden.";
+
+/* Location: NodeAccessListView.swift - Empty list title */
+"remoteNodes.acl.empty.title" = "Keine Einträge";
+
+/* Location: NodeAccessListView.swift - Empty list description */
+"remoteNodes.acl.empty.description" = "Die Zugriffsliste dieses Knotens ist leer.";
+
+/* Location: NodeAccessListView.swift - Error when the node rejects a setperm command; %@ is the node's reply */
+"remoteNodes.acl.error.rejected" = "Der Knoten hat die Änderung abgelehnt: %@";
+
+/* Location: NodeAccessListView.swift - Footer under the entry list */
+"remoteNodes.acl.footer" = "Einträge zeigen ein 6-Byte-Schlüsselpräfix. Eine Rolle lässt sich nur ändern, wenn der Schlüssel zu einem gespeicherten Kontakt oder entdeckten Knoten passt. Beim Entfernen wird die gespeicherte Rolle gelöscht; der Knoten erhält dann Gastzugriff.";
+
+/* Location: NodeAccessListView.swift - Title when loading the access list fails */
+"remoteNodes.acl.loadFailed.title" = "Zugriffsliste konnte nicht geladen werden";
+
+/* Location: NodeAccessListView.swift - Add sheet empty state title */
+"remoteNodes.acl.noContacts.title" = "Keine Kontakte zum Hinzufügen";
+
+/* Location: NodeAccessListView.swift - Add sheet empty state description */
+"remoteNodes.acl.noContacts.description" = "Alle gespeicherten Chat-Kontakte sind bereits auf der Liste, oder keiner passt zu deiner Suche.";
+
+/* Location: NodeAccessListView.swift - Remove entry action */
+"remoteNodes.acl.remove" = "Entfernen";
+
+/* Location: NodeAccessListView.swift - Remove confirmation title */
+"remoteNodes.acl.removeConfirm.title" = "Eintrag entfernen?";
+
+/* Location: NodeAccessListView.swift - Remove confirmation message; %@ is the node name */
+"remoteNodes.acl.removeConfirm.message" = "%@ verliert seine gespeicherte Rolle auf diesem Knoten und erhält Gastzugriff.";
+
+/* Location: NodeAccessListView.swift - Role picker label */
+"remoteNodes.acl.role" = "Rolle";
+
+/* Location: NodeAccessListView.swift - Guest role */
+"remoteNodes.acl.role.guest" = "Gast";
+
+/* Location: NodeAccessListView.swift - Read-only role */
+"remoteNodes.acl.role.readOnly" = "Nur lesen";
+
+/* Location: NodeAccessListView.swift - Read-write role */
+"remoteNodes.acl.role.readWrite" = "Lesen/Schreiben";
+
+/* Location: NodeAccessListView.swift - Admin role */
+"remoteNodes.acl.role.admin" = "Admin";
+
+/* Location: NodeAccessListView.swift - Name shown for an unresolved key prefix */
+"remoteNodes.acl.unknownNode" = "Unbekannter Knoten";
+
+/* Location: NodeAccessListView.swift - Badge on the entry for the connected radio */
+"remoteNodes.acl.you" = "Du";
+
+/* Location: NodeTelemetrySummarySection.swift - Section title */
+"remoteNodes.summary.title" = "Min. / Mittel / Max.";
+
+/* Location: NodeTelemetrySummarySection.swift - Time range picker label */
+"remoteNodes.summary.range" = "Zeitraum";
+
+/* Location: NodeTelemetrySummarySection.swift - 1 hour range */
+"remoteNodes.summary.range.hour" = "1 Stunde";
+
+/* Location: NodeTelemetrySummarySection.swift - 24 hour range */
+"remoteNodes.summary.range.day" = "24 Stunden";
+
+/* Location: NodeTelemetrySummarySection.swift - 7 day range */
+"remoteNodes.summary.range.week" = "7 Tage";
+
+/* Location: NodeTelemetrySummarySection.swift - No entries returned */
+"remoteNodes.summary.noData" = "Keine Zusammenfassung für diesen Zeitraum.";
+
+/* Location: NodeTelemetrySummarySection.swift - Shown when disconnected */
+"remoteNodes.summary.disconnected" = "Verbinde dich mit deinem Funkgerät, um eine Zusammenfassung abzurufen.";
+
+/* Location: NodeTelemetrySummarySection.swift - Accessibility label for reload button */
+"remoteNodes.summary.reload" = "Zusammenfassung neu laden";
+
+/* Location: NodeTelemetrySummarySection.swift - Section footer */
+"remoteNodes.summary.footer" = "Niedrigste, mittlere und höchste Sensorwerte, die der Knoten aufgezeichnet hat. Nur Knoten mit Sensorverlauf (z. B. Sensor-Firmware) antworten, und sie setzen evtl. voraus, dass du auf ihrer Zugriffsliste stehst.";
+
+/* Location: NodeTelemetrySummarySection.swift - Shown when the request times out */
+"remoteNodes.summary.timedOut" = "Keine Antwort. Dieser Knoten zeichnet möglicherweise keinen Sensorverlauf auf.";
+
+/* Location: NodeTelemetrySummarySection.swift - Minimum column */
+"remoteNodes.summary.min" = "Min.";
+
+/* Location: NodeTelemetrySummarySection.swift - Average column */
+"remoteNodes.summary.avg" = "Mittel";
+
+/* Location: NodeTelemetrySummarySection.swift - Maximum column */
+"remoteNodes.summary.max" = "Max.";
+
+/* Location: NodeAccessListView.swift - Confirmation title before adding an entry with the admin role */
+"remoteNodes.acl.adminConfirm.title" = "Admin-Zugriff gewähren?";
+
+/* Location: NodeAccessListView.swift - Confirmation message before adding an admin entry; %@ is the contact name */
+"remoteNodes.acl.adminConfirm.message" = "%@ erhält die volle Kontrolle über diesen Knoten, einschließlich der Einstellungen und der Zugriffsliste.";
+
+/* Location: NodeAccessListView.swift - Button confirming that an entry is added with the admin role */
+"remoteNodes.acl.adminConfirm.grant" = "Admin gewähren";
+
+/* Location: RepeaterSettingsView.swift - Confirmation title before deleting a region from the repeater */
+"remoteNodes.settings.regions.deleteConfirm.title" = "Region löschen?";
+
+/* Location: RepeaterSettingsView.swift - Confirmation message before deleting a region; %@ is the region name */
+"remoteNodes.settings.regions.deleteConfirm.message" = "%@ wird von diesem Repeater gelöscht.";
+
+/* Location: RepeaterAddRegionSheet.swift - Purpose: Error when a new region was added to the repeater but could not be switched on for flood packets */
+"remoteNodes.settings.regions.addedFloodOff" = "Die Region wurde hinzugefügt, ist aber noch deaktiviert. Aktiviere sie in der Regionsliste, um Flood-Pakete zuzulassen.";
+
+/* Location: RepeaterAddRegionSheet.swift - Purpose: Validation error when a region name starts with $ (a private region, whose key a repeater can't be given) */
+"remoteNodes.settings.regions.privateName" = "Private Regionen (beginnend mit $) benötigen einen Schlüssel, und ein Repeater hat keinen Befehl, um ihn festzulegen.";
+
+/* Location: RepeaterAddRegionSheet.swift - Purpose: Error when the parent chosen for a new region is no longer on the repeater */
+"remoteNodes.settings.regions.parentMissing" = "Die übergeordnete Region ist nicht mehr auf dem Repeater. Lade die Regionen neu und versuche es erneut.";
+
+/* Location: RepeaterAddRegionSheet.swift - Purpose: Error when the repeater refuses a new region because its region table is full - %d is how many regions it holds */
+"remoteNodes.settings.regions.tableFull" = "Die Regionstabelle des Repeaters ist voll (%d Regionen). Entferne eine Region, bevor du eine weitere hinzufügst.";
+
+/* Location: RepeaterAddRegionSheet.swift - Purpose: Error when the repeater already has a region with the typed name, in the part of its list the app couldn't show */
+"remoteNodes.settings.regions.existsOnRepeater" = "Der Repeater hat bereits eine Region mit diesem Namen, im Teil seiner Liste, der nicht angezeigt wird.";
+
+/* Location: RepeaterAddRegionSheet.swift - Purpose: Error when the repeater, whose list could be read only in part, didn't confirm that the typed name is free */
+"remoteNodes.settings.regions.unconfirmedName" = "Beim Repeater konnte nicht geprüft werden, ob dieser Name schon verwendet wird. Versuche es erneut.";
+
+/* Location: RepeaterSettingsView.swift - Caption under the region list when the repeater's regions could be read only in part */
+"remoteNodes.settings.regions.partialList" = "Einige Regionen dieses Repeaters konnten nicht gelesen werden und werden daher nicht angezeigt. Neue Namen werden vor dem Hinzufügen beim Repeater geprüft.";
+
+/* Location: RepeaterSettingsView.swift - Caption under the region list while the regions after the first part are still being read from the repeater */
+"remoteNodes.settings.regions.readingMore" = "Die übrigen Regionen dieses Repeaters werden gelesen…";
+
+/* Node status - tile group header for RSSI, SNR and noise floor */
+"remoteNodes.status.signal" = "Signal";
+
+/* Node status - tile title for transmit airtime */
+"remoteNodes.status.txAirtime" = "Sendezeit (TX)";
+
+/* Node status - tile title for receive airtime */
+"remoteNodes.status.rxAirtime" = "Empfangszeit (RX)";
+
+/* Node status - airtime tile caption; %@ is a percentage such as 1.2% */
+"remoteNodes.status.ofUptime" = "%@ der Betriebszeit";
+
+/* Node status - packet tile caption; first %@ is the direct count, second the flood count */
+"remoteNodes.status.directFlood" = "Direkt %@ · Flood %@";
+
+/* Min/avg/max tile caption under the average value; first %@ is the minimum, second the maximum */
+"remoteNodes.summary.tileCaption" = "Mittel · Min. %@ · Max. %@";
+
+/* Node device info - device time tile caption when the node clock is ahead; %@ is a duration such as 5m */
+"remoteNodes.settings.clockAheadShort" = "%@ vor deinem Funkgerät";
+
+/* Node device info - device time tile caption when the node clock is behind; %@ is a duration such as 5m */
+"remoteNodes.settings.clockBehindShort" = "%@ hinter deinem Funkgerät";
+
+/* Node status - navigation card opening the charts of past status readings */
+"remoteNodes.status.links.statusHistory" = "Statusverlauf";
+
+/* Node status - navigation card opening the charts of past telemetry readings */
+"remoteNodes.status.links.telemetryHistory" = "Telemetrieverlauf";
+
+/* Node page header - info line fact for the node's battery; %@ is the charge, e.g. '87%' or '3.95 V' */
+"remoteNodes.header.battery" = "Akku %@";
+
+/* Location: RemoteNodes/Settings identity - Info popover beside the node's own name field */
+"remoteNodes.settings.nameInfo" = "Der Name, den dieser Knoten an alle im Mesh sendet. Um ihn nur auf diesem Telefon anders anzuzeigen, benenne ihn stattdessen auf seiner Knotenseite um.";
+
+/* Location: NodeStatusDashboard.swift - Purpose: Airtime card headline label, followed by the share of time the channel was busy (transmit + receive) since the node started */
+"remoteNodes.status.channelUse" = "Kanalauslastung";
+
+/* Location: NodeStatusDashboard.swift - Purpose: Signal card footer, how far the last packet's RSSI sat above the noise floor; %@ is a number of decibels */
+"remoteNodes.status.aboveNoise" = "%@ dB über dem Rauschen";
+
+/* Location: NodeStatusDashboard.swift - Purpose: Packets table column header for the total count (direct plus flood) */
+"remoteNodes.status.total" = "Gesamt";
+
+/* Location: NodeStatusDashboard.swift - Purpose: Info popover on the Signal card explaining what the readings measure */
+"remoteNodes.status.signalInfo" = "RSSI und SNR gelten für das letzte Paket, das dieser Knoten von irgendeinem Knoten empfangen hat, nicht für deine Verbindung zu ihm. Der Rauschpegel ist der Hintergrundpegel auf seinem Kanal.";
+
+/* Location: NodeStatusDashboard.swift - Purpose: Info popover on the Airtime card explaining the bars */
+"remoteNodes.status.airtimeInfo" = "Die Zeit, die das Funkgerät mit Senden und Empfangen verbracht hat, als Anteil an der Zeit seit dem Start.";
+
+/* Location: NodeStatusDashboard.swift - Purpose: Health card caption under uptime, the number of packets waiting to transmit; %@ is the count */
+"remoteNodes.status.txQueue" = "Sendewarteschlange %@";
+
+/* StatusDeltaView.swift - Accessibility: a status reading that hasn't changed since the last visit */
+"remoteNodes.history.a11y.unchanged" = "unverändert";
+
+/* Short title of the Discover Neighbors action tile under a repeater's header */
+"remoteNodes.status.discoverTile" = "Entdecken";
+
+/* Result line after a repeater neighbor discovery finishes; %d is the number of neighbors */
+"remoteNodes.status.discoveryResult" = "Gefundene Nachbarn: %d";
+
+/* VoiceOver hint for the Discover Neighbors action tile */
+"remoteNodes.status.accessibility.discoverHint" = "Lässt den Repeater eine Minute lang nach Knoten in der Nähe suchen und listet sie unter Nachbarn auf";
+
+/* VoiceOver hint for the Discover Neighbors tile while a discovery is running */
+"remoteNodes.status.accessibility.discoverRunningHint" = "Zeigt die bisher gefundenen Nachbarn";
+
+/* Location: RemoteNodeSectionPages.swift - Detail line on a repeater/room dashboard button whose section hasn't been read from the node yet */
+"remoteNodes.status.tile.notLoaded" = "Nicht geladen";
+
+/* Location: RemoteNodeSectionPages.swift - Detail line on the Neighbors dashboard button: %d is how many neighbours the node listed */
+"remoteNodes.status.tile.neighborCount" = "Gefunden: %d";
+
+/* Location: RemoteNodeSectionPages.swift - Detail line on the Telemetry dashboard button: %d is how many sensor readings the node reported */
+"remoteNodes.status.tile.sensorCount" = "Sensoren: %d";
+
+/* Location: RepeaterSettingsView.swift / RoomSettingsView.swift - Title of a logged-in repeater's or room's main page (status, actions and tools) */
+"remoteNodes.dashboard.title" = "Übersicht";
+
+/* Location: NodeAuthenticationSheet.swift - Toggle: log in to this repeater or room without a tap, using the saved password */
+"remoteNodes.auth.autoLogin" = "Automatisch anmelden";
+
+/* Location: NodeAuthenticationSheet.swift - VoiceOver hint for the automatic login toggle */
+"remoteNodes.auth.autoLogin.hint" = "Beim Öffnen dieses Knotens wird mit dem gespeicherten Passwort angemeldet";
+
+/* Cairn firmware sensor card: the radio's step count today */
+"remoteNodes.status.sensor.steps" = "Schritte heute";
+
+/* Cairn firmware sensor card: the radio's tilt, its value "10° / 0°" (pitch, then roll) */
+"remoteNodes.status.sensor.pitchRoll" = "Neigung / Rollen";
+
+/* Cairn firmware sensor card: whether the radio is moving */
+"remoteNodes.status.sensor.motion" = "Bewegung";
+
+/* Cairn firmware motion value: moving */
+"remoteNodes.status.sensor.moving" = "In Bewegung";
+
+/* Cairn firmware motion value: still */
+"remoteNodes.status.sensor.still" = "Ruhend";
+
+// MARK: - Repeater Controls
+
+/* Repeater Controls page */
+"remoteNodes.controls.title" = "Steuerung";
+
+/* Repeater Controls page */
+"remoteNodes.controls.subtitle" = "Leistung, Feinabstimmung und Befehle";
+
+/* Repeater Controls page */
+"remoteNodes.controls.tx.title" = "Sendeleistung";
+
+/* Repeater Controls page */
+"remoteNodes.controls.tx.apply" = "Auf %lld dBm setzen";
+
+/* Repeater Controls page */
+"remoteNodes.controls.tx.current" = "Aktuelle Leistung";
+
+/* Repeater Controls page */
+"remoteNodes.controls.tx.footer" = "Einstellung des Funkchips. Gilt sofort, ohne Neustart des Funkmoduls. Boards mit Verstärker (Heltec T096, V4) strahlen mehr ab, bis etwa 28 dBm. Mehr Leistung reicht weiter, verbraucht aber mehr Akku und Sendezeit. Halte die gesetzliche Grenze deiner Region ein.";
+
+/* Repeater Controls page: under the TX power setting on a node that reports an amplifier; %1$@ what it radiates at the antenna now, %2$@ the most, like '23 dBm' and '28 dBm' */
+"remoteNodes.controls.tx.amplifiedCaption" = "Funkeinstellung · jetzt %1$@ an der Antenne, bis zu %2$@";
+
+/* Repeater Controls page: as remoteNodes.controls.tx.amplifiedCaption while the new antenna figure is being read back; %@ the most it radiates, like '28 dBm' */
+"remoteNodes.controls.tx.amplifiedCaptionMax" = "Funkeinstellung · bis zu %@ an der Antenne";
+
+/* Repeater Controls page */
+"remoteNodes.controls.tuning.title" = "Feinabstimmung";
+
+/* Repeater Controls page */
+"remoteNodes.controls.tuning.footer" = "Diese Werte ändern, wie der Repeater den Kanal teilt. Belasse sie auf den Standardwerten, wenn dein Mesh nichts anderes braucht.";
+
+/* Location: RepeaterControlsPage.swift - Controls group title: delays and duty cycle */
+"remoteNodes.controls.group.timing.title" = "Timing & Sendezeit";
+
+/* Location: RepeaterControlsPage.swift - Controls group: what's in it, under its title */
+"remoteNodes.controls.group.timing.detail" = "Verzögerungen und Duty Cycle";
+
+/* Location: RepeaterControlsPage.swift - Controls group title: the receiver's settings */
+"remoteNodes.controls.group.receiver.title" = "Empfänger";
+
+/* Location: RepeaterControlsPage.swift - Controls group: what's in it, under its title */
+"remoteNodes.controls.group.receiver.detail" = "Verstärkung, Störschwelle und CAD";
+
+/* Location: RepeaterControlsPage.swift - Controls group title: flood and routing settings */
+"remoteNodes.controls.group.routing.title" = "Fluten & Routing";
+
+/* Location: RepeaterControlsPage.swift - Controls group: what's in it, under its title */
+"remoteNodes.controls.group.routing.detail" = "Wie weit Floods und Adverts reichen";
+
+/* Location: RepeaterControlsPage.swift - Controls group title: read-only access, GPS and power saving */
+"remoteNodes.controls.group.device.title" = "Zugang, GPS & Strom";
+
+/* Location: RepeaterControlsPage.swift - Controls group: what's in it, under its title */
+"remoteNodes.controls.group.device.detail" = "Nur-Lese-Zugang, GPS und Energiesparen";
+
+/* Location: RepeaterControlsPage.swift - Controls group title: the bridge to another network */
+"remoteNodes.controls.group.bridge.title" = "Bridge";
+
+/* Location: RepeaterControlsPage.swift - Controls group: what's in it, under its title */
+"remoteNodes.controls.group.bridge.detail" = "Die Bridge zu einem anderen Netz";
+
+/* Location: RepeaterControlsPage.swift - Controls group, before it's read: %lld the number of settings in it, like 5 */
+"remoteNodes.controls.group.tapToRead" = "Tippen, um %lld Einstellungen zu lesen";
+
+/* Location: RepeaterControlsPage.swift - Controls group while it's read: %1$lld the setting being read, %2$lld how many, like 2 of 5 */
+"remoteNodes.controls.group.reading" = "Lese %1$lld von %2$lld …";
+
+/* Location: RepeaterControlsPage.swift - VoiceOver value of an open Controls group */
+"remoteNodes.controls.group.expanded" = "Aufgeklappt";
+
+/* Location: RepeaterControlsPage.swift - VoiceOver value of a closed Controls group */
+"remoteNodes.controls.group.collapsed" = "Zugeklappt";
+
+/* Location: RepeaterControlsPage.swift - An open Controls group when the repeater's firmware has none of its settings */
+"remoteNodes.controls.group.noneOnFirmware" = "Keine davon gibt es in der Firmware dieses Repeaters.";
+
+/* Location: RepeaterControlsPage.swift - Under the Controls groups: why each is read only when opened (every read is a request over the mesh) */
+"remoteNodes.controls.groups.footer" = "Jede Gruppe wird erst beim Öffnen vom Repeater gelesen. So fragt die Seite nur ab, was du dir ansiehst.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.af.title" = "Sendezeitfaktor";
+
+/* Repeater Controls page */
+"remoteNodes.controls.af.detail" = "Wie lange der Repeater nach dem Senden schweigt, als Vielfaches seiner Sendezeit.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.rxdelay.title" = "RX-Verzögerung";
+
+/* Repeater Controls page */
+"remoteNodes.controls.rxdelay.detail" = "Hält schwächere Floods etwas länger zurück, damit stärkere Pfade gewinnen.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.txdelay.title" = "Flood-TX-Verzögerung";
+
+/* Repeater Controls page */
+"remoteNodes.controls.txdelay.detail" = "Zufällige Wartezeit vor dem Wiederholen eines Flood-Pakets, um Kollisionen zu vermeiden.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.directTxdelay.title" = "Direkt-TX-Verzögerung";
+
+/* Repeater Controls page */
+"remoteNodes.controls.directTxdelay.detail" = "Zufällige Wartezeit vor dem Wiederholen eines direkt gerouteten Pakets.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.intThresh.title" = "Störschwelle";
+
+/* Repeater Controls page */
+"remoteNodes.controls.intThresh.detail" = "Wartet auf einen freien Kanal, wenn das Rauschen so weit über dem Grundpegel liegt. 0 schaltet es aus.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.agc.title" = "AGC-Reset-Intervall";
+
+/* Repeater Controls page */
+"remoteNodes.controls.agc.detail" = "Wie oft die Empfängerverstärkung zurückgesetzt wird, in Sekunden. 0 schaltet es aus.";
+
+
+/* Repeater Controls page */
+"remoteNodes.controls.multiAcks.title" = "Zusätzliche ACKs";
+
+/* Repeater Controls page */
+"remoteNodes.controls.multiAcks.detail" = "Sendet eine zusätzliche Bestätigung für Direktnachrichten, für zuverlässigere Zustellung.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.readOnly.title" = "Gäste mit Lesezugriff";
+
+/* Repeater Controls page */
+"remoteNodes.controls.readOnly.detail" = "Erlaubt Gästen ohne Passwort die Anmeldung, um den Status zu lesen.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.rxGain.title" = "Erhöhte RX-Verstärkung";
+
+/* Repeater Controls page */
+"remoteNodes.controls.rxGain.detail" = "Erhöht die Empfangsverstärkung bei Funkmodulen, die das unterstützen.";
+
+/* RepeaterControlsModel.swift - Switch for an external front end's low-noise amplifier on the repeater */
+"remoteNodes.controls.femLna.title" = "Front-End-LNA";
+
+/* RepeaterControlsModel.swift - Explanation under the repeater's LNA switch */
+"remoteNodes.controls.femLna.detail" = "Verstärkt schwache Signale auf Boards mit Front-End; schalte ihn in der Nähe eines starken Senders aus.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.powerSaving.title" = "Energiesparen";
+
+/* Repeater Controls page */
+"remoteNodes.controls.powerSaving.detail" = "Schläft zwischen Paketen, um Akku zu sparen.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.gps.title" = "GPS";
+
+/* Repeater Controls page */
+"remoteNodes.controls.gps.detail" = "Schaltet den GPS-Empfänger des Repeaters ein oder aus.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.loopDetect.title" = "Schleifenerkennung";
+
+/* Repeater Controls page */
+"remoteNodes.controls.loopDetect.detail" = "Verwirft Flood-Pakete, die diesen Repeater bereits passiert haben.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.commands.title" = "Befehle";
+
+/* Repeater Controls page */
+"remoteNodes.controls.commands.footer" = "Alles andere ist in der CLI verfügbar.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.command.gpsSync" = "Uhr per GPS stellen";
+
+/* Repeater Controls page */
+"remoteNodes.controls.command.logStart" = "Paketprotokoll starten";
+
+/* Repeater Controls page */
+"remoteNodes.controls.command.logStop" = "Paketprotokoll stoppen";
+
+/* Repeater Controls page */
+"remoteNodes.controls.command.logErase" = "Paketprotokoll löschen";
+
+/* Repeater Controls page */
+"remoteNodes.controls.command.logEraseConfirm" = "Das Paketprotokoll des Repeaters löschen?";
+
+/* Repeater Controls page */
+"remoteNodes.controls.command.clearStats" = "Statistik zurücksetzen";
+
+/* Repeater Controls page */
+"remoteNodes.controls.command.clearStatsConfirm" = "Die Paket- und Sendezeitzähler des Repeaters zurücksetzen?";
+"remoteNodes.controls.floodMaxAdvert.title" = "Advert-Flood-Hops";
+"remoteNodes.controls.floodMaxAdvert.detail" = "Maximale Hops, die ein Advert-Flood weitergeleitet wird. 0 lässt keinen durch.";
+"remoteNodes.controls.floodMaxUnscoped.title" = "Flood-Hops ohne Region";
+"remoteNodes.controls.floodMaxUnscoped.detail" = "Maximale Hops für Floods ohne Regionsbereich. 0 verwirft sie an diesem Knoten.";
+"remoteNodes.controls.dutyCycle.title" = "Sendezeitanteil";
+"remoteNodes.controls.dutyCycle.detail" = "Anteil der Zeit, die es senden darf, in Prozent; der Airtime-Faktor folgt ihm.";
+"remoteNodes.controls.cad.title" = "Trägererkennung";
+"remoteNodes.controls.cad.detail" = "Prüft vor dem Senden, ob ein Paket auf dem Kanal ist, um es nicht zu überlagern.";
+"remoteNodes.controls.pathHashMode.title" = "Pfad-Hash-Größe";
+"remoteNodes.controls.pathHashMode.detail" = "Wie viele Bytes die ID jedes Hops im Pfad belegt: längere IDs unterscheiden Knoten besser, kosten aber Sendezeit.";
+"remoteNodes.controls.pathHashMode.oneByte" = "1 Byte";
+"remoteNodes.controls.pathHashMode.twoBytes" = "2 Bytes";
+"remoteNodes.controls.pathHashMode.threeBytes" = "3 Bytes";
+"remoteNodes.controls.gpsAdvert.title" = "Standort im Advert";
+"remoteNodes.controls.gpsAdvert.detail" = "Woher die Position in seinen Adverts stammt: nirgends, vom GPS-Fix oder vom gespeicherten Standort.";
+"remoteNodes.controls.gpsAdvert.none" = "Keiner";
+"remoteNodes.controls.gpsAdvert.share" = "GPS-Fix";
+"remoteNodes.controls.gpsAdvert.prefs" = "Gespeicherter Standort";
+"remoteNodes.controls.bridgeEnabled.title" = "Bridge";
+"remoteNodes.controls.bridgeEnabled.detail" = "Leitet Pakete über die serielle oder ESP-NOW-Bridge des Boards weiter.";
+"remoteNodes.controls.bridgeDelay.title" = "Bridge-Verzögerung";
+"remoteNodes.controls.bridgeDelay.detail" = "Millisekunden, die ein überbrücktes Paket vor dem Senden wartet.";
+"remoteNodes.controls.bridgeSource.title" = "Bridge-Quelle";
+"remoteNodes.controls.bridgeSource.detail" = "Welche Pakete die Bridge trägt: die empfangenen oder die gesendeten.";
+"remoteNodes.controls.bridgeSource.received" = "Empfangen";
+"remoteNodes.controls.bridgeSource.sent" = "Gesendet";
+"remoteNodes.controls.bridgeBaud.title" = "Bridge-Baudrate";
+"remoteNodes.controls.bridgeBaud.detail" = "Die Geschwindigkeit der seriellen Bridge.";
+"remoteNodes.controls.bridgeChannel.title" = "Bridge-Kanal";
+"remoteNodes.controls.bridgeChannel.detail" = "Der WLAN-Kanal der ESP-NOW-Bridge, 1 bis 14.";
+"remoteNodes.controls.command.gpsSetLoc" = "GPS-Position übernehmen";
+"remoteNodes.controls.command.powerOff" = "Ausschalten";
+"remoteNodes.controls.command.powerOffConfirm" = "Den Knoten ausschalten? Er bleibt aus, bis ihn jemand wieder einschaltet.";
+"remoteNodes.roomSettings.post.title" = "Als Raum posten";
+"remoteNodes.roomSettings.post.detail" = "Eine Nachricht an alle Mitglieder, vom Raum selbst";
+"remoteNodes.roomSettings.post.placeholder" = "Nachricht";
+"remoteNodes.roomSettings.post.send" = "Posten";
+"remoteNodes.roomSettings.post.sent" = "Im Raum gepostet";
+"remoteNodes.neighbors.remove" = "Nachbar entfernen";
+"remoteNodes.neighbors.removeConfirm" = "%@ aus der Nachbarliste des Repeaters entfernen? Er kommt zurück, sobald er wieder gehört wird.";
+"remoteNodes.neighbors.removed" = "Aus der Nachbarliste entfernt";
+
+/* Repeater Controls page */
+"remoteNodes.controls.unsupported" = "Nicht unterstützt";
+
+/* Repeater Controls page */
+"remoteNodes.controls.retry" = "Erneut versuchen";
+
+/* Repeater Controls page */
+"remoteNodes.controls.apply" = "Anwenden";
+
+/* Repeater Controls page */
+"remoteNodes.controls.revert" = "Zurücksetzen";
+
+/* Repeater Controls page */
+"remoteNodes.controls.failed" = "Nicht übernommen";
+
+/* Repeater Controls page */
+"remoteNodes.controls.increase" = "Erhöhen";
+
+/* Repeater Controls page */
+"remoteNodes.controls.decrease" = "Verringern";
+
+/* Location: RepeaterControlsPage.swift - VoiceOver value on a setting or command while it is being sent to the repeater */
+"remoteNodes.controls.inProgress" = "Wird ausgeführt";
+
+/* Location: RepeaterControlsPage.swift - A transmit power in milliwatts, approximately: %@ is the formatted figure, e.g. "158 mW" */
+"remoteNodes.controls.tx.milliwatts" = "≈ %@";
+
+/* Location: RepeaterStatusContent.swift - Progress line while a repeater page loads its readings and settings after login: step, total, what is loading */
+"remoteNodes.status.loadingStep" = "Lädt %1$d von %2$d · %3$@";
+
+/* Location: NodeLoadProgress.swift - Step count beside what is loading on a repeater page, e.g. "4 of 6" */
+"remoteNodes.status.loadingCount" = "%1$d von %2$d";
+
+/* Location: HistoryMetricTiles.swift - Caption before the date of a history chart's newest reading, in the opened chart's header */
+"remoteNodes.history.latest" = "Neueste";
+
+/* Location: HistoryMetricTiles.swift - Label before the number of readings an opened history chart holds */
+"remoteNodes.history.readings" = "Messwerte";
+
+/* Location: HistoryMetricTiles.swift - Hint under an opened history chart */
+"remoteNodes.history.scrubHint" = "Halte das Diagramm gedrückt, um einen Wert abzulesen.";
+
+/* Location: SharedNodeSettingsViews.swift - Device Info tile title: the board's bootloader version (nRF52 nodes) */
+"remoteNodes.settings.bootloader" = "Bootloader";
+
+/* Location: SharedNodeSettingsViews.swift - Warning under Device Info when an nRF52 node's bootloader is stock or OTAFIX before 2.0 */
+"remoteNodes.settings.bootloaderNeedsReset" = "Dieser Bootloader startet neue Firmware nach einem Update über Funk eventuell nicht von selbst, und der Knoten bleibt bis zum Drücken der Reset-Taste vom Mesh getrennt. Der OTAFIX-Bootloader (ab 2.0) behebt das.";
+
+/* Location: RadioSettingsValidation.swift - Radio sheet: frequency outside the companion's range */
+"remoteNodes.settings.radio.frequencyValidation" = "Die Frequenz muss zwischen %1$@ und %2$@ MHz liegen";
+
+/* Location: RadioSettingsValidation.swift - Radio sheet: bandwidth not one of the radio's */
+"remoteNodes.settings.radio.bandwidthValidation" = "Die Bandbreite muss eine der Bandbreiten des Funkmoduls sein";
+
+/* Location: RadioSettingsValidation.swift - Radio sheet: spreading factor out of range */
+"remoteNodes.settings.radio.spreadingFactorValidation" = "Der Spreizfaktor muss zwischen %1$d und %2$d liegen";
+
+/* Location: RadioSettingsValidation.swift - Radio sheet: coding rate out of range */
+"remoteNodes.settings.radio.codingRateValidation" = "Die Coderate muss zwischen 4/%1$d und 4/%2$d liegen";
+
+/* Location: SharedNodeSettingsViews.swift - Confirmation before `set radio` is sent */
+"remoteNodes.settings.radio.confirmTitle" = "Funkeinstellungen ändern?";
+
+/* Location: SharedNodeSettingsViews.swift - Last line of the radio confirmation */
+"remoteNodes.settings.radio.confirmStrand" = "Ein Knoten, dessen Funkeinstellungen nicht mehr zum Mesh passen, ist über Funk nicht mehr erreichbar und kann nur noch am Gerät repariert werden. Das kann den Knoten vom Netz abschneiden.";
+
+/* Location: SharedNodeSettingsViews.swift - Radio confirmation: send the settings */
+"remoteNodes.settings.radio.confirmApply" = "Anwenden";
+
+/* Location: SharedNodeSettingsViews.swift - Radio confirmation: send the settings and reboot */
+"remoteNodes.settings.radio.confirmApplyReboot" = "Anwenden & neu starten";
+
+/* Location: RadioSettingsValidation.swift - One changed setting in the radio confirmation: name, old value, new value */
+"remoteNodes.settings.radio.changeLine" = "%1$@: %2$@ → %3$@";
+
+/* Location: SharedNodeSettingsViews.swift - Radio card button: apply and reboot in one */
+"remoteNodes.settings.applyAndReboot" = "Anwenden & neu starten";
+
+/* Location: SharedNodeSettingsViews.swift - Success alert button after a radio change */
+"remoteNodes.settings.rebootNow" = "Jetzt neu starten";
+
+/* Location: SharedNodeSettingsViews.swift - Button beside Apply: put the fields back to the node's values */
+"remoteNodes.settings.revert" = "Zurücksetzen";
+
+/* Location: SharedNodeSettingsViews.swift - Under a field the node accepted */
+"remoteNodes.settings.fieldApplied" = "Übernommen";
+
+/* Location: SharedNodeSettingsViews.swift - Under a field the node refused, with its reply */
+"remoteNodes.settings.fieldFailed" = "Nicht übernommen: %@";
+
+/* Location: NodeSettingsCards.swift - Done on a settings sheet with unsent edits */
+"remoteNodes.settings.unsaved.title" = "Ungesicherte Änderungen";
+
+/* Location: NodeSettingsCards.swift - Unsaved changes dialog message */
+"remoteNodes.settings.unsaved.message" = "Änderungen, die noch nicht an den Knoten gesendet wurden, gehen verloren.";
+
+/* Location: NodeSettingsCards.swift - Unsaved changes dialog: close without sending */
+"remoteNodes.settings.unsaved.discard" = "Änderungen verwerfen";
+
+/* Location: NodeSettingsCards.swift - Unsaved changes dialog: stay on the sheet */
+"remoteNodes.settings.unsaved.keepEditing" = "Weiter bearbeiten";
+
+/* Location: NodeSettingsCards.swift - Unsaved changes dialog: send the edits, then close */
+"remoteNodes.settings.unsaved.save" = "An Knoten senden";
+
+/* Location: NodeDashboardCards.swift - Device card note when the latest release is newer */
+"remoteNodes.settings.updateAvailable" = "Update verfügbar";
+
+/* Location: NodeDashboardCards.swift - Device card line for an ESP32 repeater */
+"remoteNodes.settings.updateViaWebFlasher" = "Update über den Web-Flasher";
+
+/* Location: NodeQuietState.swift - Dashboard banner after a reboot, counting down */
+"remoteNodes.reboot.bannerRebooting" = "Neustart… in etwa %d s erneut versuchen";
+
+/* Location: NodeQuietState.swift - Dashboard banner once the reboot wait is over */
+"remoteNodes.reboot.bannerReady" = "Der Knoten sollte wieder da sein. Verbinde dich erneut, um fortzufahren.";
+
+/* Location: NodeQuietState.swift - Dashboard banner after a power-off */
+"remoteNodes.reboot.bannerPoweredOff" = "Ausgeschaltet. Schalte den Knoten ein und verbinde dich erneut.";
+
+/* Location: NodeQuietState.swift - Dashboard banner button: log in again */
+"remoteNodes.reboot.reconnect" = "Neu verbinden";
+
+/* Location: NodeAuthenticationSheet.swift - Login got no reply after every route was tried */
+"remoteNodes.auth.noReply" = "Keine Antwort. Prüfe das Passwort oder ob der Knoten in Reichweite ist.";
+
+/* Location: NodeAuthenticationSheet.swift - Eye button on the password field */
+"remoteNodes.auth.showPassword" = "Passwort anzeigen";
+
+/* Location: NodeAuthenticationSheet.swift - Eye button on the password field, shown */
+"remoteNodes.auth.hidePassword" = "Passwort verbergen";
+
+/* Location: NodeSavedLogin.swift - Contact page card and menu section */
+"remoteNodes.savedLogin.title" = "Gespeicherte Anmeldung";
+
+/* Location: NodeSavedLogin.swift - Menu item: opening the node logs in with the saved password (short, for the bar menu) */
+"remoteNodes.savedLogin.autoLogin" = "Auto-Anmeldung";
+
+/* Location: NodeSavedLogin.swift - Drops the saved password */
+"remoteNodes.savedLogin.forget" = "Passwort vergessen";
+
+/* Location: NodeSavedLogin.swift - Card summary without a saved password */
+"remoteNodes.savedLogin.none" = "Kein gespeichertes Passwort";
+
+/* Location: NodeSavedLogin.swift - Card summary with a saved password */
+"remoteNodes.savedLogin.saved" = "Passwort gespeichert";
+
+/* Location: NodeSavedLogin.swift - Card summary when the node logs in on its own */
+"remoteNodes.savedLogin.automatic" = "Meldet sich automatisch an";
+
+/* Location: NodeDashboardMenu.swift - Menu item: log out, keeping the password */
+"remoteNodes.dashboard.logOut" = "Abmelden";
+
+/* Location: NodeDashboardMenu.swift - Menu item: log out and drop the saved password */
+"remoteNodes.dashboard.logOutForget" = "Abmelden & vergessen";
+
+/* Location: NodeDashboardMenu.swift - Menu picker: refresh the status while the page is open */
+"remoteNodes.dashboard.refreshEvery" = "Auto-Aktualisierung";
+
+/* Repeater/room Dashboard menu: switch that reads the node's settings and checks its clock as soon as the page opens (off: each card reads its settings when opened) */
+"remoteNodes.dashboard.loadSettingsOnOpen" = "Einstellungen vorladen";
+
+/* Repeater/room Dashboard menu: title of the prompt before Preload Settings is turned on */
+"remoteNodes.dashboard.preload.title" = "Einstellungen vorladen?";
+
+/* Repeater/room Dashboard menu: the prompt's disclosure of the extra mesh traffic Preload Settings sends */
+"remoteNodes.dashboard.preload.message" = "Bei jedem Öffnen eines Repeaters oder Raums liest Cairn zusätzlich dessen Funk-, Verhaltens- und Geräteeinstellungen und prüft seine Uhr: bis zu etwa ein Dutzend zusätzliche Anfragen über das Mesh pro Besuch. Sie belegen gemeinsame Sendezeit, bremsen anderen Verkehr und belasten den Akku des Knotens. Ohne diese Option wird jede Einstellung erst gelesen, wenn du ihre Karte öffnest.";
+
+/* Repeater/room Dashboard menu: the prompt's button that turns Preload Settings on */
+"remoteNodes.dashboard.preload.confirm" = "Vorladen";
+
+/* Location: NodeDashboardMenu.swift - Picker choice: no automatic refresh / no alert */
+"remoteNodes.dashboard.refreshOff" = "Aus";
+
+/* Location: NodeDashboardMenu.swift - Picker choice: refresh interval in minutes */
+"remoteNodes.dashboard.refreshMinutes" = "Alle %d Min.";
+
+/* Location: RepeaterSectionPages.swift - Neighbors page bar menu */
+"remoteNodes.neighbors.sort" = "Sortieren";
+
+/* Location: NeighborListSort.swift - Sort: strongest signal first */
+"remoteNodes.neighbors.sort.snr" = "Signal";
+
+/* Location: NeighborListSort.swift - Sort: most recently heard first */
+"remoteNodes.neighbors.sort.lastHeard" = "Zuletzt gehört";
+
+/* Location: NeighborListSort.swift - Sort: by name */
+"remoteNodes.neighbors.sort.name" = "Name";
+
+/* Location: NeighborListSort.swift - Sort: first-seen neighbours first */
+"remoteNodes.neighbors.sort.newFirst" = "Neue zuerst";
+
+/* Location: RepeaterSectionPages.swift - Neighbors page search prompt */
+"remoteNodes.neighbors.search" = "Nachbarn suchen";
+
+/* Location: NeighborDetailPage.swift - Menu item: trace the route to the neighbour */
+"remoteNodes.neighbors.tracePath" = "Pfad verfolgen";
+
+/* Location: NeighborDetailPage.swift - Menu item: save a discovered neighbour as a contact */
+"remoteNodes.neighbors.addContact" = "Als Kontakt hinzufügen";
+
+/* Location: NeighborDetailPage.swift - Menu item after the neighbour was added */
+"remoteNodes.neighbors.addedContact" = "Hinzugefügt";
+
+/* Location: NodeStatusDashboard.swift - Reading card caption while a refresh has failed, with the reading's age */
+"remoteNodes.status.stale" = "veraltet · zuletzt gelesen %@";
+
+/* Location: NodeDashboardCards.swift - Card line when its value is the last visit's */
+"remoteNodes.status.fromLastVisit" = "vom letzten Besuch";
+
+/* Location: ContactNameEditSheet.swift - Section title for the node's note */
+"remoteNodes.note.title" = "Notiz";
+
+/* Location: ContactNameEditSheet.swift - Note field placeholder */
+"remoteNodes.note.placeholder" = "Wo er steht, wer sich kümmert…";
+
+/* Location: ContactNameEditSheet.swift - Note section info */
+"remoteNodes.note.info" = "Nur auf diesem Telefon gespeichert; wird unter dem Namen des Knotens angezeigt.";
+
+/* Location: RepeaterCompareView.swift - Page title */
+"remoteNodes.compare.title" = "Vergleichen";
+
+/* Location: NodeDashboardMenu.swift - Menu item opening the comparison */
+"remoteNodes.compare.menu" = "Vergleichen mit…";
+
+/* Location: RepeaterCompareView.swift - First node picker */
+"remoteNodes.compare.pickA" = "Erster Knoten";
+
+/* Location: RepeaterCompareView.swift - Second node picker */
+"remoteNodes.compare.pickB" = "Zweiter Knoten";
+
+/* Location: RepeaterCompareView.swift - A side without a stored reading */
+"remoteNodes.compare.noSnapshot" = "Keine gespeicherte Messung";
+
+/* Location: RepeaterCompareView.swift - When the reading was taken, relative */
+"remoteNodes.compare.readAt" = "Gelesen %@";
+
+/* Location: RepeaterCompareView.swift - Info over the pickers */
+"remoteNodes.compare.pickPrompt" = "Wähle zwei Repeater oder Räume, um ihre zuletzt gespeicherten Messungen zu vergleichen.";
+
+/* Location: NodeCLIView.swift - Bar menu: share the terminal's text */
+"remoteNodes.nodeCli.shareTranscript" = "Protokoll teilen";
+
+/* Location: NodeCLIView.swift - Bar menu: copy the terminal's text */
+"remoteNodes.nodeCli.copyTranscript" = "Protokoll kopieren";
+
+/* Location: NodeCLITranscript.swift - Confirmation for a typed `set radio` */
+"remoteNodes.nodeCli.confirmSetRadio" = "Funkeinstellungen ändern? Ein Knoten, dessen Funk nicht mehr zum Mesh passt, ist über Funk nicht mehr erreichbar.";
+
+/* Location: NodeCLIView.swift - Confirmation button: send the typed command */
+"remoteNodes.nodeCli.confirmSend" = "Senden";

@@ -1,0 +1,52 @@
+/*
+  WhatsNew.strings
+  Cairn
+
+  European Portuguese (pt-PT) translation of strings for the "What's New" sheet shown once after a major update.
+  AI-translated - please verify with native speakers.
+*/
+
+/* Title of the What's New sheet shown once after an app update */
+"whatsNew.title" = "Novidades";
+
+/* Button to dismiss the What's New sheet */
+"whatsNew.continueButton" = "Continuar";
+
+/* Link on the What's New sheet to the full GitHub release notes */
+"whatsNew.fullReleaseNotes" = "Ver todas as novas alterações";
+
+/* What's New Cairn 1.0 - Home dashboard, title */
+"whatsNew.home.title" = "Painel inicial";
+
+/* What's New Cairn 1.0 - Home dashboard, description */
+"whatsNew.home.description" = "Bateria, conversas, nós, GPS, rádio e rede num relance. Toque num cartão para ver os detalhes.";
+
+/* What's New Cairn 1.0 - card design, title */
+"whatsNew.cards.title" = "Cartões sobre vidro";
+
+/* What's New Cairn 1.0 - card design, description */
+"whatsNew.cards.description" = "Cada página é feita de cartões sobre um fundo de vidro à sua escolha.";
+
+/* What's New Cairn 1.0 - GNSS dashboard, title */
+"whatsNew.gnss.title" = "Painel GNSS";
+
+/* What's New Cairn 1.0 - GNSS dashboard, description */
+"whatsNew.gnss.description" = "Fixação, satélites, precisão e posição do rádio e do telefone num separador próprio.";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, title */
+"whatsNew.aim.title" = "Aponte para qualquer nó";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, description */
+"whatsNew.aim.description" = "Toque num nó no mapa para ver uma linha de si até ele, com distância, rumo e uma seta a seguir. O mapa na página de um nó abre com ele já selecionado.";
+
+/* What's New Cairn 1.0 - Spectrum, title */
+"whatsNew.spectrum.title" = "Espetro";
+
+/* What's New Cairn 1.0 - Spectrum, description */
+"whatsNew.spectrum.description" = "Acompanhe em direto o ruído de fundo e a atividade na sua frequência.";
+
+/* What's New Cairn 1.0 - consolidated settings, title */
+"whatsNew.settings.title" = "Definições onde precisa delas";
+
+/* What's New Cairn 1.0 - consolidated settings, description */
+"whatsNew.settings.description" = "Os ajustes de cada separador estão nos controlos deslizantes no topo; os da app, na roda dentada em Início.";

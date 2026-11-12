@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IntentPhrases</key>
+	<array>
+		<dict>
+			<key>IntentExamples</key>
+			<array>
+				<string>Sende mit Cairn eine Nachricht an Alex</string>
+			</array>
+			<key>IntentName</key>
+			<string>INSendMessageIntent</string>
+		</dict>
+		<dict>
+			<key>IntentExamples</key>
+			<array>
+				<string>Lies meine Nachrichten in Cairn</string>
+			</array>
+			<key>IntentName</key>
+			<string>INSearchForMessagesIntent</string>
+		</dict>
+		<dict>
+			<key>IntentExamples</key>
+			<array>
+				<string>Markiere meine Cairn-Nachrichten als gelesen</string>
+			</array>
+			<key>IntentName</key>
+			<string>INSetMessageAttributeIntent</string>
+		</dict>
+	</array>
+</dict>
+</plist>

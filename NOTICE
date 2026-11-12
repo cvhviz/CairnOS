@@ -1,0 +1,18 @@
+Cairn (CairnOS)
+https://github.com/cvhviz/CairnOS
+
+Cairn is a modified version of MeshCore One by Avi0n
+(https://github.com/Avi0n/MeshCoreOne), which is licensed under the
+GNU General Public License, version 3.
+
+Modified by Christopher Van Hoose (CVH Visuals).
+This version last changed: November 2026.
+
+Cairn as a whole is distributed under the GNU General Public License,
+version 3. The full license text is in the LICENSE file. This program is
+distributed in the hope that it will be useful, but WITHOUT ANY
+WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.
+
+Bundled third-party packages keep their own licenses (Swift MeshCore:
+MIT; see each package's license file and the app's Acknowledgements).

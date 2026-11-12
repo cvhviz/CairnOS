@@ -1,0 +1,2549 @@
+/*
+  Tools.strings
+  Cairn
+
+  Polish translation of strings for the Tools feature.
+  AI-translated - please verify with native speakers.
+*/
+
+// MARK: - Tools View
+
+/* Location: ToolsView.swift - Navigation title */
+"tools.title" = "Narzędzia";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.tracePath" = "Śledzenie ścieżki";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.lineOfSight" = "Linia wzroku";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.rxLog" = "Dziennik RX";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.noiseFloor" = "Próg szumów";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.nodeDiscovery" = "Szukaj węzłów";
+/* Location: ToolsView.swift - Empty state when no tool selected */
+"tools.selectTool" = "Wybierz narzędzie";
+
+// MARK: - RX Log View
+
+/* Location: RxLogView.swift - Empty state title when listening */
+"tools.rxLog.listening" = "Nasłuchiwanie...";
+
+/* Location: RxLogView.swift - Empty state description */
+"tools.rxLog.listeningDescription" = "Pakiety RF pojawią się tutaj po ich odebraniu.";
+
+/* Location: RxLogView.swift - Disconnected state title */
+"tools.rxLog.notConnected" = "Nie połączono";
+
+/* Location: RxLogView.swift - Disconnected state description */
+"tools.rxLog.notConnectedDescription" = "Połącz się z radiem mesh, aby wyświetlić pakiety RF.";
+
+/* Location: RxLogView.swift - Live status indicator */
+"tools.rxLog.live" = "Na żywo";
+
+/* Location: RxLogView.swift - Offline status indicator */
+"tools.rxLog.offline" = "Offline";
+
+/* Location: RxLogView.swift - Packet count in header, %lld is count */
+"tools.rxLog.packetsCount" = "%lld pakietów";
+
+/* Location: RxLogView.swift - Filter menu section header */
+"tools.rxLog.routeType" = "Typ trasy";
+
+/* Location: RxLogView.swift - Filter menu section header */
+"tools.rxLog.decryptStatus" = "Status deszyfrowania";
+
+/* Location: RxLogView.swift - Filter button label */
+"tools.rxLog.filter" = "Filtruj";
+
+/* Location: RxLogView.swift - Overflow menu button label */
+"tools.rxLog.more" = "Więcej";
+
+/* Location: RxLogView.swift - Group duplicates toggle */
+"tools.rxLog.groupDuplicates" = "Grupuj duplikaty";
+
+/* Location: RxLogView.swift - Delete logs button */
+"tools.rxLog.deleteLogs" = "Usuń dzienniki";
+
+/* Location: RxLogView.swift - Delete confirmation dialog title */
+"tools.rxLog.deleteConfirmation" = "Usunąć wszystkie dzienniki?";
+
+/* Location: RxLogView.swift - Delete confirmation button */
+"tools.rxLog.delete" = "Usuń";
+
+/* Location: RxLogView.swift - Direct route label */
+"tools.rxLog.direct" = "Bezpośredni";
+
+/* Location: RxLogView.swift - Path detail for single hop */
+"tools.rxLog.hopSingular" = "skok";
+
+/* Location: RxLogView.swift - Path detail for multiple hops */
+"tools.rxLog.hopPlural" = "skoków";
+
+/* Location: RxLogView.swift - Signal strength accessibility label, %@ is quality */
+"tools.rxLog.signalStrength" = "Siła sygnału: %@";
+
+/* Location: RxLogView.swift - Duplicate count accessibility label, %lld is count */
+"tools.rxLog.receivedTimes" = "Odebrano %lld razy";
+
+/* Location: RxLogView.swift - Raw payload section title */
+"tools.rxLog.rawPayload" = "Surowe dane";
+
+/* Location: RxLogView.swift - Copy button */
+"tools.rxLog.copy" = "Kopiuj";
+
+/* Location: RxLogView.swift - RSSI label */
+"tools.rxLog.rssiLabel" = "RSSI:";
+
+/* Location: RxLogView.swift - SNR label */
+"tools.rxLog.snrLabel" = "SNR:";
+
+/* Location: RxLogView.swift - Type label */
+"tools.rxLog.typeLabel" = "Typ:";
+
+/* Location: RxLogView.swift - Size label */
+"tools.rxLog.sizeLabel" = "Rozmiar:";
+
+/* Location: RxLogView.swift - Path label */
+"tools.rxLog.pathLabel" = "Ścieżka:";
+
+/* Location: RxLogView.swift - Hash label */
+"tools.rxLog.hashLabel" = "Skrót:";
+
+/* Location: RxLogView.swift - From label */
+"tools.rxLog.fromLabel" = "Od:";
+
+/* Location: RxLogView.swift - To label */
+"tools.rxLog.toLabel" = "Do:";
+
+/* Location: RxLogView.swift - Channel hash label */
+"tools.rxLog.channelHashLabel" = "Hash kanału:";
+
+/* Location: RxLogView.swift - Channel name label */
+"tools.rxLog.channelNameLabel" = "Nazwa kanału:";
+
+/* Location: RxLogView.swift - Region label */
+"tools.rxLog.regionLabel" = "Region:";
+
+/* Location: RxLogView.swift - Unresolved region value */
+"tools.rxLog.regionUnresolved" = "Nieznany";
+
+/* Location: RxLogView.swift - Text label */
+"tools.rxLog.textLabel" = "Tekst:";
+
+/* Location: RxLogView.swift - Bytes suffix for size display */
+"tools.rxLog.bytes" = "bajtów";
+
+// MARK: - RX Log Filters
+
+/* Location: RxLogViewModel.swift - Route filter: all */
+"tools.rxLog.filter.all" = "Wszystkie";
+
+/* Location: RxLogViewModel.swift - Route filter: flood only */
+"tools.rxLog.filter.floodOnly" = "Tylko rozproszone";
+
+/* Location: RxLogViewModel.swift - Route filter: direct only */
+"tools.rxLog.filter.directOnly" = "Tylko bezpośrednie";
+
+/* Location: RxLogViewModel.swift - Decrypt filter: decrypted */
+"tools.rxLog.filter.decrypted" = "Odszyfrowane";
+
+/* Location: RxLogViewModel.swift - Decrypt filter: failed */
+"tools.rxLog.filter.failed" = "Nieudane";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: not a decryptable packet */
+"tools.rxLog.decryptStatus.notApplicable" = "N/D";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: no stored channel key matches */
+"tools.rxLog.decryptStatus.noKey" = "Brak klucza";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: HMAC validation failed */
+"tools.rxLog.decryptStatus.hmacFailed" = "Błąd HMAC";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: AES decryption failed */
+"tools.rxLog.decryptStatus.decryptFailed" = "Błąd odszyfrowania";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: decrypted successfully */
+"tools.rxLog.decryptStatus.decrypted" = "Odszyfrowano";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: key found, decryption pending */
+"tools.rxLog.decryptStatus.hasKey" = "Klucz dostępny";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: missing direct message key */
+"tools.rxLog.decryptStatus.noDmKey" = "Brak klucza DM";
+
+/* Location: RxLogRowView - Label for local device in path display */
+"tools.rxLog.pathYou" = "Ty";
+
+/* Location: RxLogRowView - Route label for TRACE target hashes */
+"tools.rxLog.traceRouteLabel" = "Trasa:";
+
+/* Location: RxLogView.swift - Purpose: A direct packet's path, which is the route still ahead of it, not hops travelled; %@ is the hops */
+"tools.rxLog.routeAhead" = "Przed nim: %@";
+
+/* RX log row: a packet received while the radio was on another channel, named against what was heard there; %@ is the channel, e.g. "910.525 MHz · SF10" */
+"tools.rxLog.receivedOn" = "Odebrano na %@";
+
+/* RX log row: a packet whose radio channel the app couldn't confirm (stored before channels were recorded, heard during a retune, or held by the radio before this connection confirmed its channel), so none of its relays can be named */
+"tools.rxLog.channelNotRecorded" = "Cairn nie mógł potwierdzić, na którym kanale radia to odebrano, więc przekaźniki są pokazane jako hash.";
+
+/* RX log header: the app has only lately started hearing nodes on this channel, so many relays still show by hash; %lld is how many nodes it has heard */
+"tools.rxLog.learningChannel" = "Poznawanie tego kanału: usłyszane węzły: %lld";
+
+/* Location: RxLogView.swift - Purpose: Label for the SNR each hop of a trace heard it at */
+"tools.rxLog.traceSnrLabel" = "SNR na skok:";
+
+// MARK: - Noise Floor Signal Quality
+
+/* Location: NoiseFloorViewModel.swift - Error: unable to read stats */
+"tools.noiseFloor.error.unableToRead" = "Nie można odczytać statystyk radia";
+
+/* Location: SpectrumViewModel.swift - Error: the radio's firmware has no stats command, so noise and airtime readings stop; packets still show */
+"tools.noiseFloor.error.unsupported" = "Oprogramowanie tego radia nie podaje szumu ani czasu nadawania (wymaga 1.11 lub nowszego)";
+
+// MARK: - Node Discovery View
+
+/* Location: NodeDiscoveryView.swift - Disconnected state description */
+"tools.nodeDiscovery.notConnectedDescription" = "Połącz się z radiem mesh, aby odkryć %@.";
+
+/* Location: NodeDiscoveryView.swift - Initial empty state title */
+"tools.nodeDiscovery.scanPrompt" = "Szukaj %@";
+
+/* Location: NodeDiscoveryView.swift - Initial empty state description */
+"tools.nodeDiscovery.scanPromptDescription" = "Dotknij przycisku poniżej, aby odkryć pobliskie %@.";
+
+/* Location: NodeDiscoveryView.swift - No results empty state title */
+"tools.nodeDiscovery.noResults" = "Nie znaleziono %@";
+
+/* Location: NodeDiscoveryView.swift - No results empty state description */
+"tools.nodeDiscovery.noResultsDescription" = "Żaden %@ nie odpowiedział na ping wykrywania. Spróbuj ponownie lub zbliż się do sieci mesh.";
+
+/* Location: NodeDiscoveryView.swift - Scan button label (idle) */
+"tools.nodeDiscovery.scanButton" = "Szukaj %@";
+
+/* Location: NodeDiscoveryView.swift - Scan button label (scanning) */
+"tools.nodeDiscovery.stopButton" = "Zatrzymaj wyszukiwanie";
+
+/* Location: NodeDiscoveryView.swift - Segment label */
+"tools.nodeDiscovery.repeaters" = "Przekaźniki";
+
+/* Location: NodeDiscoveryView.swift - Segment label */
+"tools.nodeDiscovery.sensors" = "Czujniki";
+
+/* Location: NodeDiscoveryView.swift - Sort option */
+"tools.nodeDiscovery.sortSignal" = "Siła sygnału";
+
+/* Location: NodeDiscoveryView.swift - Sort option */
+"tools.nodeDiscovery.sortName" = "Nazwa";
+
+/* Location: NodeDiscoveryView.swift - Sort menu accessibility label */
+"tools.nodeDiscovery.sortMenu" = "Sortuj węzły";
+
+/* Location: NodeDiscoveryView.swift - Sort menu accessibility hint */
+"tools.nodeDiscovery.sortMenuHint" = "Zmienia kolejność sortowania odkrytych węzłów";
+
+/* Location: NodeDiscoveryRowView.swift - Unknown node name fallback */
+"tools.nodeDiscovery.unknownNode" = "Nieznany";
+
+/* Location: NodeDiscoveryRowView.swift - Node type: repeater */
+"tools.nodeDiscovery.typeRepeater" = "Przekaźnik";
+
+/* Location: NodeDiscoveryRowView.swift - Node type: sensor */
+"tools.nodeDiscovery.typeSensor" = "Czujnik";
+
+/* Location: NodeDiscoveryRowView.swift - SNR label (local receive) */
+"tools.nodeDiscovery.snrDown" = "↓ %@ dB";
+
+/* Location: NodeDiscoveryRowView.swift - SNR label (remote receive) */
+"tools.nodeDiscovery.snrUp" = "↑ %@ dB";
+
+/* Location: NodeDiscoveryRowView.swift - RSSI label */
+"tools.nodeDiscovery.rssi" = "RSSI %@ dBm";
+
+/* Location: NodeDiscoveryView.swift - Error alert title */
+"tools.nodeDiscovery.errorTitle" = "Wyszukiwanie nie powiodło się";
+
+// MARK: - Line of Sight View
+
+/* Location: LineOfSightView.swift - Map style: standard */
+/* Location: LineOfSightView.swift - Map style: terrain */
+/* Location: LineOfSightView.swift - Back button label */
+"tools.lineOfSight.back" = "Wstecz";
+
+/* Location: LineOfSightView.swift - Point A annotation */
+"tools.lineOfSight.pointA" = "Punkt A";
+
+/* Location: LineOfSightView.swift - Point B annotation */
+"tools.lineOfSight.pointB" = "Punkt B";
+
+/* Location: LineOfSightView.swift - Repeater annotation */
+"tools.lineOfSight.repeater" = "Przekaźnik";
+
+/* Location: LineOfSightView.swift - Points section title */
+"tools.lineOfSight.points" = "Punkty";
+
+/* Location: LineOfSightView.swift - Cancel button */
+"tools.lineOfSight.cancel" = "Anuluj";
+
+/* Location: LineOfSightView.swift - Relocating message, %@ is point name */
+"tools.lineOfSight.relocating" = "Umieszczanie: %@…";
+
+/* Location: LineOfSightView.swift - Tap map instruction */
+"tools.lineOfSight.tapMapInstruction" = "Stuknij mapę lub przekaźnik, by umieścić";
+
+/* Location: LineOfSightView.swift - Not selected placeholder */
+"tools.lineOfSight.notSelected" = "Nie wybrano";
+
+/* Line of Sight: under an empty point A or B; tapping the card starts placing it on the map */
+"tools.lineOfSight.chooseOnMapHint" = "Stuknij, by umieścić na mapie";
+
+/* Line of Sight: button beside an empty point that sets it to the phone's position */
+"tools.lineOfSight.useMyLocation" = "Użyj mojej lokalizacji";
+
+/* Line of Sight: menu item and editor for how high a point's antenna is above the ground */
+"tools.lineOfSight.antennaHeight" = "Wysokość anteny";
+
+/* Line of Sight: a point's heights under its name. %1$@ is the ground elevation, %2$@ the antenna height, e.g. 42 m and 7 m */
+"tools.lineOfSight.heightSummary" = "Teren %1$@ · Antena %2$@";
+
+/* Location: LineOfSightView.swift - Loading elevation status */
+"tools.lineOfSight.loadingElevation" = "Ładowanie wysokości...";
+
+/* Location: LineOfSightView.swift - Long press points hint */
+"tools.lineOfSight.longPressPointsHint" = "Przytrzymaj na mapie, aby dodać lokalizację";
+
+/* Location: LineOfSightView.swift - Elevation unavailable warning */
+"tools.lineOfSight.elevationUnavailable" = "Dane wysokości niedostępne. Używanie poziomu morza (0m) jako przybliżenia.";
+
+/* Location: LineOfSightView.swift - Open in Maps button */
+"tools.lineOfSight.openInMaps" = "Otwórz w Mapach";
+
+/* Location: LineOfSightView.swift - Copy coordinates button */
+"tools.lineOfSight.copyCoordinates" = "Kopiuj współrzędne";
+
+/* Location: LineOfSightView.swift - Share button */
+"tools.lineOfSight.share" = "Udostępnij...";
+
+/* Location: LineOfSightView.swift - Share label */
+"tools.lineOfSight.shareLabel" = "Udostępnij";
+
+/* Location: LineOfSightView.swift - Relocate button */
+"tools.lineOfSight.relocate" = "Przenieś";
+
+/* Location: LineOfSightView.swift - Done button */
+"tools.lineOfSight.done" = "Gotowe";
+
+/* Location: LineOfSightView.swift - Edit button */
+"tools.lineOfSight.edit" = "Edytuj";
+
+/* Location: LineOfSightView.swift - Clear button */
+"tools.lineOfSight.clear" = "Wyczyść";
+
+/* Location: LineOfSightView.swift - Ground elevation label */
+"tools.lineOfSight.groundElevation" = "Wysokość terenu";
+
+/* Location: LineOfSightView.swift - Additional height label */
+"tools.lineOfSight.additionalHeight" = "Dodatkowa wysokość";
+
+/* Location: LineOfSightView.swift - Total height label */
+"tools.lineOfSight.totalHeight" = "Całkowita wysokość";
+
+/* Location: LineOfSightView.swift - Add repeater button */
+"tools.lineOfSight.addRepeater" = "Dodaj przekaźnik";
+
+/* Location: LineOfSightView.swift - Analyze button */
+"tools.lineOfSight.analyze" = "Analizuj linię wzroku";
+
+/* Location: LineOfSightView.swift - Terrain profile section */
+"tools.lineOfSight.terrainProfile" = "Profil terenu";
+
+/* Location: LineOfSightView.swift - Earth curvature note, %@ is k-factor */
+"tools.lineOfSight.earthCurvature" = "Skorygowane o krzywiznę Ziemi (%@)";
+
+/* Location: LineOfSightView.swift - Drag to adjust tooltip */
+"tools.lineOfSight.dragToAdjust" = "Przeciągnij, aby dostosować";
+
+/* Location: LineOfSightView.swift - RF Settings section */
+"tools.lineOfSight.rfSettings" = "Ustawienia RF";
+
+/* Location: LineOfSightView.swift - Frequency label */
+"tools.lineOfSight.frequency" = "Częstotliwość";
+
+/* Location: LineOfSightView.swift - MHz unit */
+"tools.lineOfSight.mhz" = "MHz";
+
+/* Location: LineOfSightView.swift - Refraction label */
+"tools.lineOfSight.refraction" = "Refrakcja";
+
+/* Location: LineOfSightView.swift - Refraction: none */
+"tools.lineOfSight.refraction.none" = "Brak";
+
+/* Location: LineOfSightView.swift - Refraction: standard */
+"tools.lineOfSight.refraction.standard" = "Standardowa (k=1,33)";
+
+/* Location: LineOfSightView.swift - Refraction: ducting */
+"tools.lineOfSight.refraction.ducting" = "Kanałowa (k=4)";
+
+/* Location: LineOfSightView.swift - Analyzing progress */
+"tools.lineOfSight.analyzing" = "Analizowanie ścieżki...";
+
+/* Location: LineOfSightView.swift - Analysis failed title */
+"tools.lineOfSight.analysisFailed" = "Analiza nie powiodła się";
+
+/* Location: LineOfSightView.swift - Retry button */
+"tools.lineOfSight.retry" = "Ponów";
+
+/* Location: LineOfSightView.swift - Repeater location map item name */
+"tools.lineOfSight.repeaterLocation" = "Lokalizacja przekaźnika";
+
+/* Location: LineOfSightViewModel.swift - Dropped pin display name */
+"tools.lineOfSight.droppedPin" = "Upuszczona pinezka";
+
+/* Location: LineOfSightView.swift - Repeater pin accessibility hint */
+/* Location: LineOfSightView.swift - Point pin accessibility hint */
+/* Location: LineOfSightView.swift - Repeater target accessibility hint */
+// MARK: - Terrain Profile Canvas
+
+/* Location: TerrainProfileCanvas.swift - Empty state title */
+"tools.lineOfSight.noData" = "Brak danych";
+
+/* Location: TerrainProfileCanvas.swift - Empty state description */
+"tools.lineOfSight.selectTwoPoints" = "Wybierz dwa punkty do analizy";
+
+/* Location: TerrainProfileCanvas.swift - Legend: terrain */
+"tools.lineOfSight.legend.terrain" = "Teren";
+
+/* Location: TerrainProfileCanvas.swift - Legend: line of sight */
+"tools.lineOfSight.legend.los" = "Linia wzroku";
+
+/* Location: TerrainProfileCanvas.swift - Legend: clear */
+"tools.lineOfSight.legend.clear" = "Przejrzysta";
+
+/* Location: TerrainProfileCanvas.swift - Legend: obstructed */
+"tools.lineOfSight.legend.obstructed" = "Zablokowana";
+
+/* Location: TerrainProfileCanvas.swift - Indirect route label */
+"tools.lineOfSight.indirectRoute" = "Trasa pośrednia przez R · Przenieś na mapie, aby dostosować";
+
+/* Location: TerrainProfileCanvas.swift - Elevation data attribution */
+"tools.lineOfSight.elevationAttribution" = "Dane wysokości: Copernicus DEM GLO-90 przez Open-Meteo";
+
+// MARK: - Results Card View
+
+/* Location: ResultsCardView.swift - Section title */
+"tools.lineOfSight.results" = "Wyniki";
+
+/* Location: ResultsCardView.swift - Loss suffix */
+"tools.lineOfSight.loss" = "straty";
+
+/* Location: ResultsCardView.swift - Path loss breakdown section */
+"tools.lineOfSight.pathLossBreakdown" = "Rozkład strat ścieżki";
+
+/* Location: ResultsCardView.swift - Free space loss label */
+"tools.lineOfSight.freeSpaceLoss" = "Straty przestrzeni swobodnej";
+
+/* Location: ResultsCardView.swift - Diffraction loss label */
+"tools.lineOfSight.diffractionLoss" = "Straty dyfrakcji";
+
+/* Location: ResultsCardView.swift - Total label */
+"tools.lineOfSight.total" = "Razem";
+
+/* Location: ResultsCardView.swift - Clearance section title */
+"tools.lineOfSight.clearance" = "Prześwit";
+
+/* Location: ResultsCardView.swift - Obstructions found label */
+"tools.lineOfSight.obstructionsFound" = "Znalezione przeszkody";
+
+/* Location: ResultsCardView.swift - Status label */
+"tools.lineOfSight.status" = "Status";
+
+/* Location: ResultsCardView.swift - Distance label */
+"tools.lineOfSight.distance" = "Odległość";
+
+/* Location: ResultsCardView.swift - Worst clearance short label */
+"tools.lineOfSight.worstClearanceShort" = "Najgorszy prześwit";
+
+/* Location: ResultsCardView.swift - Assumptions footnote; %1$@ is frequency, %2$@ is k-factor */
+"tools.lineOfSight.assumptions" = "%1$@, %2$@, próg 60 %% 1. strefy Fresnela";
+
+/* Location: ClearanceStatusView.swift - Clearance percentage, %lld is percent */
+"tools.lineOfSight.clearancePercent" = "%lld%% prześwitu";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: clear */
+"tools.lineOfSight.status.clear" = "Czysta";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: marginal */
+"tools.lineOfSight.status.marginal" = "Graniczna";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: partial obstruction */
+"tools.lineOfSight.status.partialObstruction" = "Częściowa przeszkoda";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: blocked */
+"tools.lineOfSight.status.blocked" = "Zablokowana";
+
+/* Location: ResultsCardView.swift - Subtitle shown when path is blocked */
+"tools.lineOfSight.status.blockedSubtitle" = "Bezpośrednia trasa przecina teren";
+
+// MARK: - CLI Tool View
+
+/* Location: CLIToolView.swift - Tool selection label */
+"tools.cli" = "CLI";
+
+/* Location: CLIToolView.swift - Disconnected state title */
+"tools.cli.notConnected" = "Nie połączono";
+
+/* Location: CLIToolView.swift - Disconnected state description */
+"tools.cli.notConnectedDescription" = "Połącz się z radiem mesh, aby użyć CLI.";
+
+/* Location: CLIToolView.swift - Prompt suffix */
+"tools.cli.promptSuffix" = ">";
+
+/* Location: CLIToolView.swift - Waiting indicator */
+/* Location: CLIToolView.swift - Disconnected prompt */
+"tools.cli.disconnected" = "rozłączony";
+
+/* Location: CLIToolView.swift - Help command output header */
+"tools.cli.helpHeader" = "Dostępne polecenia:";
+
+/* Location: CLIToolView.swift - Session list header */
+"tools.cli.sessionListHeader" = "Aktywne sesje:";
+
+/* Location: CLIToolView.swift - Local session label */
+"tools.cli.sessionLocal" = "lokalna";
+
+/* Location: CLIToolView.swift - No sessions message */
+/* Location: CLIToolView.swift - History empty message */
+/* Location: CLIToolView.swift - Unknown command error */
+"tools.cli.unknownCommand" = "Nieznane polecenie:";
+
+/* Location: CLIToolView.swift - Login success */
+"tools.cli.loginSuccess" = "Zalogowano do";
+
+/* Location: CLIToolView.swift - Login failed */
+"tools.cli.loginFailed" = "Logowanie nie powiodło się:";
+
+/* Location: CLIToolView.swift - Login failed reason */
+"tools.cli.loginFailedAuth" = "Uwierzytelnianie nie powiodło się";
+
+/* Location: CLIToolView.swift - Node not found error */
+"tools.cli.nodeNotFound" = "Węzeł nie znaleziony:";
+
+/* Location: CLIToolView.swift - Password required error */
+"tools.cli.passwordRequired" = "Wymagane hasło";
+
+/* Location: CLIToolViewModel.swift - Password prompt */
+"tools.cli.passwordPrompt" = "Hasło:";
+
+/* Location: CLIToolViewModel.swift - Login countdown */
+"tools.cli.loggingIn" = "Logowanie... (%ds)";
+
+/* Location: CLIToolView.swift - Logout success */
+"tools.cli.logoutSuccess" = "Wylogowano";
+
+/* Location: CLIToolView.swift - Not logged in error */
+"tools.cli.notLoggedIn" = "Nie zalogowano do żadnego repeatera";
+
+/* Location: CLIToolView.swift - Session switched */
+"tools.cli.sessionSwitched" = "Przełączono na";
+
+/* Location: CLIToolView.swift - Session not found */
+"tools.cli.sessionNotFound" = "Sesja nie znaleziona:";
+
+/* Location: CLIToolView.swift - Command timeout */
+"tools.cli.timeout" = "Przekroczono czas oczekiwania na odpowiedź";
+
+/* Location: CLIToolView.swift - Command cancelled */
+"tools.cli.cancelled" = "Polecenie anulowane";
+
+/* Location: CLIToolView.swift - Login from local only */
+"tools.cli.loginFromLocalOnly" = "Logowanie dostępne tylko z sesji lokalnej";
+
+/* Location: CLIToolView.swift - Login usage */
+"tools.cli.loginUsage" = "Użycie: login [-f] <node>";
+
+/* Location: CLIToolView.swift - Accessory button: history up */
+"tools.cli.historyUp" = "Poprzednie polecenie";
+
+/* Location: CLIToolView.swift - Accessory button: history down */
+"tools.cli.historyDown" = "Następne polecenie";
+
+/* Location: CLIToolView.swift - Accessory button: tab complete */
+"tools.cli.tabComplete" = "Autouzupełnianie";
+
+/* Location: CLIInputAccessoryView.swift - Cursor left button */
+"tools.cli.cursorLeft" = "Przesuń kursor w lewo";
+
+/* Location: CLIInputAccessoryView.swift - Cursor right button */
+"tools.cli.cursorRight" = "Przesuń kursor w prawo";
+
+/* Location: CLIInputAccessoryView.swift - Paste button */
+"tools.cli.paste" = "Wklej";
+
+/* Location: CLIToolView.swift - Accessory button: clear */
+/* Location: CLIToolView.swift - Accessory button: sessions */
+"tools.cli.sessions" = "Sesje";
+
+/* Location: CLIToolView.swift - Accessory button: dismiss */
+"tools.cli.dismiss" = "Ukryj klawiaturę";
+
+/* Location: CLIToolView.swift - Default device name */
+"tools.cli.defaultDevice" = "Urządzenie";
+
+/* Location: CLIToolViewModel.swift - Help: login command */
+"tools.cli.helpLogin" = "  login [-f] <node>\n    Zaloguj do repeatera (-f: zapomnij zapisane hasło)";
+
+/* Location: CLIToolViewModel.swift - Help: logout command */
+"tools.cli.helpLogout" = "  logout\n    Zakończ sesję zdalną";
+
+/* Location: CLIToolViewModel.swift - Help: session list command */
+"tools.cli.helpSessionList" = "  session list\n    Pokaż aktywne sesje";
+
+/* Location: CLIToolViewModel.swift - Help: session local command */
+"tools.cli.helpSessionLocal" = "  session local\n    Przełącz na sesję lokalną";
+
+/* Location: CLIToolViewModel.swift - Help: session name command */
+"tools.cli.helpSessionName" = "  session <name>\n    Przełącz na sesję";
+
+/* Location: CLIToolViewModel.swift - Help: session shortcut */
+"tools.cli.helpSessionShortcut" = "  s<n>\n    Przełącz na sesję n (np. s1, s2)";
+
+/* Location: CLIToolViewModel.swift - Help: clear command */
+"tools.cli.helpClear" = "  clear\n    Wyczyść terminal";
+
+/* Location: CLIToolViewModel.swift - Help: help command */
+"tools.cli.helpHelp" = "  help\n    Pokaż tę pomoc";
+
+/* Location: CLIToolViewModel.swift - Help: nodes command */
+"tools.cli.helpNodes" = "  nodes\n    Pokaż listę repeaterów i pokoi";
+
+/* Location: CLIToolViewModel.swift - Help: channels command */
+"tools.cli.helpChannels" = "  channels\n    Pokaż listę kanałów z numerami slotów urządzenia";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands header */
+"tools.cli.helpRepeaterHeader" = "Polecenia repeatera (passthrough):";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 1 */
+"tools.cli.helpRepeaterList1" = "  ver, clock, reboot, advert, neighbors";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 2 */
+"tools.cli.helpRepeaterList2" = "  get/set <param>, password <new>";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 3 */
+"tools.cli.helpRepeaterList3" = "  log start/stop/erase";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 4 */
+"tools.cli.helpRepeaterList4" = "  setperm, tempradio, neighbor.remove";
+
+/* Location: CLIToolViewModel+Sessions.swift - Nodes header with count */
+"tools.cli.nodesHeader" = "Węzły (%lld):";
+
+/* Location: CLIToolViewModel+Sessions.swift - Channels header with count */
+"tools.cli.channelsHeader" = "Kanały (%lld):";
+
+/* Location: CLIToolViewModel+Sessions.swift - No nodes found */
+"tools.cli.noNodes" = "Nie znaleziono węzłów";
+
+/* Location: CLIToolViewModel+Sessions.swift - No channels found */
+"tools.cli.noChannels" = "Nie znaleziono kanałów";
+
+/* Location: CLIToolViewModel+Sessions.swift - Channel empty name placeholder */
+"tools.cli.channelEmpty" = "pusty";
+
+/* Location: CLIToolViewModel.swift - Welcome banner line 1 */
+"tools.cli.welcomeLine1" = "Cairn CLI";
+/* Location: CLIToolViewModel.swift - Welcome banner line 2 */
+"tools.cli.welcomeConnected" = "Połączono z %@";
+
+/* Location: CLIToolViewModel.swift - Welcome banner line 3 */
+"tools.cli.welcomeHint" = "Wpisz 'help' aby zobaczyć dostępne polecenia.";
+
+/* Location: CLIToolView.swift - Jump to bottom button */
+"tools.cli.jumpToBottom" = "Skocz na dół";
+
+/* Location: CLIToolView.swift - Accessibility label for command input */
+"tools.cli.commandInput" = "Pole polecenia";
+
+/* Location: CLIToolView.swift - Accessibility label for command prompt */
+"tools.cli.commandPrompt" = "Wiersz polecenia";
+
+/* Location: CLIInputAccessoryView.swift - Cancel operation button label */
+"tools.cli.cancelOperation" = "Anuluj operację";
+
+/* Location: CLIToolViewModel.swift - Command timeout (post-login) */
+"tools.cli.commandTimeout" = "Przekroczono czas żądania";
+
+/* Location: CLIToolViewModel.swift - Reboot command confirmation */
+"tools.cli.rebootSent" = "Polecenie restartu wysłane";
+
+/* Accessibility label for completion suggestions container */
+/* Accessibility value for completion suggestions - %lld is count, %@ is selected */
+/* Confirmation prompt for a dangerous local command */
+"tools.cli.confirmPrompt" = "potwierdzić %@? (yes/no):";
+
+/* Usage for the get command */
+"tools.cli.usageGet" = "Użycie: get <key>";
+
+/* Usage for the set command */
+"tools.cli.usageSet" = "Użycie: set <key> <value>";
+
+/* Usage for set radio */
+"tools.cli.usageSetRadio" = "Użycie: set radio <freq>,<bw>,<sf>,<cr>";
+
+/* Invalid value error */
+"tools.cli.invalidValue" = "Nieprawidłowa wartość";
+
+/* Custom var key/value contains a reserved character */
+"tools.cli.invalidCustomVarToken" = "Klucze nie mogą zawierać ':' ani ','; wartości nie mogą zawierać ','";
+
+/* Local radio commands help header */
+"tools.cli.helpLocalHeader" = "Lokalne polecenia radiowe:";
+
+/* Local radio commands help line 1 */
+"tools.cli.helpLocalList1" = "  clock [sync], ver, board";
+
+/* Local radio commands help line 2 */
+"tools.cli.helpLocalList2" = "  advert (zero-hop), floodadv (flood), reboot";
+
+/* Local radio commands help line 3 */
+"tools.cli.helpLocalList3" = "  get <key>, set <key> <value>";
+
+/* Local radio commands help line 4 */
+"tools.cli.helpLocalList4" = "    keys: name, lat, lon, tx, radio, freq, multi.acks, path.hash.mode, public.key, bat";
+
+/* Local radio commands help line 5 */
+"tools.cli.helpLocalList5" = "  get custom  (wszystkie własne zmienne oprogramowania); nieznane klucze get/set trafiają do własnych zmiennych";
+
+// MARK: - Companion Command Line
+
+/* Location: CLIToolViewModel.swift - help line for opening a companion's command line (MeshCore 1.18) */
+"tools.cli.helpLoginCompanion" = "  login <companion>\n    Wysyłaj polecenia do towarzysza (bez hasła, MeshCore 1.18)";
+
+/* Location: CLIToolViewModel.swift - help line for the companions command */
+"tools.cli.helpCompanions" = "  companions\n    Pokaż listę towarzyszy";
+
+/* Location: CLIToolViewModel+Sessions.swift - header of the companions list; %lld is the count */
+"tools.cli.companionsHeader" = "Towarzysze (%lld):";
+
+/* Location: CLIToolViewModel+Sessions.swift - the companions command found none */
+"tools.cli.noCompanions" = "Nie znaleziono towarzyszy";
+
+/* Location: CompanionCLIExchange.swift - help header for a companion's commands */
+"tools.cli.helpCompanionHeader" = "Polecenia towarzysza (wysyłane do niego):";
+
+/* Location: CompanionCLIExchange.swift - help line: companion read commands */
+"tools.cli.helpCompanionList1" = "  ver, board, get name, get tz.offset";
+
+/* Location: CompanionCLIExchange.swift - help line: companion Wi-Fi reads */
+"tools.cli.helpCompanionList2" = "  get wifi.status, wifi.enabled, wifi.ssid, wifi.ip";
+
+/* Location: CompanionCLIExchange.swift - help line: companion settings */
+"tools.cli.helpCompanionList3" = "  set name, tz.offset, wifi.enabled 0|1, wifi.ssid, wifi.pwd, pin";
+
+/* Location: CompanionCLIExchange.swift - help line: companion power */
+"tools.cli.helpCompanionList4" = "  reboot, poweroff";
+
+/* Location: CompanionCLIExchange.swift - first line of a companion's command line; %@ is its name */
+"tools.cli.companion.opened" = "Polecenia trafiają teraz do %@";
+
+/* Location: CompanionCLIExchange.swift - when another companion answers commands (the firmware page's note) */
+"tools.cli.companion.note" = "Odpowiada tylko wtedy, gdy jego kontakt dla tego radia pozwala ci wysyłać polecenia (przełącznik Zdalne polecenia).";
+
+/* Location: CompanionCLIExchange.swift - how to send a command in a companion's command line */
+"tools.cli.companion.hint" = "Wpisz polecenie lub otwórz Polecenia, aby zobaczyć listę.";
+
+/* Location: CLIToolViewModel+Sessions.swift - this radio's firmware is older than MeshCore 1.18 */
+"tools.cli.companion.needsFirmware" = "Polecenia do innego towarzysza wymagają firmware MeshCore 1.18 w tym radiu";
+
+/* Location: CompanionCLIExchange.swift - no reply came in time; a late reply still shows under it */
+"tools.cli.companion.noReply" = "Jeszcze brak odpowiedzi · może jeszcze nadejść (tam niedozwolone lub poza zasięgiem)";
+
+/* Location: CompanionCLIExchange.swift - a restart or power-off went out */
+"tools.cli.companion.restartSent" = "Wysłano · uruchamia się ponownie";
+
+/* Location: CompanionCLIExchange.swift - a restart or power-off went out and the device answered; %@ is its answer */
+"tools.cli.companion.restartSentReply" = "Wysłano · uruchamia się ponownie (%@)";
+
+/* Location: CompanionCLIExchange.swift - a reply that came after its command timed out, shown under it; %@ is the reply */
+"tools.cli.companion.lateReply" = "Spóźniona odpowiedź · %@";
+
+/* Location: CompanionCLIExchange.swift - a late reply whose command is no longer on screen; %1$@ is the node, %2$@ the command, %3$@ the reply */
+"tools.cli.companion.lateReplyFrom" = "Spóźniona odpowiedź od %1$@ na „%2$@” · %3$@";
+
+/* Location: CompanionCLIExchange.swift - the reply had no text */
+"tools.cli.companion.emptyReply" = "(pusta odpowiedź)";
+
+/* Location: CompanionCLIExchange.swift - the typed text can't be sent as a command (the limit is in UTF-8 bytes) */
+"tools.cli.companion.notACommand" = "To nie polecenie: od 2 do 63 bajtów (litera z ogonkiem lub emoji liczy się jako kilka), bez znaków sterujących i początkowego znacznika xx|";
+
+/* Location: CLIToolViewModel+Sessions.swift - logout from a companion session; %@ is its name */
+"tools.cli.companion.closed" = "Zamknięto wiersz poleceń %@";
+
+/* Location: CompanionCommandPicker.swift - the command list's title, its toolbar button and key */
+"tools.cli.companion.commands" = "Polecenia";
+
+/* Location: CompanionCommandPicker.swift - asked before Restart or Power off; %1$@ is the command's title, %2$@ the command */
+"tools.cli.companion.confirmMessage" = "%1$@ wysyła „%2$@”: drugie urządzenie uruchomi się ponownie lub wyłączy, jeśli ci na to pozwala.";
+
+/* Location: CompanionCommandPicker.swift - section of the four quick commands */
+"tools.cli.companion.group.quick" = "Szybkie";
+
+/* Location: CompanionCommandPicker.swift - section of commands that only read */
+"tools.cli.companion.group.read" = "Odczyt";
+
+/* Location: CompanionCommandPicker.swift - section of commands that change a setting */
+"tools.cli.companion.group.change" = "Zmiana";
+
+/* Location: CompanionCommandPicker.swift - section of Restart and Power off */
+"tools.cli.companion.group.power" = "Zasilanie";
+
+/* Location: CompanionCommandPicker.swift - quick command: its Wi-Fi state */
+"tools.cli.companion.quick.wifi" = "Wi-Fi";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "ver" (the firmware's label) */
+"tools.cli.companion.command.version" = "Wersja";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "board" (the firmware's label) */
+"tools.cli.companion.command.board" = "Płytka";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get name" (the firmware's label) */
+"tools.cli.companion.command.name" = "Nazwa";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get tz.offset" (the firmware's label) */
+"tools.cli.companion.command.timeZone" = "Strefa czasowa";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.status" (the firmware's label) */
+"tools.cli.companion.command.wifiState" = "Stan Wi-Fi";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.enabled" (the firmware's label) */
+"tools.cli.companion.command.wifiEnabled" = "Wi-Fi wł.?";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.ssid" (the firmware's label) */
+"tools.cli.companion.command.wifiNetwork" = "Sieć Wi-Fi";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.ip" (the firmware's label) */
+"tools.cli.companion.command.ipAddress" = "Adres IP";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set name" (the firmware's label) */
+"tools.cli.companion.command.rename" = "Zmień nazwę";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set tz.offset" (the firmware's label) */
+"tools.cli.companion.command.setTimeZone" = "Strefa czasowa";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.enabled 1" (the firmware's label) */
+"tools.cli.companion.command.wifiOn" = "Wi-Fi wł.";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.enabled 0" (the firmware's label) */
+"tools.cli.companion.command.wifiOff" = "Wi-Fi wył.";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.ssid" (the firmware's label) */
+"tools.cli.companion.command.setWifiNetwork" = "Sieć Wi-Fi";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.pwd" (the firmware's label) */
+"tools.cli.companion.command.wifiKey" = "Klucz Wi-Fi";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set pin" (the firmware's label) */
+"tools.cli.companion.command.bluetoothPIN" = "PIN Bluetooth";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "reboot" (the firmware's label) */
+"tools.cli.companion.command.restart" = "Uruchom ponownie";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "poweroff" (the firmware's label) */
+"tools.cli.companion.command.powerOff" = "Wyłącz";
+"tools.cli.companion.command.wifiClear" = "Zapomnij Wi-Fi";
+"tools.cli.companion.command.memory" = "Wolna pamięć";
+"tools.cli.companion.command.radio" = "Ustawienia radia";
+"tools.cli.companion.command.txPower" = "Moc nadawania";
+"tools.cli.companion.command.setRadio" = "Ustaw radio";
+"tools.cli.companion.command.setTxPower" = "Ustaw moc";
+"tools.cli.companion.command.shutdown" = "Zamknij";
+
+// MARK: - Saved Paths
+
+/* Location: SavedPathsViewModel.swift - Error loading saved paths */
+"tools.savedPaths.loadFailed" = "Nie udało się wczytać zapisanych ścieżek.";
+
+/* Location: SavedPathsViewModel.swift - Error renaming a saved path */
+"tools.savedPaths.renameFailed" = "Nie udało się zmienić nazwy ścieżki.";
+
+/* Location: SavedPathsViewModel.swift - Error deleting a saved path */
+"tools.savedPaths.deleteFailed" = "Nie udało się usunąć ścieżki.";
+
+// MARK: - App Intents
+
+/* Location: MessageTargetEntity.swift - App Intents entity type name for a send target (a contact DM or a channel broadcast) */
+"intent.entity.target" = "Odbiorca";
+
+/* Location: MessageTargetEntity.swift - App Intents recipient-picker subtitle marking a channel (broadcast) target */
+"intent.entity.channel" = "Kanał";
+
+/* Location: StatusQueryIntent.swift - App Intents: title of the radio status query intent */
+"intent.status.title" = "Sprawdź stan radia";
+
+/* Location: CairnAppShortcutsProvider.swift - App Shortcuts: short title for the radio status shortcut */
+"intent.status.shortTitle" = "Stan radia";
+
+/* Location: StatusQueryIntent.swift - App Intents: description of the radio status query intent */
+"intent.status.description" = "Podaje nazwę, stan połączenia i ostatni znany poziom baterii połączonego radia.";
+
+/* Location: StatusQueryIntent.swift - Spoken when the app is still launching and has no state to read yet */
+"intent.status.dialog.notReady" = "Cairn nadal się uruchamia. Spróbuj ponownie za chwilę.";
+/* Location: StatusQueryIntent.swift - Spoken when connected; %1$@ is the radio name, %2$lld is the cached battery percent */
+"intent.status.dialog.connectedWithBattery" = "%1$@ jest połączone. Bateria wynosi około %2$lld%%, według ostatniego odczytu.";
+
+/* Location: StatusQueryIntent.swift - Spoken when connected but no battery reading is available; %@ is the radio name */
+"intent.status.dialog.connectedNoBattery" = "%@ jest połączone. Brak odczytu baterii.";
+
+/* Location: StatusQueryIntent.swift - Spoken while the radio is connecting; %@ is the radio name */
+"intent.status.dialog.connecting" = "%@ łączy się.";
+
+/* Location: StatusQueryIntent.swift - Spoken when not connected and a last radio name is known; %@ is the radio name */
+"intent.status.dialog.disconnectedNamed" = "%@ nie jest połączone.";
+
+/* Location: StatusQueryIntent.swift - Spoken when not connected and no radio has been connected before */
+"intent.status.dialog.disconnectedUnknown" = "Żadne radio nie jest połączone.";
+
+/* Location: StatusQueryIntent.swift - Generic radio name used when no device name is known */
+"intent.status.radioFallbackName" = "Twoje radio";
+
+/* Location: SendMessageIntent.swift - App Intents: title of the send message intent */
+"intent.send.title" = "Wyślij wiadomość";
+
+/* Location: CairnAppShortcutsProvider.swift - App Shortcuts: short title for the send message shortcut */
+"intent.send.shortTitle" = "Wyślij wiadomość";
+
+/* Location: SendMessageIntent.swift - App Intents: description of the send message intent */
+"intent.send.description" = "Wyślij tekst do kontaktu lub na kanał w swoim radiu.";
+
+/* Location: SendMessageIntent.swift - App Intents: title of the recipient parameter (a contact or a channel) */
+"intent.send.param.target" = "Odbiorca";
+
+/* Location: SendMessageIntent.swift - App Intents: title of the message text parameter */
+"intent.send.param.message" = "Wiadomość";
+
+/* Location: SendMessageIntent.swift - Confirmation prompt shown before sending; %@ is the recipient name */
+"intent.send.confirm" = "Wysłać tę wiadomość do %@?";
+
+/* Location: SendMessageIntent.swift - Spoken when the app must come to the foreground to send (still connecting or reconnecting) */
+"intent.send.foreground" = "Otwórz Cairn, aby dokończyć wysyłanie tej wiadomości.";
+/* Location: SendMessageIntent.swift - App Intents parameter summary shown in the shortcut editor; ${message} and ${target} are framework parameter tokens */
+"Send ${message} to ${target}" = "Wyślij ${message} do ${target}";
+
+// MARK: - Send Advert Intent
+
+/* Location: SendAdvertIntent.swift - App Intents: title of the send advert intent */
+"intent.advert.title" = "Wyślij ogłoszenie";
+
+/* Location: CairnAppShortcutsProvider.swift - App Shortcuts: short title for the send advert shortcut */
+"intent.advert.shortTitle" = "Wyślij ogłoszenie";
+
+/* Location: SendAdvertIntent.swift - App Intents: description of the send advert intent */
+"intent.advert.description" = "Wyślij ogłoszenie o sobie, aby pobliskie węzły sieci mesh mogły wykryć Twoje radio.";
+
+/* Location: SendAdvertIntent.swift - App Intents: title of the advert reach parameter (zero-hop or flood) */
+"intent.advert.param.reach" = "Zasięg";
+
+/* Location: AdvertReach.swift - App Intents: type name for the advert reach enum */
+"intent.advert.reach.type" = "Zasięg ogłoszenia";
+
+/* Location: AdvertReach.swift - App Intents: zero-hop reach case (direct neighbors only) */
+"intent.advert.reach.zeroHop" = "Zero-Hop";
+
+/* Location: AdvertReach.swift - App Intents: flood reach case (entire mesh) */
+"intent.advert.reach.flood" = "Flood";
+
+/* Location: SendAdvertIntent.swift - Spoken after a zero-hop advert is sent */
+"intent.advert.dialog.sentZeroHop" = "Wysłano ogłoszenie do pobliskich węzłów.";
+
+/* Location: SendAdvertIntent.swift - Spoken after a flood advert is sent */
+"intent.advert.dialog.sentFlood" = "Wysłano ogłoszenie w całej sieci mesh.";
+
+/* Location: SendAdvertIntent.swift - App Intents parameter summary shown in the shortcut editor; ${reach} is the framework parameter token */
+"Send a ${reach} advert" = "Wyślij ogłoszenie ${reach}";
+
+
+/* Location: NodeDiscoveryView.swift - Purpose: Tab title for the discovered node list */
+"tools.nodeDiscovery.displayMode.list" = "Lista";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Tab title for the discovered node map */
+"tools.nodeDiscovery.displayMode.map" = "Mapa";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Accessibility label for the List/Map picker */
+"tools.nodeDiscovery.displayMode.label" = "Widok";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Pill over the map counting discovered nodes without a known location - %d is the count */
+"tools.nodeDiscovery.map.notShown" = "Niewidoczne na mapie: %d";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Accessibility hint for the not-shown pill */
+"tools.nodeDiscovery.map.notShownHint" = "Pokazuje listę wszystkich wykrytych węzłów";
+
+
+/* Location: MapDiscoveryOverlay.swift - Purpose: Menu item and button that removes discovery results from the map */
+"tools.nodeDiscovery.clearResults" = "Wyczyść wyniki";
+
+/* Location: MapDiscoveryOverlay.swift - Purpose: Map pill while a scan runs - %@ is Repeaters or Sensors */
+"tools.nodeDiscovery.map.scanning" = "Wyszukiwanie: %@…";
+
+/* Location: MapDiscoveryOverlay.swift - Purpose: Map pill after a scan - %d is how many nodes replied */
+"tools.nodeDiscovery.map.heard" = "Usłyszane: %d";
+
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth" = "Stan sieci";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.summary.repeaters" = "Przekaźniki";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.summary.attention" = "Wymaga uwagi";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.summary.checkedToday" = "Sprawdzone dziś";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.section.attention" = "Wymaga uwagi";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.section.healthy" = "W porządku";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.section.noStatus" = "Brak statusu";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.noStatusFooter" = "Otwórz kartę Telemetria przekaźnika, aby zapisać baterię, poziom szumu i czas pracy. Każde sprawdzenie trafia do tego panelu.";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.footer" = "Stan pochodzi ze sprawdzeń wykonanych na przekaźnikach i ogłoszeń odebranych przez ten telefon. Stuknij przekaźnik, aby zobaczyć historię.";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.lowBattery" = "Słaba bateria";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.notHeard" = "Nie słyszany od 2+ dni";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.batteryFalling" = "Bateria spada";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.highNoise" = "Wysoki szum";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.restarted" = "Uruchomiony ponownie";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.heard" = "Słyszany %@";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.checked" = "Sprawdzony %@";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.noise" = "Szum %d dBm";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.noData" = "Brak danych";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.batteryPercent" = "%d%%";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.empty.title" = "Brak przekaźników";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.empty.description" = "Przekaźniki z listy węzłów pojawiają się tutaj wraz z baterią, poziomem szumu i czasem ostatniego odbioru.";
+
+
+/* Location: ToolsView.swift - Section header in the Tools list */
+"tools.category.network" = "Sieć";
+
+/* Location: ToolsView.swift - Section header in the Tools list */
+"tools.category.routing" = "Trasowanie";
+
+/* Location: ToolsView.swift - Section header in the Tools list */
+"tools.category.advanced" = "Zaawansowane";
+
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum" = "Widmo";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.notConnected" = "Połącz radio, aby zobaczyć widmo jego kanału.";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.section.spectrum" = "Widmo kanału";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.section.activity" = "Aktywność, ostatnie 5 minut";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.section.figures" = "Dane kanału";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.spectrumFooter" = "Radia MeshCore mierzą tylko kanał, na który są dostrojone, więc zacienione boki nie są skanowane. Poziom szumu i pakiety są mierzone; czułość i szum termiczny są obliczane z ustawień radia.";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.notMeasured" = "Nie mierzono";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.calibrating" = "Radio kalibruje poziom szumu…";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.waiting" = "Oczekiwanie na odczyty…";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.waitingForPacket" = "Oczekiwanie na pakiet";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.measuring" = "Pomiar…";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.warning" = "Ostrzeżenie";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.axis.mhz" = "MHz";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.axis.dbm" = "dBm";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.packet" = "Ostatni pakiet";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.noise" = "Poziom szumu";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.sensitivity" = "Czułość";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.thermal" = "Szum termiczny";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.maxHold" = "Maksimum";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.channel" = "Kanał";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.channelCaption" = "%@ kHz · SF%d · CR 4/%d";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.noiseFloor" = "Poziom szumu";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.noiseValue" = "Poziom szumu %d dBm";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.minAvgMax" = "Min %d · Śr %d · Maks %d";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.interference" = "Zakłócenia";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.interferenceCaption" = "Utrata czułości ponad szum termiczny (%@)";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.sensitivity" = "Czułość";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.effectiveSensitivity" = "%@ przy obecnym szumie";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.snrLimit" = "Wymaga SNR powyżej %@";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.lastPacket" = "Ostatni pakiet";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.lastPacketValue" = "Ostatni pakiet %d dBm";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.snrMargin" = "SNR %@ · %@ powyżej limitu";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.linkBudget" = "Budżet łącza";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.linkBudgetCaption" = "Przy mocy nadawania %d dBm";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.channelBusy" = "Zajętość kanału";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.busyCaption" = "Odbiór %@ · Nadawanie %@";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.packets" = "Odebrane pakiety";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.perMinute" = "%@/min";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.crcErrors" = "Błędy CRC %@";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.airtime" = "Czas nadawania";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.airtimeCaption" = "Pakiet 64 bajtów · %d b/s";
+
+/* Location: RxLogView.swift - Overflow menu action exporting the RX log as CSV */
+"tools.rxLog.exportCSV" = "Eksportuj CSV";
+
+/* Location: RxLogView.swift - Detail label for the sender's timestamp in a decrypted packet */
+"tools.rxLog.senderTimeLabel" = "Wysłano:";
+
+/* Location: RxLogView.swift - Detail label for the packet's decryption status */
+"tools.rxLog.decryptionLabel" = "Odszyfrowanie:";
+
+/* Location: ToolSelection.swift - Tool name for signing and verifying messages */
+"tools.signVerify" = "Podpisz i zweryfikuj";
+
+/* Location: SignVerifyView.swift - Segmented control option for signing */
+"tools.signVerify.mode.sign" = "Podpisz";
+
+/* Location: SignVerifyView.swift - Segmented control option for verifying */
+"tools.signVerify.mode.verify" = "Zweryfikuj";
+
+/* Location: SignVerifyView.swift - Section header for the message text */
+"tools.signVerify.message" = "Wiadomość";
+
+/* Location: SignVerifyView.swift - Placeholder for the message text field */
+"tools.signVerify.messagePlaceholder" = "Tekst do podpisania lub weryfikacji";
+
+/* Location: SignVerifyView.swift - Button asking the radio to sign the message */
+"tools.signVerify.signButton" = "Podpisz radiem";
+
+/* Location: SignVerifyView.swift - Progress text while the radio signs */
+"tools.signVerify.signing" = "Podpisywanie…";
+
+/* Location: SignVerifyView.swift - Section header for the signature */
+"tools.signVerify.signature" = "Podpis";
+
+/* Location: SignVerifyView.swift - Section header for this radio's public key */
+"tools.signVerify.publicKey" = "Klucz publiczny";
+
+/* Location: SignVerifyView.swift - Button copying a value as hex */
+"tools.signVerify.copyHex" = "Kopiuj hex";
+
+/* Location: SignVerifyView.swift - Button copying a value as Base64 */
+"tools.signVerify.copyBase64" = "Kopiuj Base64";
+
+/* Location: SignVerifyView.swift - Share the signed message, signature and key */
+"tools.signVerify.share" = "Udostępnij";
+
+/* Location: SignVerifyView.swift - Shared text; 1 = message, 2 = signature hex, 3 = public key hex */
+"tools.signVerify.shareText" = "Wiadomość: %1$@\nPodpis (Ed25519): %2$@\nKlucz publiczny: %3$@";
+
+/* Location: SignVerifyView.swift - Footer explaining how signing works */
+"tools.signVerify.signFooter" = "Radio podpisuje bajty UTF-8 wiadomości swoim kluczem prywatnym (Ed25519). Klucz prywatny nigdy nie opuszcza radia.";
+
+/* Location: SignVerifyView.swift - Shown when no radio is connected in Sign mode */
+"tools.signVerify.requiresRadio" = "Połącz radio, aby podpisywać wiadomości. Weryfikacja działa offline.";
+
+/* Location: SignVerifyView.swift - Placeholder for the signature field */
+"tools.signVerify.signaturePlaceholder" = "Podpis (hex lub Base64)";
+
+/* Location: SignVerifyView.swift - Picker for who signed the message */
+"tools.signVerify.signer" = "Podpisujący";
+
+/* Location: SignVerifyView.swift - Signer picker option to paste a public key */
+"tools.signVerify.manualKey" = "Wpisz klucz publiczny";
+
+/* Location: SignVerifyView.swift - Signer picker option for the connected radio */
+"tools.signVerify.thisRadio" = "To radio";
+
+/* Location: SignVerifyView.swift - Placeholder for a pasted public key */
+"tools.signVerify.keyPlaceholder" = "Klucz publiczny (64 znaki hex)";
+
+/* Location: SignVerifyView.swift - Button to verify the signature */
+"tools.signVerify.verifyButton" = "Zweryfikuj podpis";
+
+/* Location: SignVerifyView.swift - Result when the signature verifies */
+"tools.signVerify.valid" = "Podpis jest prawidłowy";
+
+/* Location: SignVerifyView.swift - Result when the signature does not verify */
+"tools.signVerify.invalid" = "Podpis jest nieprawidłowy";
+
+/* Location: SignVerifyView.swift - Shown when the signature or key cannot be parsed */
+"tools.signVerify.invalidInput" = "Wpisz 64-bajtowy podpis i 32-bajtowy klucz publiczny (hex lub Base64).";
+
+/* Location: SignVerifyView.swift - Footer explaining verification */
+"tools.signVerify.verifyFooter" = "Weryfikacja odbywa się na tym urządzeniu przy użyciu Ed25519 i działa bez radia.";
+
+/* Location: SignVerifyView.swift - Error when the message exceeds the radio's limit; %d = max bytes */
+"tools.signVerify.error.tooLarge" = "Wiadomość jest za długa do podpisania (maksymalnie %d bajtów).";
+
+/* Location: SignVerifyView.swift - Error when signing fails; %@ = reason */
+"tools.signVerify.error.failed" = "Podpisywanie nie powiodło się: %@";
+
+/* Location: NodeDiscoveryRowView.swift - Button that asks an unnamed node for its name over the radio */
+"tools.nodeDiscovery.requestName" = "Poproś o nazwę";
+
+/* Location: NodeDiscoveryRowView.swift - Shown while a node is being asked for its name */
+"tools.nodeDiscovery.requestingName" = "Pobieranie nazwy…";
+
+/* Location: NodeDiscoveryRowView.swift - VoiceOver hint for the Request Name button */
+"tools.nodeDiscovery.requestNameHint" = "Prosi ten węzeł o nazwę drogą radiową";
+
+/* Location: NodeDiscoveryView.swift - Footer under scan results explaining where names come from, when the radio can ask nodes for their name */
+"tools.nodeDiscovery.namesFooter" = "Odpowiedź na skanowanie zawiera klucz węzła, a nie jego nazwę. Nazwy pochodzą z ogłoszeń odebranych przez radio; węzły nadal nieznane są pytane o nazwę bezpośrednio.";
+
+/* Location: NodeDiscoveryScanControl.swift - Info text explaining where names come from, when the radio's firmware is too old to ask nodes for their name */
+"tools.nodeDiscovery.namesFooterNeedsFirmware" = "Odpowiedź na skanowanie zawiera klucz węzła, a nie jego nazwę. Nazwy pochodzą z ogłoszeń odebranych przez radio. Aby zapytać węzeł o nazwę, potrzebne jest oprogramowanie radia 1.12 lub nowsze.";
+
+/* Location: NodeDiscoveryScanControl.swift - Info text explaining where names come from, while no radio is connected */
+"tools.nodeDiscovery.namesFooterDisconnected" = "Odpowiedź na skanowanie zawiera klucz węzła, a nie jego nazwę. Nazwy pochodzą z ogłoszeń odebranych przez radio. Połącz radio, aby zapytać nieznane węzły o nazwę.";
+
+/* Location: MapDiscoveryOverlay.swift - Title of the sheet listing every node that answered the scan run from the Map tab */
+"tools.nodeDiscovery.map.heardTitle" = "Wyniki skanowania";
+/* Location: MapDiscoveryOverlay.swift - Label on a heard node whose position is not known, so it cannot be drawn on the map */
+"tools.nodeDiscovery.map.noLocation" = "Brak znanej lokalizacji";
+
+/* Location: MapDiscoveryOverlay.swift - VoiceOver hint for the scan summary pill on the Map tab */
+"tools.nodeDiscovery.map.listHint" = "Pokazuje wszystkie węzły, które odpowiedziały";
+
+/* Location: MapDiscoveryOverlay.swift - Footer in the heard nodes sheet explaining why some nodes are not on the map */
+"tools.nodeDiscovery.map.noLocationFooter" = "Węzeł pojawia się na mapie, gdy radio odbierze ogłoszenie z jego pozycją.";
+
+/* Location: MapDiscoveryOverlay.swift - Scan summary pill while a scan runs; first placeholder is the node kind (Repeaters), second is how many have answered so far */
+"tools.nodeDiscovery.map.scanningHeard" = "Wyszukiwanie: %1$@… usłyszano %2$d";
+
+/* Location: SpectrumView.swift - Channel condition when the measured noise floor is close to thermal noise */
+"tools.spectrum.condition.quiet" = "Cichy kanał";
+
+/* Location: SpectrumView.swift - Channel condition when noise is moderately above thermal noise */
+"tools.spectrum.condition.some" = "Niewielkie zakłócenia";
+
+/* Location: SpectrumView.swift - Channel condition when noise is far above thermal noise */
+"tools.spectrum.condition.heavy" = "Silne zakłócenia";
+
+/* Location: SpectrumChannelChart.swift - Signal zone: 10 dB or more above the decode limit */
+"tools.spectrum.zone.strong" = "Silny";
+
+/* Location: SpectrumChannelChart.swift - Signal zone: decodable but less than 10 dB above the decode limit */
+"tools.spectrum.zone.weak" = "Słaby";
+
+/* Location: SpectrumChannelChart.swift - Signal zone: too weak for the radio to decode */
+"tools.spectrum.zone.noDecode" = "Poniżej progu dekodowania";
+
+/* Location: SpectrumChannelChart.swift - Legend entry for the weakest signal the radio can decode with the current noise */
+"tools.spectrum.legend.decodeLimit" = "Próg dekodowania";
+
+/* Location: SpectrumActivityChart.swift - Legend entry for received packets plotted over time */
+"tools.spectrum.legend.packets" = "Pakiety";
+
+/* Location: SpectrumView.swift - Footer under the channel spectrum explaining the colored zones and what is measured */
+"tools.spectrum.zonesFooter" = "Kolory pokazują, jak bardzo sygnał przewyższa najsłabszy, który radio potrafi zdekodować przy obecnym szumie: silny to 10 dB lub więcej powyżej tego progu. Radia MeshCore mierzą tylko kanał, na który są nastrojone, więc zacienione boki nie są skanowane.";
+
+/* Location: SpectrumFormat.swift - A power level with its unit; placeholder is the number */
+"tools.spectrum.value.dbm" = "%@ dBm";
+
+/* Location: SpectrumFormat.swift - A ratio in decibels with its unit; placeholder is the number */
+"tools.spectrum.value.db" = "%@ dB";
+
+/* Location: SpectrumFormat.swift - A frequency in megahertz with its unit; placeholder is the number */
+"tools.spectrum.value.mhz" = "%@ MHz";
+
+/* Location: SpectrumFormat.swift - A bandwidth in kilohertz with its unit; placeholder is the number */
+"tools.spectrum.value.khz" = "%@ kHz";
+
+/* Location: SpectrumFormat.swift - A duration in milliseconds with its unit; placeholder is the number */
+"tools.spectrum.value.ms" = "%@ ms";
+
+/* Location: SpectrumView.swift - LoRa spreading factor chip, e.g. SF7 */
+"tools.spectrum.header.spreadingFactor" = "SF%d";
+
+/* Location: SpectrumView.swift - LoRa coding rate chip, e.g. CR 4/5 */
+"tools.spectrum.header.codingRate" = "CR 4/%d";
+
+/* Location: SpectrumActivityChart.swift - VoiceOver summary of the activity chart; first number is noise readings, second is packets */
+"tools.spectrum.activity.accessibility" = "Odczyty szumu: %1$d, pakiety: %2$d w ciągu ostatnich 5 minut";
+
+/* Location: MapDiscoveryOverlay.swift - Label on a heard node that the user has hidden from the Map tab, so the scan does not draw it */
+"tools.nodeDiscovery.map.hidden" = "Ukryty na mapie";
+
+/* Location: SpectrumFigures.swift - Interference tile caption when interference is high enough to warn; placeholder is the thermal noise level, e.g. -120 dBm */
+"tools.spectrum.figure.interferenceWarningCaption" = "Skraca zasięg · szum termiczny %@";
+
+/* Location: SpectrumFigures.swift - Last packet tile caption when the packet was barely decodable; first placeholder is SNR, second is how far above the decode limit, both in dB */
+"tools.spectrum.figure.lowMarginCaption" = "SNR %@ · tylko %@ powyżej limitu, bliski utraty";
+
+/* Location: ResultsCardView.swift - Title of the tile showing the total path loss in dB */
+"tools.lineOfSight.totalPathLoss" = "Całkowita tłumienność trasy";
+
+/* Tools hub - short line under the Network Health tool card */
+"tools.subtitle.networkHealth" = "Stan przekaźników";
+
+/* Tools hub - short line under the Discover Nodes tool card */
+"tools.subtitle.nodeDiscovery" = "Poproś węzły w pobliżu o odpowiedź";
+/* Tools hub - short line under the Spectrum tool card */
+"tools.subtitle.spectrum" = "Aktywność kanału";
+
+/* Tools hub - short line under the Noise Floor tool card */
+"tools.subtitle.noiseFloor" = "Szum tła";
+
+/* Tools hub - short line under the Trace Path tool card */
+"tools.subtitle.tracePath" = "Testuj trasę";
+
+/* Tools hub - short line under the Line of Sight tool card */
+"tools.subtitle.lineOfSight" = "Prześwit terenu";
+
+/* Tools hub - short line under the RX Log tool card */
+"tools.subtitle.rxLog" = "Odebrane pakiety";
+
+/* Tools hub - short line under the CLI (command line) tool card */
+"tools.subtitle.cli" = "Polecenia radia";
+
+/* Tools hub - short line under the Sign & Verify tool card */
+"tools.subtitle.signVerify" = "Podpisane wiadomości";
+
+/* Location: NodeDiscoveryView.swift - Detail line on the card linking to the Nodes tab's Heard Nodes page (nodes heard passively from adverts) */
+"tools.nodeDiscovery.heardNodesDetail" = "Węzły usłyszane z ich ogłoszeń";
+
+/* Location: SpectrumFigures.swift - Noise floor trend over the session: getting louder */
+"tools.spectrum.trend.rising" = "Rośnie";
+
+/* Location: SpectrumFigures.swift - Noise floor trend over the session: getting quieter */
+"tools.spectrum.trend.falling" = "Spada";
+
+/* Location: SpectrumFigures.swift - Noise floor trend over the session: unchanged */
+"tools.spectrum.trend.steady" = "Stabilny";
+
+/* Location: SpectrumFigures.swift - Noise floor tile caption: %1$@ trend word, %2$@ min/avg/max line */
+"tools.spectrum.figure.noiseCaption" = "%1$@ · %2$@";
+
+/* Spectrum tab: Chart time axis label for the present moment */
+"tools.spectrum.axis.now" = "teraz";
+
+/* Spectrum tab: Audio graph axis title: how long ago a reading was taken */
+"tools.spectrum.axis.secondsAgo" = "Temu";
+
+/* Spectrum tab: Accessibility label of the Spectrum channel chart */
+"tools.spectrum.chart.label" = "Aktywność kanału";
+
+/* Spectrum tab: Accessibility value of the Spectrum channel chart. 1: noise readings, 2: packets, 3: window such as '1 minute' */
+"tools.spectrum.chart.summary" = "%1$lld pomiarów szumu i %2$lld pakietów w ciągu ostatnich %3$@";
+
+/* Spectrum tab: Packet size in bytes, short. Example: 38 B */
+"tools.spectrum.detail.bytes" = "%lld B";
+
+/* Spectrum tab: Button that opens the full RX log detail for the selected packet */
+"tools.spectrum.detail.open" = "Szczegóły pakietu";
+
+/* Spectrum tab: Signal-to-noise ratio with value. Example: SNR 6.25 */
+"tools.spectrum.detail.snr" = "SNR %@";
+
+/* Spectrum tab: Title of the packet detail sheet opened from Spectrum */
+"tools.spectrum.detail.title" = "Pakiet";
+
+/* Spectrum tab: Spectrum header: estimated time on air for one packet. 1: milliseconds, 2: payload bytes */
+"tools.spectrum.header.airtime" = "~%1$@ ms na pakiet %2$lld B";
+
+/* Spectrum tab: Footnote under the noise floor history: readings come from this session. Argument is a clock time */
+"tools.spectrum.history.caption" = "Ta sesja, od %@";
+
+/* Spectrum tab: Range of the noise floor history. Example: -113…-108 dBm */
+"tools.spectrum.history.range" = "%1$@…%2$@ dBm";
+
+/* Spectrum tab: Title of the noise floor history card */
+"tools.spectrum.history.title" = "Historia poziomu szumu";
+
+/* Spectrum tab: Packet type: acknowledgement */
+"tools.spectrum.kind.ack" = "Potwierdzenie";
+
+/* Spectrum tab: Packet type: node advert */
+"tools.spectrum.kind.advert" = "Ogłoszenie";
+
+/* Spectrum tab: Packet type: anonymous request */
+"tools.spectrum.kind.anonRequest" = "Anonimowe żądanie";
+
+/* Spectrum tab: Packet type: control */
+"tools.spectrum.kind.control" = "Sterowanie";
+
+/* Spectrum tab: Packet type: channel data */
+"tools.spectrum.kind.groupData" = "Dane kanału";
+
+/* Spectrum tab: Packet type: channel message */
+"tools.spectrum.kind.groupText" = "Wiadomość kanału";
+
+/* Spectrum tab: Packet type: direct message */
+"tools.spectrum.kind.message" = "Wiadomość bezpośrednia";
+
+/* Spectrum tab: Packet type: multipart */
+"tools.spectrum.kind.multipart" = "Wieloczęściowy";
+
+/* Spectrum tab: Packet type: path return */
+"tools.spectrum.kind.path" = "Ścieżka";
+
+/* Spectrum tab: Packet type: raw custom data */
+"tools.spectrum.kind.raw" = "Surowy";
+
+/* Spectrum tab: Packet type: request */
+"tools.spectrum.kind.request" = "Żądanie";
+
+/* Spectrum tab: Packet type: response */
+"tools.spectrum.kind.response" = "Odpowiedź";
+
+/* Spectrum tab: Packet type: trace */
+"tools.spectrum.kind.trace" = "Śledzenie";
+
+/* Spectrum tab: Packet type: unknown */
+"tools.spectrum.kind.unknown" = "Nieznany";
+
+/* Spectrum tab: Chart legend: the noise floor's lowest to highest reading per column */
+"tools.spectrum.legend.floorRange" = "Zakres szumu";
+
+/* Spectrum tab: Chart legend: the dotted line at the strongest packet in the window */
+"tools.spectrum.legend.peakPacket" = "Szczyt pakietu";
+
+/* Spectrum tab: Chart legend after the colored "+6 +20 +35": how far a packet stood above the noise floor */
+"tools.spectrum.legend.levels" = "dB ponad szumem";
+
+/* Spectrum tab: Airtime tile caption: share receiving and transmitting */
+"tools.spectrum.meter.airCaption" = "RX %1$@ · TX %2$@";
+
+/* Spectrum tab: Airtime tile status past 30 % airtime (not "busy": that word is the radio's time-above-floor reading) */
+"tools.spectrum.meter.heavyUse" = "Intensywne użycie";
+
+/* Spectrum tab: Floor tile caption while the radio calibrates its noise floor */
+"tools.spectrum.meter.calibrating" = "Kalibracja";
+
+/* Spectrum tab: Airtime tile status past 60 % airtime */
+"tools.spectrum.meter.veryHeavyUse" = "Bardzo intensywne użycie";
+
+/* Spectrum tab: Meter tile title: noise floor */
+"tools.spectrum.meter.floor" = "Szum";
+
+/* Spectrum tab: Title of the tile with the last packet's strength and margin over the floor (uppercase, a quarter of a phone-width card) */
+"tools.spectrum.meter.lastPacket" = "Ostatni pakiet";
+
+/* Spectrum tab: Meter tile title: how far the last packet is above the noise floor */
+"tools.spectrum.meter.margin" = "Margines";
+
+/* Spectrum tab: Margin tile caption: the packet stands well above the floor */
+"tools.spectrum.meter.marginClear" = "Wyraźnie ponad szumem";
+
+/* Spectrum tab: Margin tile caption: the packet is close to the floor */
+"tools.spectrum.meter.marginLow" = "Blisko szumu";
+
+/* Spectrum tab: Meter tile title: the latest signal strength */
+"tools.spectrum.meter.now" = "Teraz";
+
+/* Spectrum tab: Now tile caption. Argument is a short age like 12s */
+"tools.spectrum.meter.nowCaption" = "Odebrany %@ temu";
+
+/* Spectrum tab: Meter tile title: packets heard per minute */
+"tools.spectrum.meter.packets" = "Pakiety";
+
+/* Spectrum tab: Meter tile title: strongest packet */
+"tools.spectrum.meter.peak" = "Szczyt";
+
+/* Spectrum tab: Peak tile caption. Argument is a window like '1 minute' */
+"tools.spectrum.meter.peakCaption" = "Najsilniejszy w ciągu ostatnich %@";
+
+/* Spectrum tab: Packets tile line: the strongest packet heard in the window. %@ is a level like -87 dBm */
+"tools.spectrum.meter.peakPacket" = "Szczyt pakietu %@";
+
+/* Spectrum tab: Last packet tile caption: the reading is the radio's own last-packet RSSI, not one from the RX log */
+"tools.spectrum.meter.fromRadio" = "Z radia";
+
+/* Spectrum tab: Packet sender line: a channel known only by its hash */
+"tools.spectrum.party.channel" = "Kanał %@";
+
+/* Spectrum tab: Packet sender line. Argument is a name or key */
+"tools.spectrum.party.from" = "Od %@";
+
+/* Spectrum tab: Packet sender and recipient line */
+"tools.spectrum.party.fromTo" = "Od %1$@ → %2$@";
+
+/* Spectrum tab: Packet sender line when the packet type carries no addresses */
+"tools.spectrum.party.none" = "Brak adresów w tym typie pakietu";
+
+/* Spectrum tab: The last relay a flood packet came through */
+"tools.spectrum.party.via" = "przez %@";
+
+/* Spectrum tab: Packet route: direct with a route of N hops ahead */
+"tools.spectrum.route.directHops" = "Bezpośrednio %lld";
+
+/* Spectrum tab: Packet route: flooded, N hops so far */
+"tools.spectrum.route.flood" = "Flood %lld";
+
+/* Spectrum tab: Traffic table column: how long ago */
+"tools.spectrum.traffic.age" = "Wiek";
+
+/* Spectrum tab: Traffic list when no packet has been heard */
+"tools.spectrum.traffic.empty" = "Brak ruchu";
+
+/* Spectrum tab: Traffic table column: route */
+"tools.spectrum.traffic.route" = "Trasa";
+
+/* Spectrum tab: Traffic table column: received signal strength */
+"tools.spectrum.traffic.rssi" = "RSSI";
+
+/* Spectrum tab: Link from the traffic list to the RX Log tool */
+"tools.spectrum.traffic.seeAll" = "Pokaż wszystko";
+
+/* Spectrum tab: Accessibility hint of the See All link */
+"tools.spectrum.traffic.seeAllHint" = "Otwiera dziennik RX";
+
+/* Spectrum tab: Traffic table column: signal-to-noise ratio */
+"tools.spectrum.traffic.snr" = "SNR";
+
+/* Spectrum tab: Title of the traffic list on the Spectrum tab */
+"tools.spectrum.traffic.title" = "Ruch";
+
+/* Spectrum tab: Traffic table column: packet type */
+"tools.spectrum.traffic.type" = "Typ";
+
+/* Spectrum tab: Spectrum header button that sends an advert (opens zero-hop / flood choice) */
+"tools.spectrum.advert" = "Ogłoś";
+
+/* Spectrum tab: Footnote under the Spectrum channel chart */
+"tools.spectrum.chartFooter" = "Poziom szumu to średnia liczona przez radio, odczytywana co 5 sekund; każdy pakiet jest rysowany z siłą, z jaką dotarł. Stuknij pakiet, aby zobaczyć szczegóły.";
+/* Spectrum tab: Footnote when noise readings don't cover the whole window. 1: covered span, 2: window */
+"tools.spectrum.coverage" = "Pomiary szumu obejmują %1$@ z ostatnich %2$@: są wykonywane tylko przy otwartym Widmie. Pakiety pochodzą z dziennika RX.";
+
+/* Spectrum tab: Accessibility label of the Spectrum chart's time window picker */
+"tools.spectrum.window" = "Okno czasowe";
+
+/* Location: NodeDiscoveryPanel.swift - Sort option: nearest nodes first */
+"tools.nodeDiscovery.sortDistance" = "Odległość";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge on a scan result that is not a contact yet; also the New filter chip */
+"tools.nodeDiscovery.badge.new" = "Nowy";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge on a scan result that is already a contact */
+"tools.nodeDiscovery.badge.contact" = "Kontakt";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line before any scan */
+"tools.nodeDiscovery.status.idle" = "Prosi węzły w bezpośrednim zasięgu o odpowiedź";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while listening; %d is how many nodes have replied so far */
+"tools.nodeDiscovery.status.listening" = "Nasłuchiwanie… odpowiedzi: %d";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line after a scan; %d is how many nodes replied */
+"tools.nodeDiscovery.status.replied" = "Odpowiedzi: %d";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line when a scan got no answer */
+"tools.nodeDiscovery.status.noReplies" = "Brak odpowiedzi";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button after a scan has run */
+"tools.nodeDiscovery.scanAgain" = "Skanuj ponownie";
+
+/* Location: NodeDiscoveryScanControl.swift - Button beside the scan button that scans again and again (whenever the shared scan budget allows, also after the screen is left) until stopped; "Wardrive" is the feature's name */
+"tools.nodeDiscovery.wardriveButton" = "Wardrive";
+
+/* Location: NodeDiscoveryScanControl.swift - Button that stops Wardrive, the repeated scans */
+"tools.nodeDiscovery.wardriveStop" = "Zatrzymaj Wardrive";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the Wardrive button */
+"tools.nodeDiscovery.wardriveHint" = "Skanuje ponownie tak często, jak pozwalają przekaźniki w pobliżu, i zachowuje każdy usłyszany węzeł";
+
+/* Location: NodeDiscoveryScanControl.swift - Paragraph in the scan card's info popover explaining Wardrive, its pace and that it keeps running after the screen is left */
+"tools.nodeDiscovery.wardriveInfo" = "Wardrive skanuje ponownie, gdy tylko pozwala na to wspólny limit skanów, najwyżej dwa razy co 2 minuty, i zachowuje każdy usłyszany węzeł z jego najnowszym sygnałem. Przekaźniki odpowiadają na najwyżej 4 skany co 2 minuty, wspólne dla wszystkich w pobliżu, więc Wardrive czeka dłużej, gdy skanują inni. Działa dalej po opuszczeniu tego ekranu, dopóki go nie zatrzymasz lub radio się nie rozłączy; ekran pozostaje włączony, dopóki ta strona jest otwarta.";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while Wardrive runs; %d is how many nodes it has heard in all */
+"tools.nodeDiscovery.status.wardrive" = "Wardrive · usłyszano: %d";
+
+/* Location: NodeDiscoveryScanControl.swift - Second scan card line while a Wardrive scan listens; %d is which scan this is (1, 2, 3...) */
+"tools.nodeDiscovery.status.wardriveListening" = "Skan %d · nasłuchiwanie…";
+
+/* Location: NodeDiscoveryScanControl.swift - Second scan card line between Wardrive scans; %d is the scan that just finished */
+"tools.nodeDiscovery.status.wardriveWaiting" = "Skan %d zakończony";
+
+/* Location: NodeDiscoveryScanControl.swift - Title of the menu choosing which kind of node the scan asks (Repeaters or Sensors) */
+"tools.nodeDiscovery.askFor" = "Szukaj";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the scan kind menu */
+"tools.nodeDiscovery.askForHint" = "Wybiera, jaki rodzaj węzłów ma odpowiedzieć na skan";
+
+/* Location: NodeDiscoveryScanControl.swift - Info popover explaining the scan */
+"tools.nodeDiscovery.scanInfo" = "Skan prosi węzły, które bezpośrednio słyszą twoje radio, o odpowiedź. Odpowiedzi nie są przekazywane dalej, więc pojawiają się tylko sąsiedzi. ↓ to jak dobrze słyszysz węzeł, ↑ jak dobrze on słyszy ciebie.";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile title: how many nodes replied */
+"tools.nodeDiscovery.summary.replied" = "Odpowiedzi";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile caption; %d is how many repliers are not contacts yet */
+"tools.nodeDiscovery.summary.newCaption" = "nowe: %d";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile title: the reply heard with the highest SNR */
+"tools.nodeDiscovery.summary.bestSignal" = "Najlepszy sygnał";
+
+/* Location: NodeDiscoveryActivity.swift - Purpose: What the live strip on Scan for Nodes counts from */
+"tools.nodeDiscovery.activity.sinceScan" = "Od tego skanu";
+"tools.nodeDiscovery.activity.recent" = "Ostatnie 10 minut";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile title: the farthest replier with a known position */
+"tools.nodeDiscovery.summary.farthest" = "Najdalszy";
+
+/* Location: NodeDiscoveryResultCard.swift - Signal row label: how well this radio hears the node (↓) */
+"tools.nodeDiscovery.youHearThem" = "Ty słyszysz węzeł";
+
+/* Location: NodeDiscoveryResultCard.swift - Signal row label: how well the node hears this radio (↑) */
+"tools.nodeDiscovery.theyHearYou" = "Węzeł słyszy ciebie";
+
+/* Location: NodeDiscoveryResultCard.swift - VoiceOver hint of a scan result card */
+"tools.nodeDiscovery.cardHint" = "Pokazuje węzeł na mapie wraz z akcjami";
+
+/* Location: NodeDiscoveryMapView.swift - Button that expands the scan map to the whole screen */
+"tools.nodeDiscovery.map.fullScreen" = "Mapa na pełnym ekranie";
+
+/* Location: NodeDiscoveryMapView.swift - Button that shrinks the full-screen scan map back beside the results */
+"tools.nodeDiscovery.map.exitFullScreen" = "Zamknij pełny ekran";
+
+/* Location: NodeDiscoveryCompactBar.swift - Button in the full-screen map's bottom bar that brings the results list back */
+"tools.nodeDiscovery.map.showResults" = "Pokaż wyniki";
+
+/* Location: NodeDiscoveryCompactBar.swift - Button beside the node picked on the full-screen map; returns to the list with its card open */
+"tools.nodeDiscovery.map.openResult" = "Otwórz";
+
+/* Location: NodeDiscoveryCompactBar.swift - VoiceOver hint of the Open button */
+"tools.nodeDiscovery.map.openResultHint" = "Pokazuje wyniki z otwartą kartą tego węzła";
+
+/* Location: SpectrumTabSettingsSheet.swift - Info popover for the Channel section of the Spectrum tab's settings sheet, above the link to the radio settings */
+"tools.spectrum.settings.channelInfo" = "Widmo odczytuje tylko kanał, na który dostrojone jest radio. Częstotliwość, szerokość pasma lub współczynnik rozpraszania zmienisz w sekcji Radio; czułość i szum termiczny na wykresie są obliczane z tych ustawień.";
+
+/* Location: HomeView.swift - Home Tools: title of the full-width card that sends this radio's advert */
+"tools.advert" = "Wyślij ogłoszenie";
+
+/* Location: HomeView.swift - Home Tools: line under Send Advert saying what it does */
+"tools.subtitle.advert" = "Pozwól innym węzłom cię znaleźć";
+
+/* Location: NodeDiscoveryView.swift - VoiceOver label of the grabber that resizes the map against the scan results */
+"tools.nodeDiscovery.map.resize" = "Rozmiar mapy";
+
+/* Location: HomeView.swift - Title of the confirmation before sending a flood advert */
+"tools.advert.floodConfirm.title" = "Rozesłać ogłoszenie?";
+
+/* Location: HomeView.swift - Explanation in the confirmation before sending a flood advert */
+"tools.advert.floodConfirm.message" = "Każdy przekaźnik przekazuje rozesłane ogłoszenie przez całą sieć, zużywając czas antenowy wszystkich. Wysyłaj je po zmianie nazwy lub pozycji; ogłoszenie zero-hop dociera do węzłów w pobliżu.";
+
+/* Location: HomeView.swift - Confirm button that sends the flood advert */
+"tools.advert.floodConfirm.send" = "Roześlij ogłoszenie";
+
+/* Location: SpectrumView.swift - VoiceOver hint on the Spectrum header card, which opens Radio settings */
+"tools.spectrum.hint.radio" = "Otwiera ustawienia radia";
+
+/* Location: SpectrumView.swift - VoiceOver hint on the Now card, which opens the latest packet */
+"tools.spectrum.hint.latestPacket" = "Pokazuje szczegóły najnowszego pakietu";
+
+/* Location: SpectrumTabSettingsSheet.swift - Picker card title: the chart's time window Spectrum shows by default */
+"tools.spectrum.settings.defaultWindow" = "Domyślne okno";
+
+/* Location: SpectrumTabSettingsSheet.swift - Purpose: How the Spectrum tab draws its channel: the modern large spectrum, or as the radio's own screen does */
+"tools.spectrum.settings.chartStyle" = "Styl wykresu";
+"tools.spectrum.settings.styleModern" = "Nowoczesny";
+"tools.spectrum.settings.styleRadioScreen" = "Ekran radia";
+"tools.spectrum.settings.styleAnalyzer" = "Analizator";
+"tools.spectrum.settings.styleWaterfall" = "Wodospad";
+"tools.spectrum.settings.styleLineChart" = "Wykres liniowy";
+
+/* Location: SpectrumTabSettingsSheet.swift - Picker card title: how often the radio's noise floor and airtime are read */
+"tools.spectrum.settings.updateRate" = "Częstotliwość odświeżania";
+
+/* Location: SpectrumModel.swift - Update rate option: readings every 5 seconds */
+"tools.spectrum.settings.rate.normal" = "Normalna";
+
+/* Location: SpectrumModel.swift - Update rate option: readings every 2 seconds */
+"tools.spectrum.settings.rate.live" = "Na żywo";
+
+/* Location: SpectrumTabSettingsSheet.swift - Picker card title: how many packets the traffic table lists */
+"tools.spectrum.settings.trafficRows" = "Wiersze ruchu";
+
+/* Location: SpectrumTabSettingsSheet.swift - Info popover for the Channel section: default window and update rate, with the battery cost */
+"tools.spectrum.settings.channelOptionsInfo" = "Domyślne okno ustala, od jakiego zakresu czasu startuje wykres; na stronie nadal możesz je zmienić. Częstotliwość odświeżania ustala, jak często odczytywane są poziom szumu i czas nadawania radia. Na żywo odczytuje co 2 sekundy i wybudza radio oraz łącze Bluetooth dwa i pół raza częściej niż Normalna, co zużywa więcej baterii w obu. Odczyty odbywają się tylko, gdy Widmo jest na ekranie, a aplikacja jest aktywna. Pakiety pojawiają się od razu po odebraniu przy każdej częstotliwości.";
+
+/* Location: SpectrumView.swift - Channel chart info popover; %@ is the reading interval, e.g. '5 seconds' */
+"tools.spectrum.chartFooterRate" = "Poziom szumu to własna średnia radia, odczytywana co %@; każdy pakiet jest rysowany z siłą, z jaką dotarł. Stuknij pakiet, aby zobaczyć szczegóły.";
+
+/* Location: SpectrumView.swift - VoiceOver hint on the Floor reading, which opens the noise floor history */
+"tools.spectrum.hint.floorHistory" = "Pokazuje historię poziomu szumu";
+
+/* Location: SpectrumView.swift - Short uppercase caption of the airtime column in the Spectrum metric strip; must fit a quarter of a phone-width card */
+"tools.spectrum.meter.air" = "Eter";
+
+/* Location: SpectrumView.swift - Compact airtime of one 40-byte packet in the Spectrum header strip; %@ is milliseconds. The full sentence is read to VoiceOver */
+"tools.spectrum.header.airtimeShort" = "~%@ ms/pak.";
+
+// MARK: - Traffic
+
+/* Home and Traffic page: Title of the Traffic page (the packets this radio hears) and its Home card */
+"tools.traffic.title" = "Ruch";
+
+/* Home: Detail line under the Traffic card */
+"tools.traffic.subtitle" = "Lista i mapa na żywo";
+
+/* Traffic map: Shown in the ticker before any packet has been drawn */
+"tools.traffic.map.listening" = "Nasłuchiwanie pakietów";
+
+/* Traffic map: Status chip count of packets placed on the map; %lld is the count */
+"tools.traffic.map.placed" = "Narysowano: %lld";
+
+/* Traffic map: Button that replays the latest packets' routes */
+"tools.traffic.map.replay" = "Odtwórz ruch";
+
+/* Traffic map: Chip over the map while a replay retraces the latest packets' routes */
+"tools.traffic.map.replaying" = "Odtwarzanie";
+
+/* Traffic map: Button that frames all traffic on the map */
+"tools.traffic.map.fit" = "Pokaż region";
+
+/* Traffic map: Title when no node can be placed */
+"tools.traffic.map.empty.title" = "Na razie nic do umieszczenia";
+
+/* Traffic map: Ticker note for hops the packet passed through that have no location to draw, and the status chip's count of nodes heard lately that the map can't place (a tap lists them); %lld is the count */
+"tools.traffic.map.unplaced" = "%lld poza mapą";
+
+/* Traffic map: Title of the list of nodes packets named that the map can't place (no position shared, or known only by name) */
+"tools.traffic.map.offMap.title" = "Poza mapą";
+
+/* Traffic map: Ticker line naming the nodes the current packet names that the map can't place; %@ is a list of node names, e.g. "Claremont, Alex" */
+"tools.traffic.map.offMap.flight" = "Poza mapą: %@";
+
+/* Traffic map: Not on Map list, why a node isn't drawn: a channel message's sender, known only by the name it typed */
+"tools.traffic.map.offMap.reason.nameOnly" = "Wymieniony w wiadomości na kanale; klucz nieznany";
+
+/* Traffic map: Not on Map list, why a node isn't drawn: it has a position, but the route of the packet that named it couldn't be drawn (this radio has no position, or the route went another way) */
+"tools.traffic.map.offMap.reason.notDrawn" = "Ma pozycję; nie udało się narysować trasy jego pakietu";
+
+/* Traffic map: Accessibility hint for the status chip's not-on-map count, which opens the Not on Map list */
+"tools.traffic.map.offMap.hint" = "Wyświetla odebrane węzły, których mapa nie może umieścić";
+
+/* Traffic map: a node's callout and the Not on Map list, for a node guessed from a short hash other nodes share; %lld is how many known nodes share it */
+"tools.traffic.map.possibleMatch" = "Możliwe dopasowanie: %lld węzłów współdzieli ten hash";
+
+/* Traffic map: Accessibility label of the status chip's mark shown while the route filter leaves packets off the map */
+"tools.traffic.map.filtered" = "Filtr trasy włączony";
+
+/* Traffic map: control that also pins the nodes this radio heard on its channel that are quiet now (faded) */
+"tools.traffic.map.showQuietNodes" = "Pokaż nieaktywne węzły";
+
+/* Traffic map: the same control while the quiet nodes are shown; back to the relays heard lately */
+"tools.traffic.map.hideQuietNodes" = "Ukryj nieaktywne węzły";
+
+/* Traffic map: ⋯ menu picker title: which nodes the map pins besides the routes' */
+"tools.traffic.map.nodesOnMap" = "Węzły na mapie";
+
+/* Traffic map: Nodes on Map choice: only the scan's own neighbours and the routes' nodes */
+"tools.traffic.map.nodes.scan" = "Skan";
+
+/* Traffic map: Nodes on Map choice: every heard node with a position */
+"tools.traffic.map.nodes.heard" = "Usłyszane";
+
+/* Traffic map: Nodes on Map choice: every saved contact with a position */
+"tools.traffic.map.nodes.contacts" = "Kontakty";
+
+/* Traffic map: Nodes on Map choice: everything, the channel's quiet nodes included */
+"tools.traffic.map.nodes.all" = "Wszystkie";
+
+/* Traffic map: Description when no node can be placed: only nodes this radio heard itself are drawn */
+"tools.traffic.map.empty.observedDescription" = "Tutaj pojawiają się węzły, które to radio usłyszało na bieżącym kanale, gdy dotrą ich ogłoszenia. Trasa każdego pakietu jest rysowana skok po skoku, gdy dociera.";
+
+// MARK: - Traffic Node Callout
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.packets" = "Pakiety w 30 min: %lld";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.last" = "Ostatnio %@";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.links" = "Najczęstsze łącza";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.quiet" = "Brak ruchu w ostatnich 30 min";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.thisRadio" = "To radio";
+
+/* Traffic map: a tapped link's callout; %@ is the distance between its two ends, e.g. "4.2 km" */
+"tools.traffic.link.distance" = "%@ od siebie";
+
+/* Traffic map: a tapped link's callout, for the leg into this radio; %@ is the signal, e.g. "7.5 dB" */
+"tools.traffic.link.heard" = "Odebrano tutaj z SNR %@";
+
+/* Traffic map: a tapped link's callout, the SNR the last trace across it measured at a repeater's end; %@ is the signal, e.g. "7.5 dB" */
+"tools.traffic.link.traced" = "Ostatni trace przez to łącze: SNR %@";
+
+/* Traffic map and RX log: a relay in a packet's path that no node heard on this channel has; %@ is its hash, e.g. "7F" */
+"tools.traffic.hop.unknown" = "Nieznany przekaźnik %@";
+
+/* Traffic map and RX log detail: under an unknown relay, a saved or discovered node whose key starts with the same hash but that this radio never heard on its channel, so it isn't taken for it; %@ is that node's name */
+"tools.traffic.hop.notHeardHint" = "Nie słyszany na tym kanale: %@ ma ten sam prefiks";
+
+/* Traffic map and RX log detail: under an unknown relay, a node with the same hash that this radio heard on its channel, but too long ago to count; %1$@ is how long ago, e.g. "12d", %2$@ is its name */
+"tools.traffic.hop.staleHint" = "Ostatnio słyszany na tym kanale %1$@ temu: %2$@";
+
+/* RX log detail: the key an anonymous request (a login) carries, of a node this radio never heard on its channel; %@ is the name a saved node with that key has */
+"tools.traffic.hop.claimsToBe" = "Podaje się za %@ (nie słyszany na tym kanale)";
+
+/* Traffic map and RX log detail: why a node is named: this radio last received a packet straight from it; %@ is how long ago, e.g. "3 min. ago" */
+"tools.traffic.node.heardDirectly" = "Słyszany bezpośrednio %@";
+
+/* Traffic map and RX log detail: why a node is named: its packets reached this radio through other relays; %1$lld is the fewest relays, %2$@ is how long ago, e.g. "2 days ago" */
+"tools.traffic.node.heardRelayed" = "Słyszany przez skoki: %1$lld, %2$@";
+
+/* Traffic map: Not on Map list, why a node isn't drawn: this radio never received a position from the node itself */
+"tools.traffic.node.positionNotHeard" = "Nie odebrano pozycji";
+
+/* RX log and Traffic map: an advert whose signature doesn't hold, so the key it carries is only a claim */
+"tools.traffic.node.unverifiedAdvert" = "Niezweryfikowane ogłoszenie";
+
+/* RX log detail and Traffic map ticker: the node that transmitted the frame this radio received; %@ is its name or hash */
+"tools.traffic.link.heardFrom" = "Odebrano od %@";
+
+/* Traffic map ticker and RX log detail: the node that transmitted the frame and the signal it was received at; %1$@ is its name or hash, %2$@ the signal, e.g. "6.5 dB" */
+"tools.traffic.link.heardFromSignal" = "Odebrano od %1$@ · %2$@";
+
+/* RX log detail: the relays the packet's path names, oldest first: what the packet claims, not what this radio heard */
+"tools.traffic.link.claimed" = "Ścieżka podana przez pakiet";
+
+/* RX log detail and Traffic map: a repeater passed on a packet this radio sent, so it heard this radio */
+"tools.traffic.link.heardYou" = "Przekazał twój pakiet";
+
+/* RX log detail and Traffic map: a link between two placed nodes far longer than LoRa usually reaches; nothing is renamed because of it */
+"tools.traffic.link.suspicious" = "Nietypowo długie połączenie";
+
+/* RX log detail and Traffic map ticker: a packet this radio was asked to transmit */
+"tools.traffic.sent.byRadio" = "Wysłane przez to radio";
+
+/* RX log detail and Traffic map ticker: the radio's answer to a send; %@ is how it went out, "flood" or "direct" */
+"tools.traffic.sent.accepted" = "Radio przyjęło · %@";
+
+/* Traffic map and RX log: a send that went out as a flood, inside "Radio accepted · %@" */
+"tools.traffic.sent.routeFlood" = "rozproszone";
+
+/* Traffic map and RX log: a send that went out direct, inside "Radio accepted · %@" */
+"tools.traffic.sent.routeDirect" = "bezpośrednio";
+
+/* Traffic map ticker and RX log detail: the radio refused the command, so nothing went out */
+"tools.traffic.sent.rejected" = "Radio tego nie wysłało";
+
+/* Traffic map ticker and RX log detail: the radio never answered the command */
+"tools.traffic.sent.unconfirmed" = "Radio nie potwierdziło";
+
+/* RX log detail and Traffic map: a packet matched to one this radio sent only by its source and destination bytes and timing */
+"tools.traffic.echo.probable" = "Prawdopodobnie twój pakiet";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): BUSY cell caption, shown uppercase: the share of time the channel read above the floor */
+"tools.spectrum.device.cell.busy" = "Zajęty";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): PKT/MIN cell caption, shown uppercase; keep it short */
+"tools.spectrum.device.cell.packetsPerMinute" = "Pak/min";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the PKT/MIN cell */
+"tools.spectrum.device.spoken.packetsPerMinute" = "Pakiety na minutę";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the BUSY cell */
+"tools.spectrum.device.spoken.busy" = "Zajętość";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: in the noise */
+"tools.spectrum.device.level.noise" = "szum";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: 6 dB or more over the floor */
+"tools.spectrum.device.level.signal" = "sygnał";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: 20 dB or more over the floor */
+"tools.spectrum.device.level.strong" = "silny sygnał";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: 35 dB or more over the floor */
+"tools.spectrum.device.level.veryStrong" = "bardzo silny sygnał";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): BUSY cell verdict past 30 % */
+"tools.spectrum.device.busy.warning" = "Zajęty kanał";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): BUSY cell verdict past 60 % */
+"tools.spectrum.device.busy.critical" = "Bardzo zajęty kanał";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver: NOW is stale while the radio's Band sweep runs */
+"tools.spectrum.device.paused" = "wstrzymano";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Info popover beside the Channel pill */
+"tools.spectrum.device.bandInfo" = "Widok Pasmo w radiu skanuje całe pasmo. Działa tylko w radiu: skanowanie wstrzymuje sieć mesh na czas trwania.";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Label of the 24-hour noise floor line; NF = noise floor, keep it short */
+"tools.spectrum.device.nf24h" = "NF 24h";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the 24-hour noise floor line */
+"tools.spectrum.device.nf24hSpoken" = "Poziom szumu, ostatnie 24 godziny";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Heat map key, low end */
+"tools.spectrum.device.key.rare" = "rzadko";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Heat map key, high end */
+"tools.spectrum.device.key.often" = "często";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Trace key: the average dots */
+"tools.spectrum.device.key.avg" = "śr";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Trace key: the peak rule */
+"tools.spectrum.device.key.peak" = "szczyt";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Trace placeholder before the radio has readings */
+"tools.spectrum.device.sampling" = "pomiar…";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): 24-hour line placeholder before the radio has a point */
+"tools.spectrum.device.collecting" = "zbieranie…";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Banner over the trace while the radio sweeps the band */
+"tools.spectrum.device.sweepBanner" = "Skanowanie pasma w radiu: odczyty wstrzymane";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Packet card: the app has no RX log entry for this packet */
+"tools.spectrum.device.heardAway" = "Odebrano, gdy aplikacja była nieaktywna";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout, lower case like the radio's; the values are dBm numbers */
+"tools.spectrum.device.readout.minAvgMax" = "min %1$@ śr %2$@ maks %3$@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout, shorter form */
+"tools.spectrum.device.readout.avgMax" = "śr %1$@ maks %2$@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the column's noise floor */
+"tools.spectrum.device.readout.nf" = "NF %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: a packet's SNR */
+"tools.spectrum.device.readout.snr" = "SNR %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the column's busy share, e.g. "busy 8%" */
+"tools.spectrum.device.readout.busy" = "zajęty %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the radio was transmitting */
+"tools.spectrum.device.readout.transmitting" = "nadawanie";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: no readings in the column */
+"tools.spectrum.device.readout.noData" = "brak danych";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the newest column's age */
+"tools.spectrum.device.readout.now" = "teraz";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: a column's age in seconds, e.g. "-42 s" */
+"tools.spectrum.device.age.seconds" = "-%@ s";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: a column's age in minutes, e.g. "-2.5 m" */
+"tools.spectrum.device.age.minutes" = "-%@ min";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the Channel plot; %@ is the window, e.g. "1 minute" */
+"tools.spectrum.device.chart.label" = "Aktywność kanału, ostatnie %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot; %@ is a level, e.g. "-112 dBm" */
+"tools.spectrum.device.chart.floor" = "Poziom szumu %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot; a level, then how long ago, e.g. "32 seconds" */
+"tools.spectrum.device.chart.peak" = "szczyt %1$@ %2$@ temu";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot; %@ is a percentage */
+"tools.spectrum.device.chart.busy" = "zajęty %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot before any readings */
+"tools.spectrum.device.chart.noData" = "Brak odczytów";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Audio graph series */
+"tools.spectrum.device.series.min" = "Minimum";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Audio graph series */
+"tools.spectrum.device.series.avg" = "Średnia";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Audio graph series */
+"tools.spectrum.device.series.max" = "Maksimum";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Spectrum Settings, in place of Update Rate with a Cairn radio */
+"tools.spectrum.device.settingsFootnote" = "Radia Cairn wysyłają własne odczyty";
+"tools.nodeDiscovery.map.noFixWhenHeard" = "Brak pozycji GPS przy odbiorze";
+"tools.nodeDiscovery.distanceWhenHeard" = "Odległość przy najlepszym odbiorze";
+
+// MARK: - Scan for Nodes: Heard Neighbors and Scans
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while the radio listens for nearby nodes; first placeholder is how many are nearby now, second is when the list last changed as a relative time, e.g. "2 min ago" */
+"tools.nodeDiscovery.status.listeningNearby" = "Nasłuchiwanie · w pobliżu: %1$d · zaktualizowano %2$@";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button: asks the nodes in direct range to answer once */
+"tools.nodeDiscovery.scanNow" = "Skanuj teraz";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button while the next scan has to wait; %@ is the time left, e.g. "0:32" */
+"tools.nodeDiscovery.cooldown.scanAgainIn" = "Ponowny skan za %@";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button while waiting because another radio nearby just sent a scan */
+"tools.nodeDiscovery.cooldown.othersScanning" = "Oczekiwanie — ktoś w pobliżu właśnie skanował";
+
+/* Location: NodeDiscoveryScanControl.swift - Explanation shown with the scan countdown: why scans are spaced out */
+"tools.nodeDiscovery.cooldown.explainer" = "Przekaźniki odpowiadają na najwyżej 4 prośby o skan co 2 minuty, wspólne dla wszystkich w pobliżu.";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the scan countdown, which explains the wait when tapped */
+"tools.nodeDiscovery.cooldown.hint" = "Wyjaśnia, dlaczego następny skan musi poczekać";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while a scan waits for answers */
+"tools.nodeDiscovery.status.probing" = "Odpytywanie pobliskich węzłów… w zatłoczonych sieciach mesh odpowiedzi mogą się zderzać";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line after a scan; first placeholder is how many listed nodes answered this scan, second is how many other listed nodes were heard since it started */
+"tools.nodeDiscovery.status.probeSummary" = "Odpowiedzi na Twój skan: %1$d · usłyszano od jego rozpoczęcia jeszcze: %2$d";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while the radio is disconnected; %@ is when the list was last updated, e.g. "10:42" */
+"tools.nodeDiscovery.status.disconnected" = "Radio rozłączone — pokazuje to, co usłyszano do %@";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line when the connection to the radio was rebuilt during a scan; the scan keeps listening */
+"tools.nodeDiscovery.status.interrupted" = "Połączenie zostało odbudowane — nadal nasłuchuje";
+
+/* Location: NodeDiscoveryScanControl.swift - Paragraph in the scan card's info popover explaining that each scan starts a new list */
+"tools.nodeDiscovery.listenInfo" = "Każdy skan zaczyna nową listę: Cairn wyświetla węzły, które słyszy bezpośrednio od chwili rozpoczęcia skanu (odpowiedzi na niego, przekaźniki przekazujące ruch, ogłoszenia i odpowiedzi na czyjkolwiek skan) aż do następnego skanu. Pokaż starsze dodaje węzły usłyszane wcześniej, do 24 godzin wstecz.";
+
+/* Location: NodeDiscoveryView.swift - Empty state title before any node has been heard */
+"tools.nodeDiscovery.nothingHeard.title" = "Jeszcze nic nie usłyszano";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state description for Repeaters when nothing has been heard since the current scan started */
+"tools.nodeDiscovery.nothingHeard.description" = "Od rozpoczęcia tego skanu nic nie usłyszano. Przekaźniki pojawią się, gdy odpowiedzą lub przekażą ruch.";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state description for Sensors when nothing has been heard since the current scan started */
+"tools.nodeDiscovery.nothingHeard.sensorsDescription" = "Od rozpoczęcia tego skanu nic nie usłyszano. Czujniki pojawią się, gdy odpowiedzą lub wyślą ogłoszenie.";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card headline before the first scan of this session */
+"tools.nodeDiscovery.status.readyToScan" = "Gotowe do skanowania";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card headline during a scan on a radio whose firmware can't send one, so the scan only listens */
+"tools.nodeDiscovery.status.listeningOnly" = "Nasłuchiwanie… oprogramowanie tego radia nie może wysłać skanu";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line after a scan that only listened (or asked for the other kind of node); %d is how many listed nodes were heard since it started */
+"tools.nodeDiscovery.status.listenSummary" = "Usłyszano od rozpoczęcia tego skanu: %d";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state title before the first scan */
+"tools.nodeDiscovery.notScanned.title" = "Jeszcze nie skanowano";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state description before the first scan: each scan starts a new list */
+"tools.nodeDiscovery.notScanned.description" = "Stuknij Skanuj teraz, aby zacząć listę. Wypełni się węzłami usłyszanymi od tej chwili; następny skan zacznie nową.";
+
+/* Location: NodeDiscoveryPanel.swift - Heading over the nodes Show Older adds: heard before the current scan started */
+"tools.nodeDiscovery.earlierSection" = "Usłyszane przed tym skanem";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the scan button when the radio's firmware can't send a scan */
+"tools.nodeDiscovery.scanListensOnlyHint" = "Oprogramowanie tego radia nie może wysłać skanu; skan zaczyna nową listę i nasłuchuje";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node was heard relaying other traffic */
+"tools.nodeDiscovery.badge.relaying" = "Przekazuje";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node's own advert was heard directly */
+"tools.nodeDiscovery.badge.advert" = "Ogłoszenie";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node answered a scan sent from this radio */
+"tools.nodeDiscovery.badge.answeredYourScan" = "Odpowiedział na twój skan";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: under "Heard before this scan", this node answered a scan sent from this radio before the current one */
+"tools.nodeDiscovery.badge.answeredEarlierScan" = "Odpowiedział na wcześniejszy skan";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node answered a scan sent by another radio nearby */
+"tools.nodeDiscovery.badge.answeredAnotherScan" = "Odpowiedział na inny skan";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node is known to hear this radio */
+"tools.nodeDiscovery.badge.hearsYou" = "Słyszy cię";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node was heard only once, so it may be out of reliable range */
+"tools.nodeDiscovery.badge.heardOnce" = "Usłyszany raz";
+
+/* Location: NodeDiscoveryResultCard.swift - Card title for a relay known only by the start of its key; %@ is that key prefix in hex, e.g. "3A7F21" */
+"tools.nodeDiscovery.unidentifiedRelay" = "Niezidentyfikowany przekaźnik %@";
+
+/* Location: NodeDiscoveryResultCard.swift - Card title for a relay whose key prefix matches several known nodes; first placeholder is the prefix in hex, second is how many nodes match */
+"tools.nodeDiscovery.ambiguous" = "%1$@ · może to być jeden z %2$d węzłów";
+
+/* Location: NodeDiscoveryResultCard.swift - Title of the list of nodes an ambiguous relay could be */
+"tools.nodeDiscovery.ambiguous.candidatesTitle" = "Możliwe węzły";
+
+/* Location: NodeDiscoveryResultCard.swift - VoiceOver hint of an ambiguous relay's title, which lists the nodes it could be */
+"tools.nodeDiscovery.ambiguous.hint" = "Wyświetla węzły, którymi może być ten przekaźnik";
+
+/* Location: NodeDiscoveryResultCard.swift - How long ago a node was last heard; %@ is a short duration, e.g. "2 m" */
+"tools.nodeDiscovery.freshness" = "%@ temu";
+
+/* Location: NodeDiscoveryResultCard.swift - Button that sends one trace to a repeater to measure the link both ways */
+"tools.nodeDiscovery.checkLink" = "Sprawdź łącze";
+
+/* Location: NodeDiscoveryResultCard.swift - VoiceOver hint of the Check Link button */
+"tools.nodeDiscovery.checkLink.hint" = "Wysyła jedno śledzenie do tego przekaźnika, aby zmierzyć, jak dobrze się słyszycie";
+
+/* Location: NodeDiscoveryResultCard.swift - Shown while the link check waits for its answer */
+"tools.nodeDiscovery.checkLink.checking" = "Sprawdzanie łącza…";
+
+/* Location: NodeDiscoveryResultCard.swift - Result when the repeater answered the link check; its signal both ways is shown beside it */
+"tools.nodeDiscovery.checkLink.answered" = "Odpowiedział na sprawdzenie";
+
+/* Location: NodeDiscoveryResultCard.swift - Result when the repeater did not answer the link check; it may still be there, as some repeaters don't answer traces */
+"tools.nodeDiscovery.checkLink.noAnswer" = "Nie odpowiedział na sprawdzenie";
+
+/* Location: NodeDiscoveryResultCard.swift - Result when the link check could not be sent */
+"tools.nodeDiscovery.checkLink.failed" = "Nie udało się wysłać sprawdzenia";
+
+/* Location: NodeDiscoveryResultCard.swift - Button on an unidentified relay that opens the Traffic map, where its traffic is drawn */
+"tools.nodeDiscovery.showOnTrafficMap" = "Pokaż na mapie ruchu";
+
+/* Location: NodeDiscoveryPanel.swift - Toggle that also lists the nodes heard before the current scan, up to 24 hours ago */
+"tools.nodeDiscovery.showOlder" = "Pokaż starsze";
+
+/* Location: NodeDiscoveryPanel.swift - VoiceOver hint of the Show Older toggle */
+"tools.nodeDiscovery.showOlderHint" = "Wyświetla też węzły usłyszane przed tym skanem, do 24 godzin wstecz";
+
+/* Location: NodeDiscoveryMapView.swift - Pill over the map counting results the map's filter hides, with an action showing them; %d is the count */
+"tools.nodeDiscovery.map.hiddenByFilter" = "Ukryte przez filtr mapy: %d · Pokaż wszystkie";
+
+/* Location: NodeDiscoveryMapView.swift - VoiceOver hint of the hidden-by-filter pill */
+"tools.nodeDiscovery.map.hiddenByFilterHint" = "Pokazuje wszystkie wyniki na tej mapie";
+
+/* Location: NodeDiscoveryMapView.swift - Pill over the map counting results with no position to draw; %d is the count */
+"tools.nodeDiscovery.map.withoutLocation" = "Bez lokalizacji: %d";
+
+/* Location: NodeDiscoveryScanControl.swift - Indicator that Wardrive keeps scanning while you use other screens */
+"tools.nodeDiscovery.wardriveRunning" = "Wardrive działa";
+
+/* Location: NodeDiscoveryScanControl.swift - Line under the scan headline when the radio's firmware can't send a scan; a scan then only listens */
+"tools.nodeDiscovery.scanUnsupported" = "Oprogramowanie tego radia nie może wysłać skanu (wymaga wersji 1.10 lub nowszej), więc skan tylko nasłuchuje: zaczyna nową listę węzłów usłyszanych od tej chwili.";
+
+/* Location: NodeDiscoveryCompactBar.swift - Short caption and VoiceOver hint on the map's scan bar when the radio's firmware can't send a scan */
+"tools.nodeDiscovery.scanUnsupportedShort" = "Wymaga oprogramowania 1.10+";
+
+/* Location: NodeDiscoveryScanControl.swift - Added after a scan's summary when the radio heard packets during the scan that never reached the app; %d is how many */
+"tools.nodeDiscovery.summary.radioMissed" = "Pakiety usłyszane przez radio podczas tego skanowania, które nie dotarły do aplikacji: %d; może brakować niektórych odpowiedzi";
+
+// MARK: - Region Discovery
+
+/* Location: RegionDiscoveryRunner.swift - Shown when a scan was sent too recently, so regions are looked up from repeaters already heard instead */
+"tools.regionDiscovery.cooldown" = "Skan użyty niedawno — używam już usłyszanych pobliskich przekaźników";
+
+/* Location: RegionDiscoveryRunner.swift - Shown when the radio's firmware is too old to ask repeaters for their regions, so nothing was sent */
+"tools.regionDiscovery.needsFirmware" = "Pytanie przekaźników o ich regiony wymaga oprogramowania radia 1.12 lub nowszego";
+
+/* Location: RegionDiscoveryRunner.swift - Shown when the radio's firmware can't send a scan, so regions are looked up from repeaters already heard instead */
+"tools.regionDiscovery.scanUnsupported" = "Oprogramowanie tego radia nie może wysyłać żądań skanowania — używam już usłyszanych pobliskich przekaźników";
+
+// MARK: - RX Log Delivery
+
+/* Location: RxLogView.swift - Delivery line in the header with Cairn radio firmware: nothing was lost between the radio and the app */
+"tools.rxLog.delivery.allReceived" = "Odebrano cały ruch";
+
+/* Location: RxLogView.swift - Delivery line in the header with Cairn radio firmware; first placeholder is how many packets were fetched again from the radio, second is how many the radio lost before the app got them */
+"tools.rxLog.delivery.recoveredLost" = "Odzyskane: %1$d · utracone w radiu: %2$d";
+
+/* Location: RxLogView.swift - Start of the delivery line for a Cairn radio whose firmware build has no packet recovery, so packets arrive as on other firmware */
+"tools.rxLog.delivery.recoveryUnsupported" = "Ta wersja Cairn nie ma odzyskiwania pakietów";
+
+/* Location: RxLogView.swift - Start of the delivery line for a Cairn radio whose packet recovery did not start on this connection (no answer or refused), so packets arrive as on other firmware */
+"tools.rxLog.delivery.recoveryFailed" = "Nie udało się uruchomić odzyskiwania pakietów w tym połączeniu";
+
+/* Location: RxLogView.swift - Delivery line in the header with radio firmware without packet recovery, measured with the radio's own packet counters; first placeholder is how many packets never reached the app, second is how many the radio heard in all */
+"tools.rxLog.delivery.radioMissed" = "Nie dotarło do aplikacji: %1$d z %2$d pakietów usłyszanych przez radio";
+
+/* Location: RxLogView.swift - Delivery line in the header with radio firmware that has no packet recovery and no packet counters (or before they were read), so packets the radio skips can't be counted */
+"tools.rxLog.delivery.stockUnmeasured" = "Oprogramowanie tego radia może pomijać pakiety, gdy łącze jest zajęte";
+
+/* Location: RxLogView.swift and the Traffic map - Second line under the delivery line with radio firmware without packet recovery: the firmware never passes longer received packets to the app; %d is the longest length in bytes */
+"tools.rxLog.delivery.longPackets" = "Oprogramowanie tego radia nigdy nie przekazuje aplikacji pakietów dłuższych niż %d B";
+
+/* Location: RxLogView.swift - Added to the delivery line with Cairn radio firmware when the app itself dropped packets it received; %d is how many */
+"tools.rxLog.delivery.appDropped" = "Utracone w aplikacji: %d";
+
+/* Location: RxLogView.swift - VoiceOver label of the mark on a packet fetched again from the radio after it was missed */
+"tools.rxLog.recovered" = "Odzyskany";
+
+/* Location: ToolSelection.swift - Name of the Scan & Traffic tool (Scan for Nodes and the Traffic map on one page): Tools list, its page title and links to it */
+/* AI-translated - please verify with native speakers. */
+"tools.scanTraffic" = "Skan i ruch";
+
+/* Tools list - short line under the Scan & Traffic tool */
+/* AI-translated - please verify with native speakers. */
+"tools.subtitle.scanTraffic" = "Węzły w pobliżu i pakiety na żywo";
+
+/* Location: NodeDiscoveryPanel.swift - Scan & Traffic: segment beside Nodes that lists every packet the radio hears, followed by how many */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.section.packets" = "Pakiety";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan & Traffic: the one scan button in the sheet's header */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.scan" = "Skanuj";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan & Traffic header: how many of the kind listed the current scan has heard; %d is the count */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.status.nearby" = "Nasłuch · %d w pobliżu";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan & Traffic header: how many packets a minute the radio hears; %@ is the number */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.status.packetsPerMinute" = "%@ pakietów/min";
+
+/* Location: NodeDiscoveryResultCard.swift - Tag on a compact node card: the node answered the current scan */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.badge.answered" = "Odpowiedział";
+
+/* Location: NodeDiscoveryPanel.swift - Row at the end of the nodes that adds the ones heard before this scan, up to 24 hours ago; %d is how many */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.showOlderCount" = "Pokaż starsze węzły (%d)";
+
+/* Location: NodeDiscoveryPanel.swift - The same row once the older nodes show: takes them away again */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.hideOlder" = "Ukryj starsze węzły";
+
+/* Location: NodeDiscoveryPanel.swift - Scan & Traffic before the first scan, with nothing heard yet */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.firstUse.title" = "Stuknij Skanuj, aby znaleźć węzły w pobliżu";
+
+/* Location: NodeDiscoveryPanel.swift - The line under it: what a scan does */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.firstUse.description" = "Skan prosi węzły, które bezpośrednio słyszą twoje radio, o odpowiedź.";
+
+/* Location: NodeDiscoveryActivity.swift - VoiceOver hint of the Scan & Traffic header line */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.header.expandHint" = "Pokazuje lub ukrywa najlepszy sygnał i najdalszy węzeł";
+
+/* Location: NodeDiscoveryPanel.swift - VoiceOver value of a section's Filter button: how many filters are on; %d is the count */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.filter.active" = "Włączone: %d";
+
+// MARK: - Map workstream additions
+
+/* Location: SendLocationIntent.swift - Purpose: Title of the Send My Location shortcut */
+"intent.location.title" = "Wyślij moją lokalizację";
+
+/* Location: CairnAppShortcutsProvider.swift - Purpose: Short title of the Send My Location shortcut */
+"intent.location.shortTitle" = "Wyślij lokalizację";
+
+/* Location: SendLocationIntent.swift - Purpose: Description of the Send My Location shortcut */
+"intent.location.description" = "Wysyła Twoją bieżącą pozycję jako wiadomość do kontaktu lub kanału.";
+
+/* Location: SendLocationIntent.swift - Purpose: Spoken confirmation once the location message is queued; the argument is the recipient */
+"intent.location.sent" = "Twoja lokalizacja jest w drodze do %@.";
+
+/* SendLocationIntent.swift - Purpose: Shortcuts parameter summary of the Send My Location intent; keep ${target} as is */
+"Send my location to ${target}" = "Wyślij moją lokalizację do ${target}";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Title of the drive summary card once Wardrive has stopped */
+"tools.nodeDiscovery.wardrive.summary.finished" = "Wardrive zakończony";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Takes the finished drive's summary card off the screen */
+"tools.nodeDiscovery.wardrive.summary.dismiss" = "Zamknij";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: nodes heard during the drive */
+"tools.nodeDiscovery.wardrive.summary.nodes" = "Znalezione węzły";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: scans sent during the drive */
+"tools.nodeDiscovery.wardrive.summary.probes" = "Skany";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: how long the drive has run */
+"tools.nodeDiscovery.wardrive.summary.elapsed" = "Czas";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: distance covered, from the phone's fixes */
+"tools.nodeDiscovery.wardrive.summary.distance" = "Dystans";
+
+/* Location: NodeDiscoveryView.swift - Alert button before Wardrive starts with location refused: opens the system Settings */
+"tools.nodeDiscovery.wardrive.preflight.openSettings" = "Otwórz Ustawienia";
+
+/* Location: NodeDiscoveryView.swift - Alert button: start Wardrive despite the warning */
+"tools.nodeDiscovery.wardrive.preflight.startAnyway" = "Uruchom mimo to";
+
+/* Location: NodeDiscoveryView.swift - Alert button on the first-run note: starts Wardrive */
+"tools.nodeDiscovery.wardrive.preflight.start" = "Uruchom Wardrive";
+
+/* Location: NodeDiscoveryView.swift - Alert title before Wardrive starts while location is refused for the app */
+"tools.nodeDiscovery.wardrive.preflight.locationDenied.title" = "Lokalizacja wyłączona dla Cairn";
+
+/* Location: NodeDiscoveryView.swift - Alert message: without location, Wardrive can't place nodes on the map */
+"tools.nodeDiscovery.wardrive.preflight.locationDenied.message" = "Bez lokalizacji Wardrive nie umieści usłyszanych węzłów na mapie. Zezwól na lokalizację w Ustawieniach albo uruchom mimo to, by mieć samą listę.";
+
+/* Location: NodeDiscoveryView.swift - Alert title of the note shown before the first Wardrive */
+"tools.nodeDiscovery.wardrive.preflight.firstRun.title" = "Przed pierwszym Wardrive";
+
+/* Location: NodeDiscoveryView.swift - Alert message: what Wardrive does to the screen and GPS */
+"tools.nodeDiscovery.wardrive.preflight.firstRun.message" = "Gdy Wardrive działa, ekran pozostaje włączony z otwartą tą stroną, a GPS działa w tle, aby każdy węzeł trafił tam, gdzie go usłyszano. Kończy się po dotknięciu Zatrzymaj lub po rozłączeniu radia.";
+
+/* Location: NodeDiscoveryView.swift - Alert title before Wardrive starts on a low battery; %d is the percentage */
+"tools.nodeDiscovery.wardrive.preflight.lowBattery.title" = "Bateria: %d%%";
+
+/* Location: NodeDiscoveryView.swift - Alert message: Wardrive drains the battery */
+"tools.nodeDiscovery.wardrive.preflight.lowBattery.message" = "Wardrive utrzymuje włączony ekran i GPS, co szybko wyczerpuje baterię. Jeśli możesz, podłącz zasilanie.";
+
+/* Location: NodeDiscoveryView.swift - Alert title before Wardrive starts in Low Power Mode */
+"tools.nodeDiscovery.wardrive.preflight.lowPower.title" = "Tryb niskiego zużycia energii jest włączony";
+
+/* Location: NodeDiscoveryView.swift - Alert message: GPS is less precise in Low Power Mode */
+"tools.nodeDiscovery.wardrive.preflight.lowPower.message" = "W trybie niskiego zużycia energii GPS aktualizuje się rzadziej, więc węzły mogą być umieszczane mniej dokładnie.";
+
+/* Location: NodeDiscoveryPanel.swift - Heading of the sort picker in the nodes' Filter menu */
+"tools.nodeDiscovery.sortBy" = "Sortuj według";
+
+/* Location: NodeDiscoveryPanel.swift - Menu item that adds every node not yet a contact; %d is how many */
+"tools.nodeDiscovery.addAllNew" = "Dodaj wszystkie nowe (%d)";
+
+/* Location: NodeDiscoveryPanel.swift - Confirmation button of Add All New; %d is how many nodes */
+"tools.nodeDiscovery.addAllNew.confirm" = "Dodaj węzły: %d";
+
+/* Location: NodeDiscoveryPanel.swift - Confirmation message of Add All New: %1$d nodes to add, the radio holds up to %2$d contacts, %3$d in use */
+"tools.nodeDiscovery.addAllNew.message" = "Dodaje %1$d węzłów do kontaktów radia. Radio mieści do %2$d kontaktów; %3$d jest zajętych.";
+
+/* Location: NodeDiscoveryPanel.swift - Confirmation message of Add All New when the radio's contact limit is unknown; %d is how many nodes */
+"tools.nodeDiscovery.addAllNew.messageNoLimit" = "Dodaje %d węzłów do kontaktów radia.";
+
+/* Location: NodeDiscoveryPanel.swift - Menu item that exports the listed nodes as a CSV file */
+"tools.nodeDiscovery.exportNodes" = "Eksportuj węzły (CSV)";
+
+/* Location: RxLogView.swift - VoiceOver label of the packet detail sheet's actions menu */
+"tools.rxLog.actions" = "Działania pakietu";
+
+/* Location: RxPacketActions.swift - Menu item that opens the page of the node that sent the packet */
+"tools.rxLog.action.openSender" = "Otwórz nadawcę";
+
+/* Location: RxPacketActions.swift - Menu item that opens the page of a node the packet passed through; %@ is its name */
+"tools.rxLog.action.openNode" = "Otwórz %@";
+
+/* Location: RxPacketActions.swift - Menu item that centres the map on the packet's sender */
+"tools.rxLog.action.showOnMap" = "Pokaż na mapie";
+
+/* Location: RxPacketActions.swift - Menu item that builds Trace Path on the packet's route */
+"tools.rxLog.action.traceRoute" = "Prześledź tę trasę";
+
+/* Location: RxPacketActions.swift - Menu item that shares the packet as a few lines of text */
+"tools.rxLog.action.shareText" = "Udostępnij jako tekst";
+
+/* Location: RxPacketActions.swift - Menu item that shares the packet as JSON */
+"tools.rxLog.action.shareJSON" = "Udostępnij jako JSON";
+
+/* Location: RxPacketActions.swift - Menu item that copies the packet's hash */
+"tools.rxLog.action.copyHash" = "Kopiuj hash";
+
+/* Location: RxLogView.swift - Placeholder of the packet list's search field */
+"tools.rxLog.search" = "Szukaj pakietów";
+
+/* Location: RxLogView.swift - Heading of the packet type section in the filter menu */
+"tools.rxLog.filter.type" = "Typ";
+
+/* Location: RxLogView.swift - Submenu in the filter menu listing the nodes packets came from */
+"tools.rxLog.filter.fromNode" = "Od węzła";
+
+/* Location: RxLogView.swift - First item of the From Node submenu: every sender */
+"tools.rxLog.filter.anyNode" = "Dowolny";
+
+/* Location: RxLogViewModel.swift - Packet type filter: adverts */
+"tools.rxLog.packetType.adverts" = "Ogłoszenia";
+
+/* Location: RxLogViewModel.swift - Packet type filter: direct, channel and data messages */
+"tools.rxLog.packetType.messages" = "Wiadomości";
+
+/* Location: RxLogViewModel.swift - Packet type filter: traces */
+"tools.rxLog.packetType.traces" = "Ślady";
+
+/* Location: RxLogViewModel.swift - Packet type filter: acknowledgements */
+"tools.rxLog.packetType.acks" = "Potwierdzenia";
+
+/* Location: RxLogViewModel.swift - Packet type filter: path packets */
+"tools.rxLog.packetType.paths" = "Ścieżki";
+
+/* Location: RxLogViewModel.swift - Packet type filter: requests and their replies */
+"tools.rxLog.packetType.requests" = "Żądania i odpowiedzi";
+
+/* Location: RxLogViewModel.swift - Packet type filter: everything else */
+"tools.rxLog.packetType.other" = "Inne";
+
+/* Location: RxLogView.swift - Pill over a held packet list: how many packets landed since; %d is the count */
+"tools.rxLog.newPackets" = "Nowe: %d";
+
+/* Location: RunTraceSectionView.swift - Button that stops the trace in flight */
+"tools.tracePath.cancel" = "Anuluj";
+
+/* Location: SavedPathDetailView.swift - Toolbar share of a saved path's runs as a CSV file */
+"tools.tracePath.share.runs" = "Udostępnij przebiegi (CSV)";
+
+/* Location: TraceResultsSheet.swift - Toolbar share of a trace's result as text */
+"tools.tracePath.share.summary" = "Udostępnij podsumowanie";
+
+/* Location: TraceExport.swift - Line of the shared trace summary; %@ is the path's hops in hex */
+"tools.tracePath.summary.path" = "Ścieżka: %@";
+
+/* Location: TraceExport.swift - Line of the shared trace summary; %@ is the milliseconds */
+"tools.tracePath.summary.roundTrip" = "W obie strony: %@ ms";
+
+/* Location: TraceExport.swift - Line of the shared trace summary; %d is how many hops */
+"tools.tracePath.summary.hops" = "Skoki: %d";
+
+/* Location: CLIToolViewModel.swift - Line in the terminal transcript where the radio disconnected */
+"tools.cli.transcript.disconnected" = "— rozłączono —";
+
+/* Location: CLIToolViewModel.swift - Line in the terminal transcript where the radio reconnected */
+"tools.cli.transcript.reconnected" = "— połączono ponownie —";
+
+/* Location: CLIToolView.swift - Item of the terminal's more menu that opens the sessions list */
+"tools.cli.menu.sessions" = "Sesje";
+
+/* Location: CLIToolView.swift - Item of the terminal's more menu that shares the transcript as text */
+"tools.cli.menu.shareTranscript" = "Udostępnij zapis";
+
+/* Location: CLIToolView.swift - Item of the terminal's more menu that empties the transcript */
+"tools.cli.menu.clear" = "Wyczyść";
+
+/* Location: CLISessionsSheet.swift - Title of the sessions sheet */
+"tools.cli.sessions.title" = "Sesje";
+
+/* Location: CLISessionsSheet.swift - Section of the sessions open now */
+"tools.cli.sessions.open" = "Otwarte sesje";
+
+/* Location: CLISessionsSheet.swift - Section of saved repeaters and rooms to log in to */
+"tools.cli.sessions.repeaters" = "Repeatery i pokoje";
+
+/* Location: CLISessionsSheet.swift - Section of saved companions whose command line can be opened */
+"tools.cli.sessions.companions" = "Companiony";
+
+/* Location: CLISessionsSheet.swift - Mark on the session commands go to now */
+"tools.cli.sessions.active" = "Aktywna";
+
+/* Location: CLISessionsSheet.swift - Line under a node not logged in to yet */
+"tools.cli.sessions.loginHint" = "Dotknij, aby się zalogować";
+
+/* Location: CompanionCommandPicker.swift - Section of the commands pinned at the top of the picker */
+"tools.cli.companion.pinned" = "Przypięte";
+
+/* Location: CompanionCommandPicker.swift - Long-press action that pins a command at the top */
+"tools.cli.companion.pin" = "Przypnij";
+
+/* Location: CompanionCommandPicker.swift - Long-press action that takes a pinned command down */
+"tools.cli.companion.unpin" = "Odepnij";
+
+/* Location: NetworkHealthView.swift - Menu item that asks every repeater needing attention for its status, one after another */
+"tools.networkHealth.checkAll" = "Sprawdź wszystkie";
+
+/* Location: NetworkHealthView.swift - Progress bar title while Check All runs; %1$d is the repeater being checked, %2$d how many */
+"tools.networkHealth.checkAll.progress" = "Sprawdzanie %1$d z %2$d";
+
+/* Location: NetworkHealthView.swift - Menu item that stops Check All */
+"tools.networkHealth.checkAll.cancel" = "Anuluj sprawdzanie";
+
+/* Location: NetworkHealthView.swift - Heading of the sort picker in the page's menu */
+"tools.networkHealth.sort" = "Sortuj";
+
+/* Location: NetworkHealthReport.swift - Sort order: by what is wrong, worst first */
+"tools.networkHealth.sort.issues" = "Problemy";
+
+/* Location: NetworkHealthReport.swift - Sort order: by battery, lowest first */
+"tools.networkHealth.sort.battery" = "Bateria";
+
+/* Location: NetworkHealthReport.swift - Sort order: by when each repeater was last heard, longest silent first */
+"tools.networkHealth.sort.lastHeard" = "Ostatnio słyszany";
+
+/* Location: NetworkHealthView.swift - Section of the page's menu with the report's share options */
+"tools.networkHealth.share" = "Udostępnij raport";
+
+/* Location: NetworkHealthView.swift - Shares the report as text */
+"tools.networkHealth.share.text" = "Jako tekst";
+
+/* Location: NetworkHealthView.swift - Shares the report as a CSV file */
+"tools.networkHealth.share.csv" = "Jako CSV";
+
+/* Location: NetworkHealthReport.swift - First line of the shared text report */
+"tools.networkHealth.report.title" = "Raport stanu sieci";
+
+/* Location: SpectrumView.swift - Toolbar button and settings toggle that holds the chart's window where it is */
+"tools.spectrum.pause" = "Wstrzymaj";
+"tools.spectrum.fullscreen" = "Pełny ekran";
+
+/* Location: SpectrumView.swift - Toolbar button that lets the paused chart go on */
+"tools.spectrum.resume" = "Wznów";
+
+/* Location: SpectrumTabSettingsSheet.swift - Section with the pause toggle and the readings export */
+"tools.spectrum.settings.readingsHeader" = "Odczyty";
+
+/* Location: SpectrumTabSettingsSheet.swift - Footer: what the readings export holds */
+"tools.spectrum.settings.readingsFooter" = "Odczyty poziomu szumu są przechowywane dla każdego radia przez tydzień, minuta po minucie, gdy otwarta jest karta Widmo lub Strona główna. Wstrzymanie zatrzymuje okno wykresu; odczyty nadal napływają w tle.";
+
+/* Location: SpectrumTabSettingsSheet.swift - Button that exports the kept noise-floor readings as a CSV file */
+"tools.spectrum.settings.exportReadings" = "Eksportuj odczyty (CSV)";

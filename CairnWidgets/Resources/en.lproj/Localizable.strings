@@ -1,0 +1,44 @@
+/* Widget localization — English (base) */
+
+/* Connection status shown when radio is disconnected */
+"Disconnected" = "Disconnected";
+
+
+/* Accessibility: packet rate */
+"%lld packets per minute" = "%lld packets per minute";
+
+/* Accessibility: battery level */
+"Battery %lld percent" = "Battery %lld percent";
+
+/* Control Center button: opens the app */
+"Open Cairn" = "Open Cairn";
+
+/* Live Activity: banner and Dynamic Island readings */
+"Connected" = "Connected";
+"Direct" = "Direct";
+"No messages yet" = "No messages yet";
+"RSSI" = "RSSI";
+"SNR" = "SNR";
+"Noise" = "Noise";
+"Per min" = "Per min";
+"Nodes 1h" = "Nodes 1h";
+"Battery %lld percent, %@" = "Battery %lld percent, %@";
+"Position %@" = "Position %@";
+"Message from %@ in %@: %@" = "Message from %@ in %@: %@";
+"Direct message from %@: %@" = "Direct message from %@: %@";
+"Last RSSI %lld dBm" = "Last RSSI %lld dBm";
+"Last SNR %@ dB" = "Last SNR %@ dB";
+"Noise floor %lld dBm" = "Noise floor %lld dBm";
+"Last RSSI %lld dBm, SNR %@ dB" = "Last RSSI %lld dBm, SNR %@ dB";
+"Last message from %@" = "Last message from %@";
+
+/* Home-screen widget (Radio Status) */
+"Radio Status" = "Radio Status";
+"Your radio's link, battery and unread messages at a glance." = "Your radio's link, battery and unread messages at a glance.";
+"Connecting…" = "Connecting…";
+"No radio" = "No radio";
+"Open Cairn to connect" = "Open Cairn to connect";
+"Last heard" = "Last heard";
+"Last heard %@" = "Last heard %@";
+"Nothing heard yet" = "Nothing heard yet";
+"Updated" = "Updated";

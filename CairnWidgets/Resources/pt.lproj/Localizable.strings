@@ -1,0 +1,48 @@
+/* Widget localization — European Portuguese (pt-PT)
+   AI-translated - please verify with native speakers.
+*/
+
+/* Connection status shown when radio is disconnected */
+"Disconnected" = "Desligado";
+
+
+/* Accessibility: packet rate */
+"%lld packets per minute" = "%lld pacotes por minuto";
+
+/* Accessibility: battery level */
+"Battery %lld percent" = "Bateria a %lld por cento";
+
+/* Control Center button: opens the app */
+"Open Cairn" = "Abrir Cairn";
+
+/* Live Activity: banner and Dynamic Island readings */
+/* AI-translated - please verify with native speakers. */
+"Connected" = "Conectado";
+"Direct" = "Direta";
+"No messages yet" = "Ainda sem mensagens";
+"RSSI" = "RSSI";
+"SNR" = "SNR";
+"Noise" = "Ruído";
+"Per min" = "Por min";
+"Nodes 1h" = "Nós 1 h";
+"Battery %lld percent, %@" = "Bateria %lld por cento, %@";
+"Position %@" = "Posição %@";
+"Message from %@ in %@: %@" = "Mensagem de %@ em %@: %@";
+"Direct message from %@: %@" = "Mensagem direta de %@: %@";
+"Last RSSI %lld dBm" = "Último RSSI %lld dBm";
+"Last SNR %@ dB" = "Último SNR %@ dB";
+"Noise floor %lld dBm" = "Nível de ruído %lld dBm";
+"Last RSSI %lld dBm, SNR %@ dB" = "Último RSSI %lld dBm, SNR %@ dB";
+"Last message from %@" = "Última mensagem de %@";
+
+/* Home-screen widget (Radio Status) */
+/* AI-translated - please verify with native speakers. */
+"Radio Status" = "Estado do rádio";
+"Your radio's link, battery and unread messages at a glance." = "A ligação, a bateria e as mensagens não lidas do seu rádio num relance.";
+"Connecting…" = "A ligar…";
+"No radio" = "Sem rádio";
+"Open Cairn to connect" = "Abra o Cairn para ligar";
+"Last heard" = "Último ouvido";
+"Last heard %@" = "Último ouvido: %@";
+"Nothing heard yet" = "Ainda nada ouvido";
+"Updated" = "Atualizado";

@@ -1,0 +1,2549 @@
+/*
+  Tools.strings
+  Cairn
+
+  Strings for Tools feature, including utilities,
+  diagnostics, radio configuration, and device management tools.
+ */
+
+// MARK: - Tools View
+
+/* Location: ToolsView.swift - Navigation title */
+"tools.title" = "工具";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.tracePath" = "路由追踪";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.lineOfSight" = "视距分析";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.rxLog" = "接收日志";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.noiseFloor" = "底噪测量";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.nodeDiscovery" = "扫描节点";
+/* Location: ToolsView.swift - Empty state when no tool selected */
+"tools.selectTool" = "选择工具";
+
+// MARK: - RX Log View
+
+/* Location: RxLogView.swift - Empty state title when listening */
+"tools.rxLog.listening" = "正在监听...";
+
+/* Location: RxLogView.swift - Empty state description */
+"tools.rxLog.listeningDescription" = "RF 数据包将在到达时显示在此处";
+
+/* Location: RxLogView.swift - Disconnected state title */
+"tools.rxLog.notConnected" = "未连接";
+
+/* Location: RxLogView.swift - Disconnected state description */
+"tools.rxLog.notConnectedDescription" = "连接无线电以查看 RF 数据包";
+
+/* Location: RxLogView.swift - Live status indicator */
+"tools.rxLog.live" = "实时";
+
+/* Location: RxLogView.swift - Offline status indicator */
+"tools.rxLog.offline" = "离线";
+
+/* Location: RxLogView.swift - Packet count in header, %lld is count */
+"tools.rxLog.packetsCount" = "%lld 个数据包";
+
+/* Location: RxLogView.swift - Filter menu section header */
+"tools.rxLog.routeType" = "路由类型";
+
+/* Location: RxLogView.swift - Filter menu section header */
+"tools.rxLog.decryptStatus" = "解密状态";
+
+/* Location: RxLogView.swift - Filter button label */
+"tools.rxLog.filter" = "筛选";
+
+/* Location: RxLogView.swift - Overflow menu button label */
+"tools.rxLog.more" = "更多";
+
+/* Location: RxLogView.swift - Group duplicates toggle */
+"tools.rxLog.groupDuplicates" = "合并重复项";
+
+/* Location: RxLogView.swift - Delete logs button */
+"tools.rxLog.deleteLogs" = "删除日志";
+
+/* Location: RxLogView.swift - Delete confirmation dialog title */
+"tools.rxLog.deleteConfirmation" = "删除所有日志？";
+
+/* Location: RxLogView.swift - Delete confirmation button */
+"tools.rxLog.delete" = "删除";
+
+/* Location: RxLogView.swift - Direct route label */
+"tools.rxLog.direct" = "直连";
+
+/* Location: RxLogView.swift - Path detail for single hop */
+"tools.rxLog.hopSingular" = "跳";
+
+/* Location: RxLogView.swift - Path detail for multiple hops */
+"tools.rxLog.hopPlural" = "跳";
+
+/* Location: RxLogView.swift - Signal strength accessibility label, %@ is quality */
+"tools.rxLog.signalStrength" = "信号强度：%@";
+
+/* Location: RxLogView.swift - Duplicate count accessibility label, %lld is count */
+"tools.rxLog.receivedTimes" = "已接收 %lld 次";
+
+/* Location: RxLogView.swift - Raw payload section title */
+"tools.rxLog.rawPayload" = "原始负载";
+
+/* Location: RxLogView.swift - Copy button */
+"tools.rxLog.copy" = "复制";
+
+/* Location: RxLogView.swift - RSSI label */
+"tools.rxLog.rssiLabel" = "RSSI：";
+
+/* Location: RxLogView.swift - SNR label */
+"tools.rxLog.snrLabel" = "信噪比：";
+
+/* Location: RxLogView.swift - Type label */
+"tools.rxLog.typeLabel" = "类型：";
+
+/* Location: RxLogView.swift - Size label */
+"tools.rxLog.sizeLabel" = "大小：";
+
+/* Location: RxLogView.swift - Path label */
+"tools.rxLog.pathLabel" = "路径：";
+
+/* Location: RxLogView.swift - Hash label */
+"tools.rxLog.hashLabel" = "哈希：";
+
+/* Location: RxLogView.swift - From label */
+"tools.rxLog.fromLabel" = "来自：";
+
+/* Location: RxLogView.swift - To label */
+"tools.rxLog.toLabel" = "到：";
+
+/* Location: RxLogView.swift - Channel hash label */
+"tools.rxLog.channelHashLabel" = "频道哈希：";
+
+/* Location: RxLogView.swift - Channel name label */
+"tools.rxLog.channelNameLabel" = "频道名称：";
+
+/* Location: RxLogView.swift - Region label */
+"tools.rxLog.regionLabel" = "区域：";
+
+/* Location: RxLogView.swift - Unresolved region value */
+"tools.rxLog.regionUnresolved" = "未知";
+
+/* Location: RxLogView.swift - Text label */
+"tools.rxLog.textLabel" = "文本：";
+
+/* Location: RxLogView.swift - Bytes suffix for size display */
+"tools.rxLog.bytes" = "字节";
+
+// MARK: - RX Log Filters
+
+/* Location: RxLogViewModel.swift - Route filter: all */
+"tools.rxLog.filter.all" = "全部";
+
+/* Location: RxLogViewModel.swift - Route filter: flood only */
+"tools.rxLog.filter.floodOnly" = "仅泛洪";
+
+/* Location: RxLogViewModel.swift - Route filter: direct only */
+"tools.rxLog.filter.directOnly" = "仅直连";
+
+/* Location: RxLogViewModel.swift - Decrypt filter: decrypted */
+"tools.rxLog.filter.decrypted" = "已解密";
+
+/* Location: RxLogViewModel.swift - Decrypt filter: failed */
+"tools.rxLog.filter.failed" = "失败";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: not a decryptable packet */
+"tools.rxLog.decryptStatus.notApplicable" = "不适用";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: no stored channel key matches */
+"tools.rxLog.decryptStatus.noKey" = "无密钥";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: HMAC validation failed */
+"tools.rxLog.decryptStatus.hmacFailed" = "HMAC 校验失败";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: AES decryption failed */
+"tools.rxLog.decryptStatus.decryptFailed" = "解密失败";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: decrypted successfully */
+"tools.rxLog.decryptStatus.decrypted" = "已解密";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: key found, decryption pending */
+"tools.rxLog.decryptStatus.hasKey" = "有密钥";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: missing direct message key */
+"tools.rxLog.decryptStatus.noDmKey" = "无私信密钥";
+
+/* Location: RxLogRowView - Label for local device in path display */
+"tools.rxLog.pathYou" = "你";
+
+/* Location: RxLogRowView - Route label for TRACE target hashes */
+"tools.rxLog.traceRouteLabel" = "路由：";
+
+/* Location: RxLogView.swift - Purpose: A direct packet's path, which is the route still ahead of it, not hops travelled; %@ is the hops */
+"tools.rxLog.routeAhead" = "前方：%@";
+
+/* RX log row: a packet received while the radio was on another channel, named against what was heard there; %@ is the channel, e.g. "910.525 MHz · SF10" */
+"tools.rxLog.receivedOn" = "收于 %@";
+
+/* RX log row: a packet whose radio channel the app couldn't confirm (stored before channels were recorded, heard during a retune, or held by the radio before this connection confirmed its channel), so none of its relays can be named */
+"tools.rxLog.channelNotRecorded" = "Cairn 无法确认这是在哪个电台信道上收到的，因此其中继以哈希显示。";
+
+/* RX log header: the app has only lately started hearing nodes on this channel, so many relays still show by hash; %lld is how many nodes it has heard */
+"tools.rxLog.learningChannel" = "正在学习此信道：已收到 %lld 个节点";
+
+/* Location: RxLogView.swift - Purpose: Label for the SNR each hop of a trace heard it at */
+"tools.rxLog.traceSnrLabel" = "每跳 SNR：";
+
+// MARK: - Noise Floor Signal Quality
+
+/* Location: NoiseFloorViewModel.swift - Error: unable to read stats */
+"tools.noiseFloor.error.unableToRead" = "无法读取无线电统计";
+
+/* Location: SpectrumViewModel.swift - Error: the radio's firmware has no stats command, so noise and airtime readings stop; packets still show */
+"tools.noiseFloor.error.unsupported" = "此电台的固件不报告噪声或空中时间（需要 1.11 或更高版本）";
+
+// MARK: - Node Discovery View
+
+/* Location: NodeDiscoveryView.swift - Disconnected state description */
+"tools.nodeDiscovery.notConnectedDescription" = "连接到无线电以发现%@";
+
+/* Location: NodeDiscoveryView.swift - Initial empty state title */
+"tools.nodeDiscovery.scanPrompt" = "扫描%@";
+
+/* Location: NodeDiscoveryView.swift - Initial empty state description */
+"tools.nodeDiscovery.scanPromptDescription" = "点击下面的按钮以发现附近的%@。";
+
+/* Location: NodeDiscoveryView.swift - No results empty state title */
+"tools.nodeDiscovery.noResults" = "未发现%@";
+
+/* Location: NodeDiscoveryView.swift - No results empty state description */
+"tools.nodeDiscovery.noResultsDescription" = "没有%@响应发现探测。请重试或靠近网格节点。";
+
+/* Location: NodeDiscoveryView.swift - Scan button label (idle) */
+"tools.nodeDiscovery.scanButton" = "扫描%@";
+
+/* Location: NodeDiscoveryView.swift - Scan button label (scanning) */
+"tools.nodeDiscovery.stopButton" = "停止扫描";
+
+/* Location: NodeDiscoveryView.swift - Segment label */
+"tools.nodeDiscovery.repeaters" = "转发节点";
+
+/* Location: NodeDiscoveryView.swift - Segment label */
+"tools.nodeDiscovery.sensors" = "传感器";
+
+/* Location: NodeDiscoveryView.swift - Sort option */
+"tools.nodeDiscovery.sortSignal" = "信号强度";
+
+/* Location: NodeDiscoveryView.swift - Sort option */
+"tools.nodeDiscovery.sortName" = "名称";
+
+/* Location: NodeDiscoveryView.swift - Sort menu accessibility label */
+"tools.nodeDiscovery.sortMenu" = "排序";
+
+/* Location: NodeDiscoveryView.swift - Sort menu accessibility hint */
+"tools.nodeDiscovery.sortMenuHint" = "更改发现节点的排序方式";
+
+/* Location: NodeDiscoveryRowView.swift - Unknown node name fallback */
+"tools.nodeDiscovery.unknownNode" = "未知";
+
+/* Location: NodeDiscoveryRowView.swift - Node type: repeater */
+"tools.nodeDiscovery.typeRepeater" = "转发节点";
+
+/* Location: NodeDiscoveryRowView.swift - Node type: sensor */
+"tools.nodeDiscovery.typeSensor" = "传感器";
+
+/* Location: NodeDiscoveryRowView.swift - SNR label (local receive) */
+"tools.nodeDiscovery.snrDown" = "↓ %@ dB";
+
+/* Location: NodeDiscoveryRowView.swift - SNR label (remote receive) */
+"tools.nodeDiscovery.snrUp" = "↑ %@ dB";
+
+/* Location: NodeDiscoveryRowView.swift - RSSI label */
+"tools.nodeDiscovery.rssi" = "RSSI %@ dBm";
+
+/* Location: NodeDiscoveryView.swift - Error alert title */
+"tools.nodeDiscovery.errorTitle" = "扫描失败";
+
+// MARK: - Line of Sight View
+
+/* Location: LineOfSightView.swift - Map style: standard */
+/* Location: LineOfSightView.swift - Map style: terrain */
+/* Location: LineOfSightView.swift - Back button label */
+"tools.lineOfSight.back" = "返回";
+
+/* Location: LineOfSightView.swift - Point A annotation */
+"tools.lineOfSight.pointA" = "A 点";
+
+/* Location: LineOfSightView.swift - Point B annotation */
+"tools.lineOfSight.pointB" = "B 点";
+
+/* Location: LineOfSightView.swift - Repeater annotation */
+"tools.lineOfSight.repeater" = "转发节点";
+
+/* Location: LineOfSightView.swift - Points section title */
+"tools.lineOfSight.points" = "点";
+
+/* Location: LineOfSightView.swift - Cancel button */
+"tools.lineOfSight.cancel" = "取消";
+
+/* Location: LineOfSightView.swift - Relocating message, %@ is point name */
+"tools.lineOfSight.relocating" = "正在放置%@…";
+
+/* Location: LineOfSightView.swift - Tap map instruction */
+"tools.lineOfSight.tapMapInstruction" = "轻点地图或中继以放置";
+
+/* Location: LineOfSightView.swift - Not selected placeholder */
+"tools.lineOfSight.notSelected" = "未选择";
+
+/* Line of Sight: under an empty point A or B; tapping the card starts placing it on the map */
+"tools.lineOfSight.chooseOnMapHint" = "轻点以在地图上放置";
+
+/* Line of Sight: button beside an empty point that sets it to the phone's position */
+"tools.lineOfSight.useMyLocation" = "使用我的位置";
+
+/* Line of Sight: menu item and editor for how high a point's antenna is above the ground */
+"tools.lineOfSight.antennaHeight" = "天线高度";
+
+/* Line of Sight: a point's heights under its name. %1$@ is the ground elevation, %2$@ the antenna height, e.g. 42 m and 7 m */
+"tools.lineOfSight.heightSummary" = "地面 %1$@ · 天线 %2$@";
+
+/* Location: LineOfSightView.swift - Loading elevation status */
+"tools.lineOfSight.loadingElevation" = "正在加载高程...";
+
+/* Location: LineOfSightView.swift - Long press points hint */
+"tools.lineOfSight.longPressPointsHint" = "长按地图以添加位置";
+
+/* Location: LineOfSightView.swift - Elevation unavailable warning */
+"tools.lineOfSight.elevationUnavailable" = "高程数据不可用。使用海平面（0m）作为近似值。";
+
+/* Location: LineOfSightView.swift - Open in Maps button */
+"tools.lineOfSight.openInMaps" = "在地图中打开";
+
+/* Location: LineOfSightView.swift - Copy coordinates button */
+"tools.lineOfSight.copyCoordinates" = "复制坐标";
+
+/* Location: LineOfSightView.swift - Share button */
+"tools.lineOfSight.share" = "分享...";
+
+/* Location: LineOfSightView.swift - Share label */
+"tools.lineOfSight.shareLabel" = "分享";
+
+/* Location: LineOfSightView.swift - Relocate button */
+"tools.lineOfSight.relocate" = "重新定位";
+
+/* Location: LineOfSightView.swift - Done button */
+"tools.lineOfSight.done" = "完成";
+
+/* Location: LineOfSightView.swift - Edit button */
+"tools.lineOfSight.edit" = "编辑";
+
+/* Location: LineOfSightView.swift - Clear button */
+"tools.lineOfSight.clear" = "清除";
+
+/* Location: LineOfSightView.swift - Ground elevation label */
+"tools.lineOfSight.groundElevation" = "地面高程";
+
+/* Location: LineOfSightView.swift - Additional height label */
+"tools.lineOfSight.additionalHeight" = "附加高度";
+
+/* Location: LineOfSightView.swift - Total height label */
+"tools.lineOfSight.totalHeight" = "总高度";
+
+/* Location: LineOfSightView.swift - Add repeater button */
+"tools.lineOfSight.addRepeater" = "添加转发节点";
+
+/* Location: LineOfSightView.swift - Analyze button */
+"tools.lineOfSight.analyze" = "分析视距";
+
+/* Location: LineOfSightView.swift - Terrain profile section */
+"tools.lineOfSight.terrainProfile" = "地形轮廓";
+
+/* Location: LineOfSightView.swift - Earth curvature note, %@ is k-factor */
+"tools.lineOfSight.earthCurvature" = "已针对地球曲率调整（%@）";
+
+/* Location: LineOfSightView.swift - Drag to adjust tooltip */
+"tools.lineOfSight.dragToAdjust" = "拖动以调整";
+
+/* Location: LineOfSightView.swift - RF Settings section */
+"tools.lineOfSight.rfSettings" = "RF 设置";
+
+/* Location: LineOfSightView.swift - Frequency label */
+"tools.lineOfSight.frequency" = "频率";
+
+/* Location: LineOfSightView.swift - MHz unit */
+"tools.lineOfSight.mhz" = "MHz";
+
+/* Location: LineOfSightView.swift - Refraction label */
+"tools.lineOfSight.refraction" = "折射";
+
+/* Location: LineOfSightView.swift - Refraction: none */
+"tools.lineOfSight.refraction.none" = "无";
+
+/* Location: LineOfSightView.swift - Refraction: standard */
+"tools.lineOfSight.refraction.standard" = "标准（k=1.33）";
+
+/* Location: LineOfSightView.swift - Refraction: ducting */
+"tools.lineOfSight.refraction.ducting" = "波导（k=4）";
+
+/* Location: LineOfSightView.swift - Analyzing progress */
+"tools.lineOfSight.analyzing" = "正在分析路径...";
+
+/* Location: LineOfSightView.swift - Analysis failed title */
+"tools.lineOfSight.analysisFailed" = "分析失败";
+
+/* Location: LineOfSightView.swift - Retry button */
+"tools.lineOfSight.retry" = "重试";
+
+/* Location: LineOfSightView.swift - Repeater location map item name */
+"tools.lineOfSight.repeaterLocation" = "转发节点位置";
+
+/* Location: LineOfSightViewModel.swift - Dropped pin display name */
+"tools.lineOfSight.droppedPin" = "已放置的图钉";
+
+/* Location: LOSRepeaterPinView.swift - Accessibility hint for repeater pins */
+/* Location: LOSPointPinView.swift - Accessibility hint for point pins */
+/* Location: LOSRepeaterTargetPinView.swift - Accessibility hint for repeater target */
+// MARK: - Terrain Profile Canvas
+
+/* Location: TerrainProfileCanvas.swift - Empty state title */
+"tools.lineOfSight.noData" = "无数据";
+
+/* Location: TerrainProfileCanvas.swift - Empty state description */
+"tools.lineOfSight.selectTwoPoints" = "选择两点以分析";
+
+/* Location: TerrainProfileCanvas.swift - Legend: terrain */
+"tools.lineOfSight.legend.terrain" = "地形";
+
+/* Location: TerrainProfileCanvas.swift - Legend: line of sight */
+"tools.lineOfSight.legend.los" = "视距";
+
+/* Location: TerrainProfileCanvas.swift - Legend: clear */
+"tools.lineOfSight.legend.clear" = "清除";
+
+/* Location: TerrainProfileCanvas.swift - Legend: obstructed */
+"tools.lineOfSight.legend.obstructed" = "受阻";
+
+/* Location: TerrainProfileCanvas.swift - Indirect route label */
+"tools.lineOfSight.indirectRoute" = "经由 R 的间接路由 · 在地图上重新定位以调整";
+
+/* Location: TerrainProfileCanvas.swift - Elevation data attribution */
+"tools.lineOfSight.elevationAttribution" = "高程数据：通过 Open-Meteo 的 Copernicus DEM GLO-90";
+
+// MARK: - Results Card View
+
+/* Location: ResultsCardView.swift - Section title */
+"tools.lineOfSight.results" = "结果";
+
+/* Location: ResultsCardView.swift - Loss suffix */
+"tools.lineOfSight.loss" = "损耗";
+
+/* Location: ResultsCardView.swift - Path loss breakdown section */
+"tools.lineOfSight.pathLossBreakdown" = "路径损耗分解";
+
+/* Location: ResultsCardView.swift - Free space loss label */
+"tools.lineOfSight.freeSpaceLoss" = "自由空间损耗";
+
+/* Location: ResultsCardView.swift - Diffraction loss label */
+"tools.lineOfSight.diffractionLoss" = "绕射损耗";
+
+/* Location: ResultsCardView.swift - Total label */
+"tools.lineOfSight.total" = "总计";
+
+/* Location: ResultsCardView.swift - Clearance section title */
+"tools.lineOfSight.clearance" = "间隙";
+
+/* Location: ResultsCardView.swift - Obstructions found label */
+"tools.lineOfSight.obstructionsFound" = "发现障碍物";
+
+/* Location: ResultsCardView.swift - Status label */
+"tools.lineOfSight.status" = "状态";
+
+/* Location: ResultsCardView.swift - Distance label */
+"tools.lineOfSight.distance" = "距离";
+
+/* Location: ResultsCardView.swift - Worst clearance short label */
+"tools.lineOfSight.worstClearanceShort" = "最差间隙";
+
+/* Location: ResultsCardView.swift - Assumptions footnote; %1$@ is frequency, %2$@ is k-factor */
+"tools.lineOfSight.assumptions" = "%1$@、%2$@、第 1 菲涅尔区 60%% 阈值";
+
+/* Location: ClearanceStatusView.swift - Clearance percentage, %lld is percent */
+"tools.lineOfSight.clearancePercent" = "%lld%% 间隙";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: clear */
+"tools.lineOfSight.status.clear" = "通畅";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: marginal */
+"tools.lineOfSight.status.marginal" = "勉强可用";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: partial obstruction */
+"tools.lineOfSight.status.partialObstruction" = "部分遮挡";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: blocked */
+"tools.lineOfSight.status.blocked" = "受阻";
+
+/* Location: ResultsCardView.swift - Subtitle shown when path is blocked */
+"tools.lineOfSight.status.blockedSubtitle" = "直线路径与地形相交";
+
+// MARK: - CLI Tool View
+
+/* Location: CLIToolView.swift - Tool selection label */
+"tools.cli" = "CLI";
+
+/* Location: CLIToolView.swift - Disconnected state title */
+"tools.cli.notConnected" = "未连接";
+
+/* Location: CLIToolView.swift - Disconnected state description */
+"tools.cli.notConnectedDescription" = "连接无线电以使用 CLI";
+
+/* Location: CLIToolView.swift - Prompt suffix */
+"tools.cli.promptSuffix" = ">";
+
+/* Location: CLIToolView.swift - Waiting indicator */
+/* Location: CLIToolView.swift - Disconnected prompt */
+"tools.cli.disconnected" = "已断开";
+
+/* Location: CLIToolView.swift - Help command output header */
+"tools.cli.helpHeader" = "可用命令：";
+
+/* Location: CLIToolView.swift - Session list header */
+"tools.cli.sessionListHeader" = "活动会话：";
+
+/* Location: CLIToolView.swift - Local session label */
+"tools.cli.sessionLocal" = "本地";
+
+/* Location: CLIToolView.swift - No sessions message */
+/* Location: CLIToolView.swift - History empty message */
+/* Location: CLIToolView.swift - Unknown command error */
+"tools.cli.unknownCommand" = "未知命令：";
+
+/* Location: CLIToolView.swift - Login success */
+"tools.cli.loginSuccess" = "已登录到";
+
+/* Location: CLIToolView.swift - Login failed */
+"tools.cli.loginFailed" = "登录失败：";
+
+/* Location: CLIToolView.swift - Login failed reason */
+"tools.cli.loginFailedAuth" = "身份验证失败";
+
+/* Location: CLIToolView.swift - Node not found error */
+"tools.cli.nodeNotFound" = "未找到节点：";
+
+/* Location: CLIToolView.swift - Password required error */
+"tools.cli.passwordRequired" = "需要密码";
+
+/* Location: CLIToolViewModel.swift - Password prompt */
+"tools.cli.passwordPrompt" = "密码：";
+
+/* Location: CLIToolViewModel.swift - Login countdown */
+"tools.cli.loggingIn" = "正在登录...（%d秒）";
+
+/* Location: CLIToolView.swift - Logout success */
+"tools.cli.logoutSuccess" = "已注销";
+
+/* Location: CLIToolView.swift - Not logged in error */
+"tools.cli.notLoggedIn" = "未登录到任何转发节点";
+
+/* Location: CLIToolView.swift - Session switched */
+"tools.cli.sessionSwitched" = "已切换到";
+
+/* Location: CLIToolView.swift - Session not found */
+"tools.cli.sessionNotFound" = "未找到会话：";
+
+/* Location: CLIToolView.swift - Command timeout */
+"tools.cli.timeout" = "等待响应超时";
+
+/* Location: CLIToolView.swift - Command cancelled */
+"tools.cli.cancelled" = "命令已取消";
+
+/* Location: CLIToolView.swift - Login from local only */
+"tools.cli.loginFromLocalOnly" = "仅从本地会话登录";
+
+/* Location: CLIToolView.swift - Login usage */
+"tools.cli.loginUsage" = "用法：login [-f] <节点>";
+
+/* Location: CLIToolView.swift - Accessory button: history up */
+"tools.cli.historyUp" = "上一个命令";
+
+/* Location: CLIToolView.swift - Accessory button: history down */
+"tools.cli.historyDown" = "下一个命令";
+
+/* Location: CLIToolView.swift - Accessory button: tab complete */
+"tools.cli.tabComplete" = "Tab 补全";
+
+/* Location: CLIInputAccessoryView.swift - Cursor left button */
+"tools.cli.cursorLeft" = "向左移动光标";
+
+/* Location: CLIInputAccessoryView.swift - Cursor right button */
+"tools.cli.cursorRight" = "向右移动光标";
+
+/* Location: CLIInputAccessoryView.swift - Paste button */
+"tools.cli.paste" = "粘贴";
+
+/* Location: CLIToolView.swift - Accessory button: clear */
+/* Location: CLIToolView.swift - Accessory button: sessions */
+"tools.cli.sessions" = "会话";
+
+/* Location: CLIToolView.swift - Accessory button: dismiss */
+"tools.cli.dismiss" = "关闭键盘";
+
+/* Location: CLIToolView.swift - Default device name */
+"tools.cli.defaultDevice" = "设备";
+
+/* Location: CLIToolViewModel.swift - Help: login command */
+"tools.cli.helpLogin" = "  login [-f] <节点>\n    登录到转发节点（-f：忘记保存的密码）";
+
+/* Location: CLIToolViewModel.swift - Help: logout command */
+"tools.cli.helpLogout" = "  logout\n    结束远程会话";
+
+/* Location: CLIToolViewModel.swift - Help: session list command */
+"tools.cli.helpSessionList" = "  session list\n    显示活动会话";
+
+/* Location: CLIToolViewModel.swift - Help: session local command */
+"tools.cli.helpSessionLocal" = "  session local\n    切换到本地";
+
+/* Location: CLIToolViewModel.swift - Help: session name command */
+"tools.cli.helpSessionName" = "  session <名称>\n    切换到会话";
+
+/* Location: CLIToolViewModel.swift - Help: session shortcut */
+"tools.cli.helpSessionShortcut" = "  s<n>\n    切换到会话 n（例如，s1、s2）";
+
+/* Location: CLIToolViewModel.swift - Help: clear command */
+"tools.cli.helpClear" = "  clear\n    清除终端";
+
+/* Location: CLIToolViewModel.swift - Help: help command */
+"tools.cli.helpHelp" = "  help\n    显示此帮助";
+
+/* Location: CLIToolViewModel.swift - Help: nodes command */
+"tools.cli.helpNodes" = "  nodes\n    显示转发节点和房间列表";
+
+/* Location: CLIToolViewModel.swift - Help: channels command */
+"tools.cli.helpChannels" = "  channels\n    显示包含设备位置的频道列表";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands header */
+"tools.cli.helpRepeaterHeader" = "转发节点命令（透传）：";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 1 */
+"tools.cli.helpRepeaterList1" = "  ver、clock、reboot、advert、neighbors";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 2 */
+"tools.cli.helpRepeaterList2" = "  get/set <参数>、password <新值>";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 3 */
+"tools.cli.helpRepeaterList3" = "  log start/stop/erase";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 4 */
+"tools.cli.helpRepeaterList4" = "  setperm、tempradio、neighbor.remove";
+
+/* Location: CLIToolViewModel+Sessions.swift - Nodes header with count */
+"tools.cli.nodesHeader" = "节点（%lld）：";
+
+/* Location: CLIToolViewModel+Sessions.swift - Channels header with count */
+"tools.cli.channelsHeader" = "频道（%lld）：";
+
+/* Location: CLIToolViewModel+Sessions.swift - No nodes found */
+"tools.cli.noNodes" = "未找到节点";
+
+/* Location: CLIToolViewModel+Sessions.swift - No channels found */
+"tools.cli.noChannels" = "未找到频道";
+
+/* Location: CLIToolViewModel+Sessions.swift - Channel empty name placeholder */
+"tools.cli.channelEmpty" = "空";
+
+/* Location: CLIToolViewModel.swift - Welcome banner line 1 */
+"tools.cli.welcomeLine1" = "Cairn CLI";
+/* Location: CLIToolViewModel.swift - Welcome banner line 2 */
+"tools.cli.welcomeConnected" = "已连接到 %@";
+
+/* Location: CLIToolViewModel.swift - Welcome banner line 3 */
+"tools.cli.welcomeHint" = "输入 'help' 以查看可用命令";
+
+/* Location: CLIToolView.swift - Jump to bottom button */
+"tools.cli.jumpToBottom" = "跳转到底部";
+
+/* Location: CLIToolView.swift - Accessibility label for command input */
+"tools.cli.commandInput" = "命令输入";
+
+/* Location: CLIToolView.swift - Accessibility label for command prompt */
+"tools.cli.commandPrompt" = "命令提示符";
+
+/* Location: CLIInputAccessoryView.swift - Cancel operation button label */
+"tools.cli.cancelOperation" = "取消操作";
+
+/* Location: CLIToolViewModel.swift - Command timeout (post-login) */
+"tools.cli.commandTimeout" = "请求超时";
+
+/* Location: CLIToolViewModel.swift - Reboot command confirmation */
+"tools.cli.rebootSent" = "已发送重启命令";
+
+/* Accessibility label for completion suggestions container */
+/* Accessibility value for completion suggestions - %lld is count, %@ is selected */
+/* Confirmation prompt for a dangerous local command */
+"tools.cli.confirmPrompt" = "确认 %@？(yes/no):";
+
+/* Usage for the get command */
+"tools.cli.usageGet" = "用法： get <key>";
+
+/* Usage for the set command */
+"tools.cli.usageSet" = "用法： set <key> <value>";
+
+/* Usage for set radio */
+"tools.cli.usageSetRadio" = "用法： set radio <freq>,<bw>,<sf>,<cr>";
+
+/* Invalid value error */
+"tools.cli.invalidValue" = "无效值";
+
+/* Custom var key/value contains a reserved character */
+"tools.cli.invalidCustomVarToken" = "键不能包含 ':' 或 ','；值不能包含 ','";
+
+/* Local radio commands help header */
+"tools.cli.helpLocalHeader" = "本地无线电命令：";
+
+/* Local radio commands help line 1 */
+"tools.cli.helpLocalList1" = "  clock [sync], ver, board";
+
+/* Local radio commands help line 2 */
+"tools.cli.helpLocalList2" = "  advert (zero-hop), floodadv (flood), reboot";
+
+/* Local radio commands help line 3 */
+"tools.cli.helpLocalList3" = "  get <key>, set <key> <value>";
+
+/* Local radio commands help line 4 */
+"tools.cli.helpLocalList4" = "    keys: name, lat, lon, tx, radio, freq, multi.acks, path.hash.mode, public.key, bat";
+
+/* Local radio commands help line 5 */
+"tools.cli.helpLocalList5" = "  get custom  （所有自定义固件变量）；未知的 get/set 键会转到自定义变量";
+
+// MARK: - Companion Command Line
+
+/* Location: CLIToolViewModel.swift - help line for opening a companion's command line (MeshCore 1.18) */
+"tools.cli.helpLoginCompanion" = "  login <companion>\n    向同伴发送命令（无需密码，MeshCore 1.18）";
+
+/* Location: CLIToolViewModel.swift - help line for the companions command */
+"tools.cli.helpCompanions" = "  companions\n    显示同伴列表";
+
+/* Location: CLIToolViewModel+Sessions.swift - header of the companions list; %lld is the count */
+"tools.cli.companionsHeader" = "同伴（%lld）：";
+
+/* Location: CLIToolViewModel+Sessions.swift - the companions command found none */
+"tools.cli.noCompanions" = "未找到同伴";
+
+/* Location: CompanionCLIExchange.swift - help header for a companion's commands */
+"tools.cli.helpCompanionHeader" = "同伴命令（发送给对方）：";
+
+/* Location: CompanionCLIExchange.swift - help line: companion read commands */
+"tools.cli.helpCompanionList1" = "  ver, board, get name, get tz.offset";
+
+/* Location: CompanionCLIExchange.swift - help line: companion Wi-Fi reads */
+"tools.cli.helpCompanionList2" = "  get wifi.status, wifi.enabled, wifi.ssid, wifi.ip";
+
+/* Location: CompanionCLIExchange.swift - help line: companion settings */
+"tools.cli.helpCompanionList3" = "  set name, tz.offset, wifi.enabled 0|1, wifi.ssid, wifi.pwd, pin";
+
+/* Location: CompanionCLIExchange.swift - help line: companion power */
+"tools.cli.helpCompanionList4" = "  reboot, poweroff";
+
+/* Location: CompanionCLIExchange.swift - first line of a companion's command line; %@ is its name */
+"tools.cli.companion.opened" = "命令现在发送到 %@";
+
+/* Location: CompanionCLIExchange.swift - when another companion answers commands (the firmware page's note) */
+"tools.cli.companion.note" = "仅当对方设备上本电台的联系人允许你发送命令时才会回复（其“远程命令”开关）。";
+
+/* Location: CompanionCLIExchange.swift - how to send a command in a companion's command line */
+"tools.cli.companion.hint" = "输入命令，或打开“命令”查看列表。";
+
+/* Location: CLIToolViewModel+Sessions.swift - this radio's firmware is older than MeshCore 1.18 */
+"tools.cli.companion.needsFirmware" = "向其他同伴发送命令需要本电台使用 MeshCore 1.18 固件";
+
+/* Location: CompanionCLIExchange.swift - no reply came in time; a late reply still shows under it */
+"tools.cli.companion.noReply" = "暂无回复 · 回复可能稍后到达（对方未允许，或超出范围）";
+
+/* Location: CompanionCLIExchange.swift - a restart or power-off went out */
+"tools.cli.companion.restartSent" = "已发送 · 正在重启";
+
+/* Location: CompanionCLIExchange.swift - a restart or power-off went out and the device answered; %@ is its answer */
+"tools.cli.companion.restartSentReply" = "已发送 · 正在重启（%@）";
+
+/* Location: CompanionCLIExchange.swift - a reply that came after its command timed out, shown under it; %@ is the reply */
+"tools.cli.companion.lateReply" = "迟到的回复 · %@";
+
+/* Location: CompanionCLIExchange.swift - a late reply whose command is no longer on screen; %1$@ is the node, %2$@ the command, %3$@ the reply */
+"tools.cli.companion.lateReplyFrom" = "%1$@ 对“%2$@”的迟到回复 · %3$@";
+
+/* Location: CompanionCLIExchange.swift - the reply had no text */
+"tools.cli.companion.emptyReply" = "（空回复）";
+
+/* Location: CompanionCLIExchange.swift - the typed text can't be sent as a command (the limit is in UTF-8 bytes) */
+"tools.cli.companion.notACommand" = "不是命令：需 2 到 63 字节（中文、带重音的字母或表情符号各占多个字节），不含控制字符，且开头不能有 xx| 标签";
+
+/* Location: CLIToolViewModel+Sessions.swift - logout from a companion session; %@ is its name */
+"tools.cli.companion.closed" = "已关闭 %@ 的命令行";
+
+/* Location: CompanionCommandPicker.swift - the command list's title, its toolbar button and key */
+"tools.cli.companion.commands" = "命令";
+
+/* Location: CompanionCommandPicker.swift - asked before Restart or Power off; %1$@ is the command's title, %2$@ the command */
+"tools.cli.companion.confirmMessage" = "%1$@ 会发送“%2$@”：如果对方允许，另一台设备将重启或关机。";
+
+/* Location: CompanionCommandPicker.swift - section of the four quick commands */
+"tools.cli.companion.group.quick" = "快捷";
+
+/* Location: CompanionCommandPicker.swift - section of commands that only read */
+"tools.cli.companion.group.read" = "读取";
+
+/* Location: CompanionCommandPicker.swift - section of commands that change a setting */
+"tools.cli.companion.group.change" = "更改";
+
+/* Location: CompanionCommandPicker.swift - section of Restart and Power off */
+"tools.cli.companion.group.power" = "电源";
+
+/* Location: CompanionCommandPicker.swift - quick command: its Wi-Fi state */
+"tools.cli.companion.quick.wifi" = "Wi-Fi";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "ver" (the firmware's label) */
+"tools.cli.companion.command.version" = "版本";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "board" (the firmware's label) */
+"tools.cli.companion.command.board" = "主板";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get name" (the firmware's label) */
+"tools.cli.companion.command.name" = "名称";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get tz.offset" (the firmware's label) */
+"tools.cli.companion.command.timeZone" = "时区";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.status" (the firmware's label) */
+"tools.cli.companion.command.wifiState" = "Wi-Fi 状态";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.enabled" (the firmware's label) */
+"tools.cli.companion.command.wifiEnabled" = "Wi-Fi 已开？";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.ssid" (the firmware's label) */
+"tools.cli.companion.command.wifiNetwork" = "Wi-Fi 网络";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.ip" (the firmware's label) */
+"tools.cli.companion.command.ipAddress" = "IP 地址";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set name" (the firmware's label) */
+"tools.cli.companion.command.rename" = "重命名";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set tz.offset" (the firmware's label) */
+"tools.cli.companion.command.setTimeZone" = "时区";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.enabled 1" (the firmware's label) */
+"tools.cli.companion.command.wifiOn" = "开启 Wi-Fi";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.enabled 0" (the firmware's label) */
+"tools.cli.companion.command.wifiOff" = "关闭 Wi-Fi";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.ssid" (the firmware's label) */
+"tools.cli.companion.command.setWifiNetwork" = "Wi-Fi 网络";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.pwd" (the firmware's label) */
+"tools.cli.companion.command.wifiKey" = "Wi-Fi 密钥";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set pin" (the firmware's label) */
+"tools.cli.companion.command.bluetoothPIN" = "蓝牙 PIN";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "reboot" (the firmware's label) */
+"tools.cli.companion.command.restart" = "重启";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "poweroff" (the firmware's label) */
+"tools.cli.companion.command.powerOff" = "关机";
+"tools.cli.companion.command.wifiClear" = "忘记 Wi-Fi";
+"tools.cli.companion.command.memory" = "空闲内存";
+"tools.cli.companion.command.radio" = "无线电设置";
+"tools.cli.companion.command.txPower" = "发射功率";
+"tools.cli.companion.command.setRadio" = "设置无线电";
+"tools.cli.companion.command.setTxPower" = "设置发射功率";
+"tools.cli.companion.command.shutdown" = "关闭";
+
+// MARK: - Saved Paths
+
+/* Location: SavedPathsViewModel.swift - Error loading saved paths */
+"tools.savedPaths.loadFailed" = "无法加载已保存的路径。";
+
+/* Location: SavedPathsViewModel.swift - Error renaming a saved path */
+"tools.savedPaths.renameFailed" = "无法重命名路径。";
+
+/* Location: SavedPathsViewModel.swift - Error deleting a saved path */
+"tools.savedPaths.deleteFailed" = "无法删除路径。";
+
+// MARK: - App Intents
+
+/* Location: MessageTargetEntity.swift - App Intents entity type name for a send target (a contact DM or a channel broadcast) */
+"intent.entity.target" = "收件人";
+
+/* Location: MessageTargetEntity.swift - App Intents recipient-picker subtitle marking a channel (broadcast) target */
+"intent.entity.channel" = "频道";
+
+/* Location: StatusQueryIntent.swift - App Intents: title of the radio status query intent */
+"intent.status.title" = "查看电台状态";
+
+/* Location: CairnAppShortcutsProvider.swift - App Shortcuts: short title for the radio status shortcut */
+"intent.status.shortTitle" = "电台状态";
+
+/* Location: StatusQueryIntent.swift - App Intents: description of the radio status query intent */
+"intent.status.description" = "报告已连接电台的名称、连接状态和最近一次已知的电量。";
+
+/* Location: StatusQueryIntent.swift - Spoken when the app is still launching and has no state to read yet */
+"intent.status.dialog.notReady" = "Cairn 仍在启动。请稍后再试。";
+/* Location: StatusQueryIntent.swift - Spoken when connected; %1$@ is the radio name, %2$lld is the cached battery percent */
+"intent.status.dialog.connectedWithBattery" = "%1$@ 已连接。电量约为 %2$lld%%，数据来自最近一次读取。";
+
+/* Location: StatusQueryIntent.swift - Spoken when connected but no battery reading is available; %@ is the radio name */
+"intent.status.dialog.connectedNoBattery" = "%@ 已连接。无可用电量读数。";
+
+/* Location: StatusQueryIntent.swift - Spoken while the radio is connecting; %@ is the radio name */
+"intent.status.dialog.connecting" = "%@ 正在连接。";
+
+/* Location: StatusQueryIntent.swift - Spoken when not connected and a last radio name is known; %@ is the radio name */
+"intent.status.dialog.disconnectedNamed" = "%@ 未连接。";
+
+/* Location: StatusQueryIntent.swift - Spoken when not connected and no radio has been connected before */
+"intent.status.dialog.disconnectedUnknown" = "没有已连接的电台。";
+
+/* Location: StatusQueryIntent.swift - Generic radio name used when no device name is known */
+"intent.status.radioFallbackName" = "你的电台";
+
+/* Location: SendMessageIntent.swift - App Intents: title of the send message intent */
+"intent.send.title" = "发送消息";
+
+/* Location: CairnAppShortcutsProvider.swift - App Shortcuts: short title for the send message shortcut */
+"intent.send.shortTitle" = "发送消息";
+
+/* Location: SendMessageIntent.swift - App Intents: description of the send message intent */
+"intent.send.description" = "向电台上的联系人或频道发送文本。";
+
+/* Location: SendMessageIntent.swift - App Intents: title of the recipient parameter (a contact or a channel) */
+"intent.send.param.target" = "收件人";
+
+/* Location: SendMessageIntent.swift - App Intents: title of the message text parameter */
+"intent.send.param.message" = "消息";
+
+/* Location: SendMessageIntent.swift - Confirmation prompt shown before sending; %@ is the recipient name */
+"intent.send.confirm" = "将此消息发送给 %@？";
+
+/* Location: SendMessageIntent.swift - Spoken when the app must come to the foreground to send (still connecting or reconnecting) */
+"intent.send.foreground" = "打开 Cairn 以完成发送此消息。";
+/* Location: SendMessageIntent.swift - App Intents parameter summary shown in the shortcut editor; ${message} and ${target} are framework parameter tokens */
+"Send ${message} to ${target}" = "将 ${message} 发送给 ${target}";
+
+// MARK: - Send Advert Intent
+
+/* Location: SendAdvertIntent.swift - App Intents: title of the send advert intent */
+"intent.advert.title" = "发送广播";
+
+/* Location: CairnAppShortcutsProvider.swift - App Shortcuts: short title for the send advert shortcut */
+"intent.advert.shortTitle" = "发送广播";
+
+/* Location: SendAdvertIntent.swift - App Intents: description of the send advert intent */
+"intent.advert.description" = "广播自我通告，让附近的 Mesh 节点发现你的电台。";
+
+/* Location: SendAdvertIntent.swift - App Intents: title of the advert reach parameter (zero-hop or flood) */
+"intent.advert.param.reach" = "范围";
+
+/* Location: AdvertReach.swift - App Intents: type name for the advert reach enum */
+"intent.advert.reach.type" = "广播范围";
+
+/* Location: AdvertReach.swift - App Intents: zero-hop reach case (direct neighbors only) */
+"intent.advert.reach.zeroHop" = "零跳";
+
+/* Location: AdvertReach.swift - App Intents: flood reach case (entire mesh) */
+"intent.advert.reach.flood" = "泛洪";
+
+/* Location: SendAdvertIntent.swift - Spoken after a zero-hop advert is sent */
+"intent.advert.dialog.sentZeroHop" = "已向附近节点发送广播。";
+
+/* Location: SendAdvertIntent.swift - Spoken after a flood advert is sent */
+"intent.advert.dialog.sentFlood" = "已向整个 Mesh 网络发送广播。";
+
+/* Location: SendAdvertIntent.swift - App Intents parameter summary shown in the shortcut editor; ${reach} is the framework parameter token */
+"Send a ${reach} advert" = "发送${reach}广播";
+
+
+/* Location: NodeDiscoveryView.swift - Purpose: Tab title for the discovered node list */
+"tools.nodeDiscovery.displayMode.list" = "列表";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Tab title for the discovered node map */
+"tools.nodeDiscovery.displayMode.map" = "地图";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Accessibility label for the List/Map picker */
+"tools.nodeDiscovery.displayMode.label" = "视图";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Pill over the map counting discovered nodes without a known location - %d is the count */
+"tools.nodeDiscovery.map.notShown" = "%d 个未在地图上显示";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Accessibility hint for the not-shown pill */
+"tools.nodeDiscovery.map.notShownHint" = "显示所有已发现节点的列表";
+
+
+/* Location: MapDiscoveryOverlay.swift - Purpose: Menu item and button that removes discovery results from the map */
+"tools.nodeDiscovery.clearResults" = "清除结果";
+
+/* Location: MapDiscoveryOverlay.swift - Purpose: Map pill while a scan runs - %@ is Repeaters or Sensors */
+"tools.nodeDiscovery.map.scanning" = "正在发现%@…";
+
+/* Location: MapDiscoveryOverlay.swift - Purpose: Map pill after a scan - %d is how many nodes replied */
+"tools.nodeDiscovery.map.heard" = "已收到 %d 个";
+
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth" = "网络健康";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.summary.repeaters" = "中继器";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.summary.attention" = "需要关注";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.summary.checkedToday" = "今日已检查";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.section.attention" = "需要关注";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.section.healthy" = "正常";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.section.noStatus" = "暂无状态";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.noStatusFooter" = "打开中继器的遥测标签页以记录其电池、底噪和运行时间。每次检查都会添加到此面板。";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.footer" = "健康状况来自你对每个中继器的状态检查以及此手机收到的广播。轻点中继器查看完整历史。";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.lowBattery" = "电量低";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.notHeard" = "2 天以上未收到";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.batteryFalling" = "电量下降";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.highNoise" = "噪声高";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.restarted" = "已重启";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.heard" = "收到于 %@";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.checked" = "检查于 %@";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.noise" = "噪声 %d dBm";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.noData" = "暂无数据";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.batteryPercent" = "%d%%";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.empty.title" = "没有中继器";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.empty.description" = "节点列表中的中继器会显示在这里，包括电池、底噪和最后收到的时间。";
+
+
+/* Location: ToolsView.swift - Section header in the Tools list */
+"tools.category.network" = "网络";
+
+/* Location: ToolsView.swift - Section header in the Tools list */
+"tools.category.routing" = "路由";
+
+/* Location: ToolsView.swift - Section header in the Tools list */
+"tools.category.advanced" = "高级";
+
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum" = "频谱";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.notConnected" = "连接电台以查看其信道频谱。";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.section.spectrum" = "信道频谱";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.section.activity" = "最近 5 分钟活动";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.section.figures" = "信道参数";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.spectrumFooter" = "MeshCore 电台只测量当前调谐的信道，因此两侧阴影区域不会被扫描。底噪和数据包为实测值；灵敏度和热噪声根据电台设置计算得出。";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.notMeasured" = "未测量";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.calibrating" = "电台正在校准底噪…";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.waiting" = "正在等待读数…";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.waitingForPacket" = "正在等待数据包";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.measuring" = "测量中…";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.warning" = "警告";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.axis.mhz" = "MHz";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.axis.dbm" = "dBm";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.packet" = "最新数据包";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.noise" = "底噪";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.sensitivity" = "灵敏度";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.thermal" = "热噪声";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.maxHold" = "峰值保持";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.channel" = "信道";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.channelCaption" = "%@ kHz · SF%d · CR 4/%d";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.noiseFloor" = "底噪";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.noiseValue" = "底噪 %d dBm";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.minAvgMax" = "最低 %d · 平均 %d · 最高 %d";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.interference" = "干扰";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.interferenceCaption" = "高于热噪声的灵敏度损失（%@）";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.sensitivity" = "灵敏度";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.effectiveSensitivity" = "当前噪声下为 %@";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.snrLimit" = "需要 SNR 高于 %@";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.lastPacket" = "最新数据包";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.lastPacketValue" = "最新数据包 %d dBm";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.snrMargin" = "SNR %@ · 高于门限 %@";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.linkBudget" = "链路预算";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.linkBudgetCaption" = "发射功率 %d dBm 时";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.channelBusy" = "信道占用";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.busyCaption" = "接收 %@ · 发射 %@";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.packets" = "收到的数据包";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.perMinute" = "%@/分钟";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.crcErrors" = "CRC 错误 %@";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.airtime" = "空中时间";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.airtimeCaption" = "64 字节数据包 · %d bps";
+
+/* Location: RxLogView.swift - Overflow menu action exporting the RX log as CSV */
+"tools.rxLog.exportCSV" = "导出 CSV";
+
+/* Location: RxLogView.swift - Detail label for the sender's timestamp in a decrypted packet */
+"tools.rxLog.senderTimeLabel" = "发送时间：";
+
+/* Location: RxLogView.swift - Detail label for the packet's decryption status */
+"tools.rxLog.decryptionLabel" = "解密：";
+
+/* Location: ToolSelection.swift - Tool name for signing and verifying messages */
+"tools.signVerify" = "签名与验证";
+
+/* Location: SignVerifyView.swift - Segmented control option for signing */
+"tools.signVerify.mode.sign" = "签名";
+
+/* Location: SignVerifyView.swift - Segmented control option for verifying */
+"tools.signVerify.mode.verify" = "验证";
+
+/* Location: SignVerifyView.swift - Section header for the message text */
+"tools.signVerify.message" = "消息";
+
+/* Location: SignVerifyView.swift - Placeholder for the message text field */
+"tools.signVerify.messagePlaceholder" = "要签名或验证的文本";
+
+/* Location: SignVerifyView.swift - Button asking the radio to sign the message */
+"tools.signVerify.signButton" = "用电台签名";
+
+/* Location: SignVerifyView.swift - Progress text while the radio signs */
+"tools.signVerify.signing" = "正在签名…";
+
+/* Location: SignVerifyView.swift - Section header for the signature */
+"tools.signVerify.signature" = "签名";
+
+/* Location: SignVerifyView.swift - Section header for this radio's public key */
+"tools.signVerify.publicKey" = "公钥";
+
+/* Location: SignVerifyView.swift - Button copying a value as hex */
+"tools.signVerify.copyHex" = "复制十六进制";
+
+/* Location: SignVerifyView.swift - Button copying a value as Base64 */
+"tools.signVerify.copyBase64" = "复制 Base64";
+
+/* Location: SignVerifyView.swift - Share the signed message, signature and key */
+"tools.signVerify.share" = "分享";
+
+/* Location: SignVerifyView.swift - Shared text; 1 = message, 2 = signature hex, 3 = public key hex */
+"tools.signVerify.shareText" = "消息：%1$@\n签名 (Ed25519)：%2$@\n公钥：%3$@";
+
+/* Location: SignVerifyView.swift - Footer explaining how signing works */
+"tools.signVerify.signFooter" = "电台使用其私钥 (Ed25519) 对消息的 UTF-8 字节签名。私钥不会离开电台。";
+
+/* Location: SignVerifyView.swift - Shown when no radio is connected in Sign mode */
+"tools.signVerify.requiresRadio" = "连接电台以签名消息。验证可离线进行。";
+
+/* Location: SignVerifyView.swift - Placeholder for the signature field */
+"tools.signVerify.signaturePlaceholder" = "签名（十六进制或 Base64）";
+
+/* Location: SignVerifyView.swift - Picker for who signed the message */
+"tools.signVerify.signer" = "签名者";
+
+/* Location: SignVerifyView.swift - Signer picker option to paste a public key */
+"tools.signVerify.manualKey" = "输入公钥";
+
+/* Location: SignVerifyView.swift - Signer picker option for the connected radio */
+"tools.signVerify.thisRadio" = "此电台";
+
+/* Location: SignVerifyView.swift - Placeholder for a pasted public key */
+"tools.signVerify.keyPlaceholder" = "公钥（64 个十六进制字符）";
+
+/* Location: SignVerifyView.swift - Button to verify the signature */
+"tools.signVerify.verifyButton" = "验证签名";
+
+/* Location: SignVerifyView.swift - Result when the signature verifies */
+"tools.signVerify.valid" = "签名有效";
+
+/* Location: SignVerifyView.swift - Result when the signature does not verify */
+"tools.signVerify.invalid" = "签名无效";
+
+/* Location: SignVerifyView.swift - Shown when the signature or key cannot be parsed */
+"tools.signVerify.invalidInput" = "请输入 64 字节签名和 32 字节公钥（十六进制或 Base64）。";
+
+/* Location: SignVerifyView.swift - Footer explaining verification */
+"tools.signVerify.verifyFooter" = "验证使用 Ed25519 在本设备上进行，无需电台。";
+
+/* Location: SignVerifyView.swift - Error when the message exceeds the radio's limit; %d = max bytes */
+"tools.signVerify.error.tooLarge" = "消息过长，无法签名（最多 %d 字节）。";
+
+/* Location: SignVerifyView.swift - Error when signing fails; %@ = reason */
+"tools.signVerify.error.failed" = "签名失败：%@";
+
+/* Location: NodeDiscoveryRowView.swift - Button that asks an unnamed node for its name over the radio */
+"tools.nodeDiscovery.requestName" = "请求名称";
+
+/* Location: NodeDiscoveryRowView.swift - Shown while a node is being asked for its name */
+"tools.nodeDiscovery.requestingName" = "正在请求名称…";
+
+/* Location: NodeDiscoveryRowView.swift - VoiceOver hint for the Request Name button */
+"tools.nodeDiscovery.requestNameHint" = "通过无线电向该节点请求名称";
+
+/* Location: NodeDiscoveryView.swift - Footer under scan results explaining where names come from, when the radio can ask nodes for their name */
+"tools.nodeDiscovery.namesFooter" = "扫描应答只包含节点的密钥，不包含名称。名称来自电台收到的广播；对仍然未知的节点，会直接向其请求名称。";
+
+/* Location: NodeDiscoveryScanControl.swift - Info text explaining where names come from, when the radio's firmware is too old to ask nodes for their name */
+"tools.nodeDiscovery.namesFooterNeedsFirmware" = "扫描应答只包含节点的密钥，不包含名称。名称来自电台收到的广播。向节点请求名称需要电台固件 1.12 或更高版本。";
+
+/* Location: NodeDiscoveryScanControl.swift - Info text explaining where names come from, while no radio is connected */
+"tools.nodeDiscovery.namesFooterDisconnected" = "扫描应答只包含节点的密钥，不包含名称。名称来自电台收到的广播。连接电台即可向未知节点请求名称。";
+
+/* Location: MapDiscoveryOverlay.swift - Title of the sheet listing every node that answered the scan run from the Map tab */
+"tools.nodeDiscovery.map.heardTitle" = "扫描结果";
+/* Location: MapDiscoveryOverlay.swift - Label on a heard node whose position is not known, so it cannot be drawn on the map */
+"tools.nodeDiscovery.map.noLocation" = "位置未知";
+
+/* Location: MapDiscoveryOverlay.swift - VoiceOver hint for the scan summary pill on the Map tab */
+"tools.nodeDiscovery.map.listHint" = "显示所有应答的节点";
+
+/* Location: MapDiscoveryOverlay.swift - Footer in the heard nodes sheet explaining why some nodes are not on the map */
+"tools.nodeDiscovery.map.noLocationFooter" = "电台收到带有位置的广播后，节点才会显示在地图上。";
+
+/* Location: MapDiscoveryOverlay.swift - Scan summary pill while a scan runs; first placeholder is the node kind (Repeaters), second is how many have answered so far */
+"tools.nodeDiscovery.map.scanningHeard" = "正在发现%1$@… 已收到 %2$d 个";
+
+/* Location: SpectrumView.swift - Channel condition when the measured noise floor is close to thermal noise */
+"tools.spectrum.condition.quiet" = "信道安静";
+
+/* Location: SpectrumView.swift - Channel condition when noise is moderately above thermal noise */
+"tools.spectrum.condition.some" = "有一些干扰";
+
+/* Location: SpectrumView.swift - Channel condition when noise is far above thermal noise */
+"tools.spectrum.condition.heavy" = "干扰严重";
+
+/* Location: SpectrumChannelChart.swift - Signal zone: 10 dB or more above the decode limit */
+"tools.spectrum.zone.strong" = "强";
+
+/* Location: SpectrumChannelChart.swift - Signal zone: decodable but less than 10 dB above the decode limit */
+"tools.spectrum.zone.weak" = "弱";
+
+/* Location: SpectrumChannelChart.swift - Signal zone: too weak for the radio to decode */
+"tools.spectrum.zone.noDecode" = "低于解码极限";
+
+/* Location: SpectrumChannelChart.swift - Legend entry for the weakest signal the radio can decode with the current noise */
+"tools.spectrum.legend.decodeLimit" = "解码极限";
+
+/* Location: SpectrumActivityChart.swift - Legend entry for received packets plotted over time */
+"tools.spectrum.legend.packets" = "数据包";
+
+/* Location: SpectrumView.swift - Footer under the channel spectrum explaining the colored zones and what is measured */
+"tools.spectrum.zonesFooter" = "颜色表示信号比电台在当前噪声下能解码的最弱信号高出多少：“强”表示高出该极限 10 dB 或以上。MeshCore 电台只测量所调谐的信道，因此两侧的阴影区域未被扫描。";
+
+/* Location: SpectrumFormat.swift - A power level with its unit; placeholder is the number */
+"tools.spectrum.value.dbm" = "%@ dBm";
+
+/* Location: SpectrumFormat.swift - A ratio in decibels with its unit; placeholder is the number */
+"tools.spectrum.value.db" = "%@ dB";
+
+/* Location: SpectrumFormat.swift - A frequency in megahertz with its unit; placeholder is the number */
+"tools.spectrum.value.mhz" = "%@ MHz";
+
+/* Location: SpectrumFormat.swift - A bandwidth in kilohertz with its unit; placeholder is the number */
+"tools.spectrum.value.khz" = "%@ kHz";
+
+/* Location: SpectrumFormat.swift - A duration in milliseconds with its unit; placeholder is the number */
+"tools.spectrum.value.ms" = "%@ 毫秒";
+
+/* Location: SpectrumView.swift - LoRa spreading factor chip, e.g. SF7 */
+"tools.spectrum.header.spreadingFactor" = "SF%d";
+
+/* Location: SpectrumView.swift - LoRa coding rate chip, e.g. CR 4/5 */
+"tools.spectrum.header.codingRate" = "CR 4/%d";
+
+/* Location: SpectrumActivityChart.swift - VoiceOver summary of the activity chart; first number is noise readings, second is packets */
+"tools.spectrum.activity.accessibility" = "最近 5 分钟内有 %1$d 次噪声读数和 %2$d 个数据包";
+
+/* Location: MapDiscoveryOverlay.swift - Label on a heard node that the user has hidden from the Map tab, so the scan does not draw it */
+"tools.nodeDiscovery.map.hidden" = "已在地图上隐藏";
+
+/* Location: SpectrumFigures.swift - Interference tile caption when interference is high enough to warn; placeholder is the thermal noise level, e.g. -120 dBm */
+"tools.spectrum.figure.interferenceWarningCaption" = "会缩短通信距离 · 热噪声 %@";
+
+/* Location: SpectrumFigures.swift - Last packet tile caption when the packet was barely decodable; first placeholder is SNR, second is how far above the decode limit, both in dB */
+"tools.spectrum.figure.lowMarginCaption" = "SNR %@ · 仅高出极限 %@，接近丢失";
+
+/* Location: ResultsCardView.swift - Title of the tile showing the total path loss in dB */
+"tools.lineOfSight.totalPathLoss" = "总路径损耗";
+
+/* Tools hub - short line under the Network Health tool card */
+"tools.subtitle.networkHealth" = "中继器状态";
+
+/* Tools hub - short line under the Discover Nodes tool card */
+"tools.subtitle.nodeDiscovery" = "请求附近节点回应";
+/* Tools hub - short line under the Spectrum tool card */
+"tools.subtitle.spectrum" = "信道活动";
+
+/* Tools hub - short line under the Noise Floor tool card */
+"tools.subtitle.noiseFloor" = "背景噪声";
+
+/* Tools hub - short line under the Trace Path tool card */
+"tools.subtitle.tracePath" = "测试路由";
+
+/* Tools hub - short line under the Line of Sight tool card */
+"tools.subtitle.lineOfSight" = "地形净空";
+
+/* Tools hub - short line under the RX Log tool card */
+"tools.subtitle.rxLog" = "已接收数据包";
+
+/* Tools hub - short line under the CLI (command line) tool card */
+"tools.subtitle.cli" = "电台命令";
+
+/* Tools hub - short line under the Sign & Verify tool card */
+"tools.subtitle.signVerify" = "签名消息";
+
+/* Location: NodeDiscoveryView.swift - Detail line on the card linking to the Nodes tab's Heard Nodes page (nodes heard passively from adverts) */
+"tools.nodeDiscovery.heardNodesDetail" = "通过广播收到的节点";
+
+/* Location: SpectrumFigures.swift - Noise floor trend over the session: getting louder */
+"tools.spectrum.trend.rising" = "上升";
+
+/* Location: SpectrumFigures.swift - Noise floor trend over the session: getting quieter */
+"tools.spectrum.trend.falling" = "下降";
+
+/* Location: SpectrumFigures.swift - Noise floor trend over the session: unchanged */
+"tools.spectrum.trend.steady" = "平稳";
+
+/* Location: SpectrumFigures.swift - Noise floor tile caption: %1$@ trend word, %2$@ min/avg/max line */
+"tools.spectrum.figure.noiseCaption" = "%1$@ · %2$@";
+
+/* Spectrum tab: Chart time axis label for the present moment */
+"tools.spectrum.axis.now" = "现在";
+
+/* Spectrum tab: Audio graph axis title: how long ago a reading was taken */
+"tools.spectrum.axis.secondsAgo" = "之前";
+
+/* Spectrum tab: Accessibility label of the Spectrum channel chart */
+"tools.spectrum.chart.label" = "信道活动";
+
+/* Spectrum tab: Accessibility value of the Spectrum channel chart. 1: noise readings, 2: packets, 3: window such as '1 minute' */
+"tools.spectrum.chart.summary" = "最近 %3$@ 内 %1$lld 次噪声读数和 %2$lld 个数据包";
+
+/* Spectrum tab: Packet size in bytes, short. Example: 38 B */
+"tools.spectrum.detail.bytes" = "%lld 字节";
+
+/* Spectrum tab: Button that opens the full RX log detail for the selected packet */
+"tools.spectrum.detail.open" = "数据包详情";
+
+/* Spectrum tab: Signal-to-noise ratio with value. Example: SNR 6.25 */
+"tools.spectrum.detail.snr" = "SNR %@";
+
+/* Spectrum tab: Title of the packet detail sheet opened from Spectrum */
+"tools.spectrum.detail.title" = "数据包";
+
+/* Spectrum tab: Spectrum header: estimated time on air for one packet. 1: milliseconds, 2: payload bytes */
+"tools.spectrum.header.airtime" = "每个 %2$lld 字节数据包约 %1$@ 毫秒";
+
+/* Spectrum tab: Footnote under the noise floor history: readings come from this session. Argument is a clock time */
+"tools.spectrum.history.caption" = "本次会话，自 %@ 起";
+
+/* Spectrum tab: Range of the noise floor history. Example: -113…-108 dBm */
+"tools.spectrum.history.range" = "%1$@…%2$@ dBm";
+
+/* Spectrum tab: Title of the noise floor history card */
+"tools.spectrum.history.title" = "底噪历史";
+
+/* Spectrum tab: Packet type: acknowledgement */
+"tools.spectrum.kind.ack" = "确认";
+
+/* Spectrum tab: Packet type: node advert */
+"tools.spectrum.kind.advert" = "广播";
+
+/* Spectrum tab: Packet type: anonymous request */
+"tools.spectrum.kind.anonRequest" = "匿名请求";
+
+/* Spectrum tab: Packet type: control */
+"tools.spectrum.kind.control" = "控制";
+
+/* Spectrum tab: Packet type: channel data */
+"tools.spectrum.kind.groupData" = "频道数据";
+
+/* Spectrum tab: Packet type: channel message */
+"tools.spectrum.kind.groupText" = "频道消息";
+
+/* Spectrum tab: Packet type: direct message */
+"tools.spectrum.kind.message" = "私信";
+
+/* Spectrum tab: Packet type: multipart */
+"tools.spectrum.kind.multipart" = "多部分";
+
+/* Spectrum tab: Packet type: path return */
+"tools.spectrum.kind.path" = "路径";
+
+/* Spectrum tab: Packet type: raw custom data */
+"tools.spectrum.kind.raw" = "原始";
+
+/* Spectrum tab: Packet type: request */
+"tools.spectrum.kind.request" = "请求";
+
+/* Spectrum tab: Packet type: response */
+"tools.spectrum.kind.response" = "响应";
+
+/* Spectrum tab: Packet type: trace */
+"tools.spectrum.kind.trace" = "追踪";
+
+/* Spectrum tab: Packet type: unknown */
+"tools.spectrum.kind.unknown" = "未知";
+
+/* Spectrum tab: Chart legend: the noise floor's lowest to highest reading per column */
+"tools.spectrum.legend.floorRange" = "底噪范围";
+
+/* Spectrum tab: Chart legend: the dotted line at the strongest packet in the window */
+"tools.spectrum.legend.peakPacket" = "峰值数据包";
+
+/* Spectrum tab: Chart legend after the colored "+6 +20 +35": how far a packet stood above the noise floor */
+"tools.spectrum.legend.levels" = "高于底噪的 dB";
+
+/* Spectrum tab: Airtime tile caption: share receiving and transmitting */
+"tools.spectrum.meter.airCaption" = "接收 %1$@ · 发送 %2$@";
+
+/* Spectrum tab: Airtime tile status past 30 % airtime (not "busy": that word is the radio's time-above-floor reading) */
+"tools.spectrum.meter.heavyUse" = "使用较多";
+
+/* Spectrum tab: Floor tile caption while the radio calibrates its noise floor */
+"tools.spectrum.meter.calibrating" = "校准中";
+
+/* Spectrum tab: Airtime tile status past 60 % airtime */
+"tools.spectrum.meter.veryHeavyUse" = "使用很多";
+
+/* Spectrum tab: Meter tile title: noise floor */
+"tools.spectrum.meter.floor" = "底噪";
+
+/* Spectrum tab: Title of the tile with the last packet's strength and margin over the floor (uppercase, a quarter of a phone-width card) */
+"tools.spectrum.meter.lastPacket" = "最近数据包";
+
+/* Spectrum tab: Meter tile title: how far the last packet is above the noise floor */
+"tools.spectrum.meter.margin" = "余量";
+
+/* Spectrum tab: Margin tile caption: the packet stands well above the floor */
+"tools.spectrum.meter.marginClear" = "明显高于底噪";
+
+/* Spectrum tab: Margin tile caption: the packet is close to the floor */
+"tools.spectrum.meter.marginLow" = "接近底噪";
+
+/* Spectrum tab: Meter tile title: the latest signal strength */
+"tools.spectrum.meter.now" = "当前";
+
+/* Spectrum tab: Now tile caption. Argument is a short age like 12s */
+"tools.spectrum.meter.nowCaption" = "%@前收到";
+
+/* Spectrum tab: Meter tile title: packets heard per minute */
+"tools.spectrum.meter.packets" = "数据包";
+
+/* Spectrum tab: Meter tile title: strongest packet */
+"tools.spectrum.meter.peak" = "峰值";
+
+/* Spectrum tab: Peak tile caption. Argument is a window like '1 minute' */
+"tools.spectrum.meter.peakCaption" = "最近 %@ 内最强";
+
+/* Spectrum tab: Packets tile line: the strongest packet heard in the window. %@ is a level like -87 dBm */
+"tools.spectrum.meter.peakPacket" = "峰值数据包 %@";
+
+/* Spectrum tab: Last packet tile caption: the reading is the radio's own last-packet RSSI, not one from the RX log */
+"tools.spectrum.meter.fromRadio" = "来自电台";
+
+/* Spectrum tab: Packet sender line: a channel known only by its hash */
+"tools.spectrum.party.channel" = "频道 %@";
+
+/* Spectrum tab: Packet sender line. Argument is a name or key */
+"tools.spectrum.party.from" = "来自 %@";
+
+/* Spectrum tab: Packet sender and recipient line */
+"tools.spectrum.party.fromTo" = "来自 %1$@ → %2$@";
+
+/* Spectrum tab: Packet sender line when the packet type carries no addresses */
+"tools.spectrum.party.none" = "此类数据包不含地址";
+
+/* Spectrum tab: The last relay a flood packet came through */
+"tools.spectrum.party.via" = "经由 %@";
+
+/* Spectrum tab: Packet route: direct with a route of N hops ahead */
+"tools.spectrum.route.directHops" = "直连 %lld";
+
+/* Spectrum tab: Packet route: flooded, N hops so far */
+"tools.spectrum.route.flood" = "泛洪 %lld";
+
+/* Spectrum tab: Traffic table column: how long ago */
+"tools.spectrum.traffic.age" = "时间";
+
+/* Spectrum tab: Traffic list when no packet has been heard */
+"tools.spectrum.traffic.empty" = "暂无流量";
+
+/* Spectrum tab: Traffic table column: route */
+"tools.spectrum.traffic.route" = "路由";
+
+/* Spectrum tab: Traffic table column: received signal strength */
+"tools.spectrum.traffic.rssi" = "RSSI";
+
+/* Spectrum tab: Link from the traffic list to the RX Log tool */
+"tools.spectrum.traffic.seeAll" = "查看全部";
+
+/* Spectrum tab: Accessibility hint of the See All link */
+"tools.spectrum.traffic.seeAllHint" = "打开 RX 日志";
+
+/* Spectrum tab: Traffic table column: signal-to-noise ratio */
+"tools.spectrum.traffic.snr" = "SNR";
+
+/* Spectrum tab: Title of the traffic list on the Spectrum tab */
+"tools.spectrum.traffic.title" = "流量";
+
+/* Spectrum tab: Traffic table column: packet type */
+"tools.spectrum.traffic.type" = "类型";
+
+/* Spectrum tab: Spectrum header button that sends an advert (opens zero-hop / flood choice) */
+"tools.spectrum.advert" = "广播";
+
+/* Spectrum tab: Footnote under the Spectrum channel chart */
+"tools.spectrum.chartFooter" = "底噪是电台自身的平均值，每 5 秒读取一次；每个数据包按到达时的强度绘制。轻点数据包查看详情。";
+/* Spectrum tab: Footnote when noise readings don't cover the whole window. 1: covered span, 2: window */
+"tools.spectrum.coverage" = "噪声读数仅覆盖最近 %2$@ 中的 %1$@：只有在频谱打开时才会读取。数据包来自 RX 日志。";
+
+/* Spectrum tab: Accessibility label of the Spectrum chart's time window picker */
+"tools.spectrum.window" = "时间窗口";
+
+/* Location: NodeDiscoveryPanel.swift - Sort option: nearest nodes first */
+"tools.nodeDiscovery.sortDistance" = "距离";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge on a scan result that is not a contact yet; also the New filter chip */
+"tools.nodeDiscovery.badge.new" = "新";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge on a scan result that is already a contact */
+"tools.nodeDiscovery.badge.contact" = "联系人";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line before any scan */
+"tools.nodeDiscovery.status.idle" = "请求直接范围内的节点应答";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while listening; %d is how many nodes have replied so far */
+"tools.nodeDiscovery.status.listening" = "正在监听… %d 个已应答";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line after a scan; %d is how many nodes replied */
+"tools.nodeDiscovery.status.replied" = "%d 个已应答";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line when a scan got no answer */
+"tools.nodeDiscovery.status.noReplies" = "无应答";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button after a scan has run */
+"tools.nodeDiscovery.scanAgain" = "再次扫描";
+
+/* Location: NodeDiscoveryScanControl.swift - Button beside the scan button that scans again and again (whenever the shared scan budget allows, also after the screen is left) until stopped; "Wardrive" is the feature's name */
+"tools.nodeDiscovery.wardriveButton" = "Wardrive";
+
+/* Location: NodeDiscoveryScanControl.swift - Button that stops Wardrive, the repeated scans */
+"tools.nodeDiscovery.wardriveStop" = "停止 Wardrive";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the Wardrive button */
+"tools.nodeDiscovery.wardriveHint" = "在附近转发节点允许时尽快重新扫描，并保留听到的每个节点";
+
+/* Location: NodeDiscoveryScanControl.swift - Paragraph in the scan card's info popover explaining Wardrive, its pace and that it keeps running after the screen is left */
+"tools.nodeDiscovery.wardriveInfo" = "只要共享的扫描额度允许，Wardrive 就会重新扫描（每 2 分钟最多两次），并保留听到的每个节点及其最新信号。转发节点每 2 分钟最多回应 4 次扫描，由附近所有人共享，因此其他人扫描时 Wardrive 会等待更久。离开此屏幕后它仍会继续运行，直到你停止它或电台断开连接；此页面打开期间屏幕保持常亮。";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while Wardrive runs; %d is how many nodes it has heard in all */
+"tools.nodeDiscovery.status.wardrive" = "Wardrive · 已听到 %d 个";
+
+/* Location: NodeDiscoveryScanControl.swift - Second scan card line while a Wardrive scan listens; %d is which scan this is (1, 2, 3...) */
+"tools.nodeDiscovery.status.wardriveListening" = "第 %d 次扫描 · 正在监听…";
+
+/* Location: NodeDiscoveryScanControl.swift - Second scan card line between Wardrive scans; %d is the scan that just finished */
+"tools.nodeDiscovery.status.wardriveWaiting" = "第 %d 次扫描完成";
+
+/* Location: NodeDiscoveryScanControl.swift - Title of the menu choosing which kind of node the scan asks (Repeaters or Sensors) */
+"tools.nodeDiscovery.askFor" = "查找";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the scan kind menu */
+"tools.nodeDiscovery.askForHint" = "选择扫描请求应答的节点类型";
+
+/* Location: NodeDiscoveryScanControl.swift - Info popover explaining the scan */
+"tools.nodeDiscovery.scanInfo" = "扫描会请求能直接听到你电台的节点应答。应答不会被转发，因此只显示邻居节点。↓ 表示你听到节点的质量，↑ 表示节点听到你的质量。";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile title: how many nodes replied */
+"tools.nodeDiscovery.summary.replied" = "已应答";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile caption; %d is how many repliers are not contacts yet */
+"tools.nodeDiscovery.summary.newCaption" = "%d 个新节点";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile title: the reply heard with the highest SNR */
+"tools.nodeDiscovery.summary.bestSignal" = "最佳信号";
+
+/* Location: NodeDiscoveryActivity.swift - Purpose: What the live strip on Scan for Nodes counts from */
+"tools.nodeDiscovery.activity.sinceScan" = "自本次扫描起";
+"tools.nodeDiscovery.activity.recent" = "最近 10 分钟";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile title: the farthest replier with a known position */
+"tools.nodeDiscovery.summary.farthest" = "最远";
+
+/* Location: NodeDiscoveryResultCard.swift - Signal row label: how well this radio hears the node (↓) */
+"tools.nodeDiscovery.youHearThem" = "你听到它";
+
+/* Location: NodeDiscoveryResultCard.swift - Signal row label: how well the node hears this radio (↑) */
+"tools.nodeDiscovery.theyHearYou" = "它听到你";
+
+/* Location: NodeDiscoveryResultCard.swift - VoiceOver hint of a scan result card */
+"tools.nodeDiscovery.cardHint" = "在地图上显示并列出操作";
+
+/* Location: NodeDiscoveryMapView.swift - Button that expands the scan map to the whole screen */
+"tools.nodeDiscovery.map.fullScreen" = "全屏地图";
+
+/* Location: NodeDiscoveryMapView.swift - Button that shrinks the full-screen scan map back beside the results */
+"tools.nodeDiscovery.map.exitFullScreen" = "退出全屏";
+
+/* Location: NodeDiscoveryCompactBar.swift - Button in the full-screen map's bottom bar that brings the results list back */
+"tools.nodeDiscovery.map.showResults" = "显示结果";
+
+/* Location: NodeDiscoveryCompactBar.swift - Button beside the node picked on the full-screen map; returns to the list with its card open */
+"tools.nodeDiscovery.map.openResult" = "打开";
+
+/* Location: NodeDiscoveryCompactBar.swift - VoiceOver hint of the Open button */
+"tools.nodeDiscovery.map.openResultHint" = "显示结果并展开此节点的卡片";
+
+/* Location: SpectrumTabSettingsSheet.swift - Info popover for the Channel section of the Spectrum tab's settings sheet, above the link to the radio settings */
+"tools.spectrum.settings.channelInfo" = "频谱只读取电台当前调谐的信道。可在“无线电”中更改频率、带宽或扩频因子；图表中的灵敏度和热噪声根据这些设置计算得出。";
+
+/* Location: HomeView.swift - Home Tools: title of the full-width card that sends this radio's advert */
+"tools.advert" = "发送广播";
+
+/* Location: HomeView.swift - Home Tools: line under Send Advert saying what it does */
+"tools.subtitle.advert" = "让其他节点发现你";
+
+/* Location: NodeDiscoveryView.swift - VoiceOver label of the grabber that resizes the map against the scan results */
+"tools.nodeDiscovery.map.resize" = "地图大小";
+
+/* Location: HomeView.swift - Title of the confirmation before sending a flood advert */
+"tools.advert.floodConfirm.title" = "泛洪发送广播？";
+
+/* Location: HomeView.swift - Explanation in the confirmation before sending a flood advert */
+"tools.advert.floodConfirm.message" = "每个中继都会把泛洪广播转发到整个网状网络，占用所有人的通话时间。在名称或位置变更时再发送；零跳广播可到达你周围的节点。";
+
+/* Location: HomeView.swift - Confirm button that sends the flood advert */
+"tools.advert.floodConfirm.send" = "泛洪发送";
+
+/* Location: SpectrumView.swift - VoiceOver hint on the Spectrum header card, which opens Radio settings */
+"tools.spectrum.hint.radio" = "打开无线电设置";
+
+/* Location: SpectrumView.swift - VoiceOver hint on the Now card, which opens the latest packet */
+"tools.spectrum.hint.latestPacket" = "显示最新数据包的详细信息";
+
+/* Location: SpectrumTabSettingsSheet.swift - Picker card title: the chart's time window Spectrum shows by default */
+"tools.spectrum.settings.defaultWindow" = "默认时间窗口";
+
+/* Location: SpectrumTabSettingsSheet.swift - Purpose: How the Spectrum tab draws its channel: the modern large spectrum, or as the radio's own screen does */
+"tools.spectrum.settings.chartStyle" = "图表样式";
+"tools.spectrum.settings.styleModern" = "现代";
+"tools.spectrum.settings.styleRadioScreen" = "电台屏幕";
+"tools.spectrum.settings.styleAnalyzer" = "分析仪";
+"tools.spectrum.settings.styleWaterfall" = "瀑布图";
+"tools.spectrum.settings.styleLineChart" = "折线图";
+
+/* Location: SpectrumTabSettingsSheet.swift - Picker card title: how often the radio's noise floor and airtime are read */
+"tools.spectrum.settings.updateRate" = "更新频率";
+
+/* Location: SpectrumModel.swift - Update rate option: readings every 5 seconds */
+"tools.spectrum.settings.rate.normal" = "标准";
+
+/* Location: SpectrumModel.swift - Update rate option: readings every 2 seconds */
+"tools.spectrum.settings.rate.live" = "实时";
+
+/* Location: SpectrumTabSettingsSheet.swift - Picker card title: how many packets the traffic table lists */
+"tools.spectrum.settings.trafficRows" = "流量行数";
+
+/* Location: SpectrumTabSettingsSheet.swift - Info popover for the Channel section: default window and update rate, with the battery cost */
+"tools.spectrum.settings.channelOptionsInfo" = "默认时间窗口决定图表启动时显示的时间范围；你仍可在页面上切换。更新频率决定读取电台底噪和发射时间的间隔。实时每 2 秒读取一次，唤醒电台及其蓝牙连接的次数是标准的 2.5 倍，两者都会更耗电。仅在频谱页面显示且应用处于活跃状态时读取。无论哪种频率，收到的数据包都会立即显示。";
+
+/* Location: SpectrumView.swift - Channel chart info popover; %@ is the reading interval, e.g. '5 seconds' */
+"tools.spectrum.chartFooterRate" = "底噪是电台自身的平均值，每 %@读取一次；每个数据包按其到达时的强度绘制。轻点数据包查看详情。";
+
+/* Location: SpectrumView.swift - VoiceOver hint on the Floor reading, which opens the noise floor history */
+"tools.spectrum.hint.floorHistory" = "显示底噪历史";
+
+/* Location: SpectrumView.swift - Short uppercase caption of the airtime column in the Spectrum metric strip; must fit a quarter of a phone-width card */
+"tools.spectrum.meter.air" = "空中";
+
+/* Location: SpectrumView.swift - Compact airtime of one 40-byte packet in the Spectrum header strip; %@ is milliseconds. The full sentence is read to VoiceOver */
+"tools.spectrum.header.airtimeShort" = "约 %@ 毫秒/包";
+
+// MARK: - Traffic
+
+/* Home and Traffic page: Title of the Traffic page (the packets this radio hears) and its Home card */
+"tools.traffic.title" = "流量";
+
+/* Home: Detail line under the Traffic card */
+"tools.traffic.subtitle" = "列表和实时地图";
+
+/* Traffic map: Shown in the ticker before any packet has been drawn */
+"tools.traffic.map.listening" = "正在侦听数据包";
+
+/* Traffic map: Status chip count of packets placed on the map; %lld is the count */
+"tools.traffic.map.placed" = "已绘制 %lld 个";
+
+/* Traffic map: Button that replays the latest packets' routes */
+"tools.traffic.map.replay" = "重放流量";
+
+/* Traffic map: Chip over the map while a replay retraces the latest packets' routes */
+"tools.traffic.map.replaying" = "正在回放";
+
+/* Traffic map: Button that frames all traffic on the map */
+"tools.traffic.map.fit" = "缩放到地区";
+
+/* Traffic map: Title when no node can be placed */
+"tools.traffic.map.empty.title" = "暂无可放置的内容";
+
+/* Traffic map: Ticker note for hops the packet passed through that have no location to draw, and the status chip's count of nodes heard lately that the map can't place (a tap lists them); %lld is the count */
+"tools.traffic.map.unplaced" = "%lld 个不在地图上";
+
+/* Traffic map: Title of the list of nodes packets named that the map can't place (no position shared, or known only by name) */
+"tools.traffic.map.offMap.title" = "不在地图上";
+
+/* Traffic map: Ticker line naming the nodes the current packet names that the map can't place; %@ is a list of node names, e.g. "Claremont, Alex" */
+"tools.traffic.map.offMap.flight" = "不在地图上：%@";
+
+/* Traffic map: Not on Map list, why a node isn't drawn: a channel message's sender, known only by the name it typed */
+"tools.traffic.map.offMap.reason.nameOnly" = "在频道消息中提及；密钥未知";
+
+/* Traffic map: Not on Map list, why a node isn't drawn: it has a position, but the route of the packet that named it couldn't be drawn (this radio has no position, or the route went another way) */
+"tools.traffic.map.offMap.reason.notDrawn" = "有位置，但无法绘制其数据包的路由";
+
+/* Traffic map: Accessibility hint for the status chip's not-on-map count, which opens the Not on Map list */
+"tools.traffic.map.offMap.hint" = "列出收到但无法在地图上放置的节点";
+
+/* Traffic map: a node's callout and the Not on Map list, for a node guessed from a short hash other nodes share; %lld is how many known nodes share it */
+"tools.traffic.map.possibleMatch" = "可能匹配：%lld 个节点共享此哈希";
+
+/* Traffic map: Accessibility label of the status chip's mark shown while the route filter leaves packets off the map */
+"tools.traffic.map.filtered" = "路线筛选已开启";
+
+/* Traffic map: control that also pins the nodes this radio heard on its channel that are quiet now (faded) */
+"tools.traffic.map.showQuietNodes" = "显示不活跃节点";
+
+/* Traffic map: the same control while the quiet nodes are shown; back to the relays heard lately */
+"tools.traffic.map.hideQuietNodes" = "隐藏不活跃节点";
+
+/* Traffic map: ⋯ menu picker title: which nodes the map pins besides the routes' */
+"tools.traffic.map.nodesOnMap" = "地图上的节点";
+
+/* Traffic map: Nodes on Map choice: only the scan's own neighbours and the routes' nodes */
+"tools.traffic.map.nodes.scan" = "扫描";
+
+/* Traffic map: Nodes on Map choice: every heard node with a position */
+"tools.traffic.map.nodes.heard" = "已收到";
+
+/* Traffic map: Nodes on Map choice: every saved contact with a position */
+"tools.traffic.map.nodes.contacts" = "联系人";
+
+/* Traffic map: Nodes on Map choice: everything, the channel's quiet nodes included */
+"tools.traffic.map.nodes.all" = "全部";
+
+/* Traffic map: Description when no node can be placed: only nodes this radio heard itself are drawn */
+"tools.traffic.map.empty.observedDescription" = "此电台在当前信道上收到的节点会在其广播到达后显示在这里。每个数据包到达时，其路由会逐跳绘制。";
+
+// MARK: - Traffic Node Callout
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.packets" = "30 分钟内 %lld 个数据包";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.last" = "最近 %@";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.links" = "最繁忙的链路";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.quiet" = "最近 30 分钟无流量";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.thisRadio" = "此电台";
+
+/* Traffic map: a tapped link's callout; %@ is the distance between its two ends, e.g. "4.2 km" */
+"tools.traffic.link.distance" = "相距 %@";
+
+/* Traffic map: a tapped link's callout, for the leg into this radio; %@ is the signal, e.g. "7.5 dB" */
+"tools.traffic.link.heard" = "本机接收 SNR %@";
+
+/* Traffic map: a tapped link's callout, the SNR the last trace across it measured at a repeater's end; %@ is the signal, e.g. "7.5 dB" */
+"tools.traffic.link.traced" = "最近一次追踪 SNR %@";
+
+/* Traffic map and RX log: a relay in a packet's path that no node heard on this channel has; %@ is its hash, e.g. "7F" */
+"tools.traffic.hop.unknown" = "未知中继 %@";
+
+/* Traffic map and RX log detail: under an unknown relay, a saved or discovered node whose key starts with the same hash but that this radio never heard on its channel, so it isn't taken for it; %@ is that node's name */
+"tools.traffic.hop.notHeardHint" = "未在此信道上收到：%@ 使用相同前缀";
+
+/* Traffic map and RX log detail: under an unknown relay, a node with the same hash that this radio heard on its channel, but too long ago to count; %1$@ is how long ago, e.g. "12d", %2$@ is its name */
+"tools.traffic.hop.staleHint" = "%1$@ 前最后一次在此信道上收到：%2$@";
+
+/* RX log detail: the key an anonymous request (a login) carries, of a node this radio never heard on its channel; %@ is the name a saved node with that key has */
+"tools.traffic.hop.claimsToBe" = "自称是 %@（未在此信道上收到）";
+
+/* Traffic map and RX log detail: why a node is named: this radio last received a packet straight from it; %@ is how long ago, e.g. "3 min. ago" */
+"tools.traffic.node.heardDirectly" = "直接收到 %@";
+
+/* Traffic map and RX log detail: why a node is named: its packets reached this radio through other relays; %1$lld is the fewest relays, %2$@ is how long ago, e.g. "2 days ago" */
+"tools.traffic.node.heardRelayed" = "经 %1$lld 跳收到 %2$@";
+
+/* Traffic map: Not on Map list, why a node isn't drawn: this radio never received a position from the node itself */
+"tools.traffic.node.positionNotHeard" = "未收到位置";
+
+/* RX log and Traffic map: an advert whose signature doesn't hold, so the key it carries is only a claim */
+"tools.traffic.node.unverifiedAdvert" = "未验证的广播";
+
+/* RX log detail and Traffic map ticker: the node that transmitted the frame this radio received; %@ is its name or hash */
+"tools.traffic.link.heardFrom" = "收自 %@";
+
+/* Traffic map ticker and RX log detail: the node that transmitted the frame and the signal it was received at; %1$@ is its name or hash, %2$@ the signal, e.g. "6.5 dB" */
+"tools.traffic.link.heardFromSignal" = "收自 %1$@ · %2$@";
+
+/* RX log detail: the relays the packet's path names, oldest first: what the packet claims, not what this radio heard */
+"tools.traffic.link.claimed" = "数据包声明的路径";
+
+/* RX log detail and Traffic map: a repeater passed on a packet this radio sent, so it heard this radio */
+"tools.traffic.link.heardYou" = "转发了你的数据包";
+
+/* RX log detail and Traffic map: a link between two placed nodes far longer than LoRa usually reaches; nothing is renamed because of it */
+"tools.traffic.link.suspicious" = "链路异常长";
+
+/* RX log detail and Traffic map ticker: a packet this radio was asked to transmit */
+"tools.traffic.sent.byRadio" = "由此电台发送";
+
+/* RX log detail and Traffic map ticker: the radio's answer to a send; %@ is how it went out, "flood" or "direct" */
+"tools.traffic.sent.accepted" = "电台已接受 · %@";
+
+/* Traffic map and RX log: a send that went out as a flood, inside "Radio accepted · %@" */
+"tools.traffic.sent.routeFlood" = "泛洪";
+
+/* Traffic map and RX log: a send that went out direct, inside "Radio accepted · %@" */
+"tools.traffic.sent.routeDirect" = "直连";
+
+/* Traffic map ticker and RX log detail: the radio refused the command, so nothing went out */
+"tools.traffic.sent.rejected" = "电台未发送此数据包";
+
+/* Traffic map ticker and RX log detail: the radio never answered the command */
+"tools.traffic.sent.unconfirmed" = "电台未确认";
+
+/* RX log detail and Traffic map: a packet matched to one this radio sent only by its source and destination bytes and timing */
+"tools.traffic.echo.probable" = "可能是你的数据包";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): BUSY cell caption, shown uppercase: the share of time the channel read above the floor */
+"tools.spectrum.device.cell.busy" = "占用";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): PKT/MIN cell caption, shown uppercase; keep it short */
+"tools.spectrum.device.cell.packetsPerMinute" = "包/分";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the PKT/MIN cell */
+"tools.spectrum.device.spoken.packetsPerMinute" = "每分钟数据包";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the BUSY cell */
+"tools.spectrum.device.spoken.busy" = "占用";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: in the noise */
+"tools.spectrum.device.level.noise" = "噪声";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: 6 dB or more over the floor */
+"tools.spectrum.device.level.signal" = "信号";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: 20 dB or more over the floor */
+"tools.spectrum.device.level.strong" = "强信号";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: 35 dB or more over the floor */
+"tools.spectrum.device.level.veryStrong" = "极强信号";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): BUSY cell verdict past 30 % */
+"tools.spectrum.device.busy.warning" = "信道繁忙";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): BUSY cell verdict past 60 % */
+"tools.spectrum.device.busy.critical" = "信道非常繁忙";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver: NOW is stale while the radio's Band sweep runs */
+"tools.spectrum.device.paused" = "已暂停";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Info popover beside the Channel pill */
+"tools.spectrum.device.bandInfo" = "电台的“频段”视图会扫描整个频段。它只在电台上运行：扫描期间网状网络会暂停。";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Label of the 24-hour noise floor line; NF = noise floor, keep it short */
+"tools.spectrum.device.nf24h" = "NF 24h";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the 24-hour noise floor line */
+"tools.spectrum.device.nf24hSpoken" = "底噪，最近 24 小时";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Heat map key, low end */
+"tools.spectrum.device.key.rare" = "少";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Heat map key, high end */
+"tools.spectrum.device.key.often" = "多";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Trace key: the average dots */
+"tools.spectrum.device.key.avg" = "均值";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Trace key: the peak rule */
+"tools.spectrum.device.key.peak" = "峰值";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Trace placeholder before the radio has readings */
+"tools.spectrum.device.sampling" = "采样中…";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): 24-hour line placeholder before the radio has a point */
+"tools.spectrum.device.collecting" = "收集中…";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Banner over the trace while the radio sweeps the band */
+"tools.spectrum.device.sweepBanner" = "电台正在扫描频段：读数已暂停";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Packet card: the app has no RX log entry for this packet */
+"tools.spectrum.device.heardAway" = "应用离开期间收到";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout, lower case like the radio's; the values are dBm numbers */
+"tools.spectrum.device.readout.minAvgMax" = "最小 %1$@ 均值 %2$@ 最大 %3$@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout, shorter form */
+"tools.spectrum.device.readout.avgMax" = "均值 %1$@ 最大 %2$@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the column's noise floor */
+"tools.spectrum.device.readout.nf" = "NF %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: a packet's SNR */
+"tools.spectrum.device.readout.snr" = "SNR %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the column's busy share, e.g. "busy 8%" */
+"tools.spectrum.device.readout.busy" = "占用 %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the radio was transmitting */
+"tools.spectrum.device.readout.transmitting" = "发射中";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: no readings in the column */
+"tools.spectrum.device.readout.noData" = "无数据";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the newest column's age */
+"tools.spectrum.device.readout.now" = "现在";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: a column's age in seconds, e.g. "-42 s" */
+"tools.spectrum.device.age.seconds" = "-%@ 秒";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: a column's age in minutes, e.g. "-2.5 m" */
+"tools.spectrum.device.age.minutes" = "-%@ 分";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the Channel plot; %@ is the window, e.g. "1 minute" */
+"tools.spectrum.device.chart.label" = "信道活动，最近 %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot; %@ is a level, e.g. "-112 dBm" */
+"tools.spectrum.device.chart.floor" = "底噪 %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot; a level, then how long ago, e.g. "32 seconds" */
+"tools.spectrum.device.chart.peak" = "峰值 %1$@，%2$@前";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot; %@ is a percentage */
+"tools.spectrum.device.chart.busy" = "占用 %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot before any readings */
+"tools.spectrum.device.chart.noData" = "尚无读数";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Audio graph series */
+"tools.spectrum.device.series.min" = "最小值";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Audio graph series */
+"tools.spectrum.device.series.avg" = "平均值";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Audio graph series */
+"tools.spectrum.device.series.max" = "最大值";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Spectrum Settings, in place of Update Rate with a Cairn radio */
+"tools.spectrum.device.settingsFootnote" = "Cairn 电台会发送自己的读数";
+"tools.nodeDiscovery.map.noFixWhenHeard" = "收到时没有 GPS 定位";
+"tools.nodeDiscovery.distanceWhenHeard" = "最佳接收时的距离";
+
+// MARK: - Scan for Nodes: Heard Neighbors and Scans
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while the radio listens for nearby nodes; first placeholder is how many are nearby now, second is when the list last changed as a relative time, e.g. "2 min ago" */
+"tools.nodeDiscovery.status.listeningNearby" = "正在监听 · 附近 %1$d 个 · 更新于 %2$@";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button: asks the nodes in direct range to answer once */
+"tools.nodeDiscovery.scanNow" = "立即扫描";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button while the next scan has to wait; %@ is the time left, e.g. "0:32" */
+"tools.nodeDiscovery.cooldown.scanAgainIn" = "%@ 后可再次扫描";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button while waiting because another radio nearby just sent a scan */
+"tools.nodeDiscovery.cooldown.othersScanning" = "等待中 — 附近有人刚刚扫描过";
+
+/* Location: NodeDiscoveryScanControl.swift - Explanation shown with the scan countdown: why scans are spaced out */
+"tools.nodeDiscovery.cooldown.explainer" = "转发节点每 2 分钟最多回应 4 次扫描请求，由附近所有人共享。";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the scan countdown, which explains the wait when tapped */
+"tools.nodeDiscovery.cooldown.hint" = "说明下一次扫描为何需要等待";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while a scan waits for answers */
+"tools.nodeDiscovery.status.probing" = "正在询问附近节点… 繁忙的网络中应答可能冲突";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line after a scan; first placeholder is how many listed nodes answered this scan, second is how many other listed nodes were heard since it started */
+"tools.nodeDiscovery.status.probeSummary" = "%1$d 个应答了你的扫描 · 扫描开始后另听到 %2$d 个";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while the radio is disconnected; %@ is when the list was last updated, e.g. "10:42" */
+"tools.nodeDiscovery.status.disconnected" = "电台已断开 — 显示截至 %@ 听到的内容";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line when the connection to the radio was rebuilt during a scan; the scan keeps listening */
+"tools.nodeDiscovery.status.interrupted" = "连接已重建 — 仍在监听";
+
+/* Location: NodeDiscoveryScanControl.swift - Paragraph in the scan card's info popover explaining that each scan starts a new list */
+"tools.nodeDiscovery.listenInfo" = "每次扫描都会开始一个新列表：Cairn 会列出从扫描开始到下一次扫描之间它直接听到的节点（对扫描的应答、正在转发流量的转发节点、广播，以及对任何人扫描的应答）。“显示较早的”会加入此前听到的节点，最多回溯 24 小时。";
+
+/* Location: NodeDiscoveryView.swift - Empty state title before any node has been heard */
+"tools.nodeDiscovery.nothingHeard.title" = "尚未听到任何节点";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state description for Repeaters when nothing has been heard since the current scan started */
+"tools.nodeDiscovery.nothingHeard.description" = "本次扫描开始后尚未听到任何节点。转发节点应答或转发流量时会出现。";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state description for Sensors when nothing has been heard since the current scan started */
+"tools.nodeDiscovery.nothingHeard.sensorsDescription" = "本次扫描开始后尚未听到任何节点。传感器应答或发送广播时会出现。";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card headline before the first scan of this session */
+"tools.nodeDiscovery.status.readyToScan" = "准备扫描";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card headline during a scan on a radio whose firmware can't send one, so the scan only listens */
+"tools.nodeDiscovery.status.listeningOnly" = "正在监听… 此电台的固件无法发送扫描";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line after a scan that only listened (or asked for the other kind of node); %d is how many listed nodes were heard since it started */
+"tools.nodeDiscovery.status.listenSummary" = "本次扫描开始后听到 %d 个";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state title before the first scan */
+"tools.nodeDiscovery.notScanned.title" = "尚未扫描";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state description before the first scan: each scan starts a new list */
+"tools.nodeDiscovery.notScanned.description" = "轻点“立即扫描”开始一个列表。列表会填入从那一刻起听到的节点；下一次扫描会开始新的列表。";
+
+/* Location: NodeDiscoveryPanel.swift - Heading over the nodes Show Older adds: heard before the current scan started */
+"tools.nodeDiscovery.earlierSection" = "本次扫描之前听到";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the scan button when the radio's firmware can't send a scan */
+"tools.nodeDiscovery.scanListensOnlyHint" = "此电台的固件无法发送扫描；扫描会开始新列表并监听";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node was heard relaying other traffic */
+"tools.nodeDiscovery.badge.relaying" = "正在转发";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node's own advert was heard directly */
+"tools.nodeDiscovery.badge.advert" = "广播";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node answered a scan sent from this radio */
+"tools.nodeDiscovery.badge.answeredYourScan" = "已应答你的扫描";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: under "Heard before this scan", this node answered a scan sent from this radio before the current one */
+"tools.nodeDiscovery.badge.answeredEarlierScan" = "已应答之前的扫描";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node answered a scan sent by another radio nearby */
+"tools.nodeDiscovery.badge.answeredAnotherScan" = "已应答其他扫描";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node is known to hear this radio */
+"tools.nodeDiscovery.badge.hearsYou" = "能听到你";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node was heard only once, so it may be out of reliable range */
+"tools.nodeDiscovery.badge.heardOnce" = "仅听到一次";
+
+/* Location: NodeDiscoveryResultCard.swift - Card title for a relay known only by the start of its key; %@ is that key prefix in hex, e.g. "3A7F21" */
+"tools.nodeDiscovery.unidentifiedRelay" = "未识别的转发者 %@";
+
+/* Location: NodeDiscoveryResultCard.swift - Card title for a relay whose key prefix matches several known nodes; first placeholder is the prefix in hex, second is how many nodes match */
+"tools.nodeDiscovery.ambiguous" = "%1$@ · 可能是 %2$d 个节点之一";
+
+/* Location: NodeDiscoveryResultCard.swift - Title of the list of nodes an ambiguous relay could be */
+"tools.nodeDiscovery.ambiguous.candidatesTitle" = "可能的节点";
+
+/* Location: NodeDiscoveryResultCard.swift - VoiceOver hint of an ambiguous relay's title, which lists the nodes it could be */
+"tools.nodeDiscovery.ambiguous.hint" = "列出该转发者可能对应的节点";
+
+/* Location: NodeDiscoveryResultCard.swift - How long ago a node was last heard; %@ is a short duration, e.g. "2 m" */
+"tools.nodeDiscovery.freshness" = "%@前";
+
+/* Location: NodeDiscoveryResultCard.swift - Button that sends one trace to a repeater to measure the link both ways */
+"tools.nodeDiscovery.checkLink" = "检查链路";
+
+/* Location: NodeDiscoveryResultCard.swift - VoiceOver hint of the Check Link button */
+"tools.nodeDiscovery.checkLink.hint" = "向该转发节点发送一次追踪，测量你们彼此听到的质量";
+
+/* Location: NodeDiscoveryResultCard.swift - Shown while the link check waits for its answer */
+"tools.nodeDiscovery.checkLink.checking" = "正在检查链路…";
+
+/* Location: NodeDiscoveryResultCard.swift - Result when the repeater answered the link check; its signal both ways is shown beside it */
+"tools.nodeDiscovery.checkLink.answered" = "已应答检查";
+
+/* Location: NodeDiscoveryResultCard.swift - Result when the repeater did not answer the link check; it may still be there, as some repeaters don't answer traces */
+"tools.nodeDiscovery.checkLink.noAnswer" = "未应答检查";
+
+/* Location: NodeDiscoveryResultCard.swift - Result when the link check could not be sent */
+"tools.nodeDiscovery.checkLink.failed" = "无法发送检查";
+
+/* Location: NodeDiscoveryResultCard.swift - Button on an unidentified relay that opens the Traffic map, where its traffic is drawn */
+"tools.nodeDiscovery.showOnTrafficMap" = "在流量地图上显示";
+
+/* Location: NodeDiscoveryPanel.swift - Toggle that also lists the nodes heard before the current scan, up to 24 hours ago */
+"tools.nodeDiscovery.showOlder" = "显示较早的";
+
+/* Location: NodeDiscoveryPanel.swift - VoiceOver hint of the Show Older toggle */
+"tools.nodeDiscovery.showOlderHint" = "同时列出本次扫描之前听到的节点，最多回溯 24 小时";
+
+/* Location: NodeDiscoveryMapView.swift - Pill over the map counting results the map's filter hides, with an action showing them; %d is the count */
+"tools.nodeDiscovery.map.hiddenByFilter" = "%d 个被地图筛选隐藏 · 全部显示";
+
+/* Location: NodeDiscoveryMapView.swift - VoiceOver hint of the hidden-by-filter pill */
+"tools.nodeDiscovery.map.hiddenByFilterHint" = "在此地图上显示所有结果";
+
+/* Location: NodeDiscoveryMapView.swift - Pill over the map counting results with no position to draw; %d is the count */
+"tools.nodeDiscovery.map.withoutLocation" = "%d 个无位置";
+
+/* Location: NodeDiscoveryScanControl.swift - Indicator that Wardrive keeps scanning while you use other screens */
+"tools.nodeDiscovery.wardriveRunning" = "Wardrive 运行中";
+
+/* Location: NodeDiscoveryScanControl.swift - Line under the scan headline when the radio's firmware can't send a scan; a scan then only listens */
+"tools.nodeDiscovery.scanUnsupported" = "此电台的固件无法发送扫描（需要 1.10 或更高版本），因此这里的扫描只会监听：它会开始一个新列表，列出此后听到的节点。";
+
+/* Location: NodeDiscoveryCompactBar.swift - Short caption and VoiceOver hint on the map's scan bar when the radio's firmware can't send a scan */
+"tools.nodeDiscovery.scanUnsupportedShort" = "需要固件 1.10+";
+
+/* Location: NodeDiscoveryScanControl.swift - Added after a scan's summary when the radio heard packets during the scan that never reached the app; %d is how many */
+"tools.nodeDiscovery.summary.radioMissed" = "本次扫描期间电台听到的 %d 个数据包未到达应用；可能缺少部分应答";
+
+// MARK: - Region Discovery
+
+/* Location: RegionDiscoveryRunner.swift - Shown when a scan was sent too recently, so regions are looked up from repeaters already heard instead */
+"tools.regionDiscovery.cooldown" = "最近已扫描 — 改用附近已听到的转发节点";
+
+/* Location: RegionDiscoveryRunner.swift - Shown when the radio's firmware is too old to ask repeaters for their regions, so nothing was sent */
+"tools.regionDiscovery.needsFirmware" = "向转发节点询问其区域需要电台固件 1.12 或更高版本";
+
+/* Location: RegionDiscoveryRunner.swift - Shown when the radio's firmware can't send a scan, so regions are looked up from repeaters already heard instead */
+"tools.regionDiscovery.scanUnsupported" = "此电台的固件无法发送扫描请求 — 改用附近已听到的转发节点";
+
+// MARK: - RX Log Delivery
+
+/* Location: RxLogView.swift - Delivery line in the header with Cairn radio firmware: nothing was lost between the radio and the app */
+"tools.rxLog.delivery.allReceived" = "已接收全部流量";
+
+/* Location: RxLogView.swift - Delivery line in the header with Cairn radio firmware; first placeholder is how many packets were fetched again from the radio, second is how many the radio lost before the app got them */
+"tools.rxLog.delivery.recoveredLost" = "已恢复 %1$d 个 · 电台丢失 %2$d 个";
+
+/* Location: RxLogView.swift - Start of the delivery line for a Cairn radio whose firmware build has no packet recovery, so packets arrive as on other firmware */
+"tools.rxLog.delivery.recoveryUnsupported" = "此 Cairn 版本没有数据包恢复功能";
+
+/* Location: RxLogView.swift - Start of the delivery line for a Cairn radio whose packet recovery did not start on this connection (no answer or refused), so packets arrive as on other firmware */
+"tools.rxLog.delivery.recoveryFailed" = "无法在此连接上启动数据包恢复";
+
+/* Location: RxLogView.swift - Delivery line in the header with radio firmware without packet recovery, measured with the radio's own packet counters; first placeholder is how many packets never reached the app, second is how many the radio heard in all */
+"tools.rxLog.delivery.radioMissed" = "电台听到的 %2$d 个数据包中有 %1$d 个未到达应用";
+
+/* Location: RxLogView.swift - Delivery line in the header with radio firmware that has no packet recovery and no packet counters (or before they were read), so packets the radio skips can't be counted */
+"tools.rxLog.delivery.stockUnmeasured" = "此电台的固件在链路繁忙时可能会跳过数据包";
+
+/* Location: RxLogView.swift and the Traffic map - Second line under the delivery line with radio firmware without packet recovery: the firmware never passes longer received packets to the app; %d is the longest length in bytes */
+"tools.rxLog.delivery.longPackets" = "超过 %d 字节的数据包永远不会从此电台的固件传到应用";
+
+/* Location: RxLogView.swift - Added to the delivery line with Cairn radio firmware when the app itself dropped packets it received; %d is how many */
+"tools.rxLog.delivery.appDropped" = "应用中丢弃 %d 个";
+
+/* Location: RxLogView.swift - VoiceOver label of the mark on a packet fetched again from the radio after it was missed */
+"tools.rxLog.recovered" = "已恢复";
+
+/* Location: ToolSelection.swift - Name of the Scan & Traffic tool (Scan for Nodes and the Traffic map on one page): Tools list, its page title and links to it */
+/* AI-translated - please verify with native speakers. */
+"tools.scanTraffic" = "扫描与流量";
+
+/* Tools list - short line under the Scan & Traffic tool */
+/* AI-translated - please verify with native speakers. */
+"tools.subtitle.scanTraffic" = "附近节点和实时数据包";
+
+/* Location: NodeDiscoveryPanel.swift - Scan & Traffic: segment beside Nodes that lists every packet the radio hears, followed by how many */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.section.packets" = "数据包";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan & Traffic: the one scan button in the sheet's header */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.scan" = "扫描";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan & Traffic header: how many of the kind listed the current scan has heard; %d is the count */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.status.nearby" = "正在收听 · 附近 %d 个";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan & Traffic header: how many packets a minute the radio hears; %@ is the number */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.status.packetsPerMinute" = "每分钟 %@ 个数据包";
+
+/* Location: NodeDiscoveryResultCard.swift - Tag on a compact node card: the node answered the current scan */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.badge.answered" = "已回应";
+
+/* Location: NodeDiscoveryPanel.swift - Row at the end of the nodes that adds the ones heard before this scan, up to 24 hours ago; %d is how many */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.showOlderCount" = "显示较早的节点（%d）";
+
+/* Location: NodeDiscoveryPanel.swift - The same row once the older nodes show: takes them away again */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.hideOlder" = "隐藏较早的节点";
+
+/* Location: NodeDiscoveryPanel.swift - Scan & Traffic before the first scan, with nothing heard yet */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.firstUse.title" = "轻点“扫描”以查找你附近的节点";
+
+/* Location: NodeDiscoveryPanel.swift - The line under it: what a scan does */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.firstUse.description" = "扫描会请求直接听到你电台的节点回应。";
+
+/* Location: NodeDiscoveryActivity.swift - VoiceOver hint of the Scan & Traffic header line */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.header.expandHint" = "显示或隐藏最佳信号和最远的节点";
+
+/* Location: NodeDiscoveryPanel.swift - VoiceOver value of a section's Filter button: how many filters are on; %d is the count */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.filter.active" = "已开启 %d 个";
+
+// MARK: - Map workstream additions
+
+/* Location: SendLocationIntent.swift - Purpose: Title of the Send My Location shortcut */
+"intent.location.title" = "发送我的位置";
+
+/* Location: CairnAppShortcutsProvider.swift - Purpose: Short title of the Send My Location shortcut */
+"intent.location.shortTitle" = "发送位置";
+
+/* Location: SendLocationIntent.swift - Purpose: Description of the Send My Location shortcut */
+"intent.location.description" = "将您当前的位置作为消息发送给联系人或频道。";
+
+/* Location: SendLocationIntent.swift - Purpose: Spoken confirmation once the location message is queued; the argument is the recipient */
+"intent.location.sent" = "您的位置正在发送给 %@。";
+
+/* SendLocationIntent.swift - Purpose: Shortcuts parameter summary of the Send My Location intent; keep ${target} as is */
+"Send my location to ${target}" = "将我的位置发送给 ${target}";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Title of the drive summary card once Wardrive has stopped */
+"tools.nodeDiscovery.wardrive.summary.finished" = "Wardrive 已结束";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Takes the finished drive's summary card off the screen */
+"tools.nodeDiscovery.wardrive.summary.dismiss" = "关闭";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: nodes heard during the drive */
+"tools.nodeDiscovery.wardrive.summary.nodes" = "发现节点";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: scans sent during the drive */
+"tools.nodeDiscovery.wardrive.summary.probes" = "扫描次数";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: how long the drive has run */
+"tools.nodeDiscovery.wardrive.summary.elapsed" = "已用时";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: distance covered, from the phone's fixes */
+"tools.nodeDiscovery.wardrive.summary.distance" = "距离";
+
+/* Location: NodeDiscoveryView.swift - Alert button before Wardrive starts with location refused: opens the system Settings */
+"tools.nodeDiscovery.wardrive.preflight.openSettings" = "打开设置";
+
+/* Location: NodeDiscoveryView.swift - Alert button: start Wardrive despite the warning */
+"tools.nodeDiscovery.wardrive.preflight.startAnyway" = "仍然开始";
+
+/* Location: NodeDiscoveryView.swift - Alert button on the first-run note: starts Wardrive */
+"tools.nodeDiscovery.wardrive.preflight.start" = "开始 Wardrive";
+
+/* Location: NodeDiscoveryView.swift - Alert title before Wardrive starts while location is refused for the app */
+"tools.nodeDiscovery.wardrive.preflight.locationDenied.title" = "Cairn 的定位已关闭";
+
+/* Location: NodeDiscoveryView.swift - Alert message: without location, Wardrive can't place nodes on the map */
+"tools.nodeDiscovery.wardrive.preflight.locationDenied.message" = "没有定位，Wardrive 无法把听到的节点放到地图上。请在设置中允许定位，或仍然开始以仅保留列表。";
+
+/* Location: NodeDiscoveryView.swift - Alert title of the note shown before the first Wardrive */
+"tools.nodeDiscovery.wardrive.preflight.firstRun.title" = "首次 Wardrive 之前";
+
+/* Location: NodeDiscoveryView.swift - Alert message: what Wardrive does to the screen and GPS */
+"tools.nodeDiscovery.wardrive.preflight.firstRun.message" = "Wardrive 运行期间，此页面保持打开且屏幕常亮，GPS 在后台持续运行，以便把每个节点放在听到它的位置。点按停止或电台断开连接时结束。";
+
+/* Location: NodeDiscoveryView.swift - Alert title before Wardrive starts on a low battery; %d is the percentage */
+"tools.nodeDiscovery.wardrive.preflight.lowBattery.title" = "电量 %d%%";
+
+/* Location: NodeDiscoveryView.swift - Alert message: Wardrive drains the battery */
+"tools.nodeDiscovery.wardrive.preflight.lowBattery.message" = "Wardrive 会保持屏幕常亮并持续使用 GPS，耗电很快。如有条件请接上电源。";
+
+/* Location: NodeDiscoveryView.swift - Alert title before Wardrive starts in Low Power Mode */
+"tools.nodeDiscovery.wardrive.preflight.lowPower.title" = "低电量模式已开启";
+
+/* Location: NodeDiscoveryView.swift - Alert message: GPS is less precise in Low Power Mode */
+"tools.nodeDiscovery.wardrive.preflight.lowPower.message" = "低电量模式下 GPS 更新较少，节点位置可能不够精确。";
+
+/* Location: NodeDiscoveryPanel.swift - Heading of the sort picker in the nodes' Filter menu */
+"tools.nodeDiscovery.sortBy" = "排序方式";
+
+/* Location: NodeDiscoveryPanel.swift - Menu item that adds every node not yet a contact; %d is how many */
+"tools.nodeDiscovery.addAllNew" = "添加全部新节点 (%d)";
+
+/* Location: NodeDiscoveryPanel.swift - Confirmation button of Add All New; %d is how many nodes */
+"tools.nodeDiscovery.addAllNew.confirm" = "添加 %d 个节点";
+
+/* Location: NodeDiscoveryPanel.swift - Confirmation message of Add All New: %1$d nodes to add, the radio holds up to %2$d contacts, %3$d in use */
+"tools.nodeDiscovery.addAllNew.message" = "将 %1$d 个节点添加到电台的联系人。电台最多可保存 %2$d 个联系人，已使用 %3$d 个。";
+
+/* Location: NodeDiscoveryPanel.swift - Confirmation message of Add All New when the radio's contact limit is unknown; %d is how many nodes */
+"tools.nodeDiscovery.addAllNew.messageNoLimit" = "将 %d 个节点添加到电台的联系人。";
+
+/* Location: NodeDiscoveryPanel.swift - Menu item that exports the listed nodes as a CSV file */
+"tools.nodeDiscovery.exportNodes" = "导出节点 (CSV)";
+
+/* Location: RxLogView.swift - VoiceOver label of the packet detail sheet's actions menu */
+"tools.rxLog.actions" = "数据包操作";
+
+/* Location: RxPacketActions.swift - Menu item that opens the page of the node that sent the packet */
+"tools.rxLog.action.openSender" = "打开发送方";
+
+/* Location: RxPacketActions.swift - Menu item that opens the page of a node the packet passed through; %@ is its name */
+"tools.rxLog.action.openNode" = "打开 %@";
+
+/* Location: RxPacketActions.swift - Menu item that centres the map on the packet's sender */
+"tools.rxLog.action.showOnMap" = "在地图上显示";
+
+/* Location: RxPacketActions.swift - Menu item that builds Trace Path on the packet's route */
+"tools.rxLog.action.traceRoute" = "追踪此路径";
+
+/* Location: RxPacketActions.swift - Menu item that shares the packet as a few lines of text */
+"tools.rxLog.action.shareText" = "以文本分享";
+
+/* Location: RxPacketActions.swift - Menu item that shares the packet as JSON */
+"tools.rxLog.action.shareJSON" = "以 JSON 分享";
+
+/* Location: RxPacketActions.swift - Menu item that copies the packet's hash */
+"tools.rxLog.action.copyHash" = "复制哈希";
+
+/* Location: RxLogView.swift - Placeholder of the packet list's search field */
+"tools.rxLog.search" = "搜索数据包";
+
+/* Location: RxLogView.swift - Heading of the packet type section in the filter menu */
+"tools.rxLog.filter.type" = "类型";
+
+/* Location: RxLogView.swift - Submenu in the filter menu listing the nodes packets came from */
+"tools.rxLog.filter.fromNode" = "来自节点";
+
+/* Location: RxLogView.swift - First item of the From Node submenu: every sender */
+"tools.rxLog.filter.anyNode" = "任意";
+
+/* Location: RxLogViewModel.swift - Packet type filter: adverts */
+"tools.rxLog.packetType.adverts" = "广播";
+
+/* Location: RxLogViewModel.swift - Packet type filter: direct, channel and data messages */
+"tools.rxLog.packetType.messages" = "消息";
+
+/* Location: RxLogViewModel.swift - Packet type filter: traces */
+"tools.rxLog.packetType.traces" = "追踪";
+
+/* Location: RxLogViewModel.swift - Packet type filter: acknowledgements */
+"tools.rxLog.packetType.acks" = "确认";
+
+/* Location: RxLogViewModel.swift - Packet type filter: path packets */
+"tools.rxLog.packetType.paths" = "路径";
+
+/* Location: RxLogViewModel.swift - Packet type filter: requests and their replies */
+"tools.rxLog.packetType.requests" = "请求与回复";
+
+/* Location: RxLogViewModel.swift - Packet type filter: everything else */
+"tools.rxLog.packetType.other" = "其他";
+
+/* Location: RxLogView.swift - Pill over a held packet list: how many packets landed since; %d is the count */
+"tools.rxLog.newPackets" = "%d 条新消息";
+
+/* Location: RunTraceSectionView.swift - Button that stops the trace in flight */
+"tools.tracePath.cancel" = "取消";
+
+/* Location: SavedPathDetailView.swift - Toolbar share of a saved path's runs as a CSV file */
+"tools.tracePath.share.runs" = "分享运行记录 (CSV)";
+
+/* Location: TraceResultsSheet.swift - Toolbar share of a trace's result as text */
+"tools.tracePath.share.summary" = "分享摘要";
+
+/* Location: TraceExport.swift - Line of the shared trace summary; %@ is the path's hops in hex */
+"tools.tracePath.summary.path" = "路径：%@";
+
+/* Location: TraceExport.swift - Line of the shared trace summary; %@ is the milliseconds */
+"tools.tracePath.summary.roundTrip" = "往返：%@ 毫秒";
+
+/* Location: TraceExport.swift - Line of the shared trace summary; %d is how many hops */
+"tools.tracePath.summary.hops" = "跳数：%d";
+
+/* Location: CLIToolViewModel.swift - Line in the terminal transcript where the radio disconnected */
+"tools.cli.transcript.disconnected" = "— 已断开 —";
+
+/* Location: CLIToolViewModel.swift - Line in the terminal transcript where the radio reconnected */
+"tools.cli.transcript.reconnected" = "— 已重新连接 —";
+
+/* Location: CLIToolView.swift - Item of the terminal's more menu that opens the sessions list */
+"tools.cli.menu.sessions" = "会话";
+
+/* Location: CLIToolView.swift - Item of the terminal's more menu that shares the transcript as text */
+"tools.cli.menu.shareTranscript" = "分享记录";
+
+/* Location: CLIToolView.swift - Item of the terminal's more menu that empties the transcript */
+"tools.cli.menu.clear" = "清除";
+
+/* Location: CLISessionsSheet.swift - Title of the sessions sheet */
+"tools.cli.sessions.title" = "会话";
+
+/* Location: CLISessionsSheet.swift - Section of the sessions open now */
+"tools.cli.sessions.open" = "已打开的会话";
+
+/* Location: CLISessionsSheet.swift - Section of saved repeaters and rooms to log in to */
+"tools.cli.sessions.repeaters" = "中继器与房间";
+
+/* Location: CLISessionsSheet.swift - Section of saved companions whose command line can be opened */
+"tools.cli.sessions.companions" = "伴侣设备";
+
+/* Location: CLISessionsSheet.swift - Mark on the session commands go to now */
+"tools.cli.sessions.active" = "当前";
+
+/* Location: CLISessionsSheet.swift - Line under a node not logged in to yet */
+"tools.cli.sessions.loginHint" = "点按登录";
+
+/* Location: CompanionCommandPicker.swift - Section of the commands pinned at the top of the picker */
+"tools.cli.companion.pinned" = "已固定";
+
+/* Location: CompanionCommandPicker.swift - Long-press action that pins a command at the top */
+"tools.cli.companion.pin" = "固定";
+
+/* Location: CompanionCommandPicker.swift - Long-press action that takes a pinned command down */
+"tools.cli.companion.unpin" = "取消固定";
+
+/* Location: NetworkHealthView.swift - Menu item that asks every repeater needing attention for its status, one after another */
+"tools.networkHealth.checkAll" = "全部检查";
+
+/* Location: NetworkHealthView.swift - Progress bar title while Check All runs; %1$d is the repeater being checked, %2$d how many */
+"tools.networkHealth.checkAll.progress" = "正在检查第 %1$d 个，共 %2$d 个";
+
+/* Location: NetworkHealthView.swift - Menu item that stops Check All */
+"tools.networkHealth.checkAll.cancel" = "取消全部检查";
+
+/* Location: NetworkHealthView.swift - Heading of the sort picker in the page's menu */
+"tools.networkHealth.sort" = "排序";
+
+/* Location: NetworkHealthReport.swift - Sort order: by what is wrong, worst first */
+"tools.networkHealth.sort.issues" = "问题";
+
+/* Location: NetworkHealthReport.swift - Sort order: by battery, lowest first */
+"tools.networkHealth.sort.battery" = "电池";
+
+/* Location: NetworkHealthReport.swift - Sort order: by when each repeater was last heard, longest silent first */
+"tools.networkHealth.sort.lastHeard" = "最后听到";
+
+/* Location: NetworkHealthView.swift - Section of the page's menu with the report's share options */
+"tools.networkHealth.share" = "分享报告";
+
+/* Location: NetworkHealthView.swift - Shares the report as text */
+"tools.networkHealth.share.text" = "以文本";
+
+/* Location: NetworkHealthView.swift - Shares the report as a CSV file */
+"tools.networkHealth.share.csv" = "以 CSV";
+
+/* Location: NetworkHealthReport.swift - First line of the shared text report */
+"tools.networkHealth.report.title" = "网络健康报告";
+
+/* Location: SpectrumView.swift - Toolbar button and settings toggle that holds the chart's window where it is */
+"tools.spectrum.pause" = "暂停";
+"tools.spectrum.fullscreen" = "全屏";
+
+/* Location: SpectrumView.swift - Toolbar button that lets the paused chart go on */
+"tools.spectrum.resume" = "继续";
+
+/* Location: SpectrumTabSettingsSheet.swift - Section with the pause toggle and the readings export */
+"tools.spectrum.settings.readingsHeader" = "读数";
+
+/* Location: SpectrumTabSettingsSheet.swift - Footer: what the readings export holds */
+"tools.spectrum.settings.readingsFooter" = "底噪读数按电台逐分钟保存一周，在频谱标签或主页打开期间记录。暂停会固定图表窗口；读数继续在后台记录。";
+
+/* Location: SpectrumTabSettingsSheet.swift - Button that exports the kept noise-floor readings as a CSV file */
+"tools.spectrum.settings.exportReadings" = "导出读数 (CSV)";

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--Cairn walkie-talkie: a MeshCore radio, the Dashboard tab symbol. Regular-M only; other weights and scales derive from it.-->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3300" height="2200">
+ <g id="Notes"/>
+ <g id="Guides">
+  <line id="Baseline-S" style="fill:none;stroke:#27AAE1;opacity:1;stroke-width:0.5;" x1="263" x2="3036" y1="696" y2="696"/>
+  <line id="Capline-S" style="fill:none;stroke:#27AAE1;opacity:1;stroke-width:0.5;" x1="263" x2="3036" y1="625.541" y2="625.541"/>
+  <line id="Baseline-M" style="fill:none;stroke:#27AAE1;opacity:1;stroke-width:0.5;" x1="263" x2="3036" y1="1126" y2="1126"/>
+  <line id="Capline-M" style="fill:none;stroke:#27AAE1;opacity:1;stroke-width:0.5;" x1="263" x2="3036" y1="1055.54" y2="1055.54"/>
+  <line id="Baseline-L" style="fill:none;stroke:#27AAE1;opacity:1;stroke-width:0.5;" x1="263" x2="3036" y1="1556" y2="1556"/>
+  <line id="Capline-L" style="fill:none;stroke:#27AAE1;opacity:1;stroke-width:0.5;" x1="263" x2="3036" y1="1485.54" y2="1485.54"/>
+  <line id="left-margin-Regular-M" style="fill:none;stroke:#00AEEF;stroke-width:0.5;opacity:1.0;" x1="1400.0" x2="1400.0" y1="1030.79" y2="1150.12"/>
+  <line id="right-margin-Regular-M" style="fill:none;stroke:#00AEEF;stroke-width:0.5;opacity:1.0;" x1="1483.2" x2="1483.2" y1="1030.79" y2="1150.12"/>
+ </g>
+ <g id="Symbols">
+  <g id="Regular-M">
+   <path d="M1422.40 1051.00H1467.20A16.0 16.0 0 0 1 1483.20 1067.00V1143.80A16.0 16.0 0 0 1 1467.20 1159.80H1422.40A16.0 16.0 0 0 1 1406.40 1143.80V1067.00A16.0 16.0 0 0 1 1422.40 1051.00ZM1422.40 1022.20H1422.40A7.2 7.2 0 0 1 1429.60 1029.40V1053.40A7.2 7.2 0 0 1 1422.40 1060.60H1422.40A7.2 7.2 0 0 1 1415.20 1053.40V1029.40A7.2 7.2 0 0 1 1422.40 1022.20ZM1461.60 1041.40H1468.00A4.0 4.0 0 0 1 1472.00 1045.40V1053.40A4.0 4.0 0 0 1 1468.00 1057.40H1461.60A4.0 4.0 0 0 1 1457.60 1053.40V1045.40A4.0 4.0 0 0 1 1461.60 1041.40ZM1404.00 1079.80H1407.20A4.0 4.0 0 0 1 1411.20 1083.80V1107.80A4.0 4.0 0 0 1 1407.20 1111.80H1404.00A4.0 4.0 0 0 1 1400.00 1107.80V1083.80A4.0 4.0 0 0 1 1404.00 1079.80ZM1428.00 1067.00A5.6 5.6 0 0 0 1422.40 1072.60V1087.00A5.6 5.6 0 0 0 1428.00 1092.60H1461.60A5.6 5.6 0 0 0 1467.20 1087.00V1072.60A5.6 5.6 0 0 0 1461.60 1067.00ZM1429.20 1105.40A3.6 3.6 0 0 0 1425.60 1109.00V1109.00A3.6 3.6 0 0 0 1429.20 1112.60H1460.40A3.6 3.6 0 0 0 1464.00 1109.00V1109.00A3.6 3.6 0 0 0 1460.40 1105.40ZM1429.20 1119.00A3.6 3.6 0 0 0 1425.60 1122.60V1122.60A3.6 3.6 0 0 0 1429.20 1126.20H1460.40A3.6 3.6 0 0 0 1464.00 1122.60V1122.60A3.6 3.6 0 0 0 1460.40 1119.00ZM1429.20 1132.60A3.6 3.6 0 0 0 1425.60 1136.20V1136.20A3.6 3.6 0 0 0 1429.20 1139.80H1460.40A3.6 3.6 0 0 0 1464.00 1136.20V1136.20A3.6 3.6 0 0 0 1460.40 1132.60Z"/>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,2549 @@
+/*
+  Tools.strings
+  Cairn
+
+  Ukrainian translation of strings for the Tools feature.
+  AI-translated - please verify with native speakers.
+*/
+
+// MARK: - Tools View
+
+/* Location: ToolsView.swift - Navigation title */
+"tools.title" = "Інструменти";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.tracePath" = "Трасування шляху";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.lineOfSight" = "Пряма видимість";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.rxLog" = "Журнал RX";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.noiseFloor" = "Рівень шуму";
+
+/* Location: ToolsView.swift - Tool selection label */
+"tools.nodeDiscovery" = "Пошук вузлів";
+/* Location: ToolsView.swift - Empty state when no tool selected */
+"tools.selectTool" = "Виберіть інструмент";
+
+// MARK: - RX Log View
+
+/* Location: RxLogView.swift - Empty state title when listening */
+"tools.rxLog.listening" = "Прослуховування...";
+
+/* Location: RxLogView.swift - Empty state description */
+"tools.rxLog.listeningDescription" = "RF-пакети з'являться тут у міру надходження.";
+
+/* Location: RxLogView.swift - Disconnected state title */
+"tools.rxLog.notConnected" = "Не підключено";
+
+/* Location: RxLogView.swift - Disconnected state description */
+"tools.rxLog.notConnectedDescription" = "Підключіться до радіо mesh для перегляду RF-пакетів.";
+
+/* Location: RxLogView.swift - Live status indicator */
+"tools.rxLog.live" = "Наживо";
+
+/* Location: RxLogView.swift - Offline status indicator */
+"tools.rxLog.offline" = "Офлайн";
+
+/* Location: RxLogView.swift - Packet count in header, %lld is count */
+"tools.rxLog.packetsCount" = "%lld пакетів";
+
+/* Location: RxLogView.swift - Filter menu section header */
+"tools.rxLog.routeType" = "Тип маршруту";
+
+/* Location: RxLogView.swift - Filter menu section header */
+"tools.rxLog.decryptStatus" = "Статус розшифрування";
+
+/* Location: RxLogView.swift - Filter button label */
+"tools.rxLog.filter" = "Фільтр";
+
+/* Location: RxLogView.swift - Overflow menu button label */
+"tools.rxLog.more" = "Більше";
+
+/* Location: RxLogView.swift - Group duplicates toggle */
+"tools.rxLog.groupDuplicates" = "Групувати дублікати";
+
+/* Location: RxLogView.swift - Delete logs button */
+"tools.rxLog.deleteLogs" = "Видалити журнали";
+
+/* Location: RxLogView.swift - Delete confirmation dialog title */
+"tools.rxLog.deleteConfirmation" = "Видалити всі журнали?";
+
+/* Location: RxLogView.swift - Delete confirmation button */
+"tools.rxLog.delete" = "Видалити";
+
+/* Location: RxLogView.swift - Direct route label */
+"tools.rxLog.direct" = "Прямий";
+
+/* Location: RxLogView.swift - Path detail for single hop */
+"tools.rxLog.hopSingular" = "перехід";
+
+/* Location: RxLogView.swift - Path detail for multiple hops */
+"tools.rxLog.hopPlural" = "переходів";
+
+/* Location: RxLogView.swift - Signal strength accessibility label, %@ is quality */
+"tools.rxLog.signalStrength" = "Сила сигналу: %@";
+
+/* Location: RxLogView.swift - Duplicate count accessibility label, %lld is count */
+"tools.rxLog.receivedTimes" = "Отримано %lld разів";
+
+/* Location: RxLogView.swift - Raw payload section title */
+"tools.rxLog.rawPayload" = "Сирі дані";
+
+/* Location: RxLogView.swift - Copy button */
+"tools.rxLog.copy" = "Копіювати";
+
+/* Location: RxLogView.swift - RSSI label */
+"tools.rxLog.rssiLabel" = "RSSI:";
+
+/* Location: RxLogView.swift - SNR label */
+"tools.rxLog.snrLabel" = "SNR:";
+
+/* Location: RxLogView.swift - Type label */
+"tools.rxLog.typeLabel" = "Тип:";
+
+/* Location: RxLogView.swift - Size label */
+"tools.rxLog.sizeLabel" = "Розмір:";
+
+/* Location: RxLogView.swift - Path label */
+"tools.rxLog.pathLabel" = "Шлях:";
+
+/* Location: RxLogView.swift - Hash label */
+"tools.rxLog.hashLabel" = "Хеш:";
+
+/* Location: RxLogView.swift - From label */
+"tools.rxLog.fromLabel" = "Від:";
+
+/* Location: RxLogView.swift - To label */
+"tools.rxLog.toLabel" = "Кому:";
+
+/* Location: RxLogView.swift - Channel hash label */
+"tools.rxLog.channelHashLabel" = "Хеш каналу:";
+
+/* Location: RxLogView.swift - Channel name label */
+"tools.rxLog.channelNameLabel" = "Назва каналу:";
+
+/* Location: RxLogView.swift - Region label */
+"tools.rxLog.regionLabel" = "Регіон:";
+
+/* Location: RxLogView.swift - Unresolved region value */
+"tools.rxLog.regionUnresolved" = "Невідомо";
+
+/* Location: RxLogView.swift - Text label */
+"tools.rxLog.textLabel" = "Текст:";
+
+/* Location: RxLogView.swift - Bytes suffix for size display */
+"tools.rxLog.bytes" = "байт";
+
+// MARK: - RX Log Filters
+
+/* Location: RxLogViewModel.swift - Route filter: all */
+"tools.rxLog.filter.all" = "Усі";
+
+/* Location: RxLogViewModel.swift - Route filter: flood only */
+"tools.rxLog.filter.floodOnly" = "Тільки розсилка";
+
+/* Location: RxLogViewModel.swift - Route filter: direct only */
+"tools.rxLog.filter.directOnly" = "Тільки прямі";
+
+/* Location: RxLogViewModel.swift - Decrypt filter: decrypted */
+"tools.rxLog.filter.decrypted" = "Розшифровані";
+
+/* Location: RxLogViewModel.swift - Decrypt filter: failed */
+"tools.rxLog.filter.failed" = "Невдалі";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: not a decryptable packet */
+"tools.rxLog.decryptStatus.notApplicable" = "Н/Д";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: no stored channel key matches */
+"tools.rxLog.decryptStatus.noKey" = "Немає ключа";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: HMAC validation failed */
+"tools.rxLog.decryptStatus.hmacFailed" = "Помилка HMAC";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: AES decryption failed */
+"tools.rxLog.decryptStatus.decryptFailed" = "Помилка розшифрування";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: decrypted successfully */
+"tools.rxLog.decryptStatus.decrypted" = "Розшифровано";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: key found, decryption pending */
+"tools.rxLog.decryptStatus.hasKey" = "Є ключ";
+
+/* Location: DecryptStatus+Display.swift - Decrypt status: missing direct message key */
+"tools.rxLog.decryptStatus.noDmKey" = "Немає ключа ОП";
+
+/* Location: RxLogRowView - Label for local device in path display */
+"tools.rxLog.pathYou" = "Ви";
+
+/* Location: RxLogRowView - Route label for TRACE target hashes */
+"tools.rxLog.traceRouteLabel" = "Маршрут:";
+
+/* Location: RxLogView.swift - Purpose: A direct packet's path, which is the route still ahead of it, not hops travelled; %@ is the hops */
+"tools.rxLog.routeAhead" = "Попереду: %@";
+
+/* RX log row: a packet received while the radio was on another channel, named against what was heard there; %@ is the channel, e.g. "910.525 MHz · SF10" */
+"tools.rxLog.receivedOn" = "Прийнято на %@";
+
+/* RX log row: a packet whose radio channel the app couldn't confirm (stored before channels were recorded, heard during a retune, or held by the radio before this connection confirmed its channel), so none of its relays can be named */
+"tools.rxLog.channelNotRecorded" = "Cairn не зміг підтвердити, на якому каналі радіостанції це прийнято, тому ретранслятори показано хешем.";
+
+/* RX log header: the app has only lately started hearing nodes on this channel, so many relays still show by hash; %lld is how many nodes it has heard */
+"tools.rxLog.learningChannel" = "Вивчення цього каналу: почуто вузлів: %lld";
+
+/* Location: RxLogView.swift - Purpose: Label for the SNR each hop of a trace heard it at */
+"tools.rxLog.traceSnrLabel" = "SNR за вузлами:";
+
+// MARK: - Noise Floor Signal Quality
+
+/* Location: NoiseFloorViewModel.swift - Error: unable to read stats */
+"tools.noiseFloor.error.unableToRead" = "Не вдалося прочитати статистику радіо";
+
+/* Location: SpectrumViewModel.swift - Error: the radio's firmware has no stats command, so noise and airtime readings stop; packets still show */
+"tools.noiseFloor.error.unsupported" = "Прошивка цієї радіостанції не повідомляє шум і час в ефірі (потрібна 1.11 або новіша)";
+
+// MARK: - Node Discovery View
+
+/* Location: NodeDiscoveryView.swift - Disconnected state description */
+"tools.nodeDiscovery.notConnectedDescription" = "Підключіться до mesh-радіо, щоб виявити %@.";
+
+/* Location: NodeDiscoveryView.swift - Initial empty state title */
+"tools.nodeDiscovery.scanPrompt" = "Пошук %@";
+
+/* Location: NodeDiscoveryView.swift - Initial empty state description */
+"tools.nodeDiscovery.scanPromptDescription" = "Натисніть кнопку нижче, щоб виявити найближчі %@.";
+
+/* Location: NodeDiscoveryView.swift - No results empty state title */
+"tools.nodeDiscovery.noResults" = "%@ не знайдено";
+
+/* Location: NodeDiscoveryView.swift - No results empty state description */
+"tools.nodeDiscovery.noResultsDescription" = "Жоден %@ не відповів на пінг виявлення. Спробуйте знову або підійдіть ближче до мережі mesh.";
+
+/* Location: NodeDiscoveryView.swift - Scan button label (idle) */
+"tools.nodeDiscovery.scanButton" = "Пошук %@";
+
+/* Location: NodeDiscoveryView.swift - Scan button label (scanning) */
+"tools.nodeDiscovery.stopButton" = "Зупинити пошук";
+
+/* Location: NodeDiscoveryView.swift - Segment label */
+"tools.nodeDiscovery.repeaters" = "Ретранслятори";
+
+/* Location: NodeDiscoveryView.swift - Segment label */
+"tools.nodeDiscovery.sensors" = "Датчики";
+
+/* Location: NodeDiscoveryView.swift - Sort option */
+"tools.nodeDiscovery.sortSignal" = "Рівень сигналу";
+
+/* Location: NodeDiscoveryView.swift - Sort option */
+"tools.nodeDiscovery.sortName" = "Ім'я";
+
+/* Location: NodeDiscoveryView.swift - Sort menu accessibility label */
+"tools.nodeDiscovery.sortMenu" = "Сортувати вузли";
+
+/* Location: NodeDiscoveryView.swift - Sort menu accessibility hint */
+"tools.nodeDiscovery.sortMenuHint" = "Змінює порядок сортування виявлених вузлів";
+
+/* Location: NodeDiscoveryRowView.swift - Unknown node name fallback */
+"tools.nodeDiscovery.unknownNode" = "Невідомо";
+
+/* Location: NodeDiscoveryRowView.swift - Node type: repeater */
+"tools.nodeDiscovery.typeRepeater" = "Ретранслятор";
+
+/* Location: NodeDiscoveryRowView.swift - Node type: sensor */
+"tools.nodeDiscovery.typeSensor" = "Датчик";
+
+/* Location: NodeDiscoveryRowView.swift - SNR label (local receive) */
+"tools.nodeDiscovery.snrDown" = "↓ %@ dB";
+
+/* Location: NodeDiscoveryRowView.swift - SNR label (remote receive) */
+"tools.nodeDiscovery.snrUp" = "↑ %@ dB";
+
+/* Location: NodeDiscoveryRowView.swift - RSSI label */
+"tools.nodeDiscovery.rssi" = "RSSI %@ dBm";
+
+/* Location: NodeDiscoveryView.swift - Error alert title */
+"tools.nodeDiscovery.errorTitle" = "Пошук не вдався";
+
+// MARK: - Line of Sight View
+
+/* Location: LineOfSightView.swift - Map style: standard */
+/* Location: LineOfSightView.swift - Map style: terrain */
+/* Location: LineOfSightView.swift - Back button label */
+"tools.lineOfSight.back" = "Назад";
+
+/* Location: LineOfSightView.swift - Point A annotation */
+"tools.lineOfSight.pointA" = "Точка A";
+
+/* Location: LineOfSightView.swift - Point B annotation */
+"tools.lineOfSight.pointB" = "Точка B";
+
+/* Location: LineOfSightView.swift - Repeater annotation */
+"tools.lineOfSight.repeater" = "Ретранслятор";
+
+/* Location: LineOfSightView.swift - Points section title */
+"tools.lineOfSight.points" = "Точки";
+
+/* Location: LineOfSightView.swift - Cancel button */
+"tools.lineOfSight.cancel" = "Скасувати";
+
+/* Location: LineOfSightView.swift - Relocating message, %@ is point name */
+"tools.lineOfSight.relocating" = "Розміщення: %@…";
+
+/* Location: LineOfSightView.swift - Tap map instruction */
+"tools.lineOfSight.tapMapInstruction" = "Торкніться карти або ретранслятора, щоб розмістити";
+
+/* Location: LineOfSightView.swift - Not selected placeholder */
+"tools.lineOfSight.notSelected" = "Не вибрано";
+
+/* Line of Sight: under an empty point A or B; tapping the card starts placing it on the map */
+"tools.lineOfSight.chooseOnMapHint" = "Торкніться, щоб вказати на карті";
+
+/* Line of Sight: button beside an empty point that sets it to the phone's position */
+"tools.lineOfSight.useMyLocation" = "Використати моє місцезнаходження";
+
+/* Line of Sight: menu item and editor for how high a point's antenna is above the ground */
+"tools.lineOfSight.antennaHeight" = "Висота антени";
+
+/* Line of Sight: a point's heights under its name. %1$@ is the ground elevation, %2$@ the antenna height, e.g. 42 m and 7 m */
+"tools.lineOfSight.heightSummary" = "Земля %1$@ · Антена %2$@";
+
+/* Location: LineOfSightView.swift - Loading elevation status */
+"tools.lineOfSight.loadingElevation" = "Завантаження висоти...";
+
+/* Location: LineOfSightView.swift - Long press points hint */
+"tools.lineOfSight.longPressPointsHint" = "Натисніть і утримуйте на карті, щоб додати місце";
+
+/* Location: LineOfSightView.swift - Elevation unavailable warning */
+"tools.lineOfSight.elevationUnavailable" = "Дані про висоту недоступні. Використовується рівень моря (0 м) як наближення.";
+
+/* Location: LineOfSightView.swift - Open in Maps button */
+"tools.lineOfSight.openInMaps" = "Відкрити в Картах";
+
+/* Location: LineOfSightView.swift - Copy coordinates button */
+"tools.lineOfSight.copyCoordinates" = "Копіювати координати";
+
+/* Location: LineOfSightView.swift - Share button */
+"tools.lineOfSight.share" = "Поділитися...";
+
+/* Location: LineOfSightView.swift - Share label */
+"tools.lineOfSight.shareLabel" = "Поділитися";
+
+/* Location: LineOfSightView.swift - Relocate button */
+"tools.lineOfSight.relocate" = "Перемістити";
+
+/* Location: LineOfSightView.swift - Done button */
+"tools.lineOfSight.done" = "Готово";
+
+/* Location: LineOfSightView.swift - Edit button */
+"tools.lineOfSight.edit" = "Редагувати";
+
+/* Location: LineOfSightView.swift - Clear button */
+"tools.lineOfSight.clear" = "Очистити";
+
+/* Location: LineOfSightView.swift - Ground elevation label */
+"tools.lineOfSight.groundElevation" = "Висота поверхні";
+
+/* Location: LineOfSightView.swift - Additional height label */
+"tools.lineOfSight.additionalHeight" = "Додаткова висота";
+
+/* Location: LineOfSightView.swift - Total height label */
+"tools.lineOfSight.totalHeight" = "Загальна висота";
+
+/* Location: LineOfSightView.swift - Add repeater button */
+"tools.lineOfSight.addRepeater" = "Додати ретранслятор";
+
+/* Location: LineOfSightView.swift - Analyze button */
+"tools.lineOfSight.analyze" = "Аналізувати пряму видимість";
+
+/* Location: LineOfSightView.swift - Terrain profile section */
+"tools.lineOfSight.terrainProfile" = "Профіль рельєфу";
+
+/* Location: LineOfSightView.swift - Earth curvature note, %@ is k-factor */
+"tools.lineOfSight.earthCurvature" = "З урахуванням кривизни Землі (%@)";
+
+/* Location: LineOfSightView.swift - Drag to adjust tooltip */
+"tools.lineOfSight.dragToAdjust" = "Перетягніть для налаштування";
+
+/* Location: LineOfSightView.swift - RF Settings section */
+"tools.lineOfSight.rfSettings" = "Налаштування RF";
+
+/* Location: LineOfSightView.swift - Frequency label */
+"tools.lineOfSight.frequency" = "Частота";
+
+/* Location: LineOfSightView.swift - MHz unit */
+"tools.lineOfSight.mhz" = "МГц";
+
+/* Location: LineOfSightView.swift - Refraction label */
+"tools.lineOfSight.refraction" = "Рефракція";
+
+/* Location: LineOfSightView.swift - Refraction: none */
+"tools.lineOfSight.refraction.none" = "Немає";
+
+/* Location: LineOfSightView.swift - Refraction: standard */
+"tools.lineOfSight.refraction.standard" = "Стандартна (k=1,33)";
+
+/* Location: LineOfSightView.swift - Refraction: ducting */
+"tools.lineOfSight.refraction.ducting" = "Хвилеводна (k=4)";
+
+/* Location: LineOfSightView.swift - Analyzing progress */
+"tools.lineOfSight.analyzing" = "Аналіз шляху...";
+
+/* Location: LineOfSightView.swift - Analysis failed title */
+"tools.lineOfSight.analysisFailed" = "Аналіз не вдався";
+
+/* Location: LineOfSightView.swift - Retry button */
+"tools.lineOfSight.retry" = "Повторити";
+
+/* Location: LineOfSightView.swift - Repeater location map item name */
+"tools.lineOfSight.repeaterLocation" = "Місцезнаходження ретранслятора";
+
+/* Location: LineOfSightViewModel.swift - Dropped pin display name */
+"tools.lineOfSight.droppedPin" = "Встановлена мітка";
+
+/* Location: LineOfSightViewModel.swift - Accessibility hint for repeater pin */
+/* Location: LineOfSightViewModel.swift - Accessibility hint for point pin */
+/* Location: LineOfSightViewModel.swift - Accessibility hint for repeater target */
+// MARK: - Terrain Profile Canvas
+
+/* Location: TerrainProfileCanvas.swift - Empty state title */
+"tools.lineOfSight.noData" = "Немає даних";
+
+/* Location: TerrainProfileCanvas.swift - Empty state description */
+"tools.lineOfSight.selectTwoPoints" = "Виберіть дві точки для аналізу";
+
+/* Location: TerrainProfileCanvas.swift - Legend: terrain */
+"tools.lineOfSight.legend.terrain" = "Рельєф";
+
+/* Location: TerrainProfileCanvas.swift - Legend: line of sight */
+"tools.lineOfSight.legend.los" = "Пряма видимість";
+
+/* Location: TerrainProfileCanvas.swift - Legend: clear */
+"tools.lineOfSight.legend.clear" = "Вільно";
+
+/* Location: TerrainProfileCanvas.swift - Legend: obstructed */
+"tools.lineOfSight.legend.obstructed" = "Заблоковано";
+
+/* Location: TerrainProfileCanvas.swift - Indirect route label */
+"tools.lineOfSight.indirectRoute" = "Непрямий маршрут через R · Перемістіть на карті для налаштування";
+
+/* Location: TerrainProfileCanvas.swift - Elevation data attribution */
+"tools.lineOfSight.elevationAttribution" = "Дані про висоту: Copernicus DEM GLO-90 через Open-Meteo";
+
+// MARK: - Results Card View
+
+/* Location: ResultsCardView.swift - Section title */
+"tools.lineOfSight.results" = "Результати";
+
+/* Location: ResultsCardView.swift - Loss suffix */
+"tools.lineOfSight.loss" = "втрати";
+
+/* Location: ResultsCardView.swift - Path loss breakdown section */
+"tools.lineOfSight.pathLossBreakdown" = "Розбивка втрат на шляху";
+
+/* Location: ResultsCardView.swift - Free space loss label */
+"tools.lineOfSight.freeSpaceLoss" = "Втрати у вільному просторі";
+
+/* Location: ResultsCardView.swift - Diffraction loss label */
+"tools.lineOfSight.diffractionLoss" = "Дифракційні втрати";
+
+/* Location: ResultsCardView.swift - Total label */
+"tools.lineOfSight.total" = "Разом";
+
+/* Location: ResultsCardView.swift - Clearance section title */
+"tools.lineOfSight.clearance" = "Зазор";
+
+/* Location: ResultsCardView.swift - Obstructions found label */
+"tools.lineOfSight.obstructionsFound" = "Знайдено перешкод";
+
+/* Location: ResultsCardView.swift - Status label */
+"tools.lineOfSight.status" = "Статус";
+
+/* Location: ResultsCardView.swift - Distance label */
+"tools.lineOfSight.distance" = "Відстань";
+
+/* Location: ResultsCardView.swift - Worst clearance short label */
+"tools.lineOfSight.worstClearanceShort" = "Найменший зазор";
+
+/* Location: ResultsCardView.swift - Assumptions footnote; %1$@ is frequency, %2$@ is k-factor */
+"tools.lineOfSight.assumptions" = "%1$@, %2$@, поріг 60 %% 1-ї зони Френеля";
+
+/* Location: ClearanceStatusView.swift - Clearance percentage, %lld is percent */
+"tools.lineOfSight.clearancePercent" = "%lld%% зазору";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: clear */
+"tools.lineOfSight.status.clear" = "Чисто";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: marginal */
+"tools.lineOfSight.status.marginal" = "Граничний";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: partial obstruction */
+"tools.lineOfSight.status.partialObstruction" = "Часткова перешкода";
+
+/* Location: ClearanceStatusView.swift, ResultsCardView.swift - Clearance status: blocked */
+"tools.lineOfSight.status.blocked" = "Заблоковано";
+
+/* Location: ResultsCardView.swift - Subtitle shown when path is blocked */
+"tools.lineOfSight.status.blockedSubtitle" = "Прямий шлях перетинає рельєф";
+
+// MARK: - CLI Tool View
+
+/* Location: CLIToolView.swift - Tool selection label */
+"tools.cli" = "CLI";
+
+/* Location: CLIToolView.swift - Disconnected state title */
+"tools.cli.notConnected" = "Не підключено";
+
+/* Location: CLIToolView.swift - Disconnected state description */
+"tools.cli.notConnectedDescription" = "Підключіться до mesh-радіо для використання CLI.";
+
+/* Location: CLIToolView.swift - Prompt suffix */
+"tools.cli.promptSuffix" = ">";
+
+/* Location: CLIToolView.swift - Waiting indicator */
+/* Location: CLIToolView.swift - Disconnected prompt */
+"tools.cli.disconnected" = "відключено";
+
+/* Location: CLIToolView.swift - Help command output header */
+"tools.cli.helpHeader" = "Доступні команди:";
+
+/* Location: CLIToolView.swift - Session list header */
+"tools.cli.sessionListHeader" = "Активні сесії:";
+
+/* Location: CLIToolView.swift - Local session label */
+"tools.cli.sessionLocal" = "локально";
+
+/* Location: CLIToolView.swift - No sessions message */
+/* Location: CLIToolView.swift - History empty message */
+/* Location: CLIToolView.swift - Unknown command error */
+"tools.cli.unknownCommand" = "Невідома команда:";
+
+/* Location: CLIToolView.swift - Login success */
+"tools.cli.loginSuccess" = "Виконано вхід до";
+
+/* Location: CLIToolView.swift - Login failed */
+"tools.cli.loginFailed" = "Помилка входу:";
+
+/* Location: CLIToolView.swift - Login failed reason */
+"tools.cli.loginFailedAuth" = "Помилка автентифікації";
+
+/* Location: CLIToolView.swift - Node not found error */
+"tools.cli.nodeNotFound" = "Вузол не знайдено:";
+
+/* Location: CLIToolView.swift - Password required error */
+"tools.cli.passwordRequired" = "Потрібен пароль";
+
+/* Location: CLIToolViewModel.swift - Password prompt */
+"tools.cli.passwordPrompt" = "Пароль:";
+
+/* Location: CLIToolViewModel.swift - Login countdown */
+"tools.cli.loggingIn" = "Вхід в систему... (%ds)";
+
+/* Location: CLIToolView.swift - Logout success */
+"tools.cli.logoutSuccess" = "Вихід виконано";
+
+/* Location: CLIToolView.swift - Not logged in error */
+"tools.cli.notLoggedIn" = "Не підключено до жодного ретранслятора";
+
+/* Location: CLIToolView.swift - Session switched */
+"tools.cli.sessionSwitched" = "Переключено на";
+
+/* Location: CLIToolView.swift - Session not found */
+"tools.cli.sessionNotFound" = "Сесію не знайдено:";
+
+/* Location: CLIToolView.swift - Command timeout */
+"tools.cli.timeout" = "Перевищено час очікування відповіді";
+
+/* Location: CLIToolView.swift - Command cancelled */
+"tools.cli.cancelled" = "Команду скасовано";
+
+/* Location: CLIToolView.swift - Login from local only */
+"tools.cli.loginFromLocalOnly" = "Вхід доступний лише з локальної сесії";
+
+/* Location: CLIToolView.swift - Login usage */
+"tools.cli.loginUsage" = "Використання: login [-f] <node>";
+
+/* Location: CLIToolView.swift - Accessory button: history up */
+"tools.cli.historyUp" = "Попередня команда";
+
+/* Location: CLIToolView.swift - Accessory button: history down */
+"tools.cli.historyDown" = "Наступна команда";
+
+/* Location: CLIToolView.swift - Accessory button: tab complete */
+"tools.cli.tabComplete" = "Автодоповнення";
+
+/* Location: CLIInputAccessoryView.swift - Cursor left button */
+"tools.cli.cursorLeft" = "Перемістити курсор ліворуч";
+
+/* Location: CLIInputAccessoryView.swift - Cursor right button */
+"tools.cli.cursorRight" = "Перемістити курсор праворуч";
+
+/* Location: CLIInputAccessoryView.swift - Paste button */
+"tools.cli.paste" = "Вставити";
+
+/* Location: CLIToolView.swift - Accessory button: clear */
+/* Location: CLIToolView.swift - Accessory button: sessions */
+"tools.cli.sessions" = "Сесії";
+
+/* Location: CLIToolView.swift - Accessory button: dismiss */
+"tools.cli.dismiss" = "Сховати клавіатуру";
+
+/* Location: CLIToolView.swift - Default device name */
+"tools.cli.defaultDevice" = "Пристрій";
+
+/* Location: CLIToolViewModel.swift - Help: login command */
+"tools.cli.helpLogin" = "  login [-f] <node>\n    Вхід до ретранслятора (-f: забути збережений пароль)";
+
+/* Location: CLIToolViewModel.swift - Help: logout command */
+"tools.cli.helpLogout" = "  logout\n    Завершити віддалену сесію";
+
+/* Location: CLIToolViewModel.swift - Help: session list command */
+"tools.cli.helpSessionList" = "  session list\n    Показати активні сесії";
+
+/* Location: CLIToolViewModel.swift - Help: session local command */
+"tools.cli.helpSessionLocal" = "  session local\n    Переключитися на локальну сесію";
+
+/* Location: CLIToolViewModel.swift - Help: session name command */
+"tools.cli.helpSessionName" = "  session <name>\n    Переключитися на сесію";
+
+/* Location: CLIToolViewModel.swift - Help: session shortcut */
+"tools.cli.helpSessionShortcut" = "  s<n>\n    Переключитися на сесію n (напр., s1, s2)";
+
+/* Location: CLIToolViewModel.swift - Help: clear command */
+"tools.cli.helpClear" = "  clear\n    Очистити термінал";
+
+/* Location: CLIToolViewModel.swift - Help: help command */
+"tools.cli.helpHelp" = "  help\n    Показати цю довідку";
+
+/* Location: CLIToolViewModel.swift - Help: nodes command */
+"tools.cli.helpNodes" = "  nodes\n    Показати список ретрансляторів і кімнат";
+
+/* Location: CLIToolViewModel.swift - Help: channels command */
+"tools.cli.helpChannels" = "  channels\n    Показати список каналів з номерами слотів пристрою";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands header */
+"tools.cli.helpRepeaterHeader" = "Команди ретранслятора (passthrough):";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 1 */
+"tools.cli.helpRepeaterList1" = "  ver, clock, reboot, advert, neighbors";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 2 */
+"tools.cli.helpRepeaterList2" = "  get/set <param>, password <new>";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 3 */
+"tools.cli.helpRepeaterList3" = "  log start/stop/erase";
+
+/* Location: CLIToolViewModel.swift - Help: repeater commands list 4 */
+"tools.cli.helpRepeaterList4" = "  setperm, tempradio, neighbor.remove";
+
+/* Location: CLIToolViewModel+Sessions.swift - Nodes header with count */
+"tools.cli.nodesHeader" = "Вузли (%lld):";
+
+/* Location: CLIToolViewModel+Sessions.swift - Channels header with count */
+"tools.cli.channelsHeader" = "Канали (%lld):";
+
+/* Location: CLIToolViewModel+Sessions.swift - No nodes found */
+"tools.cli.noNodes" = "Вузли не знайдено";
+
+/* Location: CLIToolViewModel+Sessions.swift - No channels found */
+"tools.cli.noChannels" = "Канали не знайдено";
+
+/* Location: CLIToolViewModel+Sessions.swift - Channel empty name placeholder */
+"tools.cli.channelEmpty" = "порожній";
+
+/* Location: CLIToolViewModel.swift - Welcome banner line 1 */
+"tools.cli.welcomeLine1" = "Cairn CLI";
+/* Location: CLIToolViewModel.swift - Welcome banner line 2 */
+"tools.cli.welcomeConnected" = "Підключено до %@";
+
+/* Location: CLIToolViewModel.swift - Welcome banner line 3 */
+"tools.cli.welcomeHint" = "Введіть 'help' для списку команд.";
+
+/* Location: CLIToolView.swift - Jump to bottom button */
+"tools.cli.jumpToBottom" = "Перейти вниз";
+
+/* Location: CLIToolView.swift - Accessibility label for command input */
+"tools.cli.commandInput" = "Введення команди";
+
+/* Location: CLIToolView.swift - Accessibility label for command prompt */
+"tools.cli.commandPrompt" = "Командний рядок";
+
+/* Location: CLIInputAccessoryView.swift - Cancel operation button label */
+"tools.cli.cancelOperation" = "Скасувати операцію";
+
+/* Location: CLIToolViewModel.swift - Command timeout (post-login) */
+"tools.cli.commandTimeout" = "Перевищено час запиту";
+
+/* Location: CLIToolViewModel.swift - Reboot command confirmation */
+"tools.cli.rebootSent" = "Команду перезавантаження надіслано";
+
+/* Accessibility label for completion suggestions container */
+/* Accessibility value for completion suggestions - %lld is count, %@ is selected */
+/* Confirmation prompt for a dangerous local command */
+"tools.cli.confirmPrompt" = "підтвердити %@? (yes/no):";
+
+/* Usage for the get command */
+"tools.cli.usageGet" = "Використання: get <key>";
+
+/* Usage for the set command */
+"tools.cli.usageSet" = "Використання: set <key> <value>";
+
+/* Usage for set radio */
+"tools.cli.usageSetRadio" = "Використання: set radio <freq>,<bw>,<sf>,<cr>";
+
+/* Invalid value error */
+"tools.cli.invalidValue" = "Недійсне значення";
+
+/* Custom var key/value contains a reserved character */
+"tools.cli.invalidCustomVarToken" = "Ключі не можуть містити ':' або ','; значення не можуть містити ','";
+
+/* Local radio commands help header */
+"tools.cli.helpLocalHeader" = "Локальні команди радіо:";
+
+/* Local radio commands help line 1 */
+"tools.cli.helpLocalList1" = "  clock [sync], ver, board";
+
+/* Local radio commands help line 2 */
+"tools.cli.helpLocalList2" = "  advert (zero-hop), floodadv (flood), reboot";
+
+/* Local radio commands help line 3 */
+"tools.cli.helpLocalList3" = "  get <key>, set <key> <value>";
+
+/* Local radio commands help line 4 */
+"tools.cli.helpLocalList4" = "    keys: name, lat, lon, tx, radio, freq, multi.acks, path.hash.mode, public.key, bat";
+
+/* Local radio commands help line 5 */
+"tools.cli.helpLocalList5" = "  get custom  (усі користувацькі змінні прошивки); невідомі ключі get/set передаються в користувацькі змінні";
+
+// MARK: - Companion Command Line
+
+/* Location: CLIToolViewModel.swift - help line for opening a companion's command line (MeshCore 1.18) */
+"tools.cli.helpLoginCompanion" = "  login <companion>\n    Надсилати команди компаньйону (без пароля, MeshCore 1.18)";
+
+/* Location: CLIToolViewModel.swift - help line for the companions command */
+"tools.cli.helpCompanions" = "  companions\n    Показати список компаньйонів";
+
+/* Location: CLIToolViewModel+Sessions.swift - header of the companions list; %lld is the count */
+"tools.cli.companionsHeader" = "Компаньйони (%lld):";
+
+/* Location: CLIToolViewModel+Sessions.swift - the companions command found none */
+"tools.cli.noCompanions" = "Компаньйонів не знайдено";
+
+/* Location: CompanionCLIExchange.swift - help header for a companion's commands */
+"tools.cli.helpCompanionHeader" = "Команди компаньйона (надсилаються йому):";
+
+/* Location: CompanionCLIExchange.swift - help line: companion read commands */
+"tools.cli.helpCompanionList1" = "  ver, board, get name, get tz.offset";
+
+/* Location: CompanionCLIExchange.swift - help line: companion Wi-Fi reads */
+"tools.cli.helpCompanionList2" = "  get wifi.status, wifi.enabled, wifi.ssid, wifi.ip";
+
+/* Location: CompanionCLIExchange.swift - help line: companion settings */
+"tools.cli.helpCompanionList3" = "  set name, tz.offset, wifi.enabled 0|1, wifi.ssid, wifi.pwd, pin";
+
+/* Location: CompanionCLIExchange.swift - help line: companion power */
+"tools.cli.helpCompanionList4" = "  reboot, poweroff";
+
+/* Location: CompanionCLIExchange.swift - first line of a companion's command line; %@ is its name */
+"tools.cli.companion.opened" = "Команди тепер надсилаються на %@";
+
+/* Location: CompanionCLIExchange.swift - when another companion answers commands (the firmware page's note) */
+"tools.cli.companion.note" = "Відповідає, лише якщо його контакт для цієї рації дозволяє вам надсилати команди (перемикач «Віддалені команди»).";
+
+/* Location: CompanionCLIExchange.swift - how to send a command in a companion's command line */
+"tools.cli.companion.hint" = "Введіть команду або відкрийте «Команди», щоб побачити список.";
+
+/* Location: CLIToolViewModel+Sessions.swift - this radio's firmware is older than MeshCore 1.18 */
+"tools.cli.companion.needsFirmware" = "Для команд іншому компаньйону потрібна прошивка MeshCore 1.18 на цій рації";
+
+/* Location: CompanionCLIExchange.swift - no reply came in time; a late reply still shows under it */
+"tools.cli.companion.noReply" = "Поки немає відповіді · вона ще може надійти (там не дозволено або поза зоною дії)";
+
+/* Location: CompanionCLIExchange.swift - a restart or power-off went out */
+"tools.cli.companion.restartSent" = "Надіслано · перезапускається";
+
+/* Location: CompanionCLIExchange.swift - a restart or power-off went out and the device answered; %@ is its answer */
+"tools.cli.companion.restartSentReply" = "Надіслано · перезапускається (%@)";
+
+/* Location: CompanionCLIExchange.swift - a reply that came after its command timed out, shown under it; %@ is the reply */
+"tools.cli.companion.lateReply" = "Пізня відповідь · %@";
+
+/* Location: CompanionCLIExchange.swift - a late reply whose command is no longer on screen; %1$@ is the node, %2$@ the command, %3$@ the reply */
+"tools.cli.companion.lateReplyFrom" = "Пізня відповідь від %1$@ на «%2$@» · %3$@";
+
+/* Location: CompanionCLIExchange.swift - the reply had no text */
+"tools.cli.companion.emptyReply" = "(порожня відповідь)";
+
+/* Location: CompanionCLIExchange.swift - the typed text can't be sent as a command (the limit is in UTF-8 bytes) */
+"tools.cli.companion.notACommand" = "Не команда: від 2 до 63 байтів (кирилиця, літера з наголосом чи емодзі займають кілька), без керівних символів і початкової мітки xx|";
+
+/* Location: CLIToolViewModel+Sessions.swift - logout from a companion session; %@ is its name */
+"tools.cli.companion.closed" = "Командний рядок %@ закрито";
+
+/* Location: CompanionCommandPicker.swift - the command list's title, its toolbar button and key */
+"tools.cli.companion.commands" = "Команди";
+
+/* Location: CompanionCommandPicker.swift - asked before Restart or Power off; %1$@ is the command's title, %2$@ the command */
+"tools.cli.companion.confirmMessage" = "%1$@ надсилає «%2$@»: інший пристрій перезапуститься або вимкнеться, якщо він вам це дозволяє.";
+
+/* Location: CompanionCommandPicker.swift - section of the four quick commands */
+"tools.cli.companion.group.quick" = "Швидкі";
+
+/* Location: CompanionCommandPicker.swift - section of commands that only read */
+"tools.cli.companion.group.read" = "Читання";
+
+/* Location: CompanionCommandPicker.swift - section of commands that change a setting */
+"tools.cli.companion.group.change" = "Зміна";
+
+/* Location: CompanionCommandPicker.swift - section of Restart and Power off */
+"tools.cli.companion.group.power" = "Живлення";
+
+/* Location: CompanionCommandPicker.swift - quick command: its Wi-Fi state */
+"tools.cli.companion.quick.wifi" = "Wi-Fi";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "ver" (the firmware's label) */
+"tools.cli.companion.command.version" = "Версія";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "board" (the firmware's label) */
+"tools.cli.companion.command.board" = "Плата";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get name" (the firmware's label) */
+"tools.cli.companion.command.name" = "Ім'я";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get tz.offset" (the firmware's label) */
+"tools.cli.companion.command.timeZone" = "Часовий пояс";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.status" (the firmware's label) */
+"tools.cli.companion.command.wifiState" = "Стан Wi-Fi";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.enabled" (the firmware's label) */
+"tools.cli.companion.command.wifiEnabled" = "Wi-Fi увімк.?";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.ssid" (the firmware's label) */
+"tools.cli.companion.command.wifiNetwork" = "Мережа Wi-Fi";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "get wifi.ip" (the firmware's label) */
+"tools.cli.companion.command.ipAddress" = "IP-адреса";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set name" (the firmware's label) */
+"tools.cli.companion.command.rename" = "Перейменувати";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set tz.offset" (the firmware's label) */
+"tools.cli.companion.command.setTimeZone" = "Часовий пояс";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.enabled 1" (the firmware's label) */
+"tools.cli.companion.command.wifiOn" = "Wi-Fi увімк.";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.enabled 0" (the firmware's label) */
+"tools.cli.companion.command.wifiOff" = "Wi-Fi вимк.";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.ssid" (the firmware's label) */
+"tools.cli.companion.command.setWifiNetwork" = "Мережа Wi-Fi";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set wifi.pwd" (the firmware's label) */
+"tools.cli.companion.command.wifiKey" = "Ключ Wi-Fi";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "set pin" (the firmware's label) */
+"tools.cli.companion.command.bluetoothPIN" = "PIN Bluetooth";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "reboot" (the firmware's label) */
+"tools.cli.companion.command.restart" = "Перезапуск";
+
+/* Location: CompanionCommandPicker.swift - title of the companion command "poweroff" (the firmware's label) */
+"tools.cli.companion.command.powerOff" = "Вимкнути";
+"tools.cli.companion.command.wifiClear" = "Забути Wi-Fi";
+"tools.cli.companion.command.memory" = "Вільна пам’ять";
+"tools.cli.companion.command.radio" = "Налаштування радіо";
+"tools.cli.companion.command.txPower" = "Потужність передачі";
+"tools.cli.companion.command.setRadio" = "Задати радіо";
+"tools.cli.companion.command.setTxPower" = "Задати потужність";
+"tools.cli.companion.command.shutdown" = "Завершити роботу";
+
+// MARK: - Saved Paths
+
+/* Location: SavedPathsViewModel.swift - Error loading saved paths */
+"tools.savedPaths.loadFailed" = "Не вдалося завантажити збережені шляхи.";
+
+/* Location: SavedPathsViewModel.swift - Error renaming a saved path */
+"tools.savedPaths.renameFailed" = "Не вдалося перейменувати шлях.";
+
+/* Location: SavedPathsViewModel.swift - Error deleting a saved path */
+"tools.savedPaths.deleteFailed" = "Не вдалося видалити шлях.";
+
+// MARK: - App Intents
+
+/* Location: MessageTargetEntity.swift - App Intents entity type name for a send target (a contact DM or a channel broadcast) */
+"intent.entity.target" = "Отримувач";
+
+/* Location: MessageTargetEntity.swift - App Intents recipient-picker subtitle marking a channel (broadcast) target */
+"intent.entity.channel" = "Канал";
+
+/* Location: StatusQueryIntent.swift - App Intents: title of the radio status query intent */
+"intent.status.title" = "Перевірити стан рації";
+
+/* Location: CairnAppShortcutsProvider.swift - App Shortcuts: short title for the radio status shortcut */
+"intent.status.shortTitle" = "Стан рації";
+
+/* Location: StatusQueryIntent.swift - App Intents: description of the radio status query intent */
+"intent.status.description" = "Повідомляє назву, стан підключення та останній відомий рівень заряду підключеної рації.";
+
+/* Location: StatusQueryIntent.swift - Spoken when the app is still launching and has no state to read yet */
+"intent.status.dialog.notReady" = "Cairn ще запускається. Спробуйте ще раз за мить.";
+/* Location: StatusQueryIntent.swift - Spoken when connected; %1$@ is the radio name, %2$lld is the cached battery percent */
+"intent.status.dialog.connectedWithBattery" = "%1$@ підключена. Заряд батареї приблизно %2$lld%%, за даними останнього вимірювання.";
+
+/* Location: StatusQueryIntent.swift - Spoken when connected but no battery reading is available; %@ is the radio name */
+"intent.status.dialog.connectedNoBattery" = "%@ підключена. Дані про заряд недоступні.";
+
+/* Location: StatusQueryIntent.swift - Spoken while the radio is connecting; %@ is the radio name */
+"intent.status.dialog.connecting" = "%@ підключається.";
+
+/* Location: StatusQueryIntent.swift - Spoken when not connected and a last radio name is known; %@ is the radio name */
+"intent.status.dialog.disconnectedNamed" = "%@ не підключена.";
+
+/* Location: StatusQueryIntent.swift - Spoken when not connected and no radio has been connected before */
+"intent.status.dialog.disconnectedUnknown" = "Жодна рація не підключена.";
+
+/* Location: StatusQueryIntent.swift - Generic radio name used when no device name is known */
+"intent.status.radioFallbackName" = "Ваша рація";
+
+/* Location: SendMessageIntent.swift - App Intents: title of the send message intent */
+"intent.send.title" = "Надіслати повідомлення";
+
+/* Location: CairnAppShortcutsProvider.swift - App Shortcuts: short title for the send message shortcut */
+"intent.send.shortTitle" = "Надіслати повідомлення";
+
+/* Location: SendMessageIntent.swift - App Intents: description of the send message intent */
+"intent.send.description" = "Надішліть текст контакту або на канал вашої рації.";
+
+/* Location: SendMessageIntent.swift - App Intents: title of the recipient parameter (a contact or a channel) */
+"intent.send.param.target" = "Отримувач";
+
+/* Location: SendMessageIntent.swift - App Intents: title of the message text parameter */
+"intent.send.param.message" = "Повідомлення";
+
+/* Location: SendMessageIntent.swift - Confirmation prompt shown before sending; %@ is the recipient name */
+"intent.send.confirm" = "Надіслати це повідомлення для %@?";
+
+/* Location: SendMessageIntent.swift - Spoken when the app must come to the foreground to send (still connecting or reconnecting) */
+"intent.send.foreground" = "Відкрийте Cairn, щоб завершити надсилання цього повідомлення.";
+/* Location: SendMessageIntent.swift - App Intents parameter summary shown in the shortcut editor; ${message} and ${target} are framework parameter tokens */
+"Send ${message} to ${target}" = "Надіслати ${message} для ${target}";
+
+// MARK: - Send Advert Intent
+
+/* Location: SendAdvertIntent.swift - App Intents: title of the send advert intent */
+"intent.advert.title" = "Надіслати оголошення";
+
+/* Location: CairnAppShortcutsProvider.swift - App Shortcuts: short title for the send advert shortcut */
+"intent.advert.shortTitle" = "Надіслати оголошення";
+
+/* Location: SendAdvertIntent.swift - App Intents: description of the send advert intent */
+"intent.advert.description" = "Надішліть оголошення про себе, щоб найближчі вузли mesh-мережі могли виявити вашу рацію.";
+
+/* Location: SendAdvertIntent.swift - App Intents: title of the advert reach parameter (zero-hop or flood) */
+"intent.advert.param.reach" = "Охоплення";
+
+/* Location: AdvertReach.swift - App Intents: type name for the advert reach enum */
+"intent.advert.reach.type" = "Охоплення оголошення";
+
+/* Location: AdvertReach.swift - App Intents: zero-hop reach case (direct neighbors only) */
+"intent.advert.reach.zeroHop" = "Zero-Hop";
+
+/* Location: AdvertReach.swift - App Intents: flood reach case (entire mesh) */
+"intent.advert.reach.flood" = "Flood";
+
+/* Location: SendAdvertIntent.swift - Spoken after a zero-hop advert is sent */
+"intent.advert.dialog.sentZeroHop" = "Оголошення надіслано найближчим вузлам.";
+
+/* Location: SendAdvertIntent.swift - Spoken after a flood advert is sent */
+"intent.advert.dialog.sentFlood" = "Оголошення надіслано по всій mesh-мережі.";
+
+/* Location: SendAdvertIntent.swift - App Intents parameter summary shown in the shortcut editor; ${reach} is the framework parameter token */
+"Send a ${reach} advert" = "Надіслати ${reach} оголошення";
+
+
+/* Location: NodeDiscoveryView.swift - Purpose: Tab title for the discovered node list */
+"tools.nodeDiscovery.displayMode.list" = "Список";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Tab title for the discovered node map */
+"tools.nodeDiscovery.displayMode.map" = "Карта";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Accessibility label for the List/Map picker */
+"tools.nodeDiscovery.displayMode.label" = "Вигляд";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Pill over the map counting discovered nodes without a known location - %d is the count */
+"tools.nodeDiscovery.map.notShown" = "Не показано на карті: %d";
+
+/* Location: NodeDiscoveryView.swift - Purpose: Accessibility hint for the not-shown pill */
+"tools.nodeDiscovery.map.notShownHint" = "Показує список усіх знайдених вузлів";
+
+
+/* Location: MapDiscoveryOverlay.swift - Purpose: Menu item and button that removes discovery results from the map */
+"tools.nodeDiscovery.clearResults" = "Очистити результати";
+
+/* Location: MapDiscoveryOverlay.swift - Purpose: Map pill while a scan runs - %@ is Repeaters or Sensors */
+"tools.nodeDiscovery.map.scanning" = "Пошук: %@…";
+
+/* Location: MapDiscoveryOverlay.swift - Purpose: Map pill after a scan - %d is how many nodes replied */
+"tools.nodeDiscovery.map.heard" = "Почуто: %d";
+
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth" = "Стан мережі";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.summary.repeaters" = "Ретранслятори";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.summary.attention" = "Потребують уваги";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.summary.checkedToday" = "Перевірено сьогодні";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.section.attention" = "Потребують уваги";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.section.healthy" = "У нормі";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.section.noStatus" = "Немає даних про стан";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.noStatusFooter" = "Відкрийте вкладку «Телеметрія» ретранслятора, щоб записати заряд, рівень шуму й час роботи. Кожна перевірка доповнює цю панель.";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.footer" = "Стан ґрунтується на перевірках ретрансляторів і оголошеннях, які почув цей телефон. Торкніться ретранслятора, щоб побачити історію.";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.lowBattery" = "Низький заряд";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.notHeard" = "Не чути 2+ дні";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.batteryFalling" = "Заряд падає";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.highNoise" = "Високий шум";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.issue.restarted" = "Перезапущено";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.heard" = "Почуто %@";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.checked" = "Перевірено %@";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.noise" = "Шум %d дБм";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.noData" = "Даних ще немає";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.batteryPercent" = "%d%%";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.empty.title" = "Немає ретрансляторів";
+
+/* Location: NetworkHealthView.swift - Network Health dashboard */
+"tools.networkHealth.empty.description" = "Ретранслятори зі списку вузлів з'являються тут із зарядом, рівнем шуму та часом останнього прийому.";
+
+
+/* Location: ToolsView.swift - Section header in the Tools list */
+"tools.category.network" = "Мережа";
+
+/* Location: ToolsView.swift - Section header in the Tools list */
+"tools.category.routing" = "Маршрутизація";
+
+/* Location: ToolsView.swift - Section header in the Tools list */
+"tools.category.advanced" = "Додатково";
+
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum" = "Спектр";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.notConnected" = "Під'єднайте радіо, щоб побачити спектр його каналу.";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.section.spectrum" = "Спектр каналу";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.section.activity" = "Активність за 5 хвилин";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.section.figures" = "Параметри каналу";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.spectrumFooter" = "Радіо MeshCore вимірюють лише канал, на який налаштовані, тому затінені краї не скануються. Рівень шуму й пакети вимірюються; чутливість і тепловий шум розраховуються з налаштувань радіо.";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.notMeasured" = "Не вимірюється";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.calibrating" = "Радіо калібрує рівень шуму…";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.waiting" = "Очікування даних…";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.waitingForPacket" = "Очікування пакета";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.measuring" = "Вимірювання…";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.warning" = "Попередження";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.axis.mhz" = "МГц";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.axis.dbm" = "дБм";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.packet" = "Останній пакет";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.noise" = "Рівень шуму";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.sensitivity" = "Чутливість";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.thermal" = "Тепловий шум";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.legend.maxHold" = "Максимум";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.channel" = "Канал";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.channelCaption" = "%@ кГц · SF%d · CR 4/%d";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.noiseFloor" = "Рівень шуму";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.noiseValue" = "Рівень шуму %d дБм";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.minAvgMax" = "Мін %d · Сер %d · Макс %d";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.interference" = "Завади";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.interferenceCaption" = "Втрата чутливості над тепловим шумом (%@)";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.sensitivity" = "Чутливість";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.effectiveSensitivity" = "%@ за поточного шуму";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.snrLimit" = "Потрібен SNR вище %@";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.lastPacket" = "Останній пакет";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.lastPacketValue" = "Останній пакет %d дБм";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.snrMargin" = "SNR %@ · на %@ вище межі";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.linkBudget" = "Енергетичний бюджет";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.linkBudgetCaption" = "За потужності %d дБм";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.channelBusy" = "Зайнятість каналу";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.busyCaption" = "Приймання %@ · Передавання %@";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.packets" = "Прийнято пакетів";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.perMinute" = "%@/хв";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.crcErrors" = "Помилки CRC %@";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.airtime" = "Час в ефірі";
+
+/* Location: SpectrumView.swift - Spectrum tool */
+"tools.spectrum.figure.airtimeCaption" = "Пакет 64 байти · %d біт/с";
+
+/* Location: RxLogView.swift - Overflow menu action exporting the RX log as CSV */
+"tools.rxLog.exportCSV" = "Експорт у CSV";
+
+/* Location: RxLogView.swift - Detail label for the sender's timestamp in a decrypted packet */
+"tools.rxLog.senderTimeLabel" = "Надіслано:";
+
+/* Location: RxLogView.swift - Detail label for the packet's decryption status */
+"tools.rxLog.decryptionLabel" = "Розшифрування:";
+
+/* Location: ToolSelection.swift - Tool name for signing and verifying messages */
+"tools.signVerify" = "Підпис і перевірка";
+
+/* Location: SignVerifyView.swift - Segmented control option for signing */
+"tools.signVerify.mode.sign" = "Підписати";
+
+/* Location: SignVerifyView.swift - Segmented control option for verifying */
+"tools.signVerify.mode.verify" = "Перевірити";
+
+/* Location: SignVerifyView.swift - Section header for the message text */
+"tools.signVerify.message" = "Повідомлення";
+
+/* Location: SignVerifyView.swift - Placeholder for the message text field */
+"tools.signVerify.messagePlaceholder" = "Текст для підпису або перевірки";
+
+/* Location: SignVerifyView.swift - Button asking the radio to sign the message */
+"tools.signVerify.signButton" = "Підписати радіомодулем";
+
+/* Location: SignVerifyView.swift - Progress text while the radio signs */
+"tools.signVerify.signing" = "Підписування…";
+
+/* Location: SignVerifyView.swift - Section header for the signature */
+"tools.signVerify.signature" = "Підпис";
+
+/* Location: SignVerifyView.swift - Section header for this radio's public key */
+"tools.signVerify.publicKey" = "Відкритий ключ";
+
+/* Location: SignVerifyView.swift - Button copying a value as hex */
+"tools.signVerify.copyHex" = "Копіювати hex";
+
+/* Location: SignVerifyView.swift - Button copying a value as Base64 */
+"tools.signVerify.copyBase64" = "Копіювати Base64";
+
+/* Location: SignVerifyView.swift - Share the signed message, signature and key */
+"tools.signVerify.share" = "Поділитися";
+
+/* Location: SignVerifyView.swift - Shared text; 1 = message, 2 = signature hex, 3 = public key hex */
+"tools.signVerify.shareText" = "Повідомлення: %1$@\nПідпис (Ed25519): %2$@\nВідкритий ключ: %3$@";
+
+/* Location: SignVerifyView.swift - Footer explaining how signing works */
+"tools.signVerify.signFooter" = "Радіомодуль підписує байти повідомлення в UTF-8 своїм закритим ключем (Ed25519). Закритий ключ ніколи не залишає радіомодуль.";
+
+/* Location: SignVerifyView.swift - Shown when no radio is connected in Sign mode */
+"tools.signVerify.requiresRadio" = "Підключіть радіомодуль, щоб підписувати повідомлення. Перевірка працює офлайн.";
+
+/* Location: SignVerifyView.swift - Placeholder for the signature field */
+"tools.signVerify.signaturePlaceholder" = "Підпис (hex або Base64)";
+
+/* Location: SignVerifyView.swift - Picker for who signed the message */
+"tools.signVerify.signer" = "Підписант";
+
+/* Location: SignVerifyView.swift - Signer picker option to paste a public key */
+"tools.signVerify.manualKey" = "Ввести відкритий ключ";
+
+/* Location: SignVerifyView.swift - Signer picker option for the connected radio */
+"tools.signVerify.thisRadio" = "Цей радіомодуль";
+
+/* Location: SignVerifyView.swift - Placeholder for a pasted public key */
+"tools.signVerify.keyPlaceholder" = "Відкритий ключ (64 hex-символи)";
+
+/* Location: SignVerifyView.swift - Button to verify the signature */
+"tools.signVerify.verifyButton" = "Перевірити підпис";
+
+/* Location: SignVerifyView.swift - Result when the signature verifies */
+"tools.signVerify.valid" = "Підпис дійсний";
+
+/* Location: SignVerifyView.swift - Result when the signature does not verify */
+"tools.signVerify.invalid" = "Підпис недійсний";
+
+/* Location: SignVerifyView.swift - Shown when the signature or key cannot be parsed */
+"tools.signVerify.invalidInput" = "Введіть підпис довжиною 64 байти та відкритий ключ довжиною 32 байти (hex або Base64).";
+
+/* Location: SignVerifyView.swift - Footer explaining verification */
+"tools.signVerify.verifyFooter" = "Перевірка виконується на цьому пристрої за допомогою Ed25519 і працює без радіомодуля.";
+
+/* Location: SignVerifyView.swift - Error when the message exceeds the radio's limit; %d = max bytes */
+"tools.signVerify.error.tooLarge" = "Повідомлення задовге для підпису (максимум %d байтів).";
+
+/* Location: SignVerifyView.swift - Error when signing fails; %@ = reason */
+"tools.signVerify.error.failed" = "Не вдалося підписати: %@";
+
+/* Location: NodeDiscoveryRowView.swift - Button that asks an unnamed node for its name over the radio */
+"tools.nodeDiscovery.requestName" = "Запитати назву";
+
+/* Location: NodeDiscoveryRowView.swift - Shown while a node is being asked for its name */
+"tools.nodeDiscovery.requestingName" = "Запит назви…";
+
+/* Location: NodeDiscoveryRowView.swift - VoiceOver hint for the Request Name button */
+"tools.nodeDiscovery.requestNameHint" = "Запитує в цього вузла його назву по радіо";
+
+/* Location: NodeDiscoveryView.swift - Footer under scan results explaining where names come from, when the radio can ask nodes for their name */
+"tools.nodeDiscovery.namesFooter" = "Відповідь на сканування містить ключ вузла, а не його назву. Назви беруться з оголошень, які почула ваша рація; у досі невідомих вузлів назву запитують напряму.";
+
+/* Location: NodeDiscoveryScanControl.swift - Info text explaining where names come from, when the radio's firmware is too old to ask nodes for their name */
+"tools.nodeDiscovery.namesFooterNeedsFirmware" = "Відповідь на сканування містить ключ вузла, а не його назву. Назви беруться з оголошень, які почула ваша рація. Щоб запитати назву у вузла, потрібна прошивка рації 1.12 або новіша.";
+
+/* Location: NodeDiscoveryScanControl.swift - Info text explaining where names come from, while no radio is connected */
+"tools.nodeDiscovery.namesFooterDisconnected" = "Відповідь на сканування містить ключ вузла, а не його назву. Назви беруться з оголошень, які почула ваша рація. Підключіть рацію, щоб запитати назви в невідомих вузлів.";
+
+/* Location: MapDiscoveryOverlay.swift - Title of the sheet listing every node that answered the scan run from the Map tab */
+"tools.nodeDiscovery.map.heardTitle" = "Результати пошуку";
+/* Location: MapDiscoveryOverlay.swift - Label on a heard node whose position is not known, so it cannot be drawn on the map */
+"tools.nodeDiscovery.map.noLocation" = "Місцезнаходження невідоме";
+
+/* Location: MapDiscoveryOverlay.swift - VoiceOver hint for the scan summary pill on the Map tab */
+"tools.nodeDiscovery.map.listHint" = "Показує всі вузли, що відповіли";
+
+/* Location: MapDiscoveryOverlay.swift - Footer in the heard nodes sheet explaining why some nodes are not on the map */
+"tools.nodeDiscovery.map.noLocationFooter" = "Вузол з’являється на карті, щойно ваша рація почує оголошення з його координатами.";
+
+/* Location: MapDiscoveryOverlay.swift - Scan summary pill while a scan runs; first placeholder is the node kind (Repeaters), second is how many have answered so far */
+"tools.nodeDiscovery.map.scanningHeard" = "Пошук: %1$@… почуто %2$d";
+
+/* Location: SpectrumView.swift - Channel condition when the measured noise floor is close to thermal noise */
+"tools.spectrum.condition.quiet" = "Тихий канал";
+
+/* Location: SpectrumView.swift - Channel condition when noise is moderately above thermal noise */
+"tools.spectrum.condition.some" = "Незначні завади";
+
+/* Location: SpectrumView.swift - Channel condition when noise is far above thermal noise */
+"tools.spectrum.condition.heavy" = "Сильні завади";
+
+/* Location: SpectrumChannelChart.swift - Signal zone: 10 dB or more above the decode limit */
+"tools.spectrum.zone.strong" = "Сильний";
+
+/* Location: SpectrumChannelChart.swift - Signal zone: decodable but less than 10 dB above the decode limit */
+"tools.spectrum.zone.weak" = "Слабкий";
+
+/* Location: SpectrumChannelChart.swift - Signal zone: too weak for the radio to decode */
+"tools.spectrum.zone.noDecode" = "Нижче порога декодування";
+
+/* Location: SpectrumChannelChart.swift - Legend entry for the weakest signal the radio can decode with the current noise */
+"tools.spectrum.legend.decodeLimit" = "Поріг декодування";
+
+/* Location: SpectrumActivityChart.swift - Legend entry for received packets plotted over time */
+"tools.spectrum.legend.packets" = "Пакети";
+
+/* Location: SpectrumView.swift - Footer under the channel spectrum explaining the colored zones and what is measured */
+"tools.spectrum.zonesFooter" = "Кольори показують, наскільки сигнал перевищує найслабший, який рація може декодувати за поточного шуму: сильний — на 10 дБ і більше вище цього порога. Рації MeshCore вимірюють лише канал, на який налаштовані, тому затінені боки не скануються.";
+
+/* Location: SpectrumFormat.swift - A power level with its unit; placeholder is the number */
+"tools.spectrum.value.dbm" = "%@ дБм";
+
+/* Location: SpectrumFormat.swift - A ratio in decibels with its unit; placeholder is the number */
+"tools.spectrum.value.db" = "%@ дБ";
+
+/* Location: SpectrumFormat.swift - A frequency in megahertz with its unit; placeholder is the number */
+"tools.spectrum.value.mhz" = "%@ МГц";
+
+/* Location: SpectrumFormat.swift - A bandwidth in kilohertz with its unit; placeholder is the number */
+"tools.spectrum.value.khz" = "%@ кГц";
+
+/* Location: SpectrumFormat.swift - A duration in milliseconds with its unit; placeholder is the number */
+"tools.spectrum.value.ms" = "%@ мс";
+
+/* Location: SpectrumView.swift - LoRa spreading factor chip, e.g. SF7 */
+"tools.spectrum.header.spreadingFactor" = "SF%d";
+
+/* Location: SpectrumView.swift - LoRa coding rate chip, e.g. CR 4/5 */
+"tools.spectrum.header.codingRate" = "CR 4/%d";
+
+/* Location: SpectrumActivityChart.swift - VoiceOver summary of the activity chart; first number is noise readings, second is packets */
+"tools.spectrum.activity.accessibility" = "Вимірювань шуму: %1$d, пакетів: %2$d за останні 5 хвилин";
+
+/* Location: MapDiscoveryOverlay.swift - Label on a heard node that the user has hidden from the Map tab, so the scan does not draw it */
+"tools.nodeDiscovery.map.hidden" = "Приховано на карті";
+
+/* Location: SpectrumFigures.swift - Interference tile caption when interference is high enough to warn; placeholder is the thermal noise level, e.g. -120 dBm */
+"tools.spectrum.figure.interferenceWarningCaption" = "Скорочує дальність · тепловий шум %@";
+
+/* Location: SpectrumFigures.swift - Last packet tile caption when the packet was barely decodable; first placeholder is SNR, second is how far above the decode limit, both in dB */
+"tools.spectrum.figure.lowMarginCaption" = "SNR %@ · лише %@ вище межі, на межі втрати";
+
+/* Location: ResultsCardView.swift - Title of the tile showing the total path loss in dB */
+"tools.lineOfSight.totalPathLoss" = "Загальні втрати на трасі";
+
+/* Tools hub - short line under the Network Health tool card */
+"tools.subtitle.networkHealth" = "Стан ретрансляторів";
+
+/* Tools hub - short line under the Discover Nodes tool card */
+"tools.subtitle.nodeDiscovery" = "Запитати відповідь у вузлів поруч";
+/* Tools hub - short line under the Spectrum tool card */
+"tools.subtitle.spectrum" = "Активність каналу";
+
+/* Tools hub - short line under the Noise Floor tool card */
+"tools.subtitle.noiseFloor" = "Фоновий шум";
+
+/* Tools hub - short line under the Trace Path tool card */
+"tools.subtitle.tracePath" = "Перевірка маршруту";
+
+/* Tools hub - short line under the Line of Sight tool card */
+"tools.subtitle.lineOfSight" = "Просвіт над рельєфом";
+
+/* Tools hub - short line under the RX Log tool card */
+"tools.subtitle.rxLog" = "Отримані пакети";
+
+/* Tools hub - short line under the CLI (command line) tool card */
+"tools.subtitle.cli" = "Команди радіо";
+
+/* Tools hub - short line under the Sign & Verify tool card */
+"tools.subtitle.signVerify" = "Підписані повідомлення";
+
+/* Location: NodeDiscoveryView.swift - Detail line on the card linking to the Nodes tab's Heard Nodes page (nodes heard passively from adverts) */
+"tools.nodeDiscovery.heardNodesDetail" = "Вузли, почуті з оголошень";
+
+/* Location: SpectrumFigures.swift - Noise floor trend over the session: getting louder */
+"tools.spectrum.trend.rising" = "Зростає";
+
+/* Location: SpectrumFigures.swift - Noise floor trend over the session: getting quieter */
+"tools.spectrum.trend.falling" = "Спадає";
+
+/* Location: SpectrumFigures.swift - Noise floor trend over the session: unchanged */
+"tools.spectrum.trend.steady" = "Стабільно";
+
+/* Location: SpectrumFigures.swift - Noise floor tile caption: %1$@ trend word, %2$@ min/avg/max line */
+"tools.spectrum.figure.noiseCaption" = "%1$@ · %2$@";
+
+/* Spectrum tab: Chart time axis label for the present moment */
+"tools.spectrum.axis.now" = "зараз";
+
+/* Spectrum tab: Audio graph axis title: how long ago a reading was taken */
+"tools.spectrum.axis.secondsAgo" = "Тому";
+
+/* Spectrum tab: Accessibility label of the Spectrum channel chart */
+"tools.spectrum.chart.label" = "Активність каналу";
+
+/* Spectrum tab: Accessibility value of the Spectrum channel chart. 1: noise readings, 2: packets, 3: window such as '1 minute' */
+"tools.spectrum.chart.summary" = "%1$lld вимірювань шуму та %2$lld пакетів за останні %3$@";
+
+/* Spectrum tab: Packet size in bytes, short. Example: 38 B */
+"tools.spectrum.detail.bytes" = "%lld Б";
+
+/* Spectrum tab: Button that opens the full RX log detail for the selected packet */
+"tools.spectrum.detail.open" = "Деталі пакета";
+
+/* Spectrum tab: Signal-to-noise ratio with value. Example: SNR 6.25 */
+"tools.spectrum.detail.snr" = "SNR %@";
+
+/* Spectrum tab: Title of the packet detail sheet opened from Spectrum */
+"tools.spectrum.detail.title" = "Пакет";
+
+/* Spectrum tab: Spectrum header: estimated time on air for one packet. 1: milliseconds, 2: payload bytes */
+"tools.spectrum.header.airtime" = "~%1$@ мс на пакет %2$lld байт";
+
+/* Spectrum tab: Footnote under the noise floor history: readings come from this session. Argument is a clock time */
+"tools.spectrum.history.caption" = "Цей сеанс, з %@";
+
+/* Spectrum tab: Range of the noise floor history. Example: -113…-108 dBm */
+"tools.spectrum.history.range" = "%1$@…%2$@ дБм";
+
+/* Spectrum tab: Title of the noise floor history card */
+"tools.spectrum.history.title" = "Історія рівня шуму";
+
+/* Spectrum tab: Packet type: acknowledgement */
+"tools.spectrum.kind.ack" = "Підтвердження";
+
+/* Spectrum tab: Packet type: node advert */
+"tools.spectrum.kind.advert" = "Оголошення";
+
+/* Spectrum tab: Packet type: anonymous request */
+"tools.spectrum.kind.anonRequest" = "Анонімний запит";
+
+/* Spectrum tab: Packet type: control */
+"tools.spectrum.kind.control" = "Керування";
+
+/* Spectrum tab: Packet type: channel data */
+"tools.spectrum.kind.groupData" = "Дані каналу";
+
+/* Spectrum tab: Packet type: channel message */
+"tools.spectrum.kind.groupText" = "Повідомлення каналу";
+
+/* Spectrum tab: Packet type: direct message */
+"tools.spectrum.kind.message" = "Особисте повідомлення";
+
+/* Spectrum tab: Packet type: multipart */
+"tools.spectrum.kind.multipart" = "Складений";
+
+/* Spectrum tab: Packet type: path return */
+"tools.spectrum.kind.path" = "Шлях";
+
+/* Spectrum tab: Packet type: raw custom data */
+"tools.spectrum.kind.raw" = "Необроблений";
+
+/* Spectrum tab: Packet type: request */
+"tools.spectrum.kind.request" = "Запит";
+
+/* Spectrum tab: Packet type: response */
+"tools.spectrum.kind.response" = "Відповідь";
+
+/* Spectrum tab: Packet type: trace */
+"tools.spectrum.kind.trace" = "Трасування";
+
+/* Spectrum tab: Packet type: unknown */
+"tools.spectrum.kind.unknown" = "Невідомо";
+
+/* Spectrum tab: Chart legend: the noise floor's lowest to highest reading per column */
+"tools.spectrum.legend.floorRange" = "Діапазон шуму";
+
+/* Spectrum tab: Chart legend: the dotted line at the strongest packet in the window */
+"tools.spectrum.legend.peakPacket" = "Пік пакета";
+
+/* Spectrum tab: Chart legend after the colored "+6 +20 +35": how far a packet stood above the noise floor */
+"tools.spectrum.legend.levels" = "дБ над шумом";
+
+/* Spectrum tab: Airtime tile caption: share receiving and transmitting */
+"tools.spectrum.meter.airCaption" = "RX %1$@ · TX %2$@";
+
+/* Spectrum tab: Airtime tile status past 30 % airtime (not "busy": that word is the radio's time-above-floor reading) */
+"tools.spectrum.meter.heavyUse" = "Інтенсивно";
+
+/* Spectrum tab: Floor tile caption while the radio calibrates its noise floor */
+"tools.spectrum.meter.calibrating" = "Калібрування";
+
+/* Spectrum tab: Airtime tile status past 60 % airtime */
+"tools.spectrum.meter.veryHeavyUse" = "Дуже інтенсивно";
+
+/* Spectrum tab: Meter tile title: noise floor */
+"tools.spectrum.meter.floor" = "Шум";
+
+/* Spectrum tab: Title of the tile with the last packet's strength and margin over the floor (uppercase, a quarter of a phone-width card) */
+"tools.spectrum.meter.lastPacket" = "Останній пакет";
+
+/* Spectrum tab: Meter tile title: how far the last packet is above the noise floor */
+"tools.spectrum.meter.margin" = "Запас";
+
+/* Spectrum tab: Margin tile caption: the packet stands well above the floor */
+"tools.spectrum.meter.marginClear" = "Помітно вище шуму";
+
+/* Spectrum tab: Margin tile caption: the packet is close to the floor */
+"tools.spectrum.meter.marginLow" = "Близько до шуму";
+
+/* Spectrum tab: Meter tile title: the latest signal strength */
+"tools.spectrum.meter.now" = "Зараз";
+
+/* Spectrum tab: Now tile caption. Argument is a short age like 12s */
+"tools.spectrum.meter.nowCaption" = "Отримано %@ тому";
+
+/* Spectrum tab: Meter tile title: packets heard per minute */
+"tools.spectrum.meter.packets" = "Пакети";
+
+/* Spectrum tab: Meter tile title: strongest packet */
+"tools.spectrum.meter.peak" = "Пік";
+
+/* Spectrum tab: Peak tile caption. Argument is a window like '1 minute' */
+"tools.spectrum.meter.peakCaption" = "Найсильніший за останні %@";
+
+/* Spectrum tab: Packets tile line: the strongest packet heard in the window. %@ is a level like -87 dBm */
+"tools.spectrum.meter.peakPacket" = "Пік пакета %@";
+
+/* Spectrum tab: Last packet tile caption: the reading is the radio's own last-packet RSSI, not one from the RX log */
+"tools.spectrum.meter.fromRadio" = "Від радіо";
+
+/* Spectrum tab: Packet sender line: a channel known only by its hash */
+"tools.spectrum.party.channel" = "Канал %@";
+
+/* Spectrum tab: Packet sender line. Argument is a name or key */
+"tools.spectrum.party.from" = "Від %@";
+
+/* Spectrum tab: Packet sender and recipient line */
+"tools.spectrum.party.fromTo" = "Від %1$@ → %2$@";
+
+/* Spectrum tab: Packet sender line when the packet type carries no addresses */
+"tools.spectrum.party.none" = "У цьому типі пакета немає адрес";
+
+/* Spectrum tab: The last relay a flood packet came through */
+"tools.spectrum.party.via" = "через %@";
+
+/* Spectrum tab: Packet route: direct with a route of N hops ahead */
+"tools.spectrum.route.directHops" = "Напряму %lld";
+
+/* Spectrum tab: Packet route: flooded, N hops so far */
+"tools.spectrum.route.flood" = "Флуд %lld";
+
+/* Spectrum tab: Traffic table column: how long ago */
+"tools.spectrum.traffic.age" = "Давність";
+
+/* Spectrum tab: Traffic list when no packet has been heard */
+"tools.spectrum.traffic.empty" = "Трафіку ще немає";
+
+/* Spectrum tab: Traffic table column: route */
+"tools.spectrum.traffic.route" = "Маршрут";
+
+/* Spectrum tab: Traffic table column: received signal strength */
+"tools.spectrum.traffic.rssi" = "RSSI";
+
+/* Spectrum tab: Link from the traffic list to the RX Log tool */
+"tools.spectrum.traffic.seeAll" = "Показати все";
+
+/* Spectrum tab: Accessibility hint of the See All link */
+"tools.spectrum.traffic.seeAllHint" = "Відкриває журнал RX";
+
+/* Spectrum tab: Traffic table column: signal-to-noise ratio */
+"tools.spectrum.traffic.snr" = "SNR";
+
+/* Spectrum tab: Title of the traffic list on the Spectrum tab */
+"tools.spectrum.traffic.title" = "Трафік";
+
+/* Spectrum tab: Traffic table column: packet type */
+"tools.spectrum.traffic.type" = "Тип";
+
+/* Spectrum tab: Spectrum header button that sends an advert (opens zero-hop / flood choice) */
+"tools.spectrum.advert" = "Оголосити";
+
+/* Spectrum tab: Footnote under the Spectrum channel chart */
+"tools.spectrum.chartFooter" = "Рівень шуму — власне середнє радіо, зчитується кожні 5 секунд; кожен пакет показано із силою, з якою він надійшов. Торкніться пакета, щоб побачити деталі.";
+/* Spectrum tab: Footnote when noise readings don't cover the whole window. 1: covered span, 2: window */
+"tools.spectrum.coverage" = "Вимірювання шуму охоплюють %1$@ з останніх %2$@: вони ведуться, лише поки відкрито Спектр. Пакети беруться з журналу RX.";
+
+/* Spectrum tab: Accessibility label of the Spectrum chart's time window picker */
+"tools.spectrum.window" = "Часове вікно";
+
+/* Location: NodeDiscoveryPanel.swift - Sort option: nearest nodes first */
+"tools.nodeDiscovery.sortDistance" = "Відстань";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge on a scan result that is not a contact yet; also the New filter chip */
+"tools.nodeDiscovery.badge.new" = "Новий";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge on a scan result that is already a contact */
+"tools.nodeDiscovery.badge.contact" = "Контакт";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line before any scan */
+"tools.nodeDiscovery.status.idle" = "Просить вузли в прямій досяжності відповісти";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while listening; %d is how many nodes have replied so far */
+"tools.nodeDiscovery.status.listening" = "Слухаю… відповіли: %d";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line after a scan; %d is how many nodes replied */
+"tools.nodeDiscovery.status.replied" = "Відповіли: %d";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line when a scan got no answer */
+"tools.nodeDiscovery.status.noReplies" = "Немає відповідей";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button after a scan has run */
+"tools.nodeDiscovery.scanAgain" = "Сканувати знову";
+
+/* Location: NodeDiscoveryScanControl.swift - Button beside the scan button that scans again and again (whenever the shared scan budget allows, also after the screen is left) until stopped; "Wardrive" is the feature's name */
+"tools.nodeDiscovery.wardriveButton" = "Wardrive";
+
+/* Location: NodeDiscoveryScanControl.swift - Button that stops Wardrive, the repeated scans */
+"tools.nodeDiscovery.wardriveStop" = "Зупинити Wardrive";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the Wardrive button */
+"tools.nodeDiscovery.wardriveHint" = "Повторює сканування так часто, як дозволяють ретранслятори поблизу, і зберігає всі почуті вузли";
+
+/* Location: NodeDiscoveryScanControl.swift - Paragraph in the scan card's info popover explaining Wardrive, its pace and that it keeps running after the screen is left */
+"tools.nodeDiscovery.wardriveInfo" = "Wardrive повторює сканування, щойно дозволяє спільний ліміт сканувань, — не частіше двох разів за 2 хвилини — і зберігає всі почуті вузли з їхнім останнім сигналом. Ретранслятори відповідають щонайбільше на 4 сканування за 2 хвилини, спільні для всіх поблизу, тому Wardrive чекає довше, поки сканують інші. Він продовжує працювати, коли ви залишаєте цей екран, доки ви його не зупините або радіостанцію не буде відключено; екран не гасне, поки відкрита ця сторінка.";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while Wardrive runs; %d is how many nodes it has heard in all */
+"tools.nodeDiscovery.status.wardrive" = "Wardrive · почуто: %d";
+
+/* Location: NodeDiscoveryScanControl.swift - Second scan card line while a Wardrive scan listens; %d is which scan this is (1, 2, 3...) */
+"tools.nodeDiscovery.status.wardriveListening" = "Сканування %d · слухаю…";
+
+/* Location: NodeDiscoveryScanControl.swift - Second scan card line between Wardrive scans; %d is the scan that just finished */
+"tools.nodeDiscovery.status.wardriveWaiting" = "Сканування %d завершено";
+
+/* Location: NodeDiscoveryScanControl.swift - Title of the menu choosing which kind of node the scan asks (Repeaters or Sensors) */
+"tools.nodeDiscovery.askFor" = "Шукати";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the scan kind menu */
+"tools.nodeDiscovery.askForHint" = "Вибирає, який тип вузлів опитує сканування";
+
+/* Location: NodeDiscoveryScanControl.swift - Info popover explaining the scan */
+"tools.nodeDiscovery.scanInfo" = "Сканування просить відповісти вузли, які чують вашу радіостанцію напряму. Відповіді не ретранслюються, тому видно лише сусідів. ↓ — наскільки добре ви чуєте вузол, ↑ — наскільки добре він чує вас.";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile title: how many nodes replied */
+"tools.nodeDiscovery.summary.replied" = "Відповіли";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile caption; %d is how many repliers are not contacts yet */
+"tools.nodeDiscovery.summary.newCaption" = "нових: %d";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile title: the reply heard with the highest SNR */
+"tools.nodeDiscovery.summary.bestSignal" = "Найкращий сигнал";
+
+/* Location: NodeDiscoveryActivity.swift - Purpose: What the live strip on Scan for Nodes counts from */
+"tools.nodeDiscovery.activity.sinceScan" = "З початку скану";
+"tools.nodeDiscovery.activity.recent" = "Останні 10 хвилин";
+
+/* Location: NodeDiscoveryPanel.swift - Summary tile title: the farthest replier with a known position */
+"tools.nodeDiscovery.summary.farthest" = "Найдальший";
+
+/* Location: NodeDiscoveryResultCard.swift - Signal row label: how well this radio hears the node (↓) */
+"tools.nodeDiscovery.youHearThem" = "Ви чуєте вузол";
+
+/* Location: NodeDiscoveryResultCard.swift - Signal row label: how well the node hears this radio (↑) */
+"tools.nodeDiscovery.theyHearYou" = "Вузол чує вас";
+
+/* Location: NodeDiscoveryResultCard.swift - VoiceOver hint of a scan result card */
+"tools.nodeDiscovery.cardHint" = "Показує вузол на мапі з діями";
+
+/* Location: NodeDiscoveryMapView.swift - Button that expands the scan map to the whole screen */
+"tools.nodeDiscovery.map.fullScreen" = "Мапа на весь екран";
+
+/* Location: NodeDiscoveryMapView.swift - Button that shrinks the full-screen scan map back beside the results */
+"tools.nodeDiscovery.map.exitFullScreen" = "Вийти з повноекранного режиму";
+
+/* Location: NodeDiscoveryCompactBar.swift - Button in the full-screen map's bottom bar that brings the results list back */
+"tools.nodeDiscovery.map.showResults" = "Показати результати";
+
+/* Location: NodeDiscoveryCompactBar.swift - Button beside the node picked on the full-screen map; returns to the list with its card open */
+"tools.nodeDiscovery.map.openResult" = "Відкрити";
+
+/* Location: NodeDiscoveryCompactBar.swift - VoiceOver hint of the Open button */
+"tools.nodeDiscovery.map.openResultHint" = "Показує результати з відкритою карткою цього вузла";
+
+/* Location: SpectrumTabSettingsSheet.swift - Info popover for the Channel section of the Spectrum tab's settings sheet, above the link to the radio settings */
+"tools.spectrum.settings.channelInfo" = "Спектр показує лише канал, на який налаштовано радіо. Частоту, смугу або коефіцієнт розширення можна змінити в розділі «Радіо»; чутливість і тепловий шум на графіку розраховуються з цих налаштувань.";
+
+/* Location: HomeView.swift - Home Tools: title of the full-width card that sends this radio's advert */
+"tools.advert" = "Надіслати анонс";
+
+/* Location: HomeView.swift - Home Tools: line under Send Advert saying what it does */
+"tools.subtitle.advert" = "Нехай інші вузли знайдуть вас";
+
+/* Location: NodeDiscoveryView.swift - VoiceOver label of the grabber that resizes the map against the scan results */
+"tools.nodeDiscovery.map.resize" = "Розмір мапи";
+
+/* Location: HomeView.swift - Title of the confirmation before sending a flood advert */
+"tools.advert.floodConfirm.title" = "Розіслати анонс?";
+
+/* Location: HomeView.swift - Explanation in the confirmation before sending a flood advert */
+"tools.advert.floodConfirm.message" = "Кожен ретранслятор передає розісланий анонс усією мережею, витрачаючи спільний ефірний час. Надсилайте його, коли змінилися ім'я чи позиція; анонс без ретрансляції дійде до найближчих вузлів.";
+
+/* Location: HomeView.swift - Confirm button that sends the flood advert */
+"tools.advert.floodConfirm.send" = "Розіслати анонс";
+
+/* Location: SpectrumView.swift - VoiceOver hint on the Spectrum header card, which opens Radio settings */
+"tools.spectrum.hint.radio" = "Відкриває налаштування радіо";
+
+/* Location: SpectrumView.swift - VoiceOver hint on the Now card, which opens the latest packet */
+"tools.spectrum.hint.latestPacket" = "Показує відомості про найновіший пакет";
+
+/* Location: SpectrumTabSettingsSheet.swift - Picker card title: the chart's time window Spectrum shows by default */
+"tools.spectrum.settings.defaultWindow" = "Вікно за замовчуванням";
+
+/* Location: SpectrumTabSettingsSheet.swift - Purpose: How the Spectrum tab draws its channel: the modern large spectrum, or as the radio's own screen does */
+"tools.spectrum.settings.chartStyle" = "Стиль графіка";
+"tools.spectrum.settings.styleModern" = "Сучасний";
+"tools.spectrum.settings.styleRadioScreen" = "Екран рації";
+"tools.spectrum.settings.styleAnalyzer" = "Аналізатор";
+"tools.spectrum.settings.styleWaterfall" = "Водоспад";
+"tools.spectrum.settings.styleLineChart" = "Лінійний графік";
+
+/* Location: SpectrumTabSettingsSheet.swift - Picker card title: how often the radio's noise floor and airtime are read */
+"tools.spectrum.settings.updateRate" = "Частота оновлення";
+
+/* Location: SpectrumModel.swift - Update rate option: readings every 5 seconds */
+"tools.spectrum.settings.rate.normal" = "Звичайна";
+
+/* Location: SpectrumModel.swift - Update rate option: readings every 2 seconds */
+"tools.spectrum.settings.rate.live" = "Жива";
+
+/* Location: SpectrumTabSettingsSheet.swift - Picker card title: how many packets the traffic table lists */
+"tools.spectrum.settings.trafficRows" = "Рядків трафіку";
+
+/* Location: SpectrumTabSettingsSheet.swift - Info popover for the Channel section: default window and update rate, with the battery cost */
+"tools.spectrum.settings.channelOptionsInfo" = "Вікно за замовчуванням задає часовий діапазон, з якого починається графік; на сторінці його й далі можна перемкнути. Частота оновлення задає, як часто зчитуються рівень шуму та ефірний час радіо. Жива зчитує кожні 2 секунди й будить радіо та його Bluetooth-з'єднання в два з половиною рази частіше, ніж Звичайна, що витрачає більше заряду обох пристроїв. Зчитування відбувається лише поки Спектр на екрані й застосунок активний. Пакети з'являються одразу після отримання за будь-якої частоти.";
+
+/* Location: SpectrumView.swift - Channel chart info popover; %@ is the reading interval, e.g. '5 seconds' */
+"tools.spectrum.chartFooterRate" = "Рівень шуму — власне середнє радіо, що зчитується кожні %@; кожен пакет показано з тією силою, з якою він надійшов. Торкніться пакета, щоб побачити подробиці.";
+
+/* Location: SpectrumView.swift - VoiceOver hint on the Floor reading, which opens the noise floor history */
+"tools.spectrum.hint.floorHistory" = "Показує історію рівня шуму";
+
+/* Location: SpectrumView.swift - Short uppercase caption of the airtime column in the Spectrum metric strip; must fit a quarter of a phone-width card */
+"tools.spectrum.meter.air" = "Ефір";
+
+/* Location: SpectrumView.swift - Compact airtime of one 40-byte packet in the Spectrum header strip; %@ is milliseconds. The full sentence is read to VoiceOver */
+"tools.spectrum.header.airtimeShort" = "~%@ мс/пак.";
+
+// MARK: - Traffic
+
+/* Home and Traffic page: Title of the Traffic page (the packets this radio hears) and its Home card */
+"tools.traffic.title" = "Трафік";
+
+/* Home: Detail line under the Traffic card */
+"tools.traffic.subtitle" = "Список і жива мапа";
+
+/* Traffic map: Shown in the ticker before any packet has been drawn */
+"tools.traffic.map.listening" = "Очікування пакетів";
+
+/* Traffic map: Status chip count of packets placed on the map; %lld is the count */
+"tools.traffic.map.placed" = "Намальовано: %lld";
+
+/* Traffic map: Button that replays the latest packets' routes */
+"tools.traffic.map.replay" = "Повторити трафік";
+
+/* Traffic map: Chip over the map while a replay retraces the latest packets' routes */
+"tools.traffic.map.replaying" = "Відтворення";
+
+/* Traffic map: Button that frames all traffic on the map */
+"tools.traffic.map.fit" = "Показати регіон";
+
+/* Traffic map: Title when no node can be placed */
+"tools.traffic.map.empty.title" = "Поки нічого показати";
+
+/* Traffic map: Ticker note for hops the packet passed through that have no location to draw, and the status chip's count of nodes heard lately that the map can't place (a tap lists them); %lld is the count */
+"tools.traffic.map.unplaced" = "%lld немає на мапі";
+
+/* Traffic map: Title of the list of nodes packets named that the map can't place (no position shared, or known only by name) */
+"tools.traffic.map.offMap.title" = "Немає на мапі";
+
+/* Traffic map: Ticker line naming the nodes the current packet names that the map can't place; %@ is a list of node names, e.g. "Claremont, Alex" */
+"tools.traffic.map.offMap.flight" = "Немає на мапі: %@";
+
+/* Traffic map: Not on Map list, why a node isn't drawn: a channel message's sender, known only by the name it typed */
+"tools.traffic.map.offMap.reason.nameOnly" = "Названо в повідомленні каналу; ключ невідомий";
+
+/* Traffic map: Not on Map list, why a node isn't drawn: it has a position, but the route of the packet that named it couldn't be drawn (this radio has no position, or the route went another way) */
+"tools.traffic.map.offMap.reason.notDrawn" = "Має позицію; маршрут його пакета не вдалося намалювати";
+
+/* Traffic map: Accessibility hint for the status chip's not-on-map count, which opens the Not on Map list */
+"tools.traffic.map.offMap.hint" = "Показує почуті вузли, які не можна розмістити на мапі";
+
+/* Traffic map: a node's callout and the Not on Map list, for a node guessed from a short hash other nodes share; %lld is how many known nodes share it */
+"tools.traffic.map.possibleMatch" = "Можливий збіг: цей хеш мають %lld вузлів";
+
+/* Traffic map: Accessibility label of the status chip's mark shown while the route filter leaves packets off the map */
+"tools.traffic.map.filtered" = "Фільтр маршруту ввімкнено";
+
+/* Traffic map: control that also pins the nodes this radio heard on its channel that are quiet now (faded) */
+"tools.traffic.map.showQuietNodes" = "Показати неактивні вузли";
+
+/* Traffic map: the same control while the quiet nodes are shown; back to the relays heard lately */
+"tools.traffic.map.hideQuietNodes" = "Приховати неактивні вузли";
+
+/* Traffic map: ⋯ menu picker title: which nodes the map pins besides the routes' */
+"tools.traffic.map.nodesOnMap" = "Вузли на мапі";
+
+/* Traffic map: Nodes on Map choice: only the scan's own neighbours and the routes' nodes */
+"tools.traffic.map.nodes.scan" = "Скан";
+
+/* Traffic map: Nodes on Map choice: every heard node with a position */
+"tools.traffic.map.nodes.heard" = "Почуті";
+
+/* Traffic map: Nodes on Map choice: every saved contact with a position */
+"tools.traffic.map.nodes.contacts" = "Контакти";
+
+/* Traffic map: Nodes on Map choice: everything, the channel's quiet nodes included */
+"tools.traffic.map.nodes.all" = "Усі";
+
+/* Traffic map: Description when no node can be placed: only nodes this radio heard itself are drawn */
+"tools.traffic.map.empty.observedDescription" = "Тут з’являються вузли, які ця радіостанція чула на поточному каналі, щойно надходять їхні оголошення. Маршрут кожного пакета малюється стрибок за стрибком, щойно він надходить.";
+
+// MARK: - Traffic Node Callout
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.packets" = "Пакетів за 30 хв: %lld";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.last" = "Останній %@";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.links" = "Найзавантаженіші зв’язки";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.quiet" = "Немає трафіку за останні 30 хв";
+
+/* Traffic map: a tapped node's callout */
+"tools.traffic.node.thisRadio" = "Це радіо";
+
+/* Traffic map: a tapped link's callout; %@ is the distance between its two ends, e.g. "4.2 km" */
+"tools.traffic.link.distance" = "%@ одне від одного";
+
+/* Traffic map: a tapped link's callout, for the leg into this radio; %@ is the signal, e.g. "7.5 dB" */
+"tools.traffic.link.heard" = "Прийнято тут із SNR %@";
+
+/* Traffic map: a tapped link's callout, the SNR the last trace across it measured at a repeater's end; %@ is the signal, e.g. "7.5 dB" */
+"tools.traffic.link.traced" = "Останнє трасування: SNR %@";
+
+/* Traffic map and RX log: a relay in a packet's path that no node heard on this channel has; %@ is its hash, e.g. "7F" */
+"tools.traffic.hop.unknown" = "Невідомий ретранслятор %@";
+
+/* Traffic map and RX log detail: under an unknown relay, a saved or discovered node whose key starts with the same hash but that this radio never heard on its channel, so it isn't taken for it; %@ is that node's name */
+"tools.traffic.hop.notHeardHint" = "Не чути на цьому каналі: %@ має той самий префікс";
+
+/* Traffic map and RX log detail: under an unknown relay, a node with the same hash that this radio heard on its channel, but too long ago to count; %1$@ is how long ago, e.g. "12d", %2$@ is its name */
+"tools.traffic.hop.staleHint" = "Востаннє чути на цьому каналі %1$@ тому: %2$@";
+
+/* RX log detail: the key an anonymous request (a login) carries, of a node this radio never heard on its channel; %@ is the name a saved node with that key has */
+"tools.traffic.hop.claimsToBe" = "Видає себе за %@ (не чути на цьому каналі)";
+
+/* Traffic map and RX log detail: why a node is named: this radio last received a packet straight from it; %@ is how long ago, e.g. "3 min. ago" */
+"tools.traffic.node.heardDirectly" = "Чути напряму %@";
+
+/* Traffic map and RX log detail: why a node is named: its packets reached this radio through other relays; %1$lld is the fewest relays, %2$@ is how long ago, e.g. "2 days ago" */
+"tools.traffic.node.heardRelayed" = "Чути через стрибків: %1$lld, %2$@";
+
+/* Traffic map: Not on Map list, why a node isn't drawn: this radio never received a position from the node itself */
+"tools.traffic.node.positionNotHeard" = "Позицію не отримано";
+
+/* RX log and Traffic map: an advert whose signature doesn't hold, so the key it carries is only a claim */
+"tools.traffic.node.unverifiedAdvert" = "Неперевірене оголошення";
+
+/* RX log detail and Traffic map ticker: the node that transmitted the frame this radio received; %@ is its name or hash */
+"tools.traffic.link.heardFrom" = "Прийнято від %@";
+
+/* Traffic map ticker and RX log detail: the node that transmitted the frame and the signal it was received at; %1$@ is its name or hash, %2$@ the signal, e.g. "6.5 dB" */
+"tools.traffic.link.heardFromSignal" = "Прийнято від %1$@ · %2$@";
+
+/* RX log detail: the relays the packet's path names, oldest first: what the packet claims, not what this radio heard */
+"tools.traffic.link.claimed" = "Шлях, заявлений пакетом";
+
+/* RX log detail and Traffic map: a repeater passed on a packet this radio sent, so it heard this radio */
+"tools.traffic.link.heardYou" = "Ретранслював ваш пакет";
+
+/* RX log detail and Traffic map: a link between two placed nodes far longer than LoRa usually reaches; nothing is renamed because of it */
+"tools.traffic.link.suspicious" = "Незвично довгий зв’язок";
+
+/* RX log detail and Traffic map ticker: a packet this radio was asked to transmit */
+"tools.traffic.sent.byRadio" = "Надіслано цією радіостанцією";
+
+/* RX log detail and Traffic map ticker: the radio's answer to a send; %@ is how it went out, "flood" or "direct" */
+"tools.traffic.sent.accepted" = "Радіостанція прийняла · %@";
+
+/* Traffic map and RX log: a send that went out as a flood, inside "Radio accepted · %@" */
+"tools.traffic.sent.routeFlood" = "розсилка";
+
+/* Traffic map and RX log: a send that went out direct, inside "Radio accepted · %@" */
+"tools.traffic.sent.routeDirect" = "напряму";
+
+/* Traffic map ticker and RX log detail: the radio refused the command, so nothing went out */
+"tools.traffic.sent.rejected" = "Радіостанція це не надіслала";
+
+/* Traffic map ticker and RX log detail: the radio never answered the command */
+"tools.traffic.sent.unconfirmed" = "Радіостанція не підтвердила";
+
+/* RX log detail and Traffic map: a packet matched to one this radio sent only by its source and destination bytes and timing */
+"tools.traffic.echo.probable" = "Ймовірно, ваш пакет";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): BUSY cell caption, shown uppercase: the share of time the channel read above the floor */
+"tools.spectrum.device.cell.busy" = "Зайнято";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): PKT/MIN cell caption, shown uppercase; keep it short */
+"tools.spectrum.device.cell.packetsPerMinute" = "Пак/хв";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the PKT/MIN cell */
+"tools.spectrum.device.spoken.packetsPerMinute" = "Пакетів за хвилину";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the BUSY cell */
+"tools.spectrum.device.spoken.busy" = "Зайнятість";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: in the noise */
+"tools.spectrum.device.level.noise" = "шум";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: 6 dB or more over the floor */
+"tools.spectrum.device.level.signal" = "сигнал";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: 20 dB or more over the floor */
+"tools.spectrum.device.level.strong" = "сильний сигнал";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver verdict after a reading: 35 dB or more over the floor */
+"tools.spectrum.device.level.veryStrong" = "дуже сильний сигнал";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): BUSY cell verdict past 30 % */
+"tools.spectrum.device.busy.warning" = "Зайнятий канал";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): BUSY cell verdict past 60 % */
+"tools.spectrum.device.busy.critical" = "Дуже зайнятий канал";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver: NOW is stale while the radio's Band sweep runs */
+"tools.spectrum.device.paused" = "на паузі";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Info popover beside the Channel pill */
+"tools.spectrum.device.bandInfo" = "Вигляд «Діапазон» на рації сканує весь діапазон. Він працює лише на рації: на час сканування mesh призупиняється.";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Label of the 24-hour noise floor line; NF = noise floor, keep it short */
+"tools.spectrum.device.nf24h" = "NF 24год";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the 24-hour noise floor line */
+"tools.spectrum.device.nf24hSpoken" = "Рівень шуму, останні 24 години";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Heat map key, low end */
+"tools.spectrum.device.key.rare" = "рідко";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Heat map key, high end */
+"tools.spectrum.device.key.often" = "часто";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Trace key: the average dots */
+"tools.spectrum.device.key.avg" = "сер";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Trace key: the peak rule */
+"tools.spectrum.device.key.peak" = "пік";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Trace placeholder before the radio has readings */
+"tools.spectrum.device.sampling" = "вимірювання…";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): 24-hour line placeholder before the radio has a point */
+"tools.spectrum.device.collecting" = "збирання…";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Banner over the trace while the radio sweeps the band */
+"tools.spectrum.device.sweepBanner" = "Сканування діапазону на рації: вимірювання на паузі";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Packet card: the app has no RX log entry for this packet */
+"tools.spectrum.device.heardAway" = "Отримано, поки застосунок був закритий";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout, lower case like the radio's; the values are dBm numbers */
+"tools.spectrum.device.readout.minAvgMax" = "мін %1$@ сер %2$@ макс %3$@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout, shorter form */
+"tools.spectrum.device.readout.avgMax" = "сер %1$@ макс %2$@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the column's noise floor */
+"tools.spectrum.device.readout.nf" = "NF %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: a packet's SNR */
+"tools.spectrum.device.readout.snr" = "SNR %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the column's busy share, e.g. "busy 8%" */
+"tools.spectrum.device.readout.busy" = "зайнято %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the radio was transmitting */
+"tools.spectrum.device.readout.transmitting" = "передавання";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: no readings in the column */
+"tools.spectrum.device.readout.noData" = "немає даних";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: the newest column's age */
+"tools.spectrum.device.readout.now" = "зараз";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: a column's age in seconds, e.g. "-42 s" */
+"tools.spectrum.device.age.seconds" = "-%@ с";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Cursor readout: a column's age in minutes, e.g. "-2.5 m" */
+"tools.spectrum.device.age.minutes" = "-%@ хв";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver label of the Channel plot; %@ is the window, e.g. "1 minute" */
+"tools.spectrum.device.chart.label" = "Активність каналу, останні %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot; %@ is a level, e.g. "-112 dBm" */
+"tools.spectrum.device.chart.floor" = "Рівень шуму %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot; a level, then how long ago, e.g. "32 seconds" */
+"tools.spectrum.device.chart.peak" = "пік %1$@ %2$@ тому";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot; %@ is a percentage */
+"tools.spectrum.device.chart.busy" = "зайнято %@";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): VoiceOver value of the Channel plot before any readings */
+"tools.spectrum.device.chart.noData" = "Ще немає вимірювань";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Audio graph series */
+"tools.spectrum.device.series.min" = "Мінімум";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Audio graph series */
+"tools.spectrum.device.series.avg" = "Середнє";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Audio graph series */
+"tools.spectrum.device.series.max" = "Максимум";
+
+/* Spectrum, device card (a Cairn radio's own Channel view): Spectrum Settings, in place of Update Rate with a Cairn radio */
+"tools.spectrum.device.settingsFootnote" = "Рації Cairn надсилають власні вимірювання";
+"tools.nodeDiscovery.map.noFixWhenHeard" = "Немає GPS-позиції під час прийому";
+"tools.nodeDiscovery.distanceWhenHeard" = "Відстань при найкращому прийомі";
+
+// MARK: - Scan for Nodes: Heard Neighbors and Scans
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while the radio listens for nearby nodes; first placeholder is how many are nearby now, second is when the list last changed as a relative time, e.g. "2 min ago" */
+"tools.nodeDiscovery.status.listeningNearby" = "Слухаю · поруч: %1$d · оновлено %2$@";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button: asks the nodes in direct range to answer once */
+"tools.nodeDiscovery.scanNow" = "Сканувати зараз";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button while the next scan has to wait; %@ is the time left, e.g. "0:32" */
+"tools.nodeDiscovery.cooldown.scanAgainIn" = "Повторне сканування через %@";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan button while waiting because another radio nearby just sent a scan */
+"tools.nodeDiscovery.cooldown.othersScanning" = "Очікування — хтось поруч щойно сканував";
+
+/* Location: NodeDiscoveryScanControl.swift - Explanation shown with the scan countdown: why scans are spaced out */
+"tools.nodeDiscovery.cooldown.explainer" = "Ретранслятори відповідають щонайбільше на 4 запити сканування за 2 хвилини, спільні для всіх поблизу.";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the scan countdown, which explains the wait when tapped */
+"tools.nodeDiscovery.cooldown.hint" = "Пояснює, чому наступне сканування має зачекати";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while a scan waits for answers */
+"tools.nodeDiscovery.status.probing" = "Опитування найближчих вузлів… у завантаженій mesh-мережі відповіді можуть накладатися";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line after a scan; first placeholder is how many listed nodes answered this scan, second is how many other listed nodes were heard since it started */
+"tools.nodeDiscovery.status.probeSummary" = "Відповіли на ваше сканування: %1$d · ще почуто від його початку: %2$d";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line while the radio is disconnected; %@ is when the list was last updated, e.g. "10:42" */
+"tools.nodeDiscovery.status.disconnected" = "Радіостанцію відключено — показано почуте до %@";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line when the connection to the radio was rebuilt during a scan; the scan keeps listening */
+"tools.nodeDiscovery.status.interrupted" = "З’єднання відновлено — прослуховування триває";
+
+/* Location: NodeDiscoveryScanControl.swift - Paragraph in the scan card's info popover explaining that each scan starts a new list */
+"tools.nodeDiscovery.listenInfo" = "Кожне сканування починає новий список: Cairn показує вузли, які чує напряму з моменту початку сканування (відповіді на нього, ретранслятори, що передають трафік, оголошення та відповіді на чужі сканування), до наступного сканування. «Показати старіші» додає вузли, почуті раніше, до 24 годин тому.";
+
+/* Location: NodeDiscoveryView.swift - Empty state title before any node has been heard */
+"tools.nodeDiscovery.nothingHeard.title" = "Поки нічого не чути";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state description for Repeaters when nothing has been heard since the current scan started */
+"tools.nodeDiscovery.nothingHeard.description" = "Від початку цього сканування нічого не почуто. Ретранслятори з’являться, коли відповідять або передадуть трафік.";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state description for Sensors when nothing has been heard since the current scan started */
+"tools.nodeDiscovery.nothingHeard.sensorsDescription" = "Від початку цього сканування нічого не почуто. Датчики з’являться, коли відповідять або надішлють оголошення.";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card headline before the first scan of this session */
+"tools.nodeDiscovery.status.readyToScan" = "Готово до сканування";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card headline during a scan on a radio whose firmware can't send one, so the scan only listens */
+"tools.nodeDiscovery.status.listeningOnly" = "Слухаю… прошивка цієї рації не може надіслати сканування";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan card line after a scan that only listened (or asked for the other kind of node); %d is how many listed nodes were heard since it started */
+"tools.nodeDiscovery.status.listenSummary" = "Почуто від початку цього сканування: %d";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state title before the first scan */
+"tools.nodeDiscovery.notScanned.title" = "Сканування ще не було";
+
+/* Location: NodeDiscoveryPanel.swift - Empty state description before the first scan: each scan starts a new list */
+"tools.nodeDiscovery.notScanned.description" = "Торкніться «Сканувати зараз», щоб почати список. Він заповниться вузлами, почутими з цього моменту; наступне сканування почне новий.";
+
+/* Location: NodeDiscoveryPanel.swift - Heading over the nodes Show Older adds: heard before the current scan started */
+"tools.nodeDiscovery.earlierSection" = "Почуті до цього сканування";
+
+/* Location: NodeDiscoveryScanControl.swift - VoiceOver hint of the scan button when the radio's firmware can't send a scan */
+"tools.nodeDiscovery.scanListensOnlyHint" = "Прошивка цієї рації не може надіслати сканування; сканування починає новий список і слухає";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node was heard relaying other traffic */
+"tools.nodeDiscovery.badge.relaying" = "Ретранслює";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node's own advert was heard directly */
+"tools.nodeDiscovery.badge.advert" = "Оголошення";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node answered a scan sent from this radio */
+"tools.nodeDiscovery.badge.answeredYourScan" = "Відповів на ваше сканування";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: under "Heard before this scan", this node answered a scan sent from this radio before the current one */
+"tools.nodeDiscovery.badge.answeredEarlierScan" = "Відповів на попереднє сканування";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node answered a scan sent by another radio nearby */
+"tools.nodeDiscovery.badge.answeredAnotherScan" = "Відповів на чуже сканування";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node is known to hear this radio */
+"tools.nodeDiscovery.badge.hearsYou" = "Чує вас";
+
+/* Location: NodeDiscoveryResultCard.swift - Badge: this node was heard only once, so it may be out of reliable range */
+"tools.nodeDiscovery.badge.heardOnce" = "Почуто один раз";
+
+/* Location: NodeDiscoveryResultCard.swift - Card title for a relay known only by the start of its key; %@ is that key prefix in hex, e.g. "3A7F21" */
+"tools.nodeDiscovery.unidentifiedRelay" = "Невідомий ретранслятор %@";
+
+/* Location: NodeDiscoveryResultCard.swift - Card title for a relay whose key prefix matches several known nodes; first placeholder is the prefix in hex, second is how many nodes match */
+"tools.nodeDiscovery.ambiguous" = "%1$@ · можливих вузлів: %2$d";
+
+/* Location: NodeDiscoveryResultCard.swift - Title of the list of nodes an ambiguous relay could be */
+"tools.nodeDiscovery.ambiguous.candidatesTitle" = "Можливі вузли";
+
+/* Location: NodeDiscoveryResultCard.swift - VoiceOver hint of an ambiguous relay's title, which lists the nodes it could be */
+"tools.nodeDiscovery.ambiguous.hint" = "Показує вузли, якими може бути цей ретранслятор";
+
+/* Location: NodeDiscoveryResultCard.swift - How long ago a node was last heard; %@ is a short duration, e.g. "2 m" */
+"tools.nodeDiscovery.freshness" = "%@ тому";
+
+/* Location: NodeDiscoveryResultCard.swift - Button that sends one trace to a repeater to measure the link both ways */
+"tools.nodeDiscovery.checkLink" = "Перевірити зв’язок";
+
+/* Location: NodeDiscoveryResultCard.swift - VoiceOver hint of the Check Link button */
+"tools.nodeDiscovery.checkLink.hint" = "Надсилає одне трасування цьому ретранслятору, щоб виміряти, наскільки добре ви чуєте одне одного";
+
+/* Location: NodeDiscoveryResultCard.swift - Shown while the link check waits for its answer */
+"tools.nodeDiscovery.checkLink.checking" = "Перевірка зв’язку…";
+
+/* Location: NodeDiscoveryResultCard.swift - Result when the repeater answered the link check; its signal both ways is shown beside it */
+"tools.nodeDiscovery.checkLink.answered" = "Відповів на перевірку";
+
+/* Location: NodeDiscoveryResultCard.swift - Result when the repeater did not answer the link check; it may still be there, as some repeaters don't answer traces */
+"tools.nodeDiscovery.checkLink.noAnswer" = "Не відповів на перевірку";
+
+/* Location: NodeDiscoveryResultCard.swift - Result when the link check could not be sent */
+"tools.nodeDiscovery.checkLink.failed" = "Не вдалося надіслати перевірку";
+
+/* Location: NodeDiscoveryResultCard.swift - Button on an unidentified relay that opens the Traffic map, where its traffic is drawn */
+"tools.nodeDiscovery.showOnTrafficMap" = "Показати на мапі трафіку";
+
+/* Location: NodeDiscoveryPanel.swift - Toggle that also lists the nodes heard before the current scan, up to 24 hours ago */
+"tools.nodeDiscovery.showOlder" = "Показати старіші";
+
+/* Location: NodeDiscoveryPanel.swift - VoiceOver hint of the Show Older toggle */
+"tools.nodeDiscovery.showOlderHint" = "Також показує вузли, почуті до цього сканування, до 24 годин тому";
+
+/* Location: NodeDiscoveryMapView.swift - Pill over the map counting results the map's filter hides, with an action showing them; %d is the count */
+"tools.nodeDiscovery.map.hiddenByFilter" = "Приховано фільтром мапи: %d · Показати всі";
+
+/* Location: NodeDiscoveryMapView.swift - VoiceOver hint of the hidden-by-filter pill */
+"tools.nodeDiscovery.map.hiddenByFilterHint" = "Показує всі результати на цій мапі";
+
+/* Location: NodeDiscoveryMapView.swift - Pill over the map counting results with no position to draw; %d is the count */
+"tools.nodeDiscovery.map.withoutLocation" = "Без місцезнаходження: %d";
+
+/* Location: NodeDiscoveryScanControl.swift - Indicator that Wardrive keeps scanning while you use other screens */
+"tools.nodeDiscovery.wardriveRunning" = "Wardrive працює";
+
+/* Location: NodeDiscoveryScanControl.swift - Line under the scan headline when the radio's firmware can't send a scan; a scan then only listens */
+"tools.nodeDiscovery.scanUnsupported" = "Прошивка цієї рації не може надіслати сканування (потрібна версія 1.10 або новіша), тож тут сканування лише слухає: воно починає новий список вузлів, почутих із цього моменту.";
+
+/* Location: NodeDiscoveryCompactBar.swift - Short caption and VoiceOver hint on the map's scan bar when the radio's firmware can't send a scan */
+"tools.nodeDiscovery.scanUnsupportedShort" = "Потрібна прошивка 1.10+";
+
+/* Location: NodeDiscoveryScanControl.swift - Added after a scan's summary when the radio heard packets during the scan that never reached the app; %d is how many */
+"tools.nodeDiscovery.summary.radioMissed" = "Пакетів, які рація почула під час сканування, але які не дійшли до застосунку: %d; деякі відповіді можуть бути відсутні";
+
+// MARK: - Region Discovery
+
+/* Location: RegionDiscoveryRunner.swift - Shown when a scan was sent too recently, so regions are looked up from repeaters already heard instead */
+"tools.regionDiscovery.cooldown" = "Сканування нещодавно використовувалося — використовуються вже почуті ретранслятори поблизу";
+
+/* Location: RegionDiscoveryRunner.swift - Shown when the radio's firmware is too old to ask repeaters for their regions, so nothing was sent */
+"tools.regionDiscovery.needsFirmware" = "Щоб запитати в ретрансляторів їхні регіони, потрібна прошивка рації 1.12 або новіша";
+
+/* Location: RegionDiscoveryRunner.swift - Shown when the radio's firmware can't send a scan, so regions are looked up from repeaters already heard instead */
+"tools.regionDiscovery.scanUnsupported" = "Прошивка цієї радіостанції не може надсилати запити сканування — використовуються вже почуті ретранслятори поблизу";
+
+// MARK: - RX Log Delivery
+
+/* Location: RxLogView.swift - Delivery line in the header with Cairn radio firmware: nothing was lost between the radio and the app */
+"tools.rxLog.delivery.allReceived" = "Увесь трафік отримано";
+
+/* Location: RxLogView.swift - Delivery line in the header with Cairn radio firmware; first placeholder is how many packets were fetched again from the radio, second is how many the radio lost before the app got them */
+"tools.rxLog.delivery.recoveredLost" = "Відновлено: %1$d · втрачено в радіостанції: %2$d";
+
+/* Location: RxLogView.swift - Start of the delivery line for a Cairn radio whose firmware build has no packet recovery, so packets arrive as on other firmware */
+"tools.rxLog.delivery.recoveryUnsupported" = "У цій збірці Cairn немає відновлення пакетів";
+
+/* Location: RxLogView.swift - Start of the delivery line for a Cairn radio whose packet recovery did not start on this connection (no answer or refused), so packets arrive as on other firmware */
+"tools.rxLog.delivery.recoveryFailed" = "Не вдалося запустити відновлення пакетів у цьому з'єднанні";
+
+/* Location: RxLogView.swift - Delivery line in the header with radio firmware without packet recovery, measured with the radio's own packet counters; first placeholder is how many packets never reached the app, second is how many the radio heard in all */
+"tools.rxLog.delivery.radioMissed" = "Не дійшло до застосунку: %1$d із %2$d пакетів, які почула рація";
+
+/* Location: RxLogView.swift - Delivery line in the header with radio firmware that has no packet recovery and no packet counters (or before they were read), so packets the radio skips can't be counted */
+"tools.rxLog.delivery.stockUnmeasured" = "Прошивка цієї радіостанції може пропускати пакети, коли канал зайнятий";
+
+/* Location: RxLogView.swift and the Traffic map - Second line under the delivery line with radio firmware without packet recovery: the firmware never passes longer received packets to the app; %d is the longest length in bytes */
+"tools.rxLog.delivery.longPackets" = "Прошивка цієї радіостанції ніколи не передає застосунку пакети довші за %d Б";
+
+/* Location: RxLogView.swift - Added to the delivery line with Cairn radio firmware when the app itself dropped packets it received; %d is how many */
+"tools.rxLog.delivery.appDropped" = "Втрачено в застосунку: %d";
+
+/* Location: RxLogView.swift - VoiceOver label of the mark on a packet fetched again from the radio after it was missed */
+"tools.rxLog.recovered" = "Відновлено";
+
+/* Location: ToolSelection.swift - Name of the Scan & Traffic tool (Scan for Nodes and the Traffic map on one page): Tools list, its page title and links to it */
+/* AI-translated - please verify with native speakers. */
+"tools.scanTraffic" = "Пошук і трафік";
+
+/* Tools list - short line under the Scan & Traffic tool */
+/* AI-translated - please verify with native speakers. */
+"tools.subtitle.scanTraffic" = "Вузли поруч і пакети наживо";
+
+/* Location: NodeDiscoveryPanel.swift - Scan & Traffic: segment beside Nodes that lists every packet the radio hears, followed by how many */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.section.packets" = "Пакети";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan & Traffic: the one scan button in the sheet's header */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.scan" = "Шукати";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan & Traffic header: how many of the kind listed the current scan has heard; %d is the count */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.status.nearby" = "Слухаю · поруч %d";
+
+/* Location: NodeDiscoveryScanControl.swift - Scan & Traffic header: how many packets a minute the radio hears; %@ is the number */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.status.packetsPerMinute" = "%@ пакетів/хв";
+
+/* Location: NodeDiscoveryResultCard.swift - Tag on a compact node card: the node answered the current scan */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.badge.answered" = "Відповів";
+
+/* Location: NodeDiscoveryPanel.swift - Row at the end of the nodes that adds the ones heard before this scan, up to 24 hours ago; %d is how many */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.showOlderCount" = "Показати попередні вузли (%d)";
+
+/* Location: NodeDiscoveryPanel.swift - The same row once the older nodes show: takes them away again */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.hideOlder" = "Сховати попередні вузли";
+
+/* Location: NodeDiscoveryPanel.swift - Scan & Traffic before the first scan, with nothing heard yet */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.firstUse.title" = "Торкніться «Шукати», щоб знайти вузли поруч";
+
+/* Location: NodeDiscoveryPanel.swift - The line under it: what a scan does */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.firstUse.description" = "Пошук просить вузли, які чують ваше радіо напряму, відповісти.";
+
+/* Location: NodeDiscoveryActivity.swift - VoiceOver hint of the Scan & Traffic header line */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.header.expandHint" = "Показує або ховає найкращий сигнал і найдальший вузол";
+
+/* Location: NodeDiscoveryPanel.swift - VoiceOver value of a section's Filter button: how many filters are on; %d is the count */
+/* AI-translated - please verify with native speakers. */
+"tools.nodeDiscovery.filter.active" = "Увімкнено: %d";
+
+// MARK: - Map workstream additions
+
+/* Location: SendLocationIntent.swift - Purpose: Title of the Send My Location shortcut */
+"intent.location.title" = "Надіслати моє місцезнаходження";
+
+/* Location: CairnAppShortcutsProvider.swift - Purpose: Short title of the Send My Location shortcut */
+"intent.location.shortTitle" = "Надіслати місцезнаходження";
+
+/* Location: SendLocationIntent.swift - Purpose: Description of the Send My Location shortcut */
+"intent.location.description" = "Надсилає ваше поточне місцезнаходження контакту або в канал повідомленням.";
+
+/* Location: SendLocationIntent.swift - Purpose: Spoken confirmation once the location message is queued; the argument is the recipient */
+"intent.location.sent" = "Ваше місцезнаходження надсилається: %@.";
+
+/* SendLocationIntent.swift - Purpose: Shortcuts parameter summary of the Send My Location intent; keep ${target} as is */
+"Send my location to ${target}" = "Надіслати моє місцезнаходження: ${target}";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Title of the drive summary card once Wardrive has stopped */
+"tools.nodeDiscovery.wardrive.summary.finished" = "Wardrive завершено";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Takes the finished drive's summary card off the screen */
+"tools.nodeDiscovery.wardrive.summary.dismiss" = "Сховати";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: nodes heard during the drive */
+"tools.nodeDiscovery.wardrive.summary.nodes" = "Знайдено вузлів";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: scans sent during the drive */
+"tools.nodeDiscovery.wardrive.summary.probes" = "Скани";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: how long the drive has run */
+"tools.nodeDiscovery.wardrive.summary.elapsed" = "Минуло";
+
+/* Location: NodeDiscoveryWardriveCard.swift - Figure on the drive summary card: distance covered, from the phone's fixes */
+"tools.nodeDiscovery.wardrive.summary.distance" = "Відстань";
+
+/* Location: NodeDiscoveryView.swift - Alert button before Wardrive starts with location refused: opens the system Settings */
+"tools.nodeDiscovery.wardrive.preflight.openSettings" = "Відкрити Налаштування";
+
+/* Location: NodeDiscoveryView.swift - Alert button: start Wardrive despite the warning */
+"tools.nodeDiscovery.wardrive.preflight.startAnyway" = "Усе одно почати";
+
+/* Location: NodeDiscoveryView.swift - Alert button on the first-run note: starts Wardrive */
+"tools.nodeDiscovery.wardrive.preflight.start" = "Почати Wardrive";
+
+/* Location: NodeDiscoveryView.swift - Alert title before Wardrive starts while location is refused for the app */
+"tools.nodeDiscovery.wardrive.preflight.locationDenied.title" = "Геолокацію для Cairn вимкнено";
+
+/* Location: NodeDiscoveryView.swift - Alert message: without location, Wardrive can't place nodes on the map */
+"tools.nodeDiscovery.wardrive.preflight.locationDenied.message" = "Без геолокації Wardrive не зможе розмістити почуті вузли на мапі. Дозвольте геолокацію в Налаштуваннях або все одно почніть, щоб отримати лише список.";
+
+/* Location: NodeDiscoveryView.swift - Alert title of the note shown before the first Wardrive */
+"tools.nodeDiscovery.wardrive.preflight.firstRun.title" = "Перед першим Wardrive";
+
+/* Location: NodeDiscoveryView.swift - Alert message: what Wardrive does to the screen and GPS */
+"tools.nodeDiscovery.wardrive.preflight.firstRun.message" = "Поки працює Wardrive, екран лишається увімкненим із цією сторінкою, а GPS працює у фоні, щоб кожен вузол опинився там, де його почуто. Він зупиняється після натискання «Стоп» або коли радіо від'єднається.";
+
+/* Location: NodeDiscoveryView.swift - Alert title before Wardrive starts on a low battery; %d is the percentage */
+"tools.nodeDiscovery.wardrive.preflight.lowBattery.title" = "Заряд %d%%";
+
+/* Location: NodeDiscoveryView.swift - Alert message: Wardrive drains the battery */
+"tools.nodeDiscovery.wardrive.preflight.lowBattery.message" = "Wardrive тримає екран увімкненим і GPS активним, що швидко розряджає батарею. За змоги підключіть зарядку.";
+
+/* Location: NodeDiscoveryView.swift - Alert title before Wardrive starts in Low Power Mode */
+"tools.nodeDiscovery.wardrive.preflight.lowPower.title" = "Увімкнено режим енергозбереження";
+
+/* Location: NodeDiscoveryView.swift - Alert message: GPS is less precise in Low Power Mode */
+"tools.nodeDiscovery.wardrive.preflight.lowPower.message" = "У режимі енергозбереження GPS оновлюється рідше, тому вузли можуть розміщуватися менш точно.";
+
+/* Location: NodeDiscoveryPanel.swift - Heading of the sort picker in the nodes' Filter menu */
+"tools.nodeDiscovery.sortBy" = "Сортувати за";
+
+/* Location: NodeDiscoveryPanel.swift - Menu item that adds every node not yet a contact; %d is how many */
+"tools.nodeDiscovery.addAllNew" = "Додати всі нові (%d)";
+
+/* Location: NodeDiscoveryPanel.swift - Confirmation button of Add All New; %d is how many nodes */
+"tools.nodeDiscovery.addAllNew.confirm" = "Додати вузлів: %d";
+
+/* Location: NodeDiscoveryPanel.swift - Confirmation message of Add All New: %1$d nodes to add, the radio holds up to %2$d contacts, %3$d in use */
+"tools.nodeDiscovery.addAllNew.message" = "Додає %1$d вузлів до контактів радіо. Радіо вміщує до %2$d контактів; зайнято %3$d.";
+
+/* Location: NodeDiscoveryPanel.swift - Confirmation message of Add All New when the radio's contact limit is unknown; %d is how many nodes */
+"tools.nodeDiscovery.addAllNew.messageNoLimit" = "Додає %d вузлів до контактів радіо.";
+
+/* Location: NodeDiscoveryPanel.swift - Menu item that exports the listed nodes as a CSV file */
+"tools.nodeDiscovery.exportNodes" = "Експорт вузлів (CSV)";
+
+/* Location: RxLogView.swift - VoiceOver label of the packet detail sheet's actions menu */
+"tools.rxLog.actions" = "Дії з пакетом";
+
+/* Location: RxPacketActions.swift - Menu item that opens the page of the node that sent the packet */
+"tools.rxLog.action.openSender" = "Відкрити відправника";
+
+/* Location: RxPacketActions.swift - Menu item that opens the page of a node the packet passed through; %@ is its name */
+"tools.rxLog.action.openNode" = "Відкрити %@";
+
+/* Location: RxPacketActions.swift - Menu item that centres the map on the packet's sender */
+"tools.rxLog.action.showOnMap" = "Показати на мапі";
+
+/* Location: RxPacketActions.swift - Menu item that builds Trace Path on the packet's route */
+"tools.rxLog.action.traceRoute" = "Трасувати цей маршрут";
+
+/* Location: RxPacketActions.swift - Menu item that shares the packet as a few lines of text */
+"tools.rxLog.action.shareText" = "Поділитися як текстом";
+
+/* Location: RxPacketActions.swift - Menu item that shares the packet as JSON */
+"tools.rxLog.action.shareJSON" = "Поділитися як JSON";
+
+/* Location: RxPacketActions.swift - Menu item that copies the packet's hash */
+"tools.rxLog.action.copyHash" = "Скопіювати хеш";
+
+/* Location: RxLogView.swift - Placeholder of the packet list's search field */
+"tools.rxLog.search" = "Пошук пакетів";
+
+/* Location: RxLogView.swift - Heading of the packet type section in the filter menu */
+"tools.rxLog.filter.type" = "Тип";
+
+/* Location: RxLogView.swift - Submenu in the filter menu listing the nodes packets came from */
+"tools.rxLog.filter.fromNode" = "Від вузла";
+
+/* Location: RxLogView.swift - First item of the From Node submenu: every sender */
+"tools.rxLog.filter.anyNode" = "Будь-який";
+
+/* Location: RxLogViewModel.swift - Packet type filter: adverts */
+"tools.rxLog.packetType.adverts" = "Оголошення";
+
+/* Location: RxLogViewModel.swift - Packet type filter: direct, channel and data messages */
+"tools.rxLog.packetType.messages" = "Повідомлення";
+
+/* Location: RxLogViewModel.swift - Packet type filter: traces */
+"tools.rxLog.packetType.traces" = "Трасування";
+
+/* Location: RxLogViewModel.swift - Packet type filter: acknowledgements */
+"tools.rxLog.packetType.acks" = "Підтвердження";
+
+/* Location: RxLogViewModel.swift - Packet type filter: path packets */
+"tools.rxLog.packetType.paths" = "Шляхи";
+
+/* Location: RxLogViewModel.swift - Packet type filter: requests and their replies */
+"tools.rxLog.packetType.requests" = "Запити й відповіді";
+
+/* Location: RxLogViewModel.swift - Packet type filter: everything else */
+"tools.rxLog.packetType.other" = "Інше";
+
+/* Location: RxLogView.swift - Pill over a held packet list: how many packets landed since; %d is the count */
+"tools.rxLog.newPackets" = "Нових: %d";
+
+/* Location: RunTraceSectionView.swift - Button that stops the trace in flight */
+"tools.tracePath.cancel" = "Скасувати";
+
+/* Location: SavedPathDetailView.swift - Toolbar share of a saved path's runs as a CSV file */
+"tools.tracePath.share.runs" = "Поділитися прогонами (CSV)";
+
+/* Location: TraceResultsSheet.swift - Toolbar share of a trace's result as text */
+"tools.tracePath.share.summary" = "Поділитися підсумком";
+
+/* Location: TraceExport.swift - Line of the shared trace summary; %@ is the path's hops in hex */
+"tools.tracePath.summary.path" = "Шлях: %@";
+
+/* Location: TraceExport.swift - Line of the shared trace summary; %@ is the milliseconds */
+"tools.tracePath.summary.roundTrip" = "Туди й назад: %@ мс";
+
+/* Location: TraceExport.swift - Line of the shared trace summary; %d is how many hops */
+"tools.tracePath.summary.hops" = "Переходів: %d";
+
+/* Location: CLIToolViewModel.swift - Line in the terminal transcript where the radio disconnected */
+"tools.cli.transcript.disconnected" = "— від'єднано —";
+
+/* Location: CLIToolViewModel.swift - Line in the terminal transcript where the radio reconnected */
+"tools.cli.transcript.reconnected" = "— під'єднано знову —";
+
+/* Location: CLIToolView.swift - Item of the terminal's more menu that opens the sessions list */
+"tools.cli.menu.sessions" = "Сесії";
+
+/* Location: CLIToolView.swift - Item of the terminal's more menu that shares the transcript as text */
+"tools.cli.menu.shareTranscript" = "Поділитися записом";
+
+/* Location: CLIToolView.swift - Item of the terminal's more menu that empties the transcript */
+"tools.cli.menu.clear" = "Очистити";
+
+/* Location: CLISessionsSheet.swift - Title of the sessions sheet */
+"tools.cli.sessions.title" = "Сесії";
+
+/* Location: CLISessionsSheet.swift - Section of the sessions open now */
+"tools.cli.sessions.open" = "Відкриті сесії";
+
+/* Location: CLISessionsSheet.swift - Section of saved repeaters and rooms to log in to */
+"tools.cli.sessions.repeaters" = "Ретранслятори й кімнати";
+
+/* Location: CLISessionsSheet.swift - Section of saved companions whose command line can be opened */
+"tools.cli.sessions.companions" = "Компаньйони";
+
+/* Location: CLISessionsSheet.swift - Mark on the session commands go to now */
+"tools.cli.sessions.active" = "Активна";
+
+/* Location: CLISessionsSheet.swift - Line under a node not logged in to yet */
+"tools.cli.sessions.loginHint" = "Торкніться, щоб увійти";
+
+/* Location: CompanionCommandPicker.swift - Section of the commands pinned at the top of the picker */
+"tools.cli.companion.pinned" = "Закріплені";
+
+/* Location: CompanionCommandPicker.swift - Long-press action that pins a command at the top */
+"tools.cli.companion.pin" = "Закріпити";
+
+/* Location: CompanionCommandPicker.swift - Long-press action that takes a pinned command down */
+"tools.cli.companion.unpin" = "Відкріпити";
+
+/* Location: NetworkHealthView.swift - Menu item that asks every repeater needing attention for its status, one after another */
+"tools.networkHealth.checkAll" = "Перевірити всі";
+
+/* Location: NetworkHealthView.swift - Progress bar title while Check All runs; %1$d is the repeater being checked, %2$d how many */
+"tools.networkHealth.checkAll.progress" = "Перевірка %1$d з %2$d";
+
+/* Location: NetworkHealthView.swift - Menu item that stops Check All */
+"tools.networkHealth.checkAll.cancel" = "Скасувати перевірку";
+
+/* Location: NetworkHealthView.swift - Heading of the sort picker in the page's menu */
+"tools.networkHealth.sort" = "Сортування";
+
+/* Location: NetworkHealthReport.swift - Sort order: by what is wrong, worst first */
+"tools.networkHealth.sort.issues" = "Проблеми";
+
+/* Location: NetworkHealthReport.swift - Sort order: by battery, lowest first */
+"tools.networkHealth.sort.battery" = "Батарея";
+
+/* Location: NetworkHealthReport.swift - Sort order: by when each repeater was last heard, longest silent first */
+"tools.networkHealth.sort.lastHeard" = "Останній контакт";
+
+/* Location: NetworkHealthView.swift - Section of the page's menu with the report's share options */
+"tools.networkHealth.share" = "Поділитися звітом";
+
+/* Location: NetworkHealthView.swift - Shares the report as text */
+"tools.networkHealth.share.text" = "Як текст";
+
+/* Location: NetworkHealthView.swift - Shares the report as a CSV file */
+"tools.networkHealth.share.csv" = "Як CSV";
+
+/* Location: NetworkHealthReport.swift - First line of the shared text report */
+"tools.networkHealth.report.title" = "Звіт про стан мережі";
+
+/* Location: SpectrumView.swift - Toolbar button and settings toggle that holds the chart's window where it is */
+"tools.spectrum.pause" = "Пауза";
+"tools.spectrum.fullscreen" = "На весь екран";
+
+/* Location: SpectrumView.swift - Toolbar button that lets the paused chart go on */
+"tools.spectrum.resume" = "Продовжити";
+
+/* Location: SpectrumTabSettingsSheet.swift - Section with the pause toggle and the readings export */
+"tools.spectrum.settings.readingsHeader" = "Показники";
+
+/* Location: SpectrumTabSettingsSheet.swift - Footer: what the readings export holds */
+"tools.spectrum.settings.readingsFooter" = "Показники рівня шуму зберігаються для кожного радіо тиждень, похвилинно, поки відкрита вкладка «Спектр» або «Головна». Пауза утримує вікно графіка; показники надходять далі.";
+
+/* Location: SpectrumTabSettingsSheet.swift - Button that exports the kept noise-floor readings as a CSV file */
+"tools.spectrum.settings.exportReadings" = "Експорт показників (CSV)";

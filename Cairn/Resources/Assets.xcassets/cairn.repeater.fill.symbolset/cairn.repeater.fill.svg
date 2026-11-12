@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!--Cairn repeater: a lattice mast sending waves, the repeater avatar symbol. Regular-M only.-->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3300" height="2200">
+ <g id="Notes"/>
+ <g id="Guides">
+  <line id="Baseline-S" style="fill:none;stroke:#27AAE1;opacity:1;stroke-width:0.5;" x1="263" x2="3036" y1="696" y2="696"/>
+  <line id="Capline-S" style="fill:none;stroke:#27AAE1;opacity:1;stroke-width:0.5;" x1="263" x2="3036" y1="625.541" y2="625.541"/>
+  <line id="Baseline-M" style="fill:none;stroke:#27AAE1;opacity:1;stroke-width:0.5;" x1="263" x2="3036" y1="1126" y2="1126"/>
+  <line id="Capline-M" style="fill:none;stroke:#27AAE1;opacity:1;stroke-width:0.5;" x1="263" x2="3036" y1="1055.54" y2="1055.54"/>
+  <line id="Baseline-L" style="fill:none;stroke:#27AAE1;opacity:1;stroke-width:0.5;" x1="263" x2="3036" y1="1556" y2="1556"/>
+  <line id="Capline-L" style="fill:none;stroke:#27AAE1;opacity:1;stroke-width:0.5;" x1="263" x2="3036" y1="1485.54" y2="1485.54"/>
+  <line id="left-margin-Regular-M" style="fill:none;stroke:#00AEEF;stroke-width:0.5;opacity:1.0;" x1="1400.00" x2="1400.00" y1="1030.79" y2="1150.12"/>
+  <line id="right-margin-Regular-M" style="fill:none;stroke:#00AEEF;stroke-width:0.5;opacity:1.0;" x1="1473.60" x2="1473.60" y1="1030.79" y2="1150.12"/>
+ </g>
+ <g id="Symbols">
+  <g id="Regular-M">
+   <path d="M1417.60 1152.60 L1436.80 1063.00 L1456.00 1152.60ZM1436.80 1091.80 L1432.80 1117.40 L1440.80 1117.40ZM1431.80 1123.80 L1428.80 1143.00 L1444.80 1143.00 L1441.80 1123.80ZM1428.80 1053.40A8.00 8.00 0 1 1 1444.80 1053.40A8.00 8.00 0 1 1 1428.80 1053.40ZM1453.96 1067.80A22.40 22.40 0 0 0 1453.96 1039.00L1449.06 1043.12A16.00 16.00 0 0 1 1449.06 1063.68ZM1419.64 1039.00A22.40 22.40 0 0 0 1419.64 1067.80L1424.54 1063.68A16.00 16.00 0 0 1 1424.54 1043.12ZM1465.63 1073.59A35.20 35.20 0 0 0 1465.63 1033.21L1460.39 1036.88A28.80 28.80 0 0 1 1460.39 1069.92ZM1407.97 1033.21A35.20 35.20 0 0 0 1407.97 1073.59L1413.21 1069.92A28.80 28.80 0 0 1 1413.21 1036.88Z"/>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,53 @@
+/*
+  WhatsNew.strings
+  Cairn
+
+  Strings for the "What's New" sheet shown once after a major update.
+  Update these every major release: edit the per-feature title/description
+  pairs (add or remove a block) and keep WhatsNewCatalog.swift in sync.
+*/
+
+/* Title of the What's New sheet shown once after an app update */
+"whatsNew.title" = "新功能";
+
+/* Button to dismiss the What's New sheet */
+"whatsNew.continueButton" = "继续";
+
+/* Link on the What's New sheet to the full GitHub release notes */
+"whatsNew.fullReleaseNotes" = "查看全部新变化";
+
+/* What's New Cairn 1.0 - Home dashboard, title */
+"whatsNew.home.title" = "主页仪表板";
+
+/* What's New Cairn 1.0 - Home dashboard, description */
+"whatsNew.home.description" = "电池、聊天、节点、GPS、电台和网络一目了然。轻点任意卡片查看详情。";
+
+/* What's New Cairn 1.0 - card design, title */
+"whatsNew.cards.title" = "玻璃卡片";
+
+/* What's New Cairn 1.0 - card design, description */
+"whatsNew.cards.description" = "每个页面都由卡片组成，置于你选择的玻璃背景之上。";
+
+/* What's New Cairn 1.0 - GNSS dashboard, title */
+"whatsNew.gnss.title" = "GNSS 仪表板";
+
+/* What's New Cairn 1.0 - GNSS dashboard, description */
+"whatsNew.gnss.description" = "在专属标签页中查看电台和手机的定位状态、卫星、精度和位置。";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, title */
+"whatsNew.aim.title" = "对准任意节点";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, description */
+"whatsNew.aim.description" = "在地图上轻点节点，即可看到从你到该节点的连线，以及距离、方位和指引方向的箭头。节点页面上的地图打开时会自动选中该节点。";
+
+/* What's New Cairn 1.0 - Spectrum, title */
+"whatsNew.spectrum.title" = "频谱";
+
+/* What's New Cairn 1.0 - Spectrum, description */
+"whatsNew.spectrum.description" = "实时查看你所用频率上的底噪和活动。";
+
+/* What's New Cairn 1.0 - consolidated settings, title */
+"whatsNew.settings.title" = "设置就在你需要的地方";
+
+/* What's New Cairn 1.0 - consolidated settings, description */
+"whatsNew.settings.description" = "每个标签页的设置位于顶部的滑块图标中；App 设置位于主页的齿轮图标中。";

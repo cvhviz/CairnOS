@@ -1,0 +1,53 @@
+/*
+  WhatsNew.strings
+  Cairn
+
+  Strings for the "What's New" sheet shown once after a major update.
+  Update these every major release: edit the per-feature title/description
+  pairs (add or remove a block) and keep WhatsNewCatalog.swift in sync.
+*/
+
+/* Title of the What's New sheet shown once after an app update */
+"whatsNew.title" = "What's New";
+
+/* Button to dismiss the What's New sheet */
+"whatsNew.continueButton" = "Continue";
+
+/* Link on the What's New sheet to the full GitHub release notes */
+"whatsNew.fullReleaseNotes" = "See all new changes";
+
+/* What's New Cairn 1.0 - Home dashboard, title */
+"whatsNew.home.title" = "Home dashboard";
+
+/* What's New Cairn 1.0 - Home dashboard, description */
+"whatsNew.home.description" = "Battery, chats, nodes, GPS, radio and network at a glance. Tap any card for the details.";
+
+/* What's New Cairn 1.0 - card design, title */
+"whatsNew.cards.title" = "Cards on glass";
+
+/* What's New Cairn 1.0 - card design, description */
+"whatsNew.cards.description" = "Every page is built from cards over a glass background of your choice.";
+
+/* What's New Cairn 1.0 - GNSS dashboard, title */
+"whatsNew.gnss.title" = "GNSS dashboard";
+
+/* What's New Cairn 1.0 - GNSS dashboard, description */
+"whatsNew.gnss.description" = "Fix, satellites, accuracy and position from your radio and phone in their own tab.";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, title */
+"whatsNew.aim.title" = "Aim at any node";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, description */
+"whatsNew.aim.description" = "Tap a node on the map for a line from you to it, with its distance, bearing and an arrow to follow. The map on a node's page opens with it already selected.";
+
+/* What's New Cairn 1.0 - Spectrum, title */
+"whatsNew.spectrum.title" = "Spectrum";
+
+/* What's New Cairn 1.0 - Spectrum, description */
+"whatsNew.spectrum.description" = "Watch the noise floor and activity on your frequency live.";
+
+/* What's New Cairn 1.0 - consolidated settings, title */
+"whatsNew.settings.title" = "Settings where you need them";
+
+/* What's New Cairn 1.0 - consolidated settings, description */
+"whatsNew.settings.description" = "Each tab's settings are behind the sliders at the top; app settings are behind the gear on Home.";

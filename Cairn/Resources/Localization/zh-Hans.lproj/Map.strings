@@ -1,0 +1,849 @@
+/*
+  Map.strings
+  Cairn
+
+  Strings for Map feature, including node locations,
+  map controls, location details, and geographic UI elements.
+ */
+
+// MARK: - Common
+
+/* Location: MapView.swift - Purpose: Done button for sheets */
+"map.common.done" = "完成";
+
+// MARK: - Map Controls
+
+/* Location: MapView.swift - Purpose: Accessibility label when labels are hidden */
+"map.controls.showLabels" = "显示标签";
+
+/* Location: MapControlsToolbar.swift - Purpose: Map options menu toggle that clusters nearby pins */
+"map.controls.clusterNodes" = "聚合节点";
+
+/* Location: MapView.swift - Purpose: Accessibility label for center on all contacts button */
+"map.controls.centerAll" = "以所有联系人为中心";
+
+/* Location: MapCanvasView.swift - Accessibility label of the map's zoom in (plus) button shown on Mac */
+"map.controls.zoomIn" = "放大";
+
+/* Location: MapCanvasView.swift - Accessibility label of the map's zoom out (minus) button shown on Mac */
+"map.controls.zoomOut" = "缩小";
+
+/* Location: MapControlsToolbar.swift - Purpose: Accessibility label for user location button */
+"map.controls.centerOnMyLocation" = "以我的位置为中心";
+
+/* Location: MapControlsToolbar.swift - Purpose: Accessibility label for map options menu button */
+/* AI-translated - please verify with native speakers. */
+"map.controls.mapOptions" = "地图选项";
+
+/* Location: MapControlsToolbar.swift - Purpose: Map options menu toggle that locks the map bearing to north */
+/* AI-translated - please verify with native speakers. */
+"map.controls.lockNorth" = "正北朝上";
+
+/* Location: MapView.swift - Purpose: Accessibility label for refresh button */
+"map.controls.refresh" = "刷新联系人";
+
+/* Location: MapControlsToolbar.swift - Purpose: Accessibility label for map filter control */
+"map.controls.filter" = "筛选";
+
+/* Location: MapControlsToolbar.swift - Purpose: One short word under a map control button on the main and Traffic maps */
+"map.controls.caption.location" = "定位";
+"map.controls.caption.advert" = "广播";
+"map.controls.caption.filter" = "筛选";
+"map.controls.caption.traffic" = "流量";
+"map.controls.caption.quiet" = "不活跃";
+"map.controls.caption.replay" = "重放";
+"map.controls.caption.all" = "全部";
+"map.controls.caption.options" = "选项";
+
+/* Location: MapControlsToolbar.swift - Purpose: Accessibility value when filter differs from host defaults */
+"map.controls.filterActive" = "已启用筛选";
+
+// MARK: - Map Style Selection
+
+/* Location: MapStyleSelection.swift - Purpose: Standard map style option */
+"map.style.standard" = "标准";
+
+/* Location: MapStyleSelection.swift - Purpose: Satellite map style option */
+"map.style.satellite" = "卫星";
+
+/* Location: MapStyleSelection.swift - Purpose: Topo map style option */
+"map.style.topo" = "地形";
+
+/* Location: LayersMenu.swift - Purpose: Accessibility label for map style menu */
+"map.style.accessibilityLabel" = "地图样式";
+
+/* Location: LayersMenu.swift - Purpose: Hint when style requires network */
+"map.style.requiresNetwork" = "需要网络连接";
+
+/* Location: LayersMenu.swift - Purpose: Hint when no offline pack covers viewport */
+"map.style.noOfflineCoverage" = "没有离线地图覆盖此区域";
+
+// MARK: - Contact Detail Sheet
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Section header for contact information */
+"map.detail.section.contactInfo" = "联系人信息";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for contact name */
+"map.detail.name" = "名称";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for contact type */
+"map.detail.type" = "类型";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for favorite status */
+"map.detail.status" = "状态";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Value showing contact is favorited */
+"map.detail.favorite" = "收藏";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for last advertisement timestamp */
+"map.detail.lastAdvert" = "最后广播";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Last heard (phone-clock on-air) label */
+"map.detail.lastHeard" = "最后收到";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for full public key identifier */
+"map.detail.publicKey" = "公钥";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Section header for location coordinates */
+"map.detail.section.location" = "位置";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for latitude coordinate */
+"map.detail.latitude" = "纬度";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for longitude coordinate */
+"map.detail.longitude" = "经度";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Section header for outbound path info */
+"map.detail.section.outboundPath" = "出站路径";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for routing type */
+"map.detail.routing" = "路由";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Flood routing type value */
+"map.detail.routingFlood" = "泛洪";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for path length */
+"map.detail.pathLength" = "路径长度";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Path length value with hop count */
+"map.detail.hops" = "%d 跳";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Path length value for single hop */
+"map.detail.hopSingular" = "1 跳";
+
+// MARK: - Contact Detail Sheet Actions
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Button to view repeater telemetry */
+"map.detail.action.telemetry" = "遥测数据";
+
+/* Location: MapView.swift - Purpose: Saved History button for offline telemetry */
+/* Location: MapView.swift ContactDetailSheet - Purpose: Sheet title for telemetry authentication */
+"map.detail.action.telemetryAccessTitle" = "遥测数据访问权限";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Button to manage repeater */
+"map.detail.action.management" = "管理";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Button to join a room */
+"map.detail.action.joinRoom" = "加入房间";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Button to send a message */
+"map.detail.action.sendMessage" = "发送消息";
+
+// MARK: - Contact Type Names
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Display name for chat contact type */
+"map.nodeKind.chatContact" = "聊天联系人";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Display name for repeater type */
+"map.nodeKind.repeater" = "转发节点";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Display name for room type */
+"map.nodeKind.room" = "房间";
+
+// MARK: - Contact Callout
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Button to view contact details */
+"map.callout.details" = "详情";
+
+/* Location: ContactCalloutContent.swift - Purpose: Button to send message from callout */
+"map.callout.message" = "消息";
+
+/* Location: ContactCalloutContent.swift - Purpose: Display name for contact in callout */
+"map.callout.nodeKind.contact" = "联系人";
+
+/* Location: ContactCalloutContent.swift - Purpose: Display name for repeater in callout */
+"map.callout.nodeKind.repeater" = "转发节点";
+
+/* Location: ContactCalloutContent.swift - Purpose: Display name for room in callout */
+"map.callout.nodeKind.room" = "房间";
+
+
+/* Location: DiscoveredNodeCalloutContent.swift - Purpose: Add discovered node from callout */
+"map.callout.add" = "添加";
+
+/* Location: DiscoveredNodeCalloutContent.swift - Purpose: Label that the pin is discovered, not on the node list */
+"map.callout.discovered" = "已发现";
+
+/* Location: DiscoveredNodeDetailSheet.swift - Purpose: Navigation title for discovered node detail */
+"map.discoveredDetail.title" = "发现的节点";
+
+/* Location: DiscoveredNodeDetailSheet.swift - Purpose: Primary action to add discovered node to the radio table */
+"map.discoveredDetail.add" = "添加到节点";
+
+/* Location: DiscoveredNodeCalloutContent.swift - Purpose: Accessibility label for discovered pins */
+"map.pin.accessibility.discovered" = "已发现，不在节点列表中";
+
+// MARK: - Contact Annotation
+
+/* Location: ContactAnnotation.swift - Purpose: Subtitle for favorite contacts */
+/* Location: ContactAnnotation.swift - Purpose: Subtitle for repeater nodes */
+/* Location: ContactAnnotation.swift - Purpose: Subtitle for room nodes */
+// MARK: - Offline Badge
+
+/* Label shown on map when device has no internet connection */
+"map.offlineBadge.label" = "离线";
+
+// MARK: - Chat Map Preview
+
+/* Location: MapPreviewFragmentView.swift - Purpose: Accessibility label for the chat map-location thumbnail */
+"map.preview.accessibilityLabel" = "地图位置预览";
+
+/* Location: MapPreviewFragmentView.swift - Purpose: Accessibility hint for tapping the chat map-location thumbnail */
+"map.preview.accessibilityHint" = "在地图上打开此位置";
+
+/* Location: MapPreviewFragmentView.swift - Purpose: Accessibility label for the retry control shown on the failed-thumbnail fallback */
+"map.preview.retryButton.accessibilityLabel" = "重新加载地图缩略图";
+
+
+/* Location: MapControlsToolbar.swift - Purpose: Map filter picker: how recently a discovered node must have been heard */
+"map.filter.heardWithin" = "收到时间";
+
+/* Location: MapControlsToolbar.swift - Purpose: Recency option */
+"map.filter.recency.day" = "24 小时内";
+
+/* Location: MapControlsToolbar.swift - Purpose: Recency option (default) */
+"map.filter.recency.week" = "7 天内";
+
+/* Location: MapControlsToolbar.swift - Purpose: Recency option */
+"map.filter.recency.month" = "30 天内";
+
+/* Location: MapControlsToolbar.swift - Purpose: Recency option: no limit */
+"map.filter.recency.all" = "任何时间";
+
+/* Location: ContactCalloutContent.swift, DiscoveredNodeCalloutContent.swift, ContactDetailSheet.swift, DiscoveredNodeDetailSheet.swift - Purpose: Button that hides a node from the Map tab */
+"map.hiddenNodes.hide" = "从地图中隐藏";
+
+/* Location: HiddenMapNodesSheet.swift - Purpose: Navigation title for the list of nodes hidden from the Map tab */
+"map.hiddenNodes.title" = "隐藏的节点";
+
+/* Location: MapControlsToolbar.swift - Purpose: Map filter menu entry that opens the hidden nodes list; %d is how many nodes are hidden */
+"map.filter.hiddenNodes" = "隐藏的节点（%d）";
+
+/* Location: HiddenMapNodesSheet.swift - Purpose: Button that puts a hidden node back on the Map tab */
+"map.hiddenNodes.show" = "在地图上显示";
+
+/* Location: HiddenMapNodesSheet.swift - Purpose: Button that puts every hidden node back on the Map tab */
+"map.hiddenNodes.showAll" = "全部显示";
+
+/* Location: HiddenMapNodesSheet.swift - Purpose: Footer explaining that hiding only affects the Map tab */
+"map.hiddenNodes.footer" = "隐藏的节点只是不在“地图”标签页中显示，仍会保留在节点列表和其他地图上。";
+
+/* Short title of the action card in a map node sheet that hides the node from the Map tab */
+"map.detail.action.hide" = "隐藏";
+
+/* GPS tab: title of the current position readout */
+"map.gps.segment.position" = "位置";
+
+/* GPS map: button back to the GPS tab's readings (the position, the devices' fixes and the sun) */
+"map.gps.segment.data" = "数据";
+
+/* GPS tab: tile title for current ground speed */
+"map.gps.speed" = "速度";
+
+
+/* GPS tab: tile title for the time of the last position fix */
+"map.gps.fix" = "定位";
+
+/* GPS tab: compass card title for the direction the device faces */
+"map.gps.heading" = "航向";
+
+/* GPS tab: compass card when the device has no compass reading */
+"map.gps.noHeading" = "无航向";
+
+/* GPS tab: VoiceOver value of the compass. %1$d is degrees, %2$@ is a direction name such as northeast */
+"map.gps.heading.accessibilityValue" = "%2$@，%1$d 度";
+
+/* GPS tab: caption beside the fix time when the fix is under a minute old */
+"map.gps.fixAge.now" = "刚刚";
+
+/* GPS tab: caption beside the fix time. %@ is a short duration such as 3m */
+"map.gps.fixAge.ago" = "%@前";
+
+/* GPS tab: status pill while waiting for the first phone fix */
+"map.gps.status.searching" = "正在搜索…";
+
+/* GPS tab: button that asks for location permission */
+"map.gps.allow" = "允许定位";
+
+/* GPS tab: explanation when location permission is denied */
+"map.gps.denied.message" = "在“设置”中为 Cairn 打开定位即可查看你的位置。";
+
+/* Compass point abbreviation (north), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.n" = "北";
+
+/* Compass point full name (north) for VoiceOver */
+"map.gps.cardinalName.n" = "北";
+
+/* Compass point abbreviation (northeast), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.ne" = "东北";
+
+/* Compass point full name (northeast) for VoiceOver */
+"map.gps.cardinalName.ne" = "东北";
+
+/* Compass point abbreviation (east), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.e" = "东";
+
+/* Compass point full name (east) for VoiceOver */
+"map.gps.cardinalName.e" = "东";
+
+/* Compass point abbreviation (southeast), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.se" = "东南";
+
+/* Compass point full name (southeast) for VoiceOver */
+"map.gps.cardinalName.se" = "东南";
+
+/* Compass point abbreviation (south), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.s" = "南";
+
+/* Compass point full name (south) for VoiceOver */
+"map.gps.cardinalName.s" = "南";
+
+/* Compass point abbreviation (southwest), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.sw" = "西南";
+
+/* Compass point full name (southwest) for VoiceOver */
+"map.gps.cardinalName.sw" = "西南";
+
+/* Compass point abbreviation (west), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.w" = "西";
+
+/* Compass point full name (west) for VoiceOver */
+"map.gps.cardinalName.w" = "西";
+
+/* Compass point abbreviation (northwest), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.nw" = "西北";
+
+/* Compass point full name (northwest) for VoiceOver */
+"map.gps.cardinalName.nw" = "西北";
+
+/* GPS tab: header of the section showing the phone's own live location */
+"map.gps.phoneSection.header" = "手机 GPS";
+
+/* GPS tab: status pill when the connected radio has no GPS receiver */
+"map.gps.pill.noReceiver" = "无 GPS 接收器";
+
+/* GPS tab: radio section text when no radio is connected */
+"map.gps.notConnected" = "连接电台以查看其 GPS。";
+
+/* GPS tab: title of the card for the connected radio's GNSS */
+"map.gps.dash.radio" = "电台";
+
+/* GPS tab: title of the card for this phone's own location */
+"map.gps.dash.phone" = "手机";
+
+/* GPS tab: status badge when the app may not use the phone's location */
+"map.gps.status.notAllowed" = "未允许";
+
+/* GPS tab: status badge while the app is reading the radio's GPS state */
+"map.gps.status.checking" = "正在检查…";
+
+/* GPS tab: title of the phone's horizontal accuracy reading */
+"map.gps.accuracy" = "精度";
+
+/* GPS tab: grade of a location accuracy of a few metres */
+"map.gps.accuracy.excellent" = "极好";
+
+/* GPS tab: grade of a location accuracy within about 15 metres */
+"map.gps.accuracy.good" = "良好";
+
+/* GPS tab: grade of a location accuracy within about 50 metres */
+"map.gps.accuracy.fair" = "一般";
+
+/* GPS tab: grade of a location accuracy worse than about 50 metres */
+"map.gps.accuracy.poor" = "较差";
+
+/* GPS tab: the app only has approximate (not precise) location */
+"map.gps.accuracy.approximate" = "大致";
+
+/* GPS tab: title of the direction the phone is moving (course over ground) */
+"map.gps.course" = "航向";
+
+/* GPS tab: title of the control for which position the radio's adverts carry */
+"map.gps.advert.title" = "广播";
+
+/* GPS tab: advert location option, adverts carry no position */
+"map.gps.advert.none" = "不共享";
+
+/* GPS tab: advert location option, adverts carry the radio's saved position */
+"map.gps.advert.saved" = "已保存的位置";
+
+/* GPS tab: advert location option, adverts carry the radio's live GPS position */
+"map.gps.advert.live" = "实时 GPS";
+
+/* GPS tab: under the radio's coordinates when they follow its GPS fix */
+"map.gps.source.liveCaption" = "来自电台 GPS";
+
+/* GPS tab: under the radio's coordinates when this phone updates them as you send an advert */
+"map.gps.source.phoneCaption" = "发送广播时来自此手机";
+
+/* GPS tab: under the radio's coordinates when they are its saved (manual) position */
+"map.gps.source.savedCaption" = "已保存的位置";
+
+/* GPS tab: button that opens the map picker to set the radio's position by hand */
+"map.gps.control.setManually" = "手动设置位置…";
+
+/* GPS tab: note under the Use for Radio Position toggle */
+"map.gps.control.usePhone.footer" = "每次广播前将此手机的位置发送到电台。";
+
+/* GPS tab: note under the Use for Radio Position toggle while the radio's GPS is on */
+"map.gps.control.usePhone.receiverNote" = "开启后会关闭电台的 GPS，避免两者冲突。";
+
+/* GPS tab: row showing whether the app has precise location */
+"map.gps.precise.title" = "精确位置";
+
+/* GPS tab: note when the app only has approximate location */
+"map.gps.precise.message" = "Cairn 只能获得大致位置。请在“设置”中打开“精确位置”以获取 GPS 定位。";
+
+/* GPS tab: the radio and the phone are at the same place */
+"map.gps.relation.together" = "电台就在你身边";
+
+/* GPS tab: the position in the radio's adverts matches its live GPS fix */
+"map.gps.relation.advertMatches" = "广播位置与电台定位一致";
+
+/* GPS tab: how far the position in the radio's adverts is from its live GPS fix. %@ is a distance */
+"map.gps.relation.advertOffset" = "广播位置距电台定位 %@";
+
+/* GPS tab: the radio's adverts carry no position */
+"map.gps.relation.advertNone" = "广播不包含位置";
+
+/* VoiceOver hint: the GPS tab's map preview opens the Map view */
+"map.gps.mapPreview.hint" = "在地图上显示两个位置";
+
+/* VoiceOver hint: tapping a coordinate readout copies it */
+"map.gps.copyHint" = "复制坐标";
+
+/* GPS tab: VoiceOver label of a device's coordinate readout */
+"map.gps.coordinates" = "坐标";
+
+/* GPS tab: under the phone's coordinates when the fix comes from an external GPS accessory */
+"map.gps.source.accessory" = "来自 GPS 配件";
+
+/* GPS tab compass: line under the heading with the direction of travel. %@ is a bearing such as 47° NE */
+"map.gps.compass.course" = "航向 %@";
+
+/* GPS tab map preview: how many mesh nodes with a known location are shown near the radio. %d is a count */
+"map.gps.mapPreview.nodeCount" = "附近节点：%d";
+
+/* GPS tab: title of the sheet with the GPS and location settings */
+"map.gps.settingsSheet.title" = "GPS 与位置";
+
+/* GPS tab settings summary: the radio's GPS receiver state. %@ is On or Off */
+"map.gps.summary.receiver" = "接收器 %@";
+
+/* GPS tab settings summary: which position the radio's adverts carry. %@ is e.g. Saved Position */
+"map.gps.summary.advert" = "广播：%@";
+
+/* GPS tab settings summary: whether the phone keeps the radio's position current. %@ is On or Off */
+"map.gps.summary.phoneToRadio" = "手机 → 电台 %@";
+
+/* GPS tab: short tile title, the radio's altitude from its GPS fix */
+"map.gps.reading.radioAltitude" = "电台海拔";
+
+/* GPS tab: short tile title, the phone's altitude */
+"map.gps.reading.phoneAltitude" = "手机海拔";
+
+/* GPS tab: short tile title, when the app last read the radio's GPS */
+"map.gps.reading.radioUpdated" = "电台更新";
+
+/* GPS tab: VoiceOver label of a device card's corner time, how old its reading is */
+"map.gps.reading.updated" = "更新";
+
+/* GPS tab: short tile title, how old the phone's location fix is */
+"map.gps.reading.phoneUpdated" = "手机更新";
+
+/* GPS tab: tile title, the next sunrise where the devices are */
+"map.gps.reading.sunrise" = "日出";
+
+/* GPS tab: tile title, the next sunset where the devices are */
+"map.gps.reading.sunset" = "日落";
+
+/* GPS tab: caption under the next sunrise or sunset, how long until it. %@ is a short duration such as 2h 10m */
+"map.gps.reading.inTime" = "%@后";
+
+/* GPS tab: tile title, distance from the phone to the radio */
+"map.gps.reading.distance" = "电台距离";
+
+/* GPS tab, the radio's row: how far the radio is from the phone (a reading's small label over "1.2 mi NW") */
+"map.gps.reading.fromPhone" = "距手机";
+
+/* Map tab Position page: column title for the closest mesh node with a position on the map */
+"map.gps.reading.nearestNode" = "最近";
+
+/* Map tab Position page: column title for how many mapped mesh nodes are close by */
+"map.gps.reading.nodesNearby" = "附近";
+
+/* Map tab Position page: caption under the nearby node count; %@ is a distance such as 10 km */
+"map.gps.reading.withinDistance" = "%@ 以内";
+
+/* Map tab Position page: Nearest column value when no mesh node has a position on the map */
+"map.gps.reading.noNodesMapped" = "地图上没有";
+
+/* GPS map: VoiceOver value of the location button when the map is not following the user */
+"map.controls.tracking.off" = "未跟随";
+
+/* GPS map: VoiceOver value of the location button when the map follows the user's position */
+"map.controls.tracking.follow" = "正在跟随";
+
+/* GPS map: VoiceOver value of the location button when the map follows the user and turns with the phone's heading */
+"map.controls.tracking.heading" = "正在跟随并显示朝向";
+
+/* GPS map: VoiceOver label of the compass button shown while the map is rotated or tilted */
+"map.nav.compass" = "指南针";
+
+/* GPS map: VoiceOver hint of the compass button */
+"map.nav.compass.hint" = "将地图恢复为北方朝上";
+
+/* Scan & Traffic map: VoiceOver hint of the compass button, which cycles the map's three orientation modes */
+"map.nav.compass.cycleHint" = "在北方朝上、朝向朝上和锁定北方之间切换";
+
+/* GPS map: VoiceOver value of the compass button. %@ is a direction such as 47 degrees, northeast */
+"map.nav.compass.value" = "地图朝向 %@";
+
+/* GPS map: added to the compass's VoiceOver value when the map is tilted in 3D */
+"map.nav.compass.tilted" = "已倾斜";
+
+/* GPS map: VoiceOver label of the navigation readout (heading, speed, altitude, distance to a selected pin) */
+"map.nav.title" = "导航";
+
+/* GPS map navigation readout: label for the phone's altitude */
+"map.nav.altitude" = "海拔";
+
+/* GPS map navigation readout: VoiceOver label for the distance to the selected pin */
+"map.nav.distance" = "距离";
+
+/* GPS map navigation readout: VoiceOver label for the compass bearing to the selected pin */
+"map.nav.bearing" = "方位";
+
+/* GPS map navigation readout: VoiceOver direction of the selected pin relative to where the phone faces, as a clock position (12 is straight ahead). %d is 1 to 12 */
+"map.nav.clockPosition" = "%d 点钟方向";
+
+/* GPS map navigation readout: button that stops measuring to the selected pin */
+"map.nav.clearTarget" = "清除目标";
+
+/* GPS map navigation readout: button that opens the Line of Sight tool from your position to the selected pin */
+"map.nav.checkLineOfSight" = "检查视距";
+
+/* GPS map navigation readout: button that expands the readout */
+"map.nav.showDetails" = "显示详细信息";
+
+/* GPS map navigation readout: button that collapses the readout to one line */
+"map.nav.hideDetails" = "隐藏详细信息";
+
+/* Accessibility label of the GPS map's location button, which cycles location tracking (off, follow, follow with heading); the current mode is read as its value. Matches Apple Maps' 'Tracking' control. */
+"map.controls.tracking.label" = "跟踪";
+
+/* Location: SNRLegendChip.swift - Title of the popover explaining what the SNR line colors on a map mean */
+"map.snrLegend.title" = "链路信号 (SNR)";
+
+/* Location: SNRLegendChip.swift - VoiceOver label for the dB chip that opens the SNR line color key */
+"map.snrLegend.accessibilityLabel" = "信号颜色图例";
+
+
+/* Title of the full-screen compass */
+"map.gps.compass.title" = "指南针";
+
+/* VoiceOver hint on the GPS page's compass card */
+"map.gps.compass.openHint" = "打开完整指南针";
+
+/* Full compass: label over the heading against magnetic north */
+"map.gps.compass.magnetic" = "磁北";
+
+/* Full compass: label over the difference between true and magnetic north */
+"map.gps.compass.declination" = "磁偏角";
+
+/* Full compass: title of the sun panel */
+"map.gps.compass.sun" = "太阳";
+
+/* Full compass: label over how high the sun is */
+"map.gps.compass.elevation" = "高度";
+
+/* Full compass: the sun has set */
+"map.gps.compass.belowHorizon" = "在地平线以下";
+
+/* Full compass: header over the list of nodes with a position */
+"map.gps.compass.nearbyNodes" = "附近节点";
+
+/* Full compass: shown when no saved node has a position */
+"map.gps.compass.noNodes" = "有位置的节点会显示在这里，并指示你该朝哪个方向转。轻点一个节点即可朝它前进。";
+
+/* Full compass: button that locks the current heading as a bearing to steer by */
+"map.gps.compass.lock" = "锁定方位";
+
+/* Full compass: button that clears the locked bearing */
+"map.gps.compass.clear" = "清除方位";
+
+/* Full compass: which way to turn for the locked bearing. %@ is degrees, e.g. 12° */
+"map.gps.compass.turnLeft" = "向左转 %@";
+
+/* Full compass: which way to turn for the locked bearing. %@ is degrees, e.g. 12° */
+"map.gps.compass.turnRight" = "向右转 %@";
+
+/* Full compass: facing the locked bearing */
+"map.gps.compass.onTarget" = "方位已对准";
+
+/* Full compass: shown when the compass reading is inaccurate */
+"map.gps.compass.calibrate" = "指南针精度较低。请将手机做 8 字形移动以进行校准。";
+
+/* Full compass: label over a node's direction from you, e.g. 38° NE */
+"map.gps.compass.bearing" = "方位";
+
+/* Full compass: label over how a node is reached (Direct, Flood, 2 hops) */
+"map.gps.compass.route" = "路由";
+
+/* Full compass: switch on a selected node's card that steers the compass to it */
+"map.gps.compass.steer" = "引导至节点";
+
+/* Full compass: time until sunset. %@ is a duration, e.g. 3h 12m */
+"map.gps.compass.daylightLeft" = "日照剩余 %@";
+
+/* Full compass: toolbar button that shows the nodes on the dial */
+"map.gps.compass.showNodes" = "在指南针上显示节点";
+
+/* Title of the full compass's settings sheet */
+"map.gps.compass.settingsTitle" = "指南针设置";
+
+/* Compass settings: the dial's orientation picker */
+"map.gps.compass.dial" = "表盘";
+
+/* Compass settings: the dial turns so the way you face is at the top */
+"map.gps.compass.headingUp" = "航向朝上";
+
+/* Compass settings: the dial stays with north at the top and the pointer turns */
+"map.gps.compass.northUp" = "北向朝上";
+
+/* Compass settings: true or magnetic north picker */
+"map.gps.compass.north" = "北向";
+
+/* Compass settings: headings against true (geographic) north */
+"map.gps.compass.trueNorth" = "真北";
+
+/* Compass settings: headings against magnetic north */
+"map.gps.compass.magneticNorth" = "磁北";
+
+/* Compass settings: explains true and magnetic north */
+"map.gps.compass.northInfo" = "手机获得 GPS 定位后，真北会校正磁偏角。磁北是登山指南针所指的方向。";
+
+/* Compass settings: show the sun's direction on the dial */
+"map.gps.compass.showSun" = "显示太阳";
+
+/* Compass settings: show the direction of travel on the dial */
+"map.gps.compass.showCourse" = "显示航向";
+
+/* Compass settings: how many of the nearest nodes the compass shows */
+"map.gps.compass.nodesShown" = "显示节点数";
+
+/* Compass settings: section header for haptics and screen */
+"map.gps.compass.general" = "通用";
+
+/* Compass settings: haptic tick switch */
+"map.gps.compass.haptics" = "触感反馈";
+
+/* Compass settings: what the haptic switch does */
+"map.gps.compass.hapticsSubtitle" = "经过北、东、南、西时轻触提示";
+
+/* Compass settings: keep the screen from locking */
+"map.gps.compass.keepScreenOn" = "保持屏幕常亮";
+
+/* Compass settings: when the screen is kept on */
+"map.gps.compass.keepScreenOnSubtitle" = "在指南针打开期间";
+
+
+/* Location: HideFromMapConfirmation.swift - Purpose: Title of the dialog asking before a node is hidden from the Map tab; %@ is the node's name */
+"map.hiddenNodes.confirm.title" = "要从地图中隐藏 %@ 吗？";
+
+/* Location: HideFromMapConfirmation.swift - Purpose: Message of the hide confirmation, saying the node is only left off the Map tab and where to show it again */
+"map.hiddenNodes.confirm.message" = "它仍会保留在你的节点列表和其他地图上。可在 筛选 › 隐藏的节点 中重新显示。";
+
+/* Location: RadioCalloutContent.swift - Purpose: Line under the name in the callout for the user's own radio pin */
+"map.callout.thisRadio" = "此电台";
+
+/* Location: RadioCalloutContent.swift - Purpose: Menu button in the own radio's callout that sends this radio's advert */
+"map.callout.sendAdvert" = "发送广播";
+
+/* Location: RadioCalloutContent.swift - Purpose: When the app last read the radio's GPS; %@ is "now" or an age like "3m ago" */
+"map.callout.radio.updated" = "更新于 %@";
+
+/* Location: RadioCalloutContent.swift - Purpose: Accessibility label of the button that copies the radio's coordinates */
+"map.callout.copyCoordinates" = "拷贝坐标";
+
+/* Location: MapControlsToolbar.swift - Purpose: Button that draws live mesh traffic on the map */
+"map.controls.showTraffic" = "显示流量";
+
+/* Location: MapControlsToolbar.swift - Purpose: Button that stops drawing live mesh traffic on the map */
+"map.controls.hideTraffic" = "隐藏流量";
+
+/* Location: GNSSDetailsSheet.swift - One device's GPS in full, from its card on the Map tab */
+"map.gps.details.hint" = "显示 GPS 详细信息";
+"map.gps.details.position" = "位置";
+"map.gps.details.signal" = "信号";
+"map.gps.details.movement" = "移动";
+"map.gps.details.dms" = "度、分、秒";
+"map.gps.details.gridSquare" = "网格定位";
+"map.gps.details.fixYes" = "是";
+"map.gps.details.fixNo" = "否";
+"map.gps.details.satellites" = "卫星";
+"map.gps.details.inView" = "可见";
+"map.gps.details.hdop" = "HDOP";
+"map.gps.details.lastSignal" = "上次更新";
+"map.gps.details.altitudeAccuracy" = "高度精度";
+"map.gps.details.source" = "来源";
+"map.gps.details.simulated" = "模拟";
+
+// MARK: - Map workstream additions
+
+/* Location: MapCanvasView.swift - Purpose: Toast after the locate button when location is allowed but no fix has arrived yet */
+"map.locate.searching" = "正在搜索您的位置…";
+
+/* Location: MapCanvasView.swift - Purpose: Title of the card over the map when no node has a position */
+"map.empty.noNodes.title" = "还没有带位置的节点";
+
+/* Location: MapCanvasView.swift - Purpose: Explanation under the empty-map card */
+"map.empty.noNodes.message" = "节点在通告其位置后会显示在这里。发送通告或扫描可以促使它们这样做。";
+
+/* Location: MapCanvasView.swift - Purpose: Title of the card over the map when no radio is connected */
+"map.empty.noRadio.title" = "连接电台";
+
+/* Location: MapCanvasView.swift - Purpose: Explanation under the no-radio card */
+"map.empty.noRadio.message" = "地图显示您的电台已知的节点。";
+
+/* Location: MapCanvasView.swift - Purpose: Accessibility label of the button that closes the empty-map card */
+"map.empty.dismiss" = "关闭";
+
+/* Location: MapSearchSheet.swift - Purpose: Title of the map's node search */
+"map.search.title" = "在地图上查找";
+
+/* Location: MapSearchSheet.swift - Purpose: Search field placeholder */
+"map.search.prompt" = "节点名称或 ID";
+
+/* Location: MapSearchSheet.swift - Purpose: Shown when no located node matches the search */
+"map.search.empty" = "没有带位置的节点与之匹配。";
+
+/* Location: MapCanvasView.swift - Purpose: One-word caption under the map's search button */
+"map.controls.caption.search" = "搜索";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Accessibility label of a callout's overflow menu */
+"map.callout.more" = "更多";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Menu item that shares the node's coordinates */
+"map.callout.shareLocation" = "共享位置";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Menu item that opens the chat with the user's own coordinates inserted */
+"map.callout.sendMyLocation" = "发送我的位置";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Menu item that opens Apple's Look Around street imagery at the node */
+"map.callout.lookAround" = "四处看看";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Toast when Look Around has no imagery at the node */
+"map.callout.lookAround.unavailable" = "此处无法使用四处看看。";
+
+/* Location: OfflineBadge.swift - Purpose: Badge when offline and no downloaded map pack covers the visible area */
+"map.offlineBadge.noCoverage" = "离线 · 此区域无地图";
+
+/* Location: OfflineBadge.swift - Purpose: Accessibility value of the badge while a map pack is downloading; the argument is a percentage */
+"map.offlineBadge.downloading" = "正在下载地图，%@";
+
+/* Location: MapCanvasView.swift - Purpose: Map options menu item that downloads the visible area for offline use */
+"map.controls.downloadArea" = "下载此区域…";
+
+// MARK: - Trips (TripsView, TripDetailView, TripRecorder): the radio's recorded trips
+
+/* Location: TripsView.swift, the Map tab's hiking button - The radio's recorded trips */
+"map.trips.title" = "行程";
+
+/* Location: TripDetailView.swift - Readings */
+"map.trips.stat.distance" = "距离";
+"map.trips.stat.moving" = "移动";
+"map.trips.stat.climb" = "爬升";
+"map.trips.stat.descent" = "下降";
+"map.trips.stat.highest" = "最高";
+"map.trips.stat.steps" = "步数";
+"map.trips.stat.averageSpeedTitle" = "平均速度";
+"map.trips.stat.time" = "时长";
+
+/* Location: TripDetailView.swift - The elevation chart's title */
+"map.trips.chart.elevation" = "高度";
+
+/* Location: TripsView.swift - The steps chart's title */
+"map.trips.chart.steps" = "步数（近 14 天）";
+
+/* Location: TripsView.swift - Under the steps chart */
+"map.trips.chart.stepsFooter" = "来自您的 Cairn 电台计步器：每天读取到的最高计数。";
+
+/* Location: TripsView.swift - The steps chart before any radio reported steps */
+"map.trips.chart.noSteps" = "暂无步数。带计步器的 Cairn 电台（如 T-Display SF32）连接后会上报步数。";
+
+/* Location: TripsView.swift - The record button: starts and stops the radio's recording */
+"map.trips.record.start" = "记录行程";
+"map.trips.record.stop" = "停止记录";
+
+/* Location: TripsView.swift - While the radio records: when it started, like "Recording since 8:30 AM" */
+"map.trips.record.since" = "自 %@ 起记录中";
+
+/* Location: TripsView.swift - Under the record button */
+"map.trips.record.footer" = "电台用自己的 GPS 将行程记录在存储卡上，手机可以休眠或留在家里。可在此处或电台的行程页面开始和停止。";
+
+/* Location: TripsView.swift - The radio's state under the record button */
+"map.trips.radio.none" = "连接 Cairn 电台即可记录行程。";
+"map.trips.radio.unsupported" = "此电台无法记录行程。带存储卡槽的 Cairn 电台（如 Wio Tracker L2）可保存行程记录。";
+"map.trips.radio.fix" = "电台 GPS 已定位";
+"map.trips.radio.searching" = "电台 GPS 正在搜索";
+"map.trips.radio.gpsOff" = "电台 GPS 已关闭";
+"map.trips.radio.noCard" = "电台中没有存储卡";
+
+/* Location: TripsView.swift - Why the radio did not start recording */
+"map.trips.refused.gpsOff" = "请先打开电台的 GPS。";
+"map.trips.refused.noClock" = "电台时钟尚未设置。请稍后重试。";
+"map.trips.refused.noCard" = "请在电台中插入 microSD 卡以记录行程。";
+"map.trips.refused.busy" = "电台存储卡正忙。请几秒后重试。";
+"map.trips.refused.failed" = "电台无法写入存储卡。";
+
+/* Location: TripsView.swift - The list of recorded trips */
+"map.trips.logs.title" = "行程记录";
+"map.trips.logs.empty" = "还没有行程。轻点“记录行程”，或在电台的行程页面点按开始。";
+"map.trips.logs.footer" = "行程保存在电台的存储卡上。打开行程会将其复制到此 iPhone，以便离线查看。";
+"map.trips.logs.copyAll" = "全部复制到 iPhone";
+
+/* Location: TripsView.swift - A trip's badge; Copying: how much of it is on this iPhone */
+"map.trips.status.recording" = "记录中";
+"map.trips.status.copied" = "已在 iPhone 上";
+"map.trips.status.onRadio" = "在电台上";
+"map.trips.status.copying" = "正在复制 %d%%";
+"map.trips.status.phoneOnly" = "仅在 iPhone 上";
+
+/* Location: TripDetailView.swift - One trip */
+"map.trips.detail.notCopied" = "此行程在电台的存储卡上。连接电台即可将其复制到这里。";
+"map.trips.detail.copying" = "正在从电台复制…";
+"map.trips.detail.live" = "电台记录时实时更新";
+"map.trips.detail.noPoints" = "还没有轨迹点。轨迹从电台的首次 GPS 定位开始。";
+
+/* Location: TripDetailView.swift - Actions */
+"map.trips.export" = "导出 GPX";
+"map.trips.menu" = "行程";
+"map.trips.deletePhone" = "从 iPhone 删除";
+"map.trips.deleteRadio" = "从电台删除";
+
+/* Location: TripDetailView.swift - Delete confirmations */
+"map.trips.confirm.phoneTitle" = "要从 iPhone 删除此行程吗？";
+"map.trips.confirm.phoneMessage" = "将从此 iPhone 删除副本。电台上的仍会保留。";
+"map.trips.confirm.radioTitle" = "要从电台删除此行程吗？";
+"map.trips.confirm.radioMessage" = "将从电台存储卡删除记录。此 iPhone 上的副本会保留。";

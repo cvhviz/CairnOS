@@ -1,0 +1,40 @@
+/* Widget localization — Dutch */
+
+"Disconnected" = "Niet verbonden";
+"%lld packets per minute" = "%lld pakketten per minuut";
+"Battery %lld percent" = "Batterij %lld procent";
+
+/* Control Center button: opens the app */
+"Open Cairn" = "Cairn openen";
+
+/* Live Activity: banner and Dynamic Island readings */
+/* AI-translated - please verify with native speakers. */
+"Connected" = "Verbonden";
+"Direct" = "Direct";
+"No messages yet" = "Nog geen berichten";
+"RSSI" = "RSSI";
+"SNR" = "SNR";
+"Noise" = "Ruis";
+"Per min" = "Per min";
+"Nodes 1h" = "Nodes 1 u";
+"Battery %lld percent, %@" = "Batterij %lld procent, %@";
+"Position %@" = "Positie %@";
+"Message from %@ in %@: %@" = "Bericht van %@ in %@: %@";
+"Direct message from %@: %@" = "Direct bericht van %@: %@";
+"Last RSSI %lld dBm" = "Laatste RSSI %lld dBm";
+"Last SNR %@ dB" = "Laatste SNR %@ dB";
+"Noise floor %lld dBm" = "Ruisvloer %lld dBm";
+"Last RSSI %lld dBm, SNR %@ dB" = "Laatste RSSI %lld dBm, SNR %@ dB";
+"Last message from %@" = "Laatste bericht van %@";
+
+/* Home-screen widget (Radio Status) */
+/* AI-translated - please verify with native speakers. */
+"Radio Status" = "Radiostatus";
+"Your radio's link, battery and unread messages at a glance." = "De verbinding, batterij en ongelezen berichten van je radio in één oogopslag.";
+"Connecting…" = "Verbinden…";
+"No radio" = "Geen radio";
+"Open Cairn to connect" = "Open Cairn om te verbinden";
+"Last heard" = "Laatst gehoord";
+"Last heard %@" = "Laatst gehoord: %@";
+"Nothing heard yet" = "Nog niets gehoord";
+"Updated" = "Bijgewerkt";

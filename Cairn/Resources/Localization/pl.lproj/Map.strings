@@ -1,0 +1,850 @@
+/*
+  Map.strings
+  Cairn
+
+  Polish translation of strings for the Map feature.
+  AI-translated - please verify with native speakers.
+*/
+
+// MARK: - Common
+
+/* Location: MapView.swift - Purpose: Done button for sheets */
+"map.common.done" = "Gotowe";
+
+// MARK: - Map Controls
+
+/* Location: MapView.swift - Purpose: Accessibility label when labels are hidden */
+"map.controls.showLabels" = "Pokaż etykiety";
+
+/* Location: MapControlsToolbar.swift - Purpose: Map options menu toggle that clusters nearby pins */
+/* AI-translated - please verify with native speakers. */
+"map.controls.clusterNodes" = "Grupuj węzły";
+
+/* Location: MapView.swift - Purpose: Accessibility label for center on all contacts button */
+"map.controls.centerAll" = "Wyśrodkuj wszystkie kontakty";
+
+/* Location: MapCanvasView.swift - Accessibility label of the map's zoom in (plus) button shown on Mac */
+"map.controls.zoomIn" = "Powiększ";
+
+/* Location: MapCanvasView.swift - Accessibility label of the map's zoom out (minus) button shown on Mac */
+"map.controls.zoomOut" = "Pomniejsz";
+
+/* Location: MapControlsToolbar.swift - Purpose: Accessibility label for user location button */
+"map.controls.centerOnMyLocation" = "Wyśrodkuj na mojej lokalizacji";
+
+/* Location: MapControlsToolbar.swift - Purpose: Accessibility label for map options menu button */
+/* AI-translated - please verify with native speakers. */
+"map.controls.mapOptions" = "Opcje mapy";
+
+/* Location: MapControlsToolbar.swift - Purpose: Map options menu toggle that locks the map bearing to north */
+/* AI-translated - please verify with native speakers. */
+"map.controls.lockNorth" = "Północ u górze";
+
+/* Location: MapView.swift - Purpose: Accessibility label for refresh button */
+"map.controls.refresh" = "Odśwież kontakty";
+
+/* Location: MapControlsToolbar.swift - Purpose: Accessibility label for map filter control */
+"map.controls.filter" = "Filtr";
+
+/* Location: MapControlsToolbar.swift - Purpose: One short word under a map control button on the main and Traffic maps */
+"map.controls.caption.location" = "Lokalizuj";
+"map.controls.caption.advert" = "Ogłoś";
+"map.controls.caption.filter" = "Filtr";
+"map.controls.caption.traffic" = "Ruch";
+"map.controls.caption.quiet" = "Nieaktywne";
+"map.controls.caption.replay" = "Odtwórz";
+"map.controls.caption.all" = "Wszystko";
+"map.controls.caption.options" = "Opcje";
+
+/* Location: MapControlsToolbar.swift - Purpose: Accessibility value when filter differs from host defaults */
+"map.controls.filterActive" = "Filtry aktywne";
+
+// MARK: - Map Style Selection
+
+/* Location: MapStyleSelection.swift - Purpose: Standard map style option */
+"map.style.standard" = "Standardowa";
+
+/* Location: MapStyleSelection.swift - Purpose: Satellite map style option */
+"map.style.satellite" = "Satelitarna";
+
+/* Location: MapStyleSelection.swift - Purpose: Topo map style option */
+"map.style.topo" = "Topografia";
+
+/* Location: LayersMenu.swift - Purpose: Accessibility label for map style menu */
+"map.style.accessibilityLabel" = "Styl mapy";
+
+/* Location: LayersMenu.swift - Purpose: Hint when style requires network */
+"map.style.requiresNetwork" = "Wymaga połączenia z siecią";
+
+/* Location: LayersMenu.swift - Purpose: Hint when no offline pack covers viewport */
+"map.style.noOfflineCoverage" = "Żadna mapa offline nie obejmuje tego obszaru";
+
+// MARK: - Contact Detail Sheet
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Section header for contact information */
+"map.detail.section.contactInfo" = "Informacje o kontakcie";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for contact name */
+"map.detail.name" = "Nazwa";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for contact type */
+"map.detail.type" = "Typ";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for favorite status */
+"map.detail.status" = "Status";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Value showing contact is favorited */
+"map.detail.favorite" = "Ulubiony";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for last advertisement timestamp */
+"map.detail.lastAdvert" = "Ostatnie ogłoszenie";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Last heard (phone-clock on-air) label */
+"map.detail.lastHeard" = "Ostatnio usłyszany";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for full public key identifier */
+"map.detail.publicKey" = "Klucz publiczny";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Section header for location coordinates */
+"map.detail.section.location" = "Lokalizacja";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for latitude coordinate */
+"map.detail.latitude" = "Szerokość geograficzna";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for longitude coordinate */
+"map.detail.longitude" = "Długość geograficzna";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Section header for outbound path info */
+"map.detail.section.outboundPath" = "Ścieżka wychodząca";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for routing type */
+"map.detail.routing" = "Trasowanie";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Flood routing type value */
+"map.detail.routingFlood" = "Rozproszony";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for path length */
+"map.detail.pathLength" = "Długość ścieżki";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Path length value with hop count */
+"map.detail.hops" = "%d skoków";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Path length value for single hop */
+"map.detail.hopSingular" = "1 skok";
+
+// MARK: - Contact Detail Sheet Actions
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Button to view repeater telemetry */
+"map.detail.action.telemetry" = "Telemetria";
+
+/* Location: MapView.swift - Purpose: Saved History button for offline telemetry */
+/* Location: MapView.swift ContactDetailSheet - Purpose: Sheet title for telemetry authentication */
+"map.detail.action.telemetryAccessTitle" = "Dostęp do telemetrii";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Button to manage repeater */
+"map.detail.action.management" = "Zarządzanie";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Button to join a room */
+"map.detail.action.joinRoom" = "Dołącz do pokoju";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Button to send a message */
+"map.detail.action.sendMessage" = "Wyślij wiadomość";
+
+// MARK: - Contact Type Names
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Display name for chat contact type */
+"map.nodeKind.chatContact" = "Kontakt czatu";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Display name for repeater type */
+"map.nodeKind.repeater" = "Przekaźnik";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Display name for room type */
+"map.nodeKind.room" = "Pokój";
+
+// MARK: - Contact Callout
+
+/* Location: ContactCalloutContent.swift - Purpose: Button to view contact details */
+"map.callout.details" = "Szczegóły";
+
+/* Location: ContactCalloutContent.swift - Purpose: Button to send message from callout */
+"map.callout.message" = "Wiadomość";
+
+/* Location: ContactCalloutContent.swift - Purpose: Display name for contact in callout */
+"map.callout.nodeKind.contact" = "Kontakt";
+
+/* Location: ContactCalloutContent.swift - Purpose: Display name for repeater in callout */
+"map.callout.nodeKind.repeater" = "Przekaźnik";
+
+/* Location: ContactCalloutContent.swift - Purpose: Display name for room in callout */
+"map.callout.nodeKind.room" = "Pokój";
+
+
+/* Location: DiscoveredNodeCalloutContent.swift - Purpose: Add discovered node from callout */
+"map.callout.add" = "Dodaj";
+
+/* Location: DiscoveredNodeCalloutContent.swift - Purpose: Label that the pin is discovered, not on the node list */
+"map.callout.discovered" = "Odkryty";
+
+/* Location: DiscoveredNodeDetailSheet.swift - Purpose: Navigation title for discovered node detail */
+"map.discoveredDetail.title" = "Odkryty węzeł";
+
+/* Location: DiscoveredNodeDetailSheet.swift - Purpose: Primary action to add discovered node to the radio table */
+"map.discoveredDetail.add" = "Dodaj do węzłów";
+
+/* Location: DiscoveredNodeCalloutContent.swift - Purpose: Accessibility label for discovered pins */
+"map.pin.accessibility.discovered" = "Odkryty, nie na liście węzłów";
+
+// MARK: - Contact Annotation
+
+/* Location: ContactAnnotation.swift - Purpose: Subtitle for favorite contacts */
+/* Location: ContactAnnotation.swift - Purpose: Subtitle for repeater nodes */
+/* Location: ContactAnnotation.swift - Purpose: Subtitle for room nodes */
+// MARK: - Offline Badge
+
+/* Label shown on map when device has no internet connection */
+"map.offlineBadge.label" = "Offline";
+
+// MARK: - Chat Map Preview
+
+/* Location: MapPreviewFragmentView.swift - Purpose: Accessibility label for the chat map-location thumbnail */
+"map.preview.accessibilityLabel" = "Podgląd lokalizacji na mapie";
+
+/* Location: MapPreviewFragmentView.swift - Purpose: Accessibility hint for tapping the chat map-location thumbnail */
+"map.preview.accessibilityHint" = "Otwiera tę lokalizację na mapie";
+
+/* Location: MapPreviewFragmentView.swift - Purpose: Accessibility label for the retry control shown on the failed-thumbnail fallback */
+"map.preview.retryButton.accessibilityLabel" = "Ponów ładowanie miniatury mapy";
+
+
+/* Location: MapControlsToolbar.swift - Purpose: Map filter picker: how recently a discovered node must have been heard */
+"map.filter.heardWithin" = "Słyszane w ciągu";
+
+/* Location: MapControlsToolbar.swift - Purpose: Recency option */
+"map.filter.recency.day" = "24 godzin";
+
+/* Location: MapControlsToolbar.swift - Purpose: Recency option (default) */
+"map.filter.recency.week" = "7 dni";
+
+/* Location: MapControlsToolbar.swift - Purpose: Recency option */
+"map.filter.recency.month" = "30 dni";
+
+/* Location: MapControlsToolbar.swift - Purpose: Recency option: no limit */
+"map.filter.recency.all" = "Zawsze";
+
+/* Location: ContactCalloutContent.swift, DiscoveredNodeCalloutContent.swift, ContactDetailSheet.swift, DiscoveredNodeDetailSheet.swift - Purpose: Button that hides a node from the Map tab */
+"map.hiddenNodes.hide" = "Ukryj na mapie";
+
+/* Location: HiddenMapNodesSheet.swift - Purpose: Navigation title for the list of nodes hidden from the Map tab */
+"map.hiddenNodes.title" = "Ukryte węzły";
+
+/* Location: MapControlsToolbar.swift - Purpose: Map filter menu entry that opens the hidden nodes list; %d is how many nodes are hidden */
+"map.filter.hiddenNodes" = "Ukryte węzły (%d)";
+
+/* Location: HiddenMapNodesSheet.swift - Purpose: Button that puts a hidden node back on the Map tab */
+"map.hiddenNodes.show" = "Pokaż na mapie";
+
+/* Location: HiddenMapNodesSheet.swift - Purpose: Button that puts every hidden node back on the Map tab */
+"map.hiddenNodes.showAll" = "Pokaż wszystkie";
+
+/* Location: HiddenMapNodesSheet.swift - Purpose: Footer explaining that hiding only affects the Map tab */
+"map.hiddenNodes.footer" = "Ukryte węzły są pomijane tylko na karcie Mapa. Pozostają na liście węzłów i na innych mapach.";
+
+/* Short title of the action card in a map node sheet that hides the node from the Map tab */
+"map.detail.action.hide" = "Ukryj";
+
+/* GPS tab: title of the current position readout */
+"map.gps.segment.position" = "Pozycja";
+
+/* GPS map: button back to the GPS tab's readings (the position, the devices' fixes and the sun) */
+"map.gps.segment.data" = "Dane";
+
+/* GPS tab: tile title for current ground speed */
+"map.gps.speed" = "Prędkość";
+
+
+/* GPS tab: tile title for the time of the last position fix */
+"map.gps.fix" = "Fix";
+
+/* GPS tab: compass card title for the direction the device faces */
+"map.gps.heading" = "Kierunek";
+
+/* GPS tab: compass card when the device has no compass reading */
+"map.gps.noHeading" = "Brak kierunku";
+
+/* GPS tab: VoiceOver value of the compass. %1$d is degrees, %2$@ is a direction name such as northeast */
+"map.gps.heading.accessibilityValue" = "%1$d stopni, %2$@";
+
+/* GPS tab: caption beside the fix time when the fix is under a minute old */
+"map.gps.fixAge.now" = "teraz";
+
+/* GPS tab: caption beside the fix time. %@ is a short duration such as 3m */
+"map.gps.fixAge.ago" = "%@ temu";
+
+/* GPS tab: status pill while waiting for the first phone fix */
+"map.gps.status.searching" = "Wyszukiwanie…";
+
+/* GPS tab: button that asks for location permission */
+"map.gps.allow" = "Zezwól na lokalizację";
+
+/* GPS tab: explanation when location permission is denied */
+"map.gps.denied.message" = "Włącz lokalizację dla Cairn w Ustawieniach, aby zobaczyć, gdzie jesteś.";
+
+/* Compass point abbreviation (north), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.n" = "N";
+
+/* Compass point full name (north) for VoiceOver */
+"map.gps.cardinalName.n" = "północ";
+
+/* Compass point abbreviation (northeast), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.ne" = "NE";
+
+/* Compass point full name (northeast) for VoiceOver */
+"map.gps.cardinalName.ne" = "północny wschód";
+
+/* Compass point abbreviation (east), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.e" = "E";
+
+/* Compass point full name (east) for VoiceOver */
+"map.gps.cardinalName.e" = "wschód";
+
+/* Compass point abbreviation (southeast), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.se" = "SE";
+
+/* Compass point full name (southeast) for VoiceOver */
+"map.gps.cardinalName.se" = "południowy wschód";
+
+/* Compass point abbreviation (south), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.s" = "S";
+
+/* Compass point full name (south) for VoiceOver */
+"map.gps.cardinalName.s" = "południe";
+
+/* Compass point abbreviation (southwest), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.sw" = "SW";
+
+/* Compass point full name (southwest) for VoiceOver */
+"map.gps.cardinalName.sw" = "południowy zachód";
+
+/* Compass point abbreviation (west), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.w" = "W";
+
+/* Compass point full name (west) for VoiceOver */
+"map.gps.cardinalName.w" = "zachód";
+
+/* Compass point abbreviation (northwest), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.nw" = "NW";
+
+/* Compass point full name (northwest) for VoiceOver */
+"map.gps.cardinalName.nw" = "północny zachód";
+
+/* GPS tab: header of the section showing the phone's own live location */
+"map.gps.phoneSection.header" = "GPS telefonu";
+
+/* GPS tab: status pill when the connected radio has no GPS receiver */
+"map.gps.pill.noReceiver" = "Brak odbiornika GPS";
+
+/* GPS tab: radio section text when no radio is connected */
+"map.gps.notConnected" = "Połącz radio, aby zobaczyć jego GPS.";
+
+/* GPS tab: title of the card for the connected radio's GNSS */
+"map.gps.dash.radio" = "Radio";
+
+/* GPS tab: title of the card for this phone's own location */
+"map.gps.dash.phone" = "Telefon";
+
+/* GPS tab: status badge when the app may not use the phone's location */
+"map.gps.status.notAllowed" = "Brak zgody";
+
+/* GPS tab: status badge while the app is reading the radio's GPS state */
+"map.gps.status.checking" = "Sprawdzanie…";
+
+/* GPS tab: title of the phone's horizontal accuracy reading */
+"map.gps.accuracy" = "Dokładność";
+
+/* GPS tab: grade of a location accuracy of a few metres */
+"map.gps.accuracy.excellent" = "Doskonała";
+
+/* GPS tab: grade of a location accuracy within about 15 metres */
+"map.gps.accuracy.good" = "Dobra";
+
+/* GPS tab: grade of a location accuracy within about 50 metres */
+"map.gps.accuracy.fair" = "Średnia";
+
+/* GPS tab: grade of a location accuracy worse than about 50 metres */
+"map.gps.accuracy.poor" = "Słaba";
+
+/* GPS tab: the app only has approximate (not precise) location */
+"map.gps.accuracy.approximate" = "Przybliżona";
+
+/* GPS tab: title of the direction the phone is moving (course over ground) */
+"map.gps.course" = "Kurs";
+
+/* GPS tab: title of the control for which position the radio's adverts carry */
+"map.gps.advert.title" = "Ogłoszenie";
+
+/* GPS tab: advert location option, adverts carry no position */
+"map.gps.advert.none" = "Nieudostępniana";
+
+/* GPS tab: advert location option, adverts carry the radio's saved position */
+"map.gps.advert.saved" = "Zapisana pozycja";
+
+/* GPS tab: advert location option, adverts carry the radio's live GPS position */
+"map.gps.advert.live" = "GPS na żywo";
+
+/* GPS tab: under the radio's coordinates when they follow its GPS fix */
+"map.gps.source.liveCaption" = "Z GPS radia";
+
+/* GPS tab: under the radio's coordinates when this phone updates them as you send an advert */
+"map.gps.source.phoneCaption" = "Z tego telefonu, gdy wysyłasz ogłoszenie";
+
+/* GPS tab: under the radio's coordinates when they are its saved (manual) position */
+"map.gps.source.savedCaption" = "Zapisana pozycja";
+
+/* GPS tab: button that opens the map picker to set the radio's position by hand */
+"map.gps.control.setManually" = "Ustaw lokalizację ręcznie…";
+
+/* GPS tab: note under the Use for Radio Position toggle */
+"map.gps.control.usePhone.footer" = "Wysyła pozycję tego telefonu do radia przed każdym ogłoszeniem.";
+
+/* GPS tab: note under the Use for Radio Position toggle while the radio's GPS is on */
+"map.gps.control.usePhone.receiverNote" = "Włączenie wyłącza GPS radia, aby oba źródła sobie nie przeszkadzały.";
+
+/* GPS tab: row showing whether the app has precise location */
+"map.gps.precise.title" = "Dokładna lokalizacja";
+
+/* GPS tab: note when the app only has approximate location */
+"map.gps.precise.message" = "Cairn otrzymuje tylko przybliżoną pozycję. Włącz Dokładną lokalizację w Ustawieniach, aby uzyskać fix GPS.";
+
+/* GPS tab: the radio and the phone are at the same place */
+"map.gps.relation.together" = "Radio jest przy tobie";
+
+/* GPS tab: the position in the radio's adverts matches its live GPS fix */
+"map.gps.relation.advertMatches" = "Ogłoszenie zgadza się z fixem radia";
+
+/* GPS tab: how far the position in the radio's adverts is from its live GPS fix. %@ is a distance */
+"map.gps.relation.advertOffset" = "Ogłoszenie jest %@ od fixu radia";
+
+/* GPS tab: the radio's adverts carry no position */
+"map.gps.relation.advertNone" = "Ogłoszenia nie zawierają pozycji";
+
+/* VoiceOver hint: the GPS tab's map preview opens the Map view */
+"map.gps.mapPreview.hint" = "Pokazuje obie pozycje na mapie";
+
+/* VoiceOver hint: tapping a coordinate readout copies it */
+"map.gps.copyHint" = "Kopiuje współrzędne";
+
+/* GPS tab: VoiceOver label of a device's coordinate readout */
+"map.gps.coordinates" = "Współrzędne";
+
+/* GPS tab: under the phone's coordinates when the fix comes from an external GPS accessory */
+"map.gps.source.accessory" = "Z akcesorium GPS";
+
+/* GPS tab compass: line under the heading with the direction of travel. %@ is a bearing such as 47° NE */
+"map.gps.compass.course" = "Kurs %@";
+
+/* GPS tab map preview: how many mesh nodes with a known location are shown near the radio. %d is a count */
+"map.gps.mapPreview.nodeCount" = "Węzły w pobliżu: %d";
+
+/* GPS tab: title of the sheet with the GPS and location settings */
+"map.gps.settingsSheet.title" = "GPS i lokalizacja";
+
+/* GPS tab settings summary: the radio's GPS receiver state. %@ is On or Off */
+"map.gps.summary.receiver" = "Odbiornik %@";
+
+/* GPS tab settings summary: which position the radio's adverts carry. %@ is e.g. Saved Position */
+"map.gps.summary.advert" = "Ogłoszenie: %@";
+
+/* GPS tab settings summary: whether the phone keeps the radio's position current. %@ is On or Off */
+"map.gps.summary.phoneToRadio" = "Telefon → Radio %@";
+
+/* GPS tab: short tile title, the radio's altitude from its GPS fix */
+"map.gps.reading.radioAltitude" = "Wys. radia";
+
+/* GPS tab: short tile title, the phone's altitude */
+"map.gps.reading.phoneAltitude" = "Wys. telefonu";
+
+/* GPS tab: short tile title, when the app last read the radio's GPS */
+"map.gps.reading.radioUpdated" = "Radio zaktualizowane";
+
+/* GPS tab: VoiceOver label of a device card's corner time, how old its reading is */
+"map.gps.reading.updated" = "Zaktualizowano";
+
+/* GPS tab: short tile title, how old the phone's location fix is */
+"map.gps.reading.phoneUpdated" = "Telefon zaktualizowany";
+
+/* GPS tab: tile title, the next sunrise where the devices are */
+"map.gps.reading.sunrise" = "Wschód słońca";
+
+/* GPS tab: tile title, the next sunset where the devices are */
+"map.gps.reading.sunset" = "Zachód słońca";
+
+/* GPS tab: caption under the next sunrise or sunset, how long until it. %@ is a short duration such as 2h 10m */
+"map.gps.reading.inTime" = "za %@";
+
+/* GPS tab: tile title, distance from the phone to the radio */
+"map.gps.reading.distance" = "Odległość radia";
+
+/* GPS tab, the radio's row: how far the radio is from the phone (a reading's small label over "1.2 mi NW") */
+"map.gps.reading.fromPhone" = "Od telefonu";
+
+/* Map tab Position page: column title for the closest mesh node with a position on the map */
+"map.gps.reading.nearestNode" = "Najbliższy";
+
+/* Map tab Position page: column title for how many mapped mesh nodes are close by */
+"map.gps.reading.nodesNearby" = "W pobliżu";
+
+/* Map tab Position page: caption under the nearby node count; %@ is a distance such as 10 km */
+"map.gps.reading.withinDistance" = "w promieniu %@";
+
+/* Map tab Position page: Nearest column value when no mesh node has a position on the map */
+"map.gps.reading.noNodesMapped" = "Brak na mapie";
+
+/* GPS map: VoiceOver value of the location button when the map is not following the user */
+"map.controls.tracking.off" = "Nie śledzi";
+
+/* GPS map: VoiceOver value of the location button when the map follows the user's position */
+"map.controls.tracking.follow" = "Śledzi";
+
+/* GPS map: VoiceOver value of the location button when the map follows the user and turns with the phone's heading */
+"map.controls.tracking.heading" = "Śledzi z kierunkiem";
+
+/* GPS map: VoiceOver label of the compass button shown while the map is rotated or tilted */
+"map.nav.compass" = "Kompas";
+
+/* GPS map: VoiceOver hint of the compass button */
+"map.nav.compass.hint" = "Obraca mapę z powrotem na północ";
+
+/* Scan & Traffic map: VoiceOver hint of the compass button, which cycles the map's three orientation modes */
+"map.nav.compass.cycleHint" = "Przełącza między północą u góry, kierunkiem u góry i zablokowaną północą";
+
+/* GPS map: VoiceOver value of the compass button. %@ is a direction such as 47 degrees, northeast */
+"map.nav.compass.value" = "Mapa skierowana na %@";
+
+/* GPS map: added to the compass's VoiceOver value when the map is tilted in 3D */
+"map.nav.compass.tilted" = "Pochylona";
+
+/* GPS map: VoiceOver label of the navigation readout (heading, speed, altitude, distance to a selected pin) */
+"map.nav.title" = "Nawigacja";
+
+/* GPS map navigation readout: label for the phone's altitude */
+"map.nav.altitude" = "Wysokość";
+
+/* GPS map navigation readout: VoiceOver label for the distance to the selected pin */
+"map.nav.distance" = "Odległość";
+
+/* GPS map navigation readout: VoiceOver label for the compass bearing to the selected pin */
+"map.nav.bearing" = "Namiar";
+
+/* GPS map navigation readout: VoiceOver direction of the selected pin relative to where the phone faces, as a clock position (12 is straight ahead). %d is 1 to 12 */
+"map.nav.clockPosition" = "Na godzinie %d";
+
+/* GPS map navigation readout: button that stops measuring to the selected pin */
+"map.nav.clearTarget" = "Usuń cel";
+
+/* GPS map navigation readout: button that opens the Line of Sight tool from your position to the selected pin */
+"map.nav.checkLineOfSight" = "Sprawdź linię wzroku";
+
+/* GPS map navigation readout: button that expands the readout */
+"map.nav.showDetails" = "Pokaż szczegóły";
+
+/* GPS map navigation readout: button that collapses the readout to one line */
+"map.nav.hideDetails" = "Ukryj szczegóły";
+
+/* Accessibility label of the GPS map's location button, which cycles location tracking (off, follow, follow with heading); the current mode is read as its value. Matches Apple Maps' 'Tracking' control. */
+"map.controls.tracking.label" = "Śledzenie";
+
+/* Location: SNRLegendChip.swift - Title of the popover explaining what the SNR line colors on a map mean */
+"map.snrLegend.title" = "Sygnał łącza (SNR)";
+
+/* Location: SNRLegendChip.swift - VoiceOver label for the dB chip that opens the SNR line color key */
+"map.snrLegend.accessibilityLabel" = "Legenda kolorów sygnału";
+
+
+/* Title of the full-screen compass */
+"map.gps.compass.title" = "Kompas";
+
+/* VoiceOver hint on the GPS page's compass card */
+"map.gps.compass.openHint" = "Otwiera pełny kompas";
+
+/* Full compass: label over the heading against magnetic north */
+"map.gps.compass.magnetic" = "Magnetyczny";
+
+/* Full compass: label over the difference between true and magnetic north */
+"map.gps.compass.declination" = "Deklinacja";
+
+/* Full compass: title of the sun panel */
+"map.gps.compass.sun" = "Słońce";
+
+/* Full compass: label over how high the sun is */
+"map.gps.compass.elevation" = "Wysokość";
+
+/* Full compass: the sun has set */
+"map.gps.compass.belowHorizon" = "Pod horyzontem";
+
+/* Full compass: header over the list of nodes with a position */
+"map.gps.compass.nearbyNodes" = "Węzły w pobliżu";
+
+/* Full compass: shown when no saved node has a position */
+"map.gps.compass.noNodes" = "Tu pojawiają się węzły z pozycją wraz z kierunkiem, w którym trzeba się obrócić. Stuknij węzeł, aby do niego kierować.";
+
+/* Full compass: button that locks the current heading as a bearing to steer by */
+"map.gps.compass.lock" = "Zablokuj kurs";
+
+/* Full compass: button that clears the locked bearing */
+"map.gps.compass.clear" = "Wyczyść kurs";
+
+/* Full compass: which way to turn for the locked bearing. %@ is degrees, e.g. 12° */
+"map.gps.compass.turnLeft" = "Obróć się o %@ w lewo";
+
+/* Full compass: which way to turn for the locked bearing. %@ is degrees, e.g. 12° */
+"map.gps.compass.turnRight" = "Obróć się o %@ w prawo";
+
+/* Full compass: facing the locked bearing */
+"map.gps.compass.onTarget" = "Na kursie";
+
+/* Full compass: shown when the compass reading is inaccurate */
+"map.gps.compass.calibrate" = "Kompas jest niedokładny. Porusz telefonem, kreśląc ósemkę, aby go skalibrować.";
+
+/* Full compass: label over a node's direction from you, e.g. 38° NE */
+"map.gps.compass.bearing" = "Namiar";
+
+/* Full compass: label over how a node is reached (Direct, Flood, 2 hops) */
+"map.gps.compass.route" = "Trasa";
+
+/* Full compass: switch on a selected node's card that steers the compass to it */
+"map.gps.compass.steer" = "Kieruj do węzła";
+
+/* Full compass: time until sunset. %@ is a duration, e.g. 3h 12m */
+"map.gps.compass.daylightLeft" = "Zostało %@ światła dziennego";
+
+/* Full compass: toolbar button that shows the nodes on the dial */
+"map.gps.compass.showNodes" = "Pokaż węzły na kompasie";
+
+/* Title of the full compass's settings sheet */
+"map.gps.compass.settingsTitle" = "Ustawienia kompasu";
+
+/* Compass settings: the dial's orientation picker */
+"map.gps.compass.dial" = "Tarcza";
+
+/* Compass settings: the dial turns so the way you face is at the top */
+"map.gps.compass.headingUp" = "Kierunek u góry";
+
+/* Compass settings: the dial stays with north at the top and the pointer turns */
+"map.gps.compass.northUp" = "Północ u góry";
+
+/* Compass settings: true or magnetic north picker */
+"map.gps.compass.north" = "Północ";
+
+/* Compass settings: headings against true (geographic) north */
+"map.gps.compass.trueNorth" = "Północ geograficzna";
+
+/* Compass settings: headings against magnetic north */
+"map.gps.compass.magneticNorth" = "Północ magnetyczna";
+
+/* Compass settings: explains true and magnetic north */
+"map.gps.compass.northInfo" = "Północ geograficzna uwzględnia deklinację, gdy telefon ma pozycję GPS. Północ magnetyczną pokazuje kompas turystyczny.";
+
+/* Compass settings: show the sun's direction on the dial */
+"map.gps.compass.showSun" = "Pokaż słońce";
+
+/* Compass settings: show the direction of travel on the dial */
+"map.gps.compass.showCourse" = "Pokaż kurs";
+
+/* Compass settings: how many of the nearest nodes the compass shows */
+"map.gps.compass.nodesShown" = "Wyświetlane węzły";
+
+/* Compass settings: section header for haptics and screen */
+"map.gps.compass.general" = "Ogólne";
+
+/* Compass settings: haptic tick switch */
+"map.gps.compass.haptics" = "Haptyka";
+
+/* Compass settings: what the haptic switch does */
+"map.gps.compass.hapticsSubtitle" = "Stuknięcie przy N, E, S i W";
+
+/* Compass settings: keep the screen from locking */
+"map.gps.compass.keepScreenOn" = "Nie wygaszaj ekranu";
+
+/* Compass settings: when the screen is kept on */
+"map.gps.compass.keepScreenOnSubtitle" = "Gdy kompas jest otwarty";
+
+
+/* Location: HideFromMapConfirmation.swift - Purpose: Title of the dialog asking before a node is hidden from the Map tab; %@ is the node's name */
+"map.hiddenNodes.confirm.title" = "Ukryć %@ na mapie?";
+
+/* Location: HideFromMapConfirmation.swift - Purpose: Message of the hide confirmation, saying the node is only left off the Map tab and where to show it again */
+"map.hiddenNodes.confirm.message" = "Pozostanie na liście węzłów i na innych mapach. Możesz go znów pokazać w Filtr › Ukryte węzły.";
+
+/* Location: RadioCalloutContent.swift - Purpose: Line under the name in the callout for the user's own radio pin */
+"map.callout.thisRadio" = "To radio";
+
+/* Location: RadioCalloutContent.swift - Purpose: Menu button in the own radio's callout that sends this radio's advert */
+"map.callout.sendAdvert" = "Wyślij ogłoszenie";
+
+/* Location: RadioCalloutContent.swift - Purpose: When the app last read the radio's GPS; %@ is "now" or an age like "3m ago" */
+"map.callout.radio.updated" = "Zaktualizowano %@";
+
+/* Location: RadioCalloutContent.swift - Purpose: Accessibility label of the button that copies the radio's coordinates */
+"map.callout.copyCoordinates" = "Kopiuj współrzędne";
+
+/* Location: MapControlsToolbar.swift - Purpose: Button that draws live mesh traffic on the map */
+"map.controls.showTraffic" = "Pokaż ruch";
+
+/* Location: MapControlsToolbar.swift - Purpose: Button that stops drawing live mesh traffic on the map */
+"map.controls.hideTraffic" = "Ukryj ruch";
+
+/* Location: GNSSDetailsSheet.swift - One device's GPS in full, from its card on the Map tab */
+"map.gps.details.hint" = "Pokazuje szczegóły GPS";
+"map.gps.details.position" = "Pozycja";
+"map.gps.details.signal" = "Sygnał";
+"map.gps.details.movement" = "Ruch";
+"map.gps.details.dms" = "Stopnie, minuty, sekundy";
+"map.gps.details.gridSquare" = "Lokator";
+"map.gps.details.fixYes" = "Tak";
+"map.gps.details.fixNo" = "Nie";
+"map.gps.details.satellites" = "Satelity";
+"map.gps.details.inView" = "W zasięgu";
+"map.gps.details.hdop" = "HDOP";
+"map.gps.details.lastSignal" = "Ostatnia aktualizacja";
+"map.gps.details.altitudeAccuracy" = "Dokładność wysokości";
+"map.gps.details.source" = "Źródło";
+"map.gps.details.simulated" = "Symulowana";
+
+// MARK: - Map workstream additions
+
+/* Location: MapCanvasView.swift - Purpose: Toast after the locate button when location is allowed but no fix has arrived yet */
+"map.locate.searching" = "Szukanie Twojej pozycji…";
+
+/* Location: MapCanvasView.swift - Purpose: Title of the card over the map when no node has a position */
+"map.empty.noNodes.title" = "Brak węzłów z pozycją";
+
+/* Location: MapCanvasView.swift - Purpose: Explanation under the empty-map card */
+"map.empty.noNodes.message" = "Węzły pojawią się tutaj, gdy ogłoszą swoją pozycję. Może je do tego skłonić ogłoszenie lub skan.";
+
+/* Location: MapCanvasView.swift - Purpose: Title of the card over the map when no radio is connected */
+"map.empty.noRadio.title" = "Połącz radio";
+
+/* Location: MapCanvasView.swift - Purpose: Explanation under the no-radio card */
+"map.empty.noRadio.message" = "Mapa pokazuje węzły znane Twojemu radiu.";
+
+/* Location: MapCanvasView.swift - Purpose: Accessibility label of the button that closes the empty-map card */
+"map.empty.dismiss" = "Zamknij";
+
+/* Location: MapSearchSheet.swift - Purpose: Title of the map's node search */
+"map.search.title" = "Znajdź na mapie";
+
+/* Location: MapSearchSheet.swift - Purpose: Search field placeholder */
+"map.search.prompt" = "Nazwa lub ID węzła";
+
+/* Location: MapSearchSheet.swift - Purpose: Shown when no located node matches the search */
+"map.search.empty" = "Żaden węzeł z pozycją nie pasuje.";
+
+/* Location: MapCanvasView.swift - Purpose: One-word caption under the map's search button */
+"map.controls.caption.search" = "Szukaj";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Accessibility label of a callout's overflow menu */
+"map.callout.more" = "Więcej";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Menu item that shares the node's coordinates */
+"map.callout.shareLocation" = "Udostępnij lokalizację";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Menu item that opens the chat with the user's own coordinates inserted */
+"map.callout.sendMyLocation" = "Wyślij moją lokalizację";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Menu item that opens Apple's Look Around street imagery at the node */
+"map.callout.lookAround" = "Look Around";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Toast when Look Around has no imagery at the node */
+"map.callout.lookAround.unavailable" = "Look Around jest tu niedostępne.";
+
+/* Location: OfflineBadge.swift - Purpose: Badge when offline and no downloaded map pack covers the visible area */
+"map.offlineBadge.noCoverage" = "Offline · brak mapy tego obszaru";
+
+/* Location: OfflineBadge.swift - Purpose: Accessibility value of the badge while a map pack is downloading; the argument is a percentage */
+"map.offlineBadge.downloading" = "Pobieranie mapy, %@";
+
+/* Location: MapCanvasView.swift - Purpose: Map options menu item that downloads the visible area for offline use */
+"map.controls.downloadArea" = "Pobierz ten obszar…";
+
+// MARK: - Trips (TripsView, TripDetailView, TripRecorder): the radio's recorded trips
+
+/* Location: TripsView.swift, the Map tab's hiking button - The radio's recorded trips */
+"map.trips.title" = "Trasy";
+
+/* Location: TripDetailView.swift - Readings */
+"map.trips.stat.distance" = "Dystans";
+"map.trips.stat.moving" = "W ruchu";
+"map.trips.stat.climb" = "Podejście";
+"map.trips.stat.descent" = "Zejście";
+"map.trips.stat.highest" = "Najwyżej";
+"map.trips.stat.steps" = "Kroki";
+"map.trips.stat.averageSpeedTitle" = "Śr. prędkość";
+"map.trips.stat.time" = "Czas";
+
+/* Location: TripDetailView.swift - The elevation chart's title */
+"map.trips.chart.elevation" = "Wysokość";
+
+/* Location: TripsView.swift - The steps chart's title */
+"map.trips.chart.steps" = "Kroki, ostatnie 14 dni";
+
+/* Location: TripsView.swift - Under the steps chart */
+"map.trips.chart.stepsFooter" = "Z krokomierza Twojego radia Cairn: najwyższa wartość odczytana każdego dnia.";
+
+/* Location: TripsView.swift - The steps chart before any radio reported steps */
+"map.trips.chart.noSteps" = "Brak kroków. Radio Cairn z krokomierzem, takie jak T-Display SF32, przesyła je po połączeniu.";
+
+/* Location: TripsView.swift - The record button: starts and stops the radio's recording */
+"map.trips.record.start" = "Nagrywaj trasę";
+"map.trips.record.stop" = "Zatrzymaj nagrywanie";
+
+/* Location: TripsView.swift - While the radio records: when it started, like "Recording since 8:30 AM" */
+"map.trips.record.since" = "Nagrywanie od %@";
+
+/* Location: TripsView.swift - Under the record button */
+"map.trips.record.footer" = "Radio zapisuje trasę na swojej karcie z własnego GPS, więc telefon może spać lub zostać w domu. Rozpocznij i zatrzymaj ją tutaj lub na stronie Trasa w radiu.";
+
+/* Location: TripsView.swift - The radio's state under the record button */
+"map.trips.radio.none" = "Połącz radio Cairn, aby nagrać trasę.";
+"map.trips.radio.unsupported" = "To radio nie może nagrywać tras. Radia Cairn z gniazdem karty, takie jak Wio Tracker L2, przechowują dzienniki tras.";
+"map.trips.radio.fix" = "GPS radia ma pozycję";
+"map.trips.radio.searching" = "GPS radia szuka";
+"map.trips.radio.gpsOff" = "GPS radia wyłączony";
+"map.trips.radio.noCard" = "Brak karty w radiu";
+
+/* Location: TripsView.swift - Why the radio did not start recording */
+"map.trips.refused.gpsOff" = "Najpierw włącz GPS radia.";
+"map.trips.refused.noClock" = "Zegar radia nie jest jeszcze ustawiony. Spróbuj ponownie za chwilę.";
+"map.trips.refused.noCard" = "Włóż kartę microSD do radia, aby nagrywać trasy.";
+"map.trips.refused.busy" = "Karta radia jest zajęta. Spróbuj ponownie za kilka sekund.";
+"map.trips.refused.failed" = "Radio nie mogło zapisać na karcie.";
+
+/* Location: TripsView.swift - The list of recorded trips */
+"map.trips.logs.title" = "Dzienniki tras";
+"map.trips.logs.empty" = "Brak tras. Stuknij Nagraj trasę lub Start na stronie Trasa w radiu.";
+"map.trips.logs.footer" = "Trasy zostają na karcie radia. Otwarcie trasy kopiuje ją na ten iPhone, aby można ją było oglądać offline.";
+"map.trips.logs.copyAll" = "Skopiuj wszystko na iPhone'a";
+
+/* Location: TripsView.swift - A trip's badge; Copying: how much of it is on this iPhone */
+"map.trips.status.recording" = "Nagrywanie";
+"map.trips.status.copied" = "Na iPhonie";
+"map.trips.status.onRadio" = "W radiu";
+"map.trips.status.copying" = "Kopiowanie %d%%";
+"map.trips.status.phoneOnly" = "Tylko na iPhonie";
+
+/* Location: TripDetailView.swift - One trip */
+"map.trips.detail.notCopied" = "Ta trasa jest na karcie radia. Połącz się z radiem, aby ją tu skopiować.";
+"map.trips.detail.copying" = "Kopiowanie z radia…";
+"map.trips.detail.live" = "Aktualizowane z radia podczas nagrywania";
+"map.trips.detail.noPoints" = "Brak punktów. Ślad zaczyna się od pierwszej pozycji GPS radia.";
+
+/* Location: TripDetailView.swift - Actions */
+"map.trips.export" = "Eksportuj GPX";
+"map.trips.menu" = "Trasa";
+"map.trips.deletePhone" = "Usuń z iPhone'a";
+"map.trips.deleteRadio" = "Usuń z radia";
+
+/* Location: TripDetailView.swift - Delete confirmations */
+"map.trips.confirm.phoneTitle" = "Usunąć tę trasę z iPhone'a?";
+"map.trips.confirm.phoneMessage" = "Kopia zostanie usunięta z tego iPhone'a. Radio zachowa własną.";
+"map.trips.confirm.radioTitle" = "Usunąć tę trasę z radia?";
+"map.trips.confirm.radioMessage" = "Dziennik zostanie usunięty z karty radia. Kopia na tym iPhonie zostaje.";

@@ -1,0 +1,53 @@
+/*
+  WhatsNew.strings
+  Cairn
+
+  Strings for the "What's New" sheet shown once after a major update.
+  Update these every major release: edit the per-feature title/description
+  pairs (add or remove a block) and keep WhatsNewCatalog.swift in sync.
+*/
+
+/* Title of the What's New sheet shown once after an app update */
+"whatsNew.title" = "Co nowego";
+
+/* Button to dismiss the What's New sheet */
+"whatsNew.continueButton" = "Dalej";
+
+/* Link on the What's New sheet to the full GitHub release notes */
+"whatsNew.fullReleaseNotes" = "Zobacz wszystkie nowe zmiany";
+
+/* What's New Cairn 1.0 - Home dashboard, title */
+"whatsNew.home.title" = "Pulpit główny";
+
+/* What's New Cairn 1.0 - Home dashboard, description */
+"whatsNew.home.description" = "Bateria, czaty, węzły, GPS, radio i sieć w jednym miejscu. Stuknij kartę, aby zobaczyć szczegóły.";
+
+/* What's New Cairn 1.0 - card design, title */
+"whatsNew.cards.title" = "Karty na szkle";
+
+/* What's New Cairn 1.0 - card design, description */
+"whatsNew.cards.description" = "Każda strona składa się z kart na wybranym szklanym tle.";
+
+/* What's New Cairn 1.0 - GNSS dashboard, title */
+"whatsNew.gnss.title" = "Pulpit GNSS";
+
+/* What's New Cairn 1.0 - GNSS dashboard, description */
+"whatsNew.gnss.description" = "Fix, satelity, dokładność i pozycja radia oraz telefonu na osobnej karcie.";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, title */
+"whatsNew.aim.title" = "Celuj w dowolny węzeł";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, description */
+"whatsNew.aim.description" = "Stuknij węzeł na mapie, by zobaczyć linię od Ciebie do niego, z odległością, kierunkiem i strzałką, za którą możesz podążać. Mapa na stronie węzła otwiera się z tym węzłem już zaznaczonym.";
+
+/* What's New Cairn 1.0 - Spectrum, title */
+"whatsNew.spectrum.title" = "Widmo";
+
+/* What's New Cairn 1.0 - Spectrum, description */
+"whatsNew.spectrum.description" = "Obserwuj na żywo poziom szumów i aktywność na swojej częstotliwości.";
+
+/* What's New Cairn 1.0 - consolidated settings, title */
+"whatsNew.settings.title" = "Ustawienia tam, gdzie ich potrzebujesz";
+
+/* What's New Cairn 1.0 - consolidated settings, description */
+"whatsNew.settings.description" = "Ustawienia każdej karty są pod suwakami u góry; ustawienia aplikacji pod kołem zębatym na ekranie głównym.";

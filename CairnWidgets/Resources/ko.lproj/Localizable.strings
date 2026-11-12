@@ -1,0 +1,46 @@
+/* Widget localization — Korean. AI-translated - please verify with native speakers. */
+
+/* Connection status shown when radio is disconnected */
+"Disconnected" = "연결 끊김";
+
+
+/* Accessibility: packet rate */
+"%lld packets per minute" = "분당 패킷 %lld개";
+
+/* Accessibility: battery level */
+"Battery %lld percent" = "배터리 %lld퍼센트";
+
+/* Control Center button: opens the app */
+"Open Cairn" = "Cairn 열기";
+
+/* Live Activity: banner and Dynamic Island readings */
+/* AI-translated - please verify with native speakers. */
+"Connected" = "연결됨";
+"Direct" = "다이렉트";
+"No messages yet" = "아직 메시지 없음";
+"RSSI" = "RSSI";
+"SNR" = "SNR";
+"Noise" = "잡음";
+"Per min" = "분당";
+"Nodes 1h" = "노드 1시간";
+"Battery %lld percent, %@" = "배터리 %lld퍼센트, %@";
+"Position %@" = "위치 %@";
+"Message from %@ in %@: %@" = "%2$@의 %1$@ 님 메시지: %3$@";
+"Direct message from %@: %@" = "%@ 님의 다이렉트 메시지: %@";
+"Last RSSI %lld dBm" = "마지막 RSSI %lld dBm";
+"Last SNR %@ dB" = "마지막 SNR %@ dB";
+"Noise floor %lld dBm" = "잡음 레벨 %lld dBm";
+"Last RSSI %lld dBm, SNR %@ dB" = "마지막 RSSI %lld dBm, SNR %@ dB";
+"Last message from %@" = "%@ 님의 마지막 메시지";
+
+/* Home-screen widget (Radio Status) */
+/* AI-translated - please verify with native speakers. */
+"Radio Status" = "무전기 상태";
+"Your radio's link, battery and unread messages at a glance." = "무전기의 연결, 배터리, 읽지 않은 메시지를 한눈에 확인합니다.";
+"Connecting…" = "연결 중…";
+"No radio" = "무전기 없음";
+"Open Cairn to connect" = "Cairn을 열어 연결하세요";
+"Last heard" = "마지막 수신";
+"Last heard %@" = "마지막 수신: %@";
+"Nothing heard yet" = "아직 수신된 노드 없음";
+"Updated" = "업데이트됨";

@@ -1,0 +1,40 @@
+/* Widget localization — Russian */
+
+"Disconnected" = "Отключено";
+"%lld packets per minute" = "%lld пакетов в минуту";
+"Battery %lld percent" = "Батарея %lld процентов";
+
+/* Control Center button: opens the app */
+"Open Cairn" = "Открыть Cairn";
+
+/* Live Activity: banner and Dynamic Island readings */
+/* AI-translated - please verify with native speakers. */
+"Connected" = "Подключено";
+"Direct" = "Личное";
+"No messages yet" = "Сообщений пока нет";
+"RSSI" = "RSSI";
+"SNR" = "SNR";
+"Noise" = "Шум";
+"Per min" = "В мин";
+"Nodes 1h" = "Узлы 1 ч";
+"Battery %lld percent, %@" = "Батарея %lld процентов, %@";
+"Position %@" = "Позиция %@";
+"Message from %@ in %@: %@" = "Сообщение от %@ в %@: %@";
+"Direct message from %@: %@" = "Личное сообщение от %@: %@";
+"Last RSSI %lld dBm" = "Последний RSSI %lld дБм";
+"Last SNR %@ dB" = "Последний SNR %@ дБ";
+"Noise floor %lld dBm" = "Уровень шума %lld дБм";
+"Last RSSI %lld dBm, SNR %@ dB" = "Последний RSSI %lld дБм, SNR %@ дБ";
+"Last message from %@" = "Последнее сообщение от %@";
+
+/* Home-screen widget (Radio Status) */
+/* AI-translated - please verify with native speakers. */
+"Radio Status" = "Состояние радио";
+"Your radio's link, battery and unread messages at a glance." = "Связь, батарея и непрочитанные сообщения вашего радио одним взглядом.";
+"Connecting…" = "Подключение…";
+"No radio" = "Нет радио";
+"Open Cairn to connect" = "Откройте Cairn, чтобы подключиться";
+"Last heard" = "Последний слышен";
+"Last heard %@" = "Последний слышен: %@";
+"Nothing heard yet" = "Пока ничего не слышно";
+"Updated" = "Обновлено";

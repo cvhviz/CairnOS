@@ -1,0 +1,53 @@
+/*
+  WhatsNew.strings
+  Cairn
+
+  Strings for the "What's New" sheet shown once after a major update.
+  Update these every major release: edit the per-feature title/description
+  pairs (add or remove a block) and keep WhatsNewCatalog.swift in sync.
+*/
+
+/* Title of the What's New sheet shown once after an app update */
+"whatsNew.title" = "Nieuw";
+
+/* Button to dismiss the What's New sheet */
+"whatsNew.continueButton" = "Doorgaan";
+
+/* Link on the What's New sheet to the full GitHub release notes */
+"whatsNew.fullReleaseNotes" = "Bekijk alle nieuwe wijzigingen";
+
+/* What's New Cairn 1.0 - Home dashboard, title */
+"whatsNew.home.title" = "Startdashboard";
+
+/* What's New Cairn 1.0 - Home dashboard, description */
+"whatsNew.home.description" = "Batterij, chats, nodes, GPS, radio en netwerk in één oogopslag. Tik op een kaart voor details.";
+
+/* What's New Cairn 1.0 - card design, title */
+"whatsNew.cards.title" = "Kaarten op glas";
+
+/* What's New Cairn 1.0 - card design, description */
+"whatsNew.cards.description" = "Elke pagina bestaat uit kaarten op een glazen achtergrond naar keuze.";
+
+/* What's New Cairn 1.0 - GNSS dashboard, title */
+"whatsNew.gnss.title" = "GNSS-dashboard";
+
+/* What's New Cairn 1.0 - GNSS dashboard, description */
+"whatsNew.gnss.description" = "Fix, satellieten, nauwkeurigheid en positie van je radio en telefoon in een eigen tabblad.";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, title */
+"whatsNew.aim.title" = "Richt op elke node";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, description */
+"whatsNew.aim.description" = "Tik op een node op de kaart voor een lijn van jou naar de node, met afstand, richting en een pijl om te volgen. De kaart op de pagina van een node opent met die node al geselecteerd.";
+
+/* What's New Cairn 1.0 - Spectrum, title */
+"whatsNew.spectrum.title" = "Spectrum";
+
+/* What's New Cairn 1.0 - Spectrum, description */
+"whatsNew.spectrum.description" = "Bekijk de ruisvloer en activiteit op je frequentie live.";
+
+/* What's New Cairn 1.0 - consolidated settings, title */
+"whatsNew.settings.title" = "Instellingen waar je ze nodig hebt";
+
+/* What's New Cairn 1.0 - consolidated settings, description */
+"whatsNew.settings.description" = "De instellingen van elk tabblad zitten achter de schuifregelaars bovenaan; app-instellingen achter het tandwiel op Home.";

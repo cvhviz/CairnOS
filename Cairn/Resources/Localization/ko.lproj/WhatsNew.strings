@@ -1,0 +1,52 @@
+/*
+  WhatsNew.strings
+  Cairn
+
+  Korean (ko) translation of the "What's New" sheet strings.
+  AI-translated - please verify with native speakers.
+*/
+
+/* Title of the What's New sheet shown once after an app update */
+"whatsNew.title" = "새로운 기능";
+
+/* Button to dismiss the What's New sheet */
+"whatsNew.continueButton" = "계속";
+
+/* Link on the What's New sheet to the full GitHub release notes */
+"whatsNew.fullReleaseNotes" = "모든 변경 사항 보기";
+
+/* What's New Cairn 1.0 - Home dashboard, title */
+"whatsNew.home.title" = "홈 대시보드";
+
+/* What's New Cairn 1.0 - Home dashboard, description */
+"whatsNew.home.description" = "배터리, 채팅, 노드, GPS, 무선, 네트워크를 한눈에 확인하세요. 카드를 탭하면 세부 정보가 표시됩니다.";
+
+/* What's New Cairn 1.0 - card design, title */
+"whatsNew.cards.title" = "유리 위의 카드";
+
+/* What's New Cairn 1.0 - card design, description */
+"whatsNew.cards.description" = "모든 페이지가 원하는 유리 배경 위의 카드로 구성됩니다.";
+
+/* What's New Cairn 1.0 - GNSS dashboard, title */
+"whatsNew.gnss.title" = "GNSS 대시보드";
+
+/* What's New Cairn 1.0 - GNSS dashboard, description */
+"whatsNew.gnss.description" = "무선 기기와 휴대폰의 위치 고정, 위성, 정확도, 위치를 전용 탭에서 확인하세요.";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, title */
+"whatsNew.aim.title" = "모든 노드 조준";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, description */
+"whatsNew.aim.description" = "지도에서 노드를 탭하면 내 위치에서 노드까지 선이 표시되고, 거리, 방위, 따라갈 화살표가 함께 나타납니다. 노드 페이지의 지도는 해당 노드가 선택된 상태로 열립니다.";
+
+/* What's New Cairn 1.0 - Spectrum, title */
+"whatsNew.spectrum.title" = "스펙트럼";
+
+/* What's New Cairn 1.0 - Spectrum, description */
+"whatsNew.spectrum.description" = "내 주파수의 노이즈 플로어와 활동을 실시간으로 확인하세요.";
+
+/* What's New Cairn 1.0 - consolidated settings, title */
+"whatsNew.settings.title" = "필요한 곳에 있는 설정";
+
+/* What's New Cairn 1.0 - consolidated settings, description */
+"whatsNew.settings.description" = "각 탭의 설정은 상단의 슬라이더 아이콘에, 앱 설정은 홈의 톱니바퀴 아이콘에 있습니다.";

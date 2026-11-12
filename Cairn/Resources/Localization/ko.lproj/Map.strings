@@ -1,0 +1,846 @@
+/*
+  Map.strings
+  Cairn
+
+  Korean (ko) translation of the Map feature strings.
+  AI-translated - please verify with native speakers.
+*/
+
+// MARK: - Common
+
+/* Location: MapView.swift - Purpose: Done button for sheets */
+"map.common.done" = "완료";
+
+// MARK: - Map Controls
+
+/* Location: MapView.swift - Purpose: Accessibility label when labels are hidden */
+"map.controls.showLabels" = "레이블 표시";
+
+/* Location: MapControlsToolbar.swift - Purpose: Map options menu toggle that clusters nearby pins */
+"map.controls.clusterNodes" = "노드 묶어 보기";
+
+/* Location: MapView.swift - Purpose: Accessibility label for center on all contacts button */
+"map.controls.centerAll" = "모든 연락처를 중앙에 표시";
+
+/* Location: MapControlsToolbar.swift - Purpose: Accessibility label for user location button */
+"map.controls.centerOnMyLocation" = "내 위치를 중앙에 표시";
+
+/* Location: MapControlsToolbar.swift - Purpose: Accessibility label for map options menu button */
+"map.controls.mapOptions" = "지도 옵션";
+
+/* Location: MapControlsToolbar.swift - Purpose: Map options menu toggle that locks the map bearing to north */
+"map.controls.lockNorth" = "북쪽 위로";
+
+/* Location: MapView.swift - Purpose: Accessibility label for refresh button */
+"map.controls.refresh" = "연락처 새로 고침";
+
+/* Location: MapControlsToolbar.swift - Purpose: Accessibility label for map filter control */
+"map.controls.filter" = "필터";
+
+/* Location: MapControlsToolbar.swift - Purpose: One short word under a map control button on the main and Traffic maps */
+"map.controls.caption.location" = "내 위치";
+"map.controls.caption.advert" = "광고";
+"map.controls.caption.filter" = "필터";
+"map.controls.caption.traffic" = "트래픽";
+"map.controls.caption.quiet" = "비활성";
+"map.controls.caption.replay" = "다시 보기";
+"map.controls.caption.all" = "전체";
+"map.controls.caption.options" = "옵션";
+
+/* Location: MapControlsToolbar.swift - Purpose: Accessibility value when filter differs from host defaults */
+"map.controls.filterActive" = "필터 적용됨";
+
+// MARK: - Map Style Selection
+
+/* Location: MapStyleSelection.swift - Purpose: Standard map style option */
+"map.style.standard" = "표준";
+
+/* Location: MapStyleSelection.swift - Purpose: Satellite map style option */
+"map.style.satellite" = "위성";
+
+/* Location: MapStyleSelection.swift - Purpose: Topo map style option */
+"map.style.topo" = "지형";
+
+/* Location: LayersMenu.swift - Purpose: Accessibility label for map style menu */
+"map.style.accessibilityLabel" = "지도 스타일";
+
+/* Location: LayersMenu.swift - Purpose: Hint when style requires network */
+"map.style.requiresNetwork" = "네트워크 연결 필요";
+
+/* Location: LayersMenu.swift - Purpose: Hint when no offline pack covers viewport */
+"map.style.noOfflineCoverage" = "이 지역을 포함하는 오프라인 지도 없음";
+
+// MARK: - Contact Detail Sheet
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Section header for contact information */
+"map.detail.section.contactInfo" = "연락처 정보";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for contact name */
+"map.detail.name" = "이름";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for contact type */
+"map.detail.type" = "유형";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for favorite status */
+"map.detail.status" = "상태";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Value showing contact is favorited */
+"map.detail.favorite" = "즐겨찾기";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for last advertisement timestamp */
+"map.detail.lastAdvert" = "마지막 애드버트";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Last heard (phone-clock on-air) label */
+"map.detail.lastHeard" = "마지막 수신";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for full public key identifier */
+"map.detail.publicKey" = "공개 키";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Section header for location coordinates */
+"map.detail.section.location" = "위치";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for latitude coordinate */
+"map.detail.latitude" = "위도";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for longitude coordinate */
+"map.detail.longitude" = "경도";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Section header for outbound path info */
+"map.detail.section.outboundPath" = "발신 경로";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for routing type */
+"map.detail.routing" = "라우팅";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Flood routing type value */
+"map.detail.routingFlood" = "플러드";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Label for path length */
+"map.detail.pathLength" = "경로 길이";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Path length value with hop count */
+"map.detail.hops" = "%d홉";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Path length value for single hop */
+"map.detail.hopSingular" = "1홉";
+
+// MARK: - Contact Detail Sheet Actions
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Button to view repeater telemetry */
+"map.detail.action.telemetry" = "텔레메트리";
+
+/* Location: MapView.swift - Purpose: Saved History button for offline telemetry */
+/* Location: MapView.swift ContactDetailSheet - Purpose: Sheet title for telemetry authentication */
+"map.detail.action.telemetryAccessTitle" = "텔레메트리 접근";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Button to manage repeater */
+"map.detail.action.management" = "관리";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Button to join a room */
+"map.detail.action.joinRoom" = "룸 참여";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Button to send a message */
+"map.detail.action.sendMessage" = "메시지 보내기";
+
+// MARK: - Contact Type Names
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Display name for chat contact type */
+"map.nodeKind.chatContact" = "채팅 연락처";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Display name for repeater type */
+"map.nodeKind.repeater" = "리피터";
+
+/* Location: MapView.swift ContactDetailSheet - Purpose: Display name for room type */
+"map.nodeKind.room" = "룸";
+
+// MARK: - Contact Callout
+
+/* Location: ContactCalloutContent.swift - Purpose: Button to view contact details */
+"map.callout.details" = "세부 정보";
+
+/* Location: ContactCalloutContent.swift - Purpose: Button to send message from callout */
+"map.callout.message" = "메시지";
+
+/* Location: ContactCalloutContent.swift - Purpose: Display name for contact in callout */
+"map.callout.nodeKind.contact" = "연락처";
+
+/* Location: ContactCalloutContent.swift - Purpose: Display name for repeater in callout */
+"map.callout.nodeKind.repeater" = "리피터";
+
+/* Location: ContactCalloutContent.swift - Purpose: Display name for room in callout */
+"map.callout.nodeKind.room" = "룸";
+
+/* Location: DiscoveredNodeCalloutContent.swift - Purpose: Add discovered node from callout */
+"map.callout.add" = "추가";
+
+/* Location: DiscoveredNodeCalloutContent.swift - Purpose: Label that the pin is discovered, not on the node list */
+"map.callout.discovered" = "발견됨";
+
+/* Location: DiscoveredNodeDetailSheet.swift - Purpose: Navigation title for discovered node detail */
+"map.discoveredDetail.title" = "발견된 노드";
+
+/* Location: DiscoveredNodeDetailSheet.swift - Purpose: Primary action to add discovered node to the radio table */
+"map.discoveredDetail.add" = "노드에 추가";
+
+/* Location: DiscoveredNodeCalloutContent.swift - Purpose: Accessibility label for discovered pins */
+"map.pin.accessibility.discovered" = "발견됨, 노드 목록에 없음";
+
+// MARK: - Contact Annotation
+
+/* Location: ContactAnnotation.swift - Purpose: Subtitle for favorite contacts */
+/* Location: ContactAnnotation.swift - Purpose: Subtitle for repeater nodes */
+/* Location: ContactAnnotation.swift - Purpose: Subtitle for room nodes */
+// MARK: - Offline Badge
+
+/* Label shown on map when device has no internet connection */
+"map.offlineBadge.label" = "오프라인";
+
+// MARK: - Chat Map Preview
+
+/* Location: MapPreviewFragmentView.swift - Purpose: Accessibility label for the chat map-location thumbnail */
+"map.preview.accessibilityLabel" = "지도 위치 미리 보기";
+
+/* Location: MapPreviewFragmentView.swift - Purpose: Accessibility hint for tapping the chat map-location thumbnail */
+"map.preview.accessibilityHint" = "지도에서 이 위치를 엽니다";
+
+/* Location: MapPreviewFragmentView.swift - Purpose: Accessibility label for the retry control shown on the failed-thumbnail fallback */
+"map.preview.retryButton.accessibilityLabel" = "지도 썸네일 다시 불러오기";
+
+/* Local addition */
+"map.controls.zoomIn" = "확대";
+
+/* Local addition */
+"map.controls.zoomOut" = "축소";
+
+
+/* Location: MapControlsToolbar.swift - Purpose: Map filter picker: how recently a discovered node must have been heard */
+"map.filter.heardWithin" = "수신 기간";
+
+/* Location: MapControlsToolbar.swift - Purpose: Recency option */
+"map.filter.recency.day" = "24시간";
+
+/* Location: MapControlsToolbar.swift - Purpose: Recency option (default) */
+"map.filter.recency.week" = "7일";
+
+/* Location: MapControlsToolbar.swift - Purpose: Recency option */
+"map.filter.recency.month" = "30일";
+
+/* Location: MapControlsToolbar.swift - Purpose: Recency option: no limit */
+"map.filter.recency.all" = "전체 기간";
+
+/* Location: ContactCalloutContent.swift, DiscoveredNodeCalloutContent.swift, ContactDetailSheet.swift, DiscoveredNodeDetailSheet.swift - Purpose: Button that hides a node from the Map tab */
+"map.hiddenNodes.hide" = "지도에서 가리기";
+
+/* Location: HiddenMapNodesSheet.swift - Purpose: Navigation title for the list of nodes hidden from the Map tab */
+"map.hiddenNodes.title" = "가려진 노드";
+
+/* Location: MapControlsToolbar.swift - Purpose: Map filter menu entry that opens the hidden nodes list; %d is how many nodes are hidden */
+"map.filter.hiddenNodes" = "가려진 노드(%d)";
+
+/* Location: HiddenMapNodesSheet.swift - Purpose: Button that puts a hidden node back on the Map tab */
+"map.hiddenNodes.show" = "지도에 표시";
+
+/* Location: HiddenMapNodesSheet.swift - Purpose: Button that puts every hidden node back on the Map tab */
+"map.hiddenNodes.showAll" = "모두 표시";
+
+/* Location: HiddenMapNodesSheet.swift - Purpose: Footer explaining that hiding only affects the Map tab */
+"map.hiddenNodes.footer" = "가려진 노드는 지도 탭에서만 빠집니다. 노드 목록과 다른 지도에는 그대로 표시됩니다.";
+
+/* Short title of the action card in a map node sheet that hides the node from the Map tab */
+"map.detail.action.hide" = "숨기기";
+
+/* GPS tab: title of the current position readout */
+"map.gps.segment.position" = "위치";
+
+/* GPS map: button back to the GPS tab's readings (the position, the devices' fixes and the sun) */
+"map.gps.segment.data" = "데이터";
+
+/* GPS tab: tile title for current ground speed */
+"map.gps.speed" = "속도";
+
+
+/* GPS tab: tile title for the time of the last position fix */
+"map.gps.fix" = "측위";
+
+/* GPS tab: compass card title for the direction the device faces */
+"map.gps.heading" = "방향";
+
+/* GPS tab: compass card when the device has no compass reading */
+"map.gps.noHeading" = "방향 없음";
+
+/* GPS tab: VoiceOver value of the compass. %1$d is degrees, %2$@ is a direction name such as northeast */
+"map.gps.heading.accessibilityValue" = "%2$@, %1$d도";
+
+/* GPS tab: caption beside the fix time when the fix is under a minute old */
+"map.gps.fixAge.now" = "지금";
+
+/* GPS tab: caption beside the fix time. %@ is a short duration such as 3m */
+"map.gps.fixAge.ago" = "%@ 전";
+
+/* GPS tab: status pill while waiting for the first phone fix */
+"map.gps.status.searching" = "검색 중…";
+
+/* GPS tab: button that asks for location permission */
+"map.gps.allow" = "위치 허용";
+
+/* GPS tab: explanation when location permission is denied */
+"map.gps.denied.message" = "현재 위치를 보려면 설정에서 Cairn의 위치 접근을 켜세요.";
+
+/* Compass point abbreviation (north), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.n" = "북";
+
+/* Compass point full name (north) for VoiceOver */
+"map.gps.cardinalName.n" = "북쪽";
+
+/* Compass point abbreviation (northeast), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.ne" = "북동";
+
+/* Compass point full name (northeast) for VoiceOver */
+"map.gps.cardinalName.ne" = "북동쪽";
+
+/* Compass point abbreviation (east), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.e" = "동";
+
+/* Compass point full name (east) for VoiceOver */
+"map.gps.cardinalName.e" = "동쪽";
+
+/* Compass point abbreviation (southeast), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.se" = "남동";
+
+/* Compass point full name (southeast) for VoiceOver */
+"map.gps.cardinalName.se" = "남동쪽";
+
+/* Compass point abbreviation (south), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.s" = "남";
+
+/* Compass point full name (south) for VoiceOver */
+"map.gps.cardinalName.s" = "남쪽";
+
+/* Compass point abbreviation (southwest), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.sw" = "남서";
+
+/* Compass point full name (southwest) for VoiceOver */
+"map.gps.cardinalName.sw" = "남서쪽";
+
+/* Compass point abbreviation (west), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.w" = "서";
+
+/* Compass point full name (west) for VoiceOver */
+"map.gps.cardinalName.w" = "서쪽";
+
+/* Compass point abbreviation (northwest), on the GPS compass and after coordinates and headings */
+"map.gps.cardinal.nw" = "북서";
+
+/* Compass point full name (northwest) for VoiceOver */
+"map.gps.cardinalName.nw" = "북서쪽";
+
+/* GPS tab: header of the section showing the phone's own live location */
+"map.gps.phoneSection.header" = "휴대폰 GPS";
+
+/* GPS tab: status pill when the connected radio has no GPS receiver */
+"map.gps.pill.noReceiver" = "GPS 수신기 없음";
+
+/* GPS tab: radio section text when no radio is connected */
+"map.gps.notConnected" = "라디오를 연결하면 GPS를 볼 수 있습니다.";
+
+/* GPS tab: title of the card for the connected radio's GNSS */
+"map.gps.dash.radio" = "라디오";
+
+/* GPS tab: title of the card for this phone's own location */
+"map.gps.dash.phone" = "휴대폰";
+
+/* GPS tab: status badge when the app may not use the phone's location */
+"map.gps.status.notAllowed" = "허용 안 됨";
+
+/* GPS tab: status badge while the app is reading the radio's GPS state */
+"map.gps.status.checking" = "확인 중…";
+
+/* GPS tab: title of the phone's horizontal accuracy reading */
+"map.gps.accuracy" = "정확도";
+
+/* GPS tab: grade of a location accuracy of a few metres */
+"map.gps.accuracy.excellent" = "매우 좋음";
+
+/* GPS tab: grade of a location accuracy within about 15 metres */
+"map.gps.accuracy.good" = "좋음";
+
+/* GPS tab: grade of a location accuracy within about 50 metres */
+"map.gps.accuracy.fair" = "보통";
+
+/* GPS tab: grade of a location accuracy worse than about 50 metres */
+"map.gps.accuracy.poor" = "나쁨";
+
+/* GPS tab: the app only has approximate (not precise) location */
+"map.gps.accuracy.approximate" = "대략적";
+
+/* GPS tab: title of the direction the phone is moving (course over ground) */
+"map.gps.course" = "진행 방향";
+
+/* GPS tab: title of the control for which position the radio's adverts carry */
+"map.gps.advert.title" = "광고";
+
+/* GPS tab: advert location option, adverts carry no position */
+"map.gps.advert.none" = "공유 안 함";
+
+/* GPS tab: advert location option, adverts carry the radio's saved position */
+"map.gps.advert.saved" = "저장된 위치";
+
+/* GPS tab: advert location option, adverts carry the radio's live GPS position */
+"map.gps.advert.live" = "실시간 GPS";
+
+/* GPS tab: under the radio's coordinates when they follow its GPS fix */
+"map.gps.source.liveCaption" = "라디오 GPS에서";
+
+/* GPS tab: under the radio's coordinates when this phone updates them as you send an advert */
+"map.gps.source.phoneCaption" = "광고를 보낼 때 이 휴대폰에서";
+
+/* GPS tab: under the radio's coordinates when they are its saved (manual) position */
+"map.gps.source.savedCaption" = "저장된 위치";
+
+/* GPS tab: button that opens the map picker to set the radio's position by hand */
+"map.gps.control.setManually" = "위치 직접 설정…";
+
+/* GPS tab: note under the Use for Radio Position toggle */
+"map.gps.control.usePhone.footer" = "광고하기 전마다 이 휴대폰의 위치를 라디오로 보냅니다.";
+
+/* GPS tab: note under the Use for Radio Position toggle while the radio's GPS is on */
+"map.gps.control.usePhone.receiverNote" = "켜면 두 위치가 충돌하지 않도록 라디오 GPS가 꺼집니다.";
+
+/* GPS tab: row showing whether the app has precise location */
+"map.gps.precise.title" = "정확한 위치";
+
+/* GPS tab: note when the app only has approximate location */
+"map.gps.precise.message" = "Cairn에는 대략적인 위치만 공유됩니다. GPS 위치를 얻으려면 설정에서 정확한 위치를 켜세요.";
+
+/* GPS tab: the radio and the phone are at the same place */
+"map.gps.relation.together" = "라디오가 내 위치에 있습니다";
+
+/* GPS tab: the position in the radio's adverts matches its live GPS fix */
+"map.gps.relation.advertMatches" = "광고 위치가 라디오 GPS 위치와 일치합니다";
+
+/* GPS tab: how far the position in the radio's adverts is from its live GPS fix. %@ is a distance */
+"map.gps.relation.advertOffset" = "광고 위치가 라디오 GPS 위치에서 %@ 떨어져 있습니다";
+
+/* GPS tab: the radio's adverts carry no position */
+"map.gps.relation.advertNone" = "광고에 위치가 포함되지 않습니다";
+
+/* VoiceOver hint: the GPS tab's map preview opens the Map view */
+"map.gps.mapPreview.hint" = "두 위치를 지도에 표시합니다";
+
+/* VoiceOver hint: tapping a coordinate readout copies it */
+"map.gps.copyHint" = "좌표를 복사합니다";
+
+/* GPS tab: VoiceOver label of a device's coordinate readout */
+"map.gps.coordinates" = "좌표";
+
+/* GPS tab: under the phone's coordinates when the fix comes from an external GPS accessory */
+"map.gps.source.accessory" = "GPS 액세서리에서";
+
+/* GPS tab compass: line under the heading with the direction of travel. %@ is a bearing such as 47° NE */
+"map.gps.compass.course" = "진행 방향 %@";
+
+/* GPS tab map preview: how many mesh nodes with a known location are shown near the radio. %d is a count */
+"map.gps.mapPreview.nodeCount" = "주변 노드: %d";
+
+/* GPS tab: title of the sheet with the GPS and location settings */
+"map.gps.settingsSheet.title" = "GPS 및 위치";
+
+/* GPS tab settings summary: the radio's GPS receiver state. %@ is On or Off */
+"map.gps.summary.receiver" = "수신기 %@";
+
+/* GPS tab settings summary: which position the radio's adverts carry. %@ is e.g. Saved Position */
+"map.gps.summary.advert" = "광고: %@";
+
+/* GPS tab settings summary: whether the phone keeps the radio's position current. %@ is On or Off */
+"map.gps.summary.phoneToRadio" = "휴대폰 → 라디오 %@";
+
+/* GPS tab: short tile title, the radio's altitude from its GPS fix */
+"map.gps.reading.radioAltitude" = "라디오 고도";
+
+/* GPS tab: short tile title, the phone's altitude */
+"map.gps.reading.phoneAltitude" = "휴대폰 고도";
+
+/* GPS tab: short tile title, when the app last read the radio's GPS */
+"map.gps.reading.radioUpdated" = "라디오 업데이트";
+
+/* GPS tab: VoiceOver label of a device card's corner time, how old its reading is */
+"map.gps.reading.updated" = "업데이트";
+
+/* GPS tab: short tile title, how old the phone's location fix is */
+"map.gps.reading.phoneUpdated" = "휴대폰 업데이트";
+
+/* GPS tab: tile title, the next sunrise where the devices are */
+"map.gps.reading.sunrise" = "일출";
+
+/* GPS tab: tile title, the next sunset where the devices are */
+"map.gps.reading.sunset" = "일몰";
+
+/* GPS tab: caption under the next sunrise or sunset, how long until it. %@ is a short duration such as 2h 10m */
+"map.gps.reading.inTime" = "%@ 후";
+
+/* GPS tab: tile title, distance from the phone to the radio */
+"map.gps.reading.distance" = "라디오 거리";
+
+/* GPS tab, the radio's row: how far the radio is from the phone (a reading's small label over "1.2 mi NW") */
+"map.gps.reading.fromPhone" = "휴대폰에서";
+
+/* Map tab Position page: column title for the closest mesh node with a position on the map */
+"map.gps.reading.nearestNode" = "가장 가까움";
+
+/* Map tab Position page: column title for how many mapped mesh nodes are close by */
+"map.gps.reading.nodesNearby" = "주변";
+
+/* Map tab Position page: caption under the nearby node count; %@ is a distance such as 10 km */
+"map.gps.reading.withinDistance" = "%@ 이내";
+
+/* Map tab Position page: Nearest column value when no mesh node has a position on the map */
+"map.gps.reading.noNodesMapped" = "지도에 없음";
+
+/* GPS map: VoiceOver value of the location button when the map is not following the user */
+"map.controls.tracking.off" = "따라가지 않음";
+
+/* GPS map: VoiceOver value of the location button when the map follows the user's position */
+"map.controls.tracking.follow" = "따라가는 중";
+
+/* GPS map: VoiceOver value of the location button when the map follows the user and turns with the phone's heading */
+"map.controls.tracking.heading" = "방향과 함께 따라가는 중";
+
+/* GPS map: VoiceOver label of the compass button shown while the map is rotated or tilted */
+"map.nav.compass" = "나침반";
+
+/* GPS map: VoiceOver hint of the compass button */
+"map.nav.compass.hint" = "지도를 다시 북쪽이 위로 향하게 합니다";
+
+/* Scan & Traffic map: VoiceOver hint of the compass button, which cycles the map's three orientation modes */
+"map.nav.compass.cycleHint" = "북쪽 위, 방향 위, 북쪽 고정 사이를 전환합니다";
+
+/* GPS map: VoiceOver value of the compass button. %@ is a direction such as 47 degrees, northeast */
+"map.nav.compass.value" = "지도 방향 %@";
+
+/* GPS map: added to the compass's VoiceOver value when the map is tilted in 3D */
+"map.nav.compass.tilted" = "기울어짐";
+
+/* GPS map: VoiceOver label of the navigation readout (heading, speed, altitude, distance to a selected pin) */
+"map.nav.title" = "내비게이션";
+
+/* GPS map navigation readout: label for the phone's altitude */
+"map.nav.altitude" = "고도";
+
+/* GPS map navigation readout: VoiceOver label for the distance to the selected pin */
+"map.nav.distance" = "거리";
+
+/* GPS map navigation readout: VoiceOver label for the compass bearing to the selected pin */
+"map.nav.bearing" = "방위";
+
+/* GPS map navigation readout: VoiceOver direction of the selected pin relative to where the phone faces, as a clock position (12 is straight ahead). %d is 1 to 12 */
+"map.nav.clockPosition" = "%d시 방향";
+
+/* GPS map navigation readout: button that stops measuring to the selected pin */
+"map.nav.clearTarget" = "목표 지우기";
+
+/* GPS map navigation readout: button that opens the Line of Sight tool from your position to the selected pin */
+"map.nav.checkLineOfSight" = "가시선 확인";
+
+/* GPS map navigation readout: button that expands the readout */
+"map.nav.showDetails" = "세부사항 보기";
+
+/* GPS map navigation readout: button that collapses the readout to one line */
+"map.nav.hideDetails" = "세부사항 숨기기";
+
+/* Accessibility label of the GPS map's location button, which cycles location tracking (off, follow, follow with heading); the current mode is read as its value. Matches Apple Maps' 'Tracking' control. */
+"map.controls.tracking.label" = "추적";
+
+/* Location: SNRLegendChip.swift - Title of the popover explaining what the SNR line colors on a map mean */
+"map.snrLegend.title" = "링크 신호 (SNR)";
+
+/* Location: SNRLegendChip.swift - VoiceOver label for the dB chip that opens the SNR line color key */
+"map.snrLegend.accessibilityLabel" = "신호 색상 범례";
+
+
+/* Title of the full-screen compass */
+"map.gps.compass.title" = "나침반";
+
+/* VoiceOver hint on the GPS page's compass card */
+"map.gps.compass.openHint" = "전체 나침반을 엽니다";
+
+/* Full compass: label over the heading against magnetic north */
+"map.gps.compass.magnetic" = "자북";
+
+/* Full compass: label over the difference between true and magnetic north */
+"map.gps.compass.declination" = "편각";
+
+/* Full compass: title of the sun panel */
+"map.gps.compass.sun" = "태양";
+
+/* Full compass: label over how high the sun is */
+"map.gps.compass.elevation" = "고도";
+
+/* Full compass: the sun has set */
+"map.gps.compass.belowHorizon" = "지평선 아래";
+
+/* Full compass: header over the list of nodes with a position */
+"map.gps.compass.nearbyNodes" = "주변 노드";
+
+/* Full compass: shown when no saved node has a position */
+"map.gps.compass.noNodes" = "위치가 있는 노드가 여기에 표시되며, 어느 쪽으로 돌아야 하는지 알려 줍니다. 노드를 탭하면 그쪽으로 안내합니다.";
+
+/* Full compass: button that locks the current heading as a bearing to steer by */
+"map.gps.compass.lock" = "방위 고정";
+
+/* Full compass: button that clears the locked bearing */
+"map.gps.compass.clear" = "방위 지우기";
+
+/* Full compass: which way to turn for the locked bearing. %@ is degrees, e.g. 12° */
+"map.gps.compass.turnLeft" = "왼쪽으로 %@ 회전";
+
+/* Full compass: which way to turn for the locked bearing. %@ is degrees, e.g. 12° */
+"map.gps.compass.turnRight" = "오른쪽으로 %@ 회전";
+
+/* Full compass: facing the locked bearing */
+"map.gps.compass.onTarget" = "방위 일치";
+
+/* Full compass: shown when the compass reading is inaccurate */
+"map.gps.compass.calibrate" = "나침반 정확도가 낮습니다. 휴대폰을 8자 모양으로 움직여 보정하세요.";
+
+/* Full compass: label over a node's direction from you, e.g. 38° NE */
+"map.gps.compass.bearing" = "방위";
+
+/* Full compass: label over how a node is reached (Direct, Flood, 2 hops) */
+"map.gps.compass.route" = "경로";
+
+/* Full compass: switch on a selected node's card that steers the compass to it */
+"map.gps.compass.steer" = "노드로 안내";
+
+/* Full compass: time until sunset. %@ is a duration, e.g. 3h 12m */
+"map.gps.compass.daylightLeft" = "남은 낮 시간 %@";
+
+/* Full compass: toolbar button that shows the nodes on the dial */
+"map.gps.compass.showNodes" = "나침반에 노드 표시";
+
+/* Title of the full compass's settings sheet */
+"map.gps.compass.settingsTitle" = "나침반 설정";
+
+/* Compass settings: the dial's orientation picker */
+"map.gps.compass.dial" = "다이얼";
+
+/* Compass settings: the dial turns so the way you face is at the top */
+"map.gps.compass.headingUp" = "진행 방향 위";
+
+/* Compass settings: the dial stays with north at the top and the pointer turns */
+"map.gps.compass.northUp" = "북쪽 위";
+
+/* Compass settings: true or magnetic north picker */
+"map.gps.compass.north" = "북쪽";
+
+/* Compass settings: headings against true (geographic) north */
+"map.gps.compass.trueNorth" = "진북";
+
+/* Compass settings: headings against magnetic north */
+"map.gps.compass.magneticNorth" = "자북";
+
+/* Compass settings: explains true and magnetic north */
+"map.gps.compass.northInfo" = "진북은 휴대폰이 GPS 위치를 잡으면 편각을 보정합니다. 자북은 등산용 나침반이 가리키는 방향입니다.";
+
+/* Compass settings: show the sun's direction on the dial */
+"map.gps.compass.showSun" = "태양 표시";
+
+/* Compass settings: show the direction of travel on the dial */
+"map.gps.compass.showCourse" = "진행 방향 표시";
+
+/* Compass settings: how many of the nearest nodes the compass shows */
+"map.gps.compass.nodesShown" = "표시할 노드 수";
+
+/* Compass settings: section header for haptics and screen */
+"map.gps.compass.general" = "일반";
+
+/* Compass settings: haptic tick switch */
+"map.gps.compass.haptics" = "햅틱";
+
+/* Compass settings: what the haptic switch does */
+"map.gps.compass.hapticsSubtitle" = "N, E, S, W를 지날 때 진동";
+
+/* Compass settings: keep the screen from locking */
+"map.gps.compass.keepScreenOn" = "화면 켜두기";
+
+/* Compass settings: when the screen is kept on */
+"map.gps.compass.keepScreenOnSubtitle" = "나침반이 열려 있는 동안";
+
+
+/* Location: HideFromMapConfirmation.swift - Purpose: Title of the dialog asking before a node is hidden from the Map tab; %@ is the node's name */
+"map.hiddenNodes.confirm.title" = "%@을(를) 지도에서 가릴까요?";
+
+/* Location: HideFromMapConfirmation.swift - Purpose: Message of the hide confirmation, saying the node is only left off the Map tab and where to show it again */
+"map.hiddenNodes.confirm.message" = "노드 목록과 다른 지도에는 그대로 남아 있습니다. 필터 › 가려진 노드에서 다시 표시할 수 있습니다.";
+
+/* Location: RadioCalloutContent.swift - Purpose: Line under the name in the callout for the user's own radio pin */
+"map.callout.thisRadio" = "이 라디오";
+
+/* Location: RadioCalloutContent.swift - Purpose: Menu button in the own radio's callout that sends this radio's advert */
+"map.callout.sendAdvert" = "광고 보내기";
+
+/* Location: RadioCalloutContent.swift - Purpose: When the app last read the radio's GPS; %@ is "now" or an age like "3m ago" */
+"map.callout.radio.updated" = "%@ 업데이트됨";
+
+/* Location: RadioCalloutContent.swift - Purpose: Accessibility label of the button that copies the radio's coordinates */
+"map.callout.copyCoordinates" = "좌표 복사";
+
+/* Location: MapControlsToolbar.swift - Purpose: Button that draws live mesh traffic on the map */
+"map.controls.showTraffic" = "트래픽 표시";
+
+/* Location: MapControlsToolbar.swift - Purpose: Button that stops drawing live mesh traffic on the map */
+"map.controls.hideTraffic" = "트래픽 숨기기";
+
+/* Location: GNSSDetailsSheet.swift - One device's GPS in full, from its card on the Map tab */
+"map.gps.details.hint" = "GPS 세부 정보를 표시합니다";
+"map.gps.details.position" = "위치";
+"map.gps.details.signal" = "신호";
+"map.gps.details.movement" = "이동";
+"map.gps.details.dms" = "도, 분, 초";
+"map.gps.details.gridSquare" = "그리드 스퀘어";
+"map.gps.details.fixYes" = "예";
+"map.gps.details.fixNo" = "아니요";
+"map.gps.details.satellites" = "위성";
+"map.gps.details.inView" = "보이는 위성";
+"map.gps.details.hdop" = "HDOP";
+"map.gps.details.lastSignal" = "마지막 업데이트";
+"map.gps.details.altitudeAccuracy" = "고도 정확도";
+"map.gps.details.source" = "출처";
+"map.gps.details.simulated" = "시뮬레이션";
+
+// MARK: - Map workstream additions
+
+/* Location: MapCanvasView.swift - Purpose: Toast after the locate button when location is allowed but no fix has arrived yet */
+"map.locate.searching" = "현재 위치를 찾는 중…";
+
+/* Location: MapCanvasView.swift - Purpose: Title of the card over the map when no node has a position */
+"map.empty.noNodes.title" = "아직 위치가 있는 노드가 없습니다";
+
+/* Location: MapCanvasView.swift - Purpose: Explanation under the empty-map card */
+"map.empty.noNodes.message" = "노드가 위치를 알리면 여기에 표시됩니다. 광고나 스캔으로 유도할 수 있습니다.";
+
+/* Location: MapCanvasView.swift - Purpose: Title of the card over the map when no radio is connected */
+"map.empty.noRadio.title" = "라디오 연결";
+
+/* Location: MapCanvasView.swift - Purpose: Explanation under the no-radio card */
+"map.empty.noRadio.message" = "지도에는 라디오가 알고 있는 노드가 표시됩니다.";
+
+/* Location: MapCanvasView.swift - Purpose: Accessibility label of the button that closes the empty-map card */
+"map.empty.dismiss" = "닫기";
+
+/* Location: MapSearchSheet.swift - Purpose: Title of the map's node search */
+"map.search.title" = "지도에서 찾기";
+
+/* Location: MapSearchSheet.swift - Purpose: Search field placeholder */
+"map.search.prompt" = "노드 이름 또는 ID";
+
+/* Location: MapSearchSheet.swift - Purpose: Shown when no located node matches the search */
+"map.search.empty" = "일치하는 위치 있는 노드가 없습니다.";
+
+/* Location: MapCanvasView.swift - Purpose: One-word caption under the map's search button */
+"map.controls.caption.search" = "검색";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Accessibility label of a callout's overflow menu */
+"map.callout.more" = "더 보기";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Menu item that shares the node's coordinates */
+"map.callout.shareLocation" = "위치 공유";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Menu item that opens the chat with the user's own coordinates inserted */
+"map.callout.sendMyLocation" = "내 위치 보내기";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Menu item that opens Apple's Look Around street imagery at the node */
+"map.callout.lookAround" = "둘러보기";
+
+/* Location: MapCalloutActionsMenu.swift - Purpose: Toast when Look Around has no imagery at the node */
+"map.callout.lookAround.unavailable" = "이곳에서는 둘러보기를 사용할 수 없습니다.";
+
+/* Location: OfflineBadge.swift - Purpose: Badge when offline and no downloaded map pack covers the visible area */
+"map.offlineBadge.noCoverage" = "오프라인 · 이 지역의 지도 없음";
+
+/* Location: OfflineBadge.swift - Purpose: Accessibility value of the badge while a map pack is downloading; the argument is a percentage */
+"map.offlineBadge.downloading" = "지도 다운로드 중, %@";
+
+/* Location: MapCanvasView.swift - Purpose: Map options menu item that downloads the visible area for offline use */
+"map.controls.downloadArea" = "이 지역 다운로드…";
+
+// MARK: - Trips (TripsView, TripDetailView, TripRecorder): the radio's recorded trips
+
+/* Location: TripsView.swift, the Map tab's hiking button - The radio's recorded trips */
+"map.trips.title" = "여정";
+
+/* Location: TripDetailView.swift - Readings */
+"map.trips.stat.distance" = "거리";
+"map.trips.stat.moving" = "이동 시간";
+"map.trips.stat.climb" = "오르막";
+"map.trips.stat.descent" = "내리막";
+"map.trips.stat.highest" = "최고";
+"map.trips.stat.steps" = "걸음";
+"map.trips.stat.averageSpeedTitle" = "평균 속도";
+"map.trips.stat.time" = "시간";
+
+/* Location: TripDetailView.swift - The elevation chart's title */
+"map.trips.chart.elevation" = "고도";
+
+/* Location: TripsView.swift - The steps chart's title */
+"map.trips.chart.steps" = "걸음 수, 최근 14일";
+
+/* Location: TripsView.swift - Under the steps chart */
+"map.trips.chart.stepsFooter" = "Cairn 라디오의 걸음 수 측정기 기준: 매일 읽은 가장 높은 값입니다.";
+
+/* Location: TripsView.swift - The steps chart before any radio reported steps */
+"map.trips.chart.noSteps" = "아직 걸음 수가 없습니다. T-Display SF32처럼 걸음 수 측정기가 있는 Cairn 라디오가 연결되면 걸음 수를 보고합니다.";
+
+/* Location: TripsView.swift - The record button: starts and stops the radio's recording */
+"map.trips.record.start" = "여정 기록";
+"map.trips.record.stop" = "기록 중지";
+
+/* Location: TripsView.swift - While the radio records: when it started, like "Recording since 8:30 AM" */
+"map.trips.record.since" = "%@부터 기록 중";
+
+/* Location: TripsView.swift - Under the record button */
+"map.trips.record.footer" = "라디오가 자체 GPS로 카드에 여정을 기록하므로 휴대폰은 잠자기 상태이거나 두고 가도 됩니다. 여기나 라디오의 여정 페이지에서 시작하고 멈추세요.";
+
+/* Location: TripsView.swift - The radio's state under the record button */
+"map.trips.radio.none" = "여정을 기록하려면 Cairn 라디오를 연결하세요.";
+"map.trips.radio.unsupported" = "이 라디오는 여정을 기록할 수 없습니다. Wio Tracker L2처럼 카드 슬롯이 있는 Cairn 라디오가 여정 기록을 보관합니다.";
+"map.trips.radio.fix" = "라디오 GPS 위치 확보";
+"map.trips.radio.searching" = "라디오 GPS 검색 중";
+"map.trips.radio.gpsOff" = "라디오 GPS 꺼짐";
+"map.trips.radio.noCard" = "라디오에 카드 없음";
+
+/* Location: TripsView.swift - Why the radio did not start recording */
+"map.trips.refused.gpsOff" = "먼저 라디오의 GPS를 켜세요.";
+"map.trips.refused.noClock" = "라디오 시계가 아직 설정되지 않았습니다. 잠시 후 다시 시도하세요.";
+"map.trips.refused.noCard" = "여정을 기록하려면 라디오에 microSD 카드를 넣으세요.";
+"map.trips.refused.busy" = "라디오 카드가 사용 중입니다. 몇 초 후 다시 시도하세요.";
+"map.trips.refused.failed" = "라디오가 카드에 쓰지 못했습니다.";
+
+/* Location: TripsView.swift - The list of recorded trips */
+"map.trips.logs.title" = "여정 기록";
+"map.trips.logs.empty" = "아직 여정이 없습니다. 여정 기록을 탭하거나 라디오의 여정 페이지에서 시작을 누르세요.";
+"map.trips.logs.footer" = "여정은 라디오 카드에 남아 있습니다. 여정을 열면 이 iPhone에 복사되어 오프라인에서도 볼 수 있습니다.";
+"map.trips.logs.copyAll" = "모두 iPhone에 복사";
+
+/* Location: TripsView.swift - A trip's badge; Copying: how much of it is on this iPhone */
+"map.trips.status.recording" = "기록 중";
+"map.trips.status.copied" = "iPhone에 있음";
+"map.trips.status.onRadio" = "라디오에 있음";
+"map.trips.status.copying" = "복사 중 %d%%";
+"map.trips.status.phoneOnly" = "iPhone에만 있음";
+
+/* Location: TripDetailView.swift - One trip */
+"map.trips.detail.notCopied" = "이 여정은 라디오 카드에 있습니다. 여기로 복사하려면 라디오에 연결하세요.";
+"map.trips.detail.copying" = "라디오에서 복사 중…";
+"map.trips.detail.live" = "라디오가 기록하는 동안 업데이트됨";
+"map.trips.detail.noPoints" = "아직 지점이 없습니다. 경로는 라디오의 첫 GPS 위치부터 시작됩니다.";
+
+/* Location: TripDetailView.swift - Actions */
+"map.trips.export" = "GPX 내보내기";
+"map.trips.menu" = "여정";
+"map.trips.deletePhone" = "iPhone에서 삭제";
+"map.trips.deleteRadio" = "라디오에서 삭제";
+
+/* Location: TripDetailView.swift - Delete confirmations */
+"map.trips.confirm.phoneTitle" = "이 여정을 iPhone에서 삭제할까요?";
+"map.trips.confirm.phoneMessage" = "이 iPhone의 사본이 삭제됩니다. 라디오에는 그대로 남습니다.";
+"map.trips.confirm.radioTitle" = "이 여정을 라디오에서 삭제할까요?";
+"map.trips.confirm.radioMessage" = "라디오 카드에서 기록이 삭제됩니다. 이 iPhone의 사본은 남습니다.";

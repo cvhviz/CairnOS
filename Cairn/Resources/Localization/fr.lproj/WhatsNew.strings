@@ -1,0 +1,53 @@
+/*
+  WhatsNew.strings
+  Cairn
+
+  Strings for the "What's New" sheet shown once after a major update.
+  Update these every major release: edit the per-feature title/description
+  pairs (add or remove a block) and keep WhatsNewCatalog.swift in sync.
+*/
+
+/* Title of the What's New sheet shown once after an app update */
+"whatsNew.title" = "Nouveautés";
+
+/* Button to dismiss the What's New sheet */
+"whatsNew.continueButton" = "Continuer";
+
+/* Link on the What's New sheet to the full GitHub release notes */
+"whatsNew.fullReleaseNotes" = "Voir tous les nouveaux changements";
+
+/* What's New Cairn 1.0 - Home dashboard, title */
+"whatsNew.home.title" = "Tableau de bord d'accueil";
+
+/* What's New Cairn 1.0 - Home dashboard, description */
+"whatsNew.home.description" = "Batterie, discussions, nœuds, GPS, radio et réseau en un coup d'œil. Touchez une carte pour les détails.";
+
+/* What's New Cairn 1.0 - card design, title */
+"whatsNew.cards.title" = "Cartes sur verre";
+
+/* What's New Cairn 1.0 - card design, description */
+"whatsNew.cards.description" = "Chaque page est faite de cartes sur un fond en verre de votre choix.";
+
+/* What's New Cairn 1.0 - GNSS dashboard, title */
+"whatsNew.gnss.title" = "Tableau de bord GNSS";
+
+/* What's New Cairn 1.0 - GNSS dashboard, description */
+"whatsNew.gnss.description" = "Fix, satellites, précision et position de votre radio et de votre téléphone dans leur propre onglet.";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, title */
+"whatsNew.aim.title" = "Visez n'importe quel nœud";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, description */
+"whatsNew.aim.description" = "Touchez un nœud sur la carte pour voir une ligne de vous jusqu'à lui, avec sa distance, son relèvement et une flèche à suivre. La carte de la page d'un nœud s'ouvre avec ce nœud déjà sélectionné.";
+
+/* What's New Cairn 1.0 - Spectrum, title */
+"whatsNew.spectrum.title" = "Spectre";
+
+/* What's New Cairn 1.0 - Spectrum, description */
+"whatsNew.spectrum.description" = "Suivez en direct le bruit de fond et l'activité sur votre fréquence.";
+
+/* What's New Cairn 1.0 - consolidated settings, title */
+"whatsNew.settings.title" = "Les réglages là où il faut";
+
+/* What's New Cairn 1.0 - consolidated settings, description */
+"whatsNew.settings.description" = "Les réglages de chaque onglet sont derrière les curseurs en haut ; ceux de l’app, derrière l’engrenage sur Accueil.";

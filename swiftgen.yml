@@ -1,0 +1,17 @@
+strings:
+  - inputs:
+      - Cairn/Resources/Localization/en.lproj/Localizable.strings
+      - Cairn/Resources/Localization/en.lproj/Chats.strings
+      - Cairn/Resources/Localization/en.lproj/Contacts.strings
+      - Cairn/Resources/Localization/en.lproj/Settings.strings
+      - Cairn/Resources/Localization/en.lproj/Map.strings
+      - Cairn/Resources/Localization/en.lproj/Tools.strings
+      - Cairn/Resources/Localization/en.lproj/Onboarding.strings
+      - Cairn/Resources/Localization/en.lproj/RemoteNodes.strings
+      - Cairn/Resources/Localization/en.lproj/WhatsNew.strings
+    outputs:
+      - templateName: structured-swift5
+        output: Cairn/Resources/Generated/L10n.swift
+        params:
+          enumName: L10n
+          publicAccess: true

@@ -1,0 +1,53 @@
+/*
+  WhatsNew.strings
+  Cairn
+
+  Strings for the "What's New" sheet shown once after a major update.
+  Update these every major release: edit the per-feature title/description
+  pairs (add or remove a block) and keep WhatsNewCatalog.swift in sync.
+*/
+
+/* Title of the What's New sheet shown once after an app update */
+"whatsNew.title" = "Что нового";
+
+/* Button to dismiss the What's New sheet */
+"whatsNew.continueButton" = "Продолжить";
+
+/* Link on the What's New sheet to the full GitHub release notes */
+"whatsNew.fullReleaseNotes" = "Смотреть все новые изменения";
+
+/* What's New Cairn 1.0 - Home dashboard, title */
+"whatsNew.home.title" = "Главная панель";
+
+/* What's New Cairn 1.0 - Home dashboard, description */
+"whatsNew.home.description" = "Батарея, чаты, узлы, GPS, радио и сеть с первого взгляда. Коснитесь карточки, чтобы увидеть подробности.";
+
+/* What's New Cairn 1.0 - card design, title */
+"whatsNew.cards.title" = "Карточки на стекле";
+
+/* What's New Cairn 1.0 - card design, description */
+"whatsNew.cards.description" = "Каждая страница состоит из карточек на стеклянном фоне на ваш выбор.";
+
+/* What's New Cairn 1.0 - GNSS dashboard, title */
+"whatsNew.gnss.title" = "Панель GNSS";
+
+/* What's New Cairn 1.0 - GNSS dashboard, description */
+"whatsNew.gnss.description" = "Фикс, спутники, точность и позиция рации и телефона на отдельной вкладке.";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, title */
+"whatsNew.aim.title" = "Наведение на любой узел";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, description */
+"whatsNew.aim.description" = "Нажмите на узел на карте, чтобы увидеть линию от вас до него, с расстоянием, азимутом и стрелкой, указывающей путь. Карта на странице узла открывается с уже выбранным узлом.";
+
+/* What's New Cairn 1.0 - Spectrum, title */
+"whatsNew.spectrum.title" = "Спектр";
+
+/* What's New Cairn 1.0 - Spectrum, description */
+"whatsNew.spectrum.description" = "Следите за уровнем шума и активностью на вашей частоте в реальном времени.";
+
+/* What's New Cairn 1.0 - consolidated settings, title */
+"whatsNew.settings.title" = "Настройки там, где они нужны";
+
+/* What's New Cairn 1.0 - consolidated settings, description */
+"whatsNew.settings.description" = "Настройки каждой вкладки — под ползунками вверху; настройки приложения — под шестерёнкой на «Главной».";

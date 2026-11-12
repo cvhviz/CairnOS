@@ -1,0 +1,40 @@
+/* Widget localization — German */
+
+"Disconnected" = "Getrennt";
+"%lld packets per minute" = "%lld Pakete pro Minute";
+"Battery %lld percent" = "Akku %lld Prozent";
+
+/* Control Center button: opens the app */
+"Open Cairn" = "Cairn öffnen";
+
+/* Live Activity: banner and Dynamic Island readings */
+/* AI-translated - please verify with native speakers. */
+"Connected" = "Verbunden";
+"Direct" = "Direkt";
+"No messages yet" = "Noch keine Nachrichten";
+"RSSI" = "RSSI";
+"SNR" = "SNR";
+"Noise" = "Rauschen";
+"Per min" = "Pro Min.";
+"Nodes 1h" = "Knoten 1 h";
+"Battery %lld percent, %@" = "Akku %lld Prozent, %@";
+"Position %@" = "Position %@";
+"Message from %@ in %@: %@" = "Nachricht von %@ in %@: %@";
+"Direct message from %@: %@" = "Direktnachricht von %@: %@";
+"Last RSSI %lld dBm" = "Letzter RSSI %lld dBm";
+"Last SNR %@ dB" = "Letzter SNR %@ dB";
+"Noise floor %lld dBm" = "Grundrauschen %lld dBm";
+"Last RSSI %lld dBm, SNR %@ dB" = "Letzter RSSI %lld dBm, SNR %@ dB";
+"Last message from %@" = "Letzte Nachricht von %@";
+
+/* Home-screen widget (Radio Status) */
+/* AI-translated - please verify with native speakers. */
+"Radio Status" = "Funkstatus";
+"Your radio's link, battery and unread messages at a glance." = "Verbindung, Akku und ungelesene Nachrichten deines Funkgeräts auf einen Blick.";
+"Connecting…" = "Verbinden …";
+"No radio" = "Kein Funkgerät";
+"Open Cairn to connect" = "Cairn öffnen, um zu verbinden";
+"Last heard" = "Zuletzt gehört";
+"Last heard %@" = "Zuletzt gehört: %@";
+"Nothing heard yet" = "Noch nichts gehört";
+"Updated" = "Aktualisiert";

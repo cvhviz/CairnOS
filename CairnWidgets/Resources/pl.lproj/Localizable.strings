@@ -1,0 +1,40 @@
+/* Widget localization — Polish */
+
+"Disconnected" = "Rozłączono";
+"%lld packets per minute" = "%lld pakietów na minutę";
+"Battery %lld percent" = "Bateria %lld procent";
+
+/* Control Center button: opens the app */
+"Open Cairn" = "Otwórz Cairn";
+
+/* Live Activity: banner and Dynamic Island readings */
+/* AI-translated - please verify with native speakers. */
+"Connected" = "Połączono";
+"Direct" = "Bezpośrednia";
+"No messages yet" = "Brak wiadomości";
+"RSSI" = "RSSI";
+"SNR" = "SNR";
+"Noise" = "Szum";
+"Per min" = "Na min";
+"Nodes 1h" = "Węzły 1 h";
+"Battery %lld percent, %@" = "Bateria %lld procent, %@";
+"Position %@" = "Pozycja %@";
+"Message from %@ in %@: %@" = "Wiadomość od %@ w %@: %@";
+"Direct message from %@: %@" = "Wiadomość bezpośrednia od %@: %@";
+"Last RSSI %lld dBm" = "Ostatni RSSI %lld dBm";
+"Last SNR %@ dB" = "Ostatni SNR %@ dB";
+"Noise floor %lld dBm" = "Poziom szumu %lld dBm";
+"Last RSSI %lld dBm, SNR %@ dB" = "Ostatni RSSI %lld dBm, SNR %@ dB";
+"Last message from %@" = "Ostatnia wiadomość od %@";
+
+/* Home-screen widget (Radio Status) */
+/* AI-translated - please verify with native speakers. */
+"Radio Status" = "Stan radia";
+"Your radio's link, battery and unread messages at a glance." = "Połączenie, bateria i nieprzeczytane wiadomości twojego radia w skrócie.";
+"Connecting…" = "Łączenie…";
+"No radio" = "Brak radia";
+"Open Cairn to connect" = "Otwórz Cairn, aby połączyć";
+"Last heard" = "Ostatnio słyszano";
+"Last heard %@" = "Ostatnio słyszano: %@";
+"Nothing heard yet" = "Jeszcze nic nie słyszano";
+"Updated" = "Zaktualizowano";

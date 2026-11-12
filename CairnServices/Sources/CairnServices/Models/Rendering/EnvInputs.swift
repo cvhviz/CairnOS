@@ -1,0 +1,111 @@
+import Foundation
+
+/// Environment-derived inputs that influence `MessageItem` content, from
+/// `@AppStorage`, contrast, and the parent view's `deviceName`.
+public struct EnvInputs: Sendable, Hashable {
+  public let autoPlayGIFs: Bool
+  public let showIncomingPath: Bool
+  public let showIncomingHopCount: Bool
+  public let showIncomingRegion: Bool
+  public let showIncomingHeardCount: Bool
+  public let previewsEnabled: Bool
+  public let isHighContrast: Bool
+  /// Light/dark appearance, sourced from `@Environment(\.colorScheme)` in
+  /// `ChatConversationView`. Threaded into `MapPreviewFragmentState` so the map
+  /// thumbnail renders against the matching style. Like `isHighContrast`, a
+  /// change forces a full `buildItems()` rebuild (rare, OS-driven).
+  public let isDark: Bool
+  /// User-controlled privacy gate. When false, `MessageFragmentBuilder` skips
+  /// the map-preview fragment entirely so `MapPreviewFragmentView.onAppear`
+  /// never fires the third-party tile request — the coordinate text in the
+  /// message body remains tappable.
+  public let showMapPreviews: Bool
+  /// True when `OfflineMapService.isNetworkAvailable` is false. Sourced in
+  /// `ChatConversationView` and threaded through `MapSnapshotRequest` so the
+  /// snapshotter routes to the offline-pack style URL and the cache key for
+  /// online and offline renders does not collide.
+  public let isOffline: Bool
+  /// Active theme identifier (`Theme.id`). A `Sendable, Hashable` token — never a SwiftUI
+  /// `Color`, which would pull SwiftUI into CairnServices and break `Hashable`. The Cairn side
+  /// resolves it back to a `Theme` to bake outgoing-text/hashtag colors into `MessageTextPayload`.
+  public let themeID: String
+  /// App-locale language code (`"en"`, `"de"`, `"zh"`), never a region qualifier.
+  /// A change forces a full `buildItems()` so Translation chrome re-evaluates.
+  public let preferredLanguageCode: String
+  /// User toggle for in-bubble Translate offers. When false, the bake skips
+  /// language detection and builds no Translation chrome.
+  public let translationOffersEnabled: Bool
+
+  /// Dynamic Type size fingerprint. A `Sendable, Hashable` token (a `DynamicTypeSize` case
+  /// name string supplied by the Cairn side, never the SwiftUI type itself) so a Dynamic Type
+  /// change bumps the `EnvInputs` equality fingerprint like `themeID` and `isHighContrast` do,
+  /// forcing a full `buildItems()` rebuild. It does not key the bubble text view's size cache:
+  /// that cache is keyed on the `dynamicTypeSize` the renderer reads directly from its own
+  /// `@Environment`. Reflow of already-visible cells is driven by the appearance reconfigure path.
+  public let contentSizeCategory: String
+
+  public init(
+    autoPlayGIFs: Bool,
+    showIncomingPath: Bool,
+    showIncomingHopCount: Bool,
+    showIncomingRegion: Bool,
+    showIncomingHeardCount: Bool,
+    previewsEnabled: Bool,
+    isHighContrast: Bool,
+    isDark: Bool,
+    showMapPreviews: Bool,
+    isOffline: Bool,
+    themeID: String,
+    contentSizeCategory: String,
+    preferredLanguageCode: String,
+    translationOffersEnabled: Bool = AppStorageKey.defaultTranslationOffersEnabled
+  ) {
+    self.autoPlayGIFs = autoPlayGIFs
+    self.showIncomingPath = showIncomingPath
+    self.showIncomingHopCount = showIncomingHopCount
+    self.showIncomingRegion = showIncomingRegion
+    self.showIncomingHeardCount = showIncomingHeardCount
+    self.previewsEnabled = previewsEnabled
+    self.isHighContrast = isHighContrast
+    self.isDark = isDark
+    self.showMapPreviews = showMapPreviews
+    self.isOffline = isOffline
+    self.themeID = themeID
+    self.contentSizeCategory = contentSizeCategory
+    self.preferredLanguageCode = preferredLanguageCode
+    self.translationOffersEnabled = translationOffersEnabled
+  }
+
+  /// Identifier of the built-in default theme. Shared so `EnvInputs.default` and `Theme.default.id`
+  /// (defined in the Cairn layer, which cannot see `Theme` from here) cannot drift apart.
+  public static let defaultThemeID = "default"
+
+  /// The system's unscaled Dynamic Type baseline (`DynamicTypeSize.large`). Shared so
+  /// `EnvInputs.default` and the Cairn-side token mapper agree on the baseline string and
+  /// cannot drift apart.
+  public static let defaultContentSizeCategory = "large"
+
+  /// Fallback language code when `Locale.Language.languageCode` is missing.
+  public static let defaultPreferredLanguageCode = "en"
+
+  /// App-locale language subtag used as the Translation target (`en-US` → `en`).
+  public static func preferredLanguageCode(from locale: Locale) -> String {
+    locale.language.languageCode?.identifier ?? defaultPreferredLanguageCode
+  }
+
+  public static let `default` = EnvInputs(
+    autoPlayGIFs: AppStorageKey.defaultAutoPlayGIFs,
+    showIncomingPath: AppStorageKey.defaultShowIncomingPath,
+    showIncomingHopCount: AppStorageKey.defaultShowIncomingHopCount,
+    showIncomingRegion: AppStorageKey.defaultShowIncomingRegion,
+    showIncomingHeardCount: AppStorageKey.defaultShowIncomingHeardCount,
+    previewsEnabled: AppStorageKey.defaultLinkPreviewsEnabled,
+    isHighContrast: false,
+    isDark: false,
+    showMapPreviews: AppStorageKey.defaultShowMapPreviewThumbnails,
+    isOffline: false,
+    themeID: defaultThemeID,
+    contentSizeCategory: defaultContentSizeCategory,
+    preferredLanguageCode: defaultPreferredLanguageCode
+  )
+}

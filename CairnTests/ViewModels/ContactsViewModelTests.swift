@@ -1,0 +1,572 @@
+import CoreLocation
+import Foundation
+@testable import Cairn
+@testable import CairnServices
+import Testing
+
+// MARK: - Test Helpers
+
+private func createContact(
+  id: UUID = UUID(),
+  radioID: UUID = UUID(),
+  publicKey: Data? = nil,
+  name: String = "TestContact",
+  type: ContactType = .chat,
+  isFavorite: Bool = false,
+  isBlocked: Bool = false,
+  lastAdvertTimestamp: UInt32 = 0,
+  latitude: Double = 0,
+  longitude: Double = 0,
+  lastModified: UInt32 = 0,
+  outPathLength: UInt8 = 0
+) -> ContactDTO {
+  ContactDTO(
+    id: id,
+    radioID: radioID,
+    publicKey: publicKey ?? Data((0..<ProtocolLimits.publicKeySize).map { _ in UInt8.random(in: 0...255) }),
+    name: name,
+    typeRawValue: type.rawValue,
+    flags: 0,
+    outPathLength: outPathLength,
+    outPath: Data(),
+    lastAdvertTimestamp: lastAdvertTimestamp,
+    latitude: latitude,
+    longitude: longitude,
+    lastModified: lastModified,
+    lastHeardTimestamp: nil,
+    nickname: nil,
+    isBlocked: isBlocked,
+    isMuted: false,
+    isFavorite: isFavorite,
+    lastMessageDate: nil,
+    unreadCount: 0
+  )
+}
+
+// MARK: - ContactsViewModel Tests
+
+@Suite("ContactsViewModel Tests")
+@MainActor
+struct ContactsViewModelTests {
+  // MARK: - Initial State
+
+  @Test
+  func `hasLoadedOnce starts false`() {
+    let viewModel = ContactsViewModel()
+    #expect(viewModel.hasLoadedOnce == false)
+  }
+
+  @Test
+  func `isLoading starts false`() {
+    let viewModel = ContactsViewModel()
+    #expect(viewModel.isLoading == false)
+  }
+
+  @Test
+  func `contacts starts empty`() {
+    let viewModel = ContactsViewModel()
+    #expect(viewModel.contacts.isEmpty)
+  }
+
+  // MARK: - Guard Behavior
+
+  /// No store means no radio has been paired: the list shows its empty state, never a spinner
+  /// that waits for a load that can't happen.
+  @Test
+  func `loadContacts with nil dataStore shows the empty list`() async {
+    let viewModel = ContactsViewModel()
+    await viewModel.loadContacts(radioID: UUID())
+
+    #expect(viewModel.contacts.isEmpty)
+    #expect(viewModel.hasLoadedOnce == true)
+    #expect(viewModel.isLoading == false)
+  }
+
+  @Test
+  func `showNoRadio clears the list and ends loading`() {
+    let viewModel = ContactsViewModel()
+    viewModel.contacts = [createContact()]
+    viewModel.showNoRadio()
+
+    #expect(viewModel.contacts.isEmpty)
+    #expect(viewModel.hasLoadedOnce == true)
+  }
+
+  /// Overlapping loads (a reload per contact change on a busy mesh): the first load's fetch
+  /// finishes after the second started, and both end with the list loaded, not spinning.
+  @Test
+  func `overlapping loads end loaded`() async throws {
+    let radioID = UUID()
+    let container = try PersistenceStore.createContainer(inMemory: true)
+    let store = PersistenceStore(modelContainer: container)
+    try await store.saveContact(createContact(radioID: radioID, name: "Alpha"))
+
+    let viewModel = ContactsViewModel()
+    viewModel.configure(dataStore: { store }, contactService: { nil }, advertisementService: { nil })
+
+    // Both loads are in flight on the store actor before either finishes.
+    async let first: Void = viewModel.loadContacts(radioID: radioID)
+    async let second: Void = viewModel.loadContacts(radioID: radioID)
+    _ = await (first, second)
+
+    #expect(viewModel.hasLoadedOnce == true)
+    #expect(viewModel.contacts.map(\.name) == ["Alpha"])
+    #expect(viewModel.isLoading == false)
+  }
+
+  @Test
+  func `syncContacts with nil contactService returns early`() async {
+    let viewModel = ContactsViewModel()
+    await viewModel.syncContacts(radioID: UUID())
+
+    #expect(viewModel.isSyncing == false)
+    #expect(viewModel.syncProgress == nil)
+  }
+
+  @Test
+  func `toggleFavorite with nil contactService returns early`() async {
+    let viewModel = ContactsViewModel()
+    let contact = createContact(name: "Test")
+    await viewModel.toggleFavorite(contact: contact)
+
+    #expect(viewModel.togglingFavoriteID == nil)
+    #expect(viewModel.errorMessage == nil)
+  }
+
+  // MARK: - Filtering by Segment
+
+  @Test
+  func `filteredContacts favorites only returns only favorites`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    viewModel.contacts = [
+      createContact(radioID: deviceID, name: "Alice", isFavorite: true),
+      createContact(radioID: deviceID, name: "Bob", isFavorite: false),
+      createContact(radioID: deviceID, name: "Charlie", isFavorite: true)
+    ]
+
+    let result = viewModel.filteredContacts(
+      searchText: "",
+      segment: .all,
+      favoritesOnly: true,
+      sortOrder: .name,
+      userLocation: nil
+    )
+
+    #expect(result.count == 2)
+    let names = result.map(\.name)
+    #expect(names.contains("Alice"))
+    #expect(names.contains("Charlie"))
+    #expect(!names.contains("Bob"))
+  }
+
+  @Test
+  func `filteredContacts all segment returns every type, and favorites only narrows a segment`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    viewModel.contacts = [
+      createContact(radioID: deviceID, name: "Alice", type: .chat, isFavorite: true),
+      createContact(radioID: deviceID, name: "Relay1", type: .repeater, isFavorite: true),
+      createContact(radioID: deviceID, name: "Relay2", type: .repeater),
+      createContact(radioID: deviceID, name: "Room1", type: .room),
+    ]
+
+    let all = viewModel.filteredContacts(searchText: "", segment: .all, sortOrder: .name, userLocation: nil)
+    #expect(all.map(\.name) == ["Alice", "Relay1", "Relay2", "Room1"])
+
+    let favoriteRepeaters = viewModel.filteredContacts(
+      searchText: "", segment: .repeaters, favoritesOnly: true, sortOrder: .name, userLocation: nil
+    )
+    #expect(favoriteRepeaters.map(\.name) == ["Relay1"])
+  }
+
+  @Test
+  func `filteredContacts contacts segment returns only chat type`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    viewModel.contacts = [
+      createContact(radioID: deviceID, name: "Alice", type: .chat),
+      createContact(radioID: deviceID, name: "Relay1", type: .repeater),
+      createContact(radioID: deviceID, name: "Room1", type: .room)
+    ]
+
+    let result = viewModel.filteredContacts(
+      searchText: "",
+      segment: .contacts,
+      sortOrder: .name,
+      userLocation: nil
+    )
+
+    #expect(result.count == 1)
+    #expect(result.first?.name == "Alice")
+  }
+
+  @Test
+  func `filteredContacts repeaters segment returns only repeater type`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    viewModel.contacts = [
+      createContact(radioID: deviceID, name: "Alice", type: .chat),
+      createContact(radioID: deviceID, name: "Relay1", type: .repeater),
+      createContact(radioID: deviceID, name: "Relay2", type: .repeater),
+      createContact(radioID: deviceID, name: "Room1", type: .room)
+    ]
+
+    let result = viewModel.filteredContacts(
+      searchText: "",
+      segment: .repeaters,
+      sortOrder: .name,
+      userLocation: nil
+    )
+
+    #expect(result.count == 2)
+    #expect(result.allSatisfy { $0.type == .repeater })
+  }
+
+  @Test
+  func `filteredContacts rooms segment returns only room type`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    viewModel.contacts = [
+      createContact(radioID: deviceID, name: "Alice", type: .chat),
+      createContact(radioID: deviceID, name: "Relay1", type: .repeater),
+      createContact(radioID: deviceID, name: "Room1", type: .room),
+      createContact(radioID: deviceID, name: "Room2", type: .room)
+    ]
+
+    let result = viewModel.filteredContacts(
+      searchText: "",
+      segment: .rooms,
+      sortOrder: .name,
+      userLocation: nil
+    )
+
+    #expect(result.count == 2)
+    #expect(result.allSatisfy { $0.type == .room })
+  }
+
+  // MARK: - Filtering by Search Text
+
+  @Test
+  func `filteredContacts with search text ignores segment and filters by name`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    viewModel.contacts = [
+      createContact(radioID: deviceID, name: "Alice", type: .chat),
+      createContact(radioID: deviceID, name: "Relay-Alpha", type: .repeater),
+      createContact(radioID: deviceID, name: "Bob", type: .chat)
+    ]
+
+    // Search for "al" should match Alice and Relay-Alpha, ignoring segment filter
+    let result = viewModel.filteredContacts(
+      searchText: "al",
+      segment: .contacts,
+      sortOrder: .name,
+      userLocation: nil
+    )
+
+    #expect(result.count == 2)
+    let names = result.map(\.name)
+    #expect(names.contains("Alice"))
+    #expect(names.contains("Relay-Alpha"))
+  }
+
+  @Test
+  func `filteredContacts with no matching search returns empty`() {
+    let viewModel = ContactsViewModel()
+    viewModel.contacts = [
+      createContact(name: "Alice"),
+      createContact(name: "Bob")
+    ]
+
+    let result = viewModel.filteredContacts(
+      searchText: "zzz",
+      segment: .contacts,
+      sortOrder: .name,
+      userLocation: nil
+    )
+
+    #expect(result.isEmpty)
+  }
+
+  // MARK: - Memoization
+
+  @Test
+  func `filteredContacts recomputes after contacts or the delete mask change`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    let bob = createContact(radioID: deviceID, name: "Bob", type: .chat)
+    viewModel.contacts = [bob]
+
+    func names() -> [String] {
+      viewModel.filteredContacts(searchText: "", segment: .contacts, sortOrder: .name, userLocation: nil)
+        .map(\.name)
+    }
+
+    #expect(names() == ["Bob"])
+    viewModel.contacts.append(createContact(radioID: deviceID, name: "Alice", type: .chat))
+    #expect(names() == ["Alice", "Bob"])
+    viewModel.pendingRemovalIDs.insert(bob.id)
+    #expect(names() == ["Alice"])
+  }
+
+  @Test
+  func `filteredContacts searches by public key prefix after contacts change`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    viewModel.contacts = [createContact(radioID: deviceID, publicKey: Data(repeating: 0xAB, count: 32), name: "One")]
+    #expect(viewModel.filteredContacts(searchText: "ab", segment: .contacts, sortOrder: .name, userLocation: nil)
+      .map(\.name) == ["One"])
+
+    viewModel.contacts = [createContact(radioID: deviceID, publicKey: Data(repeating: 0xCD, count: 32), name: "Two")]
+    #expect(viewModel.filteredContacts(searchText: "ab", segment: .contacts, sortOrder: .name, userLocation: nil)
+      .isEmpty)
+    #expect(viewModel.filteredContacts(searchText: "cd", segment: .contacts, sortOrder: .name, userLocation: nil)
+      .map(\.name) == ["Two"])
+  }
+
+  // MARK: - Sorting
+
+  @Test
+  func `filteredContacts sorted by name returns alphabetical order`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    viewModel.contacts = [
+      createContact(radioID: deviceID, name: "Charlie", type: .chat),
+      createContact(radioID: deviceID, name: "Alice", type: .chat),
+      createContact(radioID: deviceID, name: "Bob", type: .chat)
+    ]
+
+    let result = viewModel.filteredContacts(
+      searchText: "",
+      segment: .contacts,
+      sortOrder: .name,
+      userLocation: nil
+    )
+
+    #expect(result.map(\.name) == ["Alice", "Bob", "Charlie"])
+  }
+
+  @Test
+  func `filteredContacts sorted by lastHeard returns most recent first`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    viewModel.contacts = [
+      createContact(radioID: deviceID, name: "Old", type: .chat, lastModified: 100),
+      createContact(radioID: deviceID, name: "Recent", type: .chat, lastModified: 300),
+      createContact(radioID: deviceID, name: "Middle", type: .chat, lastModified: 200)
+    ]
+
+    let result = viewModel.filteredContacts(
+      searchText: "",
+      segment: .contacts,
+      sortOrder: .lastHeard,
+      userLocation: nil
+    )
+
+    #expect(result.map(\.name) == ["Recent", "Middle", "Old"])
+  }
+
+  @Test
+  func `filteredContacts sorted by distance falls back to name without location`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    viewModel.contacts = [
+      createContact(radioID: deviceID, name: "Charlie", type: .chat),
+      createContact(radioID: deviceID, name: "Alice", type: .chat)
+    ]
+
+    // No user location → falls back to name sort
+    let result = viewModel.filteredContacts(
+      searchText: "",
+      segment: .contacts,
+      sortOrder: .distance,
+      userLocation: nil
+    )
+
+    #expect(result.map(\.name) == ["Alice", "Charlie"])
+  }
+
+  @Test
+  func `filteredContacts sorted by distance with user location orders by proximity`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    // San Francisco
+    let userLocation = CLLocation(latitude: 37.7749, longitude: -122.4194)
+
+    viewModel.contacts = [
+      // New York (~4100km away)
+      createContact(radioID: deviceID, name: "FarAway", type: .chat, latitude: 40.7128, longitude: -74.0060),
+      // Oakland (~13km away)
+      createContact(radioID: deviceID, name: "Nearby", type: .chat, latitude: 37.8044, longitude: -122.2712)
+    ]
+
+    let result = viewModel.filteredContacts(
+      searchText: "",
+      segment: .contacts,
+      sortOrder: .distance,
+      userLocation: userLocation
+    )
+
+    #expect(result.first?.name == "Nearby")
+    #expect(result.last?.name == "FarAway")
+  }
+
+  @Test
+  func `filteredContacts sorted by hops returns fewest first with flood-routed last`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    let floodSentinel: UInt8 = 0xFF
+    viewModel.contacts = [
+      createContact(radioID: deviceID, name: "ThreeHop", type: .chat, outPathLength: 3),
+      createContact(radioID: deviceID, name: "Flood", type: .chat, outPathLength: floodSentinel),
+      createContact(radioID: deviceID, name: "OneHop", type: .chat, outPathLength: 1)
+    ]
+
+    let result = viewModel.filteredContacts(
+      searchText: "",
+      segment: .contacts,
+      sortOrder: .hops,
+      userLocation: nil
+    )
+
+    #expect(result.map(\.name) == ["OneHop", "ThreeHop", "Flood"])
+  }
+
+  @Test
+  func `filteredContacts sorted by hops breaks ties by distance, including the flood group`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    let floodSentinel: UInt8 = 0xFF
+    let userLocation = CLLocation(latitude: 0, longitude: 0)
+    viewModel.contacts = [
+      createContact(radioID: deviceID, name: "FarFlood", type: .chat, latitude: 0, longitude: 5, outPathLength: floodSentinel),
+      createContact(radioID: deviceID, name: "FarSameHop", type: .chat, latitude: 0, longitude: 1, outPathLength: 2),
+      createContact(radioID: deviceID, name: "NearSameHop", type: .chat, latitude: 0, longitude: 0.1, outPathLength: 2),
+      createContact(radioID: deviceID, name: "NearFlood", type: .chat, latitude: 0, longitude: 0.5, outPathLength: floodSentinel)
+    ]
+
+    let result = viewModel.filteredContacts(
+      searchText: "",
+      segment: .contacts,
+      sortOrder: .hops,
+      userLocation: userLocation
+    )
+
+    // Direct nodes first, nearest-first; flood group last, nearest-first.
+    #expect(result.map(\.name) == ["NearSameHop", "FarSameHop", "NearFlood", "FarFlood"])
+  }
+
+  @Test
+  func `filteredContacts sorted by hops orders a flood node by its known inbound hop count`() {
+    let viewModel = ContactsViewModel()
+    let deviceID = UUID()
+    let floodSentinel: UInt8 = 0xFF
+    let oneHop = createContact(radioID: deviceID, name: "OneHop", type: .chat, outPathLength: 1)
+    let floodTwoInbound = createContact(radioID: deviceID, name: "FloodTwoInbound", type: .chat, outPathLength: floodSentinel)
+    let threeHop = createContact(radioID: deviceID, name: "ThreeHop", type: .chat, outPathLength: 3)
+    let floodUnknown = createContact(radioID: deviceID, name: "FloodUnknown", type: .chat, outPathLength: floodSentinel)
+    viewModel.contacts = [floodUnknown, threeHop, floodTwoInbound, oneHop]
+
+    // One flood node was heard two hops away via an advert; the other never was.
+    viewModel.inboundHopByKey = [floodTwoInbound.publicKey: 2]
+
+    let result = viewModel.filteredContacts(
+      searchText: "",
+      segment: .contacts,
+      sortOrder: .hops,
+      userLocation: nil
+    )
+
+    // The flood node interleaves by its inbound count; only the unknown flood node sorts last.
+    #expect(result.map(\.name) == ["OneHop", "FloodTwoInbound", "ThreeHop", "FloodUnknown"])
+  }
+
+  // MARK: - Upsert
+
+  @Test
+  func `upsert appends a contact that is not already in the list`() {
+    let viewModel = ContactsViewModel()
+    let existing = createContact(name: "Alex")
+    let added = createContact(name: "Sam")
+    viewModel.contacts = [existing]
+    viewModel.pendingRemovalIDs = [added.id]
+
+    viewModel.upsert(added)
+
+    #expect(viewModel.contacts.map(\.id) == [existing.id, added.id])
+    #expect(!viewModel.pendingRemovalIDs.contains(added.id))
+  }
+
+  @Test
+  func `upsert replaces an existing contact with the same id`() {
+    let viewModel = ContactsViewModel()
+    let original = createContact(name: "Alex")
+    let updated = createContact(
+      id: original.id,
+      radioID: original.radioID,
+      publicKey: original.publicKey,
+      name: "Alex Updated"
+    )
+    viewModel.contacts = [original]
+
+    viewModel.upsert(updated)
+
+    #expect(viewModel.contacts.count == 1)
+    #expect(viewModel.contacts.first?.name == "Alex Updated")
+    #expect(viewModel.contacts.first?.id == original.id)
+  }
+
+  @Test
+  func `upsert replaces an existing contact with the same public key and radio`() {
+    let viewModel = ContactsViewModel()
+    let radioID = UUID()
+    let publicKey = Data((0..<ProtocolLimits.publicKeySize).map { _ in UInt8.random(in: 0...255) })
+    let original = createContact(radioID: radioID, publicKey: publicKey, name: "Alex")
+    let updated = createContact(
+      id: UUID(),
+      radioID: radioID,
+      publicKey: publicKey,
+      name: "Sam"
+    )
+    viewModel.contacts = [original]
+
+    viewModel.upsert(updated)
+
+    #expect(viewModel.contacts.count == 1)
+    #expect(viewModel.contacts.first?.id == updated.id)
+    #expect(viewModel.contacts.first?.name == "Sam")
+  }
+
+  @Test
+  func `loadContacts keeps an upserted contact until the fetch includes it`() async throws {
+    let radioID = UUID()
+    let container = try PersistenceStore.createContainer(inMemory: true)
+    let store = PersistenceStore(modelContainer: container)
+    let existing = createContact(radioID: radioID, name: "Alex")
+    let added = createContact(radioID: radioID, name: "Sam")
+    try await store.saveContact(existing)
+
+    let viewModel = ContactsViewModel()
+    viewModel.configure(
+      dataStore: { store },
+      contactService: { nil },
+      advertisementService: { nil }
+    )
+    await viewModel.loadContacts(radioID: radioID)
+    viewModel.upsert(added)
+
+    await viewModel.loadContacts(radioID: radioID)
+    let visible = viewModel.filteredContacts(
+      searchText: "",
+      segment: .contacts,
+      sortOrder: .name,
+      userLocation: nil
+    )
+    #expect(Set(visible.map(\.id)) == Set([existing.id, added.id]))
+
+    try await store.saveContact(added)
+    await viewModel.loadContacts(radioID: radioID)
+    #expect(viewModel.contacts.filter { $0.id == added.id }.count == 1)
+  }
+}

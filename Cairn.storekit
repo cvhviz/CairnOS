@@ -1,0 +1,80 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "7C1A2E44",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : false,
+      "internalID" : "6754000001",
+      "localizations" : [
+        {
+          "description" : "A small thank-you for the developer.",
+          "displayName" : "A Coffee",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "cvhvisuals.Cairn.tip.small",
+      "referenceName" : "Tip - Coffee",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "6754000002",
+      "localizations" : [
+        {
+          "description" : "Keeps the late-night coding going.",
+          "displayName" : "A Big Coffee",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "cvhvisuals.Cairn.tip.medium",
+      "referenceName" : "Tip - Big Coffee",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "6754000003",
+      "localizations" : [
+        {
+          "description" : "Coffee and breakfast. You're a legend.",
+          "displayName" : "Coffee and Breakfast",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "cvhvisuals.Cairn.tip.large",
+      "referenceName" : "Tip - Coffee and Breakfast",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6754000000",
+    "_developerTeamID" : "",
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

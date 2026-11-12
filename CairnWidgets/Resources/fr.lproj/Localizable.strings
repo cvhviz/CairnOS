@@ -1,0 +1,40 @@
+/* Widget localization — French */
+
+"Disconnected" = "Déconnecté";
+"%lld packets per minute" = "%lld paquets par minute";
+"Battery %lld percent" = "Batterie %lld pour cent";
+
+/* Control Center button: opens the app */
+"Open Cairn" = "Ouvrir Cairn";
+
+/* Live Activity: banner and Dynamic Island readings */
+/* AI-translated - please verify with native speakers. */
+"Connected" = "Connecté";
+"Direct" = "Direct";
+"No messages yet" = "Aucun message";
+"RSSI" = "RSSI";
+"SNR" = "SNR";
+"Noise" = "Bruit";
+"Per min" = "Par min";
+"Nodes 1h" = "Nœuds 1 h";
+"Battery %lld percent, %@" = "Batterie %lld pour cent, %@";
+"Position %@" = "Position %@";
+"Message from %@ in %@: %@" = "Message de %@ dans %@ : %@";
+"Direct message from %@: %@" = "Message direct de %@ : %@";
+"Last RSSI %lld dBm" = "Dernier RSSI %lld dBm";
+"Last SNR %@ dB" = "Dernier SNR %@ dB";
+"Noise floor %lld dBm" = "Bruit de fond %lld dBm";
+"Last RSSI %lld dBm, SNR %@ dB" = "Dernier RSSI %lld dBm, SNR %@ dB";
+"Last message from %@" = "Dernier message de %@";
+
+/* Home-screen widget (Radio Status) */
+/* AI-translated - please verify with native speakers. */
+"Radio Status" = "État de la radio";
+"Your radio's link, battery and unread messages at a glance." = "La liaison, la batterie et les messages non lus de votre radio en un coup d’œil.";
+"Connecting…" = "Connexion…";
+"No radio" = "Aucune radio";
+"Open Cairn to connect" = "Ouvrez Cairn pour vous connecter";
+"Last heard" = "Dernier entendu";
+"Last heard %@" = "Dernier entendu : %@";
+"Nothing heard yet" = "Rien entendu pour l’instant";
+"Updated" = "Mis à jour";

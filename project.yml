@@ -1,0 +1,208 @@
+name: Cairn
+options:
+  bundleIdPrefix: cvhvisuals.Cairn
+  deploymentTarget:
+    iOS: "18.0"
+  xcodeVersion: "27.0"
+  generateEmptyDirectories: true
+
+# dev.yml is gitignored and supplies DEVELOPMENT_TEAM for local signing.
+# It is created empty by `make generate` and in CI.
+include:
+  - dev.yml
+
+settings:
+  base:
+    SWIFT_VERSION: "6.2"
+    SWIFT_STRICT_CONCURRENCY: complete
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+
+packages:
+  MeshCore:
+    path: MeshCore
+  CairnServices:
+    path: CairnServices
+  # The Cairn Updater's Wi-Fi upload and release download, shared with the updater app; bundled in
+  # Packages/CairnUpdateKit.
+  CairnUpdateKit:
+    path: Packages/CairnUpdateKit
+  Emojibase:
+    url: https://github.com/matrix-org/emojibase-bindings
+    # Exact, for the same reason MessagingUI below is pinned to a revision: no lockfile
+    # is committed, so a range resolves to whatever is newest on each machine and build.
+    exactVersion: 1.5.0
+  MapLibre:
+    url: https://github.com/maplibre/maplibre-gl-native-distribution
+    exactVersion: 6.28.0
+  # Nordic legacy DFU, for updating nRF52 boards (Heltec T096, T114) over Bluetooth from the app.
+  NordicDFU:
+    url: https://github.com/NordicSemiconductor/IOS-DFU-Library
+    exactVersion: 4.16.0
+  MessagingUI:
+    url: https://github.com/bwees-forks/swiftui-messaging-ui
+    # Pinned to an exact revision: Package.resolved is gitignored (the whole
+    # generated .xcodeproj is), so branch tracking resolves to whatever each
+    # machine last fetched and different developers silently build different
+    # library code. Bump this hash deliberately when the fork advances.
+    revision: 663d6ce9ee9ba459ef9fe3a1848a05c4acffaef8
+
+targets:
+  Cairn:
+    type: application
+    platform: iOS
+    sources:
+      - path: Cairn
+        excludes:
+          - "**/*.md"
+      - path: AppIcon.icon
+      - path: Shared
+    dependencies:
+      - package: CairnServices
+      - package: CairnUpdateKit
+        product: CairnUpdateKit
+      - package: Emojibase
+      - package: MapLibre
+      - package: NordicDFU
+        product: NordicDFU
+      - package: MessagingUI
+      - target: CairnWidgets
+    preBuildScripts:
+      - name: SwiftGen
+        script: |
+          export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
+          if ! command -v swiftgen &> /dev/null; then
+              echo "error: SwiftGen not installed. Install with: brew install swiftgen"
+              exit 1
+          fi
+          swiftgen config run --config "${PROJECT_DIR}/swiftgen.yml"
+        inputFiles:
+          - $(PROJECT_DIR)/swiftgen.yml
+          - $(PROJECT_DIR)/Cairn/Resources/Localization/en.lproj/Localizable.strings
+          - $(PROJECT_DIR)/Cairn/Resources/Localization/en.lproj/Chats.strings
+          - $(PROJECT_DIR)/Cairn/Resources/Localization/en.lproj/Contacts.strings
+          - $(PROJECT_DIR)/Cairn/Resources/Localization/en.lproj/Map.strings
+          - $(PROJECT_DIR)/Cairn/Resources/Localization/en.lproj/Settings.strings
+          - $(PROJECT_DIR)/Cairn/Resources/Localization/en.lproj/Tools.strings
+          - $(PROJECT_DIR)/Cairn/Resources/Localization/en.lproj/Onboarding.strings
+          - $(PROJECT_DIR)/Cairn/Resources/Localization/en.lproj/RemoteNodes.strings
+          - $(PROJECT_DIR)/Cairn/Resources/Localization/en.lproj/WhatsNew.strings
+        outputFiles:
+          - $(PROJECT_DIR)/Cairn/Resources/Generated/L10n.swift
+        basedOnDependencyAnalysis: false
+    settings:
+      base:
+        SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: YES
+        # CarPlay (communication, granted by Apple on 2026-10-03) plus Siri messaging, on every
+        # SDK. The App ID needs the CarPlay Communication capability enabled under Additional
+        # Capabilities in the developer portal, or device signing fails. The same file carries
+        # the App Group ($(CAIRN_APP_GROUP), per config below) the home-screen widget reads
+        # its snapshot from; automatic signing registers the group on the App ID.
+        CODE_SIGN_ENTITLEMENTS: Cairn/CarPlay.entitlements
+        # Weak, so the Designed-for-iPad build still launches on a Mac without CarPlay.framework;
+        # the CarPlay scene simply never connects there.
+        OTHER_LDFLAGS: ["$(inherited)", "-weak_framework", "CarPlay"]
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        MARKETING_VERSION: "1.5"
+        CURRENT_PROJECT_VERSION: 6
+        VERSIONING_SYSTEM: apple-generic
+        TARGETED_DEVICE_FAMILY: "1,2"
+        NSSupportsLiveActivities: true
+        # `location` only for Wardrive, which turns background updates on while it runs.
+        # `fetch`: Background App Refresh (BackgroundRefreshController); the Info.plists carry the
+        # real keys, BGTaskSchedulerPermittedIdentifiers included.
+        UIBackgroundModes:
+          - bluetooth-central
+          - fetch
+          - location
+        NSBluetoothAlwaysUsageDescription: "Cairn uses Bluetooth to maintain connections with MeshCore radios, even in the background, so you can send and receive messages without opening the app."
+        NSBluetoothPeripheralUsageDescription: "Cairn uses Bluetooth to connect to MeshCore radios."
+        NSLocationWhenInUseUsageDescription: "Cairn uses your location to suggest a recommended radio preset for your area, show your position on maps, and sort contacts by distance. When you enable location sharing, Cairn also advertises your location to your mesh contacts. While Wardrive runs, Cairn keeps using your location in the background to record where each node was heard."
+        NSAccessorySetupSupports:
+          - Bluetooth
+        NSAccessorySetupKitSupports:
+          - Bluetooth
+        NSAccessorySetupBluetoothServices:
+          - "6E400001-B5A3-F393-E0A9-E50E24DCCA9E"
+      configs:
+        Debug:
+          INFOPLIST_FILE: Cairn/Info-Debug.plist
+          PRODUCT_BUNDLE_IDENTIFIER: cvhvisuals.Cairn.dev
+          # The widget's snapshot store, shared with CairnWidgets; a dev install beside the App
+          # Store app keeps its own (Shared/WidgetSnapshot.swift derives the same id in code).
+          CAIRN_APP_GROUP: group.cvhvisuals.Cairn.dev
+        Release:
+          INFOPLIST_FILE: Cairn/Info.plist
+          PRODUCT_BUNDLE_IDENTIFIER: cvhvisuals.Cairn
+          CAIRN_APP_GROUP: group.cvhvisuals.Cairn
+
+  CairnTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: CairnTests
+    dependencies:
+      - target: Cairn
+    settings:
+      base:
+        INFOPLIST_FILE: CairnTests/Info.plist
+        MARKETING_VERSION: "1.5"
+        CURRENT_PROJECT_VERSION: 6
+        VERSIONING_SYSTEM: apple-generic
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/Cairn.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Cairn"
+        BUNDLE_LOADER: "$(TEST_HOST)"
+
+  CairnWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: CairnWidgets
+      - path: Shared
+    settings:
+      base:
+        MARKETING_VERSION: "1.5"
+        CURRENT_PROJECT_VERSION: 6
+        VERSIONING_SYSTEM: apple-generic
+        TARGETED_DEVICE_FAMILY: "1,2"
+        # The App Group the home-screen widget reads the app's snapshot from (same per-config
+        # value as the app target's).
+        CODE_SIGN_ENTITLEMENTS: CairnWidgets/CairnWidgets.entitlements
+      configs:
+        Debug:
+          INFOPLIST_FILE: CairnWidgets/Info.plist
+          PRODUCT_BUNDLE_IDENTIFIER: cvhvisuals.Cairn.dev.widgets
+          CAIRN_APP_GROUP: group.cvhvisuals.Cairn.dev
+        Release:
+          INFOPLIST_FILE: CairnWidgets/Info.plist
+          PRODUCT_BUNDLE_IDENTIFIER: cvhvisuals.Cairn.widgets
+          CAIRN_APP_GROUP: group.cvhvisuals.Cairn
+
+schemes:
+  Cairn:
+    build:
+      targets:
+        Cairn: all
+        CairnTests: [test]
+        CairnWidgets: [run]
+    run:
+      config: Debug
+      # Local tips for the About page's tip jar; App Store Connect serves the real ones.
+      storeKitConfiguration: Cairn.storekit
+    test:
+      config: Debug
+      language: en
+      region: US
+      targets:
+        - CairnTests
+    profile:
+      config: Release
+    analyze:
+      config: Debug
+    archive:
+      config: Release
+      # MapLibre's package ships no dSYM; this adds the one MapLibre publishes, so App Store
+      # Connect can symbolicate map crashes (see ci/add-maplibre-dsym.sh).
+      postActions:
+        - name: Add MapLibre dSYM
+          settingsTarget: Cairn
+          script: |
+            "${SRCROOT}/ci/add-maplibre-dsym.sh" > "${ARCHIVE_PATH}/../add-maplibre-dsym.log" 2>&1 || true

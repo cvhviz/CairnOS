@@ -1,0 +1,48 @@
+/* Widget localization — Italian
+   AI-translated - please verify with native speakers.
+*/
+
+/* Connection status shown when radio is disconnected */
+"Disconnected" = "Disconnesso";
+
+
+/* Accessibility: packet rate */
+"%lld packets per minute" = "%lld pacchetti al minuto";
+
+/* Accessibility: battery level */
+"Battery %lld percent" = "Batteria %lld percento";
+
+/* Control Center button: opens the app */
+"Open Cairn" = "Apri Cairn";
+
+/* Live Activity: banner and Dynamic Island readings */
+/* AI-translated - please verify with native speakers. */
+"Connected" = "Connesso";
+"Direct" = "Diretto";
+"No messages yet" = "Ancora nessun messaggio";
+"RSSI" = "RSSI";
+"SNR" = "SNR";
+"Noise" = "Rumore";
+"Per min" = "Al min";
+"Nodes 1h" = "Nodi 1 h";
+"Battery %lld percent, %@" = "Batteria %lld percento, %@";
+"Position %@" = "Posizione %@";
+"Message from %@ in %@: %@" = "Messaggio da %@ in %@: %@";
+"Direct message from %@: %@" = "Messaggio diretto da %@: %@";
+"Last RSSI %lld dBm" = "Ultimo RSSI %lld dBm";
+"Last SNR %@ dB" = "Ultimo SNR %@ dB";
+"Noise floor %lld dBm" = "Rumore di fondo %lld dBm";
+"Last RSSI %lld dBm, SNR %@ dB" = "Ultimo RSSI %lld dBm, SNR %@ dB";
+"Last message from %@" = "Ultimo messaggio da %@";
+
+/* Home-screen widget (Radio Status) */
+/* AI-translated - please verify with native speakers. */
+"Radio Status" = "Stato della radio";
+"Your radio's link, battery and unread messages at a glance." = "Collegamento, batteria e messaggi non letti della tua radio a colpo d’occhio.";
+"Connecting…" = "Connessione…";
+"No radio" = "Nessuna radio";
+"Open Cairn to connect" = "Apri Cairn per connetterti";
+"Last heard" = "Ultimo sentito";
+"Last heard %@" = "Ultimo sentito: %@";
+"Nothing heard yet" = "Ancora nulla sentito";
+"Updated" = "Aggiornato";

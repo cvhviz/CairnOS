@@ -1,0 +1,1699 @@
+/*
+  RemoteNodes.strings
+  Cairn
+
+  Korean (ko) translation of the Remote Nodes feature strings.
+  AI-translated - please verify with native speakers.
+*/
+
+// MARK: - Node Authentication Sheet
+
+/* Location: NodeAuthenticationSheet.swift - Navigation title for room authentication */
+"remoteNodes.auth.joinRoom" = "룸 참여";
+
+/* Location: NodeAuthenticationSheet.swift - Navigation title for repeater management */
+"remoteNodes.auth.management" = "관리";
+
+/* Location: NodeAuthenticationSheet.swift - Cancel button */
+"remoteNodes.auth.cancel" = "취소";
+
+/* Location: NodeAuthenticationSheet.swift - Node details section header */
+"remoteNodes.auth.nodeDetails" = "노드 세부 정보";
+
+/* Location: NodeAuthenticationSheet.swift - Name label */
+"remoteNodes.auth.name" = "이름";
+
+/* Location: NodeAuthenticationSheet.swift - Type label */
+"remoteNodes.auth.type" = "유형";
+
+/* Location: NodeAuthenticationSheet.swift - Room type value */
+"remoteNodes.auth.typeRoom" = "룸";
+
+/* Location: NodeAuthenticationSheet.swift - Repeater type value */
+"remoteNodes.auth.typeRepeater" = "리피터";
+
+/* Location: NodeAuthenticationSheet.swift - Authentication section header */
+"remoteNodes.auth.authentication" = "인증";
+
+/* Location: NodeAuthenticationSheet.swift - Password field placeholder */
+"remoteNodes.auth.password" = "암호";
+
+/* Location: NodeAuthenticationSheet.swift - Remember password toggle */
+"remoteNodes.auth.rememberPassword" = "암호 기억";
+
+/* Location: NodeAuthenticationSheet.swift - Error accessibility label prefix */
+"remoteNodes.auth.errorPrefix" = "오류: %@";
+
+/* Location: NodeAuthenticationSheet.swift - Password too long warning for repeaters */
+"remoteNodes.auth.passwordTooLongRepeaters" = "MeshCore 리피터는 최대 %d자의 암호만 허용합니다. 초과한 문자는 무시됩니다.";
+
+/* Location: NodeAuthenticationSheet.swift - Password too long warning for rooms */
+"remoteNodes.auth.passwordTooLongRooms" = "MeshCore 룸은 최대 %d자의 암호만 허용합니다. 초과한 문자는 무시됩니다.";
+
+/* Location: NodeAuthenticationSheet.swift - Countdown text showing seconds remaining */
+"remoteNodes.auth.secondsRemaining" = "최대 %d초 남음";
+
+/* Location: NodeAuthenticationSheet.swift - Connect button */
+"remoteNodes.auth.connect" = "연결";
+
+/* Location: NodeAuthenticationSheet.swift - Path section header */
+"remoteNodes.auth.path" = "경로";
+
+/* Location: NodeAuthenticationSheet.swift - Flood routing toggle */
+"remoteNodes.auth.floodRouting" = "플러드 라우팅";
+"remoteNodes.auth.floodRetryStatus" = "알려진 경로로 응답이 없습니다. 플러드 라우팅으로 다시 시도합니다.";
+"remoteNodes.auth.floodFooter" = "플러드 라우팅은 더 느리고 네트워크 전송 시간을 더 많이 사용합니다. 현재 위치에서 알려진 경로가 작동하지 않을 때 사용하십시오. 로그인 후 새 경로를 자동으로 학습합니다.";
+
+/* Location: NodeAuthenticationSheet.swift - Path section footer when stored path exists */
+"remoteNodes.auth.pathFooter" = "이 노드로 가는 알려진 경로를 사용하거나, 플러드 라우팅으로 전환하여 네트워크가 경로를 찾도록 하십시오.";
+
+/* Location: NodeAuthenticationSheet.swift - Path hop whose repeater is not known */
+"remoteNodes.auth.pathHopUnknown" = "<알 수 없음>";
+
+/* Location: NodeAuthenticationSheet.swift - Label when no route is set */
+"remoteNodes.auth.noRouteSet" = "설정된 경로 없음";
+
+/* Location: NodeAuthenticationSheet.swift - Path section footer when no route is set */
+"remoteNodes.auth.noRouteFooter" = "이 노드로 가는 알려진 경로가 없습니다. 네트워크가 자동으로 경로를 찾습니다.";
+
+/* Location: NodeAuthenticationSheet.swift - Accessibility announcement for countdown */
+"remoteNodes.auth.secondsRemainingAnnouncement" = "%d초 남음";
+
+// MARK: - Repeater Settings
+
+/* Location: RepeaterSettingsView.swift - Navigation title */
+"remoteNodes.settings.title" = "리피터 설정";
+
+/* Location: RepeaterSettingsView.swift - Done button (used in multiple places) */
+"remoteNodes.settings.done" = "완료";
+
+/* Location: NodeSettingsView.swift - Settings tab label */
+"remoteNodes.settings.tab.settings" = "설정";
+
+/* Location: NodeSettingsView.swift - CLI tab label */
+"remoteNodes.settings.tab.cli" = "CLI";
+
+/* Location: NodeSettingsView.swift - Telemetry tab label */
+"remoteNodes.settings.tab.telemetry" = "텔레메트리";
+
+/* Location: NodeSettingsView.swift - View mode picker label */
+"remoteNodes.settings.tab.picker" = "보기 모드";
+
+/* Location: RepeaterSettingsView.swift - Success alert title */
+"remoteNodes.settings.success" = "성공";
+
+/* Location: RepeaterSettingsView.swift - OK button */
+"remoteNodes.settings.ok" = "확인";
+
+/* Location: RepeaterSettingsView.swift - Default success message */
+"remoteNodes.settings.settingsApplied" = "설정이 적용됨";
+
+/* Location: RepeaterSettingsView.swift - Device info section title */
+"remoteNodes.settings.deviceInfo" = "기기 정보";
+
+/* Location: RepeaterSettingsView.swift - Firmware label */
+"remoteNodes.settings.firmware" = "펌웨어";
+
+/* Location: RepeaterSettingsView.swift - Device time label */
+"remoteNodes.settings.deviceTime" = "기기 시간";
+
+/* Location: RepeaterSettingsView.swift - Radio parameters section title */
+"remoteNodes.settings.radioParameters" = "무선 매개변수";
+
+/* Location: RepeaterSettingsView.swift - Radio restart warning */
+"remoteNodes.settings.radioRestartWarning" = "변경 사항은 리피터를 재시동해야 적용됩니다";
+
+/* Location: RepeaterSettingsView.swift - Frequency label */
+"remoteNodes.settings.frequencyMHz" = "주파수(MHz)";
+
+/* Location: RepeaterSettingsView.swift - MHz placeholder */
+"remoteNodes.settings.mhz" = "MHz";
+
+/* Location: RepeaterSettingsView.swift - Loading placeholder */
+"remoteNodes.settings.loading" = "불러오는 중...";
+
+/* Location: RepeaterSettingsView.swift - Failed to load placeholder */
+"remoteNodes.settings.failedToLoad" = "불러오지 못함";
+
+/* Location: RepeaterSettingsView.swift - Bandwidth label */
+"remoteNodes.settings.bandwidthKHz" = "대역폭(kHz)";
+
+/* Location: RepeaterSettingsView.swift - Accessibility label for bandwidth picker options - %@ is formatted bandwidth */
+"remoteNodes.settings.accessibility.bandwidthLabel" = "%@킬로헤르츠";
+
+/* Location: RepeaterSettingsView.swift - Bandwidth accessibility hint */
+"remoteNodes.settings.bandwidthHint" = "값이 낮을수록 도달 거리는 늘지만 속도는 느려집니다";
+
+/* Location: RepeaterSettingsView.swift - Spreading factor label */
+"remoteNodes.settings.spreadingFactor" = "확산 계수";
+
+/* Location: RepeaterSettingsView.swift - Accessibility label for spreading factor picker options - %d is the factor */
+"remoteNodes.settings.accessibility.spreadingFactorLabel" = "확산 계수 %d";
+
+/* Location: RepeaterSettingsView.swift - Spreading factor accessibility hint */
+"remoteNodes.settings.spreadingFactorHint" = "값이 높을수록 도달 거리는 늘지만 속도는 느려집니다";
+
+/* Location: RepeaterSettingsView.swift - Coding rate label */
+"remoteNodes.settings.codingRate" = "코딩 레이트";
+
+/* Location: RepeaterSettingsView.swift - Accessibility label for coding rate picker options - %d is the rate */
+"remoteNodes.settings.accessibility.codingRateLabel" = "코딩 레이트 %d";
+
+/* Location: RepeaterSettingsView.swift - Coding rate accessibility hint */
+"remoteNodes.settings.codingRateHint" = "값이 높을수록 오류 정정이 강화되지만 속도는 느려집니다";
+
+/* Location: RepeaterSettingsView.swift - TX power label */
+"remoteNodes.settings.txPowerDbm" = "송신 출력(dBm)";
+
+/* Location: RepeaterSettingsView.swift - dBm placeholder */
+"remoteNodes.settings.dbm" = "dBm";
+
+/* Location: RepeaterSettingsView.swift - Apply radio settings button */
+"remoteNodes.settings.applyRadioSettings" = "무선 설정 적용";
+
+/* Location: RepeaterSettingsView.swift - Identity & location section title */
+"remoteNodes.settings.identityLocation" = "ID 및 위치";
+
+/* Location: RepeaterSettingsView.swift - Latitude label */
+"remoteNodes.settings.latitude" = "위도";
+
+/* Location: RepeaterSettingsView.swift - Lat placeholder */
+/* Location: RepeaterSettingsView.swift - Longitude label */
+"remoteNodes.settings.longitude" = "경도";
+
+/* Location: RepeaterSettingsView.swift - Lon placeholder */
+/* Location: RepeaterSettingsView.swift - Pick on map button */
+"remoteNodes.settings.pickOnMap" = "지도에서 선택";
+
+/* Location: RepeaterSettingsView.swift - Apply identity settings button */
+"remoteNodes.settings.applyIdentitySettings" = "ID 설정 적용";
+
+/* Location: RepeaterSettingsView.swift - Contact info section title */
+"remoteNodes.settings.contactInfo" = "연락처 정보";
+
+/* Location: RepeaterSettingsView.swift - Contact info placeholder */
+"remoteNodes.settings.contactInfoPlaceholder" = "주파수, 운영자 이름, 웹사이트...";
+
+/* Location: RepeaterSettingsView.swift - Contact info footer */
+"remoteNodes.settings.contactInfoFooter" = "다른 노드에 공개되는 연락처 정보입니다. 줄 바꿈으로 항목을 구분하십시오.";
+
+/* Location: RepeaterSettingsView.swift - Apply contact info button */
+"remoteNodes.settings.applyContactInfo" = "연락처 정보 적용";
+
+/* Location: RepeaterSettingsView.swift - Contact info character count format */
+/* Location: RepeaterSettingsView.swift - Behavior section title */
+"remoteNodes.settings.behavior" = "동작";
+
+/* Location: RepeaterSettingsView.swift - Repeater mode toggle */
+"remoteNodes.settings.repeaterMode" = "리피터 모드";
+
+/* Location: RepeaterSettingsView.swift - Advert interval (0-hop) label */
+"remoteNodes.settings.advertInterval0Hop" = "애드버트 간격(0홉)";
+
+/* Location: RepeaterSettingsView.swift - Minutes unit */
+"remoteNodes.settings.min" = "분";
+
+/* Location: RepeaterSettingsView.swift - Advert interval (flood) label */
+"remoteNodes.settings.advertIntervalFlood" = "애드버트 간격(플러드)";
+
+/* Location: RepeaterSettingsView.swift - Hours unit */
+"remoteNodes.settings.hrs" = "시간";
+
+/* Location: RepeaterSettingsView.swift - Max flood hops label */
+"remoteNodes.settings.maxFloodHops" = "최대 플러드 홉";
+
+/* Location: RepeaterSettingsView.swift - Hops unit */
+"remoteNodes.settings.hops" = "홉";
+
+/* Location: RepeaterSettingsView.swift - Apply behavior settings button */
+"remoteNodes.settings.applyBehaviorSettings" = "동작 설정 적용";
+
+/* Location: RepeaterSettingsView.swift - Security section title */
+"remoteNodes.settings.security" = "보안";
+
+/* Location: RepeaterSettingsView.swift - New password placeholder */
+"remoteNodes.settings.newPassword" = "새 암호";
+
+/* Location: RepeaterSettingsView.swift - Confirm password placeholder */
+"remoteNodes.settings.confirmPassword" = "암호 확인";
+
+/* Location: RepeaterSettingsView.swift - Change password button */
+"remoteNodes.settings.changePassword" = "암호 변경";
+
+/* Location: RepeaterSettingsView.swift - Security footer text */
+"remoteNodes.settings.securityFooter" = "관리자 인증 암호를 변경합니다.";
+
+/* Location: RepeaterSettingsView.swift - Device info section footer */
+"remoteNodes.settings.deviceInfoFooter" = "펌웨어 버전 및 기기 시계.";
+
+/* Location: RepeaterSettingsView.swift - Radio settings section footer */
+"remoteNodes.settings.radioFooter" = "주파수, 대역폭, 확산 계수 및 코딩 레이트.";
+
+/* Location: RepeaterSettingsView.swift - Identity section footer */
+"remoteNodes.settings.identityFooter" = "지도 표시용 리피터 이름 및 GPS 좌표.";
+
+/* Location: RepeaterSettingsView.swift - Behavior section footer */
+"remoteNodes.settings.behaviorFooter" = "애드버트 간격, 플러드 홉 및 리피터 모드.";
+
+/* Location: RepeaterSettingsView.swift - Device actions section header */
+"remoteNodes.settings.deviceActions" = "기기 작업";
+
+/* Location: RepeaterSettingsView.swift - Send advert button */
+"remoteNodes.settings.sendAdvert" = "애드버트 보내기";
+
+/* Location: RepeaterSettingsView.swift - Sync time button */
+"remoteNodes.settings.syncTime" = "시간 동기화";
+
+/* Location: RepeaterSettingsView.swift - Reboot device button */
+"remoteNodes.settings.rebootDevice" = "기기 재시동";
+
+/* Location: RepeaterSettingsView.swift - Reboot confirmation dialog title */
+"remoteNodes.settings.rebootConfirmTitle" = "리피터를 재시동하겠습니까?";
+
+/* Location: RepeaterSettingsView.swift - Reboot confirmation dialog button */
+"remoteNodes.settings.reboot" = "재시동";
+
+/* Location: RepeaterSettingsView.swift - Reboot confirmation message */
+"remoteNodes.settings.rebootMessage" = "리피터가 다시 시작되며 일시적으로 사용할 수 없게 됩니다.";
+
+// MARK: - Repeater Settings ViewModel Messages
+
+/* Location: RepeaterSettingsViewModel.swift - Radio not loaded error */
+"remoteNodes.settings.radioNotLoaded" = "무선 설정을 불러오지 않음";
+
+/* Location: RepeaterSettingsViewModel.swift - Radio applied success */
+"remoteNodes.settings.radioAppliedSuccess" = "무선 설정이 적용되었습니다. 적용하려면 기기를 다시 시작하십시오.";
+
+/* Location: RepeaterSettingsViewModel.swift - Radio apply failure */
+"remoteNodes.settings.radioApplyFailed" = "무선 설정을 적용하지 못함";
+
+/* Remote node TX power: a setting outside what the node takes (a refused 'set tx', or a stored value older firmware never applied); %1$lld the lowest setting, %2$lld the highest, like -9 and 16 */
+"remoteNodes.settings.txPowerOutOfRange" = "적용되지 않음: 이 노드는 %1$lld~%2$lld dBm 설정만 허용합니다";
+
+/* Remote node Radio Parameters TX picker: the entry for a stored setting outside the node's range, which its radio never applied; %lld the setting, like 30 */
+"remoteNodes.settings.txPowerNotApplied" = "%lld(적용 안 됨)";
+
+/* Location: RepeaterSettingsViewModel.swift - General apply failure */
+"remoteNodes.settings.someSettingsFailedToApply" = "일부 설정을 적용하지 못함";
+
+/* Location: RepeaterSettingsViewModel.swift - Empty password error */
+"remoteNodes.settings.passwordEmpty" = "암호는 비워 둘 수 없음";
+
+/* Location: RepeaterSettingsViewModel.swift - Password mismatch error */
+"remoteNodes.settings.passwordMismatch" = "암호가 일치하지 않음";
+
+/* Location: RepeaterSettingsViewModel.swift - Password changed success */
+/* Location: RepeaterSettingsViewModel.swift - Password change failure */
+"remoteNodes.settings.passwordChangeFailed" = "암호를 변경하지 못함";
+
+/* Location: RepeaterSettingsViewModel.swift - Reboot sent success */
+"remoteNodes.settings.rebootSent" = "재시동 명령을 보냄";
+
+/* Location: RepeaterSettingsViewModel.swift - Advert sent success */
+"remoteNodes.settings.advertSent" = "애드버트를 보냄";
+
+/* Location: RepeaterSettingsViewModel.swift - Time synced success */
+"remoteNodes.settings.timeSynced" = "시간 동기화됨";
+
+/* Location: NodeSettingsViewModel.swift - Sync Time alert: the time set, when the clock's offset before was unknown */
+"remoteNodes.settings.timeSyncedTo" = "이 휴대폰에서 %@(으)로 맞췄습니다.";
+
+/* Location: NodeSettingsViewModel.swift - Sync Time alert: the time set, then the clock's offset before (e.g. "3m behind this phone") */
+"remoteNodes.settings.timeSyncedWas" = "이 휴대폰에서 %1$@(으)로 맞췄습니다. 이전: %2$@.";
+
+/* Location: NodeSettingsViewModel.swift - Sync Time alert: the time set, when the clock was already right */
+"remoteNodes.settings.timeSyncedAlready" = "이 휴대폰에서 %@(으)로 맞췄습니다. 이미 동기화되어 있었습니다.";
+
+/* Location: RepeaterSettingsViewModel.swift - Clock ahead error */
+"remoteNodes.settings.clockAheadError" = "리피터 시계가 휴대폰 시간보다 빠릅니다. 너무 많이 앞서 있으면 리피터를 재시동한 후 시간을 다시 동기화하십시오.";
+
+/* Location: RepeaterSettingsViewModel.swift - Sync time failure */
+"remoteNodes.settings.syncTimeFailed" = "시간을 동기화하지 못함";
+
+/* Location: RepeaterSettingsViewModel.swift - Unexpected response error */
+"remoteNodes.settings.unexpectedResponse" = "예상치 못한 응답: %@";
+
+/* Location: RepeaterSettingsViewModel.swift - Not connected error */
+/* Location: RepeaterSettingsViewModel.swift - Timeout error */
+/* Location: NodeSettingsViewModel.swift - No service error */
+"remoteNodes.settings.noService" = "서비스를 사용할 수 없음";
+
+/* Location: RepeaterSettingsViewModel.swift - Advert interval validation error */
+"remoteNodes.settings.advertIntervalValidation" = "0(비활성화) 또는 60~240분 입력 가능";
+
+/* Location: RepeaterSettingsViewModel.swift - Flood interval validation error */
+"remoteNodes.settings.floodIntervalValidation" = "0(끔) 또는 3~168시간 입력 가능";
+
+/* Location: RepeaterSettingsViewModel.swift - Flood max hops validation error */
+"remoteNodes.settings.floodMaxValidation" = "0~64홉 입력 가능";
+
+/* Location: NodeSettingsViewModel.swift - Node name length validation error */
+"remoteNodes.settings.nameValidation" = "최대 %d바이트 입력 가능";
+
+/* Location: NodeSettingsViewModel.swift - Latitude range validation error */
+"remoteNodes.settings.latitudeValidation" = "-90~90 입력 가능";
+
+/* Location: NodeSettingsViewModel.swift - Longitude range validation error */
+"remoteNodes.settings.longitudeValidation" = "-180~180 입력 가능";
+
+// MARK: - Repeater Settings: Regions
+
+/* Location: RepeaterSettingsView.swift - Regions section title */
+"remoteNodes.settings.regions" = "지역";
+
+/* Location: RepeaterSettingsView.swift - Regions section footer */
+"remoteNodes.settings.regionsFooter" = "재시작 후에도 변경 사항을 유지하려면 리피터에 저장하십시오.";
+
+/* Location: RepeaterSettingsView.swift - Unscoped region display name */
+"remoteNodes.settings.regions.allTraffic" = "범위 없음";
+
+/* Location: RepeaterSettingsView.swift - Unscoped region with asterisk display */
+"remoteNodes.settings.regions.allTrafficWildcard" = "*(범위 없음)";
+
+/* Location: RepeaterSettingsView.swift - Home region picker label */
+"remoteNodes.settings.regions.homeRegion" = "홈 지역";
+
+/* Location: RepeaterSettingsView.swift - Default scope picker label */
+"remoteNodes.settings.regions.defaultScope" = "기본 범위";
+
+/* Location: RepeaterSettingsView.swift - Load default scope button */
+"remoteNodes.settings.regions.loadDefaultScope" = "불러오기";
+
+/* Location: RepeaterSettingsView.swift - No default scope */
+"remoteNodes.settings.regions.noDefault" = "없음";
+
+/* Location: RepeaterSettingsView.swift - Caption under default scope picker */
+"remoteNodes.settings.regions.defaultScopeCaption" = "애드버트 등 이 노드가 생성하는 패킷의 범위를 지정합니다. 이 설정은 즉시 리피터에 저장됩니다.";
+
+/* Location: RepeaterSettingsView.swift - No home region set */
+/* Location: RepeaterSettingsView.swift - Toggle label for flood allow per region */
+/* Location: RepeaterSettingsView.swift - Accessibility hint for flood toggle */
+"remoteNodes.settings.regions.floodToggleHint" = "끄면 이 지역의 플러드 패킷이 폐기됩니다";
+
+/* Location: RepeaterSettingsView.swift - Caption under the region flood list */
+"remoteNodes.settings.regions.floodToggleCaption" = "꺼져 있는 지역의 플러드 패킷은 폐기됩니다.";
+
+/* Location: RepeaterSettingsView.swift - Add region button */
+"remoteNodes.settings.regions.addRegion" = "지역 추가";
+
+/* Location: RepeaterSettingsView.swift - Add region alert title */
+"remoteNodes.settings.regions.addRegionTitle" = "지역 추가";
+
+/* Location: RepeaterSettingsView.swift - Region name placeholder */
+"remoteNodes.settings.regions.regionName" = "지역 이름";
+
+/* Location: RepeaterSettingsView.swift - Save regions to device button */
+"remoteNodes.settings.regions.saveToDevice" = "리피터에 저장";
+
+/* Location: RepeaterSettingsViewModel.swift - Region save success */
+/* Location: RepeaterSettingsViewModel.swift - Region save failure */
+"remoteNodes.settings.regions.saveFailed" = "지역을 저장하지 못함";
+
+/* Location: RepeaterSettingsViewModel.swift - Region not found error */
+"remoteNodes.settings.regions.unknownRegion" = "알 수 없는 지역";
+
+/* Location: RepeaterSettingsViewModel.swift - Region has children error */
+"remoteNodes.settings.regions.notEmpty" = "하위 지역을 먼저 제거하십시오";
+
+/* Location: RepeaterSettingsView.swift - Alert title when deleting a parent region */
+"remoteNodes.settings.regions.cannotDelete" = "\"%@\"을(를) 삭제할 수 없음";
+
+/* Location: RepeaterSettingsViewModel.swift - Region add failure */
+"remoteNodes.settings.regions.addFailed" = "지역을 추가하지 못함";
+
+/* Location: RepeaterSettingsView.swift - Region name charset validation */
+"remoteNodes.settings.regions.invalidName" = "지역 이름에는 공백이나 . , ! @ 같은 대부분의 문장 부호를 사용할 수 없습니다.";
+
+/* Location: RepeaterSettingsView.swift - Region name length validation */
+"remoteNodes.settings.regions.nameTooLong" = "지역 이름은 최대 %d바이트입니다.";
+
+/* Location: RepeaterSettingsView.swift - Duplicate region name validation */
+"remoteNodes.settings.regions.duplicate" = "이미 존재하는 지역입니다.";
+
+/* Location: RepeaterAddRegionSheet.swift - Parent picker label */
+"remoteNodes.settings.regions.parent" = "상위";
+
+/* Location: RepeaterSettingsView.swift - Add child region context menu item */
+"remoteNodes.settings.regions.addChild" = "하위 지역 추가";
+
+/* Location: RegionFloodToggleRow.swift - Full VoiceOver label (name, parent) */
+"remoteNodes.settings.regions.childOf" = "%@, %@의 하위 지역";
+
+/* Location: RepeaterSettingsViewModel.swift - Region remove failure */
+"remoteNodes.settings.regions.removeFailed" = "지역을 제거하지 못함";
+
+/* Location: RepeaterSettingsViewModel.swift - No regions on device */
+"remoteNodes.settings.regions.empty" = "구성된 지역 없음";
+
+// MARK: - Repeater Status
+
+/* Location: RepeaterStatusView.swift - Navigation title */
+"remoteNodes.status.title" = "리피터 상태";
+
+/* Location: RepeaterStatusView.swift - Guest mode badge in header */
+"remoteNodes.status.guestMode" = "게스트 모드";
+"remoteNodes.status.clockAhead" = "이 노드의 시계가 내 무선 기기보다 %@ 빠릅니다. 시계가 부정확한 노드는 명령을 무시하거나 메시지 시간을 잘못 표시할 수 있습니다.";
+"remoteNodes.status.clockBehind" = "이 노드의 시계가 내 무선 기기보다 %@ 느립니다. 시계가 부정확한 노드는 명령을 무시하거나 메시지 시간을 잘못 표시할 수 있습니다.";
+
+/* Location: RepeaterStatusView.swift - Owner info section label */
+"remoteNodes.status.ownerInfo" = "연락처 정보";
+
+/* Location: RepeaterStatusView.swift - No owner info empty state */
+"remoteNodes.status.noOwnerInfo" = "연락처 정보 없음";
+
+/* Location: RepeaterStatusView.swift - Owner info section footer */
+"remoteNodes.status.ownerInfoFooter" = "연락처 정보 및 펌웨어 버전.";
+
+/* Location: RepeaterStatusView.swift - Status section header */
+"remoteNodes.status.statusSection" = "상태";
+
+/* Location: RepeaterStatusView.swift - Battery label */
+"remoteNodes.status.battery" = "배터리";
+
+/* Location: RepeaterStatusView.swift - Uptime label */
+"remoteNodes.status.uptime" = "가동 시간";
+
+/* Location: SharedNodeViews.swift - Airtime label */
+"remoteNodes.status.airtime" = "전송 시간";
+
+/* Location: SharedNodeViews.swift - Airtime percent label */
+"remoteNodes.status.airtimePercent" = "전송 시간 %%";
+
+/* Location: RepeaterStatusView.swift - Last RSSI label */
+"remoteNodes.status.lastRssi" = "마지막 RSSI";
+
+/* Location: RepeaterStatusView.swift - Last SNR label */
+"remoteNodes.status.lastSnr" = "마지막 SNR";
+
+/* Location: RepeaterStatusView.swift - Noise floor label */
+"remoteNodes.status.noiseFloor" = "노이즈 플로어";
+
+/* Location: SharedNodeStatusViews.swift - Section header grouping the packet-count rows */
+"remoteNodes.status.packets" = "패킷";
+/* Location: SharedNodeStatusViews.swift - Total sent packets label, under the Packets group header */
+"remoteNodes.status.packetsSent" = "송신";
+
+/* Location: SharedNodeStatusViews.swift - Total received packets label, under the Packets group header */
+"remoteNodes.status.packetsReceived" = "수신";
+
+/* Location: SharedNodeStatusViews.swift - Receive errors label, under the Packets group header */
+"remoteNodes.status.receiveErrors" = "오류";
+/* Location: SharedNodeStatusViews.swift - Sent (direct) packets label */
+"remoteNodes.status.sentDirect" = "송신(다이렉트)";
+/* Location: SharedNodeStatusViews.swift - Sent (flood) packets label */
+"remoteNodes.status.sentFlood" = "송신(플러드)";
+/* Location: SharedNodeStatusViews.swift - Received (direct) packets label */
+"remoteNodes.status.receivedDirect" = "수신(다이렉트)";
+/* Location: SharedNodeStatusViews.swift - Received (flood) packets label */
+"remoteNodes.status.receivedFlood" = "수신(플러드)";
+/* Location: SharedNodeStatusViews.swift - Duplicate packets label */
+"remoteNodes.status.duplicates" = "중복";
+
+/* Location: RepeaterStatusView.swift - Neighbors section label */
+"remoteNodes.status.neighbors" = "이웃";
+
+/* Location: RepeaterStatusView.swift - No neighbors empty state */
+"remoteNodes.status.noNeighbors" = "발견된 이웃 없음";
+
+/* Location: RepeaterSectionPages.swift - Neighbours page heading over the neighbours the repeater heard since the latest discovery started */
+"remoteNodes.status.heardThisScan" = "이번 스캔에서 수신";
+
+/* Location: RepeaterSectionPages.swift - Neighbours page heading over the (faded) neighbours the repeater heard before the latest discovery */
+"remoteNodes.status.heardBefore" = "이전에 수신";
+
+/* Location: RepeaterStatusView.swift - Battery curve section label */
+"remoteNodes.status.batteryCurve" = "배터리 곡선";
+
+/* Location: RepeaterStatusView.swift - Telemetry section label */
+"remoteNodes.status.telemetry" = "텔레메트리";
+
+/* Location: RepeaterStatusView.swift - No sensor data empty state */
+"remoteNodes.status.noSensorData" = "센서 데이터 없음";
+
+/* Location: RepeaterStatusView.swift - No telemetry data empty state */
+"remoteNodes.status.noTelemetryData" = "텔레메트리 데이터 없음";
+
+/* Location: RepeaterStatusView.swift - Unknown neighbor name */
+"remoteNodes.status.unknown" = "알 수 없음";
+
+/* Location: RepeaterStatusView.swift - Seconds ago format */
+"remoteNodes.status.secondsAgo" = "%d초 전";
+
+/* Location: RepeaterStatusView.swift - Minutes ago format */
+"remoteNodes.status.minutesAgo" = "%d분 전";
+
+/* Location: RepeaterStatusView.swift - Hours ago format */
+"remoteNodes.status.hoursAgo" = "%d시간 전";
+
+/* Location: RepeaterStatusView.swift - SNR display format */
+"remoteNodes.status.snrFormat" = "SNR %@dB";
+
+/* Location: RepeaterStatusView.swift - Accessibility label for possible match indicator */
+"remoteNodes.status.possibleMatch" = "일치 가능성 있음, 짧은 접두사로 일치됨";
+
+/* Location: RepeaterStatusView.swift - Title for possible match explanation popover */
+"remoteNodes.status.possibleMatchTitle" = "일치 가능성 있음";
+
+/* Location: RepeaterStatusView.swift - Explanation of what a possible match means */
+"remoteNodes.status.possibleMatchExplanation" = "여러 노드가 이 접두사를 사용합니다. 표시된 이름이 정확하지 않을 수 있습니다.";
+
+// MARK: - Repeater Status ViewModel Messages
+
+/* Location: RepeaterStatusViewModel.swift - Request timed out */
+"remoteNodes.status.requestTimedOut" = "요청 시간 초과";
+"remoteNodes.status.telemetryTimedOut" = "시간이 초과되었거나 연락처의 텔레메트리가 비활성화되어 있음";
+
+/* Location: RepeaterStatusViewModel.swift - Uptime 1 day format */
+"remoteNodes.status.uptime1Day" = "1일 %d시간 %d분";
+
+/* Location: RepeaterStatusViewModel.swift - Uptime multiple days format */
+"remoteNodes.status.uptimeDays" = "%d일 %d시간 %d분";
+
+/* Location: RepeaterStatusViewModel.swift - Uptime hours format */
+"remoteNodes.status.uptimeHours" = "%d시간 %d분";
+
+/* Location: RepeaterStatusViewModel.swift - Uptime minutes format */
+"remoteNodes.status.uptimeMinutes" = "%d분";
+
+/* Location: RepeaterStatusViewModel.swift - Failed to load OCV settings */
+"remoteNodes.status.ocvLoadFailed" = "배터리 곡선 설정을 불러오지 못함";
+
+/* Location: RepeaterStatusViewModel.swift - Cannot save OCV error */
+"remoteNodes.status.ocvSaveNoContact" = "저장할 수 없음: 연락처를 찾을 수 없음";
+
+/* Location: RepeaterStatusViewModel.swift - OCV save failed */
+"remoteNodes.status.ocvSaveFailed" = "저장 실패: %@";
+
+/* Location: RepeaterStatusView.swift - Channel header for grouped telemetry */
+"remoteNodes.status.channel" = "채널 %d";
+
+/* Location: RepeaterStatusView.swift - Telemetry section footer */
+"remoteNodes.status.telemetryFooter" = "온도, 습도, 전압 등의 센서 측정값.";
+
+/* Location: SharedNodeStatusViews.swift - Telemetry sensor type display labels */
+"remoteNodes.status.sensor.digitalInput" = "디지털 입력";
+"remoteNodes.status.sensor.digitalOutput" = "디지털 출력";
+"remoteNodes.status.sensor.analogInput" = "아날로그 입력";
+"remoteNodes.status.sensor.analogOutput" = "아날로그 출력";
+"remoteNodes.status.sensor.genericSensor" = "센서";
+"remoteNodes.status.sensor.illuminance" = "조도";
+"remoteNodes.status.sensor.presence" = "재실 감지";
+"remoteNodes.status.sensor.temperature" = "온도";
+"remoteNodes.status.sensor.mcuTemperature" = "MCU 온도";
+"remoteNodes.status.sensor.humidity" = "습도";
+"remoteNodes.status.sensor.accelerometer" = "가속도계";
+"remoteNodes.status.sensor.barometer" = "기압";
+"remoteNodes.status.sensor.voltage" = "전압";
+"remoteNodes.status.sensor.current" = "전류";
+"remoteNodes.status.sensor.frequency" = "주파수";
+"remoteNodes.status.sensor.percentage" = "백분율";
+"remoteNodes.status.sensor.altitude" = "고도";
+"remoteNodes.status.sensor.load" = "부하";
+"remoteNodes.status.sensor.concentration" = "농도";
+"remoteNodes.status.sensor.power" = "전력";
+"remoteNodes.status.sensor.distance" = "거리";
+"remoteNodes.status.sensor.energy" = "에너지";
+"remoteNodes.status.sensor.direction" = "방향";
+"remoteNodes.status.sensor.unixTime" = "시간";
+"remoteNodes.status.sensor.gyrometer" = "자이로스코프";
+"remoteNodes.status.sensor.colour" = "색상";
+"remoteNodes.status.sensor.gps" = "GPS";
+"remoteNodes.status.sensor.switchValue" = "스위치";
+
+/* Location: RepeaterStatusView.swift - Neighbors section footer */
+"remoteNodes.status.neighborsFooter" = "이 리피터가 발견한 다른 노드와 해당 신호 품질.";
+
+/* Location: RepeaterStatusView.swift - Discover neighbours button label */
+"remoteNodes.status.discoverNeighbors" = "이웃 탐색";
+/* Location: RepeaterStatusView.swift - Discovery in progress with countdown */
+"remoteNodes.status.discoveringSeconds" = "탐색 중... %d초";
+
+/* Location: RepeaterStatusView.swift - Battery curve section footer */
+"remoteNodes.status.batteryCurveFooter" = "배터리 잔량 추정에 사용되는 전압-백분율 매핑.";
+
+/* Location: NodeTelemetryView.swift - Refresh button accessibility label */
+"remoteNodes.status.refresh" = "새로 고침";
+
+/* Location: SharedNodeStatusViews.swift - Per-section reload button accessibility label for the status counters */
+"remoteNodes.status.accessibility.reloadStatus" = "상태 다시 불러오기";
+
+/* Location: SharedNodeStatusViews.swift - Per-section reload button accessibility label for telemetry */
+"remoteNodes.status.accessibility.reloadTelemetry" = "텔레메트리 다시 불러오기";
+
+/* Location: RepeaterStatusContent.swift - Per-section reload button accessibility label for owner info */
+"remoteNodes.status.accessibility.reloadOwnerInfo" = "연락처 정보 다시 불러오기";
+
+/* Location: RepeaterStatusContent.swift - Per-section reload button accessibility label for neighbors */
+"remoteNodes.status.accessibility.reloadNeighbors" = "이웃 다시 불러오기";
+
+// MARK: - Neighbors Map
+
+/* Location: RepeaterStatusContent.swift - View on Map button in the Neighbors section */
+"remoteNodes.status.viewOnMap" = "지도에서 보기";
+
+/* Location: RepeaterStatusContent.swift - Accessibility label for the View on Map button */
+"remoteNodes.status.accessibility.viewNeighborsOnMap" = "지도에서 이웃 보기";
+
+/* Location: NeighborSNRMapView.swift - Navigation title for the neighbors map */
+"remoteNodes.status.neighborsMapTitle" = "이웃 지도";
+
+/* Location: NeighborSNRMapView.swift - Map pill and pushed-list title counting neighbors that could not be plotted - %d is the count */
+"remoteNodes.status.neighborsNotShown" = "표시되지 않은 이웃 %d개";
+
+/* Location: NeighborSNRMapBuilder.swift - Unit suffix for the SNR value in the map midpoint badge, matching the "<distance> · <snr> dB" form */
+"remoteNodes.status.snrBadgeUnit" = "dB";
+
+// MARK: - Location Map
+
+/* Location: SharedNodeStatusViews.swift - Accessibility label for the location "View on Map" affordance */
+"remoteNodes.status.accessibility.viewLocationOnMap" = "지도에서 위치 보기";
+
+/* Location: NodeStatusRoute.swift - Navigation title for the live location map */
+"remoteNodes.status.locationMapTitle" = "위치";
+
+// MARK: - History
+
+/* Location: RepeaterStatusViewModel.swift - Delta timestamp (minutes ago) */
+"remoteNodes.history.vsMinutesAgo" = "지난 방문 이후(%d분 전)";
+
+/* Location: RepeaterStatusViewModel.swift - Delta timestamp (hours ago) */
+"remoteNodes.history.vsHoursAgo" = "지난 방문 이후(%d시간 전)";
+
+/* Location: RepeaterStatusViewModel.swift - Delta timestamp (date) */
+"remoteNodes.history.vsDate" = "%@ 이후";
+
+/* Location: NodeStatusHistoryView.swift - History navigation title */
+"remoteNodes.history.title" = "기록";
+
+/* Location: NeighborRow - New neighbor badge */
+"remoteNodes.history.new" = "신규";
+
+/* Location: NeighborRow - Not seen status */
+"remoteNodes.history.notSeen" = "보이지 않음";
+
+/* Location: NodeStatusHistoryView.swift - Empty state message */
+"remoteNodes.history.checkBack" = "스냅샷은 최대 15분마다 기록됩니다. 추세를 보려면 다음 방문 후 다시 확인하십시오.";
+
+/* Location: NodeStatusHistoryView.swift - Time range picker */
+"remoteNodes.history.week" = "1주";
+
+/* Location: NodeStatusHistoryView.swift - Time range picker */
+"remoteNodes.history.month" = "1개월";
+
+/* Location: NodeStatusHistoryView.swift - Time range picker */
+"remoteNodes.history.threeMonths" = "3개월";
+
+/* Location: NodeStatusHistoryView.swift - Time range picker */
+"remoteNodes.history.all" = "전체";
+
+/* Location: NodeStatusHistoryView.swift - Battery chart title */
+"remoteNodes.history.battery" = "배터리";
+
+/* Location: NodeStatusHistoryView.swift - SNR chart title */
+"remoteNodes.history.snr" = "SNR";
+
+/* Location: NodeStatusHistoryView.swift - RSSI chart title */
+"remoteNodes.history.rssi" = "RSSI";
+
+/* Location: NodeStatusHistoryView.swift - Noise floor chart title */
+"remoteNodes.history.noiseFloor" = "노이즈 플로어";
+
+/* Location: NodeStatusHistoryView.swift - Neighbor count chart title */
+/* Location: RadioMetricCharts.swift - Sent packets chart title, under the Packets group header */
+"remoteNodes.history.packetsSent" = "송신";
+
+/* Location: RadioMetricCharts.swift - Received packets chart title, under the Packets group header */
+"remoteNodes.history.packetsReceived" = "수신";
+
+/* Location: RadioMetricCharts.swift - Receive errors chart title, under the Packets group header */
+"remoteNodes.history.receiveErrors" = "오류";
+/* Location: RadioMetricCharts.swift - Direct packet series legend */
+"remoteNodes.history.direct" = "다이렉트";
+/* Location: RadioMetricCharts.swift - Flood packet series legend */
+"remoteNodes.history.flood" = "플러드";
+/* Location: RadioMetricCharts.swift - Duplicates chart title, under the Packets group header */
+"remoteNodes.history.duplicates" = "중복";
+/* Location: RadioMetricCharts.swift - Section header grouping the packet-count charts */
+"remoteNodes.history.packets" = "패킷";
+
+/* Location: NeighborHistoryView.swift - Active status */
+/* Location: NeighborHistoryView.swift - Last seen status */
+/* Location: NeighborHistoryView.swift - Neighbors section title */
+/* Location: StatusDeltaView.swift - Accessibility: metric increased */
+"remoteNodes.history.a11y.increased" = "증가";
+
+/* Location: StatusDeltaView.swift - Accessibility: metric decreased */
+"remoteNodes.history.a11y.decreased" = "감소";
+
+/* Location: StatusDeltaView.swift - Accessibility: metric improved */
+"remoteNodes.history.a11y.improved" = "개선됨";
+
+/* Location: StatusDeltaView.swift - Accessibility: metric degraded */
+"remoteNodes.history.a11y.degraded" = "저하됨";
+
+/* Location: StatusDeltaView.swift - Accessibility: delta description format (quality, direction, value, unit) */
+"remoteNodes.history.a11y.deltaDescription" = "%1$@, %3$@%4$@ %2$@";
+
+/* Location: HistoryTimeRangePicker.swift - Accessibility label for time range picker */
+"remoteNodes.history.timeRange" = "기간";
+
+/* Location: NodeStatusHistoryView.swift - Footer about data retention */
+"remoteNodes.history.retentionNotice" = "1년이 지난 기록 데이터는 자동으로 삭제됩니다.";
+
+/* Location: TelemetryHistoryOverviewView.swift - Purpose: Radio section header */
+"remoteNodes.history.radioSection" = "무선";
+
+/* Location: TelemetryHistoryOverviewView.swift - Purpose: Sensors section header */
+"remoteNodes.history.sensorsSection" = "센서";
+
+/* Location: TelemetryHistoryOverviewView.swift - Purpose: Neighbors section header */
+"remoteNodes.history.neighborsSection" = "이웃";
+
+/* Location: TelemetryHistoryOverviewView.swift - Purpose: Location section header */
+"remoteNodes.history.locationSection" = "위치";
+
+/* Location: LocationHistorySection.swift - Purpose: Header for the location report list beneath the map preview */
+"remoteNodes.history.locationReportsHeader" = "위치 기록";
+
+/* Location: TelemetryHistoryOverviewView.swift - Purpose: Empty state when no snapshots exist */
+"remoteNodes.history.noSnapshotsMessage" = "기록을 보려면 이 노드에 한 번 이상 연결하십시오.";
+
+/* Location: TelemetryHistoryOverviewView.swift - Purpose: Empty state when section data not captured */
+"remoteNodes.history.sectionNotCaptured" = "이 데이터는 실시간 텔레메트리 세션 중 %@ 섹션을 볼 때 수집됩니다.";
+
+/* Location: TelemetryHistoryOverviewView.swift - Purpose: Navigation title */
+"remoteNodes.history.overviewTitle" = "텔레메트리 기록";
+
+// MARK: - Room Conversation
+
+/* Location: RoomConversationView.swift - Disconnected status */
+"remoteNodes.room.disconnected" = "연결 끊김";
+
+/* Location: RoomConversationView.swift - Empty state title */
+"remoteNodes.room.noMessagesYet" = "아직 공개 메시지 없음";
+
+/* Location: RoomConversationView.swift - Empty state hint */
+"remoteNodes.room.beFirstToPost" = "첫 번째 글을 올려 보십시오";
+
+/* Location: RoomConversationView.swift - Input placeholder */
+"remoteNodes.room.publicMessage" = "공개 메시지";
+
+/* Location: RoomConversationView.swift - Read-only banner */
+"remoteNodes.room.viewOnlyBanner" = "보기 전용 - 글을 올리려면 멤버로 참여하십시오";
+
+/* Location: RoomConversationView.swift - Hint text for read-only banner */
+"remoteNodes.room.viewOnlyHint" = "탭하여 로그인";
+
+/* Location: RoomConversationView.swift - Room info sheet title */
+"remoteNodes.room.infoTitle" = "룸 정보";
+
+/* Location: RoomConversationView.swift - Details section header */
+"remoteNodes.room.details" = "세부 정보";
+
+/* Location: RoomConversationView.swift - Permission label */
+"remoteNodes.room.permission" = "권한";
+
+/* Location: RoomInfoSheet.swift, RoomConversationView.swift - Guest permission level */
+"remoteNodes.permission.guest" = "게스트";
+
+/* Location: RoomInfoSheet.swift, RoomConversationView.swift - Member (read-write) permission level */
+"remoteNodes.permission.member" = "멤버";
+
+/* Location: RoomInfoSheet.swift, RoomConversationView.swift - Admin permission level */
+"remoteNodes.permission.admin" = "관리자";
+
+/* Location: RoomConversationView.swift - Status label */
+"remoteNodes.room.status" = "상태";
+
+/* Location: RoomConversationView.swift - Connected status */
+"remoteNodes.room.connected" = "연결됨";
+
+/* Location: RoomConversationView.swift - Activity section header */
+"remoteNodes.room.activity" = "활동";
+
+/* Location: RoomConversationView.swift - Last connected label */
+"remoteNodes.room.lastConnected" = "마지막 연결";
+
+/* Location: RoomConversationView.swift - Identification section header */
+"remoteNodes.room.identification" = "식별 정보";
+
+/* Location: RoomConversationView.swift - Public key label */
+"remoteNodes.room.publicKey" = "공개 키";
+
+/* Location: RoomConversationView.swift - Disconnected banner text */
+"remoteNodes.room.disconnectedBanner" = "연결 끊김";
+
+/* Location: RoomConversationView.swift - Accessibility hint for disconnected banner */
+"remoteNodes.room.disconnectedHint" = "탭하여 다시 연결";
+
+/* Location: RoomConversationView.swift - VoiceOver announcement when room reconnects */
+"remoteNodes.room.reconnected" = "룸에 다시 연결됨";
+
+// MARK: - Room Message Bubble
+
+/* Location: RoomMessageBubble.swift - Accessibility hint for retry button */
+"remoteNodes.room.message.retryHint" = "이 메시지를 다시 보내려면 이중 탭하십시오";
+
+/* Location: RoomMessageBubble.swift - Accessibility label for failed message status */
+"remoteNodes.room.message.status.failedLabel" = "메시지를 보내지 못했습니다. 다시 보내려면 재시도 버튼을 이중 탭하십시오.";
+
+/* Location: RoomMessageBubble.swift - Accessibility label for sending message status */
+"remoteNodes.room.message.status.sendingLabel" = "메시지 보내는 중";
+
+/* Location: RoomMessageBubble.swift - Accessibility label for delivered message status */
+"remoteNodes.room.message.status.deliveredLabel" = "메시지 전달됨";
+
+// MARK: - Room Status
+
+/* Location: RoomStatusView.swift - Navigation title */
+"remoteNodes.roomStatus.title" = "룸 상태";
+
+/* Location: RoomStatusView.swift - Posts received label */
+"remoteNodes.roomStatus.postsReceived" = "받은 게시물";
+
+/* Location: RoomStatusView.swift - Posts pushed label */
+"remoteNodes.roomStatus.postsPushed" = "푸시한 게시물";
+
+// MARK: - Room Settings
+
+/* Location: RoomSettingsView.swift - Navigation title */
+"remoteNodes.roomSettings.title" = "룸 설정";
+
+/* Location: RoomSettingsView.swift - Room settings section header */
+"remoteNodes.roomSettings.roomSettingsSection" = "룸 설정";
+
+/* Location: RoomSettingsView.swift - Room settings section footer */
+"remoteNodes.roomSettings.roomSettingsFooter" = "게스트 암호 및 읽기 전용 접근.";
+
+/* Location: RoomSettingsView.swift - Guest password label */
+"remoteNodes.roomSettings.guestPassword" = "게스트 암호";
+
+/* Location: RoomSettingsView.swift - Allow read-only toggle label */
+"remoteNodes.roomSettings.allowReadOnly" = "읽기 전용 허용";
+
+/* Location: RoomSettingsView.swift - Allow read-only footer */
+"remoteNodes.roomSettings.allowReadOnlyFooter" = "암호가 없는 사용자도 읽기 전용 모드로 연결할 수 있도록 허용합니다.";
+
+/* Location: RoomSettingsView.swift - Apply room settings button */
+"remoteNodes.roomSettings.applyRoomSettings" = "룸 설정 적용";
+
+/* Location: RoomSettingsView.swift - Room behavior section footer */
+"remoteNodes.roomSettings.behaviorFooter" = "애드버트 간격 및 플러드 홉.";
+
+/* Location: RoomSettingsView.swift - Identity section footer */
+/* Location: RoomSettingsView.swift - Reboot confirmation title */
+"remoteNodes.roomSettings.rebootConfirmTitle" = "룸을 재시동하겠습니까?";
+
+/* Location: RoomSettingsView.swift - Reboot confirmation message */
+"remoteNodes.roomSettings.rebootMessage" = "룸이 다시 시작되며 일시적으로 사용할 수 없게 됩니다.";
+
+/* Location: RoomSettingsView.swift - Radio restart warning */
+"remoteNodes.roomSettings.radioRestartWarning" = "변경 사항은 룸을 재시동해야 적용됩니다";
+
+/* Location: RoomSettingsView.swift - No service error */
+/* Location: RoomSettingsView.swift - Not connected error */
+/* Location: RoomSettingsView.swift - Clock ahead error */
+// MARK: - Room Info Sheet (additions)
+
+/* Location: RoomInfoSheet.swift - Telemetry button */
+/* Location: RoomInfoSheet.swift - Management button */
+// MARK: - Node CLI
+
+/* Location: NodeCliView.swift - Banner shown when connected to a node - %@ is node name */
+"remoteNodes.nodeCli.bannerConnected" = "%@에 연결됨";
+
+/* Location: NodeCliView.swift - Hint shown below connected banner */
+"remoteNodes.nodeCli.bannerHint" = "사용 가능한 명령을 보려면 'help'를 입력하십시오.";
+
+/* Location: NodeCliViewModel.swift - Toast after reboot command succeeds */
+"remoteNodes.nodeCli.rebootSent" = "재시동 명령을 보냄";
+
+/* Location: NodeCliViewModel.swift - Toast after command is cancelled */
+"remoteNodes.nodeCli.cancelled" = "명령 취소됨";
+
+/* Location: NodeCliViewModel.swift - Header line in help output */
+"remoteNodes.nodeCli.helpHeader" = "사용 가능한 명령:";
+
+/* Location: NodeCliViewModel.swift - Help entry for 'help' command */
+"remoteNodes.nodeCli.helpHelp" = "  help\n    이 도움말 표시";
+
+/* Location: NodeCliViewModel.swift - Help entry for 'clear' command */
+"remoteNodes.nodeCli.helpClear" = "  clear\n    터미널 지우기";
+
+/* Location: NodeCliViewModel.swift - Help entry for 'clear stats' command */
+"remoteNodes.nodeCli.helpClearStats" = "  clear stats\n    노드 통계 초기화";
+
+/* Location: NodeCliViewModel.swift - Help entry for 'reboot' command */
+"remoteNodes.nodeCli.helpReboot" = "  reboot\n    이 노드 재시동";
+
+/* Location: NodeCliViewModel.swift - Passthrough note at end of help output */
+"remoteNodes.nodeCli.helpPassthrough" = "그 밖의 입력은 노드로 전송됩니다.";
+
+// MARK: - Shared
+
+/* Location: Multiple files - Cancel button */
+"remoteNodes.cancel" = "취소";
+
+/* Location: Multiple files - Done button */
+"remoteNodes.done" = "완료";
+
+/* Location: Multiple files - Name label */
+"remoteNodes.name" = "이름";
+
+/* Local addition */
+"remoteNodes.room.clearMessagesConfirmMessage" = "이 룸의 모든 메시지가 이 기기에서 삭제됩니다. 룸 서버는 자체 기록을 유지합니다.";
+
+
+/* Location: NeighborRow.swift - Days ago format */
+"remoteNodes.status.daysAgo" = "%d일 전";
+
+/* Location: NeighborRow.swift - Shown instead of an impossible last-heard age */
+"remoteNodes.status.heardTimeUnknown" = "시간 알 수 없음";
+
+/* Location: NeighborRow.swift - Explains why the last-heard time is unknown */
+"remoteNodes.status.heardTimeUnknownExplanation" = "리피터가 이 이웃에 대해 불가능한 시간을 보고했습니다. 대개 이웃을 수신한 후 리피터 시계가 설정되었기 때문입니다. 리피터 시계를 동기화한 다음 이웃을 다시 검색하십시오.";
+
+/* Location: SharedNodeSettingsViews.swift - Button that sets the node location to its latest telemetry GPS fix */
+"remoteNodes.settings.useTelemetryLocation" = "텔레메트리 위치 사용";
+
+/* Location: SharedNodeStatusViews.swift - Context menu item on a telemetry GPS row */
+"remoteNodes.status.copyCoordinates" = "좌표 복사";
+
+/* Location: NodeAccessListView.swift - Access list screen title and link */
+"remoteNodes.acl.title" = "접근 목록";
+
+/* Location: NodeAccessListView.swift - Footer under the access list link in node settings */
+"remoteNodes.acl.linkFooter" = "이 노드에 로그인할 수 있는 키를 확인하고 역할을 변경합니다.";
+
+/* Location: NodeAccessListView.swift - Add entry button and sheet title */
+"remoteNodes.acl.add" = "항목 추가";
+
+/* Location: NodeAccessListView.swift - Footer explaining which contacts can be added */
+"remoteNodes.acl.addFooter" = "노드에 전체 공개 키가 필요하므로 저장된 채팅 연락처만 추가할 수 있습니다.";
+
+/* Location: NodeAccessListView.swift - Accessibility hint on the role menu */
+"remoteNodes.acl.changeRoleHint" = "이 항목의 역할을 변경합니다";
+
+/* Location: NodeAccessListView.swift - Context menu action to copy the key */
+"remoteNodes.acl.copyKey" = "키 복사";
+
+/* Location: NodeAccessListView.swift - Empty state title when radio is disconnected */
+"remoteNodes.acl.disconnected.title" = "연결되지 않음";
+
+/* Location: NodeAccessListView.swift - Empty state description when radio is disconnected */
+"remoteNodes.acl.disconnected.description" = "이 노드의 접근 목록을 불러오려면 라디오에 연결하세요.";
+
+/* Location: NodeAccessListView.swift - Empty list title */
+"remoteNodes.acl.empty.title" = "항목 없음";
+
+/* Location: NodeAccessListView.swift - Empty list description */
+"remoteNodes.acl.empty.description" = "이 노드의 접근 목록이 비어 있습니다.";
+
+/* Location: NodeAccessListView.swift - Error when the node rejects a setperm command; %@ is the node's reply */
+"remoteNodes.acl.error.rejected" = "노드가 변경을 거부했습니다: %@";
+
+/* Location: NodeAccessListView.swift - Footer under the entry list */
+"remoteNodes.acl.footer" = "항목에는 6바이트 키 접두사가 표시됩니다. 키가 저장된 연락처나 발견된 노드와 일치할 때만 역할을 변경할 수 있습니다. 항목을 제거하면 저장된 역할이 삭제되고 해당 노드는 게스트 접근으로 돌아갑니다.";
+
+/* Location: NodeAccessListView.swift - Title when loading the access list fails */
+"remoteNodes.acl.loadFailed.title" = "접근 목록을 불러올 수 없음";
+
+/* Location: NodeAccessListView.swift - Add sheet empty state title */
+"remoteNodes.acl.noContacts.title" = "추가할 연락처 없음";
+
+/* Location: NodeAccessListView.swift - Add sheet empty state description */
+"remoteNodes.acl.noContacts.description" = "저장된 모든 채팅 연락처가 이미 목록에 있거나 검색과 일치하는 연락처가 없습니다.";
+
+/* Location: NodeAccessListView.swift - Remove entry action */
+"remoteNodes.acl.remove" = "제거";
+
+/* Location: NodeAccessListView.swift - Remove confirmation title */
+"remoteNodes.acl.removeConfirm.title" = "항목을 제거하시겠습니까?";
+
+/* Location: NodeAccessListView.swift - Remove confirmation message; %@ is the node name */
+"remoteNodes.acl.removeConfirm.message" = "%@은(는) 이 노드에 저장된 역할을 잃고 게스트 접근으로 돌아갑니다.";
+
+/* Location: NodeAccessListView.swift - Role picker label */
+"remoteNodes.acl.role" = "역할";
+
+/* Location: NodeAccessListView.swift - Guest role */
+"remoteNodes.acl.role.guest" = "게스트";
+
+/* Location: NodeAccessListView.swift - Read-only role */
+"remoteNodes.acl.role.readOnly" = "읽기 전용";
+
+/* Location: NodeAccessListView.swift - Read-write role */
+"remoteNodes.acl.role.readWrite" = "읽기/쓰기";
+
+/* Location: NodeAccessListView.swift - Admin role */
+"remoteNodes.acl.role.admin" = "관리자";
+
+/* Location: NodeAccessListView.swift - Name shown for an unresolved key prefix */
+"remoteNodes.acl.unknownNode" = "알 수 없는 노드";
+
+/* Location: NodeAccessListView.swift - Badge on the entry for the connected radio */
+"remoteNodes.acl.you" = "나";
+
+/* Location: NodeTelemetrySummarySection.swift - Section title */
+"remoteNodes.summary.title" = "최소 / 평균 / 최대";
+
+/* Location: NodeTelemetrySummarySection.swift - Time range picker label */
+"remoteNodes.summary.range" = "기간";
+
+/* Location: NodeTelemetrySummarySection.swift - 1 hour range */
+"remoteNodes.summary.range.hour" = "1시간";
+
+/* Location: NodeTelemetrySummarySection.swift - 24 hour range */
+"remoteNodes.summary.range.day" = "24시간";
+
+/* Location: NodeTelemetrySummarySection.swift - 7 day range */
+"remoteNodes.summary.range.week" = "7일";
+
+/* Location: NodeTelemetrySummarySection.swift - No entries returned */
+"remoteNodes.summary.noData" = "이 기간의 요약 데이터가 없습니다.";
+
+/* Location: NodeTelemetrySummarySection.swift - Shown when disconnected */
+"remoteNodes.summary.disconnected" = "요약을 요청하려면 라디오에 연결하세요.";
+
+/* Location: NodeTelemetrySummarySection.swift - Accessibility label for reload button */
+"remoteNodes.summary.reload" = "요약 다시 불러오기";
+
+/* Location: NodeTelemetrySummarySection.swift - Section footer */
+"remoteNodes.summary.footer" = "노드가 기록한 센서 값의 최소, 평균, 최대입니다. 센서 기록을 저장하는 노드(예: 센서 펌웨어)만 응답하며, 해당 노드의 접근 목록에 있어야 할 수도 있습니다.";
+
+/* Location: NodeTelemetrySummarySection.swift - Shown when the request times out */
+"remoteNodes.summary.timedOut" = "응답이 없습니다. 이 노드는 센서 기록을 저장하지 않을 수 있습니다.";
+
+/* Location: NodeTelemetrySummarySection.swift - Minimum column */
+"remoteNodes.summary.min" = "최소";
+
+/* Location: NodeTelemetrySummarySection.swift - Average column */
+"remoteNodes.summary.avg" = "평균";
+
+/* Location: NodeTelemetrySummarySection.swift - Maximum column */
+"remoteNodes.summary.max" = "최대";
+
+/* Location: NodeAccessListView.swift - Confirmation title before adding an entry with the admin role */
+"remoteNodes.acl.adminConfirm.title" = "관리자 권한을 부여하시겠습니까?";
+
+/* Location: NodeAccessListView.swift - Confirmation message before adding an admin entry; %@ is the contact name */
+"remoteNodes.acl.adminConfirm.message" = "%@에게 설정과 접근 목록을 포함하여 이 노드의 모든 제어 권한이 부여됩니다.";
+
+/* Location: NodeAccessListView.swift - Button confirming that an entry is added with the admin role */
+"remoteNodes.acl.adminConfirm.grant" = "관리자 권한 부여";
+
+/* Location: RepeaterSettingsView.swift - Confirmation title before deleting a region from the repeater */
+"remoteNodes.settings.regions.deleteConfirm.title" = "지역을 삭제하시겠습니까?";
+
+/* Location: RepeaterSettingsView.swift - Confirmation message before deleting a region; %@ is the region name */
+"remoteNodes.settings.regions.deleteConfirm.message" = "%@이(가) 이 리피터에서 삭제됩니다.";
+
+/* Location: RepeaterAddRegionSheet.swift - Purpose: Error when a new region was added to the repeater but could not be switched on for flood packets */
+"remoteNodes.settings.regions.addedFloodOff" = "지역이 추가되었지만 아직 꺼져 있습니다. 플러드 패킷을 허용하려면 지역 목록에서 켜세요.";
+
+/* Location: RepeaterAddRegionSheet.swift - Purpose: Validation error when a region name starts with $ (a private region, whose key a repeater can't be given) */
+"remoteNodes.settings.regions.privateName" = "비공개 지역($로 시작)에는 키가 필요하지만 리피터에는 키를 설정하는 명령이 없습니다.";
+
+/* Location: RepeaterAddRegionSheet.swift - Purpose: Error when the parent chosen for a new region is no longer on the repeater */
+"remoteNodes.settings.regions.parentMissing" = "상위 지역이 더 이상 리피터에 없습니다. 지역을 다시 불러온 후 다시 시도하세요.";
+
+/* Location: RepeaterAddRegionSheet.swift - Purpose: Error when the repeater refuses a new region because its region table is full - %d is how many regions it holds */
+"remoteNodes.settings.regions.tableFull" = "리피터의 지역 테이블이 가득 찼습니다(%d개 지역). 다른 지역을 추가하기 전에 지역을 하나 제거하세요.";
+
+/* Location: RepeaterAddRegionSheet.swift - Purpose: Error when the repeater already has a region with the typed name, in the part of its list the app couldn't show */
+"remoteNodes.settings.regions.existsOnRepeater" = "리피터 목록 중 표시되지 않는 부분에 이 이름의 지역이 이미 있습니다.";
+
+/* Location: RepeaterAddRegionSheet.swift - Purpose: Error when the repeater, whose list could be read only in part, didn't confirm that the typed name is free */
+"remoteNodes.settings.regions.unconfirmedName" = "이 이름이 이미 사용 중인지 리피터에서 확인하지 못했습니다. 다시 시도하세요.";
+
+/* Location: RepeaterSettingsView.swift - Caption under the region list when the repeater's regions could be read only in part */
+"remoteNodes.settings.regions.partialList" = "이 리피터의 일부 지역을 읽지 못해 표시되지 않습니다. 새 이름은 추가하기 전에 리피터에서 확인합니다.";
+
+/* Location: RepeaterSettingsView.swift - Caption under the region list while the regions after the first part are still being read from the repeater */
+"remoteNodes.settings.regions.readingMore" = "이 리피터의 나머지 지역을 읽는 중…";
+
+/* Node status - tile group header for RSSI, SNR and noise floor */
+"remoteNodes.status.signal" = "신호";
+
+/* Node status - tile title for transmit airtime */
+"remoteNodes.status.txAirtime" = "TX 방송 시간";
+
+/* Node status - tile title for receive airtime */
+"remoteNodes.status.rxAirtime" = "RX 수신 시간";
+
+/* Node status - airtime tile caption; %@ is a percentage such as 1.2% */
+"remoteNodes.status.ofUptime" = "가동 시간의 %@";
+
+/* Node status - packet tile caption; first %@ is the direct count, second the flood count */
+"remoteNodes.status.directFlood" = "다이렉트 %@ · 플러드 %@";
+
+/* Min/avg/max tile caption under the average value; first %@ is the minimum, second the maximum */
+"remoteNodes.summary.tileCaption" = "평균 · 최소 %@ · 최대 %@";
+
+/* Node device info - device time tile caption when the node clock is ahead; %@ is a duration such as 5m */
+"remoteNodes.settings.clockAheadShort" = "내 무선 기기보다 %@ 빠름";
+
+/* Node device info - device time tile caption when the node clock is behind; %@ is a duration such as 5m */
+"remoteNodes.settings.clockBehindShort" = "내 무선 기기보다 %@ 느림";
+
+/* Node status - navigation card opening the charts of past status readings */
+"remoteNodes.status.links.statusHistory" = "상태 기록";
+
+/* Node status - navigation card opening the charts of past telemetry readings */
+"remoteNodes.status.links.telemetryHistory" = "텔레메트리 기록";
+
+/* Node page header - info line fact for the node's battery; %@ is the charge, e.g. '87%' or '3.95 V' */
+"remoteNodes.header.battery" = "배터리 %@";
+
+/* Location: RemoteNodes/Settings identity - Info popover beside the node's own name field */
+"remoteNodes.settings.nameInfo" = "이 노드가 메시 전체에 광고하는 이름입니다. 이 휴대폰에서만 표시되는 이름을 바꾸려면 노드 페이지에서 이름을 변경하세요.";
+
+/* Location: NodeStatusDashboard.swift - Purpose: Airtime card headline label, followed by the share of time the channel was busy (transmit + receive) since the node started */
+"remoteNodes.status.channelUse" = "채널 사용률";
+
+/* Location: NodeStatusDashboard.swift - Purpose: Signal card footer, how far the last packet's RSSI sat above the noise floor; %@ is a number of decibels */
+"remoteNodes.status.aboveNoise" = "잡음보다 %@ dB 높음";
+
+/* Location: NodeStatusDashboard.swift - Purpose: Packets table column header for the total count (direct plus flood) */
+"remoteNodes.status.total" = "합계";
+
+/* Location: NodeStatusDashboard.swift - Purpose: Info popover on the Signal card explaining what the readings measure */
+"remoteNodes.status.signalInfo" = "RSSI와 SNR은 이 노드가 어떤 노드로부터든 마지막으로 수신한 패킷의 값이며, 이 노드와 내 연결의 값이 아닙니다. 잡음 수준은 해당 채널의 배경 잡음입니다.";
+
+/* Location: NodeStatusDashboard.swift - Purpose: Info popover on the Airtime card explaining the bars */
+"remoteNodes.status.airtimeInfo" = "시작된 이후 시간 중 무선이 송신과 수신에 사용한 시간의 비율입니다.";
+
+/* Location: NodeStatusDashboard.swift - Purpose: Health card caption under uptime, the number of packets waiting to transmit; %@ is the count */
+"remoteNodes.status.txQueue" = "송신 대기열 %@";
+
+/* StatusDeltaView.swift - Accessibility: a status reading that hasn't changed since the last visit */
+"remoteNodes.history.a11y.unchanged" = "변화 없음";
+
+/* Short title of the Discover Neighbors action tile under a repeater's header */
+"remoteNodes.status.discoverTile" = "탐색";
+
+/* Result line after a repeater neighbor discovery finishes; %d is the number of neighbors */
+"remoteNodes.status.discoveryResult" = "찾은 이웃: %d";
+
+/* VoiceOver hint for the Discover Neighbors action tile */
+"remoteNodes.status.accessibility.discoverHint" = "리피터가 1분 동안 주변 노드를 수신하고 이웃 아래에 표시합니다";
+
+/* VoiceOver hint for the Discover Neighbors tile while a discovery is running */
+"remoteNodes.status.accessibility.discoverRunningHint" = "지금까지 찾은 이웃을 표시합니다";
+
+/* Location: RemoteNodeSectionPages.swift - Detail line on a repeater/room dashboard button whose section hasn't been read from the node yet */
+"remoteNodes.status.tile.notLoaded" = "불러오지 않음";
+
+/* Location: RemoteNodeSectionPages.swift - Detail line on the Neighbors dashboard button: %d is how many neighbours the node listed */
+"remoteNodes.status.tile.neighborCount" = "%d개 발견";
+
+/* Location: RemoteNodeSectionPages.swift - Detail line on the Telemetry dashboard button: %d is how many sensor readings the node reported */
+"remoteNodes.status.tile.sensorCount" = "센서 %d개";
+
+/* Location: RepeaterSettingsView.swift / RoomSettingsView.swift - Title of a logged-in repeater's or room's main page (status, actions and tools) */
+"remoteNodes.dashboard.title" = "대시보드";
+
+/* Location: NodeAuthenticationSheet.swift - Toggle: log in to this repeater or room without a tap, using the saved password */
+"remoteNodes.auth.autoLogin" = "자동 로그인";
+
+/* Location: NodeAuthenticationSheet.swift - VoiceOver hint for the automatic login toggle */
+"remoteNodes.auth.autoLogin.hint" = "이 노드를 열면 저장된 비밀번호로 로그인합니다";
+
+/* Cairn firmware sensor card: the radio's step count today */
+"remoteNodes.status.sensor.steps" = "오늘 걸음 수";
+
+/* Cairn firmware sensor card: the radio's tilt, its value "10° / 0°" (pitch, then roll) */
+"remoteNodes.status.sensor.pitchRoll" = "피치 / 롤";
+
+/* Cairn firmware sensor card: whether the radio is moving */
+"remoteNodes.status.sensor.motion" = "움직임";
+
+/* Cairn firmware motion value: moving */
+"remoteNodes.status.sensor.moving" = "이동 중";
+
+/* Cairn firmware motion value: still */
+"remoteNodes.status.sensor.still" = "정지";
+
+// MARK: - Repeater Controls
+
+/* Repeater Controls page */
+"remoteNodes.controls.title" = "제어";
+
+/* Repeater Controls page */
+"remoteNodes.controls.subtitle" = "출력, 조정 및 명령";
+
+/* Repeater Controls page */
+"remoteNodes.controls.tx.title" = "송신 출력";
+
+/* Repeater Controls page */
+"remoteNodes.controls.tx.apply" = "%lld dBm으로 설정";
+
+/* Repeater Controls page */
+"remoteNodes.controls.tx.current" = "현재 출력";
+
+/* Repeater Controls page */
+"remoteNodes.controls.tx.footer" = "무전기 칩 설정입니다. 무전기 재시작 없이 즉시 적용됩니다. 증폭기가 있는 보드(Heltec T096, V4)는 약 28 dBm까지 더 높게 송신합니다. 출력이 높을수록 더 멀리 닿지만 배터리와 송신 시간을 더 씁니다. 지역의 법적 한도를 지키세요.";
+
+/* Repeater Controls page: under the TX power setting on a node that reports an amplifier; %1$@ what it radiates at the antenna now, %2$@ the most, like '23 dBm' and '28 dBm' */
+"remoteNodes.controls.tx.amplifiedCaption" = "무전기 설정 · 현재 안테나 %1$@, 최대 %2$@";
+
+/* Repeater Controls page: as remoteNodes.controls.tx.amplifiedCaption while the new antenna figure is being read back; %@ the most it radiates, like '28 dBm' */
+"remoteNodes.controls.tx.amplifiedCaptionMax" = "무전기 설정 · 안테나 최대 %@";
+
+/* Repeater Controls page */
+"remoteNodes.controls.tuning.title" = "조정";
+
+/* Repeater Controls page */
+"remoteNodes.controls.tuning.footer" = "리피터가 채널을 공유하는 방식을 바꿉니다. 메시에 필요하지 않다면 기본값으로 두세요.";
+
+/* Location: RepeaterControlsPage.swift - Controls group title: delays and duty cycle */
+"remoteNodes.controls.group.timing.title" = "타이밍 및 방송 시간";
+
+/* Location: RepeaterControlsPage.swift - Controls group: what's in it, under its title */
+"remoteNodes.controls.group.timing.detail" = "지연 및 듀티 사이클";
+
+/* Location: RepeaterControlsPage.swift - Controls group title: the receiver's settings */
+"remoteNodes.controls.group.receiver.title" = "수신기";
+
+/* Location: RepeaterControlsPage.swift - Controls group: what's in it, under its title */
+"remoteNodes.controls.group.receiver.detail" = "이득, 간섭 임계값, CAD";
+
+/* Location: RepeaterControlsPage.swift - Controls group title: flood and routing settings */
+"remoteNodes.controls.group.routing.title" = "플러딩 및 라우팅";
+
+/* Location: RepeaterControlsPage.swift - Controls group: what's in it, under its title */
+"remoteNodes.controls.group.routing.detail" = "플러드와 광고가 전달되는 범위";
+
+/* Location: RepeaterControlsPage.swift - Controls group title: read-only access, GPS and power saving */
+"remoteNodes.controls.group.device.title" = "접근, GPS 및 전원";
+
+/* Location: RepeaterControlsPage.swift - Controls group: what's in it, under its title */
+"remoteNodes.controls.group.device.detail" = "읽기 전용 접근, GPS, 절전";
+
+/* Location: RepeaterControlsPage.swift - Controls group title: the bridge to another network */
+"remoteNodes.controls.group.bridge.title" = "브리지";
+
+/* Location: RepeaterControlsPage.swift - Controls group: what's in it, under its title */
+"remoteNodes.controls.group.bridge.detail" = "다른 네트워크로의 브리지";
+
+/* Location: RepeaterControlsPage.swift - Controls group, before it's read: %lld the number of settings in it, like 5 */
+"remoteNodes.controls.group.tapToRead" = "탭하여 설정 %lld개 읽기";
+
+/* Location: RepeaterControlsPage.swift - Controls group while it's read: %1$lld the setting being read, %2$lld how many, like 2 of 5 */
+"remoteNodes.controls.group.reading" = "%2$lld개 중 %1$lld개 읽는 중…";
+
+/* Location: RepeaterControlsPage.swift - VoiceOver value of an open Controls group */
+"remoteNodes.controls.group.expanded" = "펼쳐짐";
+
+/* Location: RepeaterControlsPage.swift - VoiceOver value of a closed Controls group */
+"remoteNodes.controls.group.collapsed" = "접힘";
+
+/* Location: RepeaterControlsPage.swift - An open Controls group when the repeater's firmware has none of its settings */
+"remoteNodes.controls.group.noneOnFirmware" = "이 리피터의 펌웨어에는 이 설정이 없습니다.";
+
+/* Location: RepeaterControlsPage.swift - Under the Controls groups: why each is read only when opened (every read is a request over the mesh) */
+"remoteNodes.controls.groups.footer" = "각 그룹은 열 때만 리피터에서 읽으므로, 보는 항목만 요청합니다.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.af.title" = "송신 시간 계수";
+
+/* Repeater Controls page */
+"remoteNodes.controls.af.detail" = "송신 후 리피터가 조용히 있는 시간(송신 시간의 배수).";
+
+/* Repeater Controls page */
+"remoteNodes.controls.rxdelay.title" = "RX 지연";
+
+/* Repeater Controls page */
+"remoteNodes.controls.rxdelay.detail" = "약한 플러드를 조금 더 오래 붙잡아 강한 경로가 우선되게 합니다.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.txdelay.title" = "플러드 TX 지연";
+
+/* Repeater Controls page */
+"remoteNodes.controls.txdelay.detail" = "충돌을 피하기 위해 플러드 패킷을 반복하기 전 무작위로 대기합니다.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.directTxdelay.title" = "직접 TX 지연";
+
+/* Repeater Controls page */
+"remoteNodes.controls.directTxdelay.detail" = "직접 라우팅 패킷을 반복하기 전 무작위로 대기합니다.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.intThresh.title" = "간섭 임계값";
+
+/* Repeater Controls page */
+"remoteNodes.controls.intThresh.detail" = "잡음이 바닥보다 이만큼 높으면 채널이 빌 때까지 기다립니다. 0이면 끕니다.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.agc.title" = "AGC 재설정 간격";
+
+/* Repeater Controls page */
+"remoteNodes.controls.agc.detail" = "수신기 이득을 재설정하는 주기(초). 0이면 끕니다.";
+
+
+/* Repeater Controls page */
+"remoteNodes.controls.multiAcks.title" = "추가 ACK";
+
+/* Repeater Controls page */
+"remoteNodes.controls.multiAcks.detail" = "더 안정적인 전달을 위해 직접 메시지에 확인을 한 번 더 보냅니다.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.readOnly.title" = "읽기 전용 게스트";
+
+/* Repeater Controls page */
+"remoteNodes.controls.readOnly.detail" = "비밀번호 없는 게스트가 로그인해 상태를 읽을 수 있게 합니다.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.rxGain.title" = "RX 이득 향상";
+
+/* Repeater Controls page */
+"remoteNodes.controls.rxGain.detail" = "지원하는 무전기에서 수신 이득을 높입니다.";
+
+/* RepeaterControlsModel.swift - Switch for an external front end's low-noise amplifier on the repeater */
+"remoteNodes.controls.femLna.title" = "프런트엔드 LNA";
+
+/* RepeaterControlsModel.swift - Explanation under the repeater's LNA switch */
+"remoteNodes.controls.femLna.detail" = "프런트엔드가 있는 보드에서 약한 신호를 증폭합니다. 강한 송신기 근처에서는 끄세요.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.powerSaving.title" = "절전";
+
+/* Repeater Controls page */
+"remoteNodes.controls.powerSaving.detail" = "배터리를 아끼기 위해 패킷 사이에 절전합니다.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.gps.title" = "GPS";
+
+/* Repeater Controls page */
+"remoteNodes.controls.gps.detail" = "리피터의 GPS 수신기를 켜거나 끕니다.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.loopDetect.title" = "루프 감지";
+
+/* Repeater Controls page */
+"remoteNodes.controls.loopDetect.detail" = "이미 이 리피터를 거친 플러드 패킷을 버립니다.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.commands.title" = "명령";
+
+/* Repeater Controls page */
+"remoteNodes.controls.commands.footer" = "나머지는 모두 CLI에서 사용할 수 있습니다.";
+
+/* Repeater Controls page */
+"remoteNodes.controls.command.gpsSync" = "GPS로 시계 동기화";
+
+/* Repeater Controls page */
+"remoteNodes.controls.command.logStart" = "패킷 로그 시작";
+
+/* Repeater Controls page */
+"remoteNodes.controls.command.logStop" = "패킷 로그 중지";
+
+/* Repeater Controls page */
+"remoteNodes.controls.command.logErase" = "패킷 로그 지우기";
+
+/* Repeater Controls page */
+"remoteNodes.controls.command.logEraseConfirm" = "리피터의 패킷 로그를 지우시겠습니까?";
+
+/* Repeater Controls page */
+"remoteNodes.controls.command.clearStats" = "통계 초기화";
+
+/* Repeater Controls page */
+"remoteNodes.controls.command.clearStatsConfirm" = "리피터의 패킷 및 송신 시간 카운터를 초기화하시겠습니까?";
+"remoteNodes.controls.floodMaxAdvert.title" = "광고 플러드 홉";
+"remoteNodes.controls.floodMaxAdvert.detail" = "광고 플러드를 반복하는 최대 홉 수입니다. 0이면 통과시키지 않습니다.";
+"remoteNodes.controls.floodMaxUnscoped.title" = "범위 없는 플러드 홉";
+"remoteNodes.controls.floodMaxUnscoped.detail" = "지역 범위가 없는 플러드의 최대 홉 수입니다. 0이면 이 노드에서 버립니다.";
+"remoteNodes.controls.dutyCycle.title" = "듀티 사이클";
+"remoteNodes.controls.dutyCycle.detail" = "송신할 수 있는 시간의 비율(%)입니다. 에어타임 계수가 이를 따릅니다.";
+"remoteNodes.controls.cad.title" = "반송파 감지";
+"remoteNodes.controls.cad.detail" = "전송 전에 채널의 패킷을 감지해 충돌을 피합니다.";
+"remoteNodes.controls.pathHashMode.title" = "경로 해시 크기";
+"remoteNodes.controls.pathHashMode.detail" = "경로에서 각 홉 ID가 차지하는 바이트 수입니다. 길수록 노드를 잘 구분하지만 에어타임이 늘어납니다.";
+"remoteNodes.controls.pathHashMode.oneByte" = "1바이트";
+"remoteNodes.controls.pathHashMode.twoBytes" = "2바이트";
+"remoteNodes.controls.pathHashMode.threeBytes" = "3바이트";
+"remoteNodes.controls.gpsAdvert.title" = "광고 위치";
+"remoteNodes.controls.gpsAdvert.detail" = "광고의 위치 출처: 없음, GPS 수신값 또는 저장된 위치입니다.";
+"remoteNodes.controls.gpsAdvert.none" = "없음";
+"remoteNodes.controls.gpsAdvert.share" = "GPS";
+"remoteNodes.controls.gpsAdvert.prefs" = "저장된 위치";
+"remoteNodes.controls.bridgeEnabled.title" = "브리지";
+"remoteNodes.controls.bridgeEnabled.detail" = "보드의 시리얼 또는 ESP-NOW 브리지로 패킷을 전달합니다.";
+"remoteNodes.controls.bridgeDelay.title" = "브리지 지연";
+"remoteNodes.controls.bridgeDelay.detail" = "브리지된 패킷이 나가기 전 대기하는 밀리초입니다.";
+"remoteNodes.controls.bridgeSource.title" = "브리지 소스";
+"remoteNodes.controls.bridgeSource.detail" = "브리지가 전달할 패킷: 수신된 것 또는 송신된 것입니다.";
+"remoteNodes.controls.bridgeSource.received" = "수신";
+"remoteNodes.controls.bridgeSource.sent" = "송신";
+"remoteNodes.controls.bridgeBaud.title" = "브리지 보드레이트";
+"remoteNodes.controls.bridgeBaud.detail" = "시리얼 브리지의 속도입니다.";
+"remoteNodes.controls.bridgeChannel.title" = "브리지 채널";
+"remoteNodes.controls.bridgeChannel.detail" = "ESP-NOW 브리지의 Wi-Fi 채널(1~14)입니다.";
+"remoteNodes.controls.command.gpsSetLoc" = "GPS 위치 사용";
+"remoteNodes.controls.command.powerOff" = "전원 끄기";
+"remoteNodes.controls.command.powerOffConfirm" = "노드의 전원을 끌까요? 누군가 다시 켤 때까지 꺼진 상태로 유지됩니다.";
+"remoteNodes.roomSettings.post.title" = "방 이름으로 게시";
+"remoteNodes.roomSettings.post.detail" = "방 자체가 모든 구성원에게 보내는 메시지";
+"remoteNodes.roomSettings.post.placeholder" = "메시지";
+"remoteNodes.roomSettings.post.send" = "게시";
+"remoteNodes.roomSettings.post.sent" = "방에 게시됨";
+"remoteNodes.neighbors.remove" = "이웃 제거";
+"remoteNodes.neighbors.removeConfirm" = "%@을(를) 리피터의 이웃 목록에서 제거할까요? 다시 들리면 돌아옵니다.";
+"remoteNodes.neighbors.removed" = "이웃 목록에서 제거됨";
+
+/* Repeater Controls page */
+"remoteNodes.controls.unsupported" = "지원 안 됨";
+
+/* Repeater Controls page */
+"remoteNodes.controls.retry" = "다시 시도";
+
+/* Repeater Controls page */
+"remoteNodes.controls.apply" = "적용";
+
+/* Repeater Controls page */
+"remoteNodes.controls.revert" = "되돌리기";
+
+/* Repeater Controls page */
+"remoteNodes.controls.failed" = "적용되지 않음";
+
+/* Repeater Controls page */
+"remoteNodes.controls.increase" = "증가";
+
+/* Repeater Controls page */
+"remoteNodes.controls.decrease" = "감소";
+
+/* Location: RepeaterControlsPage.swift - VoiceOver value on a setting or command while it is being sent to the repeater */
+"remoteNodes.controls.inProgress" = "진행 중";
+
+/* Location: RepeaterControlsPage.swift - A transmit power in milliwatts, approximately: %@ is the formatted figure, e.g. "158 mW" */
+"remoteNodes.controls.tx.milliwatts" = "≈ %@";
+
+/* Location: RepeaterStatusContent.swift - Progress line while a repeater page loads its readings and settings after login: step, total, what is loading */
+"remoteNodes.status.loadingStep" = "불러오는 중 %1$d/%2$d · %3$@";
+
+/* Location: NodeLoadProgress.swift - Step count beside what is loading on a repeater page, e.g. "4 of 6" */
+"remoteNodes.status.loadingCount" = "%1$d/%2$d";
+
+/* Location: RadioSettingsValidation.swift - Radio sheet: frequency outside the companion's range */
+"remoteNodes.settings.radio.frequencyValidation" = "주파수는 %1$@~%2$@ MHz 사이여야 합니다";
+
+/* Location: RadioSettingsValidation.swift - Radio sheet: bandwidth not one of the radio's */
+"remoteNodes.settings.radio.bandwidthValidation" = "대역폭은 무전기가 지원하는 값 중 하나여야 합니다";
+
+/* Location: RadioSettingsValidation.swift - Radio sheet: spreading factor out of range */
+"remoteNodes.settings.radio.spreadingFactorValidation" = "확산 계수는 %1$d~%2$d 사이여야 합니다";
+
+/* Location: RadioSettingsValidation.swift - Radio sheet: coding rate out of range */
+"remoteNodes.settings.radio.codingRateValidation" = "코딩률은 4/%1$d~4/%2$d 사이여야 합니다";
+
+/* Location: SharedNodeSettingsViews.swift - Confirmation before `set radio` is sent */
+"remoteNodes.settings.radio.confirmTitle" = "무선 설정을 변경할까요?";
+
+/* Location: SharedNodeSettingsViews.swift - Last line of the radio confirmation */
+"remoteNodes.settings.radio.confirmStrand" = "무선 설정이 메시와 맞지 않는 노드는 무선으로 접근할 수 없고 보드에서만 복구할 수 있습니다. 노드가 고립될 수 있습니다.";
+
+/* Location: SharedNodeSettingsViews.swift - Radio confirmation: send the settings */
+"remoteNodes.settings.radio.confirmApply" = "적용";
+
+/* Location: SharedNodeSettingsViews.swift - Radio confirmation: send the settings and reboot */
+"remoteNodes.settings.radio.confirmApplyReboot" = "적용 후 재시작";
+
+/* Location: RadioSettingsValidation.swift - One changed setting in the radio confirmation: name, old value, new value */
+"remoteNodes.settings.radio.changeLine" = "%1$@: %2$@ → %3$@";
+
+/* Location: SharedNodeSettingsViews.swift - Radio card button: apply and reboot in one */
+"remoteNodes.settings.applyAndReboot" = "적용 후 재시작";
+
+/* Location: SharedNodeSettingsViews.swift - Success alert button after a radio change */
+"remoteNodes.settings.rebootNow" = "지금 재시작";
+
+/* Location: SharedNodeSettingsViews.swift - Button beside Apply: put the fields back to the node's values */
+"remoteNodes.settings.revert" = "되돌리기";
+
+/* Location: SharedNodeSettingsViews.swift - Under a field the node accepted */
+"remoteNodes.settings.fieldApplied" = "적용됨";
+
+/* Location: SharedNodeSettingsViews.swift - Under a field the node refused, with its reply */
+"remoteNodes.settings.fieldFailed" = "적용되지 않음: %@";
+
+/* Location: NodeSettingsCards.swift - Done on a settings sheet with unsent edits */
+"remoteNodes.settings.unsaved.title" = "저장되지 않은 변경 사항";
+
+/* Location: NodeSettingsCards.swift - Unsaved changes dialog message */
+"remoteNodes.settings.unsaved.message" = "아직 노드로 전송되지 않은 변경 사항은 사라집니다.";
+
+/* Location: NodeSettingsCards.swift - Unsaved changes dialog: close without sending */
+"remoteNodes.settings.unsaved.discard" = "변경 사항 버리기";
+
+/* Location: NodeSettingsCards.swift - Unsaved changes dialog: stay on the sheet */
+"remoteNodes.settings.unsaved.keepEditing" = "계속 편집";
+
+/* Location: NodeSettingsCards.swift - Unsaved changes dialog: send the edits, then close */
+"remoteNodes.settings.unsaved.save" = "노드로 보내기";
+
+/* Location: NodeDashboardCards.swift - Device card note when the latest release is newer */
+"remoteNodes.settings.updateAvailable" = "업데이트 가능";
+
+/* Location: NodeDashboardCards.swift - Device card line for an ESP32 repeater */
+"remoteNodes.settings.updateViaWebFlasher" = "웹 플래셔로 업데이트";
+
+/* Location: NodeQuietState.swift - Dashboard banner after a reboot, counting down */
+"remoteNodes.reboot.bannerRebooting" = "재시작 중… 약 %d초 후 다시 시도하세요";
+
+/* Location: NodeQuietState.swift - Dashboard banner once the reboot wait is over */
+"remoteNodes.reboot.bannerReady" = "노드가 다시 켜졌을 것입니다. 계속하려면 다시 연결하세요.";
+
+/* Location: NodeQuietState.swift - Dashboard banner after a power-off */
+"remoteNodes.reboot.bannerPoweredOff" = "전원이 꺼졌습니다. 노드를 켠 뒤 다시 연결하세요.";
+
+/* Location: NodeQuietState.swift - Dashboard banner button: log in again */
+"remoteNodes.reboot.reconnect" = "다시 연결";
+
+/* Location: NodeAuthenticationSheet.swift - Login got no reply after every route was tried */
+"remoteNodes.auth.noReply" = "응답이 없습니다. 비밀번호를 확인하거나 노드가 범위 안에 있는지 확인하세요.";
+
+/* Location: NodeAuthenticationSheet.swift - Eye button on the password field */
+"remoteNodes.auth.showPassword" = "비밀번호 표시";
+
+/* Location: NodeAuthenticationSheet.swift - Eye button on the password field, shown */
+"remoteNodes.auth.hidePassword" = "비밀번호 숨기기";
+
+/* Location: NodeSavedLogin.swift - Contact page card and menu section */
+"remoteNodes.savedLogin.title" = "저장된 로그인";
+
+/* Location: NodeSavedLogin.swift - Menu item: opening the node logs in with the saved password (short, for the bar menu) */
+"remoteNodes.savedLogin.autoLogin" = "자동 로그인";
+
+/* Location: NodeSavedLogin.swift - Drops the saved password */
+"remoteNodes.savedLogin.forget" = "비밀번호 삭제";
+
+/* Location: NodeSavedLogin.swift - Card summary without a saved password */
+"remoteNodes.savedLogin.none" = "저장된 비밀번호 없음";
+
+/* Location: NodeSavedLogin.swift - Card summary with a saved password */
+"remoteNodes.savedLogin.saved" = "비밀번호 저장됨";
+
+/* Location: NodeSavedLogin.swift - Card summary when the node logs in on its own */
+"remoteNodes.savedLogin.automatic" = "자동으로 로그인";
+
+/* Location: NodeDashboardMenu.swift - Menu item: log out, keeping the password */
+"remoteNodes.dashboard.logOut" = "로그아웃";
+
+/* Location: NodeDashboardMenu.swift - Menu item: log out and drop the saved password */
+"remoteNodes.dashboard.logOutForget" = "로그아웃 및 삭제";
+
+/* Location: NodeDashboardMenu.swift - Menu picker: refresh the status while the page is open */
+"remoteNodes.dashboard.refreshEvery" = "자동 새로고침";
+
+/* Repeater/room Dashboard menu: switch that reads the node's settings and checks its clock as soon as the page opens (off: each card reads its settings when opened) */
+"remoteNodes.dashboard.loadSettingsOnOpen" = "설정 미리 읽기";
+
+/* Repeater/room Dashboard menu: title of the prompt before Preload Settings is turned on */
+"remoteNodes.dashboard.preload.title" = "설정을 미리 읽을까요?";
+
+/* Repeater/room Dashboard menu: the prompt's disclosure of the extra mesh traffic Preload Settings sends */
+"remoteNodes.dashboard.preload.message" = "리피터나 룸을 열 때마다 Cairn이 무선, 동작, 기기 설정도 읽고 시계를 확인합니다. 방문마다 메시를 통해 최대 열두 건 정도의 요청이 추가됩니다. 이 요청은 공유 전파 시간을 쓰고 다른 트래픽을 늦추며 노드의 배터리를 소모합니다. 이 기능이 꺼져 있으면 각 설정은 해당 카드를 열 때만 읽습니다.";
+
+/* Repeater/room Dashboard menu: the prompt's button that turns Preload Settings on */
+"remoteNodes.dashboard.preload.confirm" = "미리 읽기";
+
+/* Location: NodeDashboardMenu.swift - Picker choice: no automatic refresh / no alert */
+"remoteNodes.dashboard.refreshOff" = "끔";
+
+/* Location: NodeDashboardMenu.swift - Picker choice: refresh interval in minutes */
+"remoteNodes.dashboard.refreshMinutes" = "%d분마다";
+
+/* Location: RepeaterSectionPages.swift - Neighbors page bar menu */
+"remoteNodes.neighbors.sort" = "정렬";
+
+/* Location: NeighborListSort.swift - Sort: strongest signal first */
+"remoteNodes.neighbors.sort.snr" = "신호";
+
+/* Location: NeighborListSort.swift - Sort: most recently heard first */
+"remoteNodes.neighbors.sort.lastHeard" = "최근 수신";
+
+/* Location: NeighborListSort.swift - Sort: by name */
+"remoteNodes.neighbors.sort.name" = "이름";
+
+/* Location: NeighborListSort.swift - Sort: first-seen neighbours first */
+"remoteNodes.neighbors.sort.newFirst" = "새 항목 우선";
+
+/* Location: RepeaterSectionPages.swift - Neighbors page search prompt */
+"remoteNodes.neighbors.search" = "이웃 검색";
+
+/* Location: NeighborDetailPage.swift - Menu item: trace the route to the neighbour */
+"remoteNodes.neighbors.tracePath" = "경로 추적";
+
+/* Location: NeighborDetailPage.swift - Menu item: save a discovered neighbour as a contact */
+"remoteNodes.neighbors.addContact" = "연락처로 추가";
+
+/* Location: NeighborDetailPage.swift - Menu item after the neighbour was added */
+"remoteNodes.neighbors.addedContact" = "추가됨";
+
+/* Location: NodeStatusDashboard.swift - Reading card caption while a refresh has failed, with the reading's age */
+"remoteNodes.status.stale" = "오래됨 · 마지막 읽기 %@";
+
+/* Location: NodeDashboardCards.swift - Card line when its value is the last visit's */
+"remoteNodes.status.fromLastVisit" = "지난 방문 값";
+
+/* Location: ContactNameEditSheet.swift - Section title for the node's note */
+"remoteNodes.note.title" = "메모";
+
+/* Location: ContactNameEditSheet.swift - Note field placeholder */
+"remoteNodes.note.placeholder" = "위치, 관리자…";
+
+/* Location: ContactNameEditSheet.swift - Note section info */
+"remoteNodes.note.info" = "이 휴대폰에만 저장되며 노드 이름 아래에 표시됩니다.";
+
+/* Location: RepeaterCompareView.swift - Page title */
+"remoteNodes.compare.title" = "비교";
+
+/* Location: NodeDashboardMenu.swift - Menu item opening the comparison */
+"remoteNodes.compare.menu" = "비교 대상…";
+
+/* Location: RepeaterCompareView.swift - First node picker */
+"remoteNodes.compare.pickA" = "첫 번째 노드";
+
+/* Location: RepeaterCompareView.swift - Second node picker */
+"remoteNodes.compare.pickB" = "두 번째 노드";
+
+/* Location: RepeaterCompareView.swift - A side without a stored reading */
+"remoteNodes.compare.noSnapshot" = "저장된 측정값 없음";
+
+/* Location: RepeaterCompareView.swift - When the reading was taken, relative */
+"remoteNodes.compare.readAt" = "읽음 %@";
+
+/* Location: RepeaterCompareView.swift - Info over the pickers */
+"remoteNodes.compare.pickPrompt" = "리피터 또는 룸 두 개를 골라 최근 저장된 측정값을 비교하세요.";
+
+/* Location: NodeCLIView.swift - Bar menu: share the terminal's text */
+"remoteNodes.nodeCli.shareTranscript" = "기록 공유";
+
+/* Location: NodeCLIView.swift - Bar menu: copy the terminal's text */
+"remoteNodes.nodeCli.copyTranscript" = "기록 복사";
+
+/* Location: NodeCLITranscript.swift - Confirmation for a typed `set radio` */
+"remoteNodes.nodeCli.confirmSetRadio" = "무선 설정을 변경할까요? 무선 설정이 메시와 맞지 않는 노드는 무선으로 접근할 수 없습니다.";
+
+/* Location: NodeCLIView.swift - Confirmation button: send the typed command */
+"remoteNodes.nodeCli.confirmSend" = "보내기";

@@ -1,0 +1,40 @@
+/* Widget localization — Ukrainian */
+
+"Disconnected" = "Від'єднано";
+"%lld packets per minute" = "%lld пакетів за хвилину";
+"Battery %lld percent" = "Батарея %lld відсотків";
+
+/* Control Center button: opens the app */
+"Open Cairn" = "Відкрити Cairn";
+
+/* Live Activity: banner and Dynamic Island readings */
+/* AI-translated - please verify with native speakers. */
+"Connected" = "Під’єднано";
+"Direct" = "Особисте";
+"No messages yet" = "Повідомлень ще немає";
+"RSSI" = "RSSI";
+"SNR" = "SNR";
+"Noise" = "Шум";
+"Per min" = "За хв";
+"Nodes 1h" = "Вузли 1 год";
+"Battery %lld percent, %@" = "Батарея %lld відсотків, %@";
+"Position %@" = "Позиція %@";
+"Message from %@ in %@: %@" = "Повідомлення від %@ у %@: %@";
+"Direct message from %@: %@" = "Особисте повідомлення від %@: %@";
+"Last RSSI %lld dBm" = "Останній RSSI %lld дБм";
+"Last SNR %@ dB" = "Останній SNR %@ дБ";
+"Noise floor %lld dBm" = "Рівень шуму %lld дБм";
+"Last RSSI %lld dBm, SNR %@ dB" = "Останній RSSI %lld дБм, SNR %@ дБ";
+"Last message from %@" = "Останнє повідомлення від %@";
+
+/* Home-screen widget (Radio Status) */
+/* AI-translated - please verify with native speakers. */
+"Radio Status" = "Стан радіо";
+"Your radio's link, battery and unread messages at a glance." = "Зв’язок, батарея та непрочитані повідомлення вашого радіо одним поглядом.";
+"Connecting…" = "Підключення…";
+"No radio" = "Немає радіо";
+"Open Cairn to connect" = "Відкрийте Cairn, щоб підключитися";
+"Last heard" = "Останній почутий";
+"Last heard %@" = "Останній почутий: %@";
+"Nothing heard yet" = "Поки нічого не чутно";
+"Updated" = "Оновлено";

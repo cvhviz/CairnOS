@@ -1,0 +1,53 @@
+/*
+  WhatsNew.strings
+  Cairn
+
+  Strings for the "What's New" sheet shown once after a major update.
+  Update these every major release: edit the per-feature title/description
+  pairs (add or remove a block) and keep WhatsNewCatalog.swift in sync.
+*/
+
+/* Title of the What's New sheet shown once after an app update */
+"whatsNew.title" = "Novedades";
+
+/* Button to dismiss the What's New sheet */
+"whatsNew.continueButton" = "Continuar";
+
+/* Link on the What's New sheet to the full GitHub release notes */
+"whatsNew.fullReleaseNotes" = "Ver todos los cambios nuevos";
+
+/* What's New Cairn 1.0 - Home dashboard, title */
+"whatsNew.home.title" = "Panel de inicio";
+
+/* What's New Cairn 1.0 - Home dashboard, description */
+"whatsNew.home.description" = "Batería, chats, nodos, GPS, radio y red de un vistazo. Toca cualquier tarjeta para ver los detalles.";
+
+/* What's New Cairn 1.0 - card design, title */
+"whatsNew.cards.title" = "Tarjetas sobre cristal";
+
+/* What's New Cairn 1.0 - card design, description */
+"whatsNew.cards.description" = "Cada página está hecha de tarjetas sobre un fondo de cristal a tu elección.";
+
+/* What's New Cairn 1.0 - GNSS dashboard, title */
+"whatsNew.gnss.title" = "Panel GNSS";
+
+/* What's New Cairn 1.0 - GNSS dashboard, description */
+"whatsNew.gnss.description" = "Fijado, satélites, precisión y posición de tu radio y tu teléfono en su propia pestaña.";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, title */
+"whatsNew.aim.title" = "Apunta a cualquier nodo";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, description */
+"whatsNew.aim.description" = "Toca un nodo en el mapa para ver una línea desde ti hasta él, con su distancia, rumbo y una flecha que seguir. El mapa de la página de un nodo se abre con él ya seleccionado.";
+
+/* What's New Cairn 1.0 - Spectrum, title */
+"whatsNew.spectrum.title" = "Espectro";
+
+/* What's New Cairn 1.0 - Spectrum, description */
+"whatsNew.spectrum.description" = "Observa en directo el ruido de fondo y la actividad en tu frecuencia.";
+
+/* What's New Cairn 1.0 - consolidated settings, title */
+"whatsNew.settings.title" = "Ajustes donde los necesitas";
+
+/* What's New Cairn 1.0 - consolidated settings, description */
+"whatsNew.settings.description" = "Los ajustes de cada pestaña están tras los controles deslizantes de arriba; los de la app, tras el engranaje en Inicio.";

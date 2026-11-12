@@ -1,0 +1,53 @@
+/*
+  WhatsNew.strings
+  Cairn
+
+  Strings for the "What's New" sheet shown once after a major update.
+  Update these every major release: edit the per-feature title/description
+  pairs (add or remove a block) and keep WhatsNewCatalog.swift in sync.
+*/
+
+/* Title of the What's New sheet shown once after an app update */
+"whatsNew.title" = "Neuigkeiten";
+
+/* Button to dismiss the What's New sheet */
+"whatsNew.continueButton" = "Weiter";
+
+/* Link on the What's New sheet to the full GitHub release notes */
+"whatsNew.fullReleaseNotes" = "Alle neuen Änderungen anzeigen";
+
+/* What's New Cairn 1.0 - Home dashboard, title */
+"whatsNew.home.title" = "Startseite";
+
+/* What's New Cairn 1.0 - Home dashboard, description */
+"whatsNew.home.description" = "Akku, Chats, Knoten, GPS, Funk und Netz auf einen Blick, jede Karte führt zu den Details.";
+
+/* What's New Cairn 1.0 - card design, title */
+"whatsNew.cards.title" = "Karten auf Glas";
+
+/* What's New Cairn 1.0 - card design, description */
+"whatsNew.cards.description" = "Jede Seite besteht aus Karten auf einem Glashintergrund deiner Wahl.";
+
+/* What's New Cairn 1.0 - GNSS dashboard, title */
+"whatsNew.gnss.title" = "GNSS-Übersicht";
+
+/* What's New Cairn 1.0 - GNSS dashboard, description */
+"whatsNew.gnss.description" = "Fix, Satelliten, Genauigkeit und Position deines Funkgeräts und Telefons in einem eigenen Tab.";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, title */
+"whatsNew.aim.title" = "Jeden Knoten anpeilen";
+
+/* What's New Cairn 1.0 - aiming at a node on the map, description */
+"whatsNew.aim.description" = "Tippe auf einen Knoten auf der Karte für eine Linie von dir zu ihm, mit Entfernung, Richtung und einem Pfeil, dem du folgen kannst. Die Karte auf der Seite eines Knotens öffnet sich mit ihm schon ausgewählt.";
+
+/* What's New Cairn 1.0 - Spectrum, title */
+"whatsNew.spectrum.title" = "Spektrum";
+
+/* What's New Cairn 1.0 - Spectrum, description */
+"whatsNew.spectrum.description" = "Sieh dir Rauschpegel und Aktivität auf deiner Frequenz live an.";
+
+/* What's New Cairn 1.0 - consolidated settings, title */
+"whatsNew.settings.title" = "Einstellungen, wo du sie brauchst";
+
+/* What's New Cairn 1.0 - consolidated settings, description */
+"whatsNew.settings.description" = "Die Einstellungen jedes Tabs findest du hinter den Schiebereglern oben; App-Einstellungen hinter dem Zahnrad auf „Home“.";

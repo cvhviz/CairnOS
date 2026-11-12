@@ -1,0 +1,40 @@
+/* Widget localization — Simplified Chinese */
+
+"Disconnected" = "已断开";
+"%lld packets per minute" = "每分钟 %lld 个数据包";
+"Battery %lld percent" = "电量 %lld%%";
+
+/* Control Center button: opens the app */
+"Open Cairn" = "打开 Cairn";
+
+/* Live Activity: banner and Dynamic Island readings */
+/* AI-translated - please verify with native speakers. */
+"Connected" = "已连接";
+"Direct" = "私信";
+"No messages yet" = "暂无消息";
+"RSSI" = "RSSI";
+"SNR" = "SNR";
+"Noise" = "噪声";
+"Per min" = "每分钟";
+"Nodes 1h" = "1小时节点";
+"Battery %lld percent, %@" = "电池 %lld%%，%@";
+"Position %@" = "位置 %@";
+"Message from %@ in %@: %@" = "%@ 在 %@ 中的消息：%@";
+"Direct message from %@: %@" = "%@ 的私信：%@";
+"Last RSSI %lld dBm" = "最近 RSSI %lld dBm";
+"Last SNR %@ dB" = "最近 SNR %@ dB";
+"Noise floor %lld dBm" = "底噪 %lld dBm";
+"Last RSSI %lld dBm, SNR %@ dB" = "最近 RSSI %lld dBm，SNR %@ dB";
+"Last message from %@" = "最近消息来自 %@";
+
+/* Home-screen widget (Radio Status) */
+/* AI-translated - please verify with native speakers. */
+"Radio Status" = "电台状态";
+"Your radio's link, battery and unread messages at a glance." = "一览电台的连接、电量和未读消息。";
+"Connecting…" = "正在连接…";
+"No radio" = "无电台";
+"Open Cairn to connect" = "打开 Cairn 以连接";
+"Last heard" = "最近收到";
+"Last heard %@" = "最近收到：%@";
+"Nothing heard yet" = "尚未收到任何节点";
+"Updated" = "已更新";

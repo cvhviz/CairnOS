@@ -1,0 +1,3331 @@
+/*
+  Settings.strings
+  Cairn
+
+  Strings for Settings feature, including app preferences,
+  account settings, device configuration, and app information.
+ */
+
+// MARK: - Main Settings View
+
+/* Navigation title for main settings screen */
+"title" = "设置";
+
+// MARK: - Settings Hub (SettingsHubView)
+
+/* RadioSettingsView.swift - Section header over the radio's receive-gain switches */
+"radio.receive.header" = "接收";
+
+/* RadioSettingsView.swift - Info behind the Receive header */
+"radio.receive.info" = "前端 LNA 会在电台接收前放大微弱信号；靠近强发射机时请关闭，否则可能过载。增强接收增益是电台芯片自身的高灵敏度模式，功耗略高。两项设置同时生效，并保存在电台上。";
+
+/* RadioSettingsView.swift - Switch for the external front end's low-noise amplifier */
+"radio.receive.lna" = "前端 LNA";
+
+/* RadioSettingsView.swift - Line under the LNA switch */
+"radio.receive.lnaHint" = "靠近强发射机时关闭";
+
+/* RadioSettingsView.swift - Switch for the SX126x boosted receive gain */
+"radio.receive.boost" = "增强接收增益";
+
+/* RadioSettingsView.swift - Line under the boosted gain switch */
+"radio.receive.boostHint" = "灵敏度更高，功耗略增";
+
+/* SettingsHubView.swift - Section header over the connected radio's own settings pages */
+"hub.thisRadio" = "此电台";
+
+/* SettingsHubView.swift - Section header over the app's own preferences */
+"hub.appSection" = "应用";
+
+/* SettingsHubView.swift - Section header over About and Advanced */
+"hub.aboutSection" = "关于";
+
+/* SettingsHubView.swift - Footer under This Radio while no radio is connected */
+"hub.noRadioFooter" = "连接电台以更改其设置。";
+
+/* SettingsHubView.swift - Search field placeholder at the top of Settings */
+"hub.searchPrompt" = "搜索设置";
+
+/* SettingsHubView.swift - First row of Settings when no radio is connected */
+"hub.noRadio" = "未连接电台";
+
+/* SettingsDetail.swift - Settings row and page title: node list, auto-add and cleanup */
+"hub.nodes" = "节点与自动添加";
+
+/* SettingsDetail.swift - Settings row and page title: the radio's connection, Bluetooth PIN, reboot and reset */
+"hub.connection" = "连接与安全";
+
+/* SettingsDetail.swift - Settings row and page title: the radio's identity, key, storage and firmware */
+"hub.deviceInfo" = "设备信息与固件";
+
+/* SettingsDetail.swift - Settings row and page title: position source, maps and offline maps */
+"hub.mapsGps" = "地图与 GPS";
+
+/* SettingsDetail.swift - Settings row and page title: the Spectrum tab's settings */
+"hub.spectrum" = "频谱";
+
+/* SettingsDetail.swift - Settings row and page title: blocked contacts, senders, keywords, and Sign & Verify */
+"hub.privacy" = "隐私与屏蔽";
+
+/* SettingsDetail.swift - Settings row and page title: the app, support and credits */
+"hub.about" = "关于 CAIRN";
+
+/* SettingsDetail.swift - Settings row and page title: debug logs and demo mode */
+"hub.advanced" = "高级";
+
+/* Placeholder shown in split view detail when no setting is selected */
+"selectSetting" = "选择设置";
+
+/* Section header for device-specific settings */
+"myDevice.header" = "我的设备";
+
+/* Section header for app-level settings */
+"appSettings.header" = "应用设置";
+
+/* Footer text for advanced settings row */
+/* Label for advanced settings navigation row */
+"advancedSettings.title" = "高级设置";
+
+/* Version display prefix with version number */
+"version" = "v%@";
+
+/* Build number display with build number */
+"build" = "构建 %@";
+
+// MARK: - Demo Mode Section
+
+/* Section header for demo mode */
+"demoMode.header" = "演示模式";
+
+/* Toggle label to enable demo mode */
+"demoMode.enabled" = "已启用";
+
+/* Footer explaining what demo mode does */
+"demoMode.footer" = "演示模式允许使用模拟数据在没有硬件的情况下进行测试。";
+
+// MARK: - Device Section
+
+/* Section header for device information */
+"device.header" = "设备";
+
+/* Status shown when device is connected */
+"device.connected" = "已连接";
+
+/* Footer shown when no device is connected */
+"device.noDeviceConnected" = "未连接 MeshCore 设备";
+
+/* Button to connect a device */
+"device.connect" = "连接设备";
+
+// MARK: - Device Info View
+
+/* Navigation title for device info screen */
+"deviceInfo.title" = "设备信息";
+
+/* Section header for connection status */
+"deviceInfo.connection.header" = "连接";
+
+/* Label for connection status */
+"deviceInfo.connection.status" = "状态";
+
+/* Section header for power and storage */
+"deviceInfo.powerStorage.header" = "电源和存储";
+
+/* Label for battery level */
+"deviceInfo.battery" = "电池";
+
+/* Label for storage used */
+"deviceInfo.storageUsed" = "已用存储";
+
+/* Combined label for battery and storage when loading */
+"deviceInfo.batteryAndStorage" = "电池和存储";
+
+/* Section header for firmware information */
+"deviceInfo.firmware.header" = "固件";
+
+/* Label for firmware version */
+"deviceInfo.firmwareVersion" = "固件版本";
+
+/* Label for build date */
+"deviceInfo.buildDate" = "编译日期";
+
+/* Label for manufacturer */
+"deviceInfo.manufacturer" = "制造商";
+
+/* Placeholder when a value is unknown */
+"deviceInfo.unknown" = "未知";
+
+/* Section header for device capabilities */
+"deviceInfo.capabilities.header" = "功能";
+
+/* Label for max nodes capability */
+"deviceInfo.maxNodes" = "最大节点数";
+
+/* Label for max channels capability */
+"deviceInfo.maxChannels" = "最大频道数";
+
+/* Label for max TX power capability */
+"deviceInfo.maxTxPower" = "最大发射功率";
+
+/* TX power display format with dBm unit */
+"deviceInfo.txPowerFormat" = "%@ dBm";
+
+/* Firmware version fallback format when no version string is reported - %@ is the numeric version code */
+"deviceInfo.firmwareVersionFormat" = "v%@";
+
+/* Section header for identity information */
+/* Label for public key */
+"deviceInfo.publicKey" = "查看公钥";
+
+/* Button to share contact information */
+"deviceInfo.shareContact" = "我的二维码";
+
+/* Title for ContentUnavailableView when no device is connected */
+"deviceInfo.noDevice.title" = "未连接设备";
+
+/* Description for ContentUnavailableView when no device is connected */
+"deviceInfo.noDevice.description" = "连接到 MeshCore 设备以查看其信息";
+
+/* Fallback manufacturer name */
+"deviceInfo.defaultManufacturer" = "MeshCore 设备";
+
+// MARK: - Public Key View
+
+/* Navigation title for public key screen */
+"publicKey.title" = "公钥";
+
+/* Section header describing key type */
+"publicKey.header" = "32 字节 Ed25519 公钥";
+
+/* Footer explaining public key's purpose */
+"publicKey.footer" = "此密钥在Mesh网络上唯一标识您的设备";
+
+/* Section header for base64 representation */
+"publicKey.base64.header" = "Base64";
+
+/* Button to copy key to clipboard */
+"publicKey.copy" = "复制到剪贴板";
+
+// MARK: - Private Key View
+
+/* Section header describing the key type */
+"privateKey.header" = "64 字节 Ed25519 私钥";
+
+// MARK: - Device Selection Sheet
+
+/* Navigation title for device selection */
+"deviceSelection.title" = "连接设备";
+
+/* Button to connect to selected device */
+/* Section header for previously paired devices */
+"deviceSelection.previouslyPaired" = "之前配对的设备";
+
+/* Footer text prompting user to select a device */
+/* Button to connect via WiFi */
+"deviceSelection.connectViaWifi" = "通过 WiFi 连接";
+
+/* Button to scan for Bluetooth devices */
+"deviceSelection.scanBluetooth" = "扫描蓝牙设备";
+
+/* Trailing control on a previously paired row that still needs iPhone setup */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setup" = "设置";
+
+/* Sheet title when one device needs setup. %@ is the accessory name */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setupTitle" = "设置 %@";
+
+/* Sheet title when several devices need setup */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setupTitleGeneric" = "设置";
+
+/* Sheet body when one device is paired with iPhone */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setupMessage" = "此设备已与 iPhone 配对。您需要先忘记该设备，才能将其添加到 Cairn。";
+/* Sheet body when several devices are paired with iPhone */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setupMessagePlural" = "这些设备已与 iPhone 配对。您需要先忘记这些设备，才能将无线电添加到 Cairn。";
+/* Reassurance that forgetting the iPhone pairing does not delete conversations */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setupConversations" = "这不会删除您的对话。";
+
+/* Destructive confirmation for one device */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.forgetThisDevice" = "忘记此设备";
+
+/* Destructive confirmation for several devices */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.forgetTheseDevices" = "忘记这些设备";
+
+/* Footer under Previously Paired when one needs-setup row is present */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setupFooter" = "忘记此设备以将其添加到 Cairn。";
+/* Footer under Previously Paired when several needs-setup rows are present */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.setupFooterPlural" = "忘记这些设备以将它们添加到 Cairn。";
+/* VoiceOver label for a needs-setup row. %@ is the accessory name */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.accessibility.setupLabel" = "%@，已与 iPhone 配对";
+
+/* VoiceOver hint for a needs-setup row */
+/* AI-translated - please verify with native speakers. */
+"deviceSelection.accessibility.setupHint" = "双击以设置";
+
+/* Title for empty state when no devices are paired */
+"deviceSelection.noPairedDevices" = "无配对设备";
+
+/* Description for empty state */
+"deviceSelection.noPairedDescription" = "您尚未配对任何设备。";
+
+/* Button to scan for new devices */
+"deviceSelection.scanForDevices" = "扫描设备";
+
+/* Accessibility label for a device connected to another app - %1$@ is device name */
+"deviceSelection.accessibility.connectedElsewhereLabel" = "%1$@，已连接到其他应用";
+
+/* Accessibility label for a device - %1$@ is device name, %2$@ is connection type */
+"deviceSelection.accessibility.deviceLabel" = "%1$@，%2$@";
+
+/* Accessibility hint for a device connected to another app */
+"deviceSelection.accessibility.connectedElsewhereHint" = "此设备正被其他应用使用。连接可能会导致通信问题。";
+
+/* Accessibility hint for selecting a device */
+"deviceSelection.accessibility.selectHint" = "双击以连接";
+
+/* Accessibility hint for a device that is out of Bluetooth range */
+"deviceSelection.accessibility.outOfRangeHint" = "设备不在蓝牙范围内";
+
+/* Label shown when device is connected to another app */
+"deviceSelection.connectedElsewhere" = "已连接到其他位置";
+
+/* Fallback connection type description */
+"deviceSelection.bluetooth" = "蓝牙";
+
+// MARK: - Location Picker View
+
+/* Navigation title for location picker */
+"locationPicker.title" = "设置位置";
+
+/* Marker title for node location on map */
+/* Button to clear selected location */
+"locationPicker.clearLocation" = "清除位置";
+
+/* Button to drop a pin at map center */
+"locationPicker.dropPin" = "在中心放置图钉";
+
+/* Label for latitude display */
+"locationPicker.latitude" = "纬度：";
+
+/* Label for longitude display */
+"locationPicker.longitude" = "经度：";
+
+// MARK: - Trusted Contacts Picker
+
+/* Navigation title for trusted contacts picker */
+"trustedContacts.title" = "信任联系人";
+
+/* Title for empty state when no contacts exist */
+"trustedContacts.noContacts" = "无联系人";
+
+/* Description for empty state */
+"trustedContacts.noContactsDescription" = "添加联系人以选择信任的联系人";
+
+/* Title for empty state when search returns no results */
+"trustedContacts.noResults" = "无结果";
+
+/* Description for empty state when search returns no results */
+"trustedContacts.noResultsDescription" = "没有联系人匹配\"%@\"";
+
+/* Search prompt for trusted contacts list */
+"trustedContacts.searchPrompt" = "搜索联系人";
+
+/* Toggle label for showing only favorite contacts */
+"trustedContacts.favoritesOnly" = "仅收藏";
+
+/* Apply button label */
+"trustedContacts.apply" = "应用";
+
+// MARK: - About Section
+
+/* Section header for about links */
+"about.header" = "关于";
+
+/* Link to MeshCore website */
+"about.website" = "MeshCore 官方网站";
+
+/* Link to MeshCore online map */
+"about.onlineMap" = "MeshCore 节点地图";
+
+/* Link to GitHub repository */
+"about.github" = "GitHub";
+
+/* Link to the privacy policy */
+/* AI-translated - please verify with native speakers. */
+"about.privacyPolicy" = "隐私政策";
+
+// MARK: - Advanced Radio Section
+
+/* Section header for manual radio parameters on Settings → Radio. */
+"advancedRadio.header" = "高级";
+
+/* Label for frequency input */
+"advancedRadio.frequency" = "频率（MHz）";
+
+/* Placeholder for frequency text field */
+"advancedRadio.frequencyPlaceholder" = "MHz";
+
+/* Label for bandwidth picker */
+"advancedRadio.bandwidth" = "带宽（kHz）";
+
+/* Label for spreading factor picker */
+"advancedRadio.spreadingFactor" = "扩频因子";
+
+/* Label for coding rate picker */
+"advancedRadio.codingRate" = "编码率";
+
+/* Label for TX power input */
+"advancedRadio.txPower" = "发射功率（dBm）";
+
+/* Placeholder for TX power text field */
+"advancedRadio.txPowerPlaceholder" = "dBm";
+
+/* Accessibility label for bandwidth picker options - %@ is formatted bandwidth value */
+"advancedRadio.accessibility.bandwidthLabel" = "%@ 千赫兹";
+
+/* Accessibility label for spreading factor picker options - %d is factor value */
+"advancedRadio.accessibility.spreadingFactorLabel" = "扩频因子 %d";
+
+/* Accessibility label for coding rate picker options - %d is rate value */
+"advancedRadio.accessibility.codingRateLabel" = "编码率 %d";
+
+/* Accessibility hint for bandwidth picker */
+"advancedRadio.accessibility.bandwidthHint" = "较低的值会增加范围但降低速度";
+
+/* Accessibility hint for spreading factor picker */
+"advancedRadio.accessibility.spreadingFactorHint" = "较高的值会增加范围但降低速度";
+
+/* Accessibility hint for coding rate picker */
+"advancedRadio.accessibility.codingRateHint" = "较高的值会增加纠错但降低速度";
+
+/* Button to apply radio settings */
+"advancedRadio.apply" = "应用无线电设置";
+
+/* Footer warning about incorrect radio settings */
+"advancedRadio.footer" = "警告：若设置不当，可能会无法与Mesh网络设备进行通信。";
+
+/* Footer when Repeat Mode is on: frequency is owned by Repeat Mode. */
+"advancedRadio.frequencyRepeatModeFooter" = "频率由转发模式设置。";
+
+/* Error message for invalid input */
+"advancedRadio.invalidInput" = "输入值无效或未连接到设备";
+
+// MARK: - Path Hash Mode Section
+
+/* Section header for path hash mode */
+"pathHashMode.header" = "路径哈希大小";
+
+/* Label for path hash mode picker */
+"pathHashMode.label" = "哈希大小";
+
+/* Path hash mode option: 1 byte */
+"pathHashMode.oneByte" = "1 字节";
+
+/* Path hash mode option: 2 bytes */
+"pathHashMode.twoBytes" = "2 字节";
+
+/* Path hash mode option: 3 bytes */
+"pathHashMode.threeBytes" = "3 字节";
+
+/* Footer explaining path hash mode tradeoff */
+"pathHashMode.footer" = "较大的哈希值可减少路由冲突，但会限制每条路径的最大跳数。固件版本低于 1.14.0 的中继器不会转发哈希大小超过 1 字节的消息。";
+
+// MARK: - Default Flood Scope Section
+
+/* Section header for default flood scope picker */
+"defaultFloodScope.header" = "默认泛洪范围";
+
+/* Footer explaining default flood scope */
+"defaultFloodScope.footer" = "设置后，设备会将此范围应用于泛洪发送，除非被特定频道的范围覆盖。该范围会保存在设备上，重启后仍然有效。";
+
+/* Option to clear the persisted default flood scope */
+"defaultFloodScope.disabled" = "无";
+
+// MARK: - Battery Curve Section
+
+/* Accessibility label for voltage text field - %d is percentage level */
+"batteryCurve.accessibility.voltageLabel" = "%d%% 时的电压";
+
+/* Accessibility value for voltage text field - %d is millivolt value */
+"batteryCurve.accessibility.voltageValue" = "%d mV";
+
+/* Accessibility hint for voltage text field */
+"batteryCurve.accessibility.voltageHint" = "输入此电量水平下的电压";
+
+/* Section header for battery curve */
+"batteryCurve.header" = "电池曲线";
+
+/* Footer explaining battery curve configuration */
+"batteryCurve.footer" = "为您的设备电池配置电压百分比曲线，注意百分比仅在APP上面显示。";
+
+/* Label for preset picker */
+"batteryCurve.preset" = "预设";
+
+/* Option for custom battery curve */
+"batteryCurve.custom" = "自定义";
+
+/* Disclosure group label for editing values */
+"batteryCurve.editValues" = "编辑曲线";
+
+/* Validation error for value out of range - %d is percentage level */
+"batteryCurve.validation.outOfRange" = "%d%% 处的值必须在 1000-99999 mV 范围内";
+
+/* Validation error for non-descending values */
+"batteryCurve.validation.notDescending" = "值必须按降序排列";
+
+/* Unit label for millivolts */
+"batteryCurve.mV" = "mV";
+
+// MARK: - Bluetooth Section
+
+/* Section header for Bluetooth settings */
+"bluetooth.header" = "蓝牙";
+
+/* Label for PIN type picker */
+"bluetooth.pinType" = "蓝牙 PIN 设置";
+
+/* PIN type option for default PIN */
+"bluetooth.pinType.default" = "默认";
+
+/* PIN type option for custom PIN */
+"bluetooth.pinType.custom" = "自定义 PIN";
+
+/* Label showing current PIN */
+"bluetooth.currentPin" = "当前 PIN";
+
+/* Button to change PIN */
+"bluetooth.changePin" = "更改 PIN";
+
+/* Button to change device display name */
+"bluetooth.changeDisplayName" = "更改蓝牙名称";
+
+/* Footer explaining default PIN */
+"bluetooth.defaultPinFooter" = "默认 PIN 为 123456。带有屏幕的设备显示其自己的 PIN。";
+
+/* Alert title for setting custom PIN */
+"bluetooth.alert.setPin.title" = "设置自定义 PIN";
+
+/* Alert title for changing custom PIN */
+"bluetooth.alert.changePin.title" = "更改自定义 PIN";
+
+/* Placeholder for PIN text field */
+"bluetooth.pinPlaceholder" = "6 位 PIN";
+
+/* Button to set PIN */
+"bluetooth.setPin" = "设置 PIN";
+
+/* Alert message for setting PIN */
+"bluetooth.alert.setPin.message" = "输入 6 位 PIN。设备将重启以应用更改。";
+
+/* Alert message for changing PIN */
+"bluetooth.alert.changePin.message" = "输入新的 6 位 PIN。设备将重启以应用更改。";
+
+/* Alert title for confirming PIN type change */
+"bluetooth.alert.changePinType.title" = "更改 PIN 类型？";
+
+/* Button to confirm change */
+"bluetooth.alert.change" = "更改";
+
+/* Alert message for PIN type change */
+"bluetooth.alert.changePinType.message" = "设备将重启以应用更改。";
+
+/* Error for invalid PIN format */
+"bluetooth.error.invalidPin" = "PIN 必须是 100000 到 999999 之间的 6 位数字";
+
+// MARK: - Contacts Settings Section
+
+/* Section header for nodes/contacts settings */
+/* Toggle label for auto-add nodes */
+/* Description for auto-add nodes toggle */
+// MARK: - Nodes Settings Section
+
+/* Section header for nodes settings */
+"nodes.header" = "节点";
+
+/* Label for auto-add mode picker */
+"nodes.autoAddMode" = "节点添加设置";
+
+/* Auto-add mode: manual */
+"nodes.autoAddMode.manual" = "手动添加";
+
+/* Auto-add mode: manual description */
+"nodes.autoAddMode.manualDescription" = "在添加之前在发现中查看所有节点";
+
+/* Auto-add mode: selected types */
+"nodes.autoAddMode.selectedTypes" = "选定类型";
+
+/* Auto-add mode: selected types description */
+"nodes.autoAddMode.selectedTypesDescription" = "仅自动添加以下启用的类型";
+
+/* Auto-add mode: all */
+"nodes.autoAddMode.all" = "自动添加";
+
+/* Auto-add mode: all description */
+"nodes.autoAddMode.allDescription" = "可允许自动添加每个发现的节点";
+
+/* Section header for auto-add types */
+/* Toggle label for auto-add contacts */
+"nodes.autoAddContacts" = "联系人";
+
+/* Toggle label for auto-add repeaters */
+"nodes.autoAddRepeaters" = "转发节点";
+
+/* Toggle label for auto-add room servers */
+"nodes.autoAddRoomServers" = "房间服务器";
+
+/* Section header for storage settings */
+/* Toggle label for overwrite oldest */
+"nodes.overwriteOldest" = "覆盖最旧的";
+
+/* Description for overwrite oldest toggle */
+"nodes.overwriteOldestDescription" = "当存储已满时，替换最旧的非收藏节点";
+
+/* Picker label for max hop distance */
+"nodes.maxHops" = "自动添加最大跳数限制";
+
+/* No limit option */
+"nodes.maxHops.noLimit" = "无限制";
+
+/* Direct only option (0 hops) */
+"nodes.maxHops.directOnly" = "仅直连";
+
+/* Singular 1 hop option */
+"nodes.maxHops.oneHop" = "1 跳";
+
+/* Plural hops format string */
+"nodes.maxHops.hops" = "%d 跳";
+
+/* Footer text when hop limit is active */
+"nodes.maxHops.footerActive" = "超出所选跳数距离的节点将不会被自动添加。";
+
+// MARK: - Auto-Remove Old Nodes Section
+
+/* Toggle label / section header for stale node cleanup */
+"nodes.staleCleanup.header" = "自动移除旧节点";
+
+/* Label for threshold picker */
+"nodes.staleCleanup.threshold" = "移除超过此时间的节点";
+
+/* Picker placeholder when no threshold is selected */
+"nodes.staleCleanup.select" = "选择";
+
+/* Threshold option: number of days (%d = day count) */
+"nodes.staleCleanup.days" = "%d 天";
+
+/* Footer when auto-remove is enabled (%d = day count) */
+"nodes.staleCleanup.footerEnabled" = "超过 %d 天未更新的非收藏节点将在连接时自动移除。";
+
+/* Footer describing the auto-remove feature (shown when toggle is off) */
+"nodes.staleCleanup.footerDisabled" = "自动移除在设定时间内未更新的非收藏节点。收藏节点不会被移除。";
+
+/* Footer when toggle is on but no threshold selected yet */
+"nodes.staleCleanup.footerSelect" = "选择保留节点的时间。收藏节点不会被移除。";
+
+/* Footer when enabled but device is disconnected */
+"nodes.staleCleanup.footerDisconnected" = "将在下次连接时检查旧节点。收藏节点不会被移除。";
+
+/* Last cleanup date row (%@ = relative date) */
+"nodes.staleCleanup.lastRun" = "上次检查 %@";
+
+// MARK: - Device Actions Section
+
+/* Section header for device actions */
+"deviceActions.header" = "设备";
+
+/* Button to reboot the device */
+"deviceActions.rebootDevice" = "重启设备";
+
+/* Text shown while rebooting */
+"deviceActions.rebooting" = "正在重启…";
+
+/* Alert title for reboot confirmation */
+"deviceActions.alert.reboot.title" = "重启设备？";
+
+/* Button to confirm reboot */
+"deviceActions.alert.reboot.confirm" = "重启";
+
+/* Alert message for reboot confirmation */
+"deviceActions.alert.reboot.message" = "设备将重新启动并暂时断开连接。";
+
+// MARK: - Danger Zone Section
+
+/* Section header for danger zone */
+"dangerZone.header" = "谨慎设置";
+
+/* Button to forget/unpair device */
+"dangerZone.forgetDevice" = "忘记设备";
+
+/* Button to factory reset device */
+"dangerZone.factoryReset" = "设备恢复出厂设置";
+
+/* Text shown while resetting */
+"dangerZone.resetting" = "正在重置...";
+
+/* Footer explaining factory reset */
+"dangerZone.footer" = "恢复出厂设置将擦除设备上的所有联系人、消息和设置。";
+
+/* Confirmation dialog title for forget device */
+"dangerZone.dialog.forget.title" = "忘记设备";
+
+/* Confirmation dialog message for forget device */
+"dangerZone.dialog.forget.message" = "您的设备将取消配对。您可以选择保留或删除您的消息、联系人和频道。";
+
+/* Button to forget device but keep data */
+"dangerZone.dialog.forget.keepData" = "忘记设备";
+
+/* Button to forget device and delete all associated data */
+"dangerZone.dialog.forget.deleteAll" = "忘记设备并删除数据";
+
+/* Alert title for factory reset confirmation */
+"dangerZone.alert.reset.title" = "恢复出厂设置";
+
+/* Button to confirm reset */
+"dangerZone.alert.reset.confirm" = "重置";
+
+/* Alert message for factory reset */
+"dangerZone.alert.reset.message" = "这将擦除设备上的所有数据，包括联系人、消息和设置。出现提示时，请轻点\U201C移除\U201D以取消配对设备。";
+
+/* Error when services are not available */
+"dangerZone.error.servicesUnavailable" = "服务不可用";
+
+/* Button to remove non-favorite nodes */
+"dangerZone.removeUnfavorited" = "移除非收藏节点";
+
+/* Text shown while removing unfavorited nodes */
+"dangerZone.removing" = "正在移除…";
+
+/* Label shown after successful removal */
+"dangerZone.removed" = "节点已移除";
+
+/* Alert title for remove non-favorite confirmation */
+"dangerZone.alert.removeUnfavorited.title" = "移除非收藏节点";
+
+/* Button to confirm removal */
+"dangerZone.alert.removeUnfavorited.confirm" = "移除节点";
+
+/* Alert title for removal result */
+"dangerZone.alert.removeUnfavorited.resultTitle" = "移除结果";
+
+/* Alert message for remove unfavorited (%d = count) */
+"dangerZone.alert.removeUnfavorited.message" = "这将从设备和应用中永久删除 %d 个未标记为收藏的节点及其消息。";
+
+/* Partial success message (%d = removed, %d = total) */
+"dangerZone.alert.removeUnfavorited.partial" = "已移除 %d 个节点（共 %d 个）。连接已中断——请再次点击按钮以移除剩余节点。";
+
+/* Message when no non-favorite nodes to remove */
+"dangerZone.alert.removeUnfavorited.noneFound" = "没有可移除的非收藏节点。";
+
+// MARK: - Diagnostics Section
+
+/* Section header for diagnostics */
+"diagnostics.header" = "诊断";
+
+/* Button to export debug logs */
+"diagnostics.exportLogs" = "导出调试日志";
+
+/* Button to clear debug logs */
+"diagnostics.clearLogs" = "清除调试日志";
+
+/* Footer explaining log export */
+"diagnostics.footer" = "导出包括所有应用会话的调试日志。日志本地存储，并在 7 天后自动删除。";
+
+/* Alert title for clear logs confirmation */
+"diagnostics.alert.clear.title" = "清除调试日志";
+
+/* Button to confirm clear */
+"diagnostics.alert.clear.confirm" = "清除";
+
+/* Alert message for clear logs */
+"diagnostics.alert.clear.message" = "这将删除所有存储的调试日志。导出的日志文件不会受到影响。";
+
+/* Error when export fails */
+"diagnostics.error.exportFailed" = "创建导出文件失败";
+
+// MARK: - Chat Settings
+
+/* Navigation title for chat settings page */
+"chatSettings.title" = "聊天";
+
+// MARK: - Link Preview Settings Section
+
+/* Section header for link content settings */
+"linkPreviews.header" = "链接内容";
+
+/* Toggle label for the link content master switch */
+"linkPreviews.toggle" = "显示链接内容";
+
+/* Toggle label for showing previews in DMs */
+"linkPreviews.showInDMs" = "在私信中显示";
+
+/* Toggle label for showing previews in channels */
+"linkPreviews.showInChannels" = "在频道中显示";
+
+/* Footer explaining link content privacy implications */
+"linkPreviews.footer" = "链接预览和图片通过您手机的互联网连接获取，而非通过 mesh 网络。这可能会向托管内容的服务器泄露您的 IP 地址，并可能消耗蜂窝数据。";
+
+/* Footer note shown when Reduce Motion is enabled */
+"linkPreviews.reduceMotionNote" = "已开启减弱动态效果，因此 GIF 不会自动播放。";
+
+// MARK: - Node Settings Section
+
+/* Section header for node settings */
+"node.header" = "节点";
+
+/* Label for node name */
+"node.name" = "节点名称";
+
+/* Default node name when unknown */
+/* Button text to copy */
+/* Label for set location button */
+"node.setLocation" = "设置位置";
+
+/* Text shown when location is set */
+"node.locationSet" = "已设置";
+
+/* Text shown when location is not set */
+"node.locationNotSet" = "未设置";
+
+/* Toggle label for share location publicly */
+"node.shareLocationPublicly" = "允许公开位置";
+
+/* Footer explaining node visibility */
+"node.footer" = "您的节点名称在共享时对其他Mesh网络用户可见。";
+
+/* Alert title for editing node name */
+"node.alert.editName.title" = "编辑节点名称";
+
+// MARK: - Location Settings Section
+
+/* Section header for location settings */
+"location.header" = "位置";
+
+/* Footer for location settings section */
+"location.footer" = "当启用公开分享位置时，您的位置将在发送广播时通过Mesh网络广播。启用自动更新位置将在发送广播前自动更新您的设备位置。";
+
+/* Toggle label for auto-update location */
+"location.autoUpdate" = "自动更新位置";
+
+/* Label for GPS source picker */
+"location.gpsSource" = "GPS 源";
+
+/* GPS source option: phone GPS */
+"location.gpsSource.phone" = "手机 GPS";
+
+/* GPS source option: device GPS */
+"location.gpsSource.device" = "设备 GPS";
+
+/* Section header for device GPS controls */
+"location.deviceGps.header" = "设备 GPS";
+
+/* Toggle label for device GPS power */
+"location.deviceGps.toggle" = "启用设备 GPS";
+
+/* Footer for device GPS controls */
+"location.deviceGps.footer" = "打开或关闭无线电的内置 GPS。保存手动地图位置将关闭设备 GPS。";
+
+/* Toggle for the radio GPS's Eco (duty-cycled) mode; shown only when the firmware supports it */
+"location.deviceGps.eco" = "节能模式";
+
+/* Subtitle for the device GPS Eco toggle */
+"location.deviceGps.ecoFooter" = "每隔几分钟唤醒 GPS 进行定位，然后将其关闭以节省电量。";
+
+/* Detail text when location is being shared publicly */
+"location.sharingPublicly" = "公开分享";
+
+/* Detail text when location is not being shared */
+"location.notSharing" = "未分享";
+
+// MARK: - Notification Settings Section
+
+/* Section header for notifications */
+"notifications.header" = "通知";
+
+/* Toggle label for contact messages notifications */
+"notifications.contactMessages" = "联系人消息";
+
+/* Toggle label for channel messages notifications */
+"notifications.channelMessages" = "频道消息";
+
+/* Toggle label for room messages notifications */
+"notifications.roomMessages" = "房间消息";
+
+/* Toggle label for new contact discovered notifications */
+"notifications.newContactDiscovered" = "发现新联系人";
+
+/* Toggle label for companion discovery notifications */
+"notifications.discoveryContact" = "伴侣节点";
+
+/* Toggle label for repeater discovery notifications */
+"notifications.discoveryRepeater" = "中继器";
+
+/* Toggle label for room discovery notifications */
+"notifications.discoveryRoom" = "聊天室";
+
+/* Toggle label for low battery warnings */
+"notifications.lowBattery" = "低电量警告";
+
+/* Location: ChannelNotificationDefaultsSection.swift - Section header */
+"notifications.channelDefault.header" = "频道通知";
+
+/* Location: ChannelNotificationDefaultsSection.swift - Picker label for the notification level new channels start with */
+"notifications.channelDefault.newChannels" = "新频道";
+
+/* Location: ChannelNotificationDefaultsSection.swift - Button that sets every existing channel to the chosen level */
+"notifications.channelDefault.applyToAll" = "应用到所有频道";
+
+/* Location: ChannelNotificationDefaultsSection.swift - Footer explaining the default channel notification level */
+"notifications.channelDefault.footer" = "此后添加的频道将以此级别开始。你仍可在频道的信息页面单独更改。";
+
+/* Location: ChannelNotificationDefaultsSection.swift - Confirmation title before changing every channel - %@ is the notification level name */
+"notifications.channelDefault.applyConfirmTitle" = "将所有频道设为“%@”？";
+
+/* Toggle label for reaction notifications */
+"notifications.reactions" = "表情反应";
+
+/* Location: NotificationSettingsSection.swift - Toggle for the reminder shown when the app has heard nothing from its radio for a while, or Bluetooth is off */
+"notifications.notReceiving" = "未接收提醒";
+
+/* Location: NotificationSettingsSection.swift - Card shown when a Cairn radio reported messages lost from its queue and no notification could say so; %d = number of lost messages */
+"notifications.radioQueueLoss.title" = "电台上丢失的消息：%d 条";
+
+/* Location: NotificationSettingsSection.swift - Subtitle of the lost-messages card; %@ = radio name. Tapping the card dismisses it */
+"notifications.radioQueueLoss.subtitle" = "Cairn 不在时，%@ 的消息存储空间已满，且无法通过通知告诉你。轻点以关闭。";
+
+/* Button to enable notifications */
+"notifications.enable" = "启用通知";
+
+/* Label shown when notifications are disabled */
+"notifications.disabled" = "通知已禁用";
+
+/* Button to open system settings */
+"notifications.openSettings" = "打开设置";
+
+/* Message shown when device not connected */
+/* Footer for notifications navigation row */
+// MARK: - Radio Preset Section
+
+/* Section header for radio settings */
+"radio.header" = "无线电";
+
+/* Label for radio preset picker */
+"radio.preset" = "无线电预设";
+
+/* Footer explaining radio presets. Location is geographic filter, not mesh Region. */
+"radio.footer" = "选择与附近电台匹配的预设。MeshCore 设备必须使用相同的无线电设置才能通信。";
+
+/* Radio row and PresetLocationView navigation title. Not Settings → Location (GPS pin). */
+"radio.presetLocation" = "位置";
+
+/* Trailing value when the place is unset: Location row, and empty Country / State rows in RegionPickerRows (Radio and onboarding). */
+"radio.presetLocation.notSet" = "未设置";
+
+/* Footer on the Radio location section and the Location subpage. */
+"radio.presetLocation.footer" = "用于筛选预设列表。不会更改无线电。";
+
+/* errorAlert when Use my location is authorized but resolve() returns nil. */
+"radio.presetLocation.useMyLocation.failure" = "无法根据你的位置确定地点。请选择国家和省/州。";
+
+/* Visible label + VoiceOver value on Use my location while GPS / geocode is in flight. Not onboarding region.resolving. */
+"radio.presetLocation.useMyLocation.locating" = "正在查找你的位置…";
+
+/* Open Settings alert message when Use my location is denied or restricted. */
+"radio.presetLocation.denied" = "之前已拒绝位置权限。请在设置中启用以填写国家和省/州。";
+
+/* Toggle label for repeat mode */
+"radio.repeatMode" = "转发模式";
+
+/* Footer explaining repeat mode */
+"radio.repeatMode.footer" = "在专用频率上创建本地转发器。适用于徒步旅行和偏远地区。";
+
+/* Accessibility hint for repeat mode toggle */
+"radio.repeatMode.accessibilityHint" = "启用此功能将断开与主网状网络的连接";
+
+/* Confirmation dialog title for enabling repeat mode */
+"radio.repeatMode.confirm.title" = "启用转发？";
+
+/* Confirmation dialog message for enabling repeat mode */
+"radio.repeatMode.confirm.message" = "您将断开与主网状网络的连接。只有使用相同转发频率的设备才能通信。";
+
+/* Confirmation dialog enable button */
+"radio.repeatMode.confirm.enable" = "启用";
+
+/* Location: RadioPresetSection.swift - Footer line listing the user's region */
+"radio.regionFooter" = "正在显示 %@ 的预设。";
+
+/* Location: RadioPresetSection.swift - Footer reminding the operator to comply with local radio laws */
+"radio.regulationsFooter" = "您有责任遵守当地无线电法规。";
+
+// MARK: - Telemetry Settings Section
+
+/* Section header for telemetry settings */
+"telemetry.header" = "遥测数据";
+
+/* Toggle label for allowing telemetry requests */
+"telemetry.allowRequests" = "允许遥测请求";
+
+/* Description for telemetry requests toggle */
+"telemetry.allowRequestsDescription" = "允许其他用户请求的基础信息。如设备的电池电量。";
+
+/* Toggle label for including location in telemetry */
+"telemetry.includeLocation" = "允许位置请求";
+
+/* Description for include location toggle */
+"telemetry.includeLocationDescription" = "在遥测数据中共享 GPS 坐标";
+
+/* Toggle label for including environment sensors */
+"telemetry.includeEnvironment" = "允许传感器数据请求";
+
+/* Description for include environment toggle */
+"telemetry.includeEnvironmentDescription" = "共享温度、湿度等。";
+
+/* Toggle label for trusted contacts only */
+"telemetry.trustedOnly" = "仅与信任联系人共享";
+
+/* Description for trusted contacts toggle */
+"telemetry.trustedOnlyDescription" = "遥测数据将限制给选定的联系人";
+
+/* Link to manage trusted contacts */
+"telemetry.manageTrusted" = "管理信任联系人";
+
+/* Footer explaining telemetry */
+"telemetry.footer" = "启用后，其他节点可以请求您的设备遥测数据。";
+
+// MARK: - WiFi Section
+
+/* Section header for WiFi settings */
+"wifi.header" = "WiFi";
+
+/* Label for IP address */
+"wifi.address" = "地址";
+
+/* Label for port number */
+"wifi.port" = "端口";
+
+/* Button to edit WiFi connection */
+"wifi.editConnection" = "编辑连接";
+
+/* Footer explaining WiFi address */
+"wifi.footer" = "您设备的本地网络地址";
+
+// MARK: - WiFi Edit Sheet
+
+/* Navigation title for WiFi edit sheet */
+"wifiEdit.title" = "编辑 WiFi 连接";
+
+/* Section header for connection details */
+"wifiEdit.connectionDetails" = "连接详情";
+
+/* Placeholder for IP address field */
+/* Placeholder for port field */
+/* Accessibility label for clear IP button */
+/* Accessibility label for clear port button */
+/* Footer explaining reconnection */
+"wifiEdit.footer" = "更改这些值将断开并重新连接到新地址。";
+
+/* Text shown while reconnecting */
+"wifiEdit.reconnecting" = "正在重新连接...";
+
+/* Button to save changes */
+"wifiEdit.saveChanges" = "保存更改";
+
+/* Error for invalid port */
+"wifiEdit.error.invalidPort" = "无效的端口号";
+
+// MARK: - Error Alert
+
+/* Alert title for generic errors */
+"alert.error.title" = "错误";
+
+// MARK: - Retry Alert
+
+/* Alert title when max retries exceeded */
+"alert.retry.unableToSave" = "无法保存设置";
+
+/* Alert title for connection errors */
+"alert.retry.connectionError" = "连接错误";
+
+/* Button to retry operation */
+"alert.retry.retry" = "重试";
+
+/* Alert message when max retries exceeded */
+"alert.retry.ensureConnected" = "请确保您的设备已连接。";
+
+/* Fallback message for retry alerts when error description is unavailable */
+"alert.retry.fallbackMessage" = "请确保设备已连接并重试。";
+
+// MARK: - Battery Curve Chart
+
+/* Chart X axis label */
+"chart.percent" = "百分比";
+
+/* Chart Y axis label */
+"chart.voltage" = "电压（V）";
+
+/* Accessibility label for battery curve chart */
+"chart.accessibility" = "显示每个电量水平的电压的电池放电曲线";
+
+// MARK: - Messages Settings Section
+
+/* Section header for message info settings in chats */
+"messages.header" = "消息信息";
+
+/* Toggle label for showing the raw uncorrected wire send time on incoming messages */
+/* Toggle label for showing routing path on incoming messages */
+"messages.showIncomingPath" = "传入路径";
+
+/* Toggle label for showing hop count on incoming messages */
+"messages.showIncomingHopCount" = "传入跳数";
+
+/* Toggle label for showing the radio region an incoming message was flooded under */
+"messages.showIncomingRegion" = "传入区域";
+
+/* Toggle label for showing the extra-arrival ear chip on incoming message bubbles */
+"messages.showIncomingHeardCount" = "传入听到次数";
+
+/* Footer explaining what message display options show */
+"messages.footer" = "在传入消息气泡内显示路由和时间信息。";
+
+// MARK: - Direct Messages Settings Section
+
+/* Section header for direct message settings */
+"directMessages.header" = "私信";
+
+/* Picker label for number of acknowledgments */
+"directMessages.acknowledgments" = "确认回执";
+
+/* Footer explaining the acknowledgments setting */
+"directMessages.footer" = "每条私信发送的确认数量。在不可靠的链路上使用 2 以获得更好的送达确认。";
+
+// MARK: - BLE Status Indicator
+
+/* Menu item to send a zero-hop advertisement */
+"bleStatus.sendZeroHopAdvert" = "发送零跳广播";
+
+/* Menu item to send a flood advertisement */
+"bleStatus.sendFloodAdvert" = "发送泛洪广播";
+
+/* Menu item to disconnect from the current device */
+"bleStatus.disconnect" = "断开连接";
+
+/* Status shown when device is disconnected */
+"bleStatus.status.disconnected" = "已断开";
+
+/* Status shown when device is connecting */
+"bleStatus.status.connecting" = "连接中...";
+
+/* Status shown when device is connected but not ready */
+"bleStatus.status.connected" = "已连接";
+
+/* Status shown when device is syncing data */
+"bleStatus.status.syncing" = "同步中";
+
+/* Status shown when device is ready */
+"bleStatus.status.ready" = "就绪";
+
+/* Accessibility hint for zero-hop advert button */
+"bleStatus.sendZeroHopAdvert.hint" = "仅广播到直连邻居";
+
+/* Accessibility hint for flood advert button */
+"bleStatus.sendFloodAdvert.hint" = "在整个网络上泛洪广播";
+
+// MARK: - Config Export/Import
+
+/* Section title for config export/import */
+"configExport.sectionTitle" = "设备配置";
+
+/* Section footer explaining config export/import */
+"configExport.sectionFooter" = "将设备设置、频道和联系人导出或导入为 JSON 文件。";
+
+/* Export navigation row label */
+"configExport.export" = "导出配置";
+
+/* Export screen navigation title */
+"configExport.title" = "导出配置";
+
+/* Export full config button */
+"configExport.exportFull" = "导出完整配置";
+
+/* Export selected sections button */
+"configExport.exportSelected" = "导出所选部分";
+
+/* Customize export disclosure label */
+/* Select all toggle label */
+"configExport.selectAll" = "全选";
+
+/* Toggle labels for export sections */
+"configExport.nodeIdentity" = "节点身份（名称和密钥）";
+"configExport.nodeIdentity.description" = "设备名称、公钥和私钥";
+"configExport.radioSettings" = "无线电设置";
+"configExport.radioSettings.description" = "频率、带宽、扩频因子、编码率、发射功率";
+"configExport.positionSettings" = "位置";
+"configExport.positionSettings.description" = "纬度和经度";
+"configExport.otherSettings" = "其他设置";
+"configExport.otherSettings.description" = "联系人权限、位置共享";
+"configExport.channels" = "频道";
+"configExport.channels.description" = "所有频道及其加密密钥";
+"configExport.contacts" = "联系人";
+"configExport.contacts.description" = "姓名、密钥和最后已知位置";
+
+// MARK: - Config Import
+
+/* Import screen navigation title */
+"configImport.title" = "导入配置";
+
+/* Select file button */
+"configImport.selectFile" = "选择 JSON 文件";
+
+/* Confirmation alert title */
+"configImport.confirmTitle" = "应用配置？";
+
+/* Confirmation alert message (param: device name) */
+"configImport.confirmMessage" = "所选设置将合并到 %@。现有频道和联系人将被更新或添加。";
+
+/* Apply button label */
+"configImport.applyButton" = "应用到设备";
+
+/* Apply button label (additive only — channels/contacts) */
+"configImport.applyButtonAdd" = "添加到设备";
+
+/* Apply button label (overwrite settings) */
+"configImport.applyButtonOverwrite" = "覆盖设置";
+
+/* Confirmation alert title (additive only) */
+"configImport.confirmTitleAdd" = "添加到设备？";
+
+/* Confirmation alert title (overwrite settings) */
+"configImport.confirmTitleOverwrite" = "覆盖设置？";
+
+/* Confirmation alert message (additive only, param: device name) */
+"configImport.confirmMessageAdd" = "频道和联系人将添加到 %@。现有数据不会被删除。";
+
+/* Confirmation alert message (overwrite only, param: device name) */
+"configImport.confirmMessageOverwrite" = "%@ 上的所选设置将被覆盖。当前值将被替换。";
+
+/* Confirmation alert message (mixed, param: device name) */
+"configImport.confirmMessageMixed" = "设置将被覆盖，频道和联系人将添加到 %@。";
+
+/* Proximity warning */
+"configImport.proximityWarning" = "导入期间请保持设备靠近";
+
+/* Import cancelled */
+"configImport.cancelled" = "导入已取消。";
+
+/* Import cancelled after one or more settings were already written to the device */
+"configImport.cancelledPartial" = "导入已取消，但部分设置已写入设备。请检查设备的配置。";
+
+/* Import failed after one or more settings were already written; %@ is the underlying error message */
+"configImport.failedPartial" = "%@ 部分设置可能已写入设备。请检查设备的配置。";
+
+/* Import success */
+"configImport.importSuccess" = "配置导入成功";
+
+/* Private key warning */
+"configImport.privateKeyWarning" = "这将替换节点的加密身份";
+
+"configImport.current" = "当前：%@";
+"configImport.new" = "新值：%@";
+
+/* Channel count (param: integer) */
+"configImport.channelCount" = "将在设备上添加/更新 %d 个频道";
+
+/* Import navigation row label */
+"configImport.importConfig" = "导入配置";
+
+/* Radio settings change warning */
+"configImport.radioWarning" = "更改无线电设置将断开与当前 mesh 网络的连接";
+
+/* Contact count (param: integer) */
+"configImport.contactCount" = "将在设备上添加/更新 %d 个联系人";
+
+/* Generic device-name fallback used in confirmation messages when the node has no name */
+"configImport.thisDevice" = "此设备";
+
+/* Import progress: applying position */
+"configImport.stepPosition" = "正在设置位置";
+
+/* Import progress: applying other parameters */
+"configImport.stepOtherParameters" = "正在设置其他参数";
+
+/* Import progress: importing the private key */
+"configImport.stepPrivateKey" = "正在导入私钥";
+
+/* Import progress: setting the node name */
+"configImport.stepNodeName" = "正在设置节点名称";
+
+/* Import progress: applying radio parameters */
+"configImport.stepRadioParameters" = "正在设置无线电参数";
+
+/* Import progress: setting TX power */
+"configImport.stepTxPower" = "正在设置发射功率";
+
+/* Import progress: importing a channel (param: channel name) */
+"configImport.stepChannel" = "正在导入频道：%@";
+
+/* Import progress: importing a contact (param: contact name) */
+"configImport.stepContact" = "正在导入联系人：%@";
+
+/* Validation field label: radio frequency */
+"configImport.field.frequency" = "频率";
+
+/* Validation field label: radio bandwidth */
+"configImport.field.bandwidth" = "带宽";
+
+/* Validation field label: spreading factor */
+"configImport.field.spreadingFactor" = "扩频因子";
+
+/* Validation field label: coding rate */
+"configImport.field.codingRate" = "编码率";
+
+/* Validation field label: TX power */
+"configImport.field.txPower" = "发射功率";
+
+/* Validation field label: latitude */
+"configImport.field.latitude" = "纬度";
+
+/* Validation field label: longitude */
+"configImport.field.longitude" = "经度";
+
+/* Validation error: value outside radio's supported range (param: field label) */
+"configImport.error.radioOutOfRange" = "%@ 超出无线电支持的范围";
+
+/* Validation error: invalid coordinate (param: field label) */
+"configImport.error.positionInvalid" = "%@ 的坐标无效或超出范围";
+
+/* Validation error: contact coordinate invalid (params: contact name, field label) */
+"configImport.error.contactCoordinateInvalid" = "联系人 \"%@\" 的 %@ 坐标无效或超出范围";
+
+/* Validation error: contact has an invalid routing path (param: contact name) */
+"configImport.error.invalidOutPath" = "联系人 \"%@\" 的路由路径无效";
+
+/* Validation error: not enough free contact slots (params: needed count, available count) */
+"configImport.error.contactCapacityExceeded" = "导入需要 %d 个空闲联系人槽位，但设备上仅剩 %d 个";
+
+/* Validation error: channel secret wrong length (params: channel index, hex char count) */
+"configImport.error.invalidChannelSecret" = "频道 %1$lld 的密钥无效（%2$lld 个十六进制字符，应为 32 个）";
+
+/* Validation error: contact public key malformed (param: contact name) */
+"configImport.error.invalidContactPublicKey" = "联系人 \"%@\" 的公钥无效";
+
+/* Validation error: unsupported path hash mode (params: contact name, mode value) */
+"configImport.error.invalidPathHashMode" = "联系人 \"%1$@\" 的路径哈希模式 %2$lld 不受支持（应为 0、1 或 2）";
+
+/* Validation error: private key wrong length (params: hex char count, expected hex char count) */
+"configImport.error.invalidPrivateKey" = "私钥无效（%1$lld 个十六进制字符，应为 %2$lld 个）";
+
+/* Validation error: no empty channel slot left (param: channel name) */
+"configImport.error.noAvailableChannelSlot" = "没有可用于 \"%@\" 的空闲频道槽位";
+
+/* Toggle label for auto-play GIFs */
+"inlineImages.autoPlayGifs" = "自动播放 GIF";
+
+// MARK: - Map Preview Settings Section
+
+/* Section header for chat map preview settings */
+/* AI-translated - please verify with native speakers. */
+"mapPreviews.header" = "地图预览";
+
+/* Toggle label for chat map thumbnails */
+/* AI-translated - please verify with native speakers. */
+"mapPreviews.toggle" = "显示地图缩略图";
+
+/* Footer explaining map preview privacy implications */
+/* AI-translated - please verify with native speakers. */
+"mapPreviews.footer" = "显示地图缩略图会从第三方服务器获取该坐标的地图图块，可能会暴露您的IP地址。";
+
+// MARK: - Blocking Section
+
+/* Location: BlockingSection.swift - Purpose: Section header */
+"blocking.header" = "屏蔽";
+
+/* Location: BlockingSection.swift - Purpose: Channel senders row */
+"blocking.channelSenders" = "频道成员";
+
+/* Location: BlockingSection.swift - Purpose: Contacts row */
+"blocking.contacts" = "联系人";
+
+/* Location: BlockingSection.swift - Row that opens the blocked keywords list */
+"blocking.keywords" = "关键词";
+
+/* Location: BlockedKeywordsView.swift - Navigation title */
+"blocking.keywords.title" = "已屏蔽的关键词";
+
+/* Location: BlockedKeywordsView.swift - Placeholder of the field for a new blocked keyword */
+"blocking.keywords.placeholder" = "词语或短语";
+
+/* Location: BlockedKeywordsView.swift - Button that adds the typed keyword to the list */
+"blocking.keywords.add" = "添加";
+
+/* Location: BlockedKeywordsView.swift - Footer explaining what blocked keywords do */
+"blocking.keywords.footer" = "包含以下任一词语或短语的频道消息将被隐藏。匹配不区分大小写，也会匹配较长单词中的部分内容。私信不会被过滤。";
+
+/* Location: BlockedChannelSendersView.swift - Purpose: Navigation title */
+"blocking.channelSenders.title" = "已屏蔽的频道成员";
+
+/* Location: BlockedChannelSendersView.swift - Purpose: Empty state title */
+"blocking.channelSenders.empty.title" = "没有已屏蔽的用户";
+
+/* Location: BlockedChannelSendersView.swift - Purpose: Empty state description */
+"blocking.channelSenders.empty.description" = "您屏蔽的频道成员名称将显示在此处。";
+
+/* Location: BlockedChannelSendersView.swift - Purpose: Swipe action to unblock */
+// MARK: - Language
+
+/* Location: SettingsView.swift - Purpose: Language row title */
+"language.title" = "语言";
+
+"language.appLanguage.title" = "应用语言";
+
+/* Location: MeasurementUnitsSection.swift - Picker label for measurement units */
+"units.title" = "单位";
+
+/* Location: MeasurementUnitsSection.swift - Units option: follow the device region setting */
+"units.system" = "系统";
+
+/* Location: MeasurementUnitsSection.swift - Units option: kilometers, meters, Celsius */
+"units.metric" = "公制";
+
+/* Location: MeasurementUnitsSection.swift - Units option: miles, feet, Fahrenheit */
+"units.imperial" = "英制";
+
+/* Location: MeasurementUnitsSection.swift - Footer explaining the units override */
+"units.footer" = "用于距离、高度和遥测数据。“系统”跟随设备的地区设置。";
+
+"language.appLanguage.footer" = "按钮、菜单和其他文本。";
+
+"language.appLanguage.accessibilityHint" = "打开设置";
+
+"language.translateInto.header" = "翻译成";
+
+"language.translateInto.footer" = "点击翻译时，收到的消息会翻译成此语言。";
+
+"language.translateInto.listFooter" = "此设备可在应用内翻译的语言。其他语言使用您的默认翻译应用。";
+
+"language.matchAppLanguage" = "使用应用语言";
+
+"language.suggested.header" = "建议";
+
+"language.all.header" = "语言";
+
+"language.defaultTranslationApp.title" = "使用默认翻译应用";
+
+"language.defaultTranslationApp.footer" = "使用翻译，或您在设置中选择的其他应用。";
+
+"language.translationOffers.title" = "提供翻译";
+
+"language.translationOffers.offFooter" = "其他语言的收到消息将不显示翻译按钮。";
+
+"language.search.prompt" = "搜索语言";
+
+"language.search.noResults" = "无结果";
+
+"language.search.noResultsDescription" = "没有语言匹配\"%@\"";
+
+"language.search.unavailable" = "%@ 在应用中不可用。使用您的默认翻译应用翻译。";
+
+// MARK: - Region
+
+/* Location: RegionalAreas.subdivisionDisplayName - California (US-CA) state name */
+"region.subdivision.US-CA" = "加利福尼亚州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Delaware (US-DE) state name */
+"region.subdivision.US-DE" = "特拉华州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Maryland (US-MD) state name */
+"region.subdivision.US-MD" = "马里兰州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - New Jersey (US-NJ) state name */
+"region.subdivision.US-NJ" = "新泽西州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Pennsylvania (US-PA) state name */
+"region.subdivision.US-PA" = "宾夕法尼亚州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Queensland (AU-QLD) state name */
+"region.subdivision.AU-QLD" = "昆士兰州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - South Australia (AU-SA) state name */
+"region.subdivision.AU-SA" = "南澳大利亚州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Western Australia (AU-WA) state name */
+"region.subdivision.AU-WA" = "西澳大利亚州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Alabama (US-AL) state name */
+"region.subdivision.US-AL" = "阿拉巴马州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Alaska (US-AK) state name */
+"region.subdivision.US-AK" = "阿拉斯加州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Arizona (US-AZ) state name */
+"region.subdivision.US-AZ" = "亚利桑那州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Arkansas (US-AR) state name */
+"region.subdivision.US-AR" = "阿肯色州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Colorado (US-CO) state name */
+"region.subdivision.US-CO" = "科罗拉多州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Connecticut (US-CT) state name */
+"region.subdivision.US-CT" = "康涅狄格州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - District of Columbia (US-DC) state name */
+"region.subdivision.US-DC" = "哥伦比亚特区";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Florida (US-FL) state name */
+"region.subdivision.US-FL" = "佛罗里达州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Georgia (US-GA) state name */
+"region.subdivision.US-GA" = "佐治亚州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Hawaii (US-HI) state name */
+"region.subdivision.US-HI" = "夏威夷州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Idaho (US-ID) state name */
+"region.subdivision.US-ID" = "爱达荷州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Illinois (US-IL) state name */
+"region.subdivision.US-IL" = "伊利诺伊州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Indiana (US-IN) state name */
+"region.subdivision.US-IN" = "印第安纳州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Iowa (US-IA) state name */
+"region.subdivision.US-IA" = "艾奥瓦州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Kansas (US-KS) state name */
+"region.subdivision.US-KS" = "堪萨斯州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Kentucky (US-KY) state name */
+"region.subdivision.US-KY" = "肯塔基州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Louisiana (US-LA) state name */
+"region.subdivision.US-LA" = "路易斯安那州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Maine (US-ME) state name */
+"region.subdivision.US-ME" = "缅因州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Massachusetts (US-MA) state name */
+"region.subdivision.US-MA" = "马萨诸塞州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Michigan (US-MI) state name */
+"region.subdivision.US-MI" = "密歇根州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Minnesota (US-MN) state name */
+"region.subdivision.US-MN" = "明尼苏达州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Mississippi (US-MS) state name */
+"region.subdivision.US-MS" = "密西西比州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Missouri (US-MO) state name */
+"region.subdivision.US-MO" = "密苏里州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Montana (US-MT) state name */
+"region.subdivision.US-MT" = "蒙大拿州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Nebraska (US-NE) state name */
+"region.subdivision.US-NE" = "内布拉斯加州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Nevada (US-NV) state name */
+"region.subdivision.US-NV" = "内华达州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - New Hampshire (US-NH) state name */
+"region.subdivision.US-NH" = "新罕布什尔州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - New Mexico (US-NM) state name */
+"region.subdivision.US-NM" = "新墨西哥州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - New York (US-NY) state name */
+"region.subdivision.US-NY" = "纽约州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - North Carolina (US-NC) state name */
+"region.subdivision.US-NC" = "北卡罗来纳州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - North Dakota (US-ND) state name */
+"region.subdivision.US-ND" = "北达科他州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Ohio (US-OH) state name */
+"region.subdivision.US-OH" = "俄亥俄州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Oklahoma (US-OK) state name */
+"region.subdivision.US-OK" = "俄克拉荷马州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Oregon (US-OR) state name */
+"region.subdivision.US-OR" = "俄勒冈州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Rhode Island (US-RI) state name */
+"region.subdivision.US-RI" = "罗得岛州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - South Carolina (US-SC) state name */
+"region.subdivision.US-SC" = "南卡罗来纳州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - South Dakota (US-SD) state name */
+"region.subdivision.US-SD" = "南达科他州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Tennessee (US-TN) state name */
+"region.subdivision.US-TN" = "田纳西州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Texas (US-TX) state name */
+"region.subdivision.US-TX" = "得克萨斯州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Utah (US-UT) state name */
+"region.subdivision.US-UT" = "犹他州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Vermont (US-VT) state name */
+"region.subdivision.US-VT" = "佛蒙特州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Virginia (US-VA) state name */
+"region.subdivision.US-VA" = "弗吉尼亚州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Washington (US-WA) state name */
+"region.subdivision.US-WA" = "华盛顿州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - West Virginia (US-WV) state name */
+"region.subdivision.US-WV" = "西弗吉尼亚州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Wisconsin (US-WI) state name */
+"region.subdivision.US-WI" = "威斯康星州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Wyoming (US-WY) state name */
+"region.subdivision.US-WY" = "怀俄明州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Australian Capital Territory (AU-ACT) state name */
+"region.subdivision.AU-ACT" = "澳大利亚首都领地";
+
+/* Location: RegionalAreas.subdivisionDisplayName - New South Wales (AU-NSW) state name */
+"region.subdivision.AU-NSW" = "新南威尔士州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Northern Territory (AU-NT) state name */
+"region.subdivision.AU-NT" = "北领地";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Tasmania (AU-TAS) state name */
+"region.subdivision.AU-TAS" = "塔斯马尼亚州";
+
+/* Location: RegionalAreas.subdivisionDisplayName - Victoria (AU-VIC) state name */
+"region.subdivision.AU-VIC" = "维多利亚州";
+
+
+// MARK: - Live Activity
+
+/* Label for the Live Status toggle in App Settings */
+"liveActivity.title" = "实时活动";
+
+/* Title for the Live Activity tip shown after first connection */
+"liveActivity.tip.title" = "一目了然的电台状态";
+
+/* Message for the Live Activity tip */
+"liveActivity.tip.message" = "即使不打开应用，您的连接、电池和消息也清晰可见。";
+
+// MARK: - Regenerate Identity
+
+/* Section header for regenerate identity */
+"regenerateIdentity.header" = "身份";
+
+/* Button label to open regenerate identity sheet */
+"regenerateIdentity.title" = "重新生成密钥";
+
+/* Navigation title for the regenerate identity sheet */
+"regenerateIdentity.sheet.title" = "重新生成密钥";
+
+/* Explanation of what regenerating identity does */
+"regenerateIdentity.sheet.explanation" = "生成新的 Ed25519 密钥对以替换设备当前的身份。所有联系人需要重新发现你的设备。";
+
+/* Button to generate a new key */
+"regenerateIdentity.generate" = "生成密钥";
+
+/* Button to generate another key after the first */
+/* Progress label while generating */
+"regenerateIdentity.generating" = "生成中…";
+
+/* Button to apply the generated key to the device */
+"regenerateIdentity.replace" = "使用此密钥";
+
+/* Progress label while importing key to device */
+"regenerateIdentity.importing" = "导入中…";
+
+/* Disclosure group label for vanity prefix */
+"regenerateIdentity.prefix.label" = "自定义前缀";
+
+/* Placeholder for prefix text field */
+"regenerateIdentity.prefix.placeholder" = "例如 2BA1";
+
+/* Footer explaining vanity prefix */
+"regenerateIdentity.prefix.footer" = "可选择指定公钥开头的 1–4 个十六进制字符。前缀越长，生成时间越久。";
+
+/* Error when prefix is not 1–4 hex characters */
+/* Error when prefix is 00 or FF */
+"regenerateIdentity.prefix.error.reserved" = "00 和 FF 为保留值，不可使用";
+
+/* Alert title for replace identity confirmation */
+"regenerateIdentity.alert.replace.title" = "替换身份？";
+
+/* Alert confirm button for replace identity */
+"regenerateIdentity.alert.replace.confirm" = "替换";
+
+/* Alert message for replace identity */
+"regenerateIdentity.alert.replace.message" = "这将永久替换你设备的身份。其他设备会将你视为新联系人。";
+
+/* Error when firmware does not support key import */
+"regenerateIdentity.error.featureDisabled" = "此固件版本不支持密钥导入";
+
+/* Error when device rejects the key */
+"regenerateIdentity.error.deviceRejected" = "设备拒绝了密钥，请重试。";
+
+// MARK: - Import Key
+
+/* Button label to open import key sheet */
+"importKey.title" = "导入密钥";
+
+/* Navigation title for the import key sheet */
+"importKey.sheet.title" = "导入密钥";
+
+/* Explanation of what importing a key does */
+"importKey.sheet.explanation" = "粘贴现有的 Ed25519 私钥（128 个十六进制字符）以替换设备当前的身份。";
+
+/* Label for the private key input field */
+"importKey.keyInput.label" = "私钥";
+
+/* Placeholder for the key input field */
+"importKey.keyInput.placeholder" = "粘贴 128 位十六进制密钥";
+
+/* Button to import the key */
+"importKey.import" = "导入密钥";
+
+/* Progress label while importing */
+"importKey.importing" = "导入中…";
+
+/* Error when hex input is wrong length or invalid */
+"importKey.error.invalidHex" = "密钥必须恰好为 128 个十六进制字符";
+
+/* Error when key fails Ed25519 validation */
+"importKey.error.invalidKey" = "不是有效的 Ed25519 私钥";
+
+// Reply with Quote
+"replyWithQuote.toggle" = "引用回复";
+"replyWithQuote.footer" = "回复时包含原始消息的预览。";
+
+/* Location: ChatSettingsView.swift - Toggle that keeps favorite chats pinned above the others */
+"pinFavoriteChats.toggle" = "收藏置顶";
+
+/* Location: ChatSettingsView.swift - Footer under the Favorites on Top toggle */
+"pinFavoriteChats.footer" = "收藏的聊天始终显示在列表顶部。关闭后，所有聊天按最新消息排序。";
+
+// MARK: - Maps
+
+/* Navigation title for Settings → Maps hub */
+"maps.title" = "地图";
+
+/* Section header for display preferences on Maps settings */
+"maps.displayHeader" = "显示";
+
+/* Picker label for map basemap appearance */
+"maps.appearance" = "地图外观";
+
+/* Footer explaining map appearance is basemap-only */
+"maps.appearanceFooter" = "仅控制地图底图。应用颜色仍跟随外观。";
+
+/* Section header for the traffic maps' link lines and rings on Maps settings */
+"maps.trafficHeader" = "流量";
+
+/* Picker label: how long traffic link lines and green rings stay after their last packet */
+"maps.trafficFade" = "淡出时间";
+
+/* Footer explaining the traffic fade time */
+"maps.trafficFadeFooter" = "链路线和中继器的绿色光环在最后一个数据包之后于流量地图上保留的时长。";
+
+/* Section header for Offline Maps entry under Maps settings */
+"maps.offlineHeader" = "离线地图";
+
+// MARK: - Offline Maps
+
+/* Navigation title for offline maps settings */
+"offlineMaps.title" = "离线地图";
+
+/* Title for empty state when no offline packs exist */
+"offlineMaps.emptyTitle" = "无离线地图";
+
+/* Description for empty state */
+"offlineMaps.emptyDescription" = "下载地图区域以便在无网络时使用。";
+
+/* Button to download a new offline region */
+"offlineMaps.downloadRegion" = "下载区域";
+
+/* Section header for storage info */
+"offlineMaps.storage" = "存储空间";
+
+/* Label for total storage used */
+"offlineMaps.storageUsed" = "已使用";
+
+/* Fallback name for unknown region */
+"offlineMaps.unknownRegion" = "未知区域";
+
+/* Status when pack download is complete */
+"offlineMaps.complete" = "已下载";
+
+/* Status when pack is downloading */
+"offlineMaps.downloading" = "下载中…";
+
+/* Navigation title for region picker sheet */
+"offlineMaps.pickRegion" = "选择区域";
+
+/* Placeholder for region name text field */
+"offlineMaps.regionName" = "区域名称";
+
+/* Button to start download */
+"offlineMaps.download" = "下载";
+
+/* Cancel button */
+"offlineMaps.cancel" = "取消";
+
+/* Delete confirmation title */
+/* Delete confirmation message */
+/* Delete button */
+/* Error: insufficient disk space */
+"offlineMaps.error.insufficientDiskSpace" = "存储空间不足，至少需要 100 MB。";
+
+/* Error: tile limit reached */
+"offlineMaps.error.tileLimitReached" = "已达到此下载的瓦片数量限制。";
+
+/* Pause download button */
+"offlineMaps.pause" = "暂停";
+
+/* Resume download button */
+"offlineMaps.resume" = "继续";
+
+/* Paused status label */
+"offlineMaps.paused" = "已暂停";
+
+/* Estimated download size */
+"offlineMaps.estimatedSize" = "预计大小：~%@";
+
+/* Large tile download warning */
+"offlineMaps.largeTileWarning" = "下载区域较大，可能需要较长时间并占用大量存储空间。";
+
+/* Hint shown before estimate is available */
+"offlineMaps.downloadHint" = "输入名称并选择要下载的区域。";
+
+/* Download exceeds available storage */
+"offlineMaps.exceedsStorage" = "设备存储空间不足。请放大地图以选择更小的区域。";
+
+/* Layer type labels */
+"offlineMaps.layer.base" = "基础地图";
+"offlineMaps.layer.topo" = "地形";
+
+/* Layers section header */
+"offlineMaps.layers" = "图层";
+
+/* Include layers prompt */
+/* No network available */
+"offlineMaps.noNetwork" = "下载地图需要互联网连接。";
+
+/* Storage section footer */
+"offlineMaps.storageFooter" = "包括地图数据和内部索引。总大小可能超过各项下载的总和。";
+
+// MARK: - Backup & Restore
+
+/* Navigation title for backup & restore screen */
+"settings.backup.title" = "备份与恢复";
+
+/* Section header for file backup */
+"settings.backup.file_backup.header" = "文件备份";
+
+/* Section footer for file backup */
+"settings.backup.file_backup.footer" = "导出或恢复消息、联系人、频道、保存的路径和设置。";
+
+/* Footer note that radio configuration is not included in the app-data backup */
+"settings.backup.file_backup.radio_config" = "此文件不包含电台自身的设置、频道和联系人。请使用下方的“设备配置”进行备份。";
+/* Export row title */
+"settings.backup.export.title" = "导出应用数据";
+
+/* Export row subtitle */
+"settings.backup.export.subtitle" = "保存为 .cairnbackup 文件";
+
+/* Import row title */
+"settings.backup.import.title" = "导入应用数据";
+
+/* Import row subtitle */
+"settings.backup.import.subtitle" = "从 .cairnbackup 文件恢复";
+
+/* Footer shown above the backup section when a radio is connected, explaining why import is disabled */
+"settings.backup.import.disabled_when_connected" = "导入备份前请先断开无线电连接。";
+
+/* Export confirmation alert title */
+"settings.backup.export.alert.title" = "安全提示";
+
+/* Export confirmation alert message */
+"settings.backup.export.alert.message" = "此备份包含频道加密密钥、消息历史、联系人列表以及 WiFi 节点的本地网络地址和端口。请妥善保管导出的文件。";
+
+/* Export confirmation alert export button */
+"settings.backup.export.alert.export" = "导出";
+
+/* Export confirmation alert cancel button */
+"settings.backup.export.alert.cancel" = "取消";
+
+/* Export progress label */
+"settings.backup.export.progress" = "正在准备备份…";
+
+/* Import preview navigation title */
+"settings.backup.import.preview.title" = "导入预览";
+
+/* Import preview section header: backup details */
+"settings.backup.import.preview.details" = "备份详情";
+
+/* Import preview label: export date */
+"settings.backup.import.preview.exported" = "导出日期";
+
+/* Import preview label: app version */
+"settings.backup.import.preview.app_version" = "应用版本";
+
+/* Import preview section header: contents */
+"settings.backup.import.preview.contents" = "内容";
+
+/* Import preview manifest label: messages */
+"settings.backup.import.preview.messages" = "消息";
+
+/* Import preview manifest label: contacts */
+"settings.backup.import.preview.contacts" = "联系人";
+
+/* Import preview manifest label: channels */
+"settings.backup.import.preview.channels" = "频道";
+
+/* Import preview manifest label: devices */
+"settings.backup.import.preview.devices" = "设备";
+
+/* Import preview manifest label: room messages */
+"settings.backup.import.preview.room_messages" = "房间消息";
+
+/* Import preview manifest label: reactions */
+"settings.backup.import.preview.reactions" = "表情回应";
+
+/* Import preview manifest label: saved paths */
+"settings.backup.import.preview.saved_paths" = "保存的路径";
+
+/* Import preview manifest label: remote node sessions */
+"settings.backup.import.preview.remote_node_sessions" = "远程节点会话";
+
+/* Import preview info text */
+"settings.backup.import.preview.info" = "只添加新数据，不会覆盖已有记录。在创建此备份之后删除的联系人会重新出现，备份中设置的屏蔽、静音或收藏标记会再次应用。";
+
+/* Import preview import button */
+"settings.backup.import.preview.button" = "导入数据";
+
+/* Import progress label */
+"settings.backup.import.progress" = "正在导入数据…";
+/* Import parsing label */
+"settings.backup.import.parsing" = "正在读取备份…";
+/* Import cancelling label shown after the user taps Cancel during an active import */
+"settings.backup.import.cancelling" = "正在取消…";
+/* Import preview cancel / dismiss toolbar button */
+"settings.backup.import.preview.cancel" = "取消";
+
+/* Import success title */
+"settings.backup.import.success.title" = "导入完成";
+
+/* Import success section header: items that were newly added to this device */
+"settings.backup.import.success.added_section" = "已添加到此设备";
+
+/* Import success section header: items in the backup that were already on this device */
+"settings.backup.import.success.already_here_section" = "已在此设备上";
+
+/* Import success section footer: always visible under the "Already on this iPhone" section */
+"settings.backup.import.success.already_here_footer" = "此设备上的现有数据保持不变；未覆盖任何内容。";
+
+/* Import success hero subtitle when new items were added (pluralized in .stringsdict) */
+"settings.backup.import.success.subtitle_added" = "已添加 %d 项。";
+
+/* Import success hero subtitle when only existing items were refreshed (pluralized in .stringsdict) */
+"settings.backup.import.success.subtitle_refreshed" = "已更新 %d 项现有内容。";
+
+/* Import success disclosure row summary for the "Already on this iPhone" section (pluralized in .stringsdict) */
+"settings.backup.import.success.already_here_summary" = "%d 项已在此";
+
+/* Import success footer line appended when some of the already-here items had metadata refreshed (pluralized in .stringsdict) */
+"settings.backup.import.success.already_here_refreshed" = "其中 %d 项已用备份中的较新信息更新。";
+
+/* Import success section header: channels that had no free local slot and couldn't be restored */
+"settings.backup.import.success.dropped_section" = "无法恢复";
+
+/* Import success disclosure row summary for the "Couldn't be restored" section */
+"settings.backup.import.success.dropped_summary" = "%d 个项目无法恢复";
+
+/* Import success footer explaining why some channels couldn't be restored and how to recover them */
+"settings.backup.import.success.dropped_footer" = "这些频道在此设备上没有空闲的频道位，因此它们及其消息未被导入。请腾出一个频道位后重新导入以恢复它们。";
+
+/* Import success footer when only discovered nodes exceeded the per-radio discover-list cap */
+"settings.backup.import.success.dropped_footer_discovered_nodes" = "这些发现的节点无法恢复，因为此设备的发现列表已满（%d 个节点）。已保留现有本地节点；Mesh网络将重新通告缺失的节点。";
+
+/* Import success footer when both channel slots and the discover-list cap caused drops */
+"settings.backup.import.success.dropped_footer_mixed" = "部分项目无法恢复：没有空闲频道位的频道，以及超出此设备发现列表容量（%d 个节点）的发现的节点。请腾出一个频道位后重新导入频道；Mesh网络将重新通告缺失的发现的节点。";
+
+/* Import success done button */
+"settings.backup.import.success.done" = "完成";
+
+/* Import failure title */
+"settings.backup.import.error.title" = "导入失败";
+
+/* Import error dismiss button */
+"settings.backup.import.error.dismiss" = "关闭";
+
+/* Import cancelled title shown after user cancels an import before it commits */
+"settings.backup.import.cancelled.title" = "导入已取消";
+
+/* Import cancelled message — rollback ran and nothing on device was changed */
+"settings.backup.import.cancelled.message" = "未更改任何数据。";
+
+/* File access error */
+/* Import preview manifest label: blocked senders */
+"settings.backup.import.preview.blocked_senders" = "已屏蔽的发送者";
+
+/* Import preview manifest label: node status snapshots */
+"settings.backup.import.preview.node_status_snapshots" = "节点快照";
+
+/* Import preview manifest label: discovered nodes */
+"settings.backup.import.preview.discovered_nodes" = "发现的节点";
+
+/* Import preview manifest label: message repeats */
+"settings.backup.import.preview.message_repeats" = "消息转发次数";
+
+/* Import header title when the backup had nothing new to add (every record was skipped) */
+"settings.backup.import.nothing_to_import.title" = "所有内容均已在此";
+
+/* Import subtitle when the backup had nothing new to add */
+"settings.backup.import.nothing_to_import.subtitle" = "此备份的内容已在此设备上。";
+
+/* Default filename for an exported backup; %@ is an ISO-style timestamp */
+"settings.backup.export.default_filename" = "Cairn 备份 %@.cairnbackup";
+/* Backup error: file is corrupt or unreadable */
+"settings.backup.error.invalid_file" = "备份文件无效或无法读取。";
+
+/* Backup error: file exceeds parser size cap; %1$d actual MB, %2$d max MB */
+"settings.backup.error.file_too_large" = "备份文件过大，无法导入（%1$d MB；上限为 %2$d MB）。";
+
+/* Backup error: decompressed size exceeds safety cap; %d is max MB uncompressed */
+"settings.backup.error.decompressed_too_large" = "备份文件解压后超过安全大小上限（%d MB 未压缩）。";
+
+/* Backup error: file version too new; %1$d found, %2$d max supported */
+"settings.backup.error.unsupported_version" = "此备份是用更新的格式创建的（版本 %1$d）。此应用支持的最高版本为 %2$d。请更新应用后重试。";
+
+/* Backup error: manifest counts do not match arrays */
+"settings.backup.error.corrupted_manifest" = "备份文件似乎已损坏。声明的条目数量与实际数据不符。";
+
+/* Backup error: export failed; %@ is underlying error */
+"settings.backup.error.export_failed" = "创建备份失败：%@";
+
+/* Backup error: import failed; %@ is underlying error */
+"settings.backup.error.import_failed" = "导入备份失败：%@";
+
+// MARK: - Export success
+
+/* Hero title on the backup export success sheet */
+"settings.backup.export.success.title" = "备份已保存";
+
+/* Section header listing record counts included in the export */
+"settings.backup.export.success.included_section" = "备份包含";
+
+/* Primary button on the export success sheet */
+"settings.backup.export.success.done" = "完成";
+
+/* VoiceOver announcement when the export success sheet appears; %@ is the filename */
+"settings.backup.export.success.announcement" = "备份已保存为 %@";
+
+/* VoiceOver announcement when a refund reverts the active theme to the default */
+"Appearance.Accessibility.ThemeReverted" = "主题已恢复为默认。";
+
+/* MARK: Feedback screen */
+/* AI-translated - please verify with native speakers. */
+"Feedback.Title" = "反馈";
+"Feedback.Header.Body" = "更推荐通过 GitHub Issues，也可以发邮件。";
+"Feedback.GitHub.Link" = "打开 GitHub Issue";
+"Feedback.Email.Link" = "给开发者发邮件";
+
+/* MARK: Appearance (selection) screen */
+"Appearance.Title" = "外观";
+"Appearance.Scheme.Header" = "浅色/深色模式";
+"Appearance.Scheme.System" = "跟随系统";
+"Appearance.Scheme.Light" = "浅色";
+"Appearance.Scheme.Dark" = "深色";
+"Appearance.Themes.Header" = "选择主题";
+"Appearance.Themes.Selected" = "已选择";
+"Appearance.MoreThemes.Link" = "购买更多主题";
+
+/* MARK: Appearance accessibility */
+"Appearance.Accessibility.ThemeCard.OwnedLabel" = "主题 %@，已拥有";
+"Appearance.Accessibility.ThemeCard.OwnedHint" = "应用此主题";
+"Appearance.Accessibility.ThemeCard.SelectedLabel" = "主题 %@，当前已选择";
+"Appearance.Accessibility.Swatch.DualMode" = "%@，浅色和深色变体";
+"Appearance.Accessibility.Swatch.DarkOnly" = "%@，仅深色";
+
+/* Location: DeviceInfoView.swift - Section header for sensors and stats links */
+"deviceInfo.liveData.header" = "实时数据";
+
+/* Location: DeviceSensorsView.swift - Screen title and link */
+"deviceSensors.title" = "设备传感器";
+
+/* Location: DeviceSensorsView.swift - Refresh button */
+"deviceSensors.refresh" = "刷新";
+
+/* Location: DeviceSensorsView.swift - Disconnected description */
+"deviceSensors.disconnected" = "连接到电台以读取其传感器。";
+
+/* Location: DeviceSensorsView.swift - Load failure title */
+"deviceSensors.loadFailed" = "无法读取传感器";
+
+/* Location: DeviceSensorsView.swift - Empty state title */
+"deviceSensors.empty.title" = "无传感器数据";
+
+/* Location: DeviceSensorsView.swift - Empty state description */
+"deviceSensors.empty.description" = "电台未返回任何传感器读数。";
+
+/* Location: DeviceSensorsView.swift - Footer */
+"deviceSensors.footer" = "已连接电台报告的读数，如电池电压、温度、外接传感器和 GPS。";
+
+/* Location: DeviceSensorsView.swift - Last updated time; %@ is a time */
+"deviceSensors.updated" = "更新于 %@";
+
+/* Location: DeviceSensorsView.swift - Timeout message */
+"deviceSensors.timedOut" = "电台未响应。请重试。";
+
+/* Location: RadioStatsView.swift - Disconnected description */
+"radioStats.disconnected" = "连接到电台以读取其统计信息。";
+
+/* Location: RadioStatsView.swift - Row */
+"radioStats.errors" = "错误";
+
+/* Location: BluetoothSection.swift - Footer shown for a custom PIN */
+"bluetooth.customPinFooter" = "更改 PIN 会重启电台。如果设备仍记住旧的配对，请在蓝牙设置中忽略该电台，然后使用新 PIN 重新配对。";
+
+/* Location: BluetoothSection.swift - Confirm PIN change title */
+"bluetooth.alert.confirmPin.title" = "更改配对 PIN？";
+
+/* Location: BluetoothSection.swift - Confirm PIN change message; %@ is the new PIN */
+"bluetooth.alert.confirmPin.message" = "电台将重启并要求 PIN %@。你可能需要在蓝牙设置中忽略该电台，然后使用新 PIN 重新配对。";
+
+/* Location: BluetoothSection.swift - Confirm PIN change button */
+"bluetooth.alert.confirmPin.confirm" = "更改并重启";
+
+/* Location: BackupRestoreView.swift - Section header for data export */
+"settings.backup.dataExport.header" = "数据导出";
+
+/* Location: BackupRestoreView.swift - Footer for the data export section */
+"settings.backup.dataExport.footer" = "将消息、联系人、节点历史和数据包日志导出为 CSV，或将节点位置导出为 GPX，用于电子表格和地图应用。";
+
+/* Location: DataExportView.swift - Screen title and entry row */
+"settings.dataExport.title" = "导出数据";
+
+/* Location: DataExportView.swift - Messages export section header / row */
+"settings.dataExport.messages" = "消息";
+
+/* Location: DataExportView.swift - Picker selecting which conversation to export */
+"settings.dataExport.conversation" = "会话";
+
+/* Location: DataExportView.swift - Picker option exporting every conversation */
+"settings.dataExport.allConversations" = "所有会话";
+
+/* Location: DataExportView.swift - Button exporting messages as CSV */
+"settings.dataExport.exportMessages" = "导出消息";
+
+/* Location: DataExportView.swift - Section header for contacts, node history, RX log and GPX exports */
+"settings.dataExport.network" = "网络数据";
+
+/* Location: DataExportView.swift - Row exporting contacts as CSV */
+"settings.dataExport.contacts" = "联系人";
+
+/* Location: DataExportView.swift - Row exporting stored node status and telemetry history as CSV */
+"settings.dataExport.nodeStatus" = "节点状态与遥测";
+
+/* Location: DataExportView.swift - Row exporting the RX packet log as CSV */
+"settings.dataExport.rxLog" = "RX 日志";
+
+/* Location: DataExportView.swift - Row exporting node locations as GPX waypoints */
+"settings.dataExport.waypoints" = "节点位置";
+
+/* Location: DataExportView.swift - Footer explaining export contents */
+"settings.dataExport.footer" = "导出仅包含本设备上为当前电台存储的数据。时间戳为 UTC (ISO 8601)。";
+
+/* Location: DataExportView.swift - Empty state title when no radio has ever connected */
+"settings.dataExport.noRadio.title" = "无电台数据";
+
+/* Location: DataExportView.swift - Empty state description */
+"settings.dataExport.noRadio.description" = "请至少连接一次电台以导出其数据。";
+
+/* Location: DataExportView.swift - Section header for a generated export file */
+"settings.dataExport.ready" = "可分享";
+
+/* Location: DataExportView.swift - Button saving the export with the file exporter */
+"settings.dataExport.saveToFiles" = "存储到“文件”…";
+
+/* Location: DataExportView.swift - ShareLink for the generated export */
+"settings.dataExport.share" = "分享…";
+
+/* Location: DataExportView.swift - Number of rows/waypoints in the generated export; %d = count */
+"settings.dataExport.rowCount" = "%d 条记录";
+
+/* Location: DataExportView.swift - Shown when the selected export has no data */
+"settings.dataExport.empty" = "所选内容没有可导出的数据。";
+
+/* Location: DataExportView.swift - Error when an export fails; %@ = reason */
+"settings.dataExport.error" = "导出失败：%@";
+
+/* Location: DataExportView.swift - Progress text while building an export */
+"settings.dataExport.exporting" = "正在导出…";
+
+/* Location: OfflineMapSettingsView.swift - Confirmation title before deleting a downloaded map */
+"offlineMaps.deleteConfirm.title" = "删除离线地图？";
+
+/* Location: OfflineMapSettingsView.swift - Confirmation message before deleting a downloaded map; %@ is the map name and layer */
+"offlineMaps.deleteConfirm.message" = "%@ 将从此设备中删除。重新下载需要互联网连接。";
+
+/* Location: RadioDashboardCard.swift - Title of the transmit power tile */
+"dashboard.txPower" = "发射功率";
+
+/* Location: RadioDashboardCard.swift - Caption under the transmit power; placeholder is the maximum with unit, e.g. 22 dBm */
+"dashboard.maxTxPower" = "最大 %@";
+
+/* Location: RadioDashboardCard.swift - Title of the radio channel tile (frequency and preset) */
+"dashboard.channel" = "信道";
+
+/* Location: RadioDashboardCard.swift - Radio frequency with unit; placeholder is the number */
+"dashboard.frequency" = "%@ MHz";
+
+/* Location: RadioDashboardCard.swift - LoRa settings when no named preset matches; first placeholder is the spreading factor number, second is the bandwidth in kHz */
+"dashboard.modulation" = "SF%1$d · %2$@ kHz";
+
+/* Location: RadioDashboardCard.swift - Title of the tile showing the connection state between phone and radio */
+"dashboard.link" = "连接";
+
+/* Location: RadioDashboardCard.swift - Caption when the radio has not reported a battery reading yet */
+"dashboard.noReading" = "尚无读数";
+
+/* Location: RadioDashboardCard.swift - Caption on the link tile when the radio is in client repeat mode */
+"dashboard.repeatMode" = "中继模式";
+
+/* Location: RadioDashboardCard.swift - Radio model and firmware on one line; first placeholder is the model, second the firmware version */
+"dashboard.firmware" = "%1$@ · %2$@";
+
+/* Location: RadioDashboardCard.swift - VoiceOver label for the radio summary card at the top of Settings */
+"dashboard.accessibilityLabel" = "电台概览";
+
+/* Location: LocationPickerView.swift - Navigation title when picking a location to share in a chat */
+"locationPicker.chooseTitle" = "选择位置";
+
+/* Location: LocationPickerView.swift - Confirm button when picking a location to share in a chat */
+"locationPicker.share" = "分享";
+
+/* Location: LocationPickerView.swift - Hint shown while no pin is on the map and the confirm button is disabled */
+"locationPicker.noPinHint" = "点击地图或放置图钉以选择位置。";
+
+/* Location: LocationPickerView.swift - Shown in place of the coordinates after the stored location was cleared, so saving removes the location */
+"locationPicker.noLocation" = "无位置";
+
+/* Location: DangerZoneSection.swift - Purpose: Button that removes every node from the device and the app */
+"dangerZone.removeAll" = "移除所有节点";
+
+/* Location: DangerZoneSection.swift - Purpose: Button label while nodes are being removed; first number is how many are done, second is the total */
+"dangerZone.removingProgress" = "正在移除 %d/%d…";
+
+/* Location: DangerZoneSection.swift - Purpose: Title of the confirmation before removing every node */
+"dangerZone.alert.removeAll.title" = "移除所有节点";
+
+/* Location: DangerZoneSection.swift - Purpose: Destructive button that confirms removing every node */
+"dangerZone.alert.removeAll.confirm" = "全部移除";
+
+/* Location: DangerZoneSection.swift - Purpose: Confirmation message before removing every node; the number is how many nodes will be removed */
+"dangerZone.alert.removeAll.message" = "这将从设备和应用中永久删除所有节点（%d 个，包括收藏的节点）及其消息。频道和发现的节点会保留。此操作无法撤销。";
+
+/* Location: DangerZoneSection.swift - Purpose: Result when only some nodes were removed; first number is how many were removed, second is how many were not */
+"dangerZone.alert.removeAll.partial" = "已移除：%d 个。未移除：%d 个。连接已中断——请再次点击按钮以移除剩余节点。";
+
+/* Location: NodeRemovalModel.swift - Purpose: Result when a node removal stopped part way; first number is how many were removed, second how many were not, then the reason it stopped (an error message) */
+"dangerZone.alert.removal.stopped" = "已移除：%d 个。未移除：%d 个。\n\n%@\n\n请再次点击按钮以移除剩余节点。";
+
+/* Location: DangerZoneSection.swift - Purpose: Result when the device has no nodes to remove */
+"dangerZone.alert.removeAll.noneFound" = "没有可移除的节点。";
+
+/* Location: ChatSettingsView.swift / BlockedItemsView.swift - Row and navigation title for the page listing blocked contacts, channel senders and keywords */
+"blocking.title" = "已屏蔽";
+
+/* Location: BlockedItemsView.swift - Shown in the keywords section when no keywords are blocked */
+"blocking.keywords.empty" = "没有已屏蔽的关键词";
+
+/* Location: MessagesSettingsSection.swift - Toggle that shows the sender's send time inside incoming message bubbles */
+"messages.showIncomingSendTime" = "传入发送时间";
+
+/* Location: NotificationSettingsSection.swift - Footer pointing to per-conversation notification levels */
+"notifications.footer" = "要更改单个会话的通知，请打开其信息页面。";
+/* Location: ChatSettingsView.swift - Header of the section with general chat toggles */
+"chatSettings.generalHeader" = "通用";
+
+/* DeviceInfoView - Button that shares the device public key as text */
+"publicKey.share" = "分享密钥";
+
+/* ConnectionSettingsView - Tile title for how the app reaches the radio (Bluetooth or WiFi) */
+"connection.transport" = "连接方式";
+
+/* Location: OfflineMapsSections.swift - Tile value: completed offline map packs out of all packs, e.g. 2 of 3 */
+"offlineMaps.downloadedCount" = "%1$d/%2$d";
+
+/* Location: BatteryView.swift - Battery status word beside the charge when above the low threshold */
+"battery.level.good" = "良好";
+
+/* Location: BatteryView.swift - Battery status word when the charge is low */
+"battery.level.low" = "低";
+
+/* Location: BatteryView.swift - Battery status word when the charge is critically low */
+"battery.level.critical" = "严重不足";
+
+/* Location: BatteryView.swift - Tile title for the battery voltage */
+"battery.voltage" = "电压";
+
+/* Location: BatteryView.swift - Tile title for the voltage span of the battery curve (empty to full) */
+"battery.curveRange" = "曲线范围";
+
+/* Location: BatteryView.swift - Caption under the curve range tile explaining the two voltages */
+"battery.curveRangeCaption" = "从空到满";
+
+/* Location: BatteryView.swift - Tile title for when the battery was last read */
+"battery.lastReading" = "上次读数";
+
+/* Location: BatteryView.swift / RadioDashboardCard.swift - Shown when the radio reports no battery (mains powered) */
+"battery.notPresent" = "未检测到电池";
+
+/* Location: BatteryView.swift - Footer under the battery readings */
+"battery.footer" = "电量根据电池电压和电池曲线估算。连接期间每两分钟读取一次无线电。";
+
+/* Location: BatteryView.swift - Section header for the low-battery notification switch */
+"battery.alerts.header" = "提醒";
+
+/* Location: BatteryView.swift - Footer explaining when low-battery notifications fire */
+"battery.alerts.footer" = "当无线电电池电量降至 20%%、10%% 和 5%% 时通知你。";
+
+/* Location: RadioDashboardCard.swift - LoRa settings line; %1$d spreading factor, %2$@ bandwidth in kHz, %3$d coding rate denominator */
+"dashboard.radioParams" = "SF%1$d · %2$@ kHz · CR 4/%3$d";
+
+/* Location: RadioParameterTiles.swift - Tile title for the radio frequency */
+"radio.tile.frequency" = "频率";
+
+/* Location: RadioParameterTiles.swift - Tile title for the radio bandwidth */
+"radio.tile.bandwidth" = "带宽";
+
+/* Location: RadioParameterTiles.swift - Bandwidth value; %@ is kilohertz */
+"radio.tile.bandwidthValue" = "%@ kHz";
+
+/* Location: RadioParameterTiles.swift - Caption on a radio setting tile edited but not yet sent to the radio */
+"radio.tile.pending" = "未应用";
+
+/* Location: RadioParameterTiles.swift - Caption on the frequency tile while Repeat Mode controls it */
+"radio.tile.setByRepeatMode" = "由中继模式设置";
+
+/* Location: AdvancedRadioSection.swift, RadioValueEditors.swift - TX power tile caption on a board with an amplifier; %@ is the radio chip setting like '9 dBm' (the headline is the power at the antenna) */
+"radio.txPower.antennaCaption" = "天线处 · 电台设置 %@";
+
+/* Location: RadioValueEditors.swift - TX power editor footer on a board with an amplifier; %1$@ the most it radiates at the antenna like '28 dBm', %2$@ the highest radio chip setting like '16 dBm' */
+"radio.txPower.maxAtAntenna" = "天线处最大 %1$@（设置 %2$@）";
+
+/* Location: RadioReadings.swift (TxPowerText) - TX power on a board with an amplifier; %1$@ the power at the antenna like '23 dBm', %2$@ the radio chip setting like '9 dBm' */
+"radio.txPower.atAntennaWithSetting" = "天线处 %1$@（设置 %2$@）";
+
+/* Location: RadioValueEditors.swift - TX power stepper label on a board with an amplifier: the value it changes is the radio chip setting */
+"radio.txPower.radioSettingLabel" = "电台设置 (dBm)";
+
+/* Location: RadioProfileSummary.swift - A saved profile's TX power: the radio chip setting, not the power at the antenna; %@ is like '22 dBm' */
+"radio.txPower.radioSetting" = "电台设置 %@";
+
+/* Location: RadioReadings.swift (TxPowerText), RadioProfileDetailView.swift - Card line for a TX power known only as the radio chip setting (a board with an amplifier radiates more); %@ is like '22 dBm' */
+"radio.txPower.detailSetting" = "发射功率设置 %@";
+
+/* Location: NodeConfigImportViewModel.swift - Added to the import confirmation when the file's TX power is outside what the radio takes; %@ is the setting that will be applied, like '16 dBm' */
+"configImport.txPowerAdjusted" = "文件中的发射功率超出此电台可接受的范围，将设为 %@。在带放大器的板子上，同样的电台设置在天线处的功率更高。";
+
+/* Location: RadioParameterTiles.swift - Accessibility hint on radio setting tiles whose edits wait for Apply */
+"radio.tile.stagedHint" = "轻点“应用无线电设置”后，更改将发送到无线电。";
+/* Location: RadioPresetSection.swift - Accessibility hint on the preset card; choosing a preset applies it immediately */
+"radio.preset.hint" = "立即将所选预设发送到无线电。";
+
+/* Location: RadioPresetSection.swift and PresetStepView.swift - Heading over the presets made for places other than the user's Location, kept apart from the local ones */
+"radio.preset.otherRegions" = "其他地区";
+
+/* Location: RadioPresetSection.swift - Caption on the dimmed preset card while no radio is connected */
+"radio.preset.unavailable.disconnected" = "连接无线电以更改预设。";
+
+/* Location: RadioPresetSection.swift - Caption on the dimmed preset card while the radio is still connecting */
+"radio.preset.unavailable.connecting" = "无线电连接完成后即可使用。";
+
+/* Location: RadioPresetSection.swift - Caption on the dimmed preset card while the radio is still syncing */
+"radio.preset.unavailable.syncing" = "无线电同步完成后即可使用。";
+
+/* Location: AdvancedRadioSection.swift - Section header above the frequency, bandwidth, SF, CR and TX power tiles */
+"radio.parameters.header" = "无线电参数";
+
+/* Section header for the page background settings */
+"Appearance.Background.Header" = "背景";
+
+/* Background kind: a single solid color */
+"Appearance.Background.Kind.Color" = "颜色";
+
+/* Background kind: a color gradient */
+"Appearance.Background.Kind.Gradient" = "渐变";
+
+/* Background kind: a photo from the library */
+"Appearance.Background.Kind.Photo" = "照片";
+
+/* Title of the sample card in the background preview */
+"Appearance.Background.Preview.Title" = "预览";
+
+/* Body text of the sample card in the background preview */
+"Appearance.Background.Preview.Body" = "卡片和列表会以玻璃效果显示在背景之上。";
+
+/* Label for the row of preset colors or gradients */
+"Appearance.Background.Presets" = "预设";
+
+/* Color picker label for a custom background color */
+"Appearance.Background.CustomColor" = "自定义颜色";
+
+/* Color picker label for one color of a gradient; %d is its position (1, 2 or 3) */
+"Appearance.Background.GradientColor" = "颜色 %d";
+
+/* Toggle that adds a third color to the gradient */
+"Appearance.Background.ThirdColor" = "第三种颜色";
+
+/* Picker label for the gradient style (linear or mesh) */
+"Appearance.Background.Style.Title" = "样式";
+
+/* Gradient style: a straight linear gradient */
+"Appearance.Background.Style.Linear" = "线性";
+
+/* Gradient style: a soft mesh gradient */
+"Appearance.Background.Style.Mesh" = "网格";
+
+/* Picker label for the direction of a linear gradient */
+"Appearance.Background.Direction.Title" = "方向";
+
+/* Gradient direction: from top to bottom */
+"Appearance.Background.Direction.TopToBottom" = "从上到下";
+
+/* Gradient direction: from top-leading corner to bottom-trailing corner */
+"Appearance.Background.Direction.Diagonal" = "对角线";
+
+/* Gradient direction: from one side to the other */
+"Appearance.Background.Direction.SideToSide" = "从左到右";
+
+/* Gradient direction: from bottom-leading corner up to top-trailing corner */
+"Appearance.Background.Direction.Rising" = "上升对角线";
+
+/* Button that opens the photo picker to choose a background photo */
+"Appearance.Background.Photo.Choose" = "选取照片…";
+
+/* Button that opens the photo picker to replace the background photo */
+"Appearance.Background.Photo.Change" = "更换照片…";
+
+/* Button that deletes the background photo and returns to the system background */
+"Appearance.Background.Photo.Remove" = "移除照片";
+
+/* Error shown when the picked photo cannot be read */
+"Appearance.Background.Photo.LoadFailed" = "无法载入照片。请换一张试试。";
+
+/* Slider label: how much the background is faded */
+"Appearance.Background.Dim" = "调暗";
+
+/* Slider label: how much the background photo is blurred */
+"Appearance.Background.Blur" = "模糊";
+
+/* Blur amount shown beside the slider; %d is the radius in points */
+"Appearance.Background.BlurValue" = "%d 点";
+
+/* Footer explaining the dim slider and the glass look */
+"Appearance.Background.Footer" = "调暗会在浅色模式下将背景淡化为白色，在深色模式下淡化为黑色，让文字保持清晰易读。";
+
+/* Name of a dark navy background preset */
+"Appearance.Background.Preset.Midnight" = "午夜";
+
+/* Name of a blue background preset */
+"Appearance.Background.Preset.Ocean" = "海洋";
+
+/* Name of a green background preset */
+"Appearance.Background.Preset.Forest" = "森林";
+
+/* Name of a purple background preset */
+"Appearance.Background.Preset.Plum" = "梅紫";
+
+/* Name of a dark gray background preset */
+"Appearance.Background.Preset.Graphite" = "石墨";
+
+/* Name of a light beige background preset */
+"Appearance.Background.Preset.Sand" = "沙色";
+
+/* Name of a pale green background preset */
+"Appearance.Background.Preset.Sage" = "鼠尾草";
+
+/* Name of a pale pink background preset */
+"Appearance.Background.Preset.Blush" = "腮红";
+
+/* Name of a purple-to-orange gradient preset */
+"Appearance.Background.Preset.Dusk" = "黄昏";
+
+/* Name of a dark-to-green gradient preset */
+"Appearance.Background.Preset.Aurora" = "极光";
+
+/* Name of a yellow-to-peach gradient preset */
+"Appearance.Background.Preset.Sunset" = "日落";
+
+/* Title of the Location & Sharing settings page and its tile on the Settings screen */
+"locationSharing.title" = "位置与共享";
+
+/* Section header on Location & Sharing for setting where the radio is */
+"location.position.header" = "位置";
+
+/* Footer under the Position section on Location & Sharing */
+"location.position.footer" = "自动更新位置会在每次发送广播前通过 GPS 更新设备位置。";
+
+/* Section header on Location & Sharing for whether adverts carry the location */
+"location.advert.header" = "广播";
+
+/* Footer under the Advert section on Location & Sharing */
+"location.advert.footer" = "开启后，你的位置会随每次广播发送到整个网状网络。";
+
+/* Detail on the Location & Sharing tile: location is not in adverts but is included in telemetry replies */
+"location.sharedOnRequest" = "按请求共享";
+
+/* Section header on Settings → Nodes for the auto-add rules */
+"nodes.autoAdd.header" = "自动添加";
+
+/* Footer under the new-node notification toggles on Settings → Nodes */
+"nodes.alerts.footer" = "当电台收到此处已开启类型的节点时通知你。";
+
+/* Section header on Settings → Nodes for the bulk node removal buttons */
+"nodes.remove.header" = "移除节点";
+
+/* Footer under the bulk node removal buttons on Settings → Nodes */
+"nodes.remove.footer" = "从设备和应用中删除节点及其消息。";
+
+/* Button on Settings → Nodes → Remove Nodes that clears the Heard list (app only, saved nodes kept) */
+"nodes.remove.heard" = "移除已听到的节点";
+
+/* Confirmation title for Remove Heard Nodes on Settings → Nodes */
+"nodes.remove.heard.title" = "移除已听到的节点";
+
+/* Confirmation message for Remove Heard Nodes on Settings → Nodes; %d is how many heard nodes */
+"nodes.remove.heard.message" = "要从应用中移除 %d 个已听到的节点吗？已保存的节点会保留，已听到的节点再次被听到时会重新出现。";
+
+/* Confirm button of the Remove Heard Nodes confirmation on Settings → Nodes */
+"nodes.remove.heard.confirm" = "移除";
+
+/* Shown on Settings → Nodes when Remove Heard Nodes finds an empty Heard list */
+"nodes.remove.heard.noneFound" = "没有可移除的已听到节点。";
+
+/* Menu item on the Nodes tab and Heard Nodes that opens Settings → Nodes */
+"nodes.settingsLink" = "节点设置";
+
+/* Detail on the Nodes tile on the Settings screen; the argument is the auto-add mode (Manual, Selected Types, All) */
+"nodes.tileDetail" = "自动添加：%@";
+
+/* Section header on Settings → Chats for the message translation settings */
+"chatSettings.translationHeader" = "翻译";
+
+/* Item in the toolbar radio status menu that opens Settings → Connection */
+"bleStatus.connectionSettings" = "连接设置";
+
+/* Footer note on the Backup page's Device Configuration cards when no radio is ready */
+"configExport.requiresRadio" = "连接电台后才能导出或导入其配置。";
+
+/* Card title on Settings > Radio > Regions: the flood scope the radio applies by default */
+"regions.defaultScope" = "默认范围";
+
+/* Card title on Settings > Radio > Regions: the regions the radio knows; opens Manage Regions */
+"regions.known" = "已知区域";
+
+/* Footer under the Regions cards on Settings > Radio when the radio has no default flood scope support */
+"regions.footer" = "频道可以将消息限制在其中一个区域。在“管理区域”中还可以发现附近中继器所服务的区域。";
+
+/* Section header on the About page for the app's developer */
+"about.developer.header" = "开发者";
+
+/* Line under the developer's name on the About page */
+"about.developer.role" = "设计与开发";
+
+/* Section header on the About page listing credits */
+"about.credits.header" = "致谢";
+
+/* Credit line: the MeshCore mesh radio protocol and firmware */
+"about.credits.meshcore" = "由 MeshCore 驱动：开源的网状无线协议与固件。";
+
+/* Credit line: the app's design follows the developer's Cairn firmware interface */
+"about.credits.cairn" = "与 Cairn 固件同步设计。";
+
+/* Device Info - Short action card title that shares the radio's own contact (QR code and link) */
+"deviceInfo.action.share" = "共享";
+
+/* Device Info - Short action card title that copies the radio's public key */
+"deviceInfo.action.copyKey" = "复制密钥";
+
+/* Device Info - Copy Key action card title shown briefly after the key was copied */
+"deviceInfo.action.copied" = "已复制";
+
+/* Device Info - Action card that opens a menu with key import and regeneration */
+"deviceInfo.action.more" = "更多";
+
+/* Device Info - Header over the firmware, model, storage and capability tiles */
+"deviceInfo.details.header" = "详细信息";
+
+/* Device Info - Tile title for the radio's hardware model, e.g. Heltec V3 */
+"deviceInfo.model" = "型号";
+
+/* Device Info - Header over the counters the radio keeps since it last started (uptime, packets sent and received) */
+"deviceInfo.sinceBoot.header" = "自启动以来";
+
+/* Device Info - Quiet line when the radio timed out reading its counters or sensors */
+"deviceInfo.noAnswer" = "无线电未响应 — 下拉以刷新";
+
+/* Device Info - Card that opens the Spectrum tab for live radio readings */
+"deviceInfo.liveReadings.title" = "实时无线电读数";
+
+/* Device Info - Detail line on the card that opens the Spectrum tab */
+"deviceInfo.liveReadings.detail" = "在频谱中查看底噪、信号和占空时间";
+
+/* Device Info - Caption under the node name field while editing; %d is how many more bytes the name can hold */
+"deviceInfo.nameBytesLeft" = "还剩 %d 字节";
+
+/* Location: NotificationSettingsSection.swift - Section header above the message notification switches */
+"notifications.messagesHeader" = "消息";
+
+/* About page and app identity: one-line description of the app under its name */
+"about.tagline" = "MeshCore 网状无线电的配套应用。";
+/* About page: app version and build number. %1$@ = version (e.g. 1.0.1), %2$@ = build number */
+"about.versionLine" = "版本 %1$@ (%2$@)";
+
+/* Settings page footer: app name, version and build. %1$@ = app name (Cairn), %2$@ = version, %3$@ = build number */
+"settings.footer.version" = "%1$@ %2$@（版本号 %3$@）";
+
+/* Settings page footer: who made the app. %1$@ = developer name, %2$@ = studio name (both proper names, not translated) */
+"settings.footer.madeBy" = "由 %1$@ · %2$@ 开发";
+
+
+/* Button that sends the auto-add settings to the radio */
+"nodes.autoAdd.apply" = "应用自动添加设置";
+
+/* MessagesSettingsSection.swift - Card that unfolds the five message info switches */
+"messages.options.show" = "显示选项";
+
+/* MessagesSettingsSection.swift - Card that folds away the five message info switches */
+"messages.options.hide" = "隐藏选项";
+
+/* MessagesSettingsSection.swift - How many of the message info switches are on (first: on count, second: total) */
+"messages.options.enabledCount" = "已开启 %lld/%lld";
+
+/* AboutView.swift - Section header over the MeshCore network's web links (product name, do not translate) */
+"about.meshcore.header" = "MeshCore";
+
+/* AboutView.swift - Short tile title for the MeshCore website, under the MeshCore header */
+"about.link.website" = "官方网站";
+
+/* AboutView.swift - Short tile title for the MeshCore online map, under the MeshCore header */
+"about.link.onlineMap" = "节点地图";
+
+/* Section header on Settings > Nodes for notifications about newly heard nodes */
+"nodes.alerts.header" = "新节点提醒";
+
+/* Master switch title: notify when the radio hears a new node of any enabled type */
+"nodes.alerts.newNodeDiscovered" = "发现新节点";
+
+/* Short switch title in the Auto-Remove Old Nodes section */
+"nodes.staleCleanup.toggle" = "自动移除";
+
+/* Info popover line: setting name (first %@) followed by its explanation (second %@) */
+"nodes.overwriteOldest.info" = "%1$@：%2$@";
+
+/* Empty state description in Trusted Contacts when Favorites Only is on and there are no favorite contacts */
+"trustedContacts.noFavorites" = "没有收藏的联系人";
+
+/* Accessibility hint / subtitle on Set Location when Auto-Update Location is on and the card is disabled */
+"location.setLocation.autoUpdateHint" = "开启自动更新位置时会自动更新";
+
+/* Section header in the Regenerate Key sheet for the prefix and Generate controls */
+"regenerateIdentity.newKey.header" = "新密钥";
+
+/* Section header above the Use This Key button in the Regenerate Key sheet */
+"regenerateIdentity.replace.header" = "替换身份";
+
+/* Title of the progress card and VoiceOver label of the progress bar while a node configuration is being written to the radio */
+"configImport.applying" = "正在应用配置…";
+
+/* VoiceOver value of the Current PIN card while the PIN is masked */
+"bluetooth.pinHidden" = "已隐藏";
+
+/* VoiceOver hint on the Current PIN card while the PIN is masked */
+"bluetooth.showPinHint" = "显示 PIN。";
+
+/* VoiceOver hint on the Current PIN card while the PIN is shown */
+"bluetooth.hidePinHint" = "隐藏 PIN。";
+
+/* Radio preset menu section: presets for North America */
+"radio.region.northAmerica" = "北美洲";
+
+/* Radio preset menu section: presets for South America */
+"radio.region.southAmerica" = "南美洲";
+
+/* Radio preset menu section: presets for Europe */
+"radio.region.europe" = "欧洲";
+
+/* Radio preset menu section: presets for Oceania */
+"radio.region.oceania" = "大洋洲";
+
+/* Radio preset menu section: presets for Asia */
+"radio.region.asia" = "亚洲";
+
+/* Radio preset info popover: what Repeat Mode does. %@ is the explanation */
+"radio.repeatMode.info" = "转发模式：%@";
+
+/* Radio settings error: %1$@ is the step the radio refused (e.g. TX Power), %2$@ the reason */
+"advancedRadio.stepError" = "%1$@：%2$@";
+
+
+/* Settings page: title of the group with the Live Activity switch and the Siri permission used by CarPlay */
+"carPlaySiri.header" = "CarPlay 与 Siri";
+
+/* Settings page: explanation behind the i of the CarPlay & Siri group */
+"carPlaySiri.info" = "在车内，CarPlay 通过 Siri 朗读和发送消息。请在出发前在此允许 Siri：车辆无法请求此权限。实时活动会在锁定屏幕和灵动岛上显示电台的连接、电量和消息。";
+
+/* Settings page: title of the card showing whether Siri is allowed for the app */
+"siri.title" = "Siri";
+
+/* Settings page: button that asks for Siri permission */
+"siri.allow" = "允许 Siri";
+
+/* Settings page: line under Allow Siri saying what it is for */
+"siri.allowSubtitle" = "以便 CarPlay 朗读和发送消息";
+
+/* Settings page: value on the Siri card when Siri is allowed */
+"siri.allowed" = "已允许";
+
+/* Settings page: value on the Siri card when Siri is restricted on the device (e.g. Screen Time) */
+"siri.restricted" = "受限制";
+
+/* Settings page: line under Open Settings when Siri was turned off for the app */
+"siri.deniedSubtitle" = "Cairn 的 Siri 已关闭，因此 CarPlay 无法朗读或发送消息";
+
+/* Settings page: title of the group with the app backup, the radio configuration file and the data export */
+"backupData.header" = "备份与数据";
+
+/* Location: AboutSettingsSection.swift - Map credits: renderer and tile/data sources (names are not translated) */
+"about.credits.maps" = "地图由 MapLibre 渲染。地图数据 © OpenStreetMap 贡献者，经由 OpenFreeMap 提供；卫星图像 © Esri；地形图 © OpenTopoMap。";
+
+/* Location: DeviceInfoView.swift - Header subtitle naming the connected radio's role, before its model ("Companion · Heltec V3") */
+"deviceInfo.companion" = "伴侣设备";
+
+/* Location: RadioSettingsView.swift - Confirmation title when closing the Radio Parameters sheet with edits not yet applied */
+"radio.parameters.discard.title" = "放弃未应用的更改？";
+
+/* Location: RadioSettingsView.swift - Message under the discard confirmation for the Radio Parameters sheet */
+"radio.parameters.discard.message" = "你的更改尚未发送到电台。";
+
+/* Location: RadioSettingsView.swift - Destructive button that closes the Radio Parameters sheet without applying staged edits */
+"radio.parameters.discard.confirm" = "放弃";
+
+/* Location: DeviceIdentityCard.swift - RadioIdentityChangeHeader row label for the radio's current public key */
+"identityChange.currentKey" = "当前密钥";
+
+/* Location: RegenerateIdentitySheet.swift - New Key row before a key has been generated */
+"identityChange.newKey.pending" = "生成密钥后将在此显示";
+
+/* Location: ImportKeySheet.swift - New Key row: the new public key comes from the pasted private key, set by the radio */
+"importKey.newKey.note" = "由电台根据粘贴的密钥设置";
+
+/* Location: ImportKeySheet.swift - character count under the key field, e.g. 64 of 128 characters */
+"importKey.keyInput.progress" = "%1$d / %2$d 个字符";
+
+/* Location: DeviceIdentityCard.swift - VoiceOver label for the identity change header: radio name, current key, new key */
+"identityChange.a11y" = "%1$@，当前密钥 %2$@，新密钥 %3$@";
+
+/* Location: DeviceIdentityCard.swift - VoiceOver label of the identity header without a new key: %1$@ is the radio's name and model, %2$@ its shortened current key */
+"identityChange.a11y.current" = "%1$@，当前密钥 %2$@";
+
+/* Location: DeviceReadingsSections.swift - VoiceOver label of a sensor reading when the radio has several channels: %1$@ is the channel (e.g. 'Channel 2'), %2$@ the reading (e.g. 'Temperature') */
+"deviceSensors.a11y.channelReading" = "%1$@ %2$@";
+
+/* Location: DiagnosticsSection.swift - Status line in the Advanced card: how many debug log entries are stored on this device */
+"diagnostics.entryCount" = "日志条目：%d";
+
+/* Location: DeviceInfoView.swift, HomeStatusLines.swift - Firmware name when the radio runs Cairn firmware; the argument is its build number, or "dev" ("Cairn 107") */
+"deviceInfo.cairnFirmware" = "Cairn %@";
+
+/* Location: DeviceInfoView.swift - Build number shown for a Cairn development build ("Cairn dev") */
+"deviceInfo.cairnDevBuild" = "dev";
+
+/* Location: DeviceInfoView.swift - Firmware card detail: the MeshCore version a Cairn build is based on ("MeshCore v1.17.1") */
+"deviceInfo.meshcoreBase" = "MeshCore %@";
+
+/* Appearance and the Dashboard toolbar: night mode, the whole interface red on black */
+"Appearance.NightMode" = "夜间模式";
+
+/* Appearance: what night mode does */
+"Appearance.NightModeSubtitle" = "黑底红字，让眼睛保持对黑暗的适应";
+
+/* Location: FirmwareUpdateView.swift - Navigation title of the Firmware Update page */
+"firmwareUpdate.title" = "固件更新";
+
+/* Location: FirmwareUpdateView.swift - Tile title: the firmware build on the board now */
+"firmwareUpdate.installed" = "已安装";
+
+/* Location: FirmwareUpdateView.swift - Tile title: the newest published Cairn release */
+"firmwareUpdate.latest" = "最新版本";
+
+/* Location: FirmwareUpdateView.swift - Tile value while the board or the release is being read */
+"firmwareUpdate.checking" = "正在检查…";
+
+/* Location: FirmwareUpdateView.swift - Latest Release tile caption: the board already runs it */
+"firmwareUpdate.upToDate" = "已是最新";
+
+/* Location: FirmwareUpdateView.swift - Latest Release tile caption: the release is newer than the board's build */
+"firmwareUpdate.available" = "有可用更新";
+
+/* Location: FirmwareUpdateView.swift - Latest Release tile value when the release couldn't be read */
+"firmwareUpdate.latestUnavailable" = "无法检查";
+
+/* Location: FirmwareUpdateView.swift - WiFi tile value: the board is on a network */
+"firmwareUpdate.wifiConnected" = "已连接";
+
+/* Location: FirmwareUpdateView.swift - WiFi tile value: the board's WiFi is on but not on a network */
+"firmwareUpdate.wifiNotConnected" = "未连接";
+
+/* Location: FirmwareUpdateView.swift - WiFi tile value: the board's WiFi is off */
+"firmwareUpdate.wifiOff" = "关闭";
+
+/* Location: FirmwareUpdateView.swift - Section title above the ways to install firmware */
+"firmwareUpdate.install.header" = "安装";
+
+/* Location: FirmwareUpdateView.swift - Button: install the latest release; the argument is its name ("Cairn 112") */
+"firmwareUpdate.install.latest" = "安装 %@";
+
+/* Location: FirmwareUpdateView.swift - Under the install-latest button */
+"firmwareUpdate.install.latestSubtitle" = "在询问开发板之前先下载并校验";
+
+/* Location: FirmwareUpdateView.swift - Button: pick a firmware file from Files */
+"firmwareUpdate.install.file" = "选择文件…";
+
+/* Location: FirmwareUpdateView.swift - Under the choose-file button; the argument is the board's model ("ThinkNode M9") */
+"firmwareUpdate.install.fileSubtitle" = "适用于 %@ 的 -update.bin 文件";
+
+/* Location: FirmwareUpdateView.swift - Footer under the install buttons */
+"firmwareUpdate.install.footer" = "开发板会请你允许更新。重启前它的蓝牙会关闭，之后 Cairn 会重新连接。";
+
+/* Location: FirmwareUpdateView.swift - The board must be on WiFi before it can be updated */
+"firmwareUpdate.needsWifi" = "请先将开发板连接到与此手机相同的 WiFi 网络。";
+
+/* Location: FirmwareUpdateView.swift - The board's firmware has no WiFi */
+"firmwareUpdate.noWifi" = "此开发板没有 WiFi，无法通过 App 更新。";
+
+/* Location: FirmwareUpdateView.swift - Button: read the board's state again */
+"firmwareUpdate.checkAgain" = "再次检查";
+
+/* Location: FirmwareUpdateView.swift - Confirmation title; the argument is the firmware's name ("Cairn 112" or a file name) */
+"firmwareUpdate.confirm.title" = "安装 %@？";
+
+/* Location: FirmwareUpdateView.swift - Confirmation message before asking the board */
+"firmwareUpdate.confirm.message" = "开发板会请你允许。重启前它的蓝牙会关闭。";
+
+/* Location: FirmwareUpdateView.swift - Confirmation button */
+"firmwareUpdate.confirm.install" = "安装";
+
+/* Location: FirmwareUpdateView.swift - Waiting for the person at the board to allow the update */
+"firmwareUpdate.asking.title" = "在开发板上轻点“允许”";
+
+/* Location: FirmwareUpdateView.swift - Under the waiting title: what the board shows */
+"firmwareUpdate.asking.message" = "开发板显示“Allow app update?”";
+
+/* Location: FirmwareUpdateView.swift - Progress card while connecting to the board over WiFi */
+"firmwareUpdate.connecting" = "正在通过 WiFi 连接…";
+
+/* Location: FirmwareUpdateView.swift - Progress card title while the firmware is sent */
+"firmwareUpdate.sending" = "正在发送固件";
+
+/* Location: FirmwareUpdateView.swift - Under the progress card */
+"firmwareUpdate.sendingFooter" = "完成前请保持 Cairn 打开。";
+
+/* Location: FirmwareUpdateView.swift - Card title after the firmware was sent */
+"firmwareUpdate.restarting.title" = "正在重启";
+
+/* Location: FirmwareUpdateView.swift - Card text after the firmware was sent */
+"firmwareUpdate.restarting.message" = "开发板正在安装更新并重启。它恢复后 Cairn 会重新连接。";
+
+/* Location: FirmwareUpdateView.swift - Success title; the argument is the new build ("Cairn 112") */
+"firmwareUpdate.done.updated" = "已更新到 %@";
+
+/* Location: FirmwareUpdateView.swift - Success title when the build name didn't change (a dev build); the argument is the build */
+"firmwareUpdate.done.installed" = "已安装 %@";
+
+/* Location: FirmwareUpdateView.swift - The board came back on its old build after the update; the argument is that build ("Cairn 111") */
+"firmwareUpdate.done.unchanged" = "仍是 %@。主板保留了旧固件。";
+
+/* Location: FirmwareUpdateView.swift - The firmware was sent but the board hasn't reconnected yet */
+"firmwareUpdate.done.notBack" = "已发送。开发板尚未重新连接，请查看它的屏幕。";
+
+/* Location: FirmwareUpdateView.swift - Empty state title: this firmware can't be updated from the app */
+"firmwareUpdate.unsupported.title" = "不可用";
+
+/* Location: FirmwareUpdateView.swift - Empty state text */
+"firmwareUpdate.unsupported.message" = "此固件无法通过 App 更新。";
+
+/* Location: FirmwareUpdateView.swift - Card title when sending the firmware failed after the board allowed it */
+"firmwareUpdate.interrupted.title" = "更新未完成";
+
+/* Location: FirmwareUpdateView.swift - Card text when sending failed */
+"firmwareUpdate.interrupted.message" = "开发板会在更新模式（Updater）中停留一段时间。请重试，或重启开发板。";
+
+/* Location: FirmwareUpdateView.swift - Error: the board is already updating */
+"firmwareUpdate.reply.busy" = "开发板正忙于另一个更新。";
+
+/* Location: FirmwareUpdateView.swift - Error: the board is locked, asleep, or low on memory */
+"firmwareUpdate.reply.notNow" = "开发板现在无法开始更新。请解锁或唤醒它，然后重试。";
+
+/* Location: FirmwareUpdateView.swift - Error: the person at the board tapped Cancel */
+"firmwareUpdate.result.declined" = "更新在开发板上被拒绝。";
+
+/* Location: FirmwareUpdateView.swift - Error: the board couldn't start its updater */
+"firmwareUpdate.result.failed" = "开发板无法启动更新模式（Updater），屏幕上会显示原因。";
+
+/* Location: FirmwareUpdateView.swift - Error: nobody answered the board's prompt */
+"firmwareUpdate.result.noAnswer" = "没有人及时在开发板上轻点“允许”。";
+
+/* Location: FirmwareUpdateView.swift - Error: the phone can't reach the board over WiFi */
+"firmwareUpdate.error.network" = "无法通过 WiFi 连接到开发板。请确认此手机与开发板在同一网络，并且 Cairn 可以使用本地网络（设置 › 隐私与安全性 › 本地网络）。";
+
+/* Location: FirmwareUpdateView.swift - Error: the board's updater isn't running */
+"firmwareUpdate.error.notInUpdater" = "开发板不在更新模式（Updater）。请查看它的屏幕。";
+
+/* Location: FirmwareUpdateView.swift - Error: the downloaded firmware failed its checksum */
+"firmwareUpdate.error.checksum" = "下载内容与版本的校验和不匹配，未向开发板发送任何内容。";
+
+/* Location: FirmwareUpdateView.swift - Error: the release has no file for this board */
+"firmwareUpdate.error.noImage" = "最新版本没有适用于此开发板的更新文件。";
+
+/* Location: FirmwareUpdateView.swift - Error: GitHub couldn't be reached */
+"firmwareUpdate.error.release" = "无法获取最新版本。请检查网络连接。";
+
+/* Location: FirmwareUpdateView.swift - Error: the radio didn't answer the status request */
+"firmwareUpdate.error.noAnswer" = "电台没有响应。请重试。";
+
+/* Location: FirmwareUpdateView.swift - Error: the chosen file is too small */
+"firmwareUpdate.file.tooSmall" = "该文件太小，不是固件。";
+
+/* Location: FirmwareUpdateView.swift - Error: the chosen file isn't firmware */
+"firmwareUpdate.file.notFirmware" = "该文件不是固件映像。";
+
+/* Location: FirmwareUpdateView.swift - Error: the chosen file is a full flash image */
+"firmwareUpdate.file.full" = "这是 -full.bin，请选择 -update.bin 文件。";
+
+/* Location: FirmwareUpdateView.swift - Error: the chosen file is named for another board */
+"firmwareUpdate.file.otherBoard" = "该文件适用于其他开发板。";
+
+/* Location: FirmwareUpdateView.swift - Error: the chosen file couldn't be read */
+"firmwareUpdate.file.unreadable" = "无法读取该文件。";
+
+/* Section header on About: where to get help with Cairn */
+"about.support.header" = "支持";
+
+/* About › Support: link to the Cairn page on cvhvisuals.com */
+"about.support.website" = "网站";
+
+/* About › Support: link to the support contact form */
+"about.support.getSupport" = "获取支持";
+
+/* About › Support: link to report a bug on GitHub */
+"about.support.reportBug" = "报告错误";
+
+/* About › Support: link to the Cairn firmware on GitHub */
+"about.support.firmware" = "固件";
+
+/* About › Support: link to the privacy policy */
+"about.support.privacy" = "隐私";
+
+/* About › Support: link to join the TestFlight beta */
+"about.support.beta" = "加入测试版";
+
+/* The About sheet's close button */
+"about.support.done" = "完成";
+
+/* Section header on About: the tip jar (in-app purchase tips for the developer) */
+"about.tipJar.header" = "支持开发";
+
+/* About › Support Development (tip jar): line under the tips; a tip must be described as unlocking nothing */
+"about.tipJar.footer" = "Cairn 完全免费，开发在您的支持下持续进行。打赏用于购买测试用的新电台、开发新功能和修复问题，不会解锁任何功能。";
+
+/* Location: SupportDevelopment.swift - Purpose: Asking for a review or a tip, on Settings › About and in the occasional pop-up */
+"about.review.title" = "撰写评价";
+"about.review.detail" = "帮助更多人发现 Cairn";
+"about.supportPrompt.title" = "帮助 Cairn 持续发展";
+"about.supportPrompt.message" = "评价能帮助更多人发现 Cairn，打赏用于购买测试用的新电台、开发新功能和修复问题。两者都是自愿的，Cairn 始终免费。";
+
+/* About › Support Development (tip jar): shown once this device has left a tip */
+"about.tipJar.thanks" = "谢谢！你的支持让 Cairn 的开发持续下去。";
+
+/* About › Support Development (tip jar): alert title when a tip purchase fails */
+"about.tipJar.failed" = "打赏未完成";
+
+/* Section header on About: the developer's other apps */
+"about.moreApps.header" = "更多 App";
+
+/* About › More Apps: badge on an app that is in TestFlight beta */
+"about.moreApps.beta" = "测试版";
+
+/* About › More Apps: link to the full apps page on cvhvisuals.com */
+"about.moreApps.allApps" = "查看所有 App";
+
+/* About › More Apps: what Switcher Pro is (app name not translated) */
+"about.moreApps.switcherPro" = "OBS Studio 预览与节目切换台";
+
+/* About › More Apps: what ResEditor is (app name not translated) */
+"about.moreApps.resEditor" = "视频带宽与分辨率计算器";
+
+/* About › More Apps: what GenR8 is (app name not translated) */
+"about.moreApps.genr8" = "测试图、HDR 信号、音画同步与测试音";
+
+/* About › More Apps: what MyRate+ is, for crew and freelancers (app name not translated) */
+"about.moreApps.myRate" = "工时、薪酬、里程与 PDF 发票";
+
+/* About › More Apps: what For Isaiah is, a picture-and-word communication app (app name not translated) */
+"about.moreApps.forIsaiah" = "免费的图文发声沟通 App";
+
+// MARK: - Radio Tuning
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.header" = "调整";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.footer" = "电台发送和转发泛洪的时间安排。除非你的网络需要，否则请保持默认值（接收延迟 0，空中时间系数 1）。";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.rxDelay" = "接收延迟";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.rxDelay.detail" = "在转发较弱的泛洪前稍长时间保留，让更强的路径胜出。0 为关闭。";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.airtimeFactor" = "空中时间系数";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.airtimeFactor.detail" = "电台发送后保持静默的时长，以其空中时间的倍数表示。越高给其他节点留出越多空间。";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.apply" = "应用调整";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.reset" = "恢复默认值";
+
+/* Settings → Radio: Tuning card and sheet */
+"radio.tuning.unsupported" = "此电台的固件不支持调整。";
+
+// MARK: - Connections
+
+/* Connections: page title, Settings tile and the radio button's label */
+"connections.title" = "我的无线电";
+
+/* Connection Settings: detail under the Connections link */
+"connections.linkDetail" = "已保存的无线电和配置文件";
+
+/* Connections: saved radios section footer */
+"connections.savedRadios.footer" = "轻点无线电即可连接或切换到它。默认无线电（即上次连接的那台）会在 Cairn 打开时自动重新连接。";
+
+/* Connections: footer under the radios while Connect on Launch is off */
+"connections.savedRadios.footerManual" = "轻点电台以连接或切换到该电台。";
+
+/* Connections: switch for reconnecting to the last radio when the app opens */
+"connections.connectOnLaunch.title" = "启动时连接";
+
+/* Connections: line under the Connect on Launch switch */
+"connections.connectOnLaunch.detail" = "打开 Cairn 时重新连接到上次使用的电台。";
+
+/* Connections: asks before a tapped radio connects; the radio's name */
+"connections.connectPrompt.title" = "连接到 %@？";
+
+/* Connections: under the connect question while another radio is connected; that radio's name */
+"connections.connectPrompt.switchMessage" = "Cairn 会先断开与 %@ 的连接。";
+
+/* Connections: shown when no radio is saved yet */
+"connections.savedRadios.empty" = "你配对或通过 WiFi 连接的无线电会显示在这里。";
+
+/* Connections: header over the scan and WiFi actions */
+"connections.add.header" = "添加无线电";
+
+/* Connections: tag on the radio Cairn reconnects to at launch */
+"connections.row.defaultRadio" = "默认";
+
+/* Connections: a Bluetooth radio the scan hasn't heard */
+"connections.row.notInRange" = "不在范围内";
+
+/* Connections: when a radio was last connected; %@ is a relative date such as 'yesterday' */
+"connections.row.lastConnected" = "上次连接：%@";
+
+/* Connections: menu action connecting a radio */
+"connections.action.connect" = "连接";
+
+/* Connections: menu action switching to a radio from the connected one */
+"connections.action.switchTo" = "切换到此无线电";
+
+/* Connections: menu action giving a radio a name on this phone */
+"connections.action.rename" = "昵称…";
+
+/* Connections: menu action editing a WiFi radio's address */
+"connections.action.editAddress" = "编辑地址…";
+
+/* Connections: menu action removing a saved radio */
+"connections.action.forget" = "忘记…";
+
+/* Connections: rename alert title */
+"connections.rename.title" = "昵称（仅此手机）";
+
+/* Connections: rename alert message */
+"connections.rename.message" = "此名称仅在这部手机上显示。留空则使用无线电自身的名称。";
+
+/* Connections: forget confirmation title; %@ is the radio's name */
+"connections.forget.title" = "忘记“%@”？";
+
+/* Connections: forget confirmation message */
+"connections.forget.message" = "Cairn 会移除此无线电，直到你再次配对。它的对话和节点仍保留在这部手机上。";
+
+/* Connections: forget confirmation button */
+"connections.forget.confirm" = "忘记无线电";
+
+/* Connections: VoiceOver hint on the connected radio's card */
+"connections.accessibility.openDeviceInfoHint" = "连按两次以打开设备信息";
+
+/* Connections: radio profiles section header */
+"connections.profiles.header" = "无线电配置文件";
+
+/* Connections: explanation behind the profiles header's info button */
+"connections.profiles.info" = "配置文件是无线电设置的命名副本：预设、频率和发射功率、名称、频道及其他设置。将它应用到任意无线电，即可以相同方式完成设置。配置文件绝不包含无线电的密钥、联系人或位置。";
+
+/* Connections: shown when no profile is saved */
+"connections.profiles.emptyTitle" = "没有配置文件";
+
+/* Connections: detail under No Profiles */
+"connections.profiles.empty" = "保存已连接无线电的设置，以便在任意无线电上重复使用。";
+
+/* Connections: action saving the connected radio's settings as a profile */
+"connections.profiles.saveCurrent" = "将当前无线电保存为配置文件";
+
+/* Connections: footer while no radio is ready */
+"connections.profiles.saveDisconnected" = "连接无线电以保存或应用配置文件。";
+
+/* Connections: a profile's channel count; %d is the number */
+"connections.profiles.channelCount" = "频道：%d";
+
+/* Connections: alert naming a new profile */
+"connections.profiles.newProfile.title" = "新配置文件";
+
+/* Connections: alert naming a new profile, message */
+"connections.profiles.newProfile.message" = "为此配置文件命名。它会保存已连接无线电的预设、功率、名称、频道及其他设置。";
+
+/* Connections: text field placeholder for a profile's name */
+"connections.profiles.newProfile.placeholder" = "配置文件名称";
+
+/* Radio profile page: section header over what the profile holds */
+"connections.profile.contents" = "内容";
+
+/* Radio profile page: action applying the profile; %@ is the connected radio's name */
+"connections.profile.apply" = "应用到 %@";
+
+/* Radio profile page: title of the page previewing and applying a profile */
+"connections.profile.applyTitle" = "应用配置文件";
+
+/* Radio profile page: footer while no radio is ready */
+"connections.profile.applyDisconnected" = "连接无线电以应用此配置文件。";
+
+/* Radio profile page: value on the Other Settings card */
+"connections.profile.included" = "已包含";
+
+/* Radio profile page: %1$@ is the radio's name, %2$@ the date */
+"connections.profile.savedFrom" = "于 %2$@ 从 %1$@ 保存";
+
+/* Radio profile page: %@ is the date */
+"connections.profile.savedOn" = "保存于 %@";
+
+/* Radio profile page: delete action and confirmation button */
+"connections.profile.delete" = "删除配置文件";
+
+/* Radio profile page: delete confirmation title; %@ is the profile's name */
+"connections.profile.delete.title" = "删除“%@”？";
+
+/* Radio profile page: delete confirmation message */
+"connections.profile.delete.message" = "配置文件将从这部手机上移除。已应用它的无线电会保留其设置。";
+
+/* Radio profile page: rename alert title */
+"connections.profile.rename.title" = "重命名配置文件";
+
+/* VoiceOver hint on the radio button in each tab's leading corner, which opens the connected radio's Device Info as a sheet */
+"bleStatus.hint" = "打开已连接无线电的设备信息";
+
+/* Connections: alert when the radio is already connected over the other transport */
+"connections.sameRadio.title" = "已连接";
+
+/* Connections: %1$@ is the radio's name, %2$@ the transport in use, %3$@ the other one */
+"connections.sameRadio.message" = "%1$@ 已通过 %2$@ 连接。要切换到 %3$@ 吗？";
+
+/* Connections: button moving the radio to the other transport; %@ is that transport */
+"connections.sameRadio.switchButton" = "切换到 %@";
+
+/* Alert after connecting to a radio already saved over the other transport */
+"connections.linked.title" = "同一台无线电";
+
+/* %1$@ is the radio's name, %2$@ the transports it was saved with, %3$@ the new one */
+"connections.linked.message" = "这是 %1$@，已通过 %2$@ 保存。Cairn 只显示一次，并将 %3$@ 作为另一种连接方式。";
+
+/* Connections: segment listing the saved radios */
+"connections.segment.radios" = "无线电";
+
+/* Connections: segment listing the radio profiles */
+"connections.segment.profiles" = "配置文件";
+
+/* Connections: search prompt for radios */
+"connections.search.radios" = "名称、昵称或密钥";
+
+/* Connections: search prompt for profiles */
+"connections.search.profiles" = "配置文件名称";
+
+/* Connections: sort by most recently connected */
+"connections.sort.recent" = "最近";
+
+/* Connections: sort by name */
+"connections.sort.name" = "名称";
+
+/* Connections: sort by Bluetooth signal */
+"connections.sort.signal" = "信号";
+
+/* Connections: filter showing every transport */
+"connections.filter.all" = "全部";
+
+/* Connections: transport filter picker label */
+"connections.filter.title" = "传输方式";
+
+/* Connections: toolbar menu with the sort and filter */
+"connections.filter.menu" = "排序和筛选";
+
+/* Connections: section with the radio in use */
+"connections.section.connected" = "已连接";
+
+/* Connections: section with radios heard over Bluetooth now */
+"connections.section.nearby" = "附近";
+
+/* Connections: section with the other saved radios */
+"connections.section.saved" = "已保存";
+
+/* Connections: section with radios iOS is paired with that Cairn has no record of */
+"connections.section.pairedElsewhere" = "已与此设备配对";
+
+/* Connections: switch the connected radio to its other transport; %@ is the transport */
+"connections.action.switchOver" = "切换到 %@";
+
+/* Connections: connect over one transport; %@ is the transport */
+"connections.action.connectOver" = "通过 %@ 连接";
+
+/* Connections: short button switching to a radio or transport */
+"connections.action.switchShort" = "切换";
+
+/* Connections: VoiceOver label for the button opening a radio's page; %@ is its name */
+"connections.accessibility.details" = "%@ 详情";
+
+/* Connections: VoiceOver value of a folded section */
+"connections.accessibility.collapsed" = "已折叠";
+
+/* Connections: VoiceOver value of an open section */
+"connections.accessibility.expanded" = "已展开";
+
+/* Connections: VoiceOver hint on a row beside the detail pane */
+"connections.accessibility.selectHint" = "连按两次以显示此无线电";
+
+/* Connections: detail pane with no radio selected */
+"connections.detail.noSelection" = "选择无线电";
+
+/* Connections: detail pane with no profile selected */
+"connections.detail.noProfile" = "选择配置文件";
+
+/* Radio page: section with a card per transport */
+"connections.detail.transports" = "连接方式";
+
+/* Radio page: tile with when the radio was last connected */
+"connections.detail.lastConnected" = "上次连接";
+
+/* Radio page: tile with the start of the radio's public key */
+"connections.detail.key" = "密钥";
+
+/* Radio page: tile with the Bluetooth signal */
+"connections.detail.signal" = "信号";
+
+/* Radio page: section listing profiles to apply to the connected radio */
+"connections.detail.applyProfile" = "应用配置文件";
+
+// MARK: - Background App Refresh
+
+/* Location: BackgroundRefreshNotice.swift - Title of the card shown in Settings › Notifications and Connections when Background App Refresh is off for Cairn or system-wide; tapping opens Cairn's page in the Settings app */
+/* AI-translated - please verify with native speakers. */
+"notifications.backgroundRefresh.off.title" = "后台App刷新已关闭";
+
+/* Location: BackgroundRefreshNotice.swift - Subtitle of that card when Background App Refresh is off (for Cairn or system-wide) */
+/* AI-translated - please verify with native speakers. */
+"notifications.backgroundRefresh.off.detail" = "通过 WiFi 连接时，只有开启“后台App刷新”，Cairn 才会在后台检查无线电的消息。蓝牙不受影响。";
+
+/* Location: BackgroundRefreshNotice.swift - Title of the card when Background App Refresh is restricted (Screen Time or device management); the card is not tappable, since the user cannot change it */
+/* AI-translated - please verify with native speakers. */
+"notifications.backgroundRefresh.restricted.title" = "后台App刷新受限";
+
+/* Location: BackgroundRefreshNotice.swift - Subtitle of that card when Background App Refresh is restricted (Screen Time or device management), so the user cannot turn it on */
+/* AI-translated - please verify with native speakers. */
+"notifications.backgroundRefresh.restricted.detail" = "此设备限制了“后台App刷新”，因此通过 WiFi 连接时，Cairn 仅在打开时检查无线电。蓝牙不受影响。";
+
+/* Location: BackgroundRefreshNotice.swift - Title of the card shown while Low Power Mode is on, which stops Background App Refresh for every app; not tappable. Use Apple's names for Low Power Mode and Background App Refresh */
+/* AI-translated - please verify with native speakers. */
+"notifications.backgroundRefresh.lowPower.title" = "低电量模式会暂停后台App刷新";
+
+/* Location: BackgroundRefreshNotice.swift - Subtitle of the Low Power Mode card */
+/* AI-translated - please verify with native speakers. */
+"notifications.backgroundRefresh.lowPower.detail" = "在低电量模式关闭之前，通过 WiFi 连接时，Cairn 仅在打开时检查无线电。蓝牙不受影响。";
+
+/* Location: SavedRadiosList.swift - Footer under the radios while the connected radio is on WiFi: how messages reach the app in the background */
+/* AI-translated - please verify with native speakers. */
+"connections.wifiBackground.footer" = "通过蓝牙，消息可在后台送达。通过 WiFi，Cairn 会在 iOS 允许时（后台App刷新）检查无线电的消息，间隔可能为几分钟到几小时。";
+/* Location: NotificationSettingsSection.swift - Switch: notifications play a sound */
+"notifications.sound" = "声音";
+/* Location: NotificationSettingsSection.swift - Switch: the app icon shows the unread count */
+"notifications.badge" = "应用图标角标";
+/* Location: QuietHoursSection.swift - Section header */
+"notifications.quietHours.header" = "免打扰时段";
+/* Location: QuietHoursSection.swift - Switch turning quiet hours on */
+"notifications.quietHours.enable" = "免打扰时段";
+/* Location: QuietHoursSection.swift - Time picker: when quiet hours begin */
+"notifications.quietHours.start" = "开始";
+/* Location: QuietHoursSection.swift - Time picker: when quiet hours end */
+"notifications.quietHours.end" = "结束";
+/* Location: QuietHoursSection.swift - Switch: direct messages still alert during quiet hours */
+"notifications.quietHours.allowDirect" = "允许私信";
+/* Location: QuietHoursSection.swift - What quiet hours do */
+"notifications.quietHours.footer" = "免打扰时段内，通知会静默进入通知中心，没有声音和横幅。角标仍会计数。";
+/* Location: RadioReadFootnote.swift - Footnote when a page's read from the radio failed */
+"radio.readFailed" = "无法从无线电读取，显示上次已知的值";
+/* Location: FirmwareUpdateView.swift - Link to the release's page on GitHub */
+"firmwareUpdate.releaseNotes" = "版本说明";
+/* Location: FirmwareUpdateView.swift - Accessibility label of the release notes link; %@ is the release */
+"firmwareUpdate.releaseNotes.accessibility" = "在浏览器中打开 %@ 的版本说明";
+/* Location: WiFiEditSheet.swift - Confirmation title; %@ is the new host:port */
+"wifiEdit.confirm.title" = "重新连接到 %@？";
+/* Location: WiFiEditSheet.swift - Confirmation message */
+"wifiEdit.confirm.message" = "当前连接将断开，应用会连接到新地址。";
+/* Location: WiFiEditSheet.swift - Confirmation button */
+"wifiEdit.confirm.connect" = "重新连接";
+/* Location: WiFiEditSheet.swift - Save button while the reconnect runs */
+"wifiEdit.connecting" = "正在连接…";
+/* Location: DeviceResetSection.swift - Factory reset confirmation title */
+"dangerZone.dialog.reset.title" = "恢复出厂设置";
+/* Location: DeviceResetSection.swift - Factory reset confirmation message: what the radio loses, and the choice about the phone's copy */
+"dangerZone.dialog.reset.message" = "无线电将清除其所有联系人、消息和设置，然后取消配对。请选择此手机是否保留该无线电的消息、联系人和频道副本。";
+/* Location: DeviceResetSection.swift - Factory reset, keeping the phone's data */
+"dangerZone.dialog.reset.keepData" = "重置并保留本地数据";
+/* Location: DeviceResetSection.swift - Factory reset, deleting the phone's data too */
+"dangerZone.dialog.reset.deleteAll" = "重置并删除本地数据";
+/* Location: AppearanceSettingsSection.swift - Switch: the app's haptic feedback */
+"Appearance.Haptics" = "触感反馈";
+/* Location: AppearanceSettingsSection.swift - What the haptics switch covers */
+"Appearance.Haptics.Footer" = "应用在成功、出错和选择时的轻微震动。指南针有其单独的设置。";
